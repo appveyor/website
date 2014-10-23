@@ -11,7 +11,14 @@ namespace NJekyll.Controllers
     {
         public ActionResult Index()
         {
-            return Content("<h1>Hello, world!</h1>" + Styles.Render("~/Content/css"), "text/html");
+            var cached = HttpContext.Cache["Cached"] as string;
+            if(cached == null)
+            {
+                cached = DateTime.Now.ToString();
+                HttpContext.Cache.Insert("Cached", cached, new System.Web.Caching.CacheDependency(Server.MapPath("~/")));
+            }
+
+            return Content("<h1>Hello, world!</h1>" + Styles.Render("~/site-css"), "text/html");
         }
     }
 }
