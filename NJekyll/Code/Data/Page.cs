@@ -25,5 +25,17 @@ namespace NJekyll.Code.Data
         //  - path - physical path to page/post
         //  - next?
         //  - previous?
+
+        public new object this[string key]
+        {
+            get
+            {
+                return base[key];
+            }
+            set
+            {
+                base[key] = value;
+            }
+        }
     }
 }

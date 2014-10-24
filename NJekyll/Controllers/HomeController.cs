@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NJekyll.Code;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,12 +12,13 @@ namespace NJekyll.Controllers
     {
         public ActionResult Index()
         {
-            var cached = HttpContext.Cache["Cached"] as string;
-            if(cached == null)
-            {
-                cached = DateTime.Now.ToString();
-                HttpContext.Cache.Insert("Cached", cached, new System.Web.Caching.CacheDependency(Server.MapPath("~/")));
-            }
+            Site.LoadSite();
+            //var cached = HttpContext.Cache["Cached"] as string;
+            //if(cached == null)
+            //{
+            //    cached = DateTime.Now.ToString();
+            //    HttpContext.Cache.Insert("Cached", cached, new System.Web.Caching.CacheDependency(Server.MapPath("~/")));
+            //}
 
             return Content("<h1>Hello, world!</h1>" + Styles.Render("~/site-css"), "text/html");
         }

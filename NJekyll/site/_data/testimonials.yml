@@ -1,0 +1,10 @@
+﻿- customer: Granicus
+  file: granicus.png
+
+- customer: Telenor
+  file: telenor.png
+
+- customer: Test
+  content: >
+    this is very long testimonials
+    another line is following!

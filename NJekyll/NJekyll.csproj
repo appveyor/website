@@ -130,6 +130,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Code\Data\ContentFile.cs" />
     <Compile Include="Code\Data\ContentFormat.cs" />
+    <Compile Include="Code\Data\DataFolder.cs" />
     <Compile Include="Code\Data\Layout.cs" />
     <Compile Include="Code\Data\Page.cs" />
     <Compile Include="Code\Site.cs" />
@@ -145,6 +146,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="site\css\Site.css" />
+    <Content Include="site\docs\index.html" />
     <Content Include="site\js\bootstrap.js" />
     <Content Include="site\js\bootstrap.min.js" />
     <Content Include="site\index.html" />
@@ -160,12 +162,23 @@
   <ItemGroup>
     <Folder Include="site\fonts\" />
     <Folder Include="site\img\" />
-    <Folder Include="site\_data\" />
     <Folder Include="site\_includes\" />
     <Folder Include="site\_posts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="site\_data\testimonials.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="site\_data\acme_inc\members.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="site\_data\duwamish\members.yml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="site\_config.yml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
