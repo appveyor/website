@@ -5,8 +5,18 @@ using System.Web;
 
 namespace NJekyll.Code.Data
 {
-    public class Layout : Dictionary<string, object>
+    public class Layout : ContentFile
     {
-        public Layout ParentLayout { get; set; }
+        public string ParentLayout { get; set; }
+
+        public Layout(string virtualPath) : base(virtualPath) { }
+
+        protected override void Init()
+        {
+            if(FrontMatter.ContainsKey("layout"))
+            {
+                ParentLayout = (string)FrontMatter["layout"];
+            }
+        }
     }
 }

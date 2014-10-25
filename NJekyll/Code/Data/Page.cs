@@ -1,41 +1,52 @@
-﻿using System;
+﻿using DotLiquid;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
 namespace NJekyll.Code.Data
 {
-    public class Page : Dictionary<string, object>
+    public class Page : ContentFile
     {
         public string Permalink { get; set; }
-        public string Content { get; set; }
-        public ContentFormat ContentFormat { get; set; }
+        public string Layout { get; set; } // layout file name without extension and directory
+        public string Path { get; set; } // physical path to page/post
+        public bool Published { get; set; }
+        public DateTime Date { get; set; }
+        public List<string> Categories { get; set; }
+        public List<string> Tags { get; set; }
 
-        // Standard fields:
-        //  - layout - layout file name without extension and directory
-        //  - published - true|false
-        //  - content
-        //  - title
-        //  - excerpt?
-        //  - url - url of the post, page URL or permalink
-        //  - id - unique post identifier (the same as URL)
-        //  - date - date of the post, parsed from URL or specified in front matter
-        //  - categories - list of categories
-        //  - tags - list of tags
-        //  - path - physical path to page/post
-        //  - next?
-        //  - previous?
+        public Page(string virtualPath) : base(virtualPath) { }
 
-        public new object this[string key]
+        public override object BeforeMethod(string method)
         {
-            get
+            string key = method.ToLowerInvariant();
+            switch(key)
             {
-                return base[key];
+                case "content": return GetContent();
+                case "id":
+                case "url": return Permalink;
+                case "date": return Date;
+                case "categories": return Categories;
+                case "tags": return Tags;
+                case "path": return Path;
+                // excerpt, next, previous?
+                default:
+                    return FrontMatter[key];
             }
-            set
+        }
+
+        protected override void Init()
+        {
+            if (FrontMatter.ContainsKey("permalink"))
             {
-                base[key] = value;
+                Permalink = (string)FrontMatter["permalink"];
             }
+        }
+
+        private string GetContent()
+        {
+            return Content;
         }
     }
 }

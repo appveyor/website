@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DotLiquid;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Web;
 
 namespace NJekyll.Code.Data
 {
-    public class DataFolder : Dictionary<string, object>
+    public class DataFolder : Drop
     {
         string _path = null;
 
@@ -15,16 +16,9 @@ namespace NJekyll.Code.Data
             this._path = path;
         }
 
-        public new object this[string key]
+        public override object BeforeMethod(string method)
         {
-            get
-            {
-                return GetDataOrFolder(key);
-            }
-            set
-            {
-                // do nothing
-            }
+            return GetDataOrFolder(method);
         }
 
         private object GetDataOrFolder(string name)

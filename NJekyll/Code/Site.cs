@@ -1,4 +1,5 @@
-﻿using NJekyll.Code.Data;
+﻿using DotLiquid;
+using NJekyll.Code.Data;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -12,8 +13,8 @@ namespace NJekyll.Code
 {
     public class Site
     {
-        static ConcurrentDictionary<string, object> site = new ConcurrentDictionary<string, object>(StringComparer.OrdinalIgnoreCase);
-        static ConcurrentDictionary<string, Page> pages = new ConcurrentDictionary<string, Page>(StringComparer.OrdinalIgnoreCase); // key - Permalink
+        static Dictionary<string, object> _site;
+        static Dictionary<string, Page> _pages = new Dictionary<string, Page>(StringComparer.OrdinalIgnoreCase); // key - Permalink
 
         static string _siteRoot = null;
 
@@ -22,24 +23,23 @@ namespace NJekyll.Code
             _siteRoot = HttpContext.Current.Server.MapPath("~/site").TrimEnd('\\'); // e.g. C:\website
 
             // the list of directories with content that will be used for invalidating cached content
-            Dictionary<string, string> directories = new Dictionary<string, string>();
+            Dictionary<string, string> cacheDependencyDirectories = new Dictionary<string, string>();
 
             // load _config.yml
-            var config = LoadSiteConfig();
-            // - [CONFIGURATION_DATA] - loaded from _config.yml
+            _site = LoadSiteConfig();
 
             // load site data
-            site["data"] = new DataFolder(GetPath("_data"));
+            _site["data"] = new DataFolder(GetPath("_data"));
 
-            var test = ((DataFolder)site["data"])["testimonials"];
+            // load pages
+            var page = new Page("docs/index.html");
+            var layout1 = new Layout("_layouts/default.html");
+            var layout2 = new Layout("_layouts/docs.html");
 
-            test = ((DataFolder)site["data"])["testimonials"];
+            _site["page"] = page;
 
-            var acme = ((DataFolder)site["data"])["acme_inc"];
-            var duwamish_members = ((DataFolder)((DataFolder)site["data"])["duwamish"])["members"];
+            var result = RenderPage("qqq");
 
-            // load page
-            var page = LoadContentFile("docs/index.html", true);
 
             // scan all pages, layouts, posts, collections
             // pages index [url, page] - for quick access
@@ -62,6 +62,24 @@ namespace NJekyll.Code
 
 
             // go recursively through all directories of the site
+        }
+
+        public static string RenderPage(string url)
+        {
+            var renderContext = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
+            renderContext["site"] = _site;
+
+            Template template = Template.Parse(@"
+{% for item in site.data.testimonials -%}
+  {{ item.customer }}
+    {% for link in item.links -%} {{ link }} {% endfor -%}
+{% endfor -%}
+
+title: {{site.page.title}}
+content: {{site.page.content}}
+");
+
+            return template.Render(Hash.FromDictionary(renderContext));
         }
 
         private static Dictionary<string, object> LoadSiteConfig()
@@ -107,85 +125,6 @@ namespace NJekyll.Code
             // page - can be md|html
         }
 
-        private static Page ParsePage(string path)
-        {
-            // determine content type
-            // recognize only .html and .md files
-            
-            // load front matter as YAML
-
-            // load the rest to content
-
-            // save full path for future reference
-
-            return null;
-        }
-
-        private static ContentFile LoadContentFile(string virtualPath, bool includeContent)
-        {
-            string path = GetPath(virtualPath);
-            ContentFile result = new ContentFile();
-
-            var extension = Path.GetExtension(path);
-            if(extension.Equals(".md", StringComparison.OrdinalIgnoreCase) || extension.Equals(".markdown", StringComparison.OrdinalIgnoreCase))
-            {
-                result.ContentFormat = ContentFormat.Markdown;
-            }
-            else if (extension.Equals(".html", StringComparison.OrdinalIgnoreCase) || extension.Equals(".htm", StringComparison.OrdinalIgnoreCase))
-            {
-                result.ContentFormat = ContentFormat.HTML;
-            }
-            else
-            {
-                throw new Exception(String.Format("Uknown page format: {0}", virtualPath));
-            }
-
-            var content = new StringBuilder();
-            var metadata = new StringBuilder();
-
-            // parse metadata
-            var reader = new StreamReader(path);
-            string line = null;
-            bool insideMetadata = false;
-            while ((line = reader.ReadLine()) != null)
-            {
-                if (line.TrimEnd() == "---")
-                {
-                    // toggle mode
-                    insideMetadata = !insideMetadata;
-                    continue;
-                }
-                else if (line.TrimStart().StartsWith("<!--"))
-                {
-                    insideMetadata = true;
-                    continue;
-                }
-                else if (line.TrimEnd().EndsWith("-->"))
-                {
-                    insideMetadata = false;
-                    continue;
-                }
-
-                if (insideMetadata)
-                {
-                    metadata.AppendLine(line);
-                }
-                else
-                {
-                    if(!includeContent)
-                    {
-                        break;
-                    }
-                    content.AppendLine(line);
-                }
-            }
-
-            result.Content = content.Length > 0 ? content.ToString() : null;
-            result.FrontMatter = metadata.Length > 0 ? YamlToObject(metadata.ToString()) as Dictionary<string, object> : new Dictionary<string, object>();
-
-            return result;
-        }
-
         public static string GetPath(string virtualPath)
         {
             return Path.Combine(_siteRoot, virtualPath);
@@ -196,9 +135,9 @@ namespace NJekyll.Code
             return HttpContext.Current.Cache[key];
         }
 
-        public static void AddToCache(string key, object value, string dependencyPath)
+        public static void AddToCache(string key, object value, params string[] dependencyPaths)
         {
-            HttpContext.Current.Cache.Insert(key, value, new System.Web.Caching.CacheDependency(dependencyPath));
+            HttpContext.Current.Cache.Insert(key, value, new System.Web.Caching.CacheDependency(dependencyPaths));
         }
 
         #region YAML
@@ -222,7 +161,7 @@ namespace NJekyll.Code
             }
             else if (valueNode is YamlMappingNode)
             {
-                Dictionary<string, object> hash = new Dictionary<string, object>();
+                Dictionary<string, object> hash = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
                 var mappingNode = valueNode as YamlMappingNode;
                 foreach (var keyNode in mappingNode.Children.Keys)
                 {

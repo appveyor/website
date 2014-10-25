@@ -150,6 +150,8 @@
     <Content Include="site\js\bootstrap.js" />
     <Content Include="site\js\bootstrap.min.js" />
     <Content Include="site\index.html" />
+    <Content Include="site\_includes\footer.html" />
+    <Content Include="site\_layouts\docs.html" />
     <Content Include="site\_layouts\default.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -162,7 +164,6 @@
   <ItemGroup>
     <Folder Include="site\fonts\" />
     <Folder Include="site\img\" />
-    <Folder Include="site\_includes\" />
     <Folder Include="site\_posts\" />
   </ItemGroup>
   <ItemGroup>
