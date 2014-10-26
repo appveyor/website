@@ -10,12 +10,14 @@ namespace NJekyll.Code.Data
 {
     public abstract class ContentFile : Drop
     {
-        string _virtualPath;
         string _content;
 
-        public ContentFormat ContentFormat { get; private set;}
-        public Dictionary<string, object> FrontMatter { get; private set; }
-        public string Content
+        internal string VirtualPath { get; private set; }
+        internal ContentFormat ContentFormat { get; private set; }
+        internal Dictionary<string, object> FrontMatter { get; private set; }
+
+        public string Path { get; private set; }
+        public virtual string Content
         {
             get
             {
@@ -29,7 +31,8 @@ namespace NJekyll.Code.Data
 
         public ContentFile(string virtualPath)
         {
-            this._virtualPath = virtualPath;
+            this.VirtualPath = virtualPath;
+            this.Path = Site.GetPath(this.VirtualPath);
             this.FrontMatter = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
 
             Load(loadContent: false);
@@ -40,9 +43,7 @@ namespace NJekyll.Code.Data
 
         private void Load(bool loadContent)
         {
-            string path = Site.GetPath(_virtualPath);
-
-            var extension = Path.GetExtension(path);
+            var extension = System.IO.Path.GetExtension(this.Path);
             if (extension.Equals(".md", StringComparison.OrdinalIgnoreCase) || extension.Equals(".markdown", StringComparison.OrdinalIgnoreCase))
             {
                 ContentFormat = ContentFormat.Markdown;
@@ -53,49 +54,45 @@ namespace NJekyll.Code.Data
             }
             else
             {
-                throw new Exception(String.Format("Uknown page format: {0}", _virtualPath));
+                throw new Exception(String.Format("Uknown page format: {0}", this.VirtualPath));
             }
 
             var content = new StringBuilder();
             var frontMatter = new StringBuilder();
 
             // parse metadata
-            var reader = new StreamReader(path);
-            string line = null;
-            bool insideMetadata = false;
-            int lineNumber = 0;
-            while ((line = reader.ReadLine()) != null)
+            using(var reader = new StreamReader(this.Path))
             {
-                lineNumber++;
+                string line = null;
+                bool insideMetadata = false;
+                int lineNumber = 0;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    lineNumber++;
 
-                if (line.TrimEnd() == "---" && lineNumber == 1) // front matter starts on the first line
-                {
-                    // toggle mode
-                    insideMetadata = !insideMetadata;
-                    continue;
-                }
-                else if (line.StartsWith("<!--") && lineNumber == 1) // front matter starts on the first line
-                {
-                    insideMetadata = true;
-                    continue;
-                }
-                else if (line.TrimEnd().EndsWith("-->"))
-                {
-                    insideMetadata = false;
-                    continue;
-                }
+                    if ((line.TrimEnd() == "---" || line.TrimEnd() == "<!--") && lineNumber == 1) // front matter starts on the first line
+                    {
+                        insideMetadata = true;
+                        continue;
+                    }
+                    else if ((line.TrimEnd() == "---" || line.TrimEnd() == "-->") && lineNumber > 1 && insideMetadata)
+                    {
+                        insideMetadata = false;
+                        continue;
+                    }
 
-                if (insideMetadata && !loadContent)
-                {
-                    frontMatter.AppendLine(line);
-                }
-                else if(loadContent)
-                {
-                    content.AppendLine(line);
-                }
-                else
-                {
-                    break;
+                    if (insideMetadata && !loadContent)
+                    {
+                        frontMatter.AppendLine(line);
+                    }
+                    else if (!insideMetadata && loadContent)
+                    {
+                        content.AppendLine(line);
+                    }
+                    else if (!loadContent)
+                    {
+                        break;
+                    }
                 }
             }
 
@@ -105,7 +102,14 @@ namespace NJekyll.Code.Data
             }
             else if (!loadContent && frontMatter.Length > 0)
             {
-                FrontMatter = Site.YamlToObject(frontMatter.ToString()) as Dictionary<string, object>;
+                try
+                {
+                    FrontMatter = Site.YamlToObject(frontMatter.ToString()) as Dictionary<string, object>;
+                }
+                catch(Exception ex)
+                {
+                    throw new Exception(String.Format("Error parsing front matter in {0}.", VirtualPath), ex);
+                }
             }
         }
     }

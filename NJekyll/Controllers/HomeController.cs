@@ -12,13 +12,18 @@ namespace NJekyll.Controllers
     {
         public ActionResult Index()
         {
-            Site.LoadSite();
-            //var cached = HttpContext.Cache["Cached"] as string;
-            //if(cached == null)
-            //{
-            //    cached = DateTime.Now.ToString();
-            //    HttpContext.Cache.Insert("Cached", cached, new System.Web.Caching.CacheDependency(Server.MapPath("~/")));
-            //}
+            var pageUrl = Request.Url.AbsolutePath.TrimEnd('/');
+            if(pageUrl == "")
+            {
+                pageUrl = "/";
+            }
+
+            // check if page was permanently redirected
+            var redirectUrl = Site.GetRedirect(pageUrl);
+            if(redirectUrl != null)
+            {
+                return RedirectPermanent(redirectUrl);
+            }
 
             return Content("<h1>Hello, world!</h1>" + Styles.Render("~/site-css"), "text/html");
         }
