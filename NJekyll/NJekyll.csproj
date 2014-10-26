@@ -42,6 +42,9 @@
     <Reference Include="DotLiquid">
       <HintPath>..\packages\DotLiquid.1.8.0\lib\NET45\DotLiquid.dll</HintPath>
     </Reference>
+    <Reference Include="MarkdownSharp">
+      <HintPath>..\packages\MarkdownSharp.1.13.0.0\lib\35\MarkdownSharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -149,9 +152,11 @@
     <Content Include="Global.asax" />
     <Content Include="site\css\Site.css" />
     <Content Include="site\docs\index.html" />
+    <Content Include="site\blog.html" />
     <Content Include="site\js\bootstrap.js" />
     <Content Include="site\js\bootstrap.min.js" />
     <Content Include="site\index.html" />
+    <Content Include="site\_includes\post_item.html" />
     <Content Include="site\_includes\footer.html" />
     <Content Include="site\_layouts\docs.html" />
     <Content Include="site\_layouts\default.html" />

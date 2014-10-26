@@ -25,7 +25,16 @@ namespace NJekyll.Controllers
                 return RedirectPermanent(redirectUrl);
             }
 
-            return Content("<h1>Hello, world!</h1>" + Styles.Render("~/site-css"), "text/html");
+            var page = Site.GetPage(pageUrl);
+            if (page == null)
+            {
+                return new HttpStatusCodeResult(404, "Page not found");
+            }
+            else
+            {
+                // render page
+                return Content(Site.RenderPage(page, Request.Url.PathAndQuery), "text/html");
+            }
         }
     }
 }

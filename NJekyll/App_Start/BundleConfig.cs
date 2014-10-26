@@ -13,9 +13,6 @@ namespace NJekyll
 
             // CSS
             bundles.Add(new StyleBundle("~/site-css").IncludeDirectory("~/site/css", "*.css", true));
-
-
-            BundleTable.EnableOptimizations = false;
         }
     }
 }

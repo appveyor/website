@@ -52,7 +52,7 @@ namespace NJekyll.Code.Data
             }
 
             // put to cache
-            Site.AddToCache(cacheKey, result, cacheDependencyPath);
+            Site.AddToCache(cacheKey, result, new string[] { cacheDependencyPath }, null);
 
             return result;
         }

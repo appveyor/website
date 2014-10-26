@@ -1,4 +1,5 @@
 ﻿using DotLiquid;
+using MarkdownSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,8 @@ namespace NJekyll.Code.Data
 {
     public class Page : ContentFile
     {
+        string _renderedContent;
+
         internal string Collection { get; private set; }
         public string Permalink { get; private set; }
         public string Layout { get; set; } // layout file name without extension and directory
@@ -31,8 +34,17 @@ namespace NJekyll.Code.Data
         {
             get
             {
-                var _content = base.Content;
-                return _content;
+                if(_renderedContent == null)
+                {
+                    _renderedContent = Site.RenderContent(this, base.Content);
+
+                    // convert to HTML if required
+                    if (ContentFormat == ContentFormat.Markdown)
+                    {
+                        _renderedContent = new Markdown().Transform(_renderedContent);
+                    }
+                }
+                return _renderedContent;
             }
         }
 

@@ -1,5 +1,6 @@
 ﻿using DotLiquid;
 using DotLiquid.FileSystems;
+using MarkdownSharp;
 using NJekyll.Code.Data;
 using System;
 using System.Collections.Concurrent;
@@ -8,12 +9,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web;
+using System.Web.Optimization;
 using YamlDotNet.RepresentationModel;
 
 namespace NJekyll.Code
 {
     public class Site
     {
+        public const string SITE_CONTENT_VALID_CACHE_KEY = "SITE_CONTENT_VALID_CACHE_KEY";
         public const string SITE_VROOT = "~/site";
         public const string SITE_CONFIG_FILENAME = "_config.yml";
         public const string DATA_FOLDER = "_data";
@@ -23,6 +26,7 @@ namespace NJekyll.Code
         static Dictionary<string, object> _site;
         static Dictionary<string, Page> _pages = new Dictionary<string, Page>(StringComparer.OrdinalIgnoreCase); // key - Permalink
         static Dictionary<string, Layout> _layouts = new Dictionary<string, Layout>(StringComparer.OrdinalIgnoreCase); // key - name
+        static Dictionary<string, List<Page>> _collections = new Dictionary<string, List<Page>>(StringComparer.OrdinalIgnoreCase);
         static Dictionary<string, string> cacheDependencyDirectories = new Dictionary<string, string>();
 
         static string _siteRoot = null;
@@ -35,23 +39,27 @@ namespace NJekyll.Code
             return (redirects != null && redirects.ContainsKey(pageUrl)) ? (string)redirects[pageUrl] : null;
         }
 
-        private static void EnsureSiteLoaded()
+        public static void EnsureSiteLoaded()
         {
-            string cacheKey = "SiteContentIsActual";
-            var contentIsActual = GetFromCache(cacheKey);
+            var contentIsActual = GetFromCache(SITE_CONTENT_VALID_CACHE_KEY);
             if (contentIsActual == null)
             {
                 LoadSite();
-                AddToCache(cacheKey, DateTime.Now.ToString(), cacheDependencyDirectories.Keys.ToArray());
+                AddToCache(SITE_CONTENT_VALID_CACHE_KEY, DateTime.Now.ToString(), cacheDependencyDirectories.Keys.ToArray(), null);
             }
         }
 
-        public static void LoadSite()
+        private static void LoadSite()
         {
-            cacheDependencyDirectories.Clear();
-
             _siteRoot = HttpContext.Current.Server.MapPath(SITE_VROOT).TrimEnd('\\'); // e.g. C:\website
-            
+
+            cacheDependencyDirectories.Clear();
+            cacheDependencyDirectories[GetPath(INCLUDES_FOLDER)] = GetPath(INCLUDES_FOLDER);
+
+            _pages.Clear();
+            _layouts.Clear();
+            _collections.Clear();
+
             // load _config.yml
             _site = LoadSiteConfig();
 
@@ -63,6 +71,12 @@ namespace NJekyll.Code
 
             // all pages
             _site["pages"] = _pages.Values.ToList();
+
+            // collections
+            foreach(var collection in _collections)
+            {
+                _site[collection.Key] = collection.Value.OrderByDescending(p => p.Date);
+            }
 
             // group pages by categories
             var categories = from page in _pages.Values
@@ -88,37 +102,79 @@ namespace NJekyll.Code
             }
             _site["tags"] = tagsHash;
 
-
-
-            var rnd = RenderPage("f");
+            // add resource bundles
+            BundleTable.EnableOptimizations = _site.ContainsKey("enable_optimizations") ? (bool)_site["enable_optimizations"] : false;
+            _site["bundles"] = new Dictionary<string, object>
+            {
+                { "css", Styles.Render("~/site-css").ToString() },
+                { "js", Scripts.Render("~/site-js").ToString() }
+            };
         }
 
-        public static string RenderPage(string url)
+        public static string RenderContent(Page page, string content, Dictionary<string, object> parameters = null)
         {
-            var renderContext = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
-            renderContext["site"] = _site;
+            var context = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
+            context["site"] = _site;
+            context["page"] = page;
+
+            if(parameters != null)
+            {
+                foreach(var parameter in parameters)
+                {
+                    context[parameter.Key] = parameter.Value;
+                }
+            }
 
             Template.FileSystem = new IncludesFolder(GetPath("_includes"));
-            Template template = Template.Parse(@"
-{% for item in site.data.testimonials -%}
-  {{ item.customer }}
-    {% for link in item.links -%} {{ link }} {% endfor -%}
-{% endfor -%}
+            Template template = Template.Parse(content);
 
-title: {{site.page.title}}
-permalink: {{site.page.permalink}}
+            return template.Render(Hash.FromDictionary(context));
+        }
 
+        public static Page GetPage(string pageUrl)
+        {
+            EnsureSiteLoaded();
 
-content: {{site.page.content}}
+            return _pages.ContainsKey(pageUrl) ? _pages[pageUrl] : null;
+        }
 
-{% for kbPage in site.categories.kb -%}
-  kb page title: {{ kbPage.title }}
-{% endfor -%}
+        public static string RenderPage(Page page, string requestUrl)
+        {
+            EnsureSiteLoaded();
 
-{% include footer.html %}
-");
+            // look for rendered page in cache
+            string cacheKey = "page:" + requestUrl;
+            var content = (string)GetFromCache(cacheKey);
+            if (content != null)
+            {
+                return content;
+            }
 
-            return template.Render(Hash.FromDictionary(renderContext));
+            // get rendered page content
+            content = page.Content;
+
+            var layoutName = page.Layout;
+            while(layoutName != null)
+            {
+                // render layout
+                if(!_layouts.ContainsKey(layoutName))
+                {
+                    throw new Exception(String.Format("Error rendering page {0}. Layout {1} not found.", page.Url, layoutName));
+                }
+
+                var layout = _layouts[layoutName];
+                content = RenderContent(page, layout.Content, new Dictionary<string, object>
+                {
+                    { "content", content }
+                });
+
+                layoutName = layout.ParentLayout;
+            }
+
+            // add to cache
+            Site.AddToCache(cacheKey, content, new string[] { page.Path }, new string[] { SITE_CONTENT_VALID_CACHE_KEY });
+
+            return content;
         }
 
         private static Dictionary<string, object> LoadSiteConfig()
@@ -222,11 +278,11 @@ content: {{site.page.content}}
 
         public static void AddCollectionPage(Page page)
         {
-            var collection = _site.ContainsKey(page.Collection) ? _site[page.Collection] as List<Page> : null;
+            var collection = _collections.ContainsKey(page.Collection) ? _collections[page.Collection] as List<Page> : null;
             if(collection == null)
             {
                 collection = new List<Page>();
-                _site[page.Collection] = collection;
+                _collections[page.Collection] = collection;
             }
 
             collection.Add(page);
@@ -242,9 +298,9 @@ content: {{site.page.content}}
             return HttpContext.Current.Cache[key];
         }
 
-        public static void AddToCache(string key, object value, params string[] dependencyPaths)
+        public static void AddToCache(string key, object value, string[] dependencyPaths, string[] dependencyKeys)
         {
-            HttpContext.Current.Cache.Insert(key, value, new System.Web.Caching.CacheDependency(dependencyPaths));
+            HttpContext.Current.Cache.Insert(key, value, new System.Web.Caching.CacheDependency(dependencyPaths, dependencyKeys));
         }
 
         #region YAML
