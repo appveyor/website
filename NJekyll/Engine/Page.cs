@@ -6,12 +6,10 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Web;
 
-namespace NJekyll.Code.Data
+namespace NJekyll.Engine
 {
     public class Page : ContentFile
     {
-        string _renderedContent;
-
         internal string Collection { get; private set; }
         public string Permalink { get; private set; }
         public string Layout { get; set; } // layout file name without extension and directory
@@ -19,6 +17,8 @@ namespace NJekyll.Code.Data
         public DateTime Date { get; set; }
         public List<string> Categories { get; set; }
         public List<string> Tags { get; set; }
+        public Page Previous { get; set; }
+        public Page Next { get; set; }
 
         public string Id
         {
@@ -34,15 +34,12 @@ namespace NJekyll.Code.Data
         {
             get
             {
-                if(_renderedContent == null)
-                {
-                    _renderedContent = Site.RenderContent(this, base.Content);
+                var _renderedContent = Site.RenderContent(this, base.Content);
 
-                    // convert to HTML if required
-                    if (ContentFormat == ContentFormat.Markdown)
-                    {
-                        _renderedContent = new Markdown().Transform(_renderedContent);
-                    }
+                // convert to HTML if required
+                if (ContentFormat == ContentFormat.Markdown)
+                {
+                    _renderedContent = new Markdown().Transform(_renderedContent);
                 }
                 return _renderedContent;
             }

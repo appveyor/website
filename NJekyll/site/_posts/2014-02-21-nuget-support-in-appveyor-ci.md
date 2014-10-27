@@ -1,5 +1,5 @@
 ﻿---
-layout: default
+layout: post
 title: NuGet support in AppVeyor CI
 categories: kb
 ---

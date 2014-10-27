@@ -1,0 +1,14 @@
+﻿<!--
+layout: default
+-->
+<div>
+    {% if page.previous %}
+        <a href="{{page.previous.url}}">Previous</a>
+    {% endif %}
+
+    {% if page.next %}
+    <a href="{{page.next.url}}">Next</a>
+    {% endif %}
+    
+    {{content}}
+</div>

@@ -131,14 +131,16 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Code\Data\ContentFile.cs" />
-    <Compile Include="Code\Data\ContentFormat.cs" />
-    <Compile Include="Code\Data\DataFolder.cs" />
-    <Compile Include="Code\Data\CollectionMetadata.cs" />
-    <Compile Include="Code\Data\IncludesFolder.cs" />
-    <Compile Include="Code\Data\Layout.cs" />
-    <Compile Include="Code\Data\Page.cs" />
-    <Compile Include="Code\Site.cs" />
+    <Compile Include="Engine\ContentFile.cs" />
+    <Compile Include="Engine\ContentFormat.cs" />
+    <Compile Include="Engine\DataFolder.cs" />
+    <Compile Include="Engine\CollectionMetadata.cs" />
+    <Compile Include="Engine\Filters.cs" />
+    <Compile Include="Engine\IncludesFolder.cs" />
+    <Compile Include="Engine\Layout.cs" />
+    <Compile Include="Engine\Page.cs" />
+    <Compile Include="Engine\Paginator.cs" />
+    <Compile Include="Engine\Site.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -158,9 +160,11 @@
     <Content Include="site\index.html" />
     <Content Include="site\_includes\post_item.html" />
     <Content Include="site\_includes\footer.html" />
+    <Content Include="site\_layouts\post.html" />
     <Content Include="site\_layouts\docs.html" />
     <Content Include="site\_layouts\default.html" />
     <None Include="site\_posts\2014-02-19-appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment.md" />
+    <Content Include="site\_posts\2014-01-21-test-post.md" />
     <None Include="site\_posts\2014-02-21-nuget-support-in-appveyor-ci.md" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

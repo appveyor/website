@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Web;
 
-namespace NJekyll.Code.Data
+namespace NJekyll.Engine
 {
     public abstract class ContentFile : Drop
     {

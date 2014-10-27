@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 
-namespace NJekyll.Code.Data
+namespace NJekyll.Engine
 {
     public class Layout : ContentFile
     {

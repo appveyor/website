@@ -1,18 +1,18 @@
 ﻿using DotLiquid;
 using DotLiquid.FileSystems;
 using MarkdownSharp;
-using NJekyll.Code.Data;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Optimization;
 using YamlDotNet.RepresentationModel;
 
-namespace NJekyll.Code
+namespace NJekyll.Engine
 {
     public class Site
     {
@@ -75,7 +75,23 @@ namespace NJekyll.Code
             // collections
             foreach(var collection in _collections)
             {
-                _site[collection.Key] = collection.Value.OrderByDescending(p => p.Date);
+                var sortedCollection = collection.Value.OrderByDescending(p => p.Date).ToList();
+
+                // set Next and Previous
+                for (int i = 0; i < sortedCollection.Count; i++ )
+                {
+                    // Next
+                    if(i < sortedCollection.Count - 1)
+                    {
+                        sortedCollection[i].Next = sortedCollection[i + 1];
+                    }
+                    // Previous
+                    if (i > 0)
+                    {
+                        sortedCollection[i].Previous = sortedCollection[i - 1];
+                    }
+                }
+                _site[collection.Key] = sortedCollection;
             }
 
             // group pages by categories
@@ -113,9 +129,10 @@ namespace NJekyll.Code
 
         public static string RenderContent(Page page, string content, Dictionary<string, object> parameters = null)
         {
-            var context = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
+            var context = new Context();
             context["site"] = _site;
             context["page"] = page;
+            context.AddFilters(typeof(Filters));
 
             if(parameters != null)
             {
@@ -128,12 +145,21 @@ namespace NJekyll.Code
             Template.FileSystem = new IncludesFolder(GetPath("_includes"));
             Template template = Template.Parse(content);
 
-            return template.Render(Hash.FromDictionary(context));
+            return template.Render(new RenderParameters {
+                Context = context
+            });
         }
 
         public static Page GetPage(string pageUrl)
         {
             EnsureSiteLoaded();
+
+            // remove page information from URL
+            var match = Regex.Match(pageUrl, @".+(?<start>/page)/(?<page>\d+)/?$");
+            if (match.Success)
+            {
+                pageUrl = pageUrl.Substring(0, match.Groups["start"].Index);
+            }
 
             return _pages.ContainsKey(pageUrl) ? _pages[pageUrl] : null;
         }
