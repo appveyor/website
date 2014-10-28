@@ -17,7 +17,7 @@ namespace NJekyll.Engine
     public class Site
     {
         public const string SITE_CONTENT_VALID_CACHE_KEY = "SITE_CONTENT_VALID_CACHE_KEY";
-        public const string SITE_VROOT = "~/site";
+        public const string SITE_VROOT = "~/";
         public const string SITE_CONFIG_FILENAME = "_config.yml";
         public const string DATA_FOLDER = "_data";
         public const string INCLUDES_FOLDER = "_includes";

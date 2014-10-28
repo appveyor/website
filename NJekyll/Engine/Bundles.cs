@@ -9,10 +9,10 @@ namespace NJekyll.Engine
         public static void Register(BundleCollection bundles)
         {
             // JavaScript
-            bundles.Add(new ScriptBundle("~/site-js").IncludeDirectory("~/site/js", "*.js", true));
+            bundles.Add(new ScriptBundle("~/site-js").IncludeDirectory("~/js", "*.js", true));
 
             // CSS
-            bundles.Add(new StyleBundle("~/site-css").IncludeDirectory("~/site/css", "*.css", true));
+            bundles.Add(new StyleBundle("~/site-css").IncludeDirectory("~/css", "*.css", true));
         }
     }
 }
