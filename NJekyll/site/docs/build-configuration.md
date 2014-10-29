@@ -235,13 +235,13 @@ Every script could be authored either as a batch or PowerShell snippet.
 
 When you set **Cmd** script on the UI its body will be split into lines and executed as separate commands with an exit code check after each line. For example, consider the following "install" script:
 
-![install script cmd](/content/docs/images/install-script-cmd.png) 
+![install script cmd](/site/docs/images/install-script-cmd.png) 
 
 If exit code of the first command (`gem update --system`) is different from a 0 script execution will be terminated and entire build will return as failed.
 
 When **PowerShell** is selected the entire body is treated as a single script, so you can use control flow logic inside it. For example:
 
-![build script ps](/content/docs/images/build-script-ps.png)
+![build script ps](/site/docs/images/build-script-ps.png)
 
 PowerShell script is considered successful if it finishes without exception.
 

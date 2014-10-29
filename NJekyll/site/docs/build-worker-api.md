@@ -22,7 +22,7 @@ API URL is stored in `APPVEYOR_API_URL` environment variable and it is `localhos
 <a id="add-message"></a>
 ## Add message to build console
 
-![build messages](/content/docs/images/build-messages.png)
+![build messages](/site/docs/images/build-messages.png)
 
 ### PowerShell
 
@@ -128,7 +128,7 @@ Request body (JSON):
 <a id="add-tests"></a>
 ## Add tests to build console
 
-![build messages](/content/docs/images/build-tests.png)
+![build messages](/site/docs/images/build-tests.png)
 
 ### PowerShell
 
@@ -264,7 +264,7 @@ Request body (JSON):
 <a id="push-artifact"></a>
 ## Push artifact
 
-![build messages](/content/docs/images/build-artifacts.png)
+![build messages](/site/docs/images/build-artifacts.png)
 
 ### PowerShell
 
@@ -308,7 +308,7 @@ Then in PowerShell:
 <a id="update-build-details"></a>
 ## Update build details
 
-![build details](/content/docs/images/build-details.png)
+![build details](/site/docs/images/build-details.png)
 
 ### PowerShell
 

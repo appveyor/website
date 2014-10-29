@@ -92,11 +92,11 @@ Settings have format `<artifact_name>.<setting_name>` where `<artifact_name>` is
 
 For example, let the build has the following artifacts:
 
-![Artifacts](/content/docs/images/agent-deploy-artifacts.png)
+![Artifacts](/site/docs/images/agent-deploy-artifacts.png)
 
 In order for Deployment Agent to deploy that artifact as IIS web site **Provider settings** will be:
 
-![Artifacts](/content/docs/images/agent-provider-settings.png)
+![Artifacts](/site/docs/images/agent-provider-settings.png)
 
 
 
