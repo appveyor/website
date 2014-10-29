@@ -1,0 +1,1 @@
+xcopy %DEPLOYMENT_SOURCE%\site %DEPLOYMENT_TARGET%\site /Y /S
