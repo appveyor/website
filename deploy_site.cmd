@@ -1,1 +1,1 @@
-xcopy %DEPLOYMENT_SOURCE%\site %DEPLOYMENT_TARGET%\site /Y /S
+xcopy %DEPLOYMENT_SOURCE%\njekyll\site %DEPLOYMENT_TARGET%\site /Y /S
