@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
     <PublishDatabases>false</PublishDatabases>
     <FilesToIncludeForPublish>AllFilesInTheProject</FilesToIncludeForPublish>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -117,25 +118,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="site\css\bootstrap.css" />
-    <Content Include="site\css\bootstrap.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="site\css\Site.css" />
-    <Content Include="site\docs\index.html" />
-    <Content Include="site\blog\index.html" />
-    <None Include="site\about.md" />
-    <Content Include="site\js\bootstrap.js" />
-    <Content Include="site\js\bootstrap.min.js" />
-    <Content Include="site\index.html" />
-    <Content Include="site\_includes\post_item.html" />
-    <Content Include="site\_includes\footer.html" />
-    <Content Include="site\_layouts\post.html" />
-    <Content Include="site\_layouts\docs.html" />
-    <Content Include="site\_layouts\default.html" />
-    <None Include="site\_posts\2014-02-19-appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment.md" />
-    <Content Include="site\_posts\2014-01-21-test-post.md" />
-    <None Include="site\_posts\2014-02-21-nuget-support-in-appveyor-ci.md" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -145,29 +129,10 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="site\_releases\2-1-136-new-ui.md" />
-    <Content Include="site\_releases\2-1-137-unit-testing-improvements.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="site\img\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="site\_data\testimonials.yml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="site\_data\acme_inc\members.yml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="site\_data\duwamish\members.yml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="site\_config.yml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="site\docs\deployment.md" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
