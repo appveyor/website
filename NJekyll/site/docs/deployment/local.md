@@ -1,4 +1,5 @@
 ---
+layout: docs
 title: Integration testing with Local deployment
 ---
 

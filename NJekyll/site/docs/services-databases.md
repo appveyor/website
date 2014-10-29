@@ -1,4 +1,5 @@
 ---
+layout: docs
 title: Services and databases
 ---
 

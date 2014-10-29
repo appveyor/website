@@ -1,4 +1,5 @@
 ---
+layout: docs
 title: Deploying to remote servers with AppVeyor Deployment Agent
 ---
 

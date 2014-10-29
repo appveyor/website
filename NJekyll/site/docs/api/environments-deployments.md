@@ -1,4 +1,5 @@
 ---
+layout: docs
 title: Environments and deployments API
 ---
 

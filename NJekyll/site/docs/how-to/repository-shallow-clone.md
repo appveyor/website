@@ -1,4 +1,5 @@
 ---
+layout: docs
 title: Shallow clone of repositories 
 ---
 

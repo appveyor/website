@@ -1,4 +1,5 @@
 ﻿---
+layout: one-column
 title: About us
 ---
 

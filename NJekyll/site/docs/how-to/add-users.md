@@ -1,4 +1,5 @@
 ﻿---
+layout: docs
 title: Adding users to your account
 ---
 

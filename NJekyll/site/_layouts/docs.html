@@ -1,8 +1,13 @@
 ﻿<!--
 layout: default
 -->
-<div>
-    <p>Docs layout</p>
-
-    {{content}}
+<div class="row">
+    <div class="sidebar columns medium-3">
+        <div class="sidebar-content">
+            {% include docs_sidebar.html %}
+        </div>
+    </div>
+    <div class="columns medium-9">
+        {{content}}
+    </div>
 </div>

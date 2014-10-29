@@ -1,4 +1,5 @@
 ---
+layout: docs
 title: Deploying using Web Deploy
 ---
 

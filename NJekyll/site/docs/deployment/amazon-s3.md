@@ -1,4 +1,5 @@
 ---
+layout: docs
 title: Deploying to Amazon S3 bucket
 ---
 
