@@ -1,0 +1,57 @@
+﻿.pricing-table {
+    border-color: transparent;
+    border-radius: 0 0 2px 2px;
+    background-color: #fbfbfb;
+}
+
+.pricing-table .price {
+    font-family: 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin-bottom: 0.7rem;
+}
+
+.pricing-table .price span {
+    font-size: 1rem;
+}
+
+.pricing-table .title {
+    color: #fff;
+    font-family: 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 1.0rem;
+    border-radius: 2px 2px 0 0;
+}
+
+.pricing-table.free .title {
+    background-color: #bbb;
+}
+
+.pricing-table.professional .title {
+    background-color: #3EB33E;
+    
+}
+
+.pricing-table.premium {
+    background-color: #f7f7f7;
+}
+
+.pricing-table.premium .title {
+    background-color: #FF6633;
+}
+
+.pricing-table.enterprise .title {
+    background-color: #555;
+}
+
+.pricing-table .cta-button .button {
+    padding: 0.7rem 1rem;
+}
+
+.pricing-table .bullet-item {
+    border-bottom: none;
+    padding: 0.7rem;
+}
+
+.pricing-table .bullet-item,
+.pricing-table .cta-button {
+    background-color: inherit;
+}

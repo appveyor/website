@@ -1,0 +1,198 @@
+﻿
+<!--
+title: AppVeyor 2.0 Beta
+-->
+
+
+<h1>The all new AppVeyor CI</h1>
+
+<p>
+    After 4 months of intensive development we are excited to announce a public beta of AppVeyor 2.0!
+    This new release provides you with whole new experience: build environment that is under your full control, large projects support with build matrix and parallel testing,
+    scriptless deployment and release management!
+</p>
+
+<p>
+    You could see those great features in flagman continuous integration services for Linux such as Travis CI, but not for Windows up until now.
+    Today, I'm really proud to say that AppVeyor is the only CI solution for Windows that offers dedicated build machines with admin access,
+    build matrix with jobs parallelization and integrated deployment.
+</p>
+
+<p class="action-buttons">
+    <a href="/pricing" class="big-button">Get started now</a>
+</p>
+
+<p style="text-align: center;">
+    <img src="http://www.appveyor.com/content/newsletters/02-18-2014/images/appveyor-screenshot-wireframe.png" style="width:100%;max-width:759px;" />
+</p>
+
+
+<!-- At a glance -->
+<h2>What’s new at a glance</h2>
+<ul>
+    <li><a href="#vms">Builds run on dedicated Virtual Machines</a></li>
+    <li><a href="#nuget">NuGet hosting</a></li>
+    <li><a href="#build-matrix">Build matrix</a></li>
+    <li><a href="#parallel-testing">Parallel testing</a></li>
+    <li><a href="#deployment">Deployment to multiple environments</a></li>
+    <li><a href="#yaml">Build configuration in YAML</a></li>
+    <li><a href="#ui">Responsive UI</a></li>
+</ul>
+
+<!-- Dedicated build machines -->
+<h2 id ="vms">Builds run on dedicated Virtual Machines</h2>
+<p>
+    In AppVeyor 2.0 we are moving away from shared build servers to dedicated VMs. Every build job runs on pristine VM with admin rights!
+    This was probably the main reason for kicking-off this release.
+</p>
+
+<img src="http://www.appveyor.com/content/newsletters/02-18-2014/images/Windows_Azure_logo.png" style="width:100%;max-width:286px;float:right;" />
+
+<ul>
+    <li>With dedicated build VM you get guaranteed performance (CPU and I/O).</li>
+    <li>Increased security with confidence that your code downloaded to isolated environment that is immediately decommissioned after build completes.</li>
+    <li>Having admin rights on build server gives you unlimited possibilities: from installing additional software with Chocolatey or Web PI
+        for supporting your build and headless browser testing to deploying to the same build server for integration testing and BVTs.</li>
+    <li>Being hosted on Windows Azure AppVeyor can offer you build infrastructure with unlimited scale.</li>
+</ul>
+
+
+<!-- NuGet -->
+<h2 id="nuget">NuGet hosting</h2>
+
+<p>AppVeyor 2.0 has built-in hosting for private and public NuGet feeds.</p>
+
+<img src="http://www.appveyor.com/content/newsletters/02-18-2014/images/nuget-logo.png" style="width:100%;max-width:120px;float:left;" />
+
+<p>Every account comes with a private password-protected NuGet feed aggregating packages from all projects and enabling publishing of your custom packages.</p>
+<p>Projects have separate NuGet feeds with all NuGet packages pushed as artifacts.</p>
+
+<p style="clear:both;"><a href="http://www.appveyor.com/docs/nuget">Read more about NuGet support</a></p>
+
+
+
+<!-- Build matrix -->
+<h2 id="build-matrix">Build matrix</h2>
+
+<p style="text-align: center;">
+    <img src="http://www.appveyor.com/content/newsletters/02-18-2014/images/build-matrix.png" style="width:100%;max-width:395px;float:right;" />
+</p>
+
+<p>
+    Easily build/test for multiple configurations. Specify which operating systems, build configurations and platforms you would like to include into build matrix
+    and AppVeyor will start a build with multiple jobs for all combinations.
+</p>
+
+<p>Build matrix supports the following dimensions:</p>
+<ul>
+    <li>Operating system</li>
+    <li>Environment variables</li>
+    <li>Platform, e.g. x86, x64, AnyCPU</li>
+    <li>Configuration, e.g. Build, Debug</li>
+    <li>Test categories</li>
+</ul>
+
+<div style="clear:both;"></div>
+
+<!-- Parallel testing with real-time reporting -->
+<h2 id="parallel-testing">Parallel testing</h2>
+
+<p style="text-align: center;">
+    <img src="http://www.appveyor.com/content/newsletters/02-18-2014/images/parallel-testing.png" style="width:100%;max-width:313px;float:left;" />
+</p>
+
+<p>
+    Large projects can contain hundreds and thousands of tests that could run for hours.
+    AppVeyor 2.0 allows to split your tests into groups by categories, assemblies or custom criteria and run them as build jobs in parallel thus drastically reducing overall build time.
+</p>
+
+<p style="clear:both;"><a href="http://www.appveyor.com/docs/parallel-testing">Read more about parallel testing</a></p>
+
+
+
+<!-- Deployment -->
+<h2 id="deployment">Deployment</h2>
+
+<p style="text-align: center;">
+    <img src="http://www.appveyor.com/content/newsletters/02-18-2014/images/deploy.png" style="width:100%;max-width:133px;float:right;" />
+</p>
+
+<p>
+    AppVeyor 2.0 has scriptless, repetitive one-click deployment to multiple environments!
+    Deploy as part of the build or promote releases later - manually or through API.
+</p>
+<p>
+    Supported deployment providers:
+    <a href="http://www.appveyor.com/docs/deployment/web-deploy">Web Deploy</a>,
+    <a href="http://www.appveyor.com/docs/deployment/ftp">FTP</a>,
+    <a href="http://www.appveyor.com/docs/deployment/amazon-s3">Amazon S3</a>,
+    <a href="http://www.appveyor.com/docs/deployment/azure-blob">Azure blob</a>,
+    <a href="http://www.appveyor.com/docs/deployment/azure-cloud-service">Azure Cloud Services</a>,
+    <a href="http://www.appveyor.com/docs/deployment/nuget">NuGet</a>,
+    <a href="http://www.appveyor.com/docs/deployment/agent">Deployment Agent</a>,
+    <a href="http://www.appveyor.com/docs/deployment/local">Local</a> (for integration testing) and
+    Script.
+</p>
+
+<p>
+    <a href="http://www.appveyor.com/docs/deployment">Read more about deployment</a>
+</p>
+
+
+<!-- Fine-grained control over build configuration -->
+<h2 id="yaml">Fine-grained control over build configuration</h2>
+   
+<img src="http://www.appveyor.com/content/newsletters/02-18-2014/images/yaml.png" style="width:100%;max-width:203px;float:left;" />
+
+<p>
+    Great Windows software must provide user interface for any function it has.
+    AppVeyor 2.0 follows this tradition and further extends project settings, so you can control build environment and inject custom script logic on any stage of build pipeline
+    without ever touching your repository!
+</p>
+<p>
+    For command-line gurus or those coming from Linux we added fancy YAML configuration support! Add <b>appveyor.yml</b> with project configuration into root of your repository
+    and next time you fork the repo just add a new project in AppVeyor.
+</p>
+
+<p>
+    <a href="http://www.appveyor.com/docs/build-configuration">Read more about build configuration</a>
+</p>
+
+<div style="clear:both;"></div>
+
+<!-- All new refreshed, responsive and real-time UI -->
+<a></a>
+<h2 id="ui">All new refreshed, responsive and real-time UI</h2>
+    
+<p>AppVeyor 2.0 has completely re-designed UI to get results faster and on the go!</p>
+
+<p>AngularJS, SignalrR and Foundation helped us to build great experience we're really proud of:</p>
+<ul>
+    <li>Adaptive layout and improved navigation.</li>
+    <li>Real-time build console.</li>
+    <li>Real-time reporting of MSBuild errors and warnings.</li>
+    <li>Real-time reporting of test results (MSTest, NUnit and xUnit).</li>
+    <li>Optimized for mobile screens.</li>
+</ul>
+
+
+<!-- Try beta now -->
+<h2>Try beta now!</h2>
+
+<p class="bottom-action-buttons">
+    <a href="/pricing" class="big-button">Get started now</a>
+</p>
+
+<p>* Free plan with support of public repositories only. <a href="mailto:team@appveyor.com">Let us know</a> if you need private repositories support or want to play with parallel testing and we'll be happy to enable them for your account.</p>
+
+
+<!-- Documentation -->
+<h2>Documentation</h2>
+
+<p>
+    <a href="http://www.appveyor.com/docs">http://www.appveyor.com/docs</a>
+</p>
+
+<p>
+    Enjoy the beta and let us know if you have any questions or suggestions. We are looking forward to your feedback!
+</p>

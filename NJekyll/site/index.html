@@ -1,5 +1,176 @@
 ﻿<!--
+title: Continuous Integration and Deployment service for Windows developers
 layout: default
-title: This is a home page
 -->
-<h1>Hello, world!</h1>
+
+<style>
+    html {
+        background: #C1CBC9;
+    }
+</style>
+
+<div class="home-banner">
+
+    <div class="row">
+        <div class="columns small-12">
+            <h1>Continuous Integration for busy developers</h1>
+            <h2>
+                <!--Continuous Integration service for Windows developers that securely builds and tests code in parallel<br />
+                and then deploys successful bits to on-premise or cloud environments.-->
+                AppVeyor automates building, testing and deployment of .NET applications <br />helping your team to focus on delivering great apps.
+            </h2>
+            <div class="buttons">
+                <a href="/pricing" class="big-button get-started">Get started now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="background:#fff;">
+
+    <div class="features">
+
+        <div class="row">
+            <div class="columns small-12">
+                <h2>Features and benefits</h2>
+                <!--<h3>
+                    AppVeyor automates building, testing and deployment of .NET applications helping your team to focus on delivering great apps.
+                </h3>-->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Row 1 -->
+    <div class="row">
+        <div class="medium-4 columns">
+            <div class="feature yaml-configuration">
+                <h3>YAML configuration</h3>
+                <p>
+                    Build configuration in a few lines of YAML, stored along with your project sources, for specific branch, versioned!
+                    Continuous Integration process becomes transparent to the entire team, not being locked to a particular person.
+                    <a href="/docs/build-configuration" target="_blank">Read more</a>
+                </p>
+            </div>
+        </div>
+        <div class="medium-4 columns">
+            <div class="feature build-with-confidence">
+                <h3>Build with confidence</h3>
+                <p>
+                    Every build job runs on a pristine virtual machine with administrator privileges - no build cleaup logic necessary.
+                    Be confident that your code is downloaded to an isolated environment with guaranteed performance (CPU and I/O) that is immediately decommissioned after the build.
+                </p>
+            </div>
+        </div>
+        <div class="medium-4 columns">
+            <div class="feature scalable-build-environment">
+                <h3>Scalable build environment</h3>
+                <p>
+                    Backed by Windows Azure platform AppVeyor has virtually unlimited capacity.
+                    Our build infrastructure is never oversold and your builds start immediately.
+                    If you need concurrent jobs beyond our <a href="/pricing">standard plans</a> or terrabytes of storage
+                    <a href="mailto:team@appveyor.com">contact us for a custom plan</a> tailored to your needs.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+        <div class="medium-4 columns">
+            <div class="feature nuget-feeds">
+                <h3>NuGet feeds</h3>
+                <p>
+                    AppVeyor has built-in NuGet feeds with project artifacts.
+                    Every account comes with a private password-protected NuGet feed which aggregates packages from all projects and enables publishing of your custom packages.
+                    Projects have separate NuGet feeds with all NuGet packages pushed as artifacts.
+                    <a href="/docs/nuget" target="_blank">Read more</a>
+                </p>
+            </div>
+        </div>
+        <div class="medium-4 columns">
+            <div class="feature artifacts-management">
+                <h3>Artifacts management</h3>
+                <p>
+                    Build artifacts are stored in a highly-durable Geo-redundant cloud storage and always available to your team through AppVeyor web interface or API.
+                    Easily <a href="/docs/packaging-artifacts" target="_blank">control the artifacts</a> that must be collected during the build
+                    or rely on <a href="/docs/build-phase">automatic packaging</a> of well-known Visual Studio project types such as Web Application and Azure Cloud Service.
+                </p>
+            </div>
+        </div>
+        <div class="medium-4 columns">
+            <div class="feature continuous-deployment">
+                <h3>Continuous Deployment</h3>
+                <p>
+                    Scriptless, repetitive, one-click deployment of build artifacts to multiple environments!
+                    Deploy as part of the build or promote releases later - manually or through API.
+                    Use built-in providers for
+                    <a href="/docs/deployment/web-deploy" target="_blank">Web Deploy</a>,
+                    <a href="/docs/deployment/ftp" target="_blank">FTP</a>,
+                    <a href="/docs/deployment/amazon-s3" target="_blank">Amazon S3</a>,
+                    <a href="/docs/deployment/azure-blob" target="_blank">Azure blob</a>,
+                    <a href="/docs/deployment/azure-cloud-service" target="_blank">Azure Cloud Services</a>,
+                    <a href="/docs/deployment/nuget" target="_blank">NuGet</a>,
+                    <a href="/docs/deployment/agent" target="_blank">Deployment Agent</a> and
+                    <a href="/docs/deployment/local" target="_blank">Local deployment</a>
+                    or call custom script.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row">
+        <div class="medium-4 columns">
+            <div class="feature parallel-testing">
+                <h3>Parallel testing</h3>
+                <p>
+                    Get results faster for large projects. AppVeyor can drastically reduce overall build time by allowing you to split tests into groups by categories,
+                    assemblies or custom criteria and run them as build jobs in parallel. Visual Studio tests, NUnit, xUnit and custom runners are supported.
+                    <a href="/docs/parallel-testing" target="_blank">Read more</a>
+                </p>
+            </div>
+        </div>
+        <div class="medium-4 columns">
+            <div class="feature works-for-any-project">
+                <h3>Works for any project</h3>
+                <p>
+                    Develop Visual Studio apps: ASP.NET; Web API and WPF apps; Windows and Azure cloud services; WiX.
+                    Built for Windows developers, AppVeyor is not limited to C#, VB.NET or F#, but works with your favorite build tools and frameworks:
+                    MSBuild, PSake, CMake, rake, Node.js, Grunt, Go and more.
+                </p>
+            </div>
+        </div>
+        <div class="medium-4 columns">
+            <div class="feature integration-testing">
+                <h3>Integration testing</h3>
+                <p>
+                    Easily make integration tests and BVTs a part of your development process. Install apps, services, web sites; put libraries into GAC;
+                    create SQL databases; run PowerShell scripts - all without the hassle of cleanup logic.
+                    Build servers have <a href="/docs/services-databases" target="_blank">IIS and SQL Server installed</a>
+                    and you can <a href="/docs/build-configuration#installing-software" target="_blank">install custom tools</a> using Chocolatey, Web PI, npm or MSI.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="columns small-12">
+
+            <p class="bottom-action-buttons">
+                <a href="/pricing" class="big-button get-started">Start your free trial now</a>
+            </p>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="columns small-12">
+
+            <div class="testimonials">
+                %TESTIMONIALS%
+            </div>
+
+        </div>
+    </div>
+</div>

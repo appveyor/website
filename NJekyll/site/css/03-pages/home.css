@@ -1,0 +1,146 @@
+﻿/* banner */
+.home-banner {
+    text-align: center;
+    height: 590px;
+    background: #D1D4C7 url(/site/images/appveyor-screenshot.png) no-repeat center bottom;
+}
+
+.home-banner h1 {
+    font-family: "Source Sans Pro", "Open Sans", 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 2.7rem;
+    color: #444;
+    margin: 1.5rem 0 0;
+}
+
+.home-banner h2 {
+    font-family: 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.home-banner buttons {
+    text-align: center;
+}
+
+
+.big-button.get-started {
+    line-height: 50px;
+    font-size: 1rem;
+    background: #ff6600;
+    transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+}
+
+.big-button.get-started:hover,
+.big-button.get-started:active
+{
+    background: #ff7711;
+}
+
+/* Small screens only*/
+@media only screen and (max-width: 40em) {
+    .home-banner {
+        height: auto;
+        background: inherit;
+    }
+    .home-banner h1 {
+        font-size: 2.4rem;
+    }
+    .home-banner h2 {
+        font-size: 1.1rem;
+        color: #000;
+    }
+}
+
+
+/* Features and benefits */
+.features {
+    /*background-color: #E9EEF2;*/
+}
+
+.features h2 {
+    margin: 1rem 0;
+    text-align: center;
+    font-family: "Segoe UI Light", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #444;
+}
+
+.features h3 {
+    text-align: center;
+    font-family: 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.feature {
+    margin-top: 1.5rem;
+    padding-top: 70px;
+}
+
+.feature h3 {
+    text-align: center;
+    font-family: "Segoe UI Semibold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #333;
+}
+
+.feature p {
+    font-size: 0.8rem;
+}
+
+.feature.yaml-configuration {
+    background: transparent url("/site/images/home/yaml-configuration.png") no-repeat 50% 0;
+    background-size: 71px 71px;
+}
+
+.feature.build-with-confidence {
+    background: transparent url("/site/images/home/build-with-confidence.png") no-repeat 50% 0;
+    background-size: 71px 71px;
+}
+
+.feature.works-for-any-project {
+    background: transparent url("/site/images/home/works-for-any-project.png") no-repeat 50% 0;
+    background-size: 71px 71px;
+}
+
+.feature.nuget-feeds {
+    background: transparent url("/site/images/home/nuget-feeds.png") no-repeat 50% 0;
+    background-size: 71px 71px;
+}
+
+.feature.artifacts-management {
+    background: transparent url("/site/images/home/artifacts-management.png") no-repeat 50% 0;
+    background-size: 71px 71px;
+}
+
+.feature.continuous-deployment {
+    background: transparent url("/site/images/home/continuous-deployment.png") no-repeat 50% 0;
+    background-size: 71px 71px;
+}
+
+.feature.parallel-testing {
+    background: transparent url("/site/images/home/parallel-testing.png") no-repeat 50% 0;
+    background-size: 71px 71px;
+}
+
+.feature.integration-testing {
+    background: transparent url("/site/images/home/integration-testing.png") no-repeat 50% 0;
+    background-size: 71px 71px;
+}
+
+.feature.scalable-build-environment {
+    background: transparent url("/site/images/home/scalable-build-environment.png") no-repeat 50% 0;
+    background-size: 71px 71px;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+}

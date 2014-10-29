@@ -1,0 +1,20 @@
+﻿table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid #ccc;
+}
+
+td, th {
+    padding: 0.5rem;
+}
+
+th {
+    background-color: #f5f5f5;
+}
+
+table.centered td,
+table.centered th {
+    text-align: center;
+}
