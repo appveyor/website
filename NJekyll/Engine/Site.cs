@@ -17,7 +17,7 @@ namespace NJekyll.Engine
     public class Site
     {
         public const string SITE_CONTENT_VALID_CACHE_KEY = "SITE_CONTENT_VALID_CACHE_KEY";
-        public const string SITE_VROOT = "~/";
+        public const string SITE_VROOT = "~/site";
         public const string SITE_CONFIG_FILENAME = "_config.yml";
         public const string DATA_FOLDER = "_data";
         public const string INCLUDES_FOLDER = "_includes";
@@ -54,7 +54,6 @@ namespace NJekyll.Engine
             _siteRoot = HttpContext.Current.Server.MapPath(SITE_VROOT).TrimEnd('\\'); // e.g. C:\website
 
             cacheDependencyDirectories.Clear();
-            cacheDependencyDirectories[GetPath(INCLUDES_FOLDER)] = GetPath(INCLUDES_FOLDER);
 
             _pages.Clear();
             _layouts.Clear();
@@ -237,9 +236,10 @@ namespace NJekyll.Engine
             foreach(var fileInfo in new DirectoryInfo(directoryPath).GetFileSystemInfos())
             {
                 string virtualPath = (String.IsNullOrEmpty(path) ? "" : path + "\\") + fileInfo.Name;
-                if (virtualPath.StartsWith(INCLUDES_FOLDER, StringComparison.OrdinalIgnoreCase))
+                if (virtualPath.StartsWith(DATA_FOLDER, StringComparison.OrdinalIgnoreCase) ||
+                    virtualPath.StartsWith(INCLUDES_FOLDER, StringComparison.OrdinalIgnoreCase))
                 {
-                    // ignore _includes folder
+                    cacheDependencyDirectories[directoryPath] = directoryPath;
                     continue;
                 }
                 else if(fileInfo is DirectoryInfo)
