@@ -1,2 +1,2 @@
 [config]
-command = deploy.cmd
+project=NJekyll\NJekyll.csproj
