@@ -2,6 +2,8 @@
   posts:
     permalink: /blog/:year/:month/:day/:title
     output: true
+  testimonials:
+    output: false
 
 google_analytics_id: UA-32029905-1
 

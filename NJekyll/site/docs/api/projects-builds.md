@@ -18,9 +18,10 @@ title: Projects and builds API
 
 # Builds
 
-* [Start build](#start-build)
+* [Start build of branch most recent commit](#start-build-last-commit)
+* [Start build of specific branch commit](#start-build-commit)
+* [Start build of Pull Request (GitHub only)](#start-build-pr)
 * [Cancel build](#cancel-build)
-
 
 <a id="get-projects"></a>
 ## Get projects
@@ -797,8 +798,8 @@ Request:
 Response: 204
 
 
-<a id="start-build"></a>
-### Start build
+<a id="start-build-last-commit"></a>
+### Start build of branch most recent commit
 
 Request:
 
@@ -809,7 +810,7 @@ Request body:
 	{
 		accountName: 'your-account-name',
 		projectSlug: 'project-slug-from-url',
-		branch: 'master',                          # optional branch name to start build for
+		branch: 'master',
         environmentVariables: {
            my_var: 'value',
            another_var: 'another value'
@@ -838,6 +839,37 @@ Response:
 	   ],
 	   "status":"queued",
 	   "created":"2014-08-16T00:40:38.1703914+00:00"
+	}
+
+<a id="start-build-commit"></a>
+### Start build of specific branch commit
+
+Request:
+
+    POST /api/builds
+
+Request body:
+
+	{
+		accountName: 'your-account-name',
+		projectSlug: 'project-slug-from-url',
+		branch: 'develop',
+        commitId: '3e9d9468'
+	}
+
+<a id="start-build-pr"></a>
+### Start build of Pull Request (GitHub only)
+
+Request:
+
+    POST /api/builds
+
+Request body:
+
+	{
+		accountName: 'your-account-name',
+		projectSlug: 'project-slug-from-url',
+		pullRequestId: 3
 	}
 
 <a id="cancel-build"></a>

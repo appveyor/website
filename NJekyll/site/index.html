@@ -1,6 +1,7 @@
 ﻿<!--
 title: Continuous Integration and Deployment service for Windows developers
 layout: default
+no_cache: true
 -->
 
 <style>
@@ -168,7 +169,8 @@ layout: default
         <div class="columns small-12">
 
             <div class="testimonials">
-                %TESTIMONIALS%
+                {% assign testimonial = site.testimonials | random_element %}
+                {{ testimonial.content }}
             </div>
 
         </div>

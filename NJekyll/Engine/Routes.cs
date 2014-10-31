@@ -31,7 +31,7 @@ namespace NJekyll.Engine
                 else
                 {
                     var page = Site.GetPage(pageUrl);
-                    if (page == null)
+                    if (page == null || !page.Published)
                     {
                         // 404
                         response.StatusCode = 404;

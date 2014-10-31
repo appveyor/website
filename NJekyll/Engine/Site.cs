@@ -197,7 +197,10 @@ namespace NJekyll.Engine
             }
 
             // add to cache
-            Site.AddToCache(cacheKey, content, new string[] { page.Path }, new string[] { SITE_CONTENT_VALID_CACHE_KEY });
+            if(!page.NoCache)
+            {
+                Site.AddToCache(cacheKey, content, new string[] { page.Path }, new string[] { SITE_CONTENT_VALID_CACHE_KEY });
+            }
 
             return content;
         }
