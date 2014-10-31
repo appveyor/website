@@ -1,4 +1,7 @@
-﻿Dear customer,
+﻿---
+title: AppVeyor scheduled upgrade to v2.0
+---
+Dear customer,
 
 We want to notify you of an upcoming AppVeyor upgrade to version 2.0.
 The update will occur on **Friday, March 7 at 10:00 am PST** (March 7 at 6:00 pm UTC).
