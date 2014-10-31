@@ -166,7 +166,7 @@
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
     <ItemGroup>
-      <Content Include="site\**\*" />
+      <Content Include="site\*.html" />
     </ItemGroup>
   </Target>
   <Target Name="AfterBuild">
