@@ -29,7 +29,7 @@ Projects history migration takes about 40 minutes and during that time you will 
 seeing history gradually appearing under your projects.
 
 We hope you will like AppVeyor 2.0! In case you missed our last newsletter announcing
-it you can read what’s new on this page: [http://www.appveyor.com/beta](http://www.appveyor.com/beta)
+it you can read what’s new on this page: [{{site.url}}/beta]({{site.url}}/beta)
 
 We apologize in advance for any inconveniences caused by this update.
 Please let us know if you have any questions or concerns.

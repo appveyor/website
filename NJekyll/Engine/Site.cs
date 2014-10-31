@@ -62,6 +62,9 @@ namespace NJekyll.Engine
             // load _config.yml
             _site = LoadSiteConfig();
 
+            // site URL
+            _site["url"] = HttpContext.Current.Request.Url.GetComponents(UriComponents.SchemeAndServer, UriFormat.Unescaped);
+
             // load site data
             _site["data"] = new DataFolder(GetPath(DATA_FOLDER));
 

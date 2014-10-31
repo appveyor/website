@@ -28,7 +28,7 @@ Application can be automatically deployed during the build to staging environmen
 
 During “MSBuild” phase AppVeyor automatically detects Web Application projects in the solution and publish them as Web Deploy packages to build artifacts:
 
-![project-settings](/content/docs/deployment/images/web-deploy/project-settings.png)
+![project-settings](/site/docs/deployment/images/web-deploy/project-settings.png)
 
 > Here you may also set required configuration to choose proper web.config transformation.
 
@@ -87,7 +87,7 @@ See  [Configuring Deployment Properties for a Target Environment](http://www.asp
 
 Open website dashboard in Azure Management Portal and download *publish profile*:
 
-![publish-profile](/content/docs/deployment/images/web-deploy/waws-publish-profile.png) 
+![publish-profile](/site/docs/deployment/images/web-deploy/waws-publish-profile.png) 
 
 Specify the following deployment settings in AppVeyor:
 
@@ -99,7 +99,7 @@ Specify the following deployment settings in AppVeyor:
 
 Replace `<publishUrl>`, `<msdeploySite>`, `<userName>` and `<userPWD>` with values from downloaded publishing profile XML file like in example below:
 
-![publish-profile-xml](/content/docs/deployment/images/web-deploy/waws-publish-profile-xml.png) 
+![publish-profile-xml](/site/docs/deployment/images/web-deploy/waws-publish-profile-xml.png) 
 
 External links:
 
@@ -137,7 +137,7 @@ Most common use cases for Web Deploy parametrization is updating node/attribute 
 ### Parameters.xml
 To enable Web Deploy parametrization add `parameters.xml` file in the root of your web application.
 
-![vs-solution-explorer](/content/docs/deployment/images/web-deploy/vs-solution-explorer.png)
+![vs-solution-explorer](/site/docs/deployment/images/web-deploy/vs-solution-explorer.png)
 
 `Parameters.xml` contains the list of parameters required (or supported) by your Web Deploy package. In the example below we introduce two parameters - one to update path to log file in `appSettings` section of `web.config` and another one to set database name in SQL script.
 
@@ -157,7 +157,7 @@ Parameter element describes the name, default value and the places where and how
 
 When Web Deploy package is built you can open it in the explorer and see `parameters.xml` in the root:
 
-![webdeploy-package](/content/docs/deployment/images/web-deploy/webdeploy-package.png)
+![webdeploy-package](/site/docs/deployment/images/web-deploy/webdeploy-package.png)
 
 Resulting `parameters.xml` combines your custom parameters and system ones such as `IIS Web Application Name`. You don’t have to set `IIS Web Application Name` parameter explicitly - AppVeyor does that for you.
 
@@ -169,10 +169,10 @@ Web Deploy provider analyzes Web Deploy package and looks into environment varia
 
 When promoting specific build from Environment page you set variables on environment settings page:
 
-![environment-variables](/content/docs/deployment/images/web-deploy/environment-variables.png)
+![environment-variables](/site/docs/deployment/images/web-deploy/environment-variables.png)
 
 When deploying during the build session environment variables are used instead. You can set build environment variables on Environment tab of project settings, `appveyor.yml` or programmatically during the build.
 
-![project-environment-variables](/content/docs/deployment/images/web-deploy/project-environment-variables.png)
+![project-environment-variables](/site/docs/deployment/images/web-deploy/project-environment-variables.png)
 
 Variables defined during the build override those ones defined on Environment level.

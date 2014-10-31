@@ -38,7 +38,7 @@ The following is required on the server to run Deployment Agent:
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
 
-2. [Download Deployment Agent](http://www.appveyor.com/downloads/AppveyorDeploymentAgent.msi)
+2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi)
 
 3. Specify **Environment access key** during Deployment Agent installation.
 
@@ -135,7 +135,7 @@ You can specify multiple bindings in `hostname`, `ip` and `port` separated by se
 - *:80:www.my-test101.com
 - *:8090:
 
-![agent-multiple-bindings](/content/docs/deployment/images/agent/agent-multiple-bindings.png)
+![agent-multiple-bindings](/site/docs/deployment/images/agent/agent-multiple-bindings.png)
 
 
 <a id="deploying-windows-app"></a>
