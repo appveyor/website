@@ -104,3 +104,8 @@ div.title h2 {
 {
     text-transform: uppercase;
 }
+
+/* misc */
+.disqus {
+    margin-top: 1.5rem;
+}
