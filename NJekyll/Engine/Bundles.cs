@@ -19,6 +19,13 @@ namespace NJekyll.Engine
             var sortedStyles = SearchFilesSorted("~/site/css", "*.css");
             cssBundle.Include(sortedStyles.Keys.ToArray());
             bundles.Add(cssBundle);
+
+#if DEBUG
+            BundleTable.EnableOptimizations = false;
+#else
+            BundleTable.EnableOptimizations = true;
+#endif
+
         }
 
         private static SortedList<string, string> SearchFilesSorted(string virtualPath, string pattern)

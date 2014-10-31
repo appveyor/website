@@ -118,7 +118,6 @@ namespace NJekyll.Engine
             _site["tags"] = tagsHash;
 
             // add resource bundles
-            BundleTable.EnableOptimizations = _site.ContainsKey("enable_optimizations") ? (bool)_site["enable_optimizations"] : false;
             _site["bundles"] = new Dictionary<string, object>
             {
                 { "css", Styles.Render("~/site-css").ToString() },
