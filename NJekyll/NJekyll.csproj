@@ -132,9 +132,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="deployment.cmd" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
