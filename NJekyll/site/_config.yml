@@ -10,6 +10,3 @@ google_analytics_id: UA-32029905-1
 redirects:
   /2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment: /blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment
   /2014/02/21/nuget-support-in-appveyor-ci: /blog/2014/02/21/nuget-support-in-appveyor-ci
-
-# minimize CSS and JS
-enable_optimizations: false
