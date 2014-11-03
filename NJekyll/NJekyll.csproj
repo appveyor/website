@@ -114,6 +114,7 @@
     <Compile Include="Engine\Paginator.cs" />
     <Compile Include="Engine\Routes.cs" />
     <Compile Include="Engine\Site.cs" />
+    <Compile Include="Engine\Tags\Highlight.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

@@ -1,6 +1,7 @@
 ﻿using DotLiquid;
 using DotLiquid.FileSystems;
 using MarkdownSharp;
+using NJekyll.Engine.Tags;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -142,6 +143,8 @@ namespace NJekyll.Engine
                     context[parameter.Key] = parameter.Value;
                 }
             }
+
+            Template.RegisterTag<Highlight>("highlight");
 
             Template.FileSystem = new IncludesFolder(GetPath("_includes"));
             Template template = Template.Parse(content);

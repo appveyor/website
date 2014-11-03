@@ -2,22 +2,22 @@
 .home-banner {
     text-align: center;
     height: 590px;
-    background: #D1D4C7 url(/site/images/appveyor-screenshot.png) no-repeat center bottom;
+    background: #F7EDE6 url(/site/images/appveyor-screenshot.png) no-repeat center bottom;
 }
 
 .home-banner h1 {
-    font-family: "Source Sans Pro", "Open Sans", 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 2.7rem;
+    font-family: "Open Sans", 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
     color: #444;
     margin: 1.5rem 0 0;
 }
 
 .home-banner h2 {
-    font-family: 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 1.1rem;
     font-weight: normal;
-    color: #333;
+    color: #111;
     margin: 1rem 0;
 }
 
@@ -28,8 +28,8 @@
 
 .big-button.get-started {
     line-height: 50px;
-    font-size: 1rem;
-    background: #ff6600;
+    font-size: 1.0rem;
+    background: #00acc1;
     transition: background 0.3s;
     -webkit-transition: background 0.3s;
 }
@@ -37,7 +37,7 @@
 .big-button.get-started:hover,
 .big-button.get-started:active
 {
-    background: #ff7711;
+    background: #00bcd4;
 }
 
 /* Small screens only*/
@@ -64,8 +64,8 @@
 .features h2 {
     margin: 1rem 0;
     text-align: center;
-    font-family: "Segoe UI Light", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 2.5rem;
+    font-family: "Open Sans", "Segoe UI Light", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 2.0rem;
     color: #444;
 }
 
