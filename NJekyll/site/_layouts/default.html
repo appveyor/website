@@ -73,16 +73,15 @@
         </div>
     </div>
 
-
-
-    <!--@if (WebHelper.IsMobileSafari(Context)) {
-    <script type="text/javascript">
-                $(function () {
-                    $('body').scrollTop(1);
-                });
-    </script>
-    }-->
     {{ site.bundles.js }}
+
+    {% if site.is_mobile_safari %}
+        <script type="text/javascript">
+        $(function () {
+            $('body').scrollTop(1);
+        });
+        </script>
+    {% endif %}
 
     <script>
             $(document).foundation();
