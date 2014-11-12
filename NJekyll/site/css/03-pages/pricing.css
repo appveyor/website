@@ -1,57 +1,86 @@
-﻿.pricing-table {
-    border-color: transparent;
-    border-radius: 0 0 2px 2px;
-    background-color: #fbfbfb;
+﻿.pricing-banner {
+    background: #F7EDE6;
+    padding-bottom: 1rem;
+}
+
+.plans {
+    /*margin-top: 1rem;*/
+}
+
+.pricing-table {
+    border: solid 1px #999;
+    border-radius: 3px;
 }
 
 .pricing-table .price {
     font-family: 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin-bottom: 0.7rem;
 }
 
 .pricing-table .price span {
     font-size: 1rem;
 }
 
+.pricing-table .price.annual {
+    padding: 0 0 1rem 0;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.pricing-table .price.annual span {
+    font-size: 0.7rem;
+}
+
+.pricing-table .price.basic {
+    padding: 1.9rem 0;
+}
+
 .pricing-table .title {
     color: #fff;
     font-family: 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 1.0rem;
-    border-radius: 2px 2px 0 0;
+    background-color: #999;
+    padding: 0;
+    line-height: 2rem;
 }
 
-.pricing-table.free .title {
-    background-color: #bbb;
+    .pricing-table .bullet-item {
+        padding: 0;
+        line-height: 2.5rem;
+    }
+
+    .pricing-table .cta-button {
+        padding: 1rem 0;
+    }
+
+    .pricing-table .cta-button .button {
+        margin: 0;
+        background-color: #3EB33E;
+        border-color: #3EB33E;
+    }
+
+    .pricing-table .cta-button .button:hover,
+    .pricing-table .cta-button .button:active
+    {
+        background: #62C462;
+    }
+
+.pricing-table.popular {
+    margin-top: -10px;
+    border: solid 2px #0b99d6;
 }
 
-.pricing-table.professional .title {
-    background-color: #3EB33E;
-    
+.pricing-table.popular .title {
+    font-size: 1.2rem;
+    background-color: #0b99d6;
 }
 
-.pricing-table.premium {
-    background-color: #f7f7f7;
+.pricing-table.popular .title span {
+    font-size: 0.7rem;
+    position: absolute;
+    top: -5px;
+    right: 25px;
 }
 
-.pricing-table.premium .title {
-    background-color: #FF6633;
-}
-
-.pricing-table.enterprise .title {
-    background-color: #555;
-}
-
-.pricing-table .cta-button .button {
-    padding: 0.7rem 1rem;
-}
-
-.pricing-table .bullet-item {
-    border-bottom: none;
-    padding: 0.7rem;
-}
-
-.pricing-table .bullet-item,
-.pricing-table .cta-button {
-    background-color: inherit;
-}
+    .pricing-table.popular .cta-button {
+        padding: 1.5rem 0;
+    }

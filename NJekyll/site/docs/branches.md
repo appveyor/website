@@ -11,7 +11,7 @@ title: Branches and Tags
 
 AppVeyor has built-in multi-branch support.
 
-**Default branch** which can be specified on the General tab of project settings is built whenever a new build is started from *UI*, *schedule* or *API*. When you do a push to the repository AppVeyor will start a new build of the branch in the last commit of the push data.
+**Default branch** which can be specified on the General tab of project settings is built whenever a new build is started from *Projects UI*, *schedule* or *API*. When you do a push to the repository AppVeyor will start a new build of the branch in the last commit of the push data.
 
 
 
