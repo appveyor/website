@@ -29,6 +29,6 @@ Email: [team@appveyor.com](mailto:team@appveyor.com)<br/>
 Twitter: [@appveyor](http://twitter.com/appveyor)
 
 Appveyor Systems Inc.<br/>
-318 Homer Street, Unit 705<br/>
-Vancouver, BC V6B 2V2,<br/>
+10220 Dunoon dr, Unit 80<br/>
+Richmond, BC V7A 1V6,<br/>
 Canada
