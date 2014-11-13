@@ -4,7 +4,7 @@
 }
 
 .plans {
-    /*margin-top: 1rem;*/
+    margin-top: 2rem;
 }
 
 .pricing-table {
@@ -13,7 +13,8 @@
 }
 
 .pricing-table .price {
-    font-family: 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 2.3rem;
 }
 
 .pricing-table .price span {
@@ -36,7 +37,7 @@
 
 .pricing-table .title {
     color: #fff;
-    font-family: 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 1.0rem;
     background-color: #999;
     padding: 0;
@@ -54,19 +55,23 @@
 
     .pricing-table .cta-button .button {
         margin: 0;
-        background-color: #3EB33E;
-        border-color: #3EB33E;
+        background-color: #00b500;
+        border-color: #00b500;
+        text-transform: uppercase;
+        padding: 0.7rem 1rem;
     }
 
     .pricing-table .cta-button .button:hover,
     .pricing-table .cta-button .button:active
     {
-        background: #62C462;
+        background: #00d600;
+        border-color: #00d600;
+        color: #fff;
     }
 
 .pricing-table.popular {
     margin-top: -10px;
-    border: solid 2px #0b99d6;
+    border: solid 1px #0b99d6;
 }
 
 .pricing-table.popular .title {
