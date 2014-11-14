@@ -41,9 +41,9 @@ To get badge image in SVG format append `svg=true` parameter to the image URL:
 
 and of course SVG badge could be easily scaled:
 
-    <image src="https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true" width="300"/>
+    <image src="https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true" width="300">
 
-<image src="https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true" width="300"/>
+<image src="https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true" width="300">
 
 ## Badges for projects with public repositories on GitHub and BitBucket
 
