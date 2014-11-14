@@ -66,10 +66,12 @@ You can generate API v2 token on this page: <br/>
 ### Message template
 
 Default HipChat message template:
-	
+
+{% raw %}
 	<a href=""{{buildUrl}}"">Build {{projectName}} {{buildVersion}} {{status}}</a><br/>
 	Commit <a href=""{{commitUrl}}"">{{commitId}}</a> by {{commitAuthor}} on {{commitDate}}:
 	<i>{{commitMessage}}</i>
+{% endraw %}
 
 [Customizing message template](#message-template)
 
@@ -99,10 +101,12 @@ Slack API authentication token can be generated on this page (**Authentication**
 ### Message template
 
 Default Slack message template:
-	
+
+{% raw %}
 	<{{buildUrl}}|Build {{projectName}} {{buildVersion}} {{status}}>
 	Commit <{{commitUrl}}|{{commitId}}> by {{commitAuthor}} on {{commitDate}}:
 	_{{commitMessage}}_
+{% endraw %}
 
 [Customizing message template](#message-template) <br/>
 [Slack message formatting guide](https://api.slack.com/docs/formatting)
@@ -132,9 +136,11 @@ Campfire API authentication token can be generated on **My info** page: <br/>
 ### Message template
 
 Default Campfire message template:
-	
+
+{% raw %}
 	Build {{projectName}} {{buildVersion}} {{status}}: {{buildUrl}}
 	Commit #{{commitId}} by {{commitAuthor}} on {{commitDate}}: {{commitMessage}}
+{% endraw %}
 
 [Customizing message template](#message-template)
 
@@ -257,5 +263,7 @@ HipChat, Slack and Campfire providers support custom message template.
 
 Message template is a [Mustache template](http://mustache.github.io/mustache.5.html) with the same data as `eventData` field in webhook JSON payload above, for example:
 
+{% raw %}
 	{{#passed}} Build {{projectName}} {{buildVersion}} passed {{/passed}}
 	{{#failed}} Build {{projectName}} {{buildVersion}} failed {{/failed}}
+{% endraw %}
