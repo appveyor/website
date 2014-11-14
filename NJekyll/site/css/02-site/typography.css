@@ -13,16 +13,8 @@ a {
     line-height: inherit;
 }
 
-    a:hover, a:focus {
-        color: #00C7F4;
-    }
-
-    a img {
-        border: none;
-    }
-
-strong, b {
-    font-weight: inherit;
+a:hover, a:focus {
+    color: #00C7F4;
 }
 
 strong, b {
@@ -30,31 +22,27 @@ strong, b {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Open Sans", "Segoe UI", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
     font-style: normal;
 }
 
 /* Mobile screen (default) */
 h1 {
-    font-family: "Open Sans", "Segoe UI Light", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2.0rem;
     color: #666;
     margin: 1rem 0;
 }
 
 h2 {
-    font-family: "Open Sans", "Segoe UI", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 1.4rem;
-    font-weight: normal;
     color: #333;
     margin: 1rem 0;
 }
 
 h3 {
-    font-family: "Open Sans", "Segoe UI", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 1.1rem;
-    font-weight: normal;
     color: #555;
     margin: 1rem 0;
 }
@@ -119,8 +107,8 @@ li ul li {
 }
 
 /* Medium and larger screens */
-@media only screen and (min-width: 40.063em) {
-    /*h1 {
+/*@media only screen and (min-width: 40.063em) {
+    h1 {
         font-size: 1.6rem;
         color: #555;
     }
@@ -135,5 +123,5 @@ li ul li {
 
     h4 {
         font-size: 1.4375rem;
-    }*/
-}
+    }
+}*/
