@@ -22,9 +22,17 @@
 
 .home-banner .buttons {
     text-align: center;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 0 0;
 }
 
+.home-banner .buttons .big-button {
+    margin-bottom: 0.4rem;
+}
+
+.home-banner .disclosure {
+    font-size: 0.75rem;
+    color: #777;
+}
 
 .big-button.get-started {
     line-height: 45px;
