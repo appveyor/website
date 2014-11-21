@@ -1,0 +1,11 @@
+﻿.blog-post-title a {
+    color: inherit;
+}
+
+.post-index-content {
+    margin-bottom: 3rem;
+}
+
+.post-content {
+    margin-bottom: 2rem;
+}

@@ -1,14 +1,27 @@
 ﻿<!--
-layout: default
+layout: one-column
 -->
 <div>
-    {% if page.previous %}
-        <a href="{{page.previous.url}}">Previous</a>
-    {% endif %}
+    <h1>{{page.title}}</h1>
 
-    {% if page.next %}
-    <a href="{{page.next.url}}">Next</a>
-    {% endif %}
+    <p>
+        Posted on <b>{{page.date | date:'MMMM d, yyyy'}}</b>
+    </p>
 
-    {{content}}
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    <div class="row">
+        <div class="columns small-6">
+            {% if page.previous %}
+            <a href="{{page.previous.url}}">Previous post</a>
+            {% endif %}
+        </div>
+        <div class="columns small-6 text-right">
+            {% if page.next %}
+            <a href="{{page.next.url}}">Next post</a>
+            {% endif %}
+        </div>
+    </div>
 </div>

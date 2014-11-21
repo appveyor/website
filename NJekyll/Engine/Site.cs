@@ -86,15 +86,15 @@ namespace NJekyll.Engine
                 // set Next and Previous
                 for (int i = 0; i < sortedCollection.Count; i++ )
                 {
-                    // Next
+                    // Previous
                     if(i < sortedCollection.Count - 1)
                     {
-                        sortedCollection[i].Next = sortedCollection[i + 1];
+                        sortedCollection[i].Previous = sortedCollection[i + 1];
                     }
-                    // Previous
+                    // Next
                     if (i > 0)
                     {
-                        sortedCollection[i].Previous = sortedCollection[i - 1];
+                        sortedCollection[i].Next = sortedCollection[i - 1];
                     }
                 }
                 _site[collection.Key] = sortedCollection;

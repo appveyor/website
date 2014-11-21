@@ -18,3 +18,9 @@ table.centered td,
 table.centered th {
     text-align: center;
 }
+
+table.no-borders,
+table.no-borders td,
+table.no-borders th {
+    border: none;
+}

@@ -1,28 +1,23 @@
 ﻿<!--
-layout: default
-title: Blog!
+layout: one-column
+title: Blog
 -->
 
-<h1>Our Blog</h1>
-
-{% assign paginator = site.posts | paginate:2 %}
+{% assign paginator = site.posts | paginate:5 %}
 
 {% for post in paginator.posts %}
   {% include post_item.html %}
 {% endfor %}
 
-Current page: {{ paginator.page }}
-Total posts: {{ paginator.total_posts }}
-Total pages: {{ paginator.total_pages }}
-
-{% if paginator.previous_page %}
-<p>
-    <a href="/blog{{ paginator.previous_page_path }}">Previous</a>
-</p>
-{% endif %}
-
-{% if paginator.next_page %}
-<p>
-    <a href="/blog{{ paginator.next_page_path }}">Next</a>
-</p>
-{% endif %}
+<div class="row">
+    <div class="columns small-6">
+        {% if paginator.next_page %}
+        <a href="/blog{{ paginator.next_page_path }}">&larr; Older</a>
+        {% endif %}
+    </div>
+    <div class="columns small-6 text-right">
+        {% if paginator.previous_page %}
+        <a href="/blog{{ paginator.previous_page_path }}">Newer &rarr;</a>
+        {% endif %}
+    </div>
+</div>
