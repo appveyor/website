@@ -8,6 +8,7 @@ title: Build notifications
 * [Email](#email)
 * [HipChat](#hipchat)
 * [Slack](#slack)
+* [VSO Team Rooms](#vso-team-rooms)
 * [Webhooks](#webhooks)
 
 Build notifications are defined on project level and triggered on build success or fail events. You can configure notification on **Notifications** tab of project settings or in `notifications` section of `appveyor.yml`:
@@ -156,6 +157,32 @@ Default Campfire message template:
 
 > Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
+
+<a id="vso-team-rooms"></a>
+## VSO Team Rooms
+
+### Authentication
+
+Visual Studio Online team notifications are being sent on someone's behalf and that user should have *alternate credentials* enabled for their VSO account. To enabled alternate credentials login to your VSO account and then click your name at the top right corner, then select "My profile" and click "Credentials" tab.
+
+### Message template
+
+Default VSO message template
+
+{% raw %}
+	Build {{projectName}} {{buildVersion}} {{status}}: {{buildUrl}}
+	Commit #{{commitId}} by {{commitAuthor}} on {{commitDate}}: {{commitMessage}}
+{% endraw %}
+
+### appveyor.yml configuration
+
+	notifications:
+	  - provider: VSOTeamRoom
+	    account: <account-name>
+	    username: <alternate-username>
+        password: <your-password>
+	    room: ProjectA
+	    template: "{message}, {commitId}, ..."
 
 
 <a id="webhooks"></a>
