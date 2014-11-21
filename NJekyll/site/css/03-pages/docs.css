@@ -1,9 +1,9 @@
 ﻿.edit-page-invitation {
     margin: 1.5rem 0;
     padding: 0.7rem;
-    background-color: #f7f7f7;
     font-size: 0.8rem;
     color: #666;
     text-align: center;
+    border: solid 1px #f0f0f0;
     border-radius: 3px;
 }
