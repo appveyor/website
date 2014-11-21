@@ -12,10 +12,10 @@ namespace NJekyll.Engine
     {
         string _content;
 
-        internal string VirtualPath { get; private set; }
         internal ContentFormat ContentFormat { get; private set; }
         internal Dictionary<string, object> FrontMatter { get; private set; }
 
+        public string VirtualPath { get; private set; }
         public string Path { get; private set; }
         public virtual string Content
         {
