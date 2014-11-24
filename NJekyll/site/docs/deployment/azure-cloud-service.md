@@ -8,6 +8,7 @@ title: Deploying Azure Cloud Services
 * [Automatic packaging](#automatic-packaging)
 * [Packaging from script](#script-packaging)
 * [Configuring deployment](#deployment)
+* [Cloud Service Deploy Parametrization](#cloud-service-deploy-parametrization)
 
 Azure Cloud Service deployment provider assumes there is only one **Azure Cloud Service package** (file with `.cspkg` extension) in build artifacts and at least one **Azure Cloud Service configuration** artifact (file with `.cscfg` extension).
 
@@ -63,3 +64,21 @@ Sample `appveyor.yml` configuration:
 
 To get `subscription_id` and `subscription_certificate` [download publish settings and subscription for your Azure account](https://manage.windowsazure.com/publishsettings)
 and then grab both values from downloaded `<subscription>.publishsettings` XML file.
+
+<a id="cloud-service-deploy-parametrization"></a>
+## Cloud Service Deploy Parametrization
+
+When deploying Cloud Services to different environments you don't want to re-build application package every time with different configurations, but you want to deploy the same package (artifact) with some environment-specific settings configured during deployment. When using Clous Service Deploy the problem can be easily solved by Web Deploy parametrization.
+
+### Setting parameters during deployment
+Cloud Service Deploy provider analyzes the deployment package and looks into environment variables to set parameter values with matching names.
+
+When promoting specific build from Environment page you set variables on environment settings page:
+
+![environment-variables](/site/docs/deployment/images/web-deploy/environment-variables.png)
+
+When deploying during the build session environment variables are used instead. You can set build environment variables on Environment tab of project settings, `appveyor.yml` or programmatically during the build.
+
+![project-environment-variables](/site/docs/deployment/images/web-deploy/project-environment-variables.png)
+
+Variables defined during the build override those ones defined on Environment level.
