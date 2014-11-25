@@ -324,16 +324,16 @@ Build matrix supports the following dimensions:
 
 * **Operating system**
 * **Environment variables**
-* **Platform**, e.g. x86, x64, AnyCPU
+* **Platform**, e.g. x86, x64, Any CPU
 * **Configuration**, e.g. Build, Debug
 * **Test categories**
 
-For example, selecting **x86, AnyCPU** for Platform and **Debug, Release** for Configuration yields the build with the following jobs:
+For example, selecting **x86, Any CPU** for Platform and **Debug, Release** for Configuration yields the build with the following jobs:
 
 * x86, Debug
 * x86, Release
-* AnyCPU, Debug
-* AnyCPU, Release
+* Any CPU, Debug
+* Any CPU, Release
 
 To configure build matrix in `appveyor.yml`:
 
@@ -355,7 +355,7 @@ To configure build matrix in `appveyor.yml`:
 
     platform:
       - x86
-      - AnyCPU
+      - Any CPU
 
     configuration:
       - Debug
