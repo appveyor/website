@@ -62,4 +62,4 @@ The following command pushes the contents of `app.publish` folder preserving dir
 
     ps: $root = Resolve-Path .\MyApp\bin\Debug\app.publish; [IO.Directory]::GetFiles($root.Path, '*.*', 'AllDirectories') | % { Push-AppveyorArtifact $_ -FileName $_.Substring($root.Path.Length + 1) -DeploymentName to-publish }
 
-See [Pushing artifacts from scripts](/docs/build-agent-api#push-artifact) for more details.
+See [Pushing artifacts from scripts](/docs/build-worker-api#push-artifact) for more details.
