@@ -68,7 +68,7 @@ and then grab both values from downloaded `<subscription>.publishsettings` XML f
 <a id="cloud-service-deploy-parametrization"></a>
 ## Cloud Service Deploy Parametrization
 
-When deploying Cloud Services to different environments you don't want to re-build application package every time with different configurations, but you want to deploy the same package (artifact) with some environment-specific settings configured during deployment. When using Clous Service Deploy the problem can be easily solved by Web Deploy parametrization.
+When deploying Cloud Services to different environments you don't want to re-build application package every time with different configurations, but you want to deploy the same package (artifact) with some environment-specific settings configured during deployment. When using Cloud Service Deploy the problem can be easily solved by Web Deploy parametrization.
 
 ### Setting parameters during deployment
 Cloud Service Deploy provider analyzes the deployment package and looks into environment variables to set parameter values with matching names.
