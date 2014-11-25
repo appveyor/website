@@ -103,7 +103,7 @@ Below is the list of software pre-installed on Build Worker.
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 2.8
 * [NuGet](http://docs.nuget.org/docs/start-here/installing-nuget) 2.8.2
 * [Chocolatey](http://chocolatey.org/) v0.9.8.27
-* [GitVersion](http://chocolatey.org/packages/GitVersion.Portablet) 1.3.2
+* [GitVersion](http://chocolatey.org/packages/GitVersion.Portable) 1.3.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
 
 ## Testing
