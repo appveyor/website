@@ -106,7 +106,7 @@ For example, to deploy from "master" branch and only artifacts built for "x86" p
     - provider: Environment
       name: production
       on:
-        branch: release
+        branch: master
         platform: x86
 
 
