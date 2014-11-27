@@ -45,6 +45,16 @@ and of course SVG badge could be easily scaled:
 
 <image src="https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true" width="300">
 
+### Customizing titles
+
+You can customize SVG badge titles for *pending*, *failing* and *passing* states with `pendingText`, `failingText` and `passingText` query parameters respectively.
+
+For example:
+
+    https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20OK
+
+<image src="https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20OK">
+
 ## Badges for projects with public repositories on GitHub and BitBucket
 
 You can infer badge URL for **projects with public repositories**, well, provided there is only a single project with this repository in AppVeyor.
