@@ -38,7 +38,7 @@ The following is required on the server to run Deployment Agent:
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
 
-2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v2.1.142 from 10/04/2014)
+2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v2.2.2 from 26/11/2014)
 
 3. Specify **Environment access key** during Deployment Agent installation.
 
@@ -124,6 +124,10 @@ If not specified and website does not exists default directory path is `c:\appve
 
 * `remove_files` - Agent uses Web Deploy to synchronize website folder contents. By default, it only adds new files and modifies existing.
 When `remove_files` is set to `true` Agent performs full content synchronization, i.e. deletes files at destination that don't exist in the package.
+
+* `skip_dirs` - Semicolon list of regular expressions specifying the list of directories to skip while synchronizing web site contents, for example `\\App_data;\\uploads`.
+
+* `skip_files` - semicolon list of regular expressions specifying the list of files to skip while synchronizing web site contents, for example `web.config` (all web.configs) or only the root config for MVC apps `^((?!Views).)*web\.config$` (thanks to [this blog post](http://www.keza.net/2011/11/15/skipping-mvc-web-config-files-with-msdeploy/)).
 
 * `group` - Deployment group.
 
