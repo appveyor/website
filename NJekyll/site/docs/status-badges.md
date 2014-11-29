@@ -74,3 +74,5 @@ Optional parameters:
 Example: [https://ci.appveyor.com/api/projects/status/github/gruntjs/grunt?branch=master&svg=true](https://ci.appveyor.com/api/projects/status/github/gruntjs/grunt?branch=master&svg=true)
 
 ![Grunt status](https://ci.appveyor.com/api/projects/status/github/gruntjs/grunt?branch=master&svg=true)
+
+**Note**: The `retina` and `svg` parameters are mutually exclusive; only the first parameter specified is used.
