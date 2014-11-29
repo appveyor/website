@@ -38,7 +38,7 @@ The following is required on the server to run Deployment Agent:
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
 
-2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v2.2.2 from 26/11/2014)
+2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v2.2.4 from 28/11/2014)
 
 3. Specify **Environment access key** during Deployment Agent installation.
 
@@ -111,11 +111,17 @@ Other settings:
 
 * `application_name` - optional web application name (IIS virtual directory) to deploy web app into.
 
+* `apppool_name` - the name of IIS application pool. If pool does not exist it will be created.
+
 * `port` - Port of website binding.
 
 * `ip` - IP address of website binding.
 
 * `hostname` - Host header value of website binding.
+
+* `protocol` - Protocol value of website binding. Could be either `http` (default if not specified) or `https`.
+
+* `certificate` - Certificate associated with `https` binding. This value could be certificate name or thumbprint, for example `*.mydomain.com` or `0B2D18387549968CB4CC30F21D6CC4C0830B679B`. If certificate specified *protocol* is changed to `https`.
 
 * `write_access` - When set to `true` Agent sets **Modify** permissions for application pool identity on website root directory.
 
@@ -135,9 +141,9 @@ When `remove_files` is set to `true` Agent performs full content synchronization
 
 You can specify multiple bindings in `hostname`, `ip` and `port` separated by semi-colon. Below is an example of how 3 bindings can be configured:
 
-- *:80:my-test101.com
-- *:80:www.my-test101.com
-- *:8090:
+- http *:80:mysite.com
+- http *:80:mysite.com
+- https *:433: cert=*.mysite.com
 
 ![agent-multiple-bindings](/site/docs/deployment/images/agent/agent-multiple-bindings.png)
 
