@@ -88,4 +88,4 @@ where 12.0 is your version of Visual Studio (VS 2013 - 12.0, VS 2012 - 11.0, VS 
 See also:
 
 * [appveyor.yml refence](/docs/appveyor-yml)
-* [Pushing real-time compilation messages to build console](/docs/build-agent-api#add-compilation-message) 
+* [Pushing real-time compilation messages to build console](/docs/build-worker-api#add-compilation-message) 
