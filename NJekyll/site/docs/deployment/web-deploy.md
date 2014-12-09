@@ -43,7 +43,7 @@ AppVeyor uses the following command to create Web Deploy package:
 
 If you build your app using a script or build framework like MSBuild, PSake or rake you can push the package to artifacts using the command:
 
-    appveyor PuthArtifact <path-to-package.zip>
+    appveyor PushArtifact <path-to-package.zip> -Type WebDeployPackage
 
 <a id="provider-settings"></a>
 ## Web Deploy deployment settings
