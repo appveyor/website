@@ -115,7 +115,7 @@ For example, to deploy from "master" branch and only artifacts built for "x86" p
 
 By default AppVeyor starts a new build on any push to GitHub whether it's regular commit or a new tag. Repository tagging frequently used to trigger deployment.
 
-AppVeyor sets `APPVEYOR_REPO_TAG` environment variable to distinguish regular commits from tags - the value is `True` if tag was pushed; otherwise it's `False`. When it's `True` the name of tag is stored in `APPVEYOR_REPO_BRANCH`.
+AppVeyor sets `APPVEYOR_REPO_TAG` environment variable to distinguish regular commits from tags - the value is `true` if tag was pushed; otherwise it's `false`. When it's `true` the name of tag is stored in `APPVEYOR_REPO_BRANCH`.
 
 You can use `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for example (for Environment provider):
 
