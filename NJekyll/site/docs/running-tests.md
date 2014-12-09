@@ -223,7 +223,7 @@ So, how to get there from a script if you use your own test runner or a differen
 
 ### Build Worker API
 
-You can use [Build Worker API](docs/build-worker-api) REST methods, command-line utility and PowerShell scripts to push test results in a real-time one-by-one or in batch.
+You can use [Build Worker API](/site/docs/build-worker-api) REST methods, command-line utility and PowerShell scripts to push test results in a real-time one-by-one or in batch.
 
 ### Uploading XML test results
 
