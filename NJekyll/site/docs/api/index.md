@@ -11,6 +11,10 @@ APIs:
 * [Projects and Builds](/docs/api/projects-builds)
 * [Environments and Deployments](/docs/api/environments-deployments)
 
+Samples:
+
+* [Downloading build artifact (PowerShell)](/docs/api/samples/download-artifacts-ps)
+
 ## Authentication
 
 AppVeyor uses bearer token authentication. Token can be found on **API token** page under your AppVeyor account.
