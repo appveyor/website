@@ -24,7 +24,8 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_REPO_SCM` - `git` or `mercurial`
 * `APPVEYOR_REPO_NAME` - repository name in format `owner-name/repo-name`
 * `APPVEYOR_REPO_BRANCH` - build branch. For Pull Request commits it is **base** branch PR is merging into. 
-* `APPVEYOR_REPO_TAG` - `true` if build has started by pushed tag; otherwise `false`. `APPVEYOR_REPO_BRANCH` contains the name of tag.
+* `APPVEYOR_REPO_TAG` - `true` if build has started by pushed tag; otherwise `false`.
+* `APPVEYOR_REPO_TAG_NAME` - contains tag name for builds started by tag; otherwise this variable is undefined.
 * `APPVEYOR_REPO_COMMIT` - commit ID (SHA)
 * `APPVEYOR_REPO_COMMIT_AUTHOR` - commit author's name
 * `APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL` - commit author's email address

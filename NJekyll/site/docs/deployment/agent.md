@@ -205,6 +205,8 @@ Job details:
 * `APPVEYOR_JOB_ID` - Unique system ID of deployment job
 * `APPVEYOR_REPO_NAME` - Repository name in the form `owner-name/repo-name`
 * `APPVEYOR_REPO_BRANCH` - Build branch
+* `APPVEYOR_REPO_TAG` - `true` if build has started by pushed tag; otherwise `false`.
+* `APPVEYOR_REPO_TAG_NAME` - contains tag name for builds started by tag; otherwise this variable is undefined.
 * `APPVEYOR_REPO_COMMIT` - Build commit ID (SHA)
 * `APPVEYOR_REPO_COMMIT_AUTHOR` - Commit author
 * `APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL` - Commit author's email
