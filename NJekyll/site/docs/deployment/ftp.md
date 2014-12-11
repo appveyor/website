@@ -46,4 +46,4 @@ Configuring in `appveyor.yml`:
       password:
         secure: AABBBCCCCddd123==
       folder: wwwroot
-      artifact: /.*\.nupkg/          # deploy on tag push only
+      artifact: /.*\.nupkg/          # upload all NuGet packages to release assets
