@@ -53,6 +53,27 @@ Sometimes you need to add additional files into Web Deploy package which are not
 
 [Read this answer at Stack Overflow](http://stackoverflow.com/questions/2747081/how-do-you-include-additional-files-using-vs2010-web-deployment-packages/2748752#2748752) for detailed instructions on how to include/exclude extra files into/from Web Deploy package.
 
+Just to give you a sense of the technique described in that article this is how to add Azure Web Job files into `App_Data` folder of web application package. We assume here that your solution contains two projects: Web Application located in `$(SolutionDir)WebApp` directory and Azure Web Job project located in `$(SolutionDir)WebJob`. You should add the following snippet at the very bottom of Web Application `.csproj` (`.vbproj`) file:
+
+	<PropertyGroup>
+	  <CopyAllFilesToSingleFolderForPackageDependsOn>
+	    CustomCollectFiles;
+	    $(CopyAllFilesToSingleFolderForPackageDependsOn);
+	  </CopyAllFilesToSingleFolderForPackageDependsOn>
+
+	  <CopyAllFilesToSingleFolderForMsdeployDependsOn>
+	    CustomCollectFiles;
+	    $(CopyAllFilesToSingleFolderForPackageDependsOn);
+	  </CopyAllFilesToSingleFolderForMsdeployDependsOn>
+	</PropertyGroup>
+	<Target Name="CustomCollectFiles">
+	  <ItemGroup>
+	    <_CustomFiles Include="$(SolutionDir)WebJob\bin\$(ConfigurationName)\**\*" />
+	    <FilesForPackagingFromProject  Include="%(_CustomFiles.Identity)">
+	      <DestinationRelativePath>App_Data\jobs\continuous\MyJob\%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
+	    </FilesForPackagingFromProject>
+	  </ItemGroup>
+	</Target>
 
 
 <a id="provider-settings"></a>
