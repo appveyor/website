@@ -7,9 +7,9 @@ title: Deploying by FTP
 
 FTP provider supports the following protocols:
 
-* FTP
-* FTPS (FTP over SSL)
-* SFTP (SSH File Transfer Protocol)
+* **FTP**
+* **FTPS** (FTP over SSL)
+* **SFTP** (SSH File Transfer Protocol)
 
 and can work in two modes:
 
