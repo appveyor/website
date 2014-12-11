@@ -53,8 +53,8 @@ The table below summarizes key differences between two modes with lists of deplo
 	<td><a href="/docs/deployment/agent">Deployment Agent</a></td>
 </tr>
 <tr>
-	<td><a href="/docs/deployment/ftp">FTP</a></td>
-	<td><a href="/docs/deployment/ftp">FTP</a></td>
+	<td><a href="/docs/deployment/ftp">FTP, SFTP</a></td>
+	<td><a href="/docs/deployment/ftp">FTP, SFTP</a></td>
 </tr>
 <tr>
 	<td><a href="/docs/deployment/web-deploy">Web Deploy</a></td>
