@@ -135,9 +135,9 @@ You can enable patching on the **General** tab of project settings or in `appvey
     assembly_info:
       patch: true
       file: MyVersion.cs
-      assembly_version: {version}
-      assembly_file_version: {version}
-      assembly_informational_version: {version}-rc1
+      assembly_version: '{version}'
+      assembly_file_version: '{version}'
+      assembly_informational_version: '{version}-rc1'
 
 You can use environment variables substitution in file name and version formats, for example:
 
