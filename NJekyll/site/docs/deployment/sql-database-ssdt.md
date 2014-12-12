@@ -176,4 +176,4 @@ In Visual Studio open SSDT project properties and select **Microsoft Azure SQL D
 
 If target SQL Server instance is behind the firewall you can still publish database there by installing [AppVeyor Deployment Agent](/docs/deployment/agent).
 
-For instructions on setting up database publishing with Deployment Agent please see [Publishing artifact SSDT package to SQL Server section in Deployment Agent guide](/docs/deployment/agent#publishing-ssdt-sql).
+For instructions on setting up database publishing with Deployment Agent please see [Publishing SSDT package artifact to SQL Server section in Deployment Agent guide](/docs/deployment/agent#publishing-ssdt-sql).

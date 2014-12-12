@@ -18,7 +18,7 @@ AppVeyor Deployment Agent (Deployment Agent) is a service running on remote serv
 * [Deploying artifact package as IIS web site](#deploying-website)
 * [Deploying artifact package as a Windows application](#deploying-windows-app)
 * [Deploying artifact package as a Windows service](#deploying-windows-service)
-* [Publishing artifact SSDT package to SQL Server](#publishing-ssdt-sql)
+* [Publishing SSDT package artifact to SQL Server](#publishing-ssdt-sql)
 * [Running PowerShell scripts on target server during deployment](#running-powershell)
 * [Calling script block once per deployment](#calling-script-once-per-deployment)
 * [Troubleshooting](#troubleshooting)
@@ -185,13 +185,17 @@ Other properties:
 
 
 <a id="publishing-ssdt-sql"></a>
-## Publishing artifact SSDT package to SQL Server
+## Publishing SSDT package artifact to SQL Server
+
+Deployment Agent supports publishing of SSDT package artifacts (with `.dacpac` extension) to SQL Server instance.
+
+To direct AppVeyor that named artifact should be treated as DACPAC package: 
 
     <artifact_name>.deploy_database: true
 
 Other properties:
 
-* `connection_string` - SQL connection string to the target database.
+* `connection_string` - SQL connection string to the target database, for example `Server=(local)\SQLEXPRESS;Database=my_app;User ID=myuser;Password=password`
 
 * `<artifact_name>.<deploy_setting>` where `<deploy_setting>` is a setting described in [Publishing SQL Server databases from SSDT packages](/docs/deployment/sql-database-ssdt).
 
