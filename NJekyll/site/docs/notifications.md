@@ -21,7 +21,7 @@ Build notifications are defined on project level and triggered on build success 
 	  - provider: <provider_2>
 	    settings: ...
 
-
+> NOTE: Notifications defined on project settings UI are merged with notifications defined in `appveyor.yml`. 
 
 
 <a id="global-email"></a>
