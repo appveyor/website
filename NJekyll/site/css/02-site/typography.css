@@ -1,4 +1,4 @@
-﻿p {
+p {
     font-size: 0.9rem;
     margin: 1rem 0;
 }
@@ -125,3 +125,15 @@ li ul li {
         font-size: 1.4375rem;
     }
 }*/
+
+.gist .gist-file {
+  border: none!important;
+}
+
+.gist .gist-data {
+  border-bottom: none!important;
+}
+
+.gist .gist-meta {
+  background-color: inherit!important;
+}
