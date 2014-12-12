@@ -22,7 +22,7 @@ In this guide:
 
 - **Artifact** (`artifact`) - `.dacpac` artifact file name or deployment name or regexp matching one of these.
 - **Target SQL Server connection string** (`connection_string`) - SQL connection string to the target database. **Must include database name**. For example `server=(local)\SQLEXPRESS;database=test101;Integrated security=SSPI;`
-- **Register as a [Data-tier Application](http://msdn.microsoft.com/en-ca/library/ee210546.aspx)** (`register_data_tier_application`) - default is `false`.
+- **Register as a Data-tier Application** (`register_data_tier_application`) - default is `false`. You can read about Data-tier applications on [MSDN](http://msdn.microsoft.com/en-ca/library/ee210546.aspx) and also there is a nice introductory article on [CodeProject](http://www.codeproject.com/Articles/573144/Versioning-SQL-Server-Databases-using-SSDT). 
 - **Block publish when database has drifted from registered version** (`block_when_drift_detected`) - default is `false`.
 
 Deployment behaviour:
