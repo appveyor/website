@@ -12,8 +12,10 @@ title: Projects and builds API
 * [Get project history](#get-project-history)
 * [Get project deployments](#get-project-deployments)
 * [Get project settings](#get-project-settings)
+* [Get project settings in YAML](#get-project-settings-yaml)
 * [Add project](#add-project)
 * [Update project](#update-project)
+* [Update project settings with YAML](#update-project-settings-yaml)
 * [Delete project](#delete-project)
 
 # Builds
@@ -606,6 +608,23 @@ Response:
 	   ]
 	}
 
+<a id="get-project-settings-yaml"></a>
+## Get project settings in YAML
+
+Request:
+
+	GET /api/projects/{accountName}/{projectSlug}/settings/yaml
+
+Response (`plain/text`):
+
+	version: 1.0.{build}
+	build:
+	  project: MySolution.sln
+	  verbosity: minimal
+	  publish_wap: true
+	  ...
+
+
 <a id="add-project"></a>
 ## Add project
 
@@ -784,6 +803,24 @@ Request body:
 	   },
 	   "created":"2014-08-16T00:52:15.6604826+00:00"
 	}
+
+Response: 204
+
+<a id="update-project-settings-yaml"></a>
+## Update project settings in YAML
+
+Request:
+
+	PUT /api/projects/{accountName}/{projectSlug}/settings/yaml
+
+Request body (`plain/text`):
+
+	version: 1.0.{build}
+	build:
+	  project: MySolution.sln
+	  verbosity: minimal
+	  publish_wap: true
+	  ...
 
 Response: 204
 

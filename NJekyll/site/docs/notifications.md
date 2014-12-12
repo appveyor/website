@@ -83,7 +83,7 @@ Default message body template:
 		  - user1@email.com
 		  - user2@email.com
 	    subject: 'Build {{status}}'                  # optional
-	    template: "{{message}}, {{commitId}}, ..."   # optional
+	    message: "{{message}}, {{commitId}}, ..."    # optional
 		on_build_success: true|false
 		on_build_failure: true|false
 		on_build_status_changed: true|false
