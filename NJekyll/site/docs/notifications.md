@@ -5,7 +5,8 @@ title: Build notifications
 
 # Build notifications
 
-* [Email](#email)
+* [Global email notifications](#global-email)
+* [Project email notifications](#project-email)
 * [HipChat](#hipchat)
 * [Slack](#slack)
 * [VSO Team Rooms](#vso-team-rooms)
@@ -23,10 +24,12 @@ Build notifications are defined on project level and triggered on build success 
 
 
 
-<a id="email"></a>
-## Email
+<a id="global-email"></a>
+## Global email notifications
 
-Email notifications are sent by default. You can limit the amount of email notifications you receive:
+Email notification preferences sent for all projects are unique for every user and can be changed on [Notifications](https://ci.appveyor.com/notifications) page.
+
+You can limit the amount of email notifications you receive:
 
 * Notifications from all builds
 * Only notifications for builds with your commits
@@ -36,7 +39,55 @@ Email notifications are sent by default. You can limit the amount of email notif
 ![email notifications](/site/docs/images/notifications/email-notifications.png)
 
 
+<a id="project-email"></a>
+## Project email notifications
 
+You can define email notifications specific to a project.
+
+### Subject template
+
+If not specified default subject template:
+
+{% raw %}
+    Build {{status}}: {{projectName}} {{buildVersion}}
+{% endraw %}
+
+
+### Message template
+
+Default message body template:
+
+{% raw %}
+	<div style="font-family:'Segoe UI',Arial,Sans-Serif;font-size:10pt;">
+	    {{#passed}}
+	    <h1 style="font-size: 150%;font-weight:normal; color:#078DC7;"><a href="{{buildUrl}}" style="color:#078DC7;">Build {{projectName}} {{buildVersion}} completed</a></h1>{{/passed}}
+	    {{#failed}}
+	    <h1 style="font-size: 150%;font-weight:normal; color:#ff3228;"><a href="{{buildUrl}}" style="color:#ff3228;">Build {{projectName}} {{buildVersion}} failed</a></h1>{{/failed}}
+	    <p style="color: #888;">
+	        Commit <a href="{{commitUrl}}">{{commitId}}</a> by <a href="mailto:{{commitAuthorEmail}}">{{commitAuthor}}</a> on {{commitDate}}:
+	        <br />
+	        <span style="font-size: 110%;color:#222;">{{commitMessage}}</span>
+	    </p>
+	    <p><a href="{{notificationSettingsUrl}}" style="font-size:85%;color:#999;">Configure your notification preferences</a></p>
+	</div>
+{% endraw %}
+
+[How to customize message template](#message-template)
+
+### appveyor.yml configuration
+
+{% raw %}
+	notifications:
+	  - provider: Email
+	    to:
+		  - user1@email.com
+		  - user2@email.com
+	    subject: 'Build {{status}}'                  # optional
+	    template: "{{message}}, {{commitId}}, ..."   # optional
+		on_build_success: true|false
+		on_build_failure: true|false
+		on_build_status_changed: true|false
+{% endraw %}
 
 <a id="hipchat"></a>
 ## HipChat
@@ -74,16 +125,18 @@ Default HipChat message template:
 	<i>{{commitMessage}}</i>
 {% endraw %}
 
-[Customizing message template](#message-template)
+[How to customize message template](#message-template)
 
 ### appveyor.yml configuration
 
+{% raw %}
 	notifications:
 	  - provider: HipChat
 	    auth_token:
           secure: RbOnSMSFKYzxzFRrxM1+XA==
 	    room: ProjectA
-	    template: "{message}, {commitId}, ..."
+	    template: "{{message}}, {{commitId}}, ..."
+{% endraw %}
 
 > Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
@@ -109,18 +162,20 @@ Default Slack message template:
 	_{{commitMessage}}_
 {% endraw %}
 
-[Customizing message template](#message-template) <br/>
+[How to customize message template](#message-template) <br/>
 [Slack message formatting guide](https://api.slack.com/docs/formatting)
 
 
 ### appveyor.yml configuration
 
+{% raw %}
 	notifications:
 	  - provider: Slack
 	    auth_token:
           secure: kBl9BlxvRMr9liHmnBs14A==
 	    channel: development
-	    template: "{message}, {commitId}, ..."
+	    template: "{{message}}, {{commitId}}, ..."
+{% endraw %}
 
 > Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
@@ -143,17 +198,19 @@ Default Campfire message template:
 	Commit #{{commitId}} by {{commitAuthor}} on {{commitDate}}: {{commitMessage}}
 {% endraw %}
 
-[Customizing message template](#message-template)
+[How to customize message template](#message-template)
 
 ### appveyor.yml configuration
 
+{% raw %}
 	notifications:
 	  - provider: Campfire
 	    account: appveyor
 	    auth_token:
           secure: RifLRG8Vfyol+sNhj9u2JA==
 	    room: ProjectA
-	    template: "{message}, {commitId}, ..."
+	    template: "{{message}}, {{commitId}}, ..."
+{% endraw %}
 
 > Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
@@ -176,14 +233,15 @@ Default VSO message template
 
 ### appveyor.yml configuration
 
+{% raw %}
 	notifications:
 	  - provider: VSOTeamRoom
 	    account: <account-name>
 	    username: <alternate-username>
         password: <your-password>
 	    room: ProjectA
-	    template: "{message}, {commitId}, ..."
-
+	    template: "{{message}}, {{commitId}}, ..."
+{% endraw %}
 
 <a id="webhooks"></a>
 ## Webhooks
