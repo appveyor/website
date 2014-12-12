@@ -18,6 +18,7 @@ AppVeyor Deployment Agent (Deployment Agent) is a service running on remote serv
 * [Deploying artifact package as IIS web site](#deploying-website)
 * [Deploying artifact package as a Windows application](#deploying-windows-app)
 * [Deploying artifact package as a Windows service](#deploying-windows-service)
+* [Publishing artifact SSDT package to SQL Server](#publishing-ssdt-sql)
 * [Running PowerShell scripts on target server during deployment](#running-powershell)
 * [Calling script block once per deployment](#calling-script-once-per-deployment)
 * [Troubleshooting](#troubleshooting)
@@ -183,6 +184,26 @@ Other properties:
 * `group` - Deployment group.
 
 
+<a id="publishing-ssdt-sql"></a>
+## Publishing artifact SSDT package to SQL Server
+
+    <artifact_name>.deploy_database: true
+
+Other properties:
+
+* `connection_string` - SQL connection string to the target database.
+
+* `<artifact_name>.<deploy_setting>` where `<deploy_setting>` is a setting described in [Publishing SQL Server databases from SSDT packages](/docs/deployment/sql-database-ssdt).
+
+* `<artifact_name>.sqlcmd.<variable_name>` - format for specifying SQLCMD variables.
+
+For example, given `.dacpac` artifact's deployment name is `MyDatabase`:
+
+	MyDatabase.deploy_database					true
+	MyDatabase.connection_string				Server=(local)\SQLEXPRESS;Database=my_app;Integrated security=SSPI;
+	MyDatabase.sqlcmd.MYVAR						hello, world!
+	MyDatabase.backup_database_before_changes	true
+
 
 <a id="running-powershell"></a>
 ## Running PowerShell scripts on target server during deployment
@@ -244,6 +265,7 @@ In your `before deploy.ps1` or `deploy.ps1` use the following code to run once p
     }
 
 > Replace `block_name` with some value identifying operations inside the block, e.g. "install_sql"
+
 
 
 <a id="troubleshooting"></a>
