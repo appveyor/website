@@ -19,6 +19,7 @@ AppVeyor Deployment Agent (Deployment Agent) is a service running on remote serv
 * [Deploying artifact package as a Windows application](#deploying-windows-app)
 * [Deploying artifact package as a Windows service](#deploying-windows-service)
 * [Publishing SSDT package artifact to SQL Server](#publishing-ssdt-sql)
+* [Installing MSI package artifact on remote machine](#installing-msi)
 * [Running PowerShell scripts on target server during deployment](#running-powershell)
 * [Calling script block once per deployment](#calling-script-once-per-deployment)
 * [Troubleshooting](#troubleshooting)
@@ -207,6 +208,26 @@ For example, given `.dacpac` artifact's deployment name is `MyDatabase`:
 	MyDatabase.connection_string				Server=(local)\SQLEXPRESS;Database=my_app;Integrated security=SSPI;
 	MyDatabase.sqlcmd.MYVAR						hello, world!
 	MyDatabase.backup_database_before_changes	true
+
+
+<a id="installing-msi"></a>
+## Installing MSI package artifact on remote machine
+
+With AppVeyor Deployment Agent you can run the installation of MSI artifact (with `.msi` extension) on the remote machine. Agent uses `msiexec` command-line utility to install the package. MSI package should support silent mode (`/quiet` switch). We recommend using [WiX](http://wixtoolset.org) for building application installation packages.
+
+    <artifact_name>.deploy_msi: true
+
+Other properties:
+
+* `uninstall_application` - if this setting is set the agent will try to uninstall the previous version of the application before installing a new one. Application name should be the same as you see in "Add/Remove Programs" control panel snap-in.
+
+* `<artifact_name>.<property_name>` - set `<property_name>` MSI custom property while installing the app. All properties are addedt to `msiexec` command as `PROPERTY="VALUE" PROPERTY="VALUE" ...`.
+
+
+For example, given `.msi` artifact's deployment name is `MyAppInstall`:
+
+	MyAppInstall.deploy_msi                 true
+	MyAppInstall.uninstall_application      My Application
 
 
 <a id="running-powershell"></a>
