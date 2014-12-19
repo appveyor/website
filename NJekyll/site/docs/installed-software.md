@@ -13,7 +13,7 @@ Below is the list of software pre-installed on Build Worker.
 
 ## Version control systems
 
-* [Git](http://git-scm.com/download/win) 1.9.4 (x86)
+* [Git](http://git-scm.com/download/win) 1.9.5 (x86)
 * [Mercurial](http://mercurial.selenic.com/downloads) 3.1.1 (x86)
 
 ## SDKs
