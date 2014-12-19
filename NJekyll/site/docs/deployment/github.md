@@ -44,6 +44,8 @@ To promote selected "tag" build to GitHub release:
 <a id="provider-settings"></a>
 ## Provider settings
 
+* **Release name** (`release`) - Optional. The name of release. If not specified build tag or version is used as release name. You can use environment variables in release name, for example `myproduct v$(appveyor_build_version)`.  
+
 * **GitHub authentication token** (`auth_token`) - OAuth token used for authentication against GitHub API. You can generate [Personal API access token](https://github.com/blog/1509-personal-api-tokens) at [https://github.com/settings/applications](https://github.com/settings/applications). Minimal token scope is `repo` or `public_repo` to release on private or public repositories respectively. 
 
 * **Artifact to deploy** (`artifact`) - Optional. Allows specifying one or more build artifacts to be uploaded as release assets. The value could be comma-delimited list of artifact's file name, deployment name or regular expression matching one of these. For example `bin\release\MyLib.zip` or `/.*\.nupkg/`.
@@ -55,6 +57,7 @@ To promote selected "tag" build to GitHub release:
 ### Configuring in appveyor.yml
 
 	deploy:
+      release: myproduct v$(appveyor_build_version)
 	  provider: GitHub
 	  artifact: /.*\.nupkg/           # upload all NuGet packages to release assets
       draft: false
