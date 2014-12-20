@@ -150,7 +150,7 @@ Slack notification nicely differentiates between passed and failed builds by cha
 ### Authentication token
 
 Slack API authentication token can be generated on this page (**Authentication** section): <br/>
-[https://api.slack.com](https://api.slack.com)
+[https://api.slack.com/web](https://api.slack.com/web)
 
 ### Message template
 
