@@ -44,7 +44,7 @@ To promote selected "tag" build to GitHub release:
 <a id="provider-settings"></a>
 ## Provider settings
 
-* **Release name** (`release`) - Optional. The name of release. If not specified build tag or version is used as release name. You can use environment variables in release name, for example `myproduct-v$(appveyor_build_version)`. **Release name cannot contain whitespaces**. 
+* **Release name** (`release`) - Optional. The name of release. If not specified build tag or version is used as release name. You can use environment variables in release name, for example `myproduct-v$(appveyor_build_version)`. **Release name cannot contain whitespaces - this is GitHub requirement, not an AppVeyor limitation**. 
 
 * **GitHub authentication token** (`auth_token`) - OAuth token used for authentication against GitHub API. You can generate [Personal API access token](https://github.com/blog/1509-personal-api-tokens) at [https://github.com/settings/applications](https://github.com/settings/applications). Minimal token scope is `repo` or `public_repo` to release on private or public repositories respectively. Be sure to encrypt your token using the **Account -> Encrypt data** tool.
 
