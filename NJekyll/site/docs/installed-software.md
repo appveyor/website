@@ -98,18 +98,19 @@ Below is the list of software pre-installed on Build Worker.
 
 ## Tools
 
-* [Windows Azure PowerShell](https://github.com/Azure/azure-sdk-tools/releases) 0.8.5
+* [Windows Azure PowerShell](https://github.com/Azure/azure-sdk-tools/releases) 0.8.7.1 (August 2014)
 * [Windows Azure CLI](http://azure.microsoft.com/en-us/downloads/)
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 2.8
-* [NuGet](http://docs.nuget.org/docs/start-here/installing-nuget) 2.8.2
+* [NuGet](http://docs.nuget.org/docs/start-here/installing-nuget) 2.8.3
 * [Chocolatey](http://chocolatey.org/) v0.9.8.27
-* [GitVersion](http://chocolatey.org/packages/GitVersion.Portable) 1.3.2
+* [GitVersion](http://chocolatey.org/packages/GitVersion.Portable) 2.0.0
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
 
 ## Testing
 
 * [NUnit](http://nunit.org/index.php?p=download) 2.6.3
 * [xUnit](https://github.com/xunit/xunit/releases) 1.9.2
+* [xUnit](https://github.com/xunit/xunit/releases) 2.0.0
 * [Machine.Specifications (MSpec)](http://www.nuget.org/packages/Machine.Specifications)
 
 ## Selenium browser testing
