@@ -31,10 +31,10 @@ Paid plans run on a dedicated hardware with faster CPUs and SSD drives. Each VM 
 
 IP addresses assigned to build workers:
 
-	173.193.24.178-190 (173.193.24.176/28)
-	173.193.56.154-158 (173.193.56.152/29)
-
-	
+	173.193.24.178-190    (173.193.24.176/28)
+	173.193.56.154-158    (173.193.56.152/29)
+    173.192.42.18-28      (173.192.42.16/28)
+	173.193.165.163-166   (173.193.165.160/29)
 	
 
 <a id="build-pipeline"></a>
