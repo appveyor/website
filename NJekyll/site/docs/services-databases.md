@@ -99,6 +99,7 @@ To start SQL Server and Reporting Services:
 
 MySQL 5.6 x64 database service is available on AppVeyor build workers.
 
+* Path: `C:\Program Files\MySql\MySQL Server 5.6`
 * Server name: `127.0.0.1` or `localhost`
 * Server port: `3306`
 * `root` password: `Password12!`
@@ -114,6 +115,7 @@ To start MySQL in `appveyor.yml`:
 
 PostgreSQL 9.3 x64 database service is available on AppVeyor build workers.
 
+* Path: `C:\Program Files\PostgreSQL\9.3`
 * Server name: `127.0.0.1` or `localhost`
 * Server port: `5432`
 * `postgres` account password: `Password12!`
@@ -127,11 +129,7 @@ To start PostgreSQL in `appveyor.yml`:
 <a id="iis"></a>
 ## Internet Information Services
 
-Internet Information Services ("Web Server" role) are installed on build machines. The version of IIS depends on the operating system:
-
-* Windows Server 2008 R2 - IIS 7.5
-* Windows Server 2012 - IIS 8
-* Windows Server 2012 R2 - IIS 8.5
+Internet Information Services ("Web Server" role) 8.5 are installed on build workers. The version of IIS depends on the operating system:
 
 To configure IIS in `appveyor.yml`:
 
