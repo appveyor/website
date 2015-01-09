@@ -79,7 +79,7 @@ In `Install script` field paste the following code:
 	$fileContent += $env:priv_key.Replace(' ', "`n")
 	$fileContent += "`n-----END RSA PRIVATE KEY-----`n"
 	Set-Content c:\users\appveyor\.ssh\id_rsa $fileContent
-	git submodule update --init --recursive
+	git submodule -q update --init --recursive
 
 ### appveyor.yml
 
@@ -96,7 +96,7 @@ Add this to your `appveyor.yml`:
 	  - ps: $fileContent += $env:priv_key.Replace(' ', "`n")
 	  - ps: $fileContent += "`n-----END RSA PRIVATE KEY-----`n" 
 	  - ps: Set-Content c:\users\appveyor\.ssh\id_rsa $fileContent
-	  - git submodule -q update --init --recursive
+	  - git submodule update --init --recursive
 
 
 ## Security considerations
