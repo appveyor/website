@@ -14,7 +14,7 @@ FTP provider supports the following protocols:
 and can work in two modes:
 
 ### Copy artifacts to remote FTP location
- 
+
 Build artifacts are copied "as is" with preserving artifact folder structure. For example, if you are copying build artifacts `bin\myapp.zip` and `logs\testlog.log` to remote FTP folder `builds\$(appveyor_build_version)\results` both files will be copied as `builds\<version>\results\bin\myapp.zip` and `builds\<version>\results\logs\testlog.log` respectively.
 
 To copy artifacts use `artifact` setting; leave it blank to FTP all artifacts.
@@ -53,7 +53,7 @@ Configuring in `appveyor.yml`:
 
 **Active-mode FTP** is often referred as "client-managed" session and thus requires a range of inbound ports opened on FTP client machine to to allow FTP server connections. You can read more about FTP modes in this article: [http://support.microsoft.com/kb/283679](http://support.microsoft.com/kb/283679)
 
-You can use Active-mode FTP only while deploying from build running on premium environment as you can control firewall on its build workers. 
+You can use Active-mode FTP only while deploying from build running on premium environment as you can control firewall on its build workers.
 
 To allow incoming FTP connections add this PowerShell command to *Install* section on Environment tab of AppVeyor project settings or in `install` section of `appveyor.yml`:
 

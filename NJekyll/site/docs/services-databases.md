@@ -8,7 +8,7 @@ title: Services and databases
 AppVeyor is an ideal platform for integration testing:
 
 - Your build script has admin access to the build machine - you are free to do whatever you like to support your testing process: install new software, run services, even format disk drives :)
-- Build machines are transient, which means the state between builds is not preserved and the next build is started on a fresh build machine - basically, you don't need any clean-up logic in your build scripts. 
+- Build machines are transient, which means the state between builds is not preserved and the next build is started on a fresh build machine - basically, you don't need any clean-up logic in your build scripts.
 
 AppVeyor has most popular services and database engines pre-installed on all build machines:
 
@@ -16,7 +16,7 @@ AppVeyor has most popular services and database engines pre-installed on all bui
 * [SQL Server 2012](#sql2012)
 * [SQL Server 2014](#sql2014)
 * [MySQL](#mysql)
-* [PostgreSQL](#postgresql) 
+* [PostgreSQL](#postgresql)
 * [Internet Information Services](#iis)
 * [Microsoft Message Queuing](#msmq)
 

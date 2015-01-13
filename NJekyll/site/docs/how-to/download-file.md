@@ -18,7 +18,7 @@ There is a number of ways you can use to download file in AppVeyor environment:
 
 You can use the following PowerShell code to download file using `System.Net.WebClient` class which is part of .NET Framework:
 
-	(New-Object Net.WebClient).DownloadFile('<file_url>', '<local_file_name>')
+    (New-Object Net.WebClient).DownloadFile('<file_url>', '<local_file_name>')
 
 Where:
 
@@ -31,17 +31,17 @@ Where:
 AppVeyor build session has built-in `Start-FileDownload` cmdlet for downloading files. There are some advantages of using this cmdlet instead of WebClient class:
 
 - It maintains current directory context
-- It allows specifying request timeout. 
-  
+- It allows specifying request timeout.
+
 Command syntax:
 
-	Start-FileDownload <url> [-FileName <string>] [-Timeout <int>]
+    Start-FileDownload <url> [-FileName <string>] [-Timeout <int>]
 
-> Timeout value is milliseconds. Default timeout is 300000 (5 minutes). 
+> Timeout value is milliseconds. Default timeout is 300000 (5 minutes).
 
 For example, the following command downloads remote file to the current folder with `installer.msi` name:
 
-	Start-FileDownload 'http://www.myserver.com/packages/installer.msi'
+    Start-FileDownload 'http://www.myserver.com/packages/installer.msi'
 
 Example usage in `appveyor.yml`:
 

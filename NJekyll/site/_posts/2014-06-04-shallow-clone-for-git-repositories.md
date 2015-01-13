@@ -7,8 +7,8 @@ AppVeyor runs every build on a new VM which is getting decommissioned right afte
 
 We introduced a new feature called "<strong>shallow clone</strong>" aiming to improve the situation with large repositories. It offers two options:
 <ol>
-	<li>Setting depth of git clone command.</li>
-	<li>Downloading repository as zipball using GitHub API</li>
+    <li>Setting depth of git clone command.</li>
+    <li>Downloading repository as zipball using GitHub API</li>
 </ol>
 <h2>Setting depth of git clone command</h2>
 By default AppVeyor clones entire repository with all the history. You can limit the number of last commits you'd like to clone. This feature works for Git repositories hosted at GitHub, BitBucket and Kiln. You can set clone depth on General tab of project settings:

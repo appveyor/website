@@ -31,11 +31,11 @@ Paid plans run on a dedicated hardware with faster CPUs and SSD drives. Each VM 
 
 IP addresses assigned to build workers:
 
-	173.193.24.178-190    (173.193.24.176/28)
-	173.193.56.154-158    (173.193.56.152/29)
+    173.193.24.178-190    (173.193.24.176/28)
+    173.193.56.154-158    (173.193.56.152/29)
     173.192.42.18-28      (173.192.42.16/28)
-	173.193.165.163-166   (173.193.165.160/29)
-	
+    173.193.165.163-166   (173.193.165.160/29)
+
 
 <a id="build-pipeline"></a>
 ## Build pipeline
@@ -53,7 +53,7 @@ Every build goes through the following steps:
 5. Modify `hosts` files
 6. Start services
 7. **Build**
-    
+
     * Run `before_build` scripts
     * Run msbuild
     * Run `after_build` scripts
@@ -84,7 +84,7 @@ Every build goes through the following steps:
     * Run `on_failure` scripts
 
 14. For both successful and failed builds:
-	* Call `on_finish` scripts
+    * Call `on_finish` scripts
 
 ### Time limitations
 
@@ -107,9 +107,9 @@ Each method has pros and cons. Via the User interface one can control every aspe
 At a minimum `appveyor.yml` is just an empty file.
 
 While working with YAML there are few important points to be aware of:
- 
+
 * YAML format is sensitive to indentations that must be **spaces**. Do not use tabs to indent configuration sections.
-* Section names in YAML are case-sensitive, so "deploy" and "Deploy" are different things in YAML. 
+* Section names in YAML are case-sensitive, so "deploy" and "Deploy" are different things in YAML.
 
 
 <a id="build-versioning"></a>
@@ -117,13 +117,13 @@ While working with YAML there are few important points to be aware of:
 
 Every time you push changes into repo or click the **New build** button AppVeyor starts a new build with an incremented build number.
 
-You may use the **build number** for versioning purposes (assemblies version patching, naming artifacts, etc.) or just use it for reference. 
+You may use the **build number** for versioning purposes (assemblies version patching, naming artifacts, etc.) or just use it for reference.
 
 AppVeyor uses the **version** value for naming builds. You can have "through" builds numbering in which major and minor parts of the version are changing and the build number is never reset or you can reset the build number for every new version. In any case, while the build number could be reset to any previously used value, the *version must be unique* across all builds.
 
 You can specify version format in `appveyor.yml`:
 
-	version: 1.0.{build}
+    version: 1.0.{build}
 
 <a id="assemblyinfo-patching"></a>
 ## AssemblyInfo patching
@@ -158,7 +158,7 @@ If required by your project (say, if absolute paths are used to reference its pa
 <a id="environment-variables"></a>
 ## Environment variables
 
-Immediately after cloning the repo on the build machine AppVeyor sets environment variables. 
+Immediately after cloning the repo on the build machine AppVeyor sets environment variables.
 
 ### Standard environment variables
 
@@ -168,7 +168,7 @@ Immediately after cloning the repo on the build machine AppVeyor sets environmen
 * `APPVEYOR_PROJECT_ID` - AppVeyor unique project ID
 * `APPVEYOR_PROJECT_NAME` - project name
 * `APPVEYOR_PROJECT_SLUG` - project slug (as seen in project details URL)
-* `APPVEYOR_BUILD_FOLDER` - path to clone directory 
+* `APPVEYOR_BUILD_FOLDER` - path to clone directory
 * `APPVEYOR_BUILD_ID` - AppVeyor unique build ID
 * `APPVEYOR_BUILD_NUMBER` - build number
 * `APPVEYOR_BUILD_VERSION` - build version
@@ -178,7 +178,7 @@ Immediately after cloning the repo on the build machine AppVeyor sets environmen
 * `APPVEYOR_REPO_PROVIDER` - GitHub, BitBucket or Kiln
 * `APPVEYOR_REPO_SCM` - `git` or `mercurial`
 * `APPVEYOR_REPO_NAME` - repository name in format `owner-name/repo-name`
-* `APPVEYOR_REPO_BRANCH` - build branch. For Pull Request commits it is **base** branch PR is merging into. 
+* `APPVEYOR_REPO_BRANCH` - build branch. For Pull Request commits it is **base** branch PR is merging into.
 * `APPVEYOR_REPO_TAG` - `true` if build has started by pushed tag; otherwise `false`.
 * `APPVEYOR_REPO_TAG_NAME` - contains tag name for builds started by tag; otherwise this variable is undefined.
 * `APPVEYOR_REPO_COMMIT` - commit ID (SHA)
@@ -187,7 +187,7 @@ Immediately after cloning the repo on the build machine AppVeyor sets environmen
 * `APPVEYOR_REPO_COMMIT_TIMESTAMP` - commit date/time
 * `APPVEYOR_REPO_COMMIT_MESSAGE` - commit message
 * `APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED` - the rest of commit message after line break (if exists)
-* `APPVEYOR_SCHEDULED_BUILD` - `True` if the build runs by scheduler 
+* `APPVEYOR_SCHEDULED_BUILD` - `True` if the build runs by scheduler
 * `PLATFORM` - platform name set on Build tab of project settings (or through `platform` parameter in `appveyor.yml`).
 * `CONFIGURATION` - configuration name set on Build tab of project settings (or through `configuration` parameter in `appveyor.yml`).
 
@@ -238,7 +238,7 @@ Every script could be authored either as a batch or PowerShell snippet.
 
 When you set **Cmd** script on the UI its body will be split into lines and executed as separate commands with an exit code check after each line. For example, consider the following "install" script:
 
-![install script cmd](/site/docs/images/install-script-cmd.png) 
+![install script cmd](/site/docs/images/install-script-cmd.png)
 
 If exit code of the first command (`gem update --system`) is different from a 0 script execution will be terminated and entire build will return as failed.
 
@@ -265,10 +265,10 @@ By default, script line is treated as batch command, but you can specify script 
 To add multi-line PowerShell script covering an entire event:
 
     on_success: |
-	  if($true)
+      if($true)
       {
-	    Write-Host "Success"
-	  }
+        Write-Host "Success"
+      }
 
 To add the same multi-line PowerShell script *inside* an event so other script lines could be added before / after:
 
@@ -331,7 +331,7 @@ or
 <a id="build-matrix"></a>
 ##Build matrix
 
-Every AppVeyor *build* consists of one or more *jobs*. A build is considered successful if all jobs are successful. A build immediately fails when any of its jobs fail. 
+Every AppVeyor *build* consists of one or more *jobs*. A build is considered successful if all jobs are successful. A build immediately fails when any of its jobs fail.
 
 AppVeyor enables easy testing against multiple combinations of platforms, configurations and environments. Specify which operating systems, build configurations and platforms you would like to include into the build matrix
 and AppVeyor will create a build with multiple jobs for all possible combinations.
@@ -354,7 +354,7 @@ For example, selecting **x86, Any CPU** for Platform and **Debug, Release** for 
 To configure build matrix in `appveyor.yml`:
 
     environment:
-	  # these variables are common to all jobs
+      # these variables are common to all jobs
       common_var1: value1
       common_var2: value2
 
@@ -384,8 +384,8 @@ To configure build matrix in `appveyor.yml`:
 
 By default AppVeyor **runs all** build jobs. If at least one job has failed the entire build is marked as failed. Sometimes, you want the build fail immediately once one of the job fails. To enable **fast fail** strategy add `fast_finish` setting into `appveyor.yml`:
 
-	matrix:
-	  fast_finish: true
+    matrix:
+      fast_finish: true
 
 ### Allow failing jobs
 
@@ -393,33 +393,33 @@ You can configure AppVeyor to allow certain build matrix rows to fail and still 
 
 To allow failing jobs add `matrix.allow_failures` section into `appveyor.yml` (the feature is not available on UI):
 
-	matrix:
-	  allow_failures:
-	    - <condition>: <value>
+    matrix:
+      allow_failures:
+        - <condition>: <value>
 
 `<condition>` can be `os`, `configuration`, `platform`, `test_category` or the name of environment variable.
 
 For example, to allow job failing on Node.js 0.11 (TBD - add link to Node.js instructions):
 
-	matrix:
-	  allow_failures:
-	    - nodejs_version: 0.11
+    matrix:
+      allow_failures:
+        - nodejs_version: 0.11
 
 The following example allows failure for `platform=x86, configuration=Debug` and `platform=x64, configuration=Release` jobs:
 
-	matrix:
-	  allow_failures:
-	    - platform: x86
-	      configuration: Debug
-	    - platform: x64
-	      configuration: Release 
+    matrix:
+      allow_failures:
+        - platform: x86
+          configuration: Debug
+        - platform: x64
+          configuration: Release
 
 The matrix is already optimized for fast failing. The logic is as follows:
 
 - If a job that does not allow failure has failed the build fails.
 - If a job that does allow failure has failed and the rest of jobs allow failures the build fails.
 
-See [complete appveyor.yml reference](/docs/appveyor-yml) for full syntax. 
+See [complete appveyor.yml reference](/docs/appveyor-yml) for full syntax.
 
 
 <a id="scheduled-builds"></a>
@@ -457,16 +457,16 @@ When a lot of commits are made by your team during the day there are multiple bu
 
 As a real-world example, suppose we have three projects: A, B and C. We want builds of project A always come first, then builds of project B and the rest in FIFO order. We set project A build priority to 1 (the highest priority) and project B priority to 2. Then we did commits in the following order (provided our account allows only one concurrent job and first build of project C is still running):
 
-	C (no priority) - 1 - running
-	C (no priority) - 2 - queued
-	B (priority 2)  - 1 - queued
-	A (priority 1)  - 1 - queued
-	B (priority 2)  - 2 - queued
+    C (no priority) - 1 - running
+    C (no priority) - 2 - queued
+    B (priority 2)  - 1 - queued
+    A (priority 1)  - 1 - queued
+    B (priority 2)  - 2 - queued
 
 Build queue will look as below:
 
-	C (no priority) - 1 - running
-	A (priority 1)  - 1 - queued   <-- this build comes next
-	B (priority 2)  - 1 - queued
+    C (no priority) - 1 - running
+    A (priority 1)  - 1 - queued   <-- this build comes next
+    B (priority 2)  - 1 - queued
     B (priority 2)  - 2 - queued
-	C (no priority) - 2 - queued
+    C (no priority) - 2 - queued

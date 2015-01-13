@@ -73,11 +73,11 @@ Paste contents of clipboard into value field of environment variable. New lines 
 
 In `Install script` field paste the following code:
 
-	$fileContent = "-----BEGIN RSA PRIVATE KEY-----`n"
-	$fileContent += $env:priv_key.Replace(' ', "`n")
-	$fileContent += "`n-----END RSA PRIVATE KEY-----`n"
-	Set-Content c:\users\appveyor\.ssh\id_rsa $fileContent
-	git submodule -q update --init --recursive
+    $fileContent = "-----BEGIN RSA PRIVATE KEY-----`n"
+    $fileContent += $env:priv_key.Replace(' ', "`n")
+    $fileContent += "`n-----END RSA PRIVATE KEY-----`n"
+    Set-Content c:\users\appveyor\.ssh\id_rsa $fileContent
+    git submodule -q update --init --recursive
 
 ### appveyor.yml
 
@@ -85,16 +85,16 @@ Copy the contents of private key to clipboard as shown above and open [Encrypt d
 
 Add this to your `appveyor.yml`:
 
-	environment:
-	  priv_key:
-	    secure: <encryped-value>
-	
-	install:
-	  - ps: $fileContent = "-----BEGIN RSA PRIVATE KEY-----`n"
-	  - ps: $fileContent += $env:priv_key.Replace(' ', "`n")
-	  - ps: $fileContent += "`n-----END RSA PRIVATE KEY-----`n" 
-	  - ps: Set-Content c:\users\appveyor\.ssh\id_rsa $fileContent
-	  - git submodule update --init --recursive
+    environment:
+      priv_key:
+        secure: <encryped-value>
+
+    install:
+      - ps: $fileContent = "-----BEGIN RSA PRIVATE KEY-----`n"
+      - ps: $fileContent += $env:priv_key.Replace(' ', "`n")
+      - ps: $fileContent += "`n-----END RSA PRIVATE KEY-----`n"
+      - ps: Set-Content c:\users\appveyor\.ssh\id_rsa $fileContent
+      - git submodule update --init --recursive
 
 
 ## Security considerations

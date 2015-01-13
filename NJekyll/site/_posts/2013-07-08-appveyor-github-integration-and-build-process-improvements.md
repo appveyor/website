@@ -9,10 +9,10 @@ First of all, I'd like to thank all those people participating in AppVeyor beta 
 
 Today we released a new AppVeyor update which includes:
 <ul>
-	<li>Login with GitHub</li>
-	<li>Selecting projects scope when authorizing with GitHub</li>
-	<li>MSBuild log saving and displaying</li>
-	<li>Project integration flow stability improvements</li>
+    <li>Login with GitHub</li>
+    <li>Selecting projects scope when authorizing with GitHub</li>
+    <li>MSBuild log saving and displaying</li>
+    <li>Project integration flow stability improvements</li>
 </ul>
 All these changes are immediately available!
 <h2>Login with GitHub</h2>

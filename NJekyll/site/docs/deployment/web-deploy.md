@@ -8,14 +8,14 @@ title: Deploying using Web Deploy
 Application can be automatically deployed during the build to staging environment and promoted to specific environment later from UI or through API. AppVeyor can deploy web application from Web Deploy package or zip archive.
 
 * [Creating Web Deploy package](#creating-package)
-	* [Automatic packaging](#automatic-packaging)
-	* [Custom packaging](#custom-packaging)
-	* [Including/excluding extra files into Web Deploy package](#including-custom-files)
+    * [Automatic packaging](#automatic-packaging)
+    * [Custom packaging](#custom-packaging)
+    * [Including/excluding extra files into Web Deploy package](#including-custom-files)
 * [Web Deploy deployment settings](#provider-settings)
 * [Specifying correct connection details](#connection-details)
-	*  [Remote agent service](#connection-details-agent)
-	*  [Web Deploy Handler](#connection-details-handler)
-	*  [Azure Web Sites](#connection-details-waws)
+    *  [Remote agent service](#connection-details-agent)
+    *  [Web Deploy Handler](#connection-details-handler)
+    *  [Azure Web Sites](#connection-details-waws)
 * [Web Deploy Parametrization](#web-deploy-parametrization)
 
 
@@ -55,25 +55,25 @@ Sometimes you need to add additional files into Web Deploy package which are not
 
 Just to give you a sense of the technique described in that article this is how to add Azure Web Job files into `App_Data` folder of web application package. We assume here that your solution contains two projects: Web Application located in `$(SolutionDir)WebApp` directory and Azure Web Job project located in `$(SolutionDir)WebJob`. You should add the following snippet at the very bottom of Web Application `.csproj` (`.vbproj`) file:
 
-	<PropertyGroup>
-	  <CopyAllFilesToSingleFolderForPackageDependsOn>
-	    CustomCollectFiles;
-	    $(CopyAllFilesToSingleFolderForPackageDependsOn);
-	  </CopyAllFilesToSingleFolderForPackageDependsOn>
+    <PropertyGroup>
+      <CopyAllFilesToSingleFolderForPackageDependsOn>
+        CustomCollectFiles;
+        $(CopyAllFilesToSingleFolderForPackageDependsOn);
+      </CopyAllFilesToSingleFolderForPackageDependsOn>
 
-	  <CopyAllFilesToSingleFolderForMsdeployDependsOn>
-	    CustomCollectFiles;
-	    $(CopyAllFilesToSingleFolderForPackageDependsOn);
-	  </CopyAllFilesToSingleFolderForMsdeployDependsOn>
-	</PropertyGroup>
-	<Target Name="CustomCollectFiles">
-	  <ItemGroup>
-	    <_CustomFiles Include="$(SolutionDir)WebJob\bin\$(ConfigurationName)\**\*" />
-	    <FilesForPackagingFromProject  Include="%(_CustomFiles.Identity)">
-	      <DestinationRelativePath>App_Data\jobs\continuous\MyJob\%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
-	    </FilesForPackagingFromProject>
-	  </ItemGroup>
-	</Target>
+      <CopyAllFilesToSingleFolderForMsdeployDependsOn>
+        CustomCollectFiles;
+        $(CopyAllFilesToSingleFolderForPackageDependsOn);
+      </CopyAllFilesToSingleFolderForMsdeployDependsOn>
+    </PropertyGroup>
+    <Target Name="CustomCollectFiles">
+      <ItemGroup>
+        <_CustomFiles Include="$(SolutionDir)WebJob\bin\$(ConfigurationName)\**\*" />
+        <FilesForPackagingFromProject  Include="%(_CustomFiles.Identity)">
+          <DestinationRelativePath>App_Data\jobs\continuous\MyJob\%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
+        </FilesForPackagingFromProject>
+      </ItemGroup>
+    </Target>
 
 
 <a id="provider-settings"></a>
@@ -118,7 +118,7 @@ See  [Configuring Deployment Properties for a Target Environment](http://www.asp
 
 Open website dashboard in Azure Management Portal and download *publish profile*:
 
-![publish-profile](/site/docs/deployment/images/web-deploy/waws-publish-profile.png) 
+![publish-profile](/site/docs/deployment/images/web-deploy/waws-publish-profile.png)
 
 Specify the following deployment settings in AppVeyor:
 
@@ -130,7 +130,7 @@ Specify the following deployment settings in AppVeyor:
 
 Replace `<publishUrl>`, `<msdeploySite>`, `<userName>` and `<userPWD>` with values from downloaded publishing profile XML file like in example below:
 
-![publish-profile-xml](/site/docs/deployment/images/web-deploy/waws-publish-profile-xml.png) 
+![publish-profile-xml](/site/docs/deployment/images/web-deploy/waws-publish-profile-xml.png)
 
 External links:
 
@@ -142,7 +142,7 @@ Configuring in `appveyor.yml`:
 
     deploy:
       provider: WebDeploy
-      server: 
+      server:
       website:
       username:
       password:
@@ -176,15 +176,15 @@ Parameter element describes the name, default value and the places where and how
 
 `Parameters.xml` for our example:
 
-	<?xml version="1.0" encoding="utf-8" ?>
-	<parameters>
-	  <parameter name="LogsPath" defaultValue="logs">
-	    <parameterEntry kind="XmlFile" scope="\\web.config$" match="/configuration/appSettings/add[@key='LogsPath']/@value" />
-	  </parameter>
-	  <parameter name="DatabaseName">
-	    <parameterEntry kind="TextFile" scope="\\Database\\install_db.sql$" match="@@database_name@@" />
-	  </parameter>
-	</parameters>
+    <?xml version="1.0" encoding="utf-8" ?>
+    <parameters>
+      <parameter name="LogsPath" defaultValue="logs">
+        <parameterEntry kind="XmlFile" scope="\\web.config$" match="/configuration/appSettings/add[@key='LogsPath']/@value" />
+      </parameter>
+      <parameter name="DatabaseName">
+        <parameterEntry kind="TextFile" scope="\\Database\\install_db.sql$" match="@@database_name@@" />
+      </parameter>
+    </parameters>
 
 When Web Deploy package is built you can open it in the explorer and see `parameters.xml` in the root:
 

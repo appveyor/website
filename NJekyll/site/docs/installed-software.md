@@ -76,24 +76,24 @@ Below is the list of software pre-installed on Build Worker.
     * Active default version in `PATH` is 0.10.32
 * [Go](http://golang.org/dl/) 1.3 x64
 * Java SE Development Kit (JDK)
-	* [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) x64 (`C:\Program Files\Java\jdk1.7.0\bin` - default in `PATH`)
-	* [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) x86 (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)
-	* [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) x64 (`C:\Program Files\Java\jdk1.8.0`)
-	* [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) x86 (`C:\Program Files (x86)\Java\jdk1.8.0`) 
+    * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) x64 (`C:\Program Files\Java\jdk1.7.0\bin` - default in `PATH`)
+    * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) x86 (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)
+    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) x64 (`C:\Program Files\Java\jdk1.8.0`)
+    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) x86 (`C:\Program Files (x86)\Java\jdk1.8.0`)
 * [Mono](http://www.go-mono.com/mono-downloads/download.html) 3.2.3
 * [Ruby](http://rubyinstaller.org/downloads/) with [DevKit](http://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
-	* 1.9.3 x86 (`C:\Ruby193` - default in `PATH`)
-	* 2.0.0 x86 (`C:\Ruby200`)
-	* 2.0.0 x64 (`C:\Ruby200-x64`)
-	* 2.1.3 x86 (`C:\Ruby21`)
-	* 2.1.3 x64 (`C:\Ruby21-x64`)
+    * 1.9.3 x86 (`C:\Ruby193` - default in `PATH`)
+    * 2.0.0 x86 (`C:\Ruby200`)
+    * 2.0.0 x64 (`C:\Ruby200-x64`)
+    * 2.1.3 x86 (`C:\Ruby21`)
+    * 2.1.3 x64 (`C:\Ruby21-x64`)
 * [Python](https://www.python.org/downloads/windows/)
-	* 2.7.8 x86 (`C:\Python27` - default in `PATH`)
-	* 2.7.8 x64 (`C:\Python27-x64`)
-	* 3.3.5 x86 (`C:\Python33`)
-	* 3.3.5 x64 (`C:\Python33-x64`)
-	* 3.4.1 x86 (`C:\Python34`)
-	* 3.4.1 x64 (`C:\Python34-x64`) 
+    * 2.7.8 x86 (`C:\Python27` - default in `PATH`)
+    * 2.7.8 x64 (`C:\Python27-x64`)
+    * 3.3.5 x86 (`C:\Python33`)
+    * 3.3.5 x64 (`C:\Python33-x64`)
+    * 3.4.1 x86 (`C:\Python34`)
+    * 3.4.1 x64 (`C:\Python34-x64`)
 * [MinGW](http://www.mingw.org/) (core components and compilers - `C:\MinGW`)
 
 ## Tools
@@ -142,8 +142,8 @@ Below is the list of software pre-installed on Build Worker.
 
 You can use the following PowerShell code to get the full list of software installed on build worker:
 
-	$x64items = @(Get-ChildItem "HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall")
-	$x64items + @(Get-ChildItem "HKLM:SOFTWARE\wow6432node\Microsoft\Windows\CurrentVersion\Uninstall") `
-	   | ForEach-object { Get-ItemProperty Microsoft.PowerShell.Core\Registry::$_ } `
-	   | Sort-Object -Property DisplayName `
-	   | Select-Object -Property DisplayName,DisplayVersion
+    $x64items = @(Get-ChildItem "HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall")
+    $x64items + @(Get-ChildItem "HKLM:SOFTWARE\wow6432node\Microsoft\Windows\CurrentVersion\Uninstall") `
+       | ForEach-object { Get-ItemProperty Microsoft.PowerShell.Core\Registry::$_ } `
+       | Sort-Object -Property DisplayName `
+       | Select-Object -Property DisplayName,DisplayVersion

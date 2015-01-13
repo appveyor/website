@@ -190,7 +190,7 @@ Other properties:
 
 Deployment Agent supports publishing of SSDT package artifacts (with `.dacpac` extension) to SQL Server instance.
 
-To direct AppVeyor that named artifact should be treated as DACPAC package: 
+To direct AppVeyor that named artifact should be treated as DACPAC package:
 
     <artifact_name>.deploy_database: true
 
@@ -204,10 +204,10 @@ Other properties:
 
 For example, given `.dacpac` artifact's deployment name is `MyDatabase`:
 
-	MyDatabase.deploy_database					true
-	MyDatabase.connection_string				Server=(local)\SQLEXPRESS;Database=my_app;Integrated security=SSPI;
-	MyDatabase.sqlcmd.MYVAR						hello, world!
-	MyDatabase.backup_database_before_changes	true
+    MyDatabase.deploy_database                  true
+    MyDatabase.connection_string                Server=(local)\SQLEXPRESS;Database=my_app;Integrated security=SSPI;
+    MyDatabase.sqlcmd.MYVAR                     hello, world!
+    MyDatabase.backup_database_before_changes   true
 
 
 <a id="installing-msi"></a>
@@ -226,8 +226,8 @@ Other properties:
 
 For example, given `.msi` artifact's deployment name is `MyAppInstall`:
 
-	MyAppInstall.deploy_msi                 true
-	MyAppInstall.uninstall_application      My Application
+    MyAppInstall.deploy_msi                 true
+    MyAppInstall.uninstall_application      My Application
 
 
 <a id="running-powershell"></a>

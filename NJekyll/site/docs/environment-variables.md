@@ -5,7 +5,7 @@ title: Environment variables
 
 # Environment variables
 
-Environment variables that are set by AppVeyor for every build: 
+Environment variables that are set by AppVeyor for every build:
 
 * `APPVEYOR` - `True` if build runs in AppVeyor environment
 * `CI` - `True` if build runs in AppVeyor environment
@@ -13,7 +13,7 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_PROJECT_ID` - AppVeyor unique project ID
 * `APPVEYOR_PROJECT_NAME` - project name
 * `APPVEYOR_PROJECT_SLUG` - project slug (as seen in project details URL)
-* `APPVEYOR_BUILD_FOLDER` - path to clone directory 
+* `APPVEYOR_BUILD_FOLDER` - path to clone directory
 * `APPVEYOR_BUILD_ID` - AppVeyor unique build ID
 * `APPVEYOR_BUILD_NUMBER` - build number
 * `APPVEYOR_BUILD_VERSION` - build version
@@ -23,7 +23,7 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_REPO_PROVIDER` - GitHub, BitBucket or Kiln
 * `APPVEYOR_REPO_SCM` - `git` or `mercurial`
 * `APPVEYOR_REPO_NAME` - repository name in format `owner-name/repo-name`
-* `APPVEYOR_REPO_BRANCH` - build branch. For Pull Request commits it is **base** branch PR is merging into. 
+* `APPVEYOR_REPO_BRANCH` - build branch. For Pull Request commits it is **base** branch PR is merging into.
 * `APPVEYOR_REPO_TAG` - `true` if build has started by pushed tag; otherwise `false`.
 * `APPVEYOR_REPO_TAG_NAME` - contains tag name for builds started by tag; otherwise this variable is undefined.
 * `APPVEYOR_REPO_COMMIT` - commit ID (SHA)

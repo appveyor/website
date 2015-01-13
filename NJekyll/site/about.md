@@ -4,8 +4,8 @@ title: About us
 ---
 
 <div class="title">
-	<h1>About us</h1>
-	<h2>AppVeyor aims to give powerful Continuous Integration and Deployment tools to every .NET developer without the hassle of setting up and maintaining their own build server.</h2>
+    <h1>About us</h1>
+    <h2>AppVeyor aims to give powerful Continuous Integration and Deployment tools to every .NET developer without the hassle of setting up and maintaining their own build server.</h2>
 </div>
 
 ## Why are we building AppVeyor?
