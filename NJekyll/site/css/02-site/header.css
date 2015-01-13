@@ -29,27 +29,8 @@
     background-color: #3A2F2F;
 }
 
-/* mobile menu toggle button */
-.top-bar .toggle-topbar.menu-icon {
-    padding-left: 0;
-}
-.top-bar:not(.expanded) .toggle-topbar.menu-icon a {
-    color: #e2dddd;
-}
-
-.top-bar .toggle-topbar.menu-icon a {
-    width: 54px;
-    margin-right: -15px;
-}
-
-.top-bar .toggle-topbar.menu-icon a span {
-    right: 15px;
-}
-
-.top-bar:not(.expanded) .toggle-topbar.menu-icon a span {
-    -webkit-box-shadow: 0 10px 0 1px #e2dddd, 0 16px 0 1px #e2dddd, 0 22px 0 1px #e2dddd;
-    -moz-box-shadow: 0 10px 0 1px #e2dddd, 0 16px 0 1px #e2dddd, 0 22px 0 1px #e2dddd;
-    box-shadow: 0 10px 0 1px #e2dddd, 0 16px 0 1px #e2dddd, 0 22px 0 1px #e2dddd;
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background-color: #322525;
 }
 
 /* Medium and large screens */

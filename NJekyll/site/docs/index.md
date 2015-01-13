@@ -1,11 +1,14 @@
 ---
 layout: docs
 title: Getting started
+slug: docs
 ---
 
 # Getting started
 
-<iframe width="640" height="360" src="//www.youtube.com/embed/e1rVM4_nzWw?rel=0&color=white" frameborder="0" allowfullscreen></iframe>
+<div class="flex-video widescreen">
+    <iframe width="640" height="360" src="//www.youtube.com/embed/e1rVM4_nzWw?rel=0&color=white" frameborder="0" allowfullscreen></iframe>
+</div>
 
 ## Step 1 - Sign in with AppVeyor
 

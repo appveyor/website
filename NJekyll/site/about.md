@@ -1,6 +1,7 @@
 ﻿---
 layout: one-column
 title: About us
+slug: about
 ---
 
 <div class="title">
