@@ -8,29 +8,35 @@
     text-transform: uppercase;
     font-weight: 400;
     font-size: 0.9rem;
-    background: #00b500;
+    background-color: #00b500;
     margin: 0 5px 1rem 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
     border-radius: 4px;
-    transition: background 0.3s;
-    -webkit-transition: background 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
 }
 
-    a.big-button:hover,
-    a.big-button:active {
-        background: #00d600;
-        color: #fff;
-    }
+a.big-button:hover,
+a.big-button:active {
+    background-color: #00d600;
+    color: #fff;
+}
 
 .big-button.blue {
-    background: #0b99d6;
-    transition: background 0.3s;
-    -webkit-transition: background 0.3s;
+    background-color: #0b99d6;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .big-button.blue:hover,
 .big-button.blue:active
 {
-    background: #00BDE8;
+    background-color: #00BDE8;
 }
 
 .action-buttons {
@@ -46,12 +52,13 @@
 /* Foundation buttons */
 button, .button {
     cursor: pointer;
-    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #00B3E0;
     border: 1px dotted #00B3E0;
     outline: none;
     -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;
     -moz-transition: background-color 300ms ease-out, border-color 300ms ease-out;
+    -o-transition: background-color 300ms ease-out, border-color 300ms ease-out;
     transition: background-color 300ms ease-out, border-color 300ms ease-out;
 }
 

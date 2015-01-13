@@ -1,10 +1,10 @@
 ﻿html {
-  background: #fff; 
+  background-color: #fff; 
 }
 
 body {
     background: transparent;
-    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .page-title {
@@ -25,7 +25,7 @@ body {
 /* footer
 ----------------------------------------------------------*/
 .footer-container {
-    background: #fff;
+    background-color: #fff;
     padding-top: 2rem;
 }
 
