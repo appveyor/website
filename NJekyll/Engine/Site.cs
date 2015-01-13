@@ -1,13 +1,9 @@
 ﻿using DotLiquid;
-using DotLiquid.FileSystems;
-using MarkdownSharp;
 using NJekyll.Engine.Tags;
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Optimization;
@@ -24,13 +20,13 @@ namespace NJekyll.Engine
         public const string INCLUDES_FOLDER = "_includes";
         public const string LAYOUTS_FOLDER = "_layouts";
 
-        static Dictionary<string, object> _site;
-        static Dictionary<string, Page> _pages = new Dictionary<string, Page>(StringComparer.OrdinalIgnoreCase); // key - Permalink
-        static Dictionary<string, Layout> _layouts = new Dictionary<string, Layout>(StringComparer.OrdinalIgnoreCase); // key - name
-        static Dictionary<string, List<Page>> _collections = new Dictionary<string, List<Page>>(StringComparer.OrdinalIgnoreCase);
-        static Dictionary<string, string> cacheDependencyDirectories = new Dictionary<string, string>();
+        private static Dictionary<string, object> _site;
+        private static Dictionary<string, Page> _pages = new Dictionary<string, Page>(StringComparer.OrdinalIgnoreCase); // key - Permalink
+        private static Dictionary<string, Layout> _layouts = new Dictionary<string, Layout>(StringComparer.OrdinalIgnoreCase); // key - name
+        private static Dictionary<string, List<Page>> _collections = new Dictionary<string, List<Page>>(StringComparer.OrdinalIgnoreCase);
+        private static Dictionary<string, string> cacheDependencyDirectories = new Dictionary<string, string>();
 
-        static string _siteRoot = null;
+        private static string _siteRoot = null;
 
         public static string GetRedirect(string pageUrl)
         {
@@ -79,15 +75,15 @@ namespace NJekyll.Engine
             _site["pages"] = _pages.Values.ToList();
 
             // collections
-            foreach(var collection in _collections)
+            foreach (var collection in _collections)
             {
                 var sortedCollection = collection.Value.OrderByDescending(p => p.Date).ToList();
 
                 // set Next and Previous
-                for (int i = 0; i < sortedCollection.Count; i++ )
+                for (int i = 0; i < sortedCollection.Count; i++)
                 {
                     // Previous
-                    if(i < sortedCollection.Count - 1)
+                    if (i < sortedCollection.Count - 1)
                     {
                         sortedCollection[i].Previous = sortedCollection[i + 1];
                     }
@@ -106,7 +102,7 @@ namespace NJekyll.Engine
                              group page by category;
 
             var categoriesHash = new Dictionary<string, object>();
-            foreach(var category in categories)
+            foreach (var category in categories)
             {
                 categoriesHash[category.Key] = category.ToList();
             }
@@ -139,9 +135,9 @@ namespace NJekyll.Engine
             context["page"] = page;
             context.AddFilters(typeof(Filters));
 
-            if(parameters != null)
+            if (parameters != null)
             {
-                foreach(var parameter in parameters)
+                foreach (var parameter in parameters)
                 {
                     context[parameter.Key] = parameter.Value;
                 }
@@ -152,7 +148,8 @@ namespace NJekyll.Engine
             Template.FileSystem = new IncludesFolder(GetPath("_includes"));
             Template template = Template.Parse(content);
 
-            return template.Render(new RenderParameters {
+            return template.Render(new RenderParameters
+            {
                 Context = context
             });
         }
@@ -187,10 +184,10 @@ namespace NJekyll.Engine
             content = page.Content;
 
             var layoutName = page.Layout;
-            while(layoutName != null)
+            while (layoutName != null)
             {
                 // render layout
-                if(!_layouts.ContainsKey(layoutName))
+                if (!_layouts.ContainsKey(layoutName))
                 {
                     throw new Exception(String.Format("Error rendering page {0}. Layout {1} not found.", page.Url, layoutName));
                 }
@@ -205,7 +202,7 @@ namespace NJekyll.Engine
             }
 
             // add to cache
-            if(!page.NoCache)
+            if (!page.NoCache)
             {
                 Site.AddToCache(cacheKey, content, new string[] { page.Path }, new string[] { SITE_CONTENT_VALID_CACHE_KEY });
             }
@@ -218,19 +215,19 @@ namespace NJekyll.Engine
             var config = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
 
             string path = GetPath(SITE_CONFIG_FILENAME);
-            if(File.Exists(path))
+            if (File.Exists(path))
             {
                 string yaml = File.ReadAllText(path);
                 try
                 {
                     config = YamlToObject(yaml) as Dictionary<string, object>;
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     throw new Exception(String.Format("Error parsing {0}.", SITE_CONFIG_FILENAME), ex);
                 }
 
-                if(config == null)
+                if (config == null)
                 {
                     throw new Exception(String.Format("Site configuration file {0} must be a mapping.", SITE_CONFIG_FILENAME));
                 }
@@ -244,7 +241,7 @@ namespace NJekyll.Engine
         private static void LoadSiteContent(string path)
         {
             string directoryPath = GetPath(path);
-            foreach(var fileInfo in new DirectoryInfo(directoryPath).GetFileSystemInfos())
+            foreach (var fileInfo in new DirectoryInfo(directoryPath).GetFileSystemInfos())
             {
                 string virtualPath = (String.IsNullOrEmpty(path) ? "" : path + "\\") + fileInfo.Name;
                 if (virtualPath.StartsWith(DATA_FOLDER, StringComparison.OrdinalIgnoreCase) ||
@@ -253,7 +250,7 @@ namespace NJekyll.Engine
                     cacheDependencyDirectories[directoryPath] = directoryPath;
                     continue;
                 }
-                else if(fileInfo is DirectoryInfo)
+                else if (fileInfo is DirectoryInfo)
                 {
                     // recurse directory
                     LoadSiteContent(virtualPath);
@@ -261,7 +258,7 @@ namespace NJekyll.Engine
                 else
                 {
                     // process file
-                    if(fileInfo.Extension.Equals(".md", StringComparison.OrdinalIgnoreCase)
+                    if (fileInfo.Extension.Equals(".md", StringComparison.OrdinalIgnoreCase)
                         || fileInfo.Extension.Equals(".markdown", StringComparison.OrdinalIgnoreCase)
                         || fileInfo.Extension.Equals(".html", StringComparison.OrdinalIgnoreCase))
                     {
@@ -286,14 +283,14 @@ namespace NJekyll.Engine
         public static CollectionMetadata GetCollectionMetadata(string name)
         {
             var collections = _site.ContainsKey("collections") ? _site["collections"] as Dictionary<string, object> : null;
-            if(collections != null)
+            if (collections != null)
             {
                 // collections are defined
                 var collection = collections.ContainsKey(name) ? collections[name] as Dictionary<string, object> : null;
-                if(collection != null)
+                if (collection != null)
                 {
                     var cm = new CollectionMetadata { Name = name };
-                    if(collection.ContainsKey("output"))
+                    if (collection.ContainsKey("output"))
                     {
                         cm.Output = (bool)collection["output"];
                     }
@@ -316,7 +313,7 @@ namespace NJekyll.Engine
         public static void AddCollectionPage(Page page)
         {
             var collection = _collections.ContainsKey(page.Collection) ? _collections[page.Collection] as List<Page> : null;
-            if(collection == null)
+            if (collection == null)
             {
                 collection = new List<Page>();
                 _collections[page.Collection] = collection;
@@ -360,6 +357,7 @@ namespace NJekyll.Engine
         }
 
         #region YAML
+
         public static object YamlToObject(string yamlContents)
         {
             // setup the input
@@ -438,8 +436,8 @@ namespace NJekyll.Engine
             // just return original string value
             return s;
         }
-        #endregion
-    }
 
+        #endregion YAML
+    }
 
 }

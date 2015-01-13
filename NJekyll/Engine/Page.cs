@@ -1,10 +1,8 @@
-﻿using DotLiquid;
-using MarkdownSharp;
+﻿using MarkdownSharp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
-using System.Web;
 
 namespace NJekyll.Engine
 {
@@ -46,7 +44,10 @@ namespace NJekyll.Engine
             }
         }
 
-        public Page(string virtualPath) : base(virtualPath) { }
+        public Page(string virtualPath)
+            : base(virtualPath)
+        {
+        }
 
         public override object BeforeMethod(string method)
         {
@@ -66,14 +67,14 @@ namespace NJekyll.Engine
             if (FrontMatter.ContainsKey("categories"))
             {
                 var categories = FrontMatter["categories"] as List<object>;
-                if(categories != null)
+                if (categories != null)
                 {
                     Categories = categories.Select(item => item.ToString()).ToList();
                 }
                 else
                 {
                     var commaSeparatedString = FrontMatter["categories"] as string;
-                    if(commaSeparatedString != null)
+                    if (commaSeparatedString != null)
                     {
                         Categories = commaSeparatedString.Split(new char[] { ',', ';', ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
                     }
@@ -97,27 +98,27 @@ namespace NJekyll.Engine
                     }
                 }
             }
-            
+
             // calculate Permalink
-            if(String.IsNullOrWhiteSpace(Permalink))
+            if (String.IsNullOrWhiteSpace(Permalink))
             {
                 Permalink = "/" + VirtualPath.Replace('\\', '/').Trim('/');
-             
+
                 // now we have /some_folder/file.html or /some_file.md
                 // remove extension
                 int idx = Permalink.LastIndexOf(".");
-                if(idx != -1)
+                if (idx != -1)
                 {
                     Permalink = Permalink.Substring(0, idx);
                 }
 
                 // check if it ends with /index
-                if(Permalink.EndsWith("/index", StringComparison.OrdinalIgnoreCase))
+                if (Permalink.EndsWith("/index", StringComparison.OrdinalIgnoreCase))
                 {
                     Permalink = Permalink.Substring(0, Permalink.Length - 6);
                 }
 
-                if(Permalink == "")
+                if (String.IsNullOrEmpty(Permalink))
                 {
                     Permalink = "/";
                 }
@@ -134,7 +135,7 @@ namespace NJekyll.Engine
                 // calculate date and permalink from post URL
                 string pageName = permalinkParts.Last();
                 var match = Regex.Match(pageName, @"^(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})-(?<title>.+)");
-                if(match.Success)
+                if (match.Success)
                 {
                     string year = match.Groups["year"].Value;
                     string month = match.Groups["month"].Value;
@@ -164,7 +165,7 @@ namespace NJekyll.Engine
             }
 
             // override date from front matter
-            if(FrontMatter.ContainsKey("date"))
+            if (FrontMatter.ContainsKey("date"))
             {
                 Date = (DateTime)FrontMatter["date"];
             }

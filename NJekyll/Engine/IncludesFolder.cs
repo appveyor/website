@@ -1,15 +1,11 @@
 ﻿using DotLiquid.FileSystems;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Web;
 
 namespace NJekyll.Engine
 {
     public class IncludesFolder : IFileSystem
     {
-        string _path;
+        private string _path;
 
         public IncludesFolder(string path)
         {

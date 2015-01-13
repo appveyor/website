@@ -1,15 +1,11 @@
 ﻿using DotLiquid;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Web;
 
 namespace NJekyll.Engine
 {
     public class DataFolder : Drop
     {
-        string _path = null;
+        private string _path = null;
 
         public DataFolder(string path)
         {
@@ -28,18 +24,18 @@ namespace NJekyll.Engine
             // check cache
             string cacheKey = "data:" + itemPath;
             object result = Site.GetFromCache(cacheKey);
-            if(result != null)
+            if (result != null)
             {
                 return result;
             }
 
             string cacheDependencyPath = null;
-            if(Directory.Exists(itemPath))
+            if (Directory.Exists(itemPath))
             {
                 result = new DataFolder(itemPath);
                 cacheDependencyPath = itemPath;
             }
-            else if(File.Exists(itemPath + ".yml"))
+            else if (File.Exists(itemPath + ".yml"))
             {
                 var yaml = File.ReadAllText(itemPath + ".yml");
                 result = Site.YamlToObject(yaml);

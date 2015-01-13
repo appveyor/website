@@ -44,7 +44,7 @@ namespace NJekyll.Engine
 
         private static string GetPath(string virtualPath)
         {
-            return HttpContext.Current.Server.MapPath("~/");
+            return HttpContext.Current.Server.MapPath(virtualPath);
         }
     }
 }

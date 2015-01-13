@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Web;
-
-namespace NJekyll.Engine
+﻿namespace NJekyll.Engine
 {
     public class Layout : ContentFile
     {
         internal string Name { get; private set; }
         internal string ParentLayout { get; private set; }
 
-        public Layout(string virtualPath) : base(virtualPath) { }
+        public Layout(string virtualPath)
+            : base(virtualPath)
+        {
+        }
 
         protected override void Init()
         {
@@ -19,7 +16,7 @@ namespace NJekyll.Engine
             Name = System.IO.Path.GetFileNameWithoutExtension(this.Path);
 
             // extract parent layout from front matter
-            if(FrontMatter.ContainsKey("layout"))
+            if (FrontMatter.ContainsKey("layout"))
             {
                 ParentLayout = (string)FrontMatter["layout"];
             }
