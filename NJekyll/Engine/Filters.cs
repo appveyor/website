@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
 namespace NJekyll.Engine
 {
@@ -21,7 +19,7 @@ namespace NJekyll.Engine
         public static object RandomElement(IEnumerable<object> collection)
         {
             var list = collection.ToList();
-            if(list != null && list.Count > 0)
+            if (list != null && list.Count > 0)
             {
                 return list[new Random().Next(list.Count)];
             }

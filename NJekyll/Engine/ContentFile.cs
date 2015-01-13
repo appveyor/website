@@ -2,15 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Web;
 
 namespace NJekyll.Engine
 {
     public abstract class ContentFile : Drop
     {
-        string _content;
+        private string _content;
 
         internal ContentFormat ContentFormat { get; private set; }
         internal Dictionary<string, object> FrontMatter { get; private set; }
@@ -21,7 +19,7 @@ namespace NJekyll.Engine
         {
             get
             {
-                if(_content == null)
+                if (_content == null)
                 {
                     Load(loadContent: true);
                 }
@@ -54,14 +52,14 @@ namespace NJekyll.Engine
             }
             else
             {
-                throw new Exception(String.Format("Uknown page format: {0}", this.VirtualPath));
+                throw new Exception(String.Format("Unknown page format: {0}", this.VirtualPath));
             }
 
             var content = new StringBuilder();
             var frontMatter = new StringBuilder();
 
             // parse metadata
-            using(var reader = new StreamReader(this.Path))
+            using (var reader = new StreamReader(this.Path))
             {
                 string line = null;
                 bool insideMetadata = false;
@@ -96,7 +94,7 @@ namespace NJekyll.Engine
                 }
             }
 
-            if(loadContent && content.Length > 0)
+            if (loadContent && content.Length > 0)
             {
                 _content = content.ToString();
             }
@@ -106,7 +104,7 @@ namespace NJekyll.Engine
                 {
                     FrontMatter = Site.YamlToObject(frontMatter.ToString()) as Dictionary<string, object>;
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     throw new Exception(String.Format("Error parsing front matter in {0}.", VirtualPath), ex);
                 }

@@ -9,7 +9,7 @@ namespace NJekyll.Engine
 {
     public class Paginator : Drop
     {
-        List<Page> _collection;
+        private List<Page> _collection;
 
         public int Page { get; private set; }
         public int PerPage { get; private set; }
@@ -25,7 +25,7 @@ namespace NJekyll.Engine
             get
             {
                 int? previousPage = null;
-                if(Page > 1)
+                if (Page > 1)
                 {
                     previousPage = Page - 1;
                 }
@@ -75,7 +75,7 @@ namespace NJekyll.Engine
             Page = 1;
             var url = HttpContext.Current.Request.Url.AbsolutePath;
             var match = Regex.Match(url, @".+/page/(?<page>\d+)/?$");
-            if(match.Success)
+            if (match.Success)
             {
                 Page = Int32.Parse(match.Groups["page"].Value);
             }
