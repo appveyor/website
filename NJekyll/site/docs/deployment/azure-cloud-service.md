@@ -25,7 +25,7 @@ To enable packaging of Azure CS projects in `appveyor.yml`:
 
 AppVeyor will find Azure Cloud Service project (`.ccproj`) and package it. Created Cloud Service package (`<project-name>.cspkg`) and default "Cloud" configuration (`<project-name>.cscfg`) will be published to build artifacts. In addition to that **all** `.cscfg` files found in Cloud Service project folder are pushed to artifacts with names `<project-name>.<config>.cscfg`. Build artifacts page would look like below:
 
-![azure-cloud-service-artifacts](/site/docs/images/azure-cloud-service-artifacts.png)
+![azure-cloud-service-artifacts](/site/images/docs/azure-cloud-service-artifacts.png)
 
 
 
@@ -75,10 +75,10 @@ Cloud Service Deploy provider analyzes the deployment package and looks into env
 
 When promoting specific build from Environment page you set variables on environment settings page:
 
-![environment-variables](/site/docs/deployment/images/web-deploy/environment-variables.png)
+![environment-variables](/site/images/docs/deployment/web-deploy/environment-variables.png)
 
 When deploying during the build session environment variables are used instead. You can set build environment variables on Environment tab of project settings, `appveyor.yml` or programmatically during the build.
 
-![project-environment-variables](/site/docs/deployment/images/web-deploy/project-environment-variables.png)
+![project-environment-variables](/site/images/docs/deployment/web-deploy/project-environment-variables.png)
 
 Variables defined during the build override those ones defined on Environment level.

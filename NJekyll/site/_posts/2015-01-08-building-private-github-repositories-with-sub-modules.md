@@ -17,7 +17,7 @@ Git has [submodules](http://www.git-scm.com/book/en/v2/Git-Tools-Submodules) sup
 
 The problem arises when sub-modules refer private Git repositories which cannot be cloned without authentication and as a result you get stalled build. This is because sub-module repository does not contain SSH public key used to authenticate main repo, so Git is asking for credentials:
 
-![sub-modules-stalled-build](/site/docs/images/how-to/sub-modules-stalled-build.png)
+![sub-modules-stalled-build](/site/images/docs/how-to/sub-modules-stalled-build.png)
 
 
 ## The solution
@@ -65,7 +65,7 @@ We'll store contents of private key in environment variable.
 
 Open "Environment" tab of project settings in AppVeyor and add a new environment variable called `priv_key`. Open `submodules` file with private key and copy base-64 body of the key between `-----BEGIN RSA PRIVATE KEY-----` and `-----END RSA PRIVATE KEY-----` into clipboard:
 
-![rsa-private-key](/site/docs/images/how-to/rsa-private-key.png)
+![rsa-private-key](/site/images/docs/how-to/rsa-private-key.png)
 
 Paste contents of clipboard into value field of environment variable. New lines will be changed to spaces - that's OK - we'll turn them back to new lines with PowerShell script shown below.
 
