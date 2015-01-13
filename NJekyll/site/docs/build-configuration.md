@@ -262,7 +262,7 @@ By default, script line is treated as batch command, but you can specify script 
       - cmd: ECHO this is batch
       - ps: Write-Host "This is PowerShell"
 
-To add multi-line PowerShell script:
+To add multi-line PowerShell script covering an entire event:
 
     on_success: |
 	  if($true)
@@ -270,6 +270,19 @@ To add multi-line PowerShell script:
 	    Write-Host "Success"
 	  }
 
+To add the same multi-line PowerShell script *inside* an event so other script lines could be added before / after:
+
+    on_success:
+    - ps: >-
+        if($true)
+
+        {
+
+          Write-Host "Success"
+
+        }
+
+The extra line breaks used above are required.
 
 <a id="installing-software"></a>
 ## Installing additional software
