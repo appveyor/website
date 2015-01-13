@@ -4,14 +4,14 @@
 .top-bar-section ul,
 .top-bar-section li a:not(.button),
 .top-bar-section .dropdown li label {
-    background: #322525; /* menu section label */
+    background-color: #322525; /* menu section label */
 }
 .top-bar-section ul li:hover > a,
 .top-bar-section li.hover > a:not(.button),
 .top-bar-section li a:not(.button):hover,
 .no-js .top-bar-section ul li:hover > a,
 .no-js .top-bar-section ul li:active > a {
-    background: #3A2F2F;
+    background-color: #3A2F2F;
 }
 
 .top-bar-section .dropdown li label {
@@ -26,7 +26,7 @@
 
 /* expanded menu on mobile phone */
 .top-bar.expanded .title-area {
-    background: #3A2F2F;
+    background-color: #3A2F2F;
 }
 
 /* mobile menu toggle button */
@@ -48,6 +48,7 @@
 
 .top-bar:not(.expanded) .toggle-topbar.menu-icon a span {
     -webkit-box-shadow: 0 10px 0 1px #e2dddd, 0 16px 0 1px #e2dddd, 0 22px 0 1px #e2dddd;
+    -moz-box-shadow: 0 10px 0 1px #e2dddd, 0 16px 0 1px #e2dddd, 0 22px 0 1px #e2dddd;
     box-shadow: 0 10px 0 1px #e2dddd, 0 16px 0 1px #e2dddd, 0 22px 0 1px #e2dddd;
 }
 
@@ -60,7 +61,7 @@
 
 /* Top menu items */
 .top-bar-section ul li > a {
-    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.70rem;
     text-transform: uppercase;
     color: #e2dddd;
@@ -68,7 +69,7 @@
 
 /* Dropdown menu items*/
 .top-bar-section .dropdown li a {
-    font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #e2dddd;
     font-size: 0.8rem;
     text-transform: none;
@@ -80,13 +81,33 @@
     padding: 0 15px;
 }
 .top-bar .name h1 a {
-    background: transparent url("/site/images/logo-2x.png") no-repeat 0 50%;
-    background-size: 120px 22px;
     width: 120px;
     text-indent: -9999px;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
+    .top-bar .name h1 a {
+        background: transparent url("/site/images/logo.png") no-repeat 0 50%;
+        -webkit-background-size: 120px 22px;
+        -moz-background-size: 120px 22px;
+        background-size: 120px 22px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2.0), screen and (min--moz-device-pixel-ratio: 2.0), screen and (-o-min-device-pixel-ratio: 200/100), screen and (min-device-pixel-ratio: 2.0), screen and (min-resolution: 2.0dppx) {
+    .top-bar .name h1 a {
+        background: transparent url("/site/images/logo-2x.png") no-repeat 0 50%;
+        -webkit-background-size: 120px 22px;
+        -moz-background-size: 120px 22px;
+        background-size: 120px 22px;
+    }
+}
+
+
 /* Gravatar */
 .top-bar-section .active-user img {
     margin: -2px 4px 0 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
     border-radius: 2px;
 }

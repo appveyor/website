@@ -4,12 +4,6 @@ layout: default
 no_cache: true
 -->
 
-<style>
-    html {
-        background: #C1CBC9;
-    }
-</style>
-
 <div class="home-banner">
 
     <div class="row">
@@ -21,17 +15,18 @@ no_cache: true
             <div class="buttons">
                 <a href="https://ci.appveyor.com/signup" class="big-button">Sign up for free</a>
             </div>
-            <div class="disclosure">
+            <p class="disclosure">
                 Free for open-source projects. Plans start from $19/month.
-            </div>
+            </p>
+            <img src="/site/images/appveyor-screenshot.png" width="937" height="346">
         </div>
     </div>
+
 </div>
 
-<div style="background:#fff;">
+<div class="features-container">
 
     <div class="features">
-
         <div class="row">
             <div class="columns small-12">
                 <h2>Features and benefits</h2>
@@ -46,7 +41,8 @@ no_cache: true
     <!-- Row 1 -->
     <div class="row">
         <div class="medium-4 columns">
-            <div class="feature yaml-configuration">
+            <div class="feature">
+                <span class="home-sprite yaml-configuration"></span>
                 <h3>YAML configuration</h3>
                 <p>
                     Build configuration in a few lines of YAML, stored along with your project sources, for specific branch, versioned!
@@ -56,7 +52,8 @@ no_cache: true
             </div>
         </div>
         <div class="medium-4 columns">
-            <div class="feature build-with-confidence">
+            <div class="feature">
+                <span class="home-sprite build-with-confidence"></span>
                 <h3>Build with confidence</h3>
                 <p>
                     Every build job runs on a pristine virtual machine with administrator privileges - no build cleanup logic necessary.
@@ -65,7 +62,8 @@ no_cache: true
             </div>
         </div>
         <div class="medium-4 columns">
-            <div class="feature scalable-build-environment">
+            <div class="feature">
+                <span class="home-sprite scalable-build-environment"></span>
                 <h3>Scalable build environment</h3>
                 <p>
                     Backed by Windows Azure platform AppVeyor has virtually unlimited capacity.
@@ -80,7 +78,8 @@ no_cache: true
     <!-- Row 2 -->
     <div class="row">
         <div class="medium-4 columns">
-            <div class="feature nuget-feeds">
+            <div class="feature">
+                <span class="home-sprite nuget-feeds"></span>
                 <h3>NuGet feeds</h3>
                 <p>
                     AppVeyor has built-in NuGet feeds with project artifacts.
@@ -91,7 +90,8 @@ no_cache: true
             </div>
         </div>
         <div class="medium-4 columns">
-            <div class="feature artifacts-management">
+            <div class="feature">
+                <span class="home-sprite artifacts-management"></span>
                 <h3>Artifacts management</h3>
                 <p>
                     Build artifacts are stored in a highly-durable Geo-redundant cloud storage and always available to your team through AppVeyor web interface or API.
@@ -101,7 +101,8 @@ no_cache: true
             </div>
         </div>
         <div class="medium-4 columns">
-            <div class="feature continuous-deployment">
+            <div class="feature">
+                <span class="home-sprite continuous-deployment"></span>
                 <h3>Continuous Deployment</h3>
                 <p>
                     Scriptless, repetitive, one-click deployment of build artifacts to multiple environments!
@@ -124,7 +125,8 @@ no_cache: true
     <!-- Row 3 -->
     <div class="row">
         <div class="medium-4 columns">
-            <div class="feature parallel-testing">
+            <div class="feature">
+                <span class="home-sprite parallel-testing"></span>
                 <h3>Parallel testing</h3>
                 <p>
                     Get results faster for large projects. AppVeyor can drastically reduce overall build time by allowing you to split tests into groups by categories,
@@ -134,7 +136,8 @@ no_cache: true
             </div>
         </div>
         <div class="medium-4 columns">
-            <div class="feature works-for-any-project">
+            <div class="feature">
+                <span class="home-sprite works-for-any-project"></span>
                 <h3>Works for any project</h3>
                 <p>
                     Develop Visual Studio apps: ASP.NET; Web API and WPF apps; Windows and Azure cloud services; WiX.
@@ -144,7 +147,8 @@ no_cache: true
             </div>
         </div>
         <div class="medium-4 columns">
-            <div class="feature integration-testing">
+            <div class="feature">
+                <span class="home-sprite integration-testing"></span>
                 <h3>Integration testing</h3>
                 <p>
                     Easily make integration tests and BVTs a part of your development process. Install apps, services, web sites; put libraries into GAC;

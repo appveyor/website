@@ -1,5 +1,5 @@
 ﻿.pricing-banner {
-    background: #F7EDE6;
+    background-color: #F7EDE6;
     padding-bottom: 1rem;
 }
 
@@ -9,11 +9,13 @@
 
 .pricing-table {
     border: solid 1px #999;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border-radius: 3px;
 }
 
 .pricing-table .price {
-    font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2.3rem;
 }
 
@@ -37,37 +39,36 @@
 
 .pricing-table .title {
     color: #fff;
-    font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.0rem;
     background-color: #999;
     padding: 0;
     line-height: 2rem;
 }
 
-    .pricing-table .bullet-item {
-        padding: 0;
-        line-height: 2.5rem;
-    }
+.pricing-table .bullet-item {
+    padding: 0;
+    line-height: 2.5rem;
+}
 
-    .pricing-table .cta-button {
-        padding: 1rem 0;
-    }
+.pricing-table .cta-button {
+    padding: 1rem 0;
+}
 
-    .pricing-table .cta-button .button {
-        margin: 0;
-        background-color: #00b500;
-        border-color: #00b500;
-        text-transform: uppercase;
-        padding: 0.7rem 1rem;
-    }
+.pricing-table .cta-button .button {
+    margin: 0;
+    background-color: #00b500;
+    border-color: #00b500;
+    text-transform: uppercase;
+    padding: 0.7rem 1rem;
+}
 
-    .pricing-table .cta-button .button:hover,
-    .pricing-table .cta-button .button:active
-    {
-        background: #00d600;
-        border-color: #00d600;
-        color: #fff;
-    }
+.pricing-table .cta-button .button:hover,
+.pricing-table .cta-button .button:active {
+    background-color: #00d600;
+    border-color: #00d600;
+    color: #fff;
+}
 
 .pricing-table.popular {
     margin-top: -10px;
@@ -86,6 +87,7 @@
     right: 25px;
 }
 
-    .pricing-table.popular .cta-button {
-        padding: 1.5rem 0;
-    }
+.pricing-table.popular .cta-button {
+    padding: 1.5rem 0;
+}
+    
