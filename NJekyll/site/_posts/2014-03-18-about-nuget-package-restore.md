@@ -11,13 +11,13 @@ Iimportant note here - not before, but <b>during </b>MSBuild process. This is a
 <h2>Automatic package restore in Visual Studio</h2>
 This method is part of NuGet Visual Studio add-in (.vsix), heavily relies on VS events and works in interactive mode, not build environment. Excerpt from that page:
 
-<img alt="nuget-restore-excerpt" src="/site/_posts/images/nuget-restore/nuget-restore-excerpt.png" />
+<img alt="nuget-restore-excerpt" src="/site/_posts/images/nuget-restore/nuget-restore-excerpt.png">
 
 Other words, restore occurs in Visual Studio and <b>before </b>MSBuild process.
 <h2>Command-line package restore</h2>
 <span style="font-style:inherit;line-height:1.625;">The method was always there, but "was improved in NuGet 2.7". This is exactly what we need and do in AppVeyor build environment! All that you need is to put "nuget restore" command into "Install scripts" or "Before build scripts" box of your project settings:</span>
 
-<img alt="before-build-nuget-restore" src="/site/_posts/images/nuget-restore/before-build-nuget-restore.png" />
+<img alt="before-build-nuget-restore" src="/site/_posts/images/nuget-restore/before-build-nuget-restore.png">
 
 or in appveyor.yml:
 <pre>before_build:
