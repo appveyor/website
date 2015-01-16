@@ -18,7 +18,7 @@ Every AppVeyor account comes with following built-in NuGet feeds:
 
 Account NuGet feed aggregates packages from all project feeds and allows publishing of your custom packages. All account feeds are password-protected. You can find account feed URL and its API key on <strong>Account → NuGet</strong> page:
 
-<a href="/site/_posts/images/nuget-support/nuget-account.png"><img alt="nuget-account" src="/site/_posts/images/nuget-support/nuget-account.png" width="584" height="305"></a>
+<a href="/site/images/_posts/nuget-support/nuget-account.png"><img alt="nuget-account" src="/site/images/_posts/nuget-support/nuget-account.png" width="584" height="305"></a>
 
 You can use your AppVeyor account email/password to access password-protected NuGet feeds although we recommend creating a separate user account just for these purposes (<strong>Account → Team</strong>).
 
@@ -37,7 +37,7 @@ For publishing your own packages to account feed use the command:
 
 Project feed collects all NuGet packages pushed to artifacts during the build. Project feed is password-protected if the project references private GitHub or BitBucket repository; otherwise project feed has public access:
 
-<a href="/site/_posts/images/nuget-support/nuget-project-feed1.png"><img alt="nuget-project-feed" src="/site/_posts/images/nuget-support/nuget-project-feed1.png" width="584" height="296"></a>
+<a href="/site/images/_posts/nuget-support/nuget-project-feed1.png"><img alt="nuget-project-feed" src="/site/images/_posts/nuget-support/nuget-project-feed1.png" width="584" height="296"></a>
 
 <h3>Automatic publishing of NuGet projects</h3>
 
@@ -65,7 +65,7 @@ To configure custom feed in Visual Studio open <strong>Tools → Options → 
 
 When you first open Manage NuGet packages dialog you will be presented with a dialog box asking for credentials:
 
-<a href="/site/_posts/images/nuget-support/nuget-visualstudio-auth.png"><img alt="nuget-visualstudio-auth" src="/site/_posts/images/nuget-support/nuget-visualstudio-auth.png" width="584" height="389"></a>
+<a href="/site/images/_posts/nuget-support/nuget-visualstudio-auth.png"><img alt="nuget-visualstudio-auth" src="/site/images/_posts/nuget-support/nuget-visualstudio-auth.png" width="584" height="389"></a>
 
 <h3>Command line</h3>
 
@@ -81,7 +81,7 @@ To configure AppVeyor project to use private NuGet feed during build you can use
 
 <ol>
     <li>Create a separate AppVeyor account for accessing NuGet feed.</li>
-    <li>On <strong>Environment</strong> tab of project settings add two environment variables <code>nuget_user</code> and <code>nuget_password</code>:<a href="/site/_posts/images/nuget-support/nuget-environment-variables.png"><img alt="nuget-environment-variables" src="/site/_posts/images/nuget-support/nuget-environment-variables.png" width="584" height="114"></a></li>
+    <li>On <strong>Environment</strong> tab of project settings add two environment variables <code>nuget_user</code> and <code>nuget_password</code>:<a href="/site/images/_posts/nuget-support/nuget-environment-variables.png"><img alt="nuget-environment-variables" src="/site/images/_posts/nuget-support/nuget-environment-variables.png" width="584" height="114"></a></li>
     <li>Into <strong>Install</strong> script box add this command:
 <pre><code>nuget sources add -Name MyAccountFeed -Source &lt;feed-url&gt; -UserName %nuget_user% -Password %nuget_password%</code></pre>
 </li>

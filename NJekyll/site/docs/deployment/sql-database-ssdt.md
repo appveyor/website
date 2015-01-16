@@ -162,13 +162,13 @@ To enable database publishing from AppVeyor environment to your Azure SQL databa
     173.193.24.178 - 173.193.24.190
     173.193.56.154 - 173.193.56.158
 
-![azure-sql-server-settings](/site/docs/deployment/images/sql-database/azure-sql-server-settings.png)
+![azure-sql-server-settings](/site/images/docs/deployment/sql-database/azure-sql-server-settings.png)
 
 ### SSDT project settings
 
 In Visual Studio open SSDT project properties and select **Microsoft Azure SQL Database** as a Target platform:
 
-![ssdt-project-settings-for-azure](/site/docs/deployment/images/sql-database/ssdt-project-settings-for-azure.png)
+![ssdt-project-settings-for-azure](/site/images/docs/deployment/sql-database/ssdt-project-settings-for-azure.png)
 
 
 <a id="internal-sql"></a>

@@ -94,11 +94,11 @@ Settings have format `<artifact_name>.<setting_name>` where `<artifact_name>` is
 
 For example, let the build has the following artifacts:
 
-![Artifacts](/site/docs/images/agent-deploy-artifacts.png)
+![Artifacts](/site/images/docs/agent-deploy-artifacts.png)
 
 In order for Deployment Agent to deploy that artifact as IIS web site **Provider settings** will be:
 
-![Artifacts](/site/docs/images/agent-provider-settings.png)
+![Artifacts](/site/images/docs/agent-provider-settings.png)
 
 
 
@@ -147,7 +147,7 @@ You can specify multiple bindings in `hostname`, `ip` and `port` separated by se
 - http *:80:mysite.com
 - https *:433: cert=*.mysite.com
 
-![agent-multiple-bindings](/site/docs/deployment/images/agent/agent-multiple-bindings.png)
+![agent-multiple-bindings](/site/images/docs/deployment/agent/agent-multiple-bindings.png)
 
 
 <a id="deploying-windows-app"></a>

@@ -208,7 +208,7 @@
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
     .home-sprite {
-        background-image: url("/site/images/home/home.png");
+        background-image: url("/site/images/home/home-sprite.png");
         -webkit-background-size: 639px 71px;
         -moz-background-size: 639px 71px;
         background-size: 639px 71px;
@@ -217,7 +217,7 @@
 
 @media screen and (-webkit-min-device-pixel-ratio: 2.0), screen and (min--moz-device-pixel-ratio: 2.0), screen and (-o-min-device-pixel-ratio: 200/100), screen and (min-device-pixel-ratio: 2.0), screen and (min-resolution: 2.0dppx) {
     .home-sprite {
-        background-image: url("/site/images/home/home@2x.png");
+        background-image: url("/site/images/home/home-sprite@2x.png");
         -webkit-background-size: 639px 71px;
         -moz-background-size: 639px 71px;
         background-size: 639px 71px;

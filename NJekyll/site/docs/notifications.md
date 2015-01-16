@@ -36,7 +36,7 @@ You can limit the amount of email notifications you receive:
 * Do not send notifications at all
 * Send only if build status has changed
 
-![email notifications](/site/docs/images/notifications/email-notifications.png)
+![email notifications](/site/images/docs/notifications/email-notifications.png)
 
 
 <a id="project-email"></a>
@@ -94,15 +94,15 @@ Default message body template:
 
 HipChat has two versions of API: v1 and v2. AppVeyor supports both versions though notifications sent using API v1 allow specifying "from" field:
 
-![hipchat-build-passed-api-v1](/site/docs/images/notifications/hipchat-build-passed-api-v1.png)
+![hipchat-build-passed-api-v1](/site/images/docs/notifications/hipchat-build-passed-api-v1.png)
 
-![hipchat-build-failed-api-v1](/site/docs/images/notifications/hipchat-build-failed-api-v1.png)
+![hipchat-build-failed-api-v1](/site/images/docs/notifications/hipchat-build-failed-api-v1.png)
 
 while API v2 always sends messages on behalf API token issuer:
 
-![hipchat-build-passed-api-v2](/site/docs/images/notifications/hipchat-build-passed-api-v2.png)
+![hipchat-build-passed-api-v2](/site/images/docs/notifications/hipchat-build-passed-api-v2.png)
 
-![hipchat-build-failed-api-v2](/site/docs/images/notifications/hipchat-build-failed-api-v2.png)
+![hipchat-build-failed-api-v2](/site/images/docs/notifications/hipchat-build-failed-api-v2.png)
 
 
 ### Authentication token
@@ -145,7 +145,7 @@ Default HipChat message template:
 
 Slack notification nicely differentiates between passed and failed builds by changing color of AppVeyor logo:
 
-![slack-build](/site/docs/images/notifications/slack-build.png)
+![slack-build](/site/images/docs/notifications/slack-build.png)
 
 ### Authentication token
 

@@ -29,7 +29,7 @@ It's possible to assign a custom plan to your account if you need more concurren
 
 .NET unit-testing frameworks allow for assigning categories to a test. By specifying which categories we'd like to run for each job one can drastically reduce the overall build time. The diagram below illustrates the idea:
 
-![parallel testing diagram](/site/docs/images/parallel-testing-diagram.png)
+![parallel testing diagram](/site/images/docs/parallel-testing-diagram.png)
 
 ### Categorizing tests
 To assign a category to **Visual Studio** test apply the `TestCategory` attribute to a testing method:
@@ -68,7 +68,7 @@ To apply category to a test method:
 
 Add **parallel testing groups** on the **Tests** tab of project settings. For example, a project with the following configuration will have builds with 2 jobs each running tests of category A and B respectively:
 
-![test categories](/site/docs/images/test-categories.png)
+![test categories](/site/images/docs/test-categories.png)
 
 To configure parallel testing groups in `appveyor.yml`:
 
@@ -80,7 +80,7 @@ To configure parallel testing groups in `appveyor.yml`:
 
 Configuration above will produce two jobs:
 
-![test categories](/site/docs/images/parallel-testing-jobs.png)
+![test categories](/site/images/docs/parallel-testing-jobs.png)
 
 
 ## Environment variables
@@ -91,11 +91,11 @@ For example, using the fact that the **Test assemblies** field on the **Tests** 
 
 On the **Environment** tab, add two groups of variables with `test_assembly` (you can use any name) in each:
 
-![test categories](/site/docs/images/environment-variables-groups.png)
+![test categories](/site/images/docs/environment-variables-groups.png)
 
 Then on the **Tests** tab specify which assemblies to test using the environment variable:
 
-![test categories](/site/docs/images/test-assemblies.png)
+![test categories](/site/images/docs/test-assemblies.png)
 
 The same configuration in `appveyor.yml`:
 
