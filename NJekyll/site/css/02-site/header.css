@@ -66,20 +66,19 @@
     padding: 0 15px;
 }
 .top-bar .name h1 a {
+    background: transparent url("/site/images/logo.png") no-repeat 0 50%;
+    -webkit-background-size: 120px 22px;
+    -moz-background-size: 120px 22px;
+    background-size: 120px 22px;
+    display: inline-block;
     width: 120px;
     text-indent: -9999px;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 1.0), screen and (min--moz-device-pixel-ratio: 1.0), screen and (-o-min-device-pixel-ratio: 100/100), screen and (min-device-pixel-ratio: 1.0), screen and (min-resolution: 1.0dppx) {
-    .top-bar .name h1 a {
-        background: transparent url("/site/images/logo.png") no-repeat 0 50%;
-        -webkit-background-size: 120px 22px;
-        -moz-background-size: 120px 22px;
-        background-size: 120px 22px;
-    }
-}
-
-@media screen and (-webkit-min-device-pixel-ratio: 2.0), screen and (min--moz-device-pixel-ratio: 2.0), screen and (-o-min-device-pixel-ratio: 200/100), screen and (min-device-pixel-ratio: 2.0), screen and (min-resolution: 2.0dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2.0),
+ only screen and (min--moz-device-pixel-ratio: 2.0),
+ only screen and (-o-min-device-pixel-ratio: 200/100),
+ only screen and (min-device-pixel-ratio: 2.0) {
     .top-bar .name h1 a {
         background: transparent url("/site/images/logo-2x.png") no-repeat 0 50%;
         -webkit-background-size: 120px 22px;
