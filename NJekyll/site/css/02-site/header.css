@@ -33,6 +33,10 @@
     background-color: #322525;
 }
 
+.top-bar-section li:not(.has-form) a:hover:not(.button) {
+    background: none repeat scroll 0% 0% #3A2F2F;
+}
+
 /* Medium and large screens */
 @media only screen and (min-width: 40.063em) {
     .top-bar-section .left {
