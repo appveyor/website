@@ -1,6 +1,7 @@
 ﻿---
 layout: one-column
 title: About us
+slug: about
 ---
 
 <div class="title">
@@ -26,7 +27,7 @@ that it takes minutes to connect to your repository and push green builds to you
 ## Contact us
 
 Email: [team@appveyor.com](mailto:team@appveyor.com)<br/>
-Twitter: [@appveyor](http://twitter.com/appveyor)
+Twitter: [@appveyor](https://twitter.com/appveyor)
 
 Appveyor Systems Inc.<br/>
 10220 Dunoon dr, Unit 80<br/>

@@ -1,59 +1,48 @@
-<ul>
-    <li>
-        <h4>Guides</h4>
+<nav>
+    <ul class="side-nav">
+        <li class="heading">Guides</li>
+        <li><a href="/docs">Getting started</a></li>
 
-        <ul>
-            <li><a href="/docs">Getting started</a></li>
-        </ul>
-    </li>
-    <li>
-        <h4>Reference</h4>
+        <li class="divider"></li>
+        <li class="heading">Reference</li>
+        <li {% if page.title == "Build configuration" %} class="active"{% endif %}><a href="/docs/build-configuration">Build configuration</a></li>
+        <li {% if page.title == "Branches and Tags" %} class="active"{% endif %}><a href="/docs/branches">Branches and Tags</a></li>
+        <li {% if page.title == "Build phase" %} class="active"{% endif %}><a href="/docs/build-phase">Build phase</a></li>
+        <li {% if page.title == "Running tests" %} class="active"{% endif %}><a href="/docs/running-tests">Running tests</a></li>
+        <li {% if page.title == "Parallel testing" %} class="active"{% endif %}><a href="/docs/parallel-testing">Parallel testing</a></li>
+        <li {% if page.title == "Packaging artifacts" %} class="active"{% endif %}><a href="/docs/packaging-artifacts">Packaging artifacts</a></li>
+        <li {% if page.title == "NuGet" %} class="active"{% endif %}><a href="/docs/nuget">NuGet</a></li>
+        <li {% if page.title == "Build notifications" %} class="active"{% endif %}><a href="/docs/notifications">Notifications</a></li>
+        <li {% if page.title == "Environment variables" %} class="active"{% endif %}><a href="/docs/environment-variables">Environment variables</a></li>
+        <li {% if page.title == "Build cache" %} class="active"{% endif %}><a href="/docs/build-cache">Using build cache</a></li>
+        <li {% if page.title == "Services and databases" %} class="active"{% endif %}><a href="/docs/services-databases">Services and databases</a></li>
+        <li {% if page.title == "Status badges" %} class="active"{% endif %}><a href="/docs/status-badges">Status badges</a></li>
+        <li {% if page.title == "appveyor.yml Reference" %} class="active"{% endif %}><a href="/docs/appveyor-yml">Appveyor.yml reference</a></li>
+        <li {% if page.title == "AppVeyor REST API" %} class="active"{% endif %}><a href="/docs/api">AppVeyor REST API</a></li>
+        <li {% if page.title == "Build Worker Installed Software" %} class="active"{% endif %}><a href="/docs/installed-software">Build Worker software</a></li>
+        <li {% if page.title == "Build Worker API" %} class="active"{% endif %}><a href="/docs/build-worker-api">Build Worker API</a></li>
 
-        <ul>
-            <li><a href="/docs/build-configuration">Build configuration</a></li>
-            <li><a href="/docs/branches">Branches and tags</a></li>
-            <li><a href="/docs/build-phase">Build phase</a></li>
-            <li><a href="/docs/running-tests">Running tests</a></li>
-            <li><a href="/docs/parallel-testing">Parallel testing</a></li>
-            <li><a href="/docs/packaging-artifacts">Packaging artifacts</a></li>
-            <li><a href="/docs/nuget">NuGet</a></li>
-            <li><a href="/docs/notifications">Notifications</a></li>
-            <li><a href="/docs/environment-variables">Environment variables</a></li>
-            <li><a href="/docs/build-cache">Using build cache</a></li>
-            <li><a href="/docs/services-databases">Services and databases</a></li>
-            <li><a href="/docs/status-badges">Status badges</a></li>
-            <li><a href="/docs/appveyor-yml">Appveyor.yml reference</a></li>
-            <li><a href="/docs/api">AppVeyor REST API</a></li>
-            <li><a href="/docs/installed-software">Build Worker software</a></li>
-            <li><a href="/docs/build-worker-api">Build Worker API</a></li>
-        </ul>
-    </li>
-    <li>
-        <h4>Deployment</h4>
+        <li class="divider"></li>
+        <li class="heading">Deployment</li>
+        <li {% if page.title == "Deployment" %} class="active"{% endif %}><a href="/docs/deployment">Overview</a></li>
+        <li {% if page.title == "Deploying using Web Deploy" %} class="active"{% endif %}><a href="/docs/deployment/web-deploy">Web Deploy</a></li>
+        <li {% if page.title == "Deploying by FTP" %} class="active"{% endif %}><a href="/docs/deployment/ftp">FTP, SFTP</a></li>
+        <li {% if page.title == "Publishing SQL Server databases from SSDT packages" %} class="active"{% endif %}><a href="/docs/deployment/sql-database-ssdt">SQL Databases (SSDT)</a></li>
+        <li {% if page.title == "Deploying to Azure blob storage" %} class="active"{% endif %}><a href="/docs/deployment/azure-blob">Azure Blob</a></li>
+        <li {% if page.title == "Deploying Azure Cloud Services" %} class="active"{% endif %}><a href="/docs/deployment/azure-cloud-service">Azure Cloud Service</a></li>
+        <li {% if page.title == "Deploying to Amazon S3 bucket" %} class="active"{% endif %}><a href="/docs/deployment/amazon-s3">Amazon S3</a></li>
+        <li {% if page.title == "Publishing to NuGet feed" %} class="active"{% endif %}><a href="/docs/deployment/nuget">NuGet</a></li>
+        <li {% if page.title == "Deploying to remote servers with AppVeyor Deployment Agent" %} class="active"{% endif %}><a href="/docs/deployment/agent">Deployment Agent</a></li>
+        <li {% if page.title == "Publishing artifacts to GitHub Releases" %} class="active"{% endif %}><a href="/docs/deployment/github">GitHub Releases</a></li>
+        <li {% if page.title == "Deploying to existing environment" %} class="active"{% endif %}><a href="/docs/deployment/environment">Environment</a></li>
+        <li {% if page.title == "Integration testing with Local deployment" %} class="active"{% endif %}><a href="/docs/deployment/local">Local deployment</a></li>
 
-        <ul>
-            <li><a href="/docs/deployment">Overview</a></li>
-            <li><a href="/docs/deployment/web-deploy">Web Deploy</a></li>
-            <li><a href="/docs/deployment/ftp">FTP, SFTP</a></li>
-            <li><a href="/docs/deployment/sql-database-ssdt">SQL Databases (SSDT)</a></li>
-            <li><a href="/docs/deployment/azure-blob">Azure Blob</a></li>
-            <li><a href="/docs/deployment/azure-cloud-service">Azure Cloud Service</a></li>
-            <li><a href="/docs/deployment/amazon-s3">Amazon S3</a></li>
-            <li><a href="/docs/deployment/nuget">NuGet</a></li>
-            <li><a href="/docs/deployment/agent">Deployment Agent</a></li>
-            <li><a href="/docs/deployment/github">GitHub Releases</a></li>
-            <li><a href="/docs/deployment/environment">Environment</a></li>
-            <li><a href="/docs/deployment/local">Local deployment</a></li>
-        </ul>
-    </li>
-    <li>
-        <h4>How-to</h4>
+        <li class="divider"></li>
+        <li class="heading">How-to</li>
+        <li {% if page.title == "Skip a build" %} class="active"{% endif %}><a href="/docs/how-to/skip-build">Skip a build</a></li>
+        <li {% if page.title == "Download file" %} class="active"{% endif %}><a href="/docs/how-to/download-file">Download file</a></li>
+        <li {% if page.title == "Shallow clone of repositories" %} class="active"{% endif %}><a href="/docs/how-to/repository-shallow-clone">Repository shallow clone</a></li>
+        <li {% if page.title == "Building private GitHub repositories with sub-modules" %} class="active"{% endif %}><a href="/docs/how-to/private-git-sub-modules">Private Git sub-modules</a></li>
 
-        <ul>
-            <li><a href="/docs/how-to/skip-build">Skip a build</a></li>
-            <li><a href="/docs/how-to/download-file">Download file</a></li>
-            <li><a href="/docs/how-to/repository-shallow-clone">Repository shallow clone</a></li>
-            <li><a href="/docs/how-to/private-git-sub-modules">Private Git sub-modules</a></li>
-        </ul>
-    </li>
-</ul>
+    </ul>
+</nav>

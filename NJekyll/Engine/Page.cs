@@ -11,6 +11,7 @@ namespace NJekyll.Engine
         internal string Collection { get; private set; }
         public string Permalink { get; private set; }
         public string Layout { get; set; } // layout file name without extension and directory
+        public string Slug { get; set; }
         public bool Published { get; set; }
         public bool NoCache { get; set; }
         public DateTime Date { get; set; }
@@ -58,6 +59,7 @@ namespace NJekyll.Engine
         {
             Permalink = FrontMatter.ContainsKey("permalink") ? (string)FrontMatter["permalink"] : null;
             Layout = FrontMatter.ContainsKey("layout") ? (string)FrontMatter["layout"] : null;
+            Slug = FrontMatter.ContainsKey("slug") ? (string)FrontMatter["slug"] : null;
             Published = FrontMatter.ContainsKey("published") ? (bool)FrontMatter["published"] : true;
             NoCache = FrontMatter.ContainsKey("no_cache") ? (bool)FrontMatter["no_cache"] : false;
             Categories = new List<string>();

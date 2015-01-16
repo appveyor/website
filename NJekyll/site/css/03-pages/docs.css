@@ -9,3 +9,7 @@
     border-radius: 3px;
     background-color: #FCF5E0;
 }
+
+iframe {
+    border: 0;
+}

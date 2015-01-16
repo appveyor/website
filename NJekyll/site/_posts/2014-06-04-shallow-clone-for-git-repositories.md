@@ -13,7 +13,7 @@ We introduced a new feature called "<strong>shallow clone</strong>" aiming to im
 <h2>Setting depth of git clone command</h2>
 By default AppVeyor clones entire repository with all the history. You can limit the number of last commits you'd like to clone. This feature works for Git repositories hosted at GitHub, BitBucket and Kiln. You can set clone depth on General tab of project settings:
 
-<img src="/site/_posts/images/shallow-clone/git-clone-depth.png" alt="git-clone-depth" />
+<img src="/site/_posts/images/shallow-clone/git-clone-depth.png" alt="git-clone-depth">
 
 To set clone depth in appveyor.yml add the following in the root of config:
 <pre>clone_depth: &lt;number&gt;</pre>
@@ -23,7 +23,7 @@ As title says this option is specific to GitHub. It uses GitHub API to download 
 
 You can enable this option through UI on <strong>General</strong> tab of project settings:
 
-<img src="/site/_posts/images/shallow-clone/github-shallow-clone.png" alt="github-shallow-clone" />
+<img src="/site/_posts/images/shallow-clone/github-shallow-clone.png" alt="github-shallow-clone">
 
 To enable it through appveyor.yml add the following in the root of config:
 <pre>shallow_clone: true</pre>

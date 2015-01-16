@@ -60,7 +60,7 @@ To promote selected "tag" build to GitHub release:
       release: myproduct v$(appveyor_build_version)
       provider: GitHub
       auth_token:
-        secure: <your encrypted token> # your encrypted token from github
+        secure: <your encrypted token> # your encrypted token from GitHub
       artifact: /.*\.nupkg/            # upload all NuGet packages to release assets
       draft: false
       prerelease: false

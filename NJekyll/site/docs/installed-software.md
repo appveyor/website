@@ -81,7 +81,7 @@ Below is the list of software pre-installed on Build Worker.
     * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) x64 (`C:\Program Files\Java\jdk1.8.0`)
     * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) x86 (`C:\Program Files (x86)\Java\jdk1.8.0`)
 * [Mono](http://www.go-mono.com/mono-downloads/download.html) 3.2.3
-* [Ruby](http://rubyinstaller.org/downloads/) with [DevKit](http://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
+* [Ruby](http://rubyinstaller.org/downloads/) with [DevKit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
     * 1.9.3 x86 (`C:\Ruby193` - default in `PATH`)
     * 2.0.0 x86 (`C:\Ruby200`)
     * 2.0.0 x64 (`C:\Ruby200-x64`)

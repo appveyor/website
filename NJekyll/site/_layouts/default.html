@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - Appveyor</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
     {{ site.bundles.css }}
     <link href="/site/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/site/apple-touch-icon.png" rel="apple-touch-icon">
@@ -26,7 +26,7 @@
 
     <!-- Top menu -->
     <div class="fixed contain-to-grid">
-        <nav class="top-bar" data-topbar data-options="is_hover: false">
+        <nav class="top-bar" data-topbar role="navigation">
             <ul class="title-area">
                 <li class="name">
                     <h1><a class="collapse-only" href="/">AppVeyor</a></h1>
@@ -36,11 +36,11 @@
             <section class="top-bar-section">
                 <!-- Left Nav -->
                 <ul class="left">
-                    <li><a href="/pricing">Pricing</a></li>
-                    <li><a href="/docs">Documentation</a></li>
+                    <li{% if page.slug == "pricing" %} class="active"{% endif %}><a href="/pricing">Pricing</a></li>
+                    <li{% if page.layout == "docs" %} class="active"{% endif %}><a href="/docs">Documentation</a></li>
                     <li><a href="http://help.appveyor.com/discussions" target="_blank">Support</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/about">About</a></li>
+                    <li{% if page.slug == "blog" %} class="active"{% endif %}><a href="/blog">Blog</a></li>
+                    <li{% if page.slug == "about" %} class="active"{% endif %}><a href="/about">About</a></li>
                 </ul>
 
                 <!-- Right Nav -->
