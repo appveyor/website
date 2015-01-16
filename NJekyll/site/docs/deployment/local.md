@@ -5,7 +5,7 @@ title: Integration testing with Local deployment
 
 # Integration testing with Local deployment
 
-Local deployment provider deploys artifacts containing web and Windows application packages to build server locally for integration testing. 
+Local deployment provider deploys artifacts containing web and Windows application packages to build server locally for integration testing.
 
 ## Provider settings
 

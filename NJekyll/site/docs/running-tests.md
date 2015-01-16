@@ -7,10 +7,10 @@ title: Running tests
 
 * [Selecting assemblies to test](#assemblies-to-test)
 * [Selecting categories to test](#categories-to-test)
-	* [Visual Studio tests](vstest-categories)
-	* [xUnit](xunit-categories)
-	* [NUnit](nunit-categories)
-	* [MSpec](mspec-categories)
+    * [Visual Studio tests](vstest-categories)
+    * [xUnit](xunit-categories)
+    * [NUnit](nunit-categories)
+    * [MSpec](mspec-categories)
 * [Calling test runners from your custom scripts](#calling-test-runners)
 * [Pushing real-time test results to build console](#test-results)
 
@@ -34,53 +34,53 @@ In the **Test assemblies** box you can specify either assembly file name or wild
 
 For example, to include tests from **all** assemblies with specific name:
 
-	test-assembly.dll
+    test-assembly.dll
 
 this is the same as:
 
-	**\*.test-assembly.dll
+    **\*.test-assembly.dll
 
 which means, search build folder directories recursively for `test-assembly.dll` assemblies.
 
 To match an assembly in a specific folder:
 
-	**\bin\debug\test-assembly.dll
+    **\bin\debug\test-assembly.dll
 
 or if build configuration is set in environment variable:
 
-	**\bin\$(configuration)\test-assembly.dll
+    **\bin\$(configuration)\test-assembly.dll
 
 > You can substitute any existing environment variable
 
 To match all assemblies ending with `.tests.dll`:
 
-	**\*.tests.dll
+    **\*.tests.dll
 
 Configuring tests in `appveyor.yml`:
 
-	test:
+    test:
       # assemblies to test - optional
-	  assemblies:
+      assemblies:
         - test-assembly-A.dll
         - test-assembly-B.dll
 
-	  # categories to test - optional
+      # categories to test - optional
       categories:
         - A
         - B
-    
+
     # run custom scripts before tests
     before_test:
       - script 1
       - script 2
-    
-	# run custom scripts after tests
+
+    # run custom scripts after tests
     after_test:
       - script 1
       - script 2
 
 > If assembly path in `appveyor.yml` starts with `*` surround the value with single quotes to make YAML parser happy:
-> 
+>
     test:
       assemblies:
         - '**\*.tests.dll'
@@ -97,19 +97,19 @@ You can include or exclude certain test categories from tests run on **Tests** t
 
 To run tests from *only* specified categories:
 
-	test:
-	  categories:
-	    only:
-	      - A
-	      - B
+    test:
+      categories:
+        only:
+          - A
+          - B
 
 To run tests from all categories *except* specified ones:
 
-	test:
-	  categories:
-	    except:
-	      - A
-	      - B
+    test:
+      categories:
+        except:
+          - A
+          - B
 
 <a id="vstest-categories"></a>
 ### Visual Studio unit tests (C#)
@@ -126,31 +126,31 @@ Applying category to a test method:
 
 Applying category to a test method:
 
-	[Fact, Trait("Category", "A")]
-	public void MyTest()
-	{
-	}
+    [Fact, Trait("Category", "A")]
+    public void MyTest()
+    {
+    }
 
 <a id="nunit-categories"></a>
 ### NUnit (C#)
 
 Applying category to a test fixture:
 
-	[TestFixture, Category("LongRunning")]
-	public class LongRunningTests
-	{
-	}
+    [TestFixture, Category("LongRunning")]
+    public class LongRunningTests
+    {
+    }
 
 Applying category to a test method:
 
-	[TestFixture]
-	public class SuccessTests
-	{
-	    [Test, Category("Long")]
-	    public void VeryLongTest()
-	    {
-	    }
-	}
+    [TestFixture]
+    public class SuccessTests
+    {
+        [Test, Category("Long")]
+        public void VeryLongTest()
+        {
+        }
+    }
 
 <a id="mspec-categories"></a>
 ### MSpec (C#)
@@ -176,7 +176,7 @@ You can install and use your own build runners for frameworks above, communicati
 
 To run unit tests for Visual Studio test framework with real-time reporting use command:
 
-	vstest.console /logger:Appveyor <assembly> [options]
+    vstest.console /logger:Appveyor <assembly> [options]
 
 `[options]` are standard [vstest.console.exe command-line options](http://msdn.microsoft.com/en-us/library/jj155796.aspx).
 
@@ -186,11 +186,11 @@ To run unit tests for Visual Studio test framework with real-time reporting use 
 
 To run NUnit tests with real-time reporting use command:
 
-	nunit-console <assembly> [options]
+    nunit-console <assembly> [options]
 
 or for x86 assemblies:
 
-	nunit-console-x86 <assembly> [options]
+    nunit-console-x86 <assembly> [options]
 
 
 <a id="xunit"></a>
@@ -198,18 +198,18 @@ or for x86 assemblies:
 
 To run xUnit tests with real-time reporting use command:
 
-	xunit.console <assembly> /appveyor
+    xunit.console <assembly> /appveyor
 
 To run unit tests which target .NET 4.0 and later, use command:
 
-	xunit.console.clr4 <assembly> /appveyor
+    xunit.console.clr4 <assembly> /appveyor
 
 <a id="mspec"></a>
 ### Machine.Specifications
 
 To run MSpec tests with real-time reporting use command:
 
-	mspec [options] <assemblies>
+    mspec [options] <assemblies>
 
 
 <a id="test-results"></a>
@@ -231,7 +231,7 @@ Testing frameworks can produce XML report with test results. Upload these XML fi
 
 Test results endpoint URL has the following format:
 
-	https://ci.appveyor.com/api/testresults/{resultsType}/{jobId}
+    https://ci.appveyor.com/api/testresults/{resultsType}/{jobId}
 
 where:
 

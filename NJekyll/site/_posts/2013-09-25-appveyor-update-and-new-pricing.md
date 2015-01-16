@@ -7,34 +7,34 @@ It’s been a while since we last talked as we were working hard implementing re
 
 <h2>Summary of what we prepared for you</h2>
 <ul>
-	<li>Deployment automation as part of CI process</li>
-	<li>Kiln integration</li>
-	<li>GitHub integration improvements</li>
-	<li>Custom build scripts with integrated logging/testing/packaging support</li>
-	<li>PSake support</li>
-	<li>Custom storage for build artifacts, public access to artifacts, deployment to Azure</li>
-	<li>Go language support</li>
-	<li>API PowerShell library</li>
-	<li>Status badges</li>
-	<li>Other small improvements and bug fixes based on community feedback</li>
-	<li>New pricing</li>
+    <li>Deployment automation as part of CI process</li>
+    <li>Kiln integration</li>
+    <li>GitHub integration improvements</li>
+    <li>Custom build scripts with integrated logging/testing/packaging support</li>
+    <li>PSake support</li>
+    <li>Custom storage for build artifacts, public access to artifacts, deployment to Azure</li>
+    <li>Go language support</li>
+    <li>API PowerShell library</li>
+    <li>Status badges</li>
+    <li>Other small improvements and bug fixes based on community feedback</li>
+    <li>New pricing</li>
 </ul>
 <h2>Deployment</h2>
 We spent long nights polishing our new <a href="https://github.com/AppVeyor/AppRolla">PowerShell deployment framework - AppRolla</a>. AppRolla is extensible framework tightly integrated with AppVeyor for automating deployment of distributed .NET applications to multi-server environments.
 
 Just some of its features and benefits:
 <ul>
-	<li>Deploy Web applications to standalone IIS servers and web clusters</li>
-	<li>Deploy Windows services to standalone back-end servers and application clusters</li>
-	<li>Deploy Azure Cloud Services from blob storage (see custom artifacts storage below)</li>
-	<li>Modify application configuration files upon deployment</li>
-	<li>Extensible with your own custom deployment tasks</li>
+    <li>Deploy Web applications to standalone IIS servers and web clusters</li>
+    <li>Deploy Windows services to standalone back-end servers and application clusters</li>
+    <li>Deploy Azure Cloud Services from blob storage (see custom artifacts storage below)</li>
+    <li>Modify application configuration files upon deployment</li>
+    <li>Extensible with your own custom deployment tasks</li>
 </ul>
 Checkout <a href="http://help.appveyor.com/kb/using-appveyor/web-application-project-deployment-to-staging-and-production-environments">web application project deployment</a> article to learn how to:
 <ul>
-	<li>Setup automatic deployment of web application project to Staging server as part of CI process.</li>
-	<li>Promote project release to Production environment with a click of a button.</li>
-	<li>Rollback, remove deployment on Production or Staging interactively from command line.</li>
+    <li>Setup automatic deployment of web application project to Staging server as part of CI process.</li>
+    <li>Promote project release to Production environment with a click of a button.</li>
+    <li>Rollback, remove deployment on Production or Staging interactively from command line.</li>
 </ul>
 <h2>Kiln integration</h2>
 We got numerous requests from our customers to integrate AppVeyor with <a href="http://www.fogcreek.com/kiln/">Kiln source control</a> from FogCreek Software. Though we are not affiliated with them Kiln looks compelling for projects with private repositories because of its per-user pricing (yes, you can create any number of repositories) and cool “Kiln harmony” feature when every single repository can be used from both Git and Mercurial, simultaneously. Integration with AppVeyor does not require an additional Kiln user - you just create a new “access token” and use it when creating a new project in AppVeyor.
@@ -45,20 +45,20 @@ In addition to high-level “Visual Studio solution” and “MSBuild” scenari
 
 While running a custom build script AppVeyor provides you integration points for:
 <ul>
-	<li>communicating MSBuild results back to AppVeyor</li>
-	<li>communicating testing results back to AppVeyor</li>
-	<li>pushing artifacts to build artifacts storage</li>
+    <li>communicating MSBuild results back to AppVeyor</li>
+    <li>communicating testing results back to AppVeyor</li>
+    <li>pushing artifacts to build artifacts storage</li>
 </ul>
 See <a href="http://help.appveyor.com/kb/using-appveyor/custom-build-scripts">creating custom build scripts</a> article for more details.
 <h2>Custom storage for build artifacts</h2>
 Out of the box AppVeyor pushes build artifacts in a cloud storage which is GEO-replicated and shared between tenants. We added custom storage support which allows you to configure either Azure blob storage or Amazon S3 account to store build artifacts for your projects. Custom storage that is configured per-account gives you additional benefits:
 <ul>
-	<li>You can have your own folders structure and file naming.</li>
-	<li>Artifacts can be accessed using selected cloud storage API or URLs.</li>
-	<li>Security policy in your organization prevents you from storing build artifacts on a shared storage.</li>
-	<li>Deploy to Windows Azure cloud services directly from a blob storage.</li>
-	<li>Control public access to artifacts.</li>
-	<li>You won’t be affected by artifacts retention policy (it’s not yet implemented, but coming in the future) - store as many versions as you need.</li>
+    <li>You can have your own folders structure and file naming.</li>
+    <li>Artifacts can be accessed using selected cloud storage API or URLs.</li>
+    <li>Security policy in your organization prevents you from storing build artifacts on a shared storage.</li>
+    <li>Deploy to Windows Azure cloud services directly from a blob storage.</li>
+    <li>Control public access to artifacts.</li>
+    <li>You won’t be affected by artifacts retention policy (it’s not yet implemented, but coming in the future) - store as many versions as you need.</li>
 </ul>
 See <a href="http://help.appveyor.com/kb/getting-started/packaging-artifacts">packaging artifacts</a> article for more details.
 <h2>Go language support</h2>
@@ -74,9 +74,9 @@ What that means for you? Starting today (September 25th), we offer you a free 30
 <h2>New pricing</h2>
 Our goal is to provide you outstanding service with competitive and reasonable <a href="http://www.appveyor.com/pricing">pricing</a>. We gave our pricing a second thought and came up with 3 simple paid plans:
 <ul>
-	<li>Express - $19/month (1 private repository)</li>
-	<li><strong>Professional - $39/month</strong> (10 private repositories)</li>
-	<li>Premium - $79/month (unlimited private repositories)</li>
+    <li>Express - $19/month (1 private repository)</li>
+    <li><strong>Professional - $39/month</strong> (10 private repositories)</li>
+    <li>Premium - $79/month (unlimited private repositories)</li>
 </ul>
 Compare to $67 per month AWS or Azure small instance running TeamCity or Jenkins!
 

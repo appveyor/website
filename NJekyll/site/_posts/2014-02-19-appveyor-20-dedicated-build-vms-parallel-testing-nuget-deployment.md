@@ -9,21 +9,21 @@ You could see those great features in flagman continuous integration services fo
 
 <h2>What’s new at a glance</h2>
 <ul>
-	<li><a href="#vms">Builds run on dedicated Virtual Machines</a></li>
-	<li><a href="#nuget">NuGet hosting</a></li>
-	<li><a href="#build-matrix">Build matrix</a></li>
-	<li><a href="#parallel-testing">Parallel testing</a></li>
-	<li><a href="#deployment">Deployment to multiple environments</a></li>
-	<li><a href="#yaml">Build configuration in YAML</a></li>
-	<li><a href="#ui">Responsive UI</a></li>
+    <li><a href="#vms">Builds run on dedicated Virtual Machines</a></li>
+    <li><a href="#nuget">NuGet hosting</a></li>
+    <li><a href="#build-matrix">Build matrix</a></li>
+    <li><a href="#parallel-testing">Parallel testing</a></li>
+    <li><a href="#deployment">Deployment to multiple environments</a></li>
+    <li><a href="#yaml">Build configuration in YAML</a></li>
+    <li><a href="#ui">Responsive UI</a></li>
 </ul>
 <h2 id="vms">Builds run on dedicated Virtual Machines</h2>
 <img style="width:100%;max-width:286px;float:right;" src="/site/_posts/images/appveyor-20/Windows_Azure_logo.png" alt="" />In AppVeyor 2.0 we are moving away from shared build servers to dedicated VMs. Every build job runs on pristine VM with admin rights! This was probably the main reason for kicking-off this release.
 <ul>
-	<li>With dedicated build VM you get guaranteed performance (CPU and I/O).</li>
-	<li>Increased security with confidence that your code downloaded to isolated environment that is immediately decommissioned after build completes.</li>
-	<li>Having admin rights on build server gives you unlimited possibilities: from installing additional software with Chocolatey or Web PI for supporting your build and headless browser testing to deploying to the same build server for integration testing and BVTs.</li>
-	<li>Being hosted on Windows Azure AppVeyor can offer you build infrastructure with unlimited scale.</li>
+    <li>With dedicated build VM you get guaranteed performance (CPU and I/O).</li>
+    <li>Increased security with confidence that your code downloaded to isolated environment that is immediately decommissioned after build completes.</li>
+    <li>Having admin rights on build server gives you unlimited possibilities: from installing additional software with Chocolatey or Web PI for supporting your build and headless browser testing to deploying to the same build server for integration testing and BVTs.</li>
+    <li>Being hosted on Windows Azure AppVeyor can offer you build infrastructure with unlimited scale.</li>
 </ul>
 <h2 id="nuget">NuGet hosting</h2>
 AppVeyor 2.0 has built-in hosting for private and public NuGet feeds.
@@ -42,11 +42,11 @@ Easily build/test for multiple configurations. Specify which operating systems, 
 
 Build matrix supports the following dimensions:
 <ul>
-	<li>Operating system</li>
-	<li>Environment variables</li>
-	<li>Platform, e.g. x86, x64, AnyCPU</li>
-	<li>Configuration, e.g. Build, Debug</li>
-	<li>Test categories</li>
+    <li>Operating system</li>
+    <li>Environment variables</li>
+    <li>Platform, e.g. x86, x64, AnyCPU</li>
+    <li>Configuration, e.g. Build, Debug</li>
+    <li>Test categories</li>
 </ul>
 <h2 id="parallel-testing">Parallel testing</h2>
 <img style="width:100%;max-width:313px;float:left;" src="/site/_posts/images/appveyor-20/parallel-testing.png" alt="" />
@@ -76,17 +76,17 @@ AppVeyor 2.0 has completely re-designed UI to get results faster and on the go!
 
 AngularJS, SignalrR and Foundation helped us to build great experience we're really proud of:
 <ul>
-	<li>Adaptive layout and improved navigation.</li>
-	<li>Real-time build console.</li>
-	<li>Real-time reporting of MSBuild errors and warnings.</li>
-	<li>Real-time reporting of test results (MSTest, NUnit and xUnit).</li>
-	<li>Optimized for mobile screens.</li>
+    <li>Adaptive layout and improved navigation.</li>
+    <li>Real-time build console.</li>
+    <li>Real-time reporting of MSBuild errors and warnings.</li>
+    <li>Real-time reporting of test results (MSTest, NUnit and xUnit).</li>
+    <li>Optimized for mobile screens.</li>
 </ul>
 <h2>Try AppVeyor now!</h2>
 <p style="margin:2rem 0;"><a style="font-size:14pt;color:#fff;text-decoration:none;background-color:#2cba2c;padding:.7rem 2rem;border-radius:4px;" href="http://www.appveyor.com/pricing">Sign up now</a></p>
 
 <ul>
-	<li>Free plan with support of public repositories only. <a href="mailto:team@appveyor.com">Let us know</a> if you need private repositories support or want to play with parallel testing and we'll be happy to enable them for your account.</li>
+    <li>Free plan with support of public repositories only. <a href="mailto:team@appveyor.com">Let us know</a> if you need private repositories support or want to play with parallel testing and we'll be happy to enable them for your account.</li>
 </ul>
 <h2>Documentation</h2>
 <a href="http://www.appveyor.com/docs">http://www.appveyor.com/docs</a>

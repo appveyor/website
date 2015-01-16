@@ -48,9 +48,9 @@ Now let's deploy our "experimental" app to Windows Azure. Go to Environments an
 
 The form requires 3 prerequisites:
 <ul>
-	<li><span style="font-style:inherit;line-height:1.625;">Your Windows Azure account </span><strong style="font-style:inherit;line-height:1.625;">subscription details</strong> (Subscription ID and certificate)<span style="font-style:inherit;line-height:1.625;">.</span></li>
-	<li><strong>Storage account</strong> for uploading Azure CS package (.cspkg file produced during the build) and then deploying from it.</li>
-	<li><strong>Cloud Service</strong> to deploy to.</li>
+    <li><span style="font-style:inherit;line-height:1.625;">Your Windows Azure account </span><strong style="font-style:inherit;line-height:1.625;">subscription details</strong> (Subscription ID and certificate)<span style="font-style:inherit;line-height:1.625;">.</span></li>
+    <li><strong>Storage account</strong> for uploading Azure CS package (.cspkg file produced during the build) and then deploying from it.</li>
+    <li><strong>Cloud Service</strong> to deploy to.</li>
 </ul>
 <h2>Subscription details</h2>
 <a href="https://manage.windowsazure.com/publishsettings/Index?client=vs&amp;SchemaVersion=1.0">Download Azure account publishing profile</a> and open it in text editor. Copy subscription ID and Base64 encoded subscription certificate.

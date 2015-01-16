@@ -11,14 +11,14 @@ After being almost two months in private and then public beta we finally upgrade
 
 Let me quickly recap <a href="/blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment">what new features AppVeyor 2.0 brings</a> to you:
 <ul>
-	<li>Builds run on dedicated virtual machines</li>
-	<li>Project configuration in YAML (aka appveyor.yml)</li>
-	<li>Fine-grained control over build process</li>
-	<li>NuGet feeds hosting</li>
-	<li>Build matrix and parallel testing</li>
-	<li>Built-in deployment to multiple environments</li>
-	<li>Responsive, real-time UI</li>
-	<li>A lot of other improvements and fixes</li>
+    <li>Builds run on dedicated virtual machines</li>
+    <li>Project configuration in YAML (aka appveyor.yml)</li>
+    <li>Fine-grained control over build process</li>
+    <li>NuGet feeds hosting</li>
+    <li>Build matrix and parallel testing</li>
+    <li>Built-in deployment to multiple environments</li>
+    <li>Responsive, real-time UI</li>
+    <li>A lot of other improvements and fixes</li>
 </ul>
 <h2>The New Pricing</h2>
 AppVeyor 2.0 moved from shared build farm to dedicated build machines. With that change it was obvious the current pricing scheme must be adjusted to justify new architecture. We received a signal from our customers that new plans felt pricey and not affordable for individual developers and small teams. This was not exactly our intention. We don’t want you to go through nightmare of installing TeamCity or Jenkins on Azure VM! :)

@@ -22,16 +22,16 @@ All branches are built by default. You can either [manually skip a build](/docs/
 
 To specify the list of allowed branches:
 
-	branches:
-	  only:
-	    - master
-	    - production
+    branches:
+      only:
+        - master
+        - production
 
 To specify the list of branches that must be ignored:
 
-	  except:
-	    - /dev.*/      # You can use Regex expression to match multiple branch name(s)
-	    - playground
+      except:
+        - /dev.*/      # You can use Regex expression to match multiple branch name(s)
+        - playground
 
 > `gh-pages` branch is always excluded unless explicitly added in "only" list.
 
@@ -46,7 +46,7 @@ To solve this problem AppVeyor allows having multiple per-branch configurations 
 
 Multiple configurations are defined as a list with `branches` section in every item that:
 
-	
+
 <pre style="background:#f9f9f9;color:#080808"><span style="color:#5a525f;font-style:italic"># configuration for "master" branch</span>
 <span style="color:#5a525f;font-style:italic"># build in Release mode and deploy to Azure</span>
 <span style="color:#794938">-</span>
@@ -96,10 +96,10 @@ AppVeyor sets `APPVEYOR_REPO_TAG` environment variable to distinguish regular co
 
 You can use `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for example:
 
-	- provider: Environment
-	  name: production
-	  on:
-	    branch: master
+    - provider: Environment
+      name: production
+      on:
+        branch: master
         appveyor_repo_tag: true
 
 You can disable builds on new tags through UI (General tab of project settings) or in `appveyor.yml`:

@@ -15,7 +15,7 @@ Use **GitHub** or **BitBucket** button to sign up with your existing developer a
 
 ## Step 2 - Add your project
 
-Authorize GitHub or BitBucket to list your repositories. For open-source project developers who are using the same GitHub account for both  personal and private company repositories AppVeyor offers a choice between two scopes: **public repositories** exclusively or **public and private**. 
+Authorize GitHub or BitBucket to list your repositories. For open-source project developers who are using the same GitHub account for both  personal and private company repositories AppVeyor offers a choice between two scopes: **public repositories** exclusively or **public and private**.
 
 For every project AppVeyor will configure webhooks for its repository to automatically start a build when you push the changes. For every private project AppVeyor will add an SSH public key (deployment key) to the clone repository on the build machine.
 
@@ -32,4 +32,4 @@ AppVeyor will provision a new build virtual machine, clone the repository and pa
 
 ## Step 4 - Configure your project
 
-Start from [Build configuration](/docs/build-configuration) to learn how to configure build. 
+Start from [Build configuration](/docs/build-configuration) to learn how to configure build.

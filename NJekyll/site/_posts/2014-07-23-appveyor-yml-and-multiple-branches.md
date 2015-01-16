@@ -41,9 +41,9 @@ Multiple configurations are defined as a <strong>list</strong> with <code>branch
 </pre>
 Unlike white- and blacklisting <code>branches</code> section here works like a selector, not a filter. Configuration selection algorithm is the following:
 <ul>
-	<li>Check configurations with <code>branches/only</code> section defined. If branch is found in configuration's <code>only</code> section use this configuration.</li>
-	<li>Check configurations with <code>branches/except</code> section defined. If branch is NOT found in configuration's <code>except</code>section use this configuration.</li>
-	<li>Check configurations WITHOUT <code>branches</code> section. If such configuration found use it.</li>
-	<li>If all previous steps fail build is not run.</li>
+    <li>Check configurations with <code>branches/only</code> section defined. If branch is found in configuration's <code>only</code> section use this configuration.</li>
+    <li>Check configurations with <code>branches/except</code> section defined. If branch is NOT found in configuration's <code>except</code>section use this configuration.</li>
+    <li>Check configurations WITHOUT <code>branches</code> section. If such configuration found use it.</li>
+    <li>If all previous steps fail build is not run.</li>
 </ul>
 Enjoy!

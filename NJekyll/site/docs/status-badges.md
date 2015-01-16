@@ -13,11 +13,11 @@ You can see a badge image URL and sample markup on the **Badges** tab of project
 
 ## Display badge for specific branch
 
-The default badge URL you see on the Badges tab returns the status of the last build of *any branches*. 
+The default badge URL you see on the Badges tab returns the status of the last build of *any branches*.
 
 To display the status of a specific branch append `/branch/<branch-name>` to that URL, for example:
 
-	https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva/branch/master
+    https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva/branch/master
 
 To link specific branch with the project add `/branch/<branch-name>` to project URL, for example:
 

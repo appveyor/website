@@ -27,7 +27,7 @@ Build cache is a virtual cloud storage automatically created for the project. Wh
 
 For every cache item AppVeyor checks if its archive exists in build cache and if it does AppVeyor downloads archive and unpack it to original location.
 
-### Save/update cache before build finishes  
+### Save/update cache before build finishes
 
 For every cache item AppVeyor calculates checksum and if checksum does not match to the one in build cache or archive not found AppVeyor compresses directory of file and pushes archive to a cloud storage.
 
@@ -40,8 +40,8 @@ On Environment tab of project settings you can specify directories and files tha
 
 In `appveyor.yml`:
 
-	cache:
-	  - packages                     # preserve "packages" directory in the root of build folder
-	  - projectA\libs
+    cache:
+      - packages                     # preserve "packages" directory in the root of build folder
+      - projectA\libs
       - node_modules                 # local npm modules
       - C:\Users\appveyor\AppData\Roaming\npm-cache

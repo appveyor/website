@@ -31,38 +31,38 @@ It's possible to assign a custom plan to your account if you need more concurren
 
 ![parallel testing diagram](/site/docs/images/parallel-testing-diagram.png)
 
-### Categorizing tests 
+### Categorizing tests
 To assign a category to **Visual Studio** test apply the `TestCategory` attribute to a testing method:
 
-	[TestMethod, TestCategory("A")]
-	public void MyTest()
-	{
-	}
+    [TestMethod, TestCategory("A")]
+    public void MyTest()
+    {
+    }
 
 The **NUnit** testing framework has a `Category` attribute that can be assigned to both test fixtures and test methods. To apply category to a test fixture:
 
-	[TestFixture, Category("LongRunning")]
-	public class LongRunningTests
-	{
-	}
+    [TestFixture, Category("LongRunning")]
+    public class LongRunningTests
+    {
+    }
 
 To apply category to a test method:
 
-	[TestFixture]
-	public class SuccessTests
-	{
-		[Test, Category("Long")]
-		public void VeryLongTest()
-	    {
-	    }
-	}
+    [TestFixture]
+    public class SuccessTests
+    {
+        [Test, Category("Long")]
+        public void VeryLongTest()
+        {
+        }
+    }
 
 **xUnit** has a multi-purpose `Trait` attribute for applying various meta-data to tests. To assign category to an xUnit test:
 
-	[Fact, Trait("Category", "A")]
-	public void MyTest()
-	{
-	}
+    [Fact, Trait("Category", "A")]
+    public void MyTest()
+    {
+    }
 
 ### Configuring project to run tests in parallel
 
@@ -72,11 +72,11 @@ Add **parallel testing groups** on the **Tests** tab of project settings. For ex
 
 To configure parallel testing groups in `appveyor.yml`:
 
-	test:
-	  categories:
-	    - Common       # A category common for all jobs
-	    - [UI]         # 1st job
-	    - [DAL, BL]    # 2nd job
+    test:
+      categories:
+        - Common       # A category common for all jobs
+        - [UI]         # 1st job
+        - [DAL, BL]    # 2nd job
 
 Configuration above will produce two jobs:
 
@@ -85,7 +85,7 @@ Configuration above will produce two jobs:
 
 ## Environment variables
 
-By setting groups of environment variables you can split tests using your own convention or algorithm. 
+By setting groups of environment variables you can split tests using your own convention or algorithm.
 
 For example, using the fact that the **Test assemblies** field on the **Tests** tab supports substitution of environment variables, we could split tests by assemblies.
 
@@ -99,14 +99,14 @@ Then on the **Tests** tab specify which assemblies to test using the environment
 
 The same configuration in `appveyor.yml`:
 
-	environment:
-	  matrix:
-	    - test_assembly: DAL.Tests.dll
-	    - test_assembly: BLL.Tests.dll
-	
-	test:
-	  assemblies:
-	    - $(test_assembly)
+    environment:
+      matrix:
+        - test_assembly: DAL.Tests.dll
+        - test_assembly: BLL.Tests.dll
+
+    test:
+      assemblies:
+        - $(test_assembly)
 
 ## Imperative approach
 
@@ -114,19 +114,19 @@ If tests cannot be categorized by either categories or assemblies you can use en
 
 For example, to specify a range of numbers for each job we can have the following configuration:
 
-	environment:
-	  matrix:
-	    - test_start: 0
-	      test_end: 49
-	    - test_start: 50
-	      test_end: 100
+    environment:
+      matrix:
+        - test_start: 0
+          test_end: 49
+        - test_start: 50
+          test_end: 100
 
 Then in the test code (C#):
 
-	int testStart = Int32.Parse(Environment.GetEnvironmentVariable("test_start"));
-	int testEnd = Int32.Parse(Environment.GetEnvironmentVariable("test_end"));
+    int testStart = Int32.Parse(Environment.GetEnvironmentVariable("test_start"));
+    int testEnd = Int32.Parse(Environment.GetEnvironmentVariable("test_end"));
 
-	for(int i = testStart; i < testEnd; i++)
-	{
-	    // do something
-	}
+    for(int i = testStart; i < testEnd; i++)
+    {
+        // do something
+    }

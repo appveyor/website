@@ -7,11 +7,11 @@ When deploying web application to different environments you don’t want to re-
 <h3>Usage scenarios</h3>
 Most common use cases for Web Deploy parametrization is updating node/attribute value in XML files or replacing a token in text files, for example:
 <ul>
-	<li>appSettings in <code>web.config</code></li>
-	<li>connection strings in <code>web.config</code></li>
-	<li>WCF endpoints</li>
-	<li>Paths to log files</li>
-	<li>Database name in SQL install script</li>
+    <li>appSettings in <code>web.config</code></li>
+    <li>connection strings in <code>web.config</code></li>
+    <li>WCF endpoints</li>
+    <li>Paths to log files</li>
+    <li>Database name in SQL install script</li>
 </ul>
 <h3>Parameters.xml</h3>
 To enable Web Deploy parametrization add <code>parameters.xml</code> file in the root of your web application.
@@ -57,6 +57,6 @@ Web Deploy parametrization is supported by <a href="http://www.appveyor.com/doc
 
 Related articles:
 <ul>
-	<li><a href="http://www.appveyor.com/docs/deployment/web-deploy">Deploying using Web Deploy</a></li>
-	<li><a href="http://www.appveyor.com/docs/deployment/agent">Deploying to remote servers with AppVeyor Deployment Agent</a></li>
+    <li><a href="http://www.appveyor.com/docs/deployment/web-deploy">Deploying using Web Deploy</a></li>
+    <li><a href="http://www.appveyor.com/docs/deployment/agent">Deploying to remote servers with AppVeyor Deployment Agent</a></li>
 </ul>

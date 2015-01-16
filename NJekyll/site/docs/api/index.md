@@ -21,7 +21,7 @@ AppVeyor uses bearer token authentication. Token can be found on **API token** p
 
 Token must be set in `Authorization` header of every request to AppVeyor REST API:
 
-	Authorization: Bearer <token>
+    Authorization: Bearer <token>
 
 Default content type is JSON, but if you need to return XML set `Accept` header:
 
@@ -33,12 +33,12 @@ Default content type is JSON, but if you need to return XML set `Accept` header:
 
 The following PowerShell code uses standard `Invoke-RestMethod` cmdlet to return the list of roles from authenticated account:
 
-	$token = '<your-api-token>'
-	$headers = @{
+    $token = '<your-api-token>'
+    $headers = @{
       "Authorization" = "Bearer $token"
       "Content-type" = "application/json"
     }
-	Invoke-RestMethod -Uri 'https://ci.appveyor.com/api/roles' -Headers $headers -Method Get
+    Invoke-RestMethod -Uri 'https://ci.appveyor.com/api/roles' -Headers $headers -Method Get
 
 ### C&#35;
 

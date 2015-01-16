@@ -9,7 +9,7 @@ After cloning the repository AppVeyor runs **MSBuild** to build project sources 
 
 The following command is used:
 
-	msbuild <project> /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+    msbuild <project> /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
 > Custom logger is required to push MSBuild warning and errors in real-time to build console. You may use this logger in your own build scripts.
 
@@ -33,7 +33,7 @@ This command performs compilation and publishing of WAP into a Web Deploy packag
 
 ### Packaging NuGet libraries
 
-If the project folder contains a `*.nuspec` file AppVeyor will try to package the project as a NuGet library by calling the following command: 
+If the project folder contains a `*.nuspec` file AppVeyor will try to package the project as a NuGet library by calling the following command:
 
     nuget pack <project_file> -OutputDirectory <temp_path>
 
@@ -43,7 +43,7 @@ For example, given the following project structure:
 
 AppVeyor will call:
 
-	nuget pack SimpleConsole.Tests.csproj -OutputDirectory <temp_path>
+    nuget pack SimpleConsole.Tests.csproj -OutputDirectory <temp_path>
 
 > To generate a `.nuspec` file for your project use the `nuget spec` command.
 
@@ -62,25 +62,25 @@ Created Cloud Service package (`<project-name>.cspkg`) and default "Cloud" confi
 By default, MSBuild uses `<project>.Cloud.cscfg` cloud service configuration, but you can specify which configuration to use by adding a `TargetProfile` environment variable, for example:
 
 <table>
-	<tr>
-		<td>TargetProfile</td>
-		<td>Staging</td>
-	</tr>
+    <tr>
+        <td>TargetProfile</td>
+        <td>Staging</td>
+    </tr>
 </table>
 
 #### Caveats
 
 While trying to build an Azure Cloud Service project you may get the following (or similar related) error:
 
-	The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\vX.X\Windows Azure Tools\2.X\Microsoft.WindowsAzure.targets" was not found.
+    The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\vX.X\Windows Azure Tools\2.X\Microsoft.WindowsAzure.targets" was not found.
 
 To fix this error add the following environment variable on the **Environment** tab of project settings:
 
 <table>
-	<tr>
-		<td>VisualStudioVersion</td>
-		<td>12.0</td>
-	</tr>
+    <tr>
+        <td>VisualStudioVersion</td>
+        <td>12.0</td>
+    </tr>
 </table>
 
 where 12.0 is your version of Visual Studio (VS 2013 - 12.0, VS 2012 - 11.0, VS 2010 - 10.0).
@@ -88,4 +88,4 @@ where 12.0 is your version of Visual Studio (VS 2013 - 12.0, VS 2012 - 11.0, VS 
 See also:
 
 * [appveyor.yml refence](/docs/appveyor-yml)
-* [Pushing real-time compilation messages to build console](/docs/build-worker-api#add-compilation-message) 
+* [Pushing real-time compilation messages to build console](/docs/build-worker-api#add-compilation-message)

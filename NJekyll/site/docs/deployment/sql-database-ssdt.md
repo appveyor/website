@@ -10,8 +10,8 @@ title: Publishing SQL Server databases from SSDT packages
 In this guide:
 
 - [Provider settings](#settings)
-	- [Configuring in appveyor.yml](#yaml)
-	- [SQLCMD variables](#sqlcmd-variables)
+    - [Configuring in appveyor.yml](#yaml)
+    - [SQLCMD variables](#sqlcmd-variables)
 - [Publishing to local SQL Server for integration testing](#local-sql)
 - [Publishing to Azure SQL database](#azure-sql)
 - [Publishing to internal SQL Server with Deployment Agent](#internal-sql)
@@ -22,11 +22,11 @@ In this guide:
 
 - **Artifact** (`artifact`) - `.dacpac` artifact file name or deployment name or regexp matching one of these.
 - **Target SQL Server connection string** (`connection_string`) - SQL connection string to the target database. **Must include database name**. For example `server=(local)\SQLEXPRESS;database=test101;Integrated security=SSPI;`
-- **Register as a Data-tier Application** (`register_data_tier_application`) - default is `false`. You can read about Data-tier applications on [MSDN](http://msdn.microsoft.com/en-ca/library/ee210546.aspx) and also there is a nice introductory article on [CodeProject](http://www.codeproject.com/Articles/573144/Versioning-SQL-Server-Databases-using-SSDT). 
+- **Register as a Data-tier Application** (`register_data_tier_application`) - default is `false`. You can read about Data-tier applications on [MSDN](http://msdn.microsoft.com/en-ca/library/ee210546.aspx) and also there is a nice introductory article on [CodeProject](http://www.codeproject.com/Articles/573144/Versioning-SQL-Server-Databases-using-SSDT).
 - **Block publish when database has drifted from registered version** (`block_when_drift_detected`) - default is `false`.
 
 Deployment behaviour:
- 
+
 - **Deploy database properties** (`script_database_options`) - Default is `true`.
 - **Always re-create database** (`create_new_database`) - `true` if database should be re-created every time you deploy. Default is `false`.
 - **Block incremental deployment if data loss might occur** (`block_on_possible_data_loss`) - Prevent database changes if data loss might occur. Default is `true`.
@@ -35,7 +35,7 @@ Deployment behaviour:
 - **DROP objects in target but not in project** (`drop_objects_not_in_source`) - `true` to remove objects in destination database that do not exist in the package. Default is `false`.
 - **Do not user ALTER ASSEMBLY statements to update CLR types** (`no_alter_statements_to_change_clr_types`) - Default is `false`.
 
-Advanced deployment options: 
+Advanced deployment options:
 
 - **Allow drop blocking assemblies** (`allow_drop_blocking_assemblies`) - This property is used by SqlClr deployment to cause any blocking assemblies to be dropped as part of the deployment plan. By default, any blocking/referencing assemblies will block an assembly update if the referencing assembly needs to be dropped. Default is `false`.
 - **Allow incompatible platform** (`allow_incompatible_platform`) - Specifies whether to attempt the action despite incompatible SQL Server platforms. Default is `false`.
@@ -106,12 +106,12 @@ Advanced deployment options:
 
 At minimum you would specify just `artifact` and `connection_string` and rely on default values for database deployment settings described above. The following settings work for the most cases when deploying to SQL Server or Azure SQL:
 
-	deploy:
-	  provider: SqlDatabase
-	  connection_string:
+    deploy:
+      provider: SqlDatabase
+      connection_string:
         secure: r5FHTTIfknKXrvMwsfqC/swG2n81GGc0PruruI5DVSMAocqz==
       script_database_options: false
-	  ignore_file_and_log_file_path: true
+      ignore_file_and_log_file_path: true
 
 
 <a id="sqlcmd-variables"></a>
@@ -119,12 +119,12 @@ At minimum you would specify just `artifact` and `connection_string` and rely on
 
 You can specify SQLCMD variables either on UI or in `appveyor.yml` by prefixing them with `sqlcmd.`, for example:
 
-	deploy:
-	  provider: SqlDatabase
-	  connection_string:
+    deploy:
+      provider: SqlDatabase
+      connection_string:
         secure: r5FHTTIfknKXrvMwsfqC/swG2n81GGc0PruruI5DVSMAocqz==
-	  sqlcmd.VarName: Boo
-	  sqlcmd.AnotherVar: Baz 
+      sqlcmd.VarName: Boo
+      sqlcmd.AnotherVar: Baz
 
 
 <a id="local-sql"></a>
@@ -134,22 +134,22 @@ To perform integration testing of database changes you can publish SSDT package 
 
 By default, all SQL Server services are stopped. You can choose SQL Server service to start on "Environment" tab of AppVeyor project settings or in `appveyor.yml`. For example, to start SQL Server 2014 instance:
 
-	services:
-	  - mssql2014
+    services:
+      - mssql2014
 
 In connection string for local publishing you could either use standard SQL Server login/password or integrated security (`Intergrated security=SSPI`). Below is a complete example of `appveyor.yml` for building SSDT package, pushing it to build artifacts and then publishing to a local SQL Server:
 
-	services:
-	  - mssql2014
-	
-	artifacts:
-	  - path: MyDatabase\bin\debug\MyDatabase.dacpac
-	    name: MyDatabase
-	
-	deploy:
-	  - provider: SqlDatabase
-	    artifact: MyDatabase
-	    connection_string: 'Server=(local)\SQL2014;Database=my_test_db;User ID=sa;Password=Password12!'
+    services:
+      - mssql2014
+
+    artifacts:
+      - path: MyDatabase\bin\debug\MyDatabase.dacpac
+        name: MyDatabase
+
+    deploy:
+      - provider: SqlDatabase
+        artifact: MyDatabase
+        connection_string: 'Server=(local)\SQL2014;Database=my_test_db;User ID=sa;Password=Password12!'
 
 
 <a id="azure-sql"></a>
@@ -159,8 +159,8 @@ In connection string for local publishing you could either use standard SQL Serv
 
 To enable database publishing from AppVeyor environment to your Azure SQL database you should modify Azure SQL Server firewall settings and allow **Windows Azure Services** add the following two ranges of allowed IPs:
 
-	173.193.24.178 - 173.193.24.190
-	173.193.56.154 - 173.193.56.158
+    173.193.24.178 - 173.193.24.190
+    173.193.56.154 - 173.193.56.158
 
 ![azure-sql-server-settings](/site/docs/deployment/images/sql-database/azure-sql-server-settings.png)
 

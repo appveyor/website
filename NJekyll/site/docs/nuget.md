@@ -35,7 +35,7 @@ You can use your AppVeyor account email/password to access password-protected Nu
 
 For publishing your own packages to your account feed use the command:
 
-	 nuget push <your-package.nupkg> -ApiKey <your-api-key> -Source <feed-url>
+     nuget push <your-package.nupkg> -ApiKey <your-api-key> -Source <feed-url>
 
 \* Replace `<your-api-key>` and `<feed-url>` with values from **Account -> NuGet** page.
 
@@ -56,7 +56,7 @@ You can enable automatic publishing of NuGet packages during the build on the pr
 
 To generate a `.nuspec` file for your project run the following command from project root directory:
 
-	nuget spec
+    nuget spec
 
 
 
@@ -65,7 +65,7 @@ To generate a `.nuspec` file for your project run the following command from pro
 
 To push a NuGet package as an artifact and publish it in both project and account feeds use this command anywhere in your build script:
 
-	appveyor PushArtifact <your-nugetpackage.nupkg>
+    appveyor PushArtifact <your-nugetpackage.nupkg>
 
 > When you delete a project in AppVeyor its corresponding NuGet feed is deleted, however all NuGet packages from that feed remain published in account feed.
 
@@ -89,7 +89,7 @@ When you first open the Manage NuGet packages dialog you will be presented with 
 
 To configure a private NuGet feed on your development machine run this command:
 
-	nuget sources add -Name <friendly-name> -Source <feed-url> -UserName <username> -Password <password>
+    nuget sources add -Name <friendly-name> -Source <feed-url> -UserName <username> -Password <password>
 
 
 
@@ -104,9 +104,9 @@ You can enable that through UI on NuGet tab of project settings:
 
 or in `appveyor.yml`:
 
-	nuget:
-	  account_feed: true
-	  project_feed: true
+    nuget:
+      account_feed: true
+      project_feed: true
 
 
 
@@ -118,11 +118,11 @@ To configure an AppVeyor project to use private NuGet feeds during a build you c
 1. Create a separate AppVeyor account for accessing NuGet feed.
 2. On the **Environment** tab of project settings add the two environment variables, `nuget_user` and `nuget_password`:
 
-   ![nuget environment variables](/site/docs/images/nuget-environment-variables.png) 
+   ![nuget environment variables](/site/docs/images/nuget-environment-variables.png)
 
 3. Into **Install script** box, add this command:
 
-	`nuget sources add -Name MyAccountFeed -Source <feed-url> -UserName %nuget_user% -Password %nuget_password%`
+    `nuget sources add -Name MyAccountFeed -Source <feed-url> -UserName %nuget_user% -Password %nuget_password%`
 
 where `<feed-url>` is URL of your [account NuGet feed](https://ci.appveyor.com/nuget).
 
@@ -145,7 +145,7 @@ otherwise, if project solution is in sub-directory:
 <a id="visual-studio-nuget-restore"></a>
 ## Visual Studio NuGet restore
 
-If you have enabled NuGet Package Restore for Visual Studio solution it will be automatically triggered in the AppVeyor build environment as `EnableNuGetPackageRestore` environment variable is already set to `true`. 
+If you have enabled NuGet Package Restore for Visual Studio solution it will be automatically triggered in the AppVeyor build environment as `EnableNuGetPackageRestore` environment variable is already set to `true`.
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Shallow clone of repositories 
+title: Shallow clone of repositories
 ---
 
 # Shallow clone of repositories
@@ -21,7 +21,7 @@ The feature called "shallow clone" aims to improve the situation with large repo
 
 By default AppVeyor clones entire repository with all the history. You can limit the number of last commits you’d like to clone. This feature works for Git repositories hosted at GitHub and BitBucket. You can set clone depth on General tab of project settings or in `appveyor.yml`:
 
-	clone_depth: <number>
+    clone_depth: <number>
 
 > Be aware that if you do a lot of commits producing queued builds and depth number is too small git checkout operation following git clone can fail because requested commit is not present in a cloned repository.
 
@@ -32,6 +32,6 @@ As title says this option is specific to GitHub and BitBucket only. It uses thei
 
 You can enable this option through UI on General tab of project settings or in `appveyor.yml`:
 
-	shallow_clone: true
+    shallow_clone: true
 
 If both `clone_depth` and `shallow_clone` exist in the config `clone_depth` is ignored.
