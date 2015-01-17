@@ -98,7 +98,7 @@ Project builds can be configured by either `appveyor.yml` or on the user interfa
 
 Each method has pros and cons. Via the User interface one can control every aspect of the build process without ever touching the repository. On the other hand, YAML may seem more sophisticated and familiar for those coming from a Linux platform. Another thing to consider is that when you fork/clone a project with its configuration stored in `appveyor.yml`, you simply add a new project in AppVeyor referencing repo and you are good to go.
 
-> It's worth noticing that both `appveyor.yml` and UI configuration are mutually exclusive. It's always either YAML or UI - the settings from each are not merged. If you have `appveyor.yml` in your repo it will override all settings made on the UI unless explicitly disabled by **Ignore appveyor.yml**.
+> It's worth noticing that both `appveyor.yml` and UI configuration are mutually exclusive. It's always either YAML or UI - the settings from each are not merged. If you have `appveyor.yml` in your repo it will override all settings made on the UI unless explicitly disabled by **Ignore appveyor.yml**. The only exceptions are environment variables and notification settings. Environment variables defined on UI are getting merged with those ones defined in `appveyor.yml`. Variable values with the same names are getting overridden with values from UI.
 
 
 ### appveyor.yml
