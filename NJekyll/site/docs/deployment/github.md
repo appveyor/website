@@ -57,7 +57,7 @@ To promote selected "tag" build to GitHub release:
 ### Configuring in appveyor.yml
 
     deploy:
-      release: myproduct v$(appveyor_build_version)
+      release: myproduct-v$(appveyor_build_version)
       provider: GitHub
       auth_token:
         secure: <your encrypted token> # your encrypted token from GitHub
