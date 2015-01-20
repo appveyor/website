@@ -15,6 +15,7 @@ Below is the list of software pre-installed on Build Worker.
 
 * [Git](http://git-scm.com/download/win) 1.9.5 (x86) (with `git config --global core.autocrlf input`)
 * [Mercurial](http://mercurial.selenic.com/downloads) 3.1.1 (x86)
+* [Subversion](http://www.collab.net/downloads/subversion) 1.8.11 (x86)
 
 ## SDKs
 
@@ -135,7 +136,7 @@ Below is the list of software pre-installed on Build Worker.
 ## Miscellaneous
 
 * [7-Zip](http://www.7-zip.org/) 9.20
-* [Code Contracts for .NET](http://visualstudiogallery.msdn.microsoft.com/1ec7db13-3363-46c9-851f-1ce455f66970)
+* [Code Contracts for .NET](http://visualstudiogallery.msdn.microsoft.com/1ec7db13-3363-46c9-851f-1ce455f66970) 1.7.11202.10
 * WinRM client hosts set to `*`
 
 ## Getting the list of installed software
