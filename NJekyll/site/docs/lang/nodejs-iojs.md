@@ -7,8 +7,8 @@ title: Testing with Node.js and io.js
 
 * [Quick start](#quick-start)
 * [Line endings](#line-endings)
-* [Selecting Node.js version](#node-version)
-* [Testing under multiple versions of Node.js](#versions-matrix)
+* [Selecting Node.js or io.js version](#node-version)
+* [Testing under multiple versions of Node.js or io.js](#versions-matrix)
 * [Known issues](#known-issues)
 	* [Wrong output encoding](#wrong-output-encoding)
 	* [Garbled or missing output](#garbled-or-missing-output)
