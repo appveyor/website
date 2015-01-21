@@ -140,6 +140,26 @@ To allow failing jobs for bleeding-edge Node.js versions:
 	  allow_failures:
 	    - nodejs_version: "0.11"
 
+What if you need to test under specific version of Node.js for both x86 and x64 platforms? You could add another "dimension" to the matrix, for example:
+
+	environment:
+	  matrix:
+	  - nodejs_version: "0.10"
+	  - nodejs_version: "1.0"
+	
+	platform:
+	  - x86
+	  - x64
+	
+	install:
+	  - ps: Install-Product node $env:nodejs_version $env:platform
+
+This configuration will produce a build with 4 jobs for all combinations of node version and platform:
+
+    Node.js 0.10.x   x86
+    Node.js 0.10.x   x64
+    io.js 1.0.x      x86
+    io.js 1.0.x      x64
 
 <a id="known-issues"></a>
 ## Known issues
