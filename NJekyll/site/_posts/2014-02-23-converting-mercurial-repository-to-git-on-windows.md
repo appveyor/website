@@ -30,7 +30,7 @@ Clone <code>hg-fast-export</code> repository:
 <pre>git clone http://repo.or.cz/r/fast-export.git</pre>
 Open <code>c:\projects\fast-export\hg-fast-export.py</code> in Notepad and replace highlighted region with the code below:
 
-<img alt="hg-fast-export" src="/site/images/_posts/hg-to-git/hg-fast-export.png">
+<img alt="hg-fast-export" src="/site/images/posts/hg-to-git/hg-fast-export.png">
 <pre>#!/usr/bin/env python
 
 # Copyright (c) 2007, 2008 Rocco Rutte &lt;pdmef@gmx.net&gt; and others.

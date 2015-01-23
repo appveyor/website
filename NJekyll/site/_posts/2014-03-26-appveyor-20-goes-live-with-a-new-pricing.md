@@ -7,7 +7,7 @@ I’m thrilled to announce that AppVeyor 2.0 officially goes Live and with the n
 <h2>The New AppVeyor</h2>
 After being almost two months in private and then public beta we finally upgraded production environment to AppVeyor 2.0 and developers truly love it!
 
-<img align="center" src="/site/images/_posts/appveyor-20-new-pricing/appveyor-screenshot-with-shadow-565.png" alt="appveyor-screenshot-with-shadow-565">
+<img align="center" src="/site/images/posts/appveyor-20-new-pricing/appveyor-screenshot-with-shadow-565.png" alt="appveyor-screenshot-with-shadow-565">
 
 Let me quickly recap <a href="/blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment">what new features AppVeyor 2.0 brings</a> to you:
 <ul>
