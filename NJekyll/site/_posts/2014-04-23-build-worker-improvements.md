@@ -20,7 +20,7 @@ We were creating a new VM and then passing build details and starting Build Agen
 <h2>New approach</h2>
 The new provisioning mechanism works "inside out", i.e. Build Agent is started on VM boot and is "listening" for incoming command from AppVeyor using Web Sockets.
 
-<img src="/site/images/_posts/build-workers/build-no-provisioning.png" alt="build-no-provisioning">
+<img src="/site/images/posts/build-workers/build-no-provisioning.png" alt="build-no-provisioning">
 
 This new approach gives a <strong>number of benefits</strong>:
 <ul>
