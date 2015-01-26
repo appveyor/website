@@ -1,18 +1,18 @@
 ﻿/* banner */
 .home-banner {
     text-align: center;
-    background-color: #F7EDE6;
+    background-color: #0B99D6;
 }
 
 .home-banner h1 {
     font: 600 2.3rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #444;
+    color: #fff;
     margin: 1.5rem 0 0;
 }
 
 .home-banner h2 {
     font: normal 1.1rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #111;
+    color: #fff;
 }
 
 .home-banner .buttons {
@@ -21,11 +21,17 @@
 
 .home-banner .buttons .big-button {
     margin-bottom: 0.4rem;
+    background-color: #18C718;
+}
+
+.home-banner .buttons .big-button:hover,
+.home-banner .buttons .big-button:active {
+    background-color: #1ED11E;
 }
 
 .home-banner .disclosure {
     font-size: 0.75rem;
-    color: #777;
+    color: #e0e0e0;
     margin: 0;
 }
 
@@ -48,166 +54,67 @@
     background-color: #62C462;
 }
 
-/* Small screens only*/
-@media only screen and (max-width: 40em) {
-    .home-banner {
-        background-color: #C1CBC9;
-    }
-    .home-banner h1 {
-        font-size: 2.4rem;
-    }
-    .home-banner h2 {
-        font-size: 1.1rem;
-        color: #000;
-    }
-}
-
-
 /* Features and benefits */
 .features-container {
-    background-color: #fff;
+    background-color: #3B3333;
 }
-
-/*.features {
-    background-color: #E9EEF2;
-}*/
 
 .features h2 {
-    margin: 1rem 0;
+    margin: 0.7rem 0;
     text-align: center;
-    font-family: "Open Sans", "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2.0rem;
-    color: #444;
-}
-
-.features h3 {
-    text-align: center;
-    font: normal 1rem/1.4 "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #666;
-    margin-bottom: 0;
+    font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+    color: #fff;
 }
 
 .feature {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .feature h3 {
     text-align: center;
-    font: normal 1.2rem/1.4 "Segoe UI Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+    font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0.7rem 0 0.5rem 0;
 }
 
 .feature p {
-    font-size: 0.8rem;
+    font-family: "Open Sans", "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
+    color: #e0e0e0;
+    margin: 0.5rem 0 2rem 0;
+    line-height: 1.3rem;
 }
-
-/*.feature.yaml-configuration {
-    background: transparent url("/site/images/home/yaml-configuration.png") no-repeat 50% 0;
-    background-size: 71px 71px;
-}
-
-.feature.build-with-confidence {
-    background: transparent url("/site/images/home/build-with-confidence.png") no-repeat 50% 0;
-    background-size: 71px 71px;
-}
-
-.feature.works-for-any-project {
-    background: transparent url("/site/images/home/works-for-any-project.png") no-repeat 50% 0;
-    background-size: 71px 71px;
-}
-
-.feature.nuget-feeds {
-    background: transparent url("/site/images/home/nuget-feeds.png") no-repeat 50% 0;
-    background-size: 71px 71px;
-}
-
-.feature.artifacts-management {
-    background: transparent url("/site/images/home/artifacts-management.png") no-repeat 50% 0;
-    background-size: 71px 71px;
-}
-
-.feature.continuous-deployment {
-    background: transparent url("/site/images/home/continuous-deployment.png") no-repeat 50% 0;
-    background-size: 71px 71px;
-}
-
-.feature.parallel-testing {
-    background: transparent url("/site/images/home/parallel-testing.png") no-repeat 50% 0;
-    background-size: 71px 71px;
-}
-
-.feature.integration-testing {
-    background: transparent url("/site/images/home/integration-testing.png") no-repeat 50% 0;
-    background-size: 71px 71px;
-}
-
-.feature.scalable-build-environment {
-    background: transparent url("/site/images/home/scalable-build-environment.png") no-repeat 50% 0;
-    background-size: 71px 71px;
-}*/
 
 .home-sprite {
-    background-image: url("/site/images/home/home-sprite.png");
-    -webkit-background-size: 639px 71px;
-    -moz-background-size: 639px 71px;
-    background-size: 639px 71px;
+    background-image: url("/site/images/home/home-sprite-new.png");
+    -webkit-background-size: 234px 78px;
+    -moz-background-size: 234px 78px;
+    background-size: 234px 78px;
     background-repeat: no-repeat;
     display: block;
     margin: 0 auto;
 }
 
-.yaml-configuration {
+.home-sprite.no-setup {
     background-position: 0 0;
-    width: 71px;
-    height: 71px;
+    width: 78px;
+    height: 78px;
 }
 
-.works-for-any-project {
-    background-position: -71px 0;
-    width: 71px;
-    height: 71px;
+.home-sprite.secure {
+    background-position: -78px 0;
+    width: 78px;
+    height: 78px;
 }
 
-.scalable-build-environment {
-    background-position: -142px 0;
-    width: 71px;
-    height: 71px;
-}
-
-.parallel-testing {
-    background-position: -213px 0;
-    width: 71px;
-    height: 71px;
-}
-
-.nuget-feeds {
-    background-position: -284px 0;
-    width: 71px;
-    height: 71px;
-}
-
-.integration-testing {
-    background-position: -355px 0;
-    width: 71px;
-    height: 71px;
-}
-
-.continuous-deployment {
-    background-position: -426px 0;
-    width: 71px;
-    height: 71px;
-}
-
-.build-with-confidence {
-    background-position: -497px 0;
-    width: 71px;
-    height: 71px;
-}
-
-.artifacts-management {
-    background-position: -568px 0;
-    width: 71px;
-    height: 71px;
+.home-sprite.delivery {
+    background-position: -156px 0;
+    width: 78px;
+    height: 78px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2.0),
@@ -215,12 +122,27 @@
  only screen and (-o-min-device-pixel-ratio: 200/100),
  only screen and (min-device-pixel-ratio: 2.0) {
     .home-sprite {
-        background-image: url("/site/images/home/home-sprite@2x.png");
-        -webkit-background-size: 639px 71px;
-        -moz-background-size: 639px 71px;
-        background-size: 639px 71px;
+        background-image: url("/site/images/home/home-sprite-new@2x.png");
+        -webkit-background-size: 468px 156px;
+        -moz-background-size: 468px 156px;
+        background-size: 468px 156px;
     }
 }
+
+/* Small screens only*/
+@media only screen and (max-width: 40em) {
+    .home-banner h1 {
+        font-size: 1.8rem;
+    }
+    .home-banner h2 {
+        font-size: 1.1rem;
+    }
+
+    .features h2 {
+        font-size: 1.4rem;
+    }
+}
+
 
 
 /* Testimonials */
