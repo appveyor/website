@@ -143,7 +143,118 @@
     }
 }
 
+/* Customers block */
+.customers-container {
+}
 
+.customers h2 {
+    margin: 0.7rem 0;
+    text-align: center;
+    font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+}
+
+.customers-container .logos {
+    text-align: center;
+}
+
+/* Customer logos */
+.customer-logo {
+	background: url("/site/images/home/customers-sprite.png") no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.7rem 1rem;
+}
+
+.rackspace {
+	background-position: 0 -18px ;
+	width: 150px;
+	height: 40px;
+}
+
+.telenor {
+	background-position: -162px -7px ;
+	width: 150px;
+	height: 66px;
+}
+
+.tachyus {
+	background-position: -331px -30px ;
+	width: 96px;
+	height: 20px;
+}
+
+.granicus {
+    background-position: -444px -24px;
+    width: 137px;
+    height: 32px;
+}
+
+.adazzle {
+    background-position: -596px -22px;
+    width: 110px;
+    height: 37px;
+}
+
+.bannerflow {
+	background-position: -717px -17px ;
+	width: 150px;
+	height: 47px;
+}
+
+.snipcart {
+	background-position: 0 -80px ;
+	width: 105px;
+	height: 35px;
+}
+
+.touch4 {
+	background-position: -105px -82px ;
+	width: 90px;
+	height: 32px;
+}
+
+.stanford {
+	background-position: -200px -76px ;
+	width: 150px;
+	height: 48px;
+}
+
+.ucdavis {
+	background-position: -349px -88px ;
+	width: 120px;
+	height: 20px;
+}
+
+.redis {
+	background-position: -481px -83px ;
+	width: 90px;
+	height: 30px;
+}
+
+.chef {
+	background-position: -579px -71px ;
+	width: 55px;
+	height: 54px;
+}
+
+.mono {
+	background-position: -641px -70px ;
+	width: 44px;
+	height: 54px;
+}
+
+.mongodb {
+	background-position: -695px -78px ;
+	width: 110px;
+	height: 32px;
+}
+
+.grunt {
+    background-position: -820px -76px;
+    width: 50px;
+    height: 54px;
+}
 
 /* Testimonials */
 .testimonials {

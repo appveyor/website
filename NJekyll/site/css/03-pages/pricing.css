@@ -1,17 +1,37 @@
 ﻿.pricing-banner {
-    background-color: #F7EDE6;
+    background-color: #0B99D6;
     padding-bottom: 1rem;
 }
+
+.pricing-banner h1,
+.pricing-banner .title h2 {
+    color: #fff;
+}
+
+.pricing-banner .big-button {
+    background-color: #18C718;
+}
+
+.pricing-banner .big-button:hover,
+.pricing-banner .big-button:active {
+    background-color: #1ED11E;
+}
+
 
 .plans {
     margin-top: 2rem;
 }
 
 .pricing-table {
-    border: solid 1px #999;
+    border: solid 1px #eee;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+}
+
+.pricing-table.popular {
+    margin-top: -10px;
+    border: solid 1px #eee;
 }
 
 .pricing-table .price {
@@ -46,6 +66,11 @@
     line-height: 2rem;
 }
 
+.pricing-table.popular .title {
+    font-size: 1.2rem;
+    background-color: #3EB33E;
+}
+
 .pricing-table .bullet-item {
     padding: 0;
     line-height: 2.5rem;
@@ -68,16 +93,6 @@
     background-color: #00d600;
     border-color: #00d600;
     color: #fff;
-}
-
-.pricing-table.popular {
-    margin-top: -10px;
-    border: solid 1px #0b99d6;
-}
-
-.pricing-table.popular .title {
-    font-size: 1.2rem;
-    background-color: #0b99d6;
 }
 
 .pricing-table.popular .title span {
