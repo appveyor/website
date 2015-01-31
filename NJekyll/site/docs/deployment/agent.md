@@ -40,7 +40,7 @@ The following is required on the server to run Deployment Agent:
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
 
-2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v2.3.9 from 12/19/2014)
+2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v2.4.8 from 01/28/2015)
 
 3. Specify **Environment access key** during Deployment Agent installation.
 
@@ -108,6 +108,8 @@ In order for Deployment Agent to deploy that artifact as IIS web site **Provider
     <artifact_name>.deploy_website: true
 
 Other settings:
+
+* `site_id` - Optional. Site numeric ID.
 
 * `site_name` - The name of existing or new website, e.g. "Default Web Site".
 

@@ -69,12 +69,13 @@ Below is the list of software pre-installed on Build Worker.
 * [WiX](http://wixtoolset.org/) 3.8
 * [Silverlight 5 x64 Developer Runtime](http://go.microsoft.com/fwlink/?LinkID=229324)
 * SQL Server Data tools for [Visual Studio 2012](http://msdn.microsoft.com/en-us/jj650015) and [2013](http://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
-* [Node.js](http://nodejs.org/dist/) 0.10.30 x86:
-    * 0.10.26 - 32 (x86 and x64)
-    * 0.11.12 - 13 (x86 and x64)
-    * 0.8.25 - 28 (x86 and x64)
+* [Node.js](http://nodejs.org/dist/) 0.10.36 x86:
+    * 0.10.26 - 0.10.36 (x86 and x64)
+    * 0.11.12 - 0.11.15 (x86 and x64)
+    * 0.8.25 - 0.8.28 (x86 and x64)
+* [io.js](https://iojs.org/dist/): 1.0.0 - 1.0.4 (x86 and x64)
     * Use the following PowerShell command to quickly switch Node.js version: `Install-Product node <version> [x86|x64]`
-    * Active default version in `PATH` is 0.10.32
+    * Active default version in `PATH` is 0.10.36
 * [Go](http://golang.org/dl/) 1.3 x64
 * Java SE Development Kit (JDK)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) x64 (`C:\Program Files\Java\jdk1.7.0\bin` - default in `PATH`)
