@@ -143,9 +143,10 @@
 
 /* Customers block */
 .customers-container {
+    margin-bottom: 1rem;
 }
 
-.customers h2 {
+.customers-container h2 {
     margin: 0.7rem 0;
     text-align: center;
     font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -253,6 +254,27 @@
     width: 46px;
     height: 54px;
 }
+
+
+/* Benefits block */
+.benefits-container {
+    border-top: solid 1px #e6e6e6;
+}
+
+.benefits-container h2 {
+    margin: 0.7rem 0;
+    text-align: center;
+    font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+}
+
+.benefit-name,
+.benefit-yes {
+    background-color: #f7f7f7;
+    line-height: 2rem;
+    border-bottom: 1px solid #fff;
+}
+
 
 /* Testimonials */
 .testimonials {
