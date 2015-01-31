@@ -9,9 +9,28 @@ Sometimes you need to download additional files (installers, libraries, resource
 
 There is a number of ways you can use to download file in AppVeyor environment:
 
+* [Invoke-WebRequest cmdlet (PowerShell)](#invoke-webrequest)
 * [WebClient class (PowerShell)](#webclient)
 * [Start-FileDownload cmdlet (PowerShell)](#file-download-cmdlet)
 * [AppVeyor command-line utility](#appveyor-command-line)
+
+
+<a id="invoke-webrequest"></a>
+## Invoke-WebRequest cmdlet
+
+### HTTP
+
+	$source = "http://yoursite.com/file.xml"
+	$destination = "c:\application\data\newdata.xml"
+	Invoke-WebRequest $source -OutFile $destination
+
+### FTP
+
+	$source = "ftp://yoursite.com/file.xml"
+	$destination = "c:\application\data\newdata.xml"
+	Invoke-WebRequest $source -OutFile $destination -Credential ftpUser
+
+> Examples taken from [this blog post](http://www.powershellatoms.com/basic/download-file-website-powershell/).
 
 <a id="webclient"></a>
 ## WebClient class
@@ -52,7 +71,7 @@ Example usage in `appveyor.yml`:
 <a id="appveyor-command-line"></a>
 ## AppVeyor command-line utility
 
-AppVeyor command-line utility (`appveyor.exe`) which is a part of [Build Agent API](/docs/build-agent-api) provides `DownloadFile` command which behaves similar to Start-FileDownload cmdlet.
+AppVeyor command-line utility (`appveyor.exe`) which is a part of [Build Agent API](/docs/build-worker-api) provides `DownloadFile` command which behaves similar to Start-FileDownload cmdlet.
 
 Command syntax:
 
