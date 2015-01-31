@@ -118,22 +118,13 @@ no_cache: true
         </div>
     </div>
 
+    {% for benefit in site.data.benefits %}
     <div class="row">
-        <div class="columns large-7 large-push-2 benefit-name">Feature</div>
-        <div class="columns large-1 large-pull-2 benefit-yes">Mark</div>
+        <div class="columns large-7 large-push-2 benefit-name">{{benefit.text}}</div>
+        <div class="columns large-1 large-pull-2 benefit-yes">{{benefit.mark}}</div>
     </div>
-    <div class="row">
-        <div class="columns large-7 large-push-2 benefit-name">Feature</div>
-        <div class="columns large-1 large-pull-2 benefit-yes">Mark</div>
-    </div>
-    <div class="row">
-        <div class="columns large-7 large-push-2 benefit-name">Feature</div>
-        <div class="columns large-1 large-pull-2 benefit-yes">Mark</div>
-    </div>
-    <div class="row">
-        <div class="columns large-7 large-push-2 benefit-name">Feature</div>
-        <div class="columns large-1 large-pull-2 benefit-yes">Mark</div>
-    </div>
+    {% endfor %}
+
 </div>
 
 <!--<div class="row">
