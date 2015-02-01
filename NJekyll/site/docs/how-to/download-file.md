@@ -20,15 +20,15 @@ There is a number of ways you can use to download file in AppVeyor environment:
 
 ### HTTP
 
-	$source = "http://yoursite.com/file.xml"
-	$destination = "c:\application\data\newdata.xml"
-	Invoke-WebRequest $source -OutFile $destination
+    $source = "http://yoursite.com/file.xml"
+    $destination = "c:\application\data\newdata.xml"
+    Invoke-WebRequest $source -OutFile $destination
 
 ### FTP
 
-	$source = "ftp://yoursite.com/file.xml"
-	$destination = "c:\application\data\newdata.xml"
-	Invoke-WebRequest $source -OutFile $destination -Credential ftpUser
+    $source = "ftp://yoursite.com/file.xml"
+    $destination = "c:\application\data\newdata.xml"
+    Invoke-WebRequest $source -OutFile $destination -Credential ftpUser
 
 > Examples taken from [this blog post](http://www.powershellatoms.com/basic/download-file-website-powershell/).
 

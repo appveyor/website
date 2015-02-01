@@ -38,13 +38,13 @@ Now you can specify a URL to any repository hosted on the Internet! AppVeyor sup
 <div style="clear:both;">
 
 <div style="background:#f5f5f5;padding:1rem;border-radius: 5px;margin: 2rem 0;">
-	<p style="margin: 0 0 1rem 0;text-align:center;font-size:16pt;font-weight:bold;color: #444;">Do we support your repository now?</p>
-	
-	<p style="margin: 0 0 0 0;text-align:center;font-size:12pt;"><a href="mailto:team@appveyor.com">Send us a message</a> if you want to re-evaluate AppVeyor!</p>
+    <p style="margin: 0 0 1rem 0;text-align:center;font-size:16pt;font-weight:bold;color: #444;">Do we support your repository now?</p>
+
+    <p style="margin: 0 0 0 0;text-align:center;font-size:12pt;"><a href="mailto:team@appveyor.com">Send us a message</a> if you want to re-evaluate AppVeyor!</p>
 </div>
 
 
-## Having repository behind the firewall? 
+## Having repository behind the firewall?
 
 Of course, the repository should be accessible over the Internet. However, hold on! As a next milestone we are going to release AppVeyor on-premise edition which you can install behind your firewall. On-premise edition will provide even more tight integration with GitHub Enterprise and Stash such as "Sign in with GHE or Stash" buttons.
 
@@ -53,4 +53,4 @@ Of course, the repository should be accessible over the Internet. However, hold 
 In case you missed that:
 
 - [We added test build worker image with Visual Studio 2015 CTP and SDK](http://www.appveyor.com/blog/2015/01/20/visual-studio-2015-ctp-image)
-- [io.js was deployed to build workers and "Testing with Node.js and io.js" guide published](http://www.appveyor.com/docs/lang/nodejs-iojs) 
+- [io.js was deployed to build workers and "Testing with Node.js and io.js" guide published](http://www.appveyor.com/docs/lang/nodejs-iojs)
