@@ -10,9 +10,9 @@ title: Testing with Node.js and io.js
 * [Selecting Node.js or io.js version](#node-version)
 * [Testing under multiple versions of Node.js or io.js](#versions-matrix)
 * [Known issues](#known-issues)
-	* [Wrong output encoding](#wrong-output-encoding)
-	* [Garbled or missing output](#garbled-or-missing-output)
-	* [Locking errors](#locking-errors)
+    * [Wrong output encoding](#wrong-output-encoding)
+    * [Garbled or missing output](#garbled-or-missing-output)
+    * [Locking errors](#locking-errors)
 
 
 <a id="quick-start"></a>
@@ -20,27 +20,27 @@ title: Testing with Node.js and io.js
 
 Put this simple `appveyor.yml` to the root of your repository and it should work for the most Node.js projects out there:
 
-	# Test against this version of Node.js
-	environment:
-	  - nodejs_version: "0.10"
+    # Test against this version of Node.js
+    environment:
+      - nodejs_version: "0.10"
 
-	# Install scripts. (runs after repo cloning)
-	install:
-	  # Get the latest stable version of Node.js or io.js
-	  - ps: Install-Product node $env:nodejs_version
-	  # install modules
-	  - npm install
-	
-	# Post-install test scripts.
-	test_script:
-	  # Output useful info for debugging.
-	  - node --version
-	  - npm --version
-	  # run tests
-	  - npm test
-	
-	# Don't actually build.
-	build: off
+    # Install scripts. (runs after repo cloning)
+    install:
+      # Get the latest stable version of Node.js or io.js
+      - ps: Install-Product node $env:nodejs_version
+      # install modules
+      - npm install
+
+    # Post-install test scripts.
+    test_script:
+      # Output useful info for debugging.
+      - node --version
+      - npm --version
+      # run tests
+      - npm test
+
+    # Don't actually build.
+    build: off
 
 <a id="line-endings"></a>
 ## Line endings
@@ -112,7 +112,7 @@ There is a helper cmdlet checking remote dist directory of Node.js or io.js to d
 
 It could be used together with previous cmdlet to always install the latest build, for example:
 
-    Update-NodeJsInstallation (Get-NodeJsLatestBuild 1.0)  
+    Update-NodeJsInstallation (Get-NodeJsLatestBuild 1.0)
 
 
 
@@ -123,36 +123,36 @@ AppVeyor enables easy testing against multiple combinations of platforms, config
 
 To test under latest version of Node.js and io.js you can specify in `appveyor.yml`:
 
-	environment:
-	  matrix:
-	  # node.js
-	  - nodejs_version: "0.10"
-	  - nodejs_version: "0.11"
-	  # io.js
-	  - nodejs_version: "1.0"
+    environment:
+      matrix:
+      # node.js
+      - nodejs_version: "0.10"
+      - nodejs_version: "0.11"
+      # io.js
+      - nodejs_version: "1.0"
 
     install:
       - ps: Install-Product node $env:nodejs_version
 
 To allow failing jobs for bleeding-edge Node.js versions:
 
-	matrix:
-	  allow_failures:
-	    - nodejs_version: "0.11"
+    matrix:
+      allow_failures:
+        - nodejs_version: "0.11"
 
 What if you need to test under specific version of Node.js for both x86 and x64 platforms? You could add another "dimension" to the matrix, for example:
 
-	environment:
-	  matrix:
-	  - nodejs_version: "0.10"
-	  - nodejs_version: "1.0"
-	
-	platform:
-	  - x86
-	  - x64
-	
-	install:
-	  - ps: Install-Product node $env:nodejs_version $env:platform
+    environment:
+      matrix:
+      - nodejs_version: "0.10"
+      - nodejs_version: "1.0"
+
+    platform:
+      - x86
+      - x64
+
+    install:
+      - ps: Install-Product node $env:nodejs_version $env:platform
 
 This configuration will produce a build with 4 jobs for all combinations of node version and platform:
 
@@ -210,4 +210,4 @@ Solution - install npm 2.0:
     npm -g install npm@2
     set PATH=%APPDATA%\npm;%PATH%
 
-More info about [npm troubleshooting on Windows](https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows). 
+More info about [npm troubleshooting on Windows](https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows).

@@ -9,15 +9,15 @@ Sometimes during the build (say, on successful build) you need to make a commit 
 
 Running something on successful builds is not a problem. Just add to your `appveyor.yml`:
 
-	on_success:
-	  - git commit ...
-	  - git push ...
+    on_success:
+      - git commit ...
+      - git push ...
 
 But the main question here is how to authenticate Git commands. If you try using any Git command against remote repository you'll get stuck build because Git is asking for credentials. In most cases you can't supply username/password in command line (*we are not considering the case when credentials are embedded in repo URL as this is bad*).
 
 Two methods to access remote Git repository exist: **SSH** and **credentials store**. The scenario with custom SSH key is described in [this article](/docs/how-to/private-git-sub-modules) (*with the only difference is that the key should be deployed under GitHub user account, not repo, to have write access*).
 
-This article will demonstrate how to use Git **credential store** to avoid Git asking for credentials and stalling the build. We will be using GitHub as a repository provider, however described technique could be applied to any Git hosting. 
+This article will demonstrate how to use Git **credential store** to avoid Git asking for credentials and stalling the build. We will be using GitHub as a repository provider, however described technique could be applied to any Git hosting.
 
 At a glance the entire process consists of these steps:
 
@@ -44,16 +44,16 @@ Use this [GitHub guide for creating access tokens](https://help.github.com/artic
 
 Encrypt access token using [Encrypt Data tool](https://ci.appveyor.com/tools/encrypt) and then put it as secure variable into your `appveyor.yml`, for example:
 
-	environment:
-	  access_token:
-	    secure: zYCOwcOlgTzvbD0CjJRDNQ==
+    environment:
+      access_token:
+        secure: zYCOwcOlgTzvbD0CjJRDNQ==
 
 <a id="enabling-store"></a>
 ## Enabling Git credential store
 
 Git doesn't preserve entered credentials between calls. However, it provides a mechanism for caching credentials called [Credential Store](http://git-scm.com/docs/git-credential-store). To enable credential store we use the following command:
 
-    git config --global credential.helper store 
+    git config --global credential.helper store
 
 
 
@@ -81,12 +81,12 @@ To append that line to `.git-credentials` we use the following PowerShell comman
 
 Complete example for your `appveyor.yml` will look like this:
 
-	environment:
-	  access_token:
-	    secure: zYCOwcOlgTzvbD0CjJRDNQ==
+    environment:
+      access_token:
+        secure: zYCOwcOlgTzvbD0CjJRDNQ==
 
-	on_success:
+    on_success:
       - git config --global credential.helper store
       - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
-	  - git commit ...
-	  - git push ...
+      - git commit ...
+      - git push ...

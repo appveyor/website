@@ -13,7 +13,7 @@ Build worker image is called `Visual Studio 2015 CTP`. You can select it on Envi
 
 or specify in `appveyor.yml`:
 
-	os: Visual Studio 2015 CTP
+    os: Visual Studio 2015 CTP
 
 > Please note builds using this image run on Azure environment which means there is a few minutes delay before build starts required to provision build worker VM.
 
