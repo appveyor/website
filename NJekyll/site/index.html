@@ -118,16 +118,31 @@ no_cache: true
         </div>
     </div>
 
-    {% for benefit in site.data.benefits %}
-    <div class="row">
-        <div class="columns large-7 large-push-2 benefit-name">{{benefit.text}}</div>
-        <div class="columns large-1 large-pull-2 benefit-yes">{{benefit.mark}}</div>
+    <div class="benefits-table">
+        {% for benefit in site.data.benefits %}
+        <div class="row">
+            <div class="columns medium-10 medium-push-1">
+                <div class="benefit {{benefit.mark}}">
+                    {{benefit.text}}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
+
+    <div class="row">
+        <div class="columns small-12">
+
+            <p class="bottom-action-buttons">
+                <a href="https://ci.appveyor.com/signup" class="big-button">Sign up for free</a>
+            </p>
+
+        </div>
+    </div>
 
 </div>
 
-<!--<div class="row">
+<div class="row">
     <div class="columns small-12">
 
         <div class="testimonials">
@@ -136,4 +151,4 @@ no_cache: true
         </div>
 
     </div>
-</div>-->
+</div>

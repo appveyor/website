@@ -268,11 +268,26 @@
     font-size: 1.7rem;
 }
 
-.benefit-name,
-.benefit-yes {
-    background-color: #f7f7f7;
-    line-height: 2rem;
-    border-bottom: 1px solid #fff;
+.benefits-table .row:first-child .columns {
+    border-top: 1px solid #e6e3e0;
+}
+
+.benefits-table .columns {
+    line-height: 2.7rem;
+    border-bottom: 1px solid #e6e3e0;
+    /*background-color: #fbf9f7;*/
+    border-top: none;
+    font-size: 1.0rem;
+}
+
+.benefit.yes {
+    background: transparent url("/site/images/yes-mark.png") no-repeat right 50%;
+    background-size: 19px 15px;
+}
+
+.benefit.no {
+    background: transparent url("/site/images/no-mark.png") no-repeat right 50%;
+    background-size: 19px 19px;
 }
 
 

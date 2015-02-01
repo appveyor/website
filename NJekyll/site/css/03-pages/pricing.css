@@ -71,6 +71,10 @@
     background-color: #3EB33E;
 }
 
+.pricing-table.premium .title {
+    background-color: #666;
+}
+
 .pricing-table .bullet-item {
     padding: 0;
     line-height: 2.5rem;
