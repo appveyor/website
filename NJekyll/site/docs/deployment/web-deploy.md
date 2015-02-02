@@ -118,7 +118,7 @@ See  [Configuring Deployment Properties for a Target Environment](http://www.asp
 
 Open website dashboard in Azure Management Portal and download *publish profile*:
 
-![publish-profile](/site/docs/deployment/images/web-deploy/waws-publish-profile.png)
+![publish-profile](/site/images/docs/deployment/web-deploy/waws-publish-profile.png)
 
 Specify the following deployment settings in AppVeyor:
 
@@ -130,7 +130,7 @@ Specify the following deployment settings in AppVeyor:
 
 Replace `<publishUrl>`, `<msdeploySite>`, `<userName>` and `<userPWD>` with values from downloaded publishing profile XML file like in example below:
 
-![publish-profile-xml](/site/docs/deployment/images/web-deploy/waws-publish-profile-xml.png)
+![publish-profile-xml](/site/images/docs/deployment/web-deploy/waws-publish-profile-xml.png)
 
 External links:
 

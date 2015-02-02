@@ -118,7 +118,7 @@ To configure an AppVeyor project to use private NuGet feeds during a build you c
 1. Create a separate AppVeyor account for accessing NuGet feed.
 2. On the **Environment** tab of project settings add the two environment variables, `nuget_user` and `nuget_password`:
 
-   ![nuget environment variables](/site/docs/images/nuget-environment-variables.png)
+   ![nuget environment variables](/site/images/docs/nuget-environment-variables.png)
 
 3. Into **Install script** box, add this command:
 
