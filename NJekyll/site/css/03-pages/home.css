@@ -37,22 +37,9 @@
 
     .home-banner img {
         margin-top: 1.2rem;
+        margin-bottom: 1px;
     }
 
-.big-button.get-started {
-    line-height: 45px;
-    font-size: 1.0rem;
-    background-color: #3EB33E;
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
-    -o-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-}
-
-    .big-button.get-started:hover,
-    .big-button.get-started:active {
-        background-color: #62C462;
-    }
 
 /* Features and benefits */
 .features-container {
@@ -99,19 +86,19 @@
     margin: 0 auto;
 }
 
-    .home-sprite.no-setup {
+    /*.home-sprite*/.no-setup {
         background-position: 0 0;
         width: 78px;
         height: 78px;
     }
 
-    .home-sprite.secure {
+    /*.home-sprite*/.secure {
         background-position: -78px 0;
         width: 78px;
         height: 78px;
     }
 
-    .home-sprite.delivery {
+    /*.home-sprite*/.delivery {
         background-position: -156px 0;
         width: 78px;
         height: 78px;
@@ -120,9 +107,9 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min--moz-device-pixel-ratio: 2.0), only screen and (-o-min-device-pixel-ratio: 200/100), only screen and (min-device-pixel-ratio: 2.0) {
     .home-sprite {
         background-image: url("/site/images/home/home-sprite-new@2x.png");
-        -webkit-background-size: 468px 156px;
-        -moz-background-size: 468px 156px;
-        background-size: 468px 156px;
+        -webkit-background-size: 234px 78px;
+        -moz-background-size: 234px 78px;
+        background-size: 234px 78px;
     }
 }
 
@@ -280,14 +267,12 @@
     font-size: 1.0rem;
 }
 
-.benefit.yes {
-    background: transparent url("/site/images/yes-mark.png") no-repeat right 50%;
-    background-size: 19px 15px;
+.benefits-table .yes {
+    background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAeCAMAAAB3ypxcAAABEVBMVEX///8AtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQBObZg0AAAAWnRSTlMABggKDA8QEhMVFhgZGx0gISUnKSorLjAzNTY4Oj4/QEVGS0xRUlhZX2FmaG1ucHd4f4CHqbS6wMHFyszP0dTW2Nrd3uLj5ebn6evs7e7v8PLz9PX3+fv8/f742XGqAAAA+0lEQVR4AYXT504CURQE4LF3BNvau4gN7F0sYMGu9Hn/BzE5IZPIwp7v/809beDIHAK+XXIfru06yTQcqRpJ1ncQKVmlqaUQYb3ChmoSba2WKcdoZ7lEOemAmQ3QZOGXctoJE3wUJvDP3DflrAtm8pV8TkCA6U/KRTfM2AtJ5uOQqTfKVS9M/JEmF0PDeIFy0w8Ty7Hhfhgm8US5HYTBOSU7AACjeYq9DP1w3QeMPFBUR1O9lz1DdxR1Fe4+S9GMWsySoonLYpEh70HEnuVrxrka8zPv3KApLjkXbUorTj5Mec1Jm6lsINIeLR+bcGRI1rbgOrDs+o7SaOkPNwKKtIJfd7YAAAAASUVORK5CYII=") no-repeat right 50% / 19px 15px;
 }
 
-.benefit.no {
-    background: transparent url("/site/images/no-mark.png") no-repeat right 50%;
-    background-size: 19px 19px;
+.benefits-table .no {
+    background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmBAMAAABaE/SdAAAAJ1BMVEX/////AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AABa1sw2AAAADHRSTlMAN2VmaGlqa2xt8P7DnIcVAAAAvklEQVR4XrXSoQ7CMBgE4AIpIKdR+D0HHl+D5xFmsISnqEdBgCXwBPQeiuR2Lc2PQO1Ut3zNbv3rxshkLTBrCljdBPaxsHPaki1f7yYzYIAnIGYGpB0ZQEgG9GTIsAWAdCADLnT+RUgGfc0FwiNZbjUnfIopHRiynAWhWM7JMrWFmhv4cH/e2b1izN3ZLoK2s6D9t/oMNvUZeD2ECrZae8KrRqQ9hFEz0hbPGZlZBrEyc0Kx+m6E+HuHpo0bIR8dYcBEYOoC1wAAAABJRU5ErkJggg==") no-repeat right 50% / 19px 19px;
 }
 
 

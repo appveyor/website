@@ -3,7 +3,8 @@ layout: post
 title: AppVeyor with a hint of Chocolatey
 ---
 
-<img align="right" src="/site/images/posts/chocolatey/chocolatey-logo.png" alt="Chocolatey-Logo" width="279" height="53"><a href="http://chocolatey.org/">Chocolatey</a> is a wonderful tool that allows you installing your favourite programs with a single command. Unlike regular process of installing software with interactive setup package where you keep clicking "Next", "Accept", "Finish", etc. Chocolatey does the job without questions asked. By analogy from Linux world Chocolatey is a package manager for Windows.
+<img class="right" src="/site/images/posts/chocolatey/chocolatey-logo.png" alt="Chocolatey-Logo" width="279" height="53">
+<a href="http://chocolatey.org/">Chocolatey</a> is a wonderful tool that allows you installing your favourite programs with a single command. Unlike regular process of installing software with interactive setup package where you keep clicking "Next", "Accept", "Finish", etc. Chocolatey does the job without questions asked. By analogy from Linux world Chocolatey is a package manager for Windows.
 
 Chocolatey is great when you setup your development environment and it's especially great for installing custom software during the build process on AppVeyor! As you know AppVeyor offers fully-customizable build environment where you have admin rights on build machines. For example, if you need to install MongoDB for your integration tests you can do that with the following command (the latest version of Chocolatey is already installed on AppVeyor build workers):
 <pre>choco install mongodb</pre>

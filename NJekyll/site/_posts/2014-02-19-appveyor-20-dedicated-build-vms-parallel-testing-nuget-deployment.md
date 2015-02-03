@@ -5,7 +5,7 @@ title: 'AppVeyor 2.0: dedicated build VMs, parallel testing, NuGet, deployment a
 
 <p>After 4 months of intensive development we are excited to announce a public beta of AppVeyor 2.0! The new release provides you with whole new experience: build environment that is under your full control, large projects support with build matrix and parallel testing, scriptless deployment and release management!</p>
 You could see those great features in flagman continuous integration services for Linux such as Travis CI, but not for Windows up until now. Today, I'm really proud to say that AppVeyor is the only CI solution for Windows that offers dedicated build machines with admin access, build matrix with jobs parallelization and integrated deployment.
-<p style="text-align:center;"><a href="/site/images/posts/appveyor-20/appveyor-screenshot-wireframe.png"><img style="width:100%;max-width:759px;" src="/site/images/posts/appveyor-20/appveyor-screenshot-wireframe.png" alt=""></a></p>
+<p class="text-center"><a href="/site/images/posts/appveyor-20/appveyor-screenshot-wireframe.png"><img style="width:100%;max-width:759px;" src="/site/images/posts/appveyor-20/appveyor-screenshot-wireframe.png" alt=""></a></p>
 
 <h2>What’s new at a glance</h2>
 <ul>
