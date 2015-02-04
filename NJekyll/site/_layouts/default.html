@@ -22,7 +22,7 @@
 
     </script>
 </head>
-<body>
+<body{% if layout == 'docs' %} class="docs"{% endif %}>
 
     <!-- Top menu -->
     <div class="fixed contain-to-grid">
@@ -86,6 +86,9 @@
 
     <script>
         $(document).foundation();
+        {% if layout == 'docs' %}
+        addAnchors('.docs h1, .docs h2, .docs h3, .docs h4, .docs h5, .docs h6');
+        {% endif %}
     </script>
 </body>
 </html>
