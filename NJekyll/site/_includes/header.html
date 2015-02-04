@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - Appveyor</title>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    {{ site.bundles.css }}
+    <link href="/site/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/site/apple-touch-icon.png" rel="apple-touch-icon">
+    <script>
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '{{ site.google_analytics_id }}']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body{% if page.layout == 'docs' %} class="docs"{% endif %}>
+
+    <!-- Top menu -->
+    <div class="fixed contain-to-grid">
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a class="collapse-only" href="/">AppVeyor</a></h1>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+            </ul>
+            <section class="top-bar-section">
+                <!-- Left Nav -->
+                <ul class="left">
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/docs">Documentation</a></li>
+                    <li><a href="http://help.appveyor.com/discussions" target="_blank">Support</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+
+                <!-- Right Nav -->
+                <ul class="right">
+                    <li><a href="https://ci.appveyor.com" target="_blank">Sign in</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
