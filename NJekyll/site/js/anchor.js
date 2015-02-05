@@ -9,7 +9,7 @@ function addAnchors(selector) {
 
   // Sensible default selector, if none is provided.
   if (!selector) {
-      selector = 'h1, h2, h3, h4, h5, h6';
+    selector = 'h1, h2, h3, h4, h5, h6';
   } else if (typeof selector !== 'string') {
     throw new Error('AnchorJS accepts only strings; you used a ' + typeof selector);
   }
