@@ -22,7 +22,7 @@ Put this simple `appveyor.yml` to the root of your repository and it should work
 
     # Test against this version of Node.js
     environment:
-      - nodejs_version: "0.10"
+      nodejs_version: "0.10"
 
     # Install scripts. (runs after repo cloning)
     install:
