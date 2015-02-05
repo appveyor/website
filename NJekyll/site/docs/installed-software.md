@@ -71,9 +71,9 @@ Below is the list of software pre-installed on Build Worker.
 * SQL Server Data tools for [Visual Studio 2012](http://msdn.microsoft.com/en-us/jj650015) and [2013](http://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
 * [Node.js](http://nodejs.org/dist/) 0.10.36 x86:
     * 0.10.26 - 0.10.36 (x86 and x64)
-    * 0.11.12 - 0.11.15 (x86 and x64)
+    * 0.11.12 - 0.11.16 (x86 and x64)
     * 0.8.25 - 0.8.28 (x86 and x64)
-* [io.js](https://iojs.org/dist/): 1.0.0 - 1.0.4 (x86 and x64)
+* [io.js](https://iojs.org/dist/): 1.0.0 - 1.1.0 (x86 and x64)
     * Use the following PowerShell command to quickly switch Node.js version: `Install-Product node <version> [x86|x64]`
     * Active default version in `PATH` is 0.10.36
 * [Go](http://golang.org/dl/) 1.3 x64
@@ -84,11 +84,11 @@ Below is the list of software pre-installed on Build Worker.
     * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) x86 (`C:\Program Files (x86)\Java\jdk1.8.0`)
 * [Mono](http://www.go-mono.com/mono-downloads/download.html) 3.2.3
 * [Ruby](http://rubyinstaller.org/downloads/) with [DevKit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
-    * 1.9.3 x86 (`C:\Ruby193` - default in `PATH`)
-    * 2.0.0 x86 (`C:\Ruby200`)
-    * 2.0.0 x64 (`C:\Ruby200-x64`)
-    * 2.1.3 x86 (`C:\Ruby21`)
-    * 2.1.3 x64 (`C:\Ruby21-x64`)
+    * 1.9.3-p551 (`C:\Ruby193` - default in `PATH`) with RubyGems 1.8.30
+    * 2.0.0-p598 x86 (`C:\Ruby200`) with RubyGems 2.0.15
+    * 2.0.0-p598 x64 (`C:\Ruby200-x64`) with RubyGems 2.0.15
+    * 2.1.5 x86 (`C:\Ruby21`) with RubyGems 2.2.3
+    * 2.1.5 x64 (`C:\Ruby21-x64`) with RubyGems 2.2.3
 * [Python](https://www.python.org/downloads/windows/)
     * 2.7.8 x86 (`C:\Python27` - default in `PATH`)
     * 2.7.8 x64 (`C:\Python27-x64`)
