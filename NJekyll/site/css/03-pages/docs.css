@@ -13,3 +13,24 @@
 iframe {
     border: 0;
 }
+
+.docs-content h2[id]:before,
+.docs-content h3[id]:before,
+.docs-content h4[id]:before,
+.docs-content h5[id]:before,
+.docs-content h6[id]:before {
+    content: " ";
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+    visibility: hidden;
+}
+
+
+/* anchor.js overrides */
+
+@media (max-width: 640px) {
+  .anchorjs-link {
+    display: none;
+  }
+}
