@@ -1117,16 +1117,28 @@ namespace MarkdownSharp
         {
             string header = match.Groups[1].Value;
             int level = match.Groups[2].Value.StartsWith("=") ? 1 : 2;
-            return string.Format("<h{1}>{0}</h{1}>\n\n", RunSpanGamut(header), level);
+            string innerHtml = RunSpanGamut(header);
+            return string.Format("<h{1} id=\"{2}\">{0}</h{1}>\n\n", innerHtml, level, GenerateSlug(innerHtml));
         }
 
         private string AtxHeaderEvaluator(Match match)
         {
             string header = match.Groups[2].Value;
             int level = match.Groups[1].Value.Length;
-            return string.Format("<h{1}>{0}</h{1}>\n\n", RunSpanGamut(header), level);
+            string innerHtml = RunSpanGamut(header);
+            return string.Format("<h{1} id=\"{2}\">{0}</h{1}>\n\n", innerHtml, level, GenerateSlug(innerHtml));
         }
 
+        private string GenerateSlug(string text)
+        {
+            if (text == null)
+                return null;
+
+            string result = text.ToLower();
+            result = Regex.Replace(result, @"[^a-z0-9-]", "-"); // replace all invalid chars with hyphens
+            result = Regex.Replace(result, @"-+", "-"); // convert subsequent hyphens into one
+            return result.Trim('-'); // trim edge hyphens
+        }
 
         private static Regex _horizontalRules = new Regex(@"
             ^[ ]{0,3}         # Leading space
