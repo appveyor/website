@@ -25,3 +25,12 @@ iframe {
     margin-top: -60px;
     visibility: hidden;
 }
+
+
+/* anchor.js overrides */
+
+@media (max-width: 640px) {
+  .anchorjs-link {
+    display: none;
+  }
+}
