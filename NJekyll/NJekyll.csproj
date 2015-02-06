@@ -51,9 +51,6 @@
     <Reference Include="DotLiquid">
       <HintPath>..\packages\DotLiquid.1.8.0\lib\NET45\DotLiquid.dll</HintPath>
     </Reference>
-    <Reference Include="MarkdownSharp">
-      <HintPath>..\packages\MarkdownSharp.1.13.0.0\lib\35\MarkdownSharp.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -110,6 +107,7 @@
     <Compile Include="Engine\Filters.cs" />
     <Compile Include="Engine\IncludesFolder.cs" />
     <Compile Include="Engine\Layout.cs" />
+    <Compile Include="Engine\Markdown.cs" />
     <Compile Include="Engine\Page.cs" />
     <Compile Include="Engine\Paginator.cs" />
     <Compile Include="Engine\Routes.cs" />
