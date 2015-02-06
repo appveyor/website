@@ -40,7 +40,7 @@ The following is required on the server to run Deployment Agent:
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
 
-2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v2.4.8 from 01/28/2015)
+2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v2.4.12 from 02/05/2015)
 
 3. Specify **Environment access key** during Deployment Agent installation.
 
@@ -147,7 +147,7 @@ You can specify multiple bindings in `hostname`, `ip` and `port` separated by se
 
 - http *:80:mysite.com
 - http *:80:mysite.com
-- https *:433: cert=*.mysite.com
+- https *:443: cert=*.mysite.com
 
 ![agent-multiple-bindings](/site/images/docs/deployment/agent/agent-multiple-bindings.png)
 

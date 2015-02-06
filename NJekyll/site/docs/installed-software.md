@@ -96,6 +96,7 @@ Below is the list of software pre-installed on Build Worker.
     * 3.3.5 x64 (`C:\Python33-x64`)
     * 3.4.1 x86 (`C:\Python34`)
     * 3.4.1 x64 (`C:\Python34-x64`)
+* [Perl](http://www.activestate.com/activeperl/downloads) 5.20.1.2000 x86 (`C:\Perl` in `PATH`)
 * [MinGW](http://www.mingw.org/) (core components and compilers - `C:\MinGW`)
 
 ## Tools
