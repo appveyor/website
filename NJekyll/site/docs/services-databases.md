@@ -12,17 +12,16 @@ AppVeyor is an ideal platform for integration testing:
 
 AppVeyor has most popular services and database engines pre-installed on all build machines:
 
-* [SQL Server 2008](#sql2008)
-* [SQL Server 2012](#sql2012)
-* [SQL Server 2014](#sql2014)
+* [SQL Server 2008](#sql-server-2008)
+* [SQL Server 2012](#sql-server-2012)
+* [SQL Server 2014](#sql-server-2014)
 * [MySQL](#mysql)
 * [PostgreSQL](#postgresql)
-* [Internet Information Services](#iis)
-* [Microsoft Message Queuing](#msmq)
+* [Internet Information Services](#internet-information-services)
+* [Microsoft Message Queuing](#microsoft-message-queuing)
 
 By default, their corresponding Windows services are stopped to reduce build machine boot time. On the **Environment** tab of project settings or in `appveyor.yml` you can configure which services must be started after the build machine has booted.
 
-<a id="sql2008"></a>
 ## SQL Server 2008
 
 The latest version of **SQL Server 2008 Express R2 SP2 with Advanced Services** is available on AppVeyor build servers. This is a full install with Database Engine, Replication, Full-Text Search, Reporting Services and Management Studio Express enabled.
@@ -46,7 +45,6 @@ To start SQL Server and Reporting Services:
       - mssql2008r2sp2rs
 
 
-<a id="sql2012"></a>
 ## SQL Server 2012
 
 The latest version of **SQL Server 2012 Express SP1 with Advanced Services** is available on AppVeyor build servers. This is a full install with Database Engine, Replication, Full-Text Search, Reporting Services and Management Studio Express enabled.
@@ -70,7 +68,6 @@ To start SQL Server and Reporting Services:
       - mssql2012sp1rs
 
 
-<a id="sql2014"></a>
 ## SQL Server 2014
 
 The latest version of **SQL Server 2014 Express with Advanced Services** is available on AppVeyor build servers. This is a full install with Database Engine, Replication, Full-Text Search, Reporting Services and Management Studio Express enabled.
@@ -94,7 +91,6 @@ To start SQL Server and Reporting Services:
       - mssql2014rs
 
 
-<a id="mysql"></a>
 ## MySQL
 
 MySQL 5.6 x64 database service is available on AppVeyor build workers.
@@ -110,7 +106,6 @@ To start MySQL in `appveyor.yml`:
       - mysql
 
 
-<a id="postgresql"></a>
 ## PostgreSQL
 
 PostgreSQL 9.3 x64 database service is available on AppVeyor build workers.
@@ -126,7 +121,6 @@ To start PostgreSQL in `appveyor.yml`:
       - postgresql
 
 
-<a id="iis"></a>
 ## Internet Information Services
 
 Internet Information Services ("Web Server" role) 8.5 are installed on build workers. The version of IIS depends on the operating system:
@@ -137,7 +131,6 @@ To configure IIS in `appveyor.yml`:
       - iis
 
 
-<a id="msmq"></a>
 ## Microsoft Message Queuing
 
 Microsoft Message Queuing services are installed on build machines.
