@@ -43,6 +43,24 @@ or
 
 See [appveyor.yml refence](/docs/appveyor-yml) for more details.
 
+
+## Packaging multiple files in different locations into a single archive
+
+To create a single "zip" artifact with multiple files from different locations you can use `7z` in "after build" script which is already available in `PATH`:
+
+    7z a myapp.zip %APPVEYOR_BUILD_FOLDER%\path\to\bin\*.dll
+
+Specifying absolute path here is required to remove paths from archive. However, if you need to preserve paths in archive use relative paths, like:
+
+    7z a myapp.zip path\to\bin\*.dll
+
+Finally, have only "myapp.zip" pushed to artifacts.
+
+    artifacts:
+      - path: myapp.zip
+        name: MyApp
+
+
 ## Pushing artifacts from scripts
 
 You can use the following command-line to push file to build artifacts:
