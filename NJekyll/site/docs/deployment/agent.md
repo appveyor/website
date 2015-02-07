@@ -7,25 +7,10 @@ title: Deploying to remote servers with AppVeyor Deployment Agent
 
 AppVeyor Deployment Agent (Deployment Agent) is a service running on remote server and helping to deploy select artifact as IIS website or Windows application/service.
 
-### Table of contents
-
-* [Software requirements](#software-requirements)
-* [Installing AppVeyor Deployment Agent](#installing)
-* [Unattended Deployment Agent installation](#unattended-installation)
-* [What artifacts can be deployed](#deployable-artifacts)
-* [How to get named artifacts](#named-artifacts)
-* [Configuring deployment settings](#deployment-settings)
-* [Deploying artifact package as IIS web site](#deploying-website)
-* [Deploying artifact package as a Windows application](#deploying-windows-app)
-* [Deploying artifact package as a Windows service](#deploying-windows-service)
-* [Publishing SSDT package artifact to SQL Server](#publishing-ssdt-sql)
-* [Installing MSI package artifact on remote machine](#installing-msi)
-* [Running PowerShell scripts on target server during deployment](#running-powershell)
-* [Calling script block once per deployment](#calling-script-once-per-deployment)
-* [Troubleshooting](#troubleshooting)
+<!--TOC-->
 
 
-<a id="software-requirements"></a>
+
 ## Software requirements
 
 The following is required on the server to run Deployment Agent:
@@ -35,7 +20,7 @@ The following is required on the server to run Deployment Agent:
 - Web Role (IIS) is installed if you are deploying web site
 
 
-<a id="installing"></a>
+
 ## Installing AppVeyor Deployment Agent
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
@@ -47,7 +32,7 @@ The following is required on the server to run Deployment Agent:
 4. Server is ready for deployment.
 
 
-<a id="unattended-installation"></a>
+
 ## Unattended Deployment Agent installation
 
 Run the following in PowerShell console:
@@ -58,7 +43,7 @@ Run the following in PowerShell console:
 > Replace `<your_access_key>` with your environment access key.
 
 
-<a id="deployable-artifacts"></a>
+
 ## What artifacts can be deployed
 
 Deployment Agent recognizes artifacts of two types which may contain either web application or Windows application/service:
@@ -70,7 +55,7 @@ To be deployable with Deployment Agent *artifact must have a name*. Name should 
 
 
 
-<a id="named-artifacts"></a>
+
 ## How to get named artifacts
 
 There are few possible ways of packaging artifact deployable by Agent:
@@ -85,7 +70,7 @@ There are few possible ways of packaging artifact deployable by Agent:
     `appveyor PushArtifact <zip_path> -Name MyApp`
 
 
-<a id="deployment-settings"></a>
+
 ## Configuring deployment settings
 
 Use **Provider settings** of Agent environment to configure *which* artifacts should be deployed by Agent and *how*. By default, nothing configured - nothing deployed.
@@ -102,7 +87,7 @@ In order for Deployment Agent to deploy that artifact as IIS web site **Provider
 
 
 
-<a id="deploying-website"></a>
+
 ## Deploying artifact package as IIS web site
 
     <artifact_name>.deploy_website: true
@@ -152,7 +137,7 @@ You can specify multiple bindings in `hostname`, `ip` and `port` separated by se
 ![agent-multiple-bindings](/site/images/docs/deployment/agent/agent-multiple-bindings.png)
 
 
-<a id="deploying-windows-app"></a>
+
 ## Deploying artifact package as a Windows application
 
     <artifact_name>.deploy_app: true
@@ -167,7 +152,7 @@ Other properties:
 
 
 
-<a id="deploying-windows-service"></a>
+
 ## Deploying artifact package as a Windows service
 
     <artifact_name>.deploy_service: true
@@ -187,7 +172,7 @@ Other properties:
 * `group` - Deployment group.
 
 
-<a id="publishing-ssdt-sql"></a>
+
 ## Publishing SSDT package artifact to SQL Server
 
 Deployment Agent supports publishing of SSDT package artifacts (with `.dacpac` extension) to SQL Server instance.
@@ -212,7 +197,7 @@ For example, given `.dacpac` artifact's deployment name is `MyDatabase`:
     MyDatabase.backup_database_before_changes   true
 
 
-<a id="installing-msi"></a>
+
 ## Installing MSI package artifact on remote machine
 
 With AppVeyor Deployment Agent you can run the installation of MSI artifact (with `.msi` extension) on the remote machine. Agent uses `msiexec` command-line utility to install the package. MSI package should support silent mode (`/quiet` switch). We recommend using [WiX](http://wixtoolset.org) for building application installation packages.
@@ -232,7 +217,7 @@ For example, given `.msi` artifact's deployment name is `MyAppInstall`:
     MyAppInstall.uninstall_application      My Application
 
 
-<a id="running-powershell"></a>
+
 ## Running PowerShell scripts on target server during deployment
 
 `before-deploy.ps1` PowerShell script in the root of application folder will be called **before** every succssful deployment.
@@ -279,7 +264,7 @@ Artifact details:
 * `ARTIFACT_URL` - artifact package download URL valid for 10 minutes
 
 
-<a id="calling-script-once-per-deployment"></a>
+
 ### Calling script block once per deployment
 
 <!--[TBD - explain some usage scenarios]-->
@@ -295,7 +280,7 @@ In your `before deploy.ps1` or `deploy.ps1` use the following code to run once p
 
 
 
-<a id="troubleshooting"></a>
+
 ## Troubleshooting
 
 Open Event Viewer, expand **Applications and Services Logs** node and navigate to **Deployment Agent** event log.

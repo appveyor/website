@@ -9,15 +9,10 @@ title: Publishing SQL Server databases from SSDT packages
 
 In this guide:
 
-- [Provider settings](#settings)
-    - [Configuring in appveyor.yml](#yaml)
-    - [SQLCMD variables](#sqlcmd-variables)
-- [Publishing to local SQL Server for integration testing](#local-sql)
-- [Publishing to Azure SQL database](#azure-sql)
-- [Publishing to internal SQL Server with Deployment Agent](#internal-sql)
+<!--TOC-->
 
 
-<a id="settings"></a>
+
 ## Provider settings
 
 - **Artifact** (`artifact`) - `.dacpac` artifact file name or deployment name or regexp matching one of these.
@@ -101,7 +96,7 @@ Advanced deployment options:
 - **Verify collation compatibility** (`verify_collation_compatibility`) - Specifies whether collation compatibility is verified. Default is `true`.
 - **Verify deployment** (`verify_deployment`) - Specifies whether checks should be performed before publishing that will stop the publish action if issues are present that might block successful publishing. For example, your publish action might stop if you have foreign keys on the target database that do not exist in the database project, and that will cause errors when you publish. Default is `true`.
 
-<a id="yaml"></a>
+
 ### Configuring in appveyor.yml
 
 At minimum you would specify just `artifact` and `connection_string` and rely on default values for database deployment settings described above. The following settings work for the most cases when deploying to SQL Server or Azure SQL:
@@ -114,7 +109,7 @@ At minimum you would specify just `artifact` and `connection_string` and rely on
       ignore_file_and_log_file_path: true
 
 
-<a id="sqlcmd-variables"></a>
+
 ### SQLCMD variables
 
 You can specify SQLCMD variables either on UI or in `appveyor.yml` by prefixing them with `sqlcmd.`, for example:
@@ -127,7 +122,7 @@ You can specify SQLCMD variables either on UI or in `appveyor.yml` by prefixing 
       sqlcmd.AnotherVar: Baz
 
 
-<a id="local-sql"></a>
+
 ## Publishing to local SQL Server for integration testing
 
 To perform integration testing of database changes you can publish SSDT package to a local SQL Server instance installed on build worker. [SQL Server 2008, SQL Server 2012 and SQL Server 2014 instances](/docs/services-databases) are available on build worker for your tests.
@@ -152,7 +147,7 @@ In connection string for local publishing you could either use standard SQL Serv
         connection_string: 'Server=(local)\SQL2014;Database=my_test_db;User ID=sa;Password=Password12!'
 
 
-<a id="azure-sql"></a>
+
 ## Publishing to Azure SQL database
 
 ### Azure SQL Server firewall settings
@@ -171,7 +166,7 @@ In Visual Studio open SSDT project properties and select **Microsoft Azure SQL D
 ![ssdt-project-settings-for-azure](/site/images/docs/deployment/sql-database/ssdt-project-settings-for-azure.png)
 
 
-<a id="internal-sql"></a>
+
 ## Publishing to internal SQL Server with Deployment Agent
 
 If target SQL Server instance is behind the firewall you can still publish database there by installing [AppVeyor Deployment Agent](/docs/deployment/agent).

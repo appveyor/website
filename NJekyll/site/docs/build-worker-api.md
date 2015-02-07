@@ -12,15 +12,15 @@ To access Build Worker API from your scripts, AppVeyor provides the command-line
 API URL is stored in `APPVEYOR_API_URL` environment variable and it is `localhost` with a random port, e.g. `http://localhost:9023/`
 
 * [Add message](#add-message)
-* [Set variable](#set-variable)
+* [Set environment variable](#set-environment-variable)
 * [Add compilation message](#add-compilation-message)
 * [Add tests](#add-tests)
 * [Update tests](#update-tests)
 * [Push artifact](#push-artifact)
 * [Update build details](#update-build-details)
 
-<a id="add-message"></a>
-## Add message to build console
+
+## Add message
 
 ![build messages](/site/images/docs/build-messages.png)
 
@@ -56,8 +56,8 @@ Request body (JSON):
 
 
 
-<a id="add-compilation-message"></a>
-## Add compilation message to build console
+
+## Add compilation message
 
 ### PowerShell
 
@@ -96,8 +96,8 @@ Request body (JSON):
 
 
 
-<a id="set-variable"></a>
-## Set environment variable in build session
+
+## Set environment variable
 
 ### PowerShell
 
@@ -125,8 +125,8 @@ Request body (JSON):
 
 
 
-<a id="add-tests"></a>
-## Add tests to build console
+
+## Add tests
 
 ![build messages](/site/images/docs/build-tests.png)
 
@@ -196,8 +196,8 @@ Request body (JSON):
         ...
     ]
 
-<a id="update-tests"></a>
-## Update test results
+
+## Update tests
 
 ### PowerShell
 
@@ -261,7 +261,7 @@ Request body (JSON):
 
 
 
-<a id="push-artifact"></a>
+
 ## Push artifact
 
 ![build messages](/site/images/docs/build-artifacts.png)
@@ -305,7 +305,7 @@ Then in PowerShell:
         "c:\projects\myproject\mypackage.nupkg")
 
 
-<a id="update-build-details"></a>
+
 ## Update build details
 
 ![build details](/site/images/docs/build-details.png)

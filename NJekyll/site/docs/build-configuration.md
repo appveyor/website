@@ -5,22 +5,9 @@ title: Build configuration
 
 # Build configuration
 
-* [Build environment](#build-environment)
-* [Build pipeline](#build-pipeline)
-* [Configuring build](#configuring-build)
-* [Build versioning](#build-versioning)
-* [AssemblyInfo patching](#assemblyinfo-patching)
-* [Clone directory](#clone-directory)
-* [Environment variables](#environment-variables)
-* [Secure variables](#secure-variables)
-* [Script blocks](#script-blocks)
-* [Installing software](#installing-software)
-* [Hosts entries](#hosts)
-* [Build matrix](#build-matrix)
-* [Scheduled builds](#scheduled-builds)
-* [Build queue](#build-queue)
+<!--TOC-->
 
-<a id="build-environment"></a>
+
 ## Build environment
 
 Every build runs on a fresh virtual machine which is not shared with other builds and the state of which is not preserved between consequent builds. After the build is finished its virtual machine is decommissioned.
@@ -37,7 +24,7 @@ IP addresses assigned to build workers:
     173.193.165.163-166   (173.193.165.160/29)
 
 
-<a id="build-pipeline"></a>
+
 ## Build pipeline
 
 Every build goes through the following steps:
@@ -91,7 +78,6 @@ Every build goes through the following steps:
 Free, Professional and Premium plans have a hard quota of 30 minutes on build execution time. Enterprise plans allow 50 minutes per build job.
 
 
-<a id="configuring-build"></a>
 ## Configuring build
 
 Project builds can be configured by either `appveyor.yml` or on the user interface.
@@ -112,7 +98,7 @@ While working with YAML there are few important points to be aware of:
 * Section names in YAML are case-sensitive, so "deploy" and "Deploy" are different things in YAML.
 
 
-<a id="build-versioning"></a>
+
 ## Build versioning
 
 Every time you push changes into repo or click the **New build** button AppVeyor starts a new build with an incremented build number.
@@ -125,7 +111,7 @@ You can specify version format in `appveyor.yml`:
 
     version: 1.0.{build}
 
-<a id="assemblyinfo-patching"></a>
+
 ## AssemblyInfo patching
 
 AppVeyor has a built-in task for `AssemblyInfo` patching. Patching is disabled by default for newly added projects.
@@ -145,7 +131,7 @@ You can use environment variables substitution in file name and version formats,
 
 
 
-<a id="clone-directory"></a>
+
 ## Clone directory
 
 The format of the default directory on the build machine for cloning repository is `c:\projects\<project-slug>`.
@@ -155,7 +141,7 @@ If required by your project (say, if absolute paths are used to reference its pa
     clone_folder: c:\projects\myproject
 
 
-<a id="environment-variables"></a>
+
 ## Environment variables
 
 Immediately after cloning the repo on the build machine AppVeyor sets environment variables.
@@ -211,7 +197,7 @@ PowerShell:
 
 
 
-<a id="secure-variables"></a>
+
 ### Secure variables
 
 When you work with OSS projects and you’d like to hide some sensitive data from everyone’s eyes you can use **secure variables** in `appveyor.yml`.
@@ -229,7 +215,7 @@ To use encrypted variable in `appveyor.yml`:
 >However, secure variables are *not* decoded during Pull Request builds which prevents someone from submitting PR with malicious build script displaying those variables. In more controlled environment through with a trusted team and private GitHub repositories there is an option on General tab of project settings to allow secure variables for PRs.
 
 
-<a id="script-blocks"></a>
+
 ## Script blocks in build configuration
 
 There are a lot of places in configuration where you can inject your custom logic like "install" scripts, "before build", "after tests", "deploy" scripts, etc.
@@ -284,7 +270,7 @@ To add the same multi-line PowerShell script *inside* an event so other script l
 
 The extra line breaks used above are required.
 
-<a id="installing-software"></a>
+
 ## Installing additional software
 
 Every build runs on a pristine virtual machine that is not shared with any other builds. VM state is not preserved between builds.
@@ -319,7 +305,7 @@ or
       - WebpiCmd /Install /Products:<Title or ID>
 
 
-<a id="hosts"></a>
+
 ## Hosts entries
 
     hosts:
@@ -328,7 +314,7 @@ or
 
 
 
-<a id="build-matrix"></a>
+
 ##Build matrix
 
 Every AppVeyor *build* consists of one or more *jobs*. A build is considered successful if all jobs are successful. A build immediately fails when any of its jobs fail.
@@ -422,7 +408,7 @@ The matrix is already optimized for fast failing. The logic is as follows:
 See [complete appveyor.yml reference](/docs/appveyor-yml) for full syntax.
 
 
-<a id="scheduled-builds"></a>
+
 ## Scheduled builds
 
 AppVeyor uses [NCrontab library](https://code.google.com/p/ncrontab/) to calculate a build schedule.
@@ -434,7 +420,7 @@ External links:
 * [Crontab expression syntax](https://code.google.com/p/ncrontab/wiki/CrontabExpression)
 * [Crontab examples](https://code.google.com/p/ncrontab/wiki/CrontabExamples)
 
-<a id="build-queue"></a>
+
 ## Build queue
 
 Sometimes you may wonder why your build is not being run immediately or it's "queued" state longer than usual.

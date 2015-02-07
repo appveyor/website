@@ -1,6 +1,5 @@
-﻿<!--
-layout: default
--->
+﻿{% include header.html %}
+
 <div class="row">
     <div class="sidebar columns medium-3">
         <div class="sidebar-content">
@@ -9,7 +8,9 @@ layout: default
     </div>
     <div class="columns medium-9">
 
-        {{content}}
+        <div class="docs-content">
+            {{content}}
+        </div>
 
         <div class="edit-page-invitation">
             Did you know that you can <a href="{{site.github_repo_root}}/{{page.virtual_path | replace:'\\','/'}}" target="_blank">edit this page on GitHub</a> and send us Pull Request?
@@ -17,3 +18,5 @@ layout: default
 
     </div>
 </div>
+
+{% include footer.html %}

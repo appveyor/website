@@ -5,14 +5,7 @@ title: Running tests
 
 # Running tests
 
-* [Selecting assemblies to test](#assemblies-to-test)
-* [Selecting categories to test](#categories-to-test)
-    * [Visual Studio tests](vstest-categories)
-    * [xUnit](xunit-categories)
-    * [NUnit](nunit-categories)
-    * [MSpec](mspec-categories)
-* [Calling test runners from your custom scripts](#calling-test-runners)
-* [Pushing real-time test results to build console](#test-results)
+<!--TOC-->
 
 AppVeyor has tight integration with the following testing frameworks:
 
@@ -25,7 +18,7 @@ This does not, however, mean you can't run your own favourite testing frameworks
 
 In most cases you are good to go with the default **Auto** testing mode. This mode tells AppVeyor to recursively search the build folder for test assemblies referencing known frameworks, run tests with corresponding test runners, and push results back to the build console.
 
-<a id="assemblies-to-test"></a>
+
 ## Selecting assemblies to test
 
 By default, **Auto** mode scans the entire build folder. For large projects this could be a time-consuming operation.
@@ -88,7 +81,7 @@ Configuring tests in `appveyor.yml`:
 See [appveyor.yml reference](/docs/appveyor-yml) for complete syntax.
 
 
-<a id="categories-to-test"></a>
+
 ## Selecting categories to test
 
 By default, AppVeyor runs all tests from found assemblies.
@@ -111,7 +104,7 @@ To run tests from all categories *except* specified ones:
           - A
           - B
 
-<a id="vstest-categories"></a>
+
 ### Visual Studio unit tests (C#)
 
 Applying category to a test method:
@@ -121,7 +114,7 @@ Applying category to a test method:
     {
     }
 
-<a id="xunit-categories"></a>
+
 ### xUnit (C#)
 
 Applying category to a test method:
@@ -131,7 +124,7 @@ Applying category to a test method:
     {
     }
 
-<a id="nunit-categories"></a>
+
 ### NUnit (C#)
 
 Applying category to a test fixture:
@@ -152,7 +145,7 @@ Applying category to a test method:
         }
     }
 
-<a id="mspec-categories"></a>
+
 ### MSpec (C#)
 
 Applying category to MSpec test with `Tags` attribute:
@@ -164,14 +157,14 @@ Applying category to MSpec test with `Tags` attribute:
     }
 
 
-<a id="calling-test-runners"></a>
+
 ## Calling test runners from your custom scripts
 
 The AppVeyor build environment includes runners for MSTest, NUnit and xUnit frameworks that are integrated with the build console to push real-time results while running tests.
 
 You can install and use your own build runners for frameworks above, communication with the build console must be done via text output from those runners.
 
-<a id="vstest"></a>
+
 ### Visual Studio Unit Testing framework
 
 To run unit tests for Visual Studio test framework with real-time reporting use command:
@@ -181,7 +174,7 @@ To run unit tests for Visual Studio test framework with real-time reporting use 
 `[options]` are standard [vstest.console.exe command-line options](http://msdn.microsoft.com/en-us/library/jj155796.aspx).
 
 
-<a id="nunit"></a>
+
 ### NUnit
 
 To run NUnit tests with real-time reporting use command:
@@ -193,7 +186,7 @@ or for x86 assemblies:
     nunit-console-x86 <assembly> [options]
 
 
-<a id="xunit"></a>
+
 ### xUnit
 
 To run xUnit tests with real-time reporting use command:
@@ -204,7 +197,7 @@ To run unit tests which target .NET 4.0 and later, use command:
 
     xunit.console.clr4 <assembly> /appveyor
 
-<a id="mspec"></a>
+
 ### Machine.Specifications
 
 To run MSpec tests with real-time reporting use command:
@@ -212,7 +205,6 @@ To run MSpec tests with real-time reporting use command:
     mspec [options] <assemblies>
 
 
-<a id="test-results"></a>
 ## Pushing real-time test results to build console
 
 AppVeyor build console has **Tests** tab with test results updated in a real-time as tests run:

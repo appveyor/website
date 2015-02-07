@@ -5,12 +5,9 @@ title: Deployment
 
 # Deployment
 
-* [Overview](#overview)
-* [Environment variables in provider settings](#environment-variables)
-* [Conditional deployment](#conditional-deployment)
-* [Deploy on tag (GitHub only)](#deploy-on-tag)
+<!--TOC-->
 
-<a id="overview"></a>
+
 ## Overview
 
 The fact AppVeyor deployment requires build artifacts on input makes deployment process predictable and repeatable.
@@ -96,13 +93,12 @@ The table below summarizes key differences between two modes with lists of deplo
 
 
 
-<a id="environment-variables"></a>
 ## Environment variables in provider settings
 
 You can use standard and custom environment variables in provider settings, for example you can set remote FTP folder as `$(appveyor_build_version)\artifacts` where `$(appveyor_build_version)` will be replaced with current build version.
 
 
-<a id="conditional-deployment"></a>
+
 ## Conditional deployment
 
 When you deploy as part of the build process you can control under which conditions deployment should be run.
@@ -118,7 +114,7 @@ For example, to deploy from "master" branch and only artifacts built for "x86" p
         platform: x86
 
 
-<a id="deploy-on-tag"></a>
+
 ## Deploy on tag (GitHub only)
 
 By default AppVeyor starts a new build on any push to GitHub whether it's regular commit or a new tag. Repository tagging frequently used to trigger deployment.
