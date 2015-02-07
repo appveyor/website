@@ -86,6 +86,7 @@ software, even if advised of the possibility of such damage.
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Diagnostics;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -365,6 +366,9 @@ namespace MarkdownSharp
             text = StripLinkDefinitions(text);
             text = RunBlockGamut(text);
             text = Unescape(text);
+
+            // auto toc
+            text = text.Replace("<!--TOC-->", GenerateToc(_headers));
 
             Cleanup();
 
@@ -1090,6 +1094,22 @@ namespace MarkdownSharp
                 \n+",
             RegexOptions.Multiline | RegexOptions.IgnorePatternWhitespace | RegexOptions.Compiled);
 
+        class Header
+        {
+            public int Level { get; set; }
+            public string Id { get; set; }
+            public string Text { get; set; }
+
+            public Header(int level, string id, string text)
+            {
+                Level = level;
+                Id = id;
+                Text = text;
+            }
+        }
+
+        private IList<Header> _headers = new List<Header>();
+
         /// <summary>
         /// Turn Markdown headers into HTML header tags
         /// </summary>
@@ -1118,7 +1138,13 @@ namespace MarkdownSharp
             string header = match.Groups[1].Value;
             int level = match.Groups[2].Value.StartsWith("=") ? 1 : 2;
             string innerHtml = RunSpanGamut(header);
-            return string.Format("<h{1} id=\"{2}\">{0}</h{1}>\n\n", innerHtml, level, GenerateSlug(innerHtml));
+            string slug = GenerateSlug(innerHtml);
+
+            if (level > 1)
+            {
+                _headers.Add(new Header(level, slug, innerHtml));
+            }
+            return string.Format("<h{1} id=\"{2}\">{0}</h{1}>\n\n", innerHtml, level, slug);
         }
 
         private string AtxHeaderEvaluator(Match match)
@@ -1126,7 +1152,13 @@ namespace MarkdownSharp
             string header = match.Groups[2].Value;
             int level = match.Groups[1].Value.Length;
             string innerHtml = RunSpanGamut(header);
-            return string.Format("<h{1} id=\"{2}\">{0}</h{1}>\n\n", innerHtml, level, GenerateSlug(innerHtml));
+            string slug = GenerateSlug(innerHtml);
+
+            if(level > 1)
+            {
+                _headers.Add(new Header(level, slug, innerHtml));
+            }
+            return string.Format("<h{1} id=\"{2}\">{0}</h{1}>\n\n", innerHtml, level, slug);
         }
 
         private string GenerateSlug(string text)
@@ -1138,6 +1170,70 @@ namespace MarkdownSharp
             result = Regex.Replace(result, @"[^a-z0-9-]", "-"); // replace all invalid chars with hyphens
             result = Regex.Replace(result, @"-+", "-"); // convert subsequent hyphens into one
             return result.Trim('-'); // trim edge hyphens
+        }
+
+        private string GenerateToc(IList<Header> headers)
+        {
+            var sb = new StringBuilder();
+            int startLevel = 2;
+            int level = 2;
+            for (int i = 0; i < headers.Count; i++)
+            {
+                var header = headers[i];
+
+                // TOC start
+                if (i == 0)
+                {
+                    sb.AppendLine("<ul>");
+                }
+
+                if (header.Level > level)
+                {
+                    sb.AppendLine("<ul>");
+
+                    for (int j = 1; j < (header.Level - level); j++)
+                    {
+                        sb.Append("<li><ul>");
+                    }
+                }
+                else if (header.Level < level)
+                {
+                    for (int j = 0; j < (level - header.Level); j++)
+                    {
+                        sb.Append("</ul></li>");
+                    }
+                }
+
+                // item
+                sb.AppendFormat("<li><a href=\"#{0}\">{1}</a>", header.Id, header.Text);
+
+                // </li> ?
+                if (i < headers.Count - 1 && headers[i + 1].Level > header.Level)
+                {
+                    sb.AppendLine();
+                }
+                else
+                {
+                    sb.AppendLine("</li>");
+                }
+
+                // TOC end
+                if (i == headers.Count - 1)
+                {
+                    if (level > startLevel)
+                    {
+                        for (; level > startLevel; level--)
+                        {
+                            sb.Append("</ul></li>");
+                        }
+                    }
+
+                    sb.AppendLine("</ul>");
+                }
+
+                level = header.Level;
+            }
+            return sb.ToString();
         }
 
         private static Regex _horizontalRules = new Regex(@"

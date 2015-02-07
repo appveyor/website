@@ -5,6 +5,8 @@ title: Running tests
 
 # Running tests
 
+<!--TOC-->
+
 AppVeyor has tight integration with the following testing frameworks:
 
 * [Visual Studio Unit Testing framework (MSTest)](http://msdn.microsoft.com/en-us/library/dd264975.aspx)

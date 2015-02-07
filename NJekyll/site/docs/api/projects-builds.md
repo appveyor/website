@@ -6,26 +6,26 @@ title: Projects and builds API
 # Projects
 
 * [Get projects](#get-projects)
-* [Get project last build](#get-last-build)
-* [Get project last branch build](#get-last-branch-build)
-* [Get project build by version](#get-version-build)
+* [Get project last build](#get-project-last-build)
+* [Get project last branch build](#get-project-last-branch-build)
+* [Get project build by version](#get-project-build-by-version)
 * [Get project history](#get-project-history)
 * [Get project deployments](#get-project-deployments)
 * [Get project settings](#get-project-settings)
-* [Get project settings in YAML](#get-project-settings-yaml)
+* [Get project settings in YAML](#get-project-settings-in-yaml)
 * [Add project](#add-project)
 * [Update project](#update-project)
-* [Update project settings with YAML](#update-project-settings-yaml)
+* [Update project settings with YAML](#update-project-settings-with-yaml)
 * [Delete project](#delete-project)
 
 # Builds
 
-* [Start build of branch most recent commit](#start-build-last-commit)
-* [Start build of specific branch commit](#start-build-commit)
-* [Start build of Pull Request (GitHub only)](#start-build-pr)
+* [Start build of branch most recent commit](#start-build-of-branch-most-recent-commit)
+* [Start build of specific branch commit](#start-build-of-specific-branch-commit)
+* [Start build of Pull Request (GitHub only)](#start-build-of-pull-request-github-only)
 * [Cancel build](#cancel-build)
 
-<a id="get-projects"></a>
+
 ## Get projects
 
 Request:
@@ -83,7 +83,7 @@ Response:
        }
     ]
 
-<a id="get-last-build"></a>
+
 ## Get project last build
 
 Request:
@@ -162,7 +162,6 @@ Response:
        }
     }
 
-<a id="get-last-branch-build"></a>
 ## Get project last branch build
 
 Request:
@@ -173,7 +172,7 @@ Response:
 
 > Response is the same as [Get project last build](#get-last-build)
 
-<a id="get-version-build"></a>
+
 ## Get project build by version
 
 Request:
@@ -184,7 +183,7 @@ Response:
 
 > Response is the same as [Get project last build](#get-last-build)
 
-<a id="get-project-history"></a>
+
 ## Get project history
 
 Request:
@@ -262,7 +261,7 @@ Response:
        ]
     }
 
-<a id="get-project-deployments"></a>
+
 ## Get project deployments
 
 Request:
@@ -365,7 +364,7 @@ Response:
        ]
     }
 
-<a id="get-project-settings"></a>
+
 ## Get project settings
 
 Request:
@@ -608,7 +607,7 @@ Response:
        ]
     }
 
-<a id="get-project-settings-yaml"></a>
+
 ## Get project settings in YAML
 
 Request:
@@ -625,7 +624,7 @@ Response (`plain/text`):
       ...
 
 
-<a id="add-project"></a>
+
 ## Add project
 
 Request:
@@ -658,7 +657,7 @@ Response:
        "created":"2014-08-16T00:52:15.6604826+00:00"
     }
 
-<a id="update-project"></a>
+
 ## Update project
 
 Request:
@@ -806,7 +805,7 @@ Request body:
 
 Response: 204
 
-<a id="update-project-settings-yaml"></a>
+
 ## Update project settings in YAML
 
 Request:
@@ -825,7 +824,7 @@ Request body (`plain/text`):
 Response: 204
 
 
-<a id="delete-project"></a>
+
 ## Delete project
 
 Request:
@@ -835,7 +834,7 @@ Request:
 Response: 204
 
 
-<a id="start-build-last-commit"></a>
+
 ### Start build of branch most recent commit
 
 Request:
@@ -878,7 +877,7 @@ Response:
        "created":"2014-08-16T00:40:38.1703914+00:00"
     }
 
-<a id="start-build-commit"></a>
+
 ### Start build of specific branch commit
 
 Request:
@@ -894,7 +893,7 @@ Request body:
         commitId: '3e9d9468'
     }
 
-<a id="start-build-pr"></a>
+
 ### Start build of Pull Request (GitHub only)
 
 Request:
@@ -909,7 +908,7 @@ Request body:
         pullRequestId: 3
     }
 
-<a id="cancel-build"></a>
+
 ### Cancel build
 
 Request:

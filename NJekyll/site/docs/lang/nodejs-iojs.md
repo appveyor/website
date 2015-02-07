@@ -5,17 +5,8 @@ title: Testing with Node.js and io.js
 
 # Testing with Node.js and io.js
 
-* [Quick start](#quick-start)
-* [Line endings](#line-endings)
-* [Selecting Node.js or io.js version](#node-version)
-* [Testing under multiple versions of Node.js or io.js](#versions-matrix)
-* [Known issues](#known-issues)
-    * [Wrong output encoding](#wrong-output-encoding)
-    * [Garbled or missing output](#garbled-or-missing-output)
-    * [Locking errors](#locking-errors)
+<!--TOC-->
 
-
-<a id="quick-start"></a>
 ## Quick start
 
 Put this simple `appveyor.yml` to the root of your repository and it should work for the most Node.js projects out there:
@@ -42,7 +33,7 @@ Put this simple `appveyor.yml` to the root of your repository and it should work
     # Don't actually build.
     build: off
 
-<a id="line-endings"></a>
+
 ## Line endings
 
 By default, Git on build workers is configured with `git config --global core.autocrlf input` which means your repo is cloned "as is" without fixing new lines on Windows. If you have a file with a string `abc\n line2` it will be checked out exactly as `abc\n line2` and if there is `line1 \r\n line2` in the repo you'll get the same on checkout. See this SO answer explaining in details [`core.autocrlf` modes](http://stackoverflow.com/questions/1249932/git-1-6-4-beta-on-windows-msysgit-unix-or-dos-line-termination/1250133#1250133).
@@ -54,7 +45,7 @@ However, if you expect Git to fix line endings on Windows and checkout *all* str
 
 > Anyway, we do not recommend relying on `core.autocrlf` value set on AppVeyor build workers and always explicitly change this setting during the build or [have it configured per-repository](https://help.github.com/articles/dealing-with-line-endings/).
 
-<a id="node-version"></a>
+
 ## Selecting Node.js or io.js version
 
 Build workers have the most recent versions of Node.js and io.js pre-installed - both `x86` and `x64`. If you do nothing your scripts will run under `Node.js 0.10.35 (x86)` (at the time of writing).
@@ -116,7 +107,7 @@ It could be used together with previous cmdlet to always install the latest buil
 
 
 
-<a id="versions-matrix"></a>
+
 ## Testing under multiple versions of Node.js or io.js
 
 AppVeyor enables easy testing against multiple combinations of platforms, configurations and environments with [build matrix](/docs/build-configuration#build-matrix).
@@ -161,11 +152,11 @@ This configuration will produce a build with 4 jobs for all combinations of node
     io.js 1.0.x      x86
     io.js 1.0.x      x64
 
-<a id="known-issues"></a>
+
 ## Known issues
 
 
-<a id="wrong-output-encoding"></a>
+
 ### Wrong output encoding
 
 When running `npm install` (or any other Node.js program writing to a console) you may notice that Unicode symbols written to build console look wrong:
@@ -185,7 +176,7 @@ To fix that run it in "shell" mode:
 At the moment it seems to be an issue with PowerShell and the way it redirects output from console apps to a custom PowerShell host.
 
 
-<a id="garbled-or-missing-output"></a>
+
 ### Garbled or missing output
 
 Sometimes you may notice that output of some Node.js programs (especially those ones actively writing to both StdOut and StdErr) is garbled or missing.
@@ -195,7 +186,7 @@ In two words, there was Windows-specific issue in Node.js with non-blocking StdE
 Solution - run your tests under Node.js 0.11.x.
 
 
-<a id="locking-errors"></a>
+
 ### Locking errors (EPERM, EEXIST, tgz.lock)
 
 Sometimes you may encounter sporadic "lock" errors that might look like:

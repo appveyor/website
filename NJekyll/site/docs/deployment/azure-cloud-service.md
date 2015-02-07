@@ -5,15 +5,12 @@ title: Deploying Azure Cloud Services
 
 # Deploying Azure Cloud Services
 
-* [Automatic packaging](#automatic-packaging)
-* [Packaging from script](#script-packaging)
-* [Configuring deployment](#deployment)
-* [Cloud Service Deploy Parametrization](#cloud-service-deploy-parametrization)
+<!--TOC-->
 
 Azure Cloud Service deployment provider assumes there is only one **Azure Cloud Service package** (file with `.cspkg` extension) in build artifacts and at least one **Azure Cloud Service configuration** artifact (file with `.cscfg` extension).
 
 
-<a id="automatic-packaging"></a>
+
 ## Automatic packaging
 
 To build Azure CS project and automatically push it as artifact enable **Publish Azure Cloud Service projects** option on **Build** tab of project settings.
@@ -29,7 +26,7 @@ AppVeyor will find Azure Cloud Service project (`.ccproj`) and package it. Creat
 
 
 
-<a id="script-packaging"></a>
+
 ## Packaging from script
 
 To build Azure Cloud Service package from the script you can use the following command:
@@ -45,7 +42,7 @@ To push package and configuration to artifacts:
 
 
 
-<a id="deployment"></a>
+
 ## Configuring deployment
 
 Sample `appveyor.yml` configuration:
@@ -65,7 +62,7 @@ Sample `appveyor.yml` configuration:
 To get `subscription_id` and `subscription_certificate` [download publish settings and subscription for your Azure account](https://manage.windowsazure.com/publishsettings)
 and then grab both values from downloaded `<subscription>.publishsettings` XML file.
 
-<a id="cloud-service-deploy-parametrization"></a>
+
 ## Cloud Service Deploy Parametrization
 
 When deploying Cloud Services to different environments you don't want to re-build application package every time with different configurations, but you want to deploy the same package (artifact) with some environment-specific settings configured during deployment. When using Cloud Service Deploy the problem can be easily solved by Web Deploy parametrization.

@@ -5,9 +5,7 @@ title: Branches and Tags
 
 # Branches and Tags
 
-* [White- and blacklisting](#white-and-blacklisting)
-* [Conditional build configuration](#conditional-build-configuration)
-* [Build on tags (GitHub only)](#build-on-tags)
+<!--TOC-->
 
 AppVeyor has built-in multi-branch support.
 
@@ -15,7 +13,7 @@ AppVeyor has built-in multi-branch support.
 
 
 
-<a id="white-and-blacklisting"></a>
+
 ## White- and blacklisting
 
 All branches are built by default. You can either [manually skip a build](/docs/how-to/skip-build) or setup included/excluded branches on the **General** tab of project settings or in `appveyor.yml`:
@@ -37,7 +35,7 @@ To specify the list of branches that must be ignored:
 
 
 
-<a id="conditional-build-configuration"></a>
+
 ## Conditional build configuration
 
 If you use [git flow](http://nvie.com/posts/a-successful-git-branching-model/) you may want to have a different build configuration (e.g. deploying to a different environment) in a feature branch. Changing `appveyor.yml` in a feature branch becomes an issue when you merge it into master overriding `appveyor.yml` and breaking master builds.
@@ -87,7 +85,7 @@ Unlike white- and blacklisting `branches` section here works like a selector, no
 - If all previous steps fail build is not run.
 
 
-<a id="build-on-tags"></a>
+
 ## Build on tags (GitHub only)
 
 By default AppVeyor starts a new build on any push to GitHub whether it's regular commit or a new tag. Repository tagging frequently used to trigger deployment.

@@ -20,7 +20,6 @@ title: Environments and deployments API
 * [Start deployment](#start-deployment)
 * [Cancel deployment](#cancel-deployment)
 
-<a id="get-environments"></a>
 ## Get environments
 
 Request:
@@ -47,7 +46,7 @@ Response:
     ]
 
 
-<a id="get-environment-settings"></a>
+
 ## Get environment settings
 
 Request:
@@ -107,7 +106,7 @@ Response:
     }
 
 
-<a id="get-environment-deployments"></a>
+
 ## Get environment deployments
 
 Request:
@@ -202,7 +201,7 @@ Response:
        ]
     }
 
-<a id="add-environment"></a>
+
 ## Add environment
 
 Request:
@@ -295,7 +294,7 @@ Response:
     }
 
 
-<a id="update-environment"></a>
+
 ## Update environment
 
 Request:
@@ -391,7 +390,7 @@ Response:
     }
 
 
-<a id="delete-environment"></a>
+
 ## Delete environment
 
 Request:
@@ -400,7 +399,7 @@ Request:
 
 Response: 204
 
-<a id="get-deployment"></a>
+
 ### Get deployment
 
 Request:
@@ -483,7 +482,7 @@ Response:
     }
 
 
-<a id="start-deployment"></a>
+
 ### Start deployment
 
 Request:
@@ -558,7 +557,7 @@ Response:
        "updated":"2014-08-12T23:06:25.0502019+00:00"
     }
 
-<a id="cancel-deployment"></a>
+
 ### Cancel deployment
 
 Request:

@@ -12,11 +12,10 @@ AppVeyor runs every build on a new VM which is getting decommissioned right afte
 
 The feature called "shallow clone" aims to improve the situation with large repositories. It offers two options:
 
-* Setting depth of git clone command.
-* Downloading repository via GitHub or BitBucket API
+<!--TOC-->
 
 
-<a id="git-depth"></a>
+
 ## Setting depth of git clone command
 
 By default AppVeyor clones entire repository with all the history. You can limit the number of last commits you’d like to clone. This feature works for Git repositories hosted at GitHub and BitBucket. You can set clone depth on General tab of project settings or in `appveyor.yml`:
@@ -25,7 +24,7 @@ By default AppVeyor clones entire repository with all the history. You can limit
 
 > Be aware that if you do a lot of commits producing queued builds and depth number is too small git checkout operation following git clone can fail because requested commit is not present in a cloned repository.
 
-<a id="download-via-api"></a>
+
 ## Downloading repository via GitHub or BitBucket API
 
 As title says this option is specific to GitHub and BitBucket only. It uses their respective REST API to download specific commit of the repository as zip archive and then unpacks it on build worker machine. This feature works for regular commits, branch commits and pull requests.

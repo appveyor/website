@@ -29,7 +29,7 @@ title: Team API
 * [Update role](#update-role)
 * [Delete role](#delete-role)
 
-<a id="get-users"></a>
+
 ## Get users
 
 Request:
@@ -57,7 +57,7 @@ Response:
        }
     ]
 
-<a id="get-user"></a>
+
 ## Get user
 
 Request:
@@ -99,7 +99,7 @@ Response:
        ]
     }
 
-<a id="add-user"></a>
+
 ## Add user
 
 Request:
@@ -119,7 +119,7 @@ Request body:
 
 Response: 204
 
-<a id="update-user"></a>
+
 ## Update user
 
 Request:
@@ -142,7 +142,7 @@ Request body:
 Response: 204
 
 
-<a id="delete-user"></a>
+
 ## Delete user
 
 Request:
@@ -155,7 +155,7 @@ Response: 204
 
 
 
-<a id="get-collaborators"></a>
+
 ## Get collaborators
 
 Request:
@@ -183,7 +183,7 @@ Response:
        }
     ]
 
-<a id="get-collaborator"></a>
+
 ## Get collaborator
 
 Request:
@@ -232,7 +232,7 @@ Response:
        ]
     }
 
-<a id="add-collaborator"></a>
+
 ## Add collaborator
 
 Request:
@@ -248,7 +248,6 @@ Request body:
 
 Response: 204
 
-<a id="update-collaborator"></a>
 ## Update collaborator
 
 Request:
@@ -265,7 +264,7 @@ Request body:
 Response: 204
 
 
-<a id="delete-collaborator"></a>
+
 ## Delete collaborator
 
 Request:
@@ -278,7 +277,7 @@ Response: 204
 
 
 
-<a id="get-roles"></a>
+
 ## Get roles
 
 Request:
@@ -302,7 +301,7 @@ Response:
        }
     ]
 
-<a id="get-role"></a>
+
 ## Get role
 
 Request:
@@ -425,7 +424,7 @@ Response:
        ]
     }
 
-<a id="add-role"></a>
+
 ## Add role
 
 Request:
@@ -440,7 +439,7 @@ Request body:
 
 Response: Role details (see [Get role](#get-role))
 
-<a id="update-role"></a>
+
 ## Update role
 
 Request:
@@ -566,7 +565,7 @@ Request body:
 Response: Role details (see [Get role](#get-role))
 
 
-<a id="delete-role"></a>
+
 ## Delete role
 
 Request:

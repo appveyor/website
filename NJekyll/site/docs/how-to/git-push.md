@@ -21,13 +21,13 @@ This article will demonstrate how to use Git **credential store** to avoid Git a
 
 At a glance the entire process consists of these steps:
 
-1. [Creating GitHub Personal Access Token](#create-token)
-2. [Configuring build secure variable with access token](#configure-secure-variable)
-3. [Enabling Git credential store](#enabling-store)
-4. [Adding access token to credential store](#add-token-to-store)
+1. [Creating GitHub Personal Access Token](#creating-github-personal-access-token)
+2. [Configuring build secure variable with access token](#configuring-build-secure-variable-with-access-token)
+3. [Enabling Git credential store](#enabling-git-credential-store)
+4. [Adding access token to credential store](#adding-access-token-to-credential-store)
 
 
-<a id="create-token"></a>
+
 ## Creating GitHub Personal Access Token
 
 Of course, you can use your GitHub username/password to authenticate, but there is a better approach - [Personal Access Tokens](https://github.com/blog/1509-personal-api-tokens) which:
@@ -39,7 +39,7 @@ Of course, you can use your GitHub username/password to authenticate, but there 
 Use this [GitHub guide for creating access tokens](https://help.github.com/articles/creating-an-access-token-for-command-line-use/).
 
 
-<a id="configure-secure-variable"></a>
+
 ## Configuring build secure variable with access token
 
 Encrypt access token using [Encrypt Data tool](https://ci.appveyor.com/tools/encrypt) and then put it as secure variable into your `appveyor.yml`, for example:
@@ -48,7 +48,7 @@ Encrypt access token using [Encrypt Data tool](https://ci.appveyor.com/tools/enc
       access_token:
         secure: zYCOwcOlgTzvbD0CjJRDNQ==
 
-<a id="enabling-store"></a>
+
 ## Enabling Git credential store
 
 Git doesn't preserve entered credentials between calls. However, it provides a mechanism for caching credentials called [Credential Store](http://git-scm.com/docs/git-credential-store). To enable credential store we use the following command:
@@ -57,7 +57,7 @@ Git doesn't preserve entered credentials between calls. However, it provides a m
 
 
 
-<a id="add-token-to-store"></a>
+
 ## Adding access token to credential store
 
 Default credential store keeps passwords in clear text (*this is OK for us as build worker is private and not re-used or shared between builds*). The storage represents a single `%USERPROFILE%\.git-credentials` file where each line has a form of:

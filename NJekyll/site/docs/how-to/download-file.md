@@ -9,13 +9,10 @@ Sometimes you need to download additional files (installers, libraries, resource
 
 There is a number of ways you can use to download file in AppVeyor environment:
 
-* [Invoke-WebRequest cmdlet (PowerShell)](#invoke-webrequest)
-* [WebClient class (PowerShell)](#webclient)
-* [Start-FileDownload cmdlet (PowerShell)](#file-download-cmdlet)
-* [AppVeyor command-line utility](#appveyor-command-line)
+<!--TOC-->
 
 
-<a id="invoke-webrequest"></a>
+
 ## Invoke-WebRequest cmdlet
 
 ### HTTP
@@ -32,7 +29,7 @@ There is a number of ways you can use to download file in AppVeyor environment:
 
 > Examples taken from [this blog post](http://www.powershellatoms.com/basic/download-file-website-powershell/).
 
-<a id="webclient"></a>
+
 ## WebClient class
 
 You can use the following PowerShell code to download file using `System.Net.WebClient` class which is part of .NET Framework:
@@ -44,7 +41,7 @@ Where:
 - `<file_url>` - URL of remote file
 - `<local_file_name>` - **full** local path to downloaded file
 
-<a id="file-download-cmdlet"></a>
+
 ## Start-FileDownload cmdlet
 
 AppVeyor build session has built-in `Start-FileDownload` cmdlet for downloading files. There are some advantages of using this cmdlet instead of WebClient class:
@@ -68,7 +65,7 @@ Example usage in `appveyor.yml`:
       - ps: Start-FileDownload 'http://www.myserver.com/packages/installer.msi'
 
 
-<a id="appveyor-command-line"></a>
+
 ## AppVeyor command-line utility
 
 AppVeyor command-line utility (`appveyor.exe`) which is a part of [Build Agent API](/docs/build-worker-api) provides `DownloadFile` command which behaves similar to Start-FileDownload cmdlet.

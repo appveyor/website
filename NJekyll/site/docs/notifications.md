@@ -5,12 +5,7 @@ title: Build notifications
 
 # Build notifications
 
-* [Global email notifications](#global-email)
-* [Project email notifications](#project-email)
-* [HipChat](#hipchat)
-* [Slack](#slack)
-* [VSO Team Rooms](#vso-team-rooms)
-* [Webhooks](#webhooks)
+<!--TOC-->
 
 Build notifications are defined on project level and triggered on build success or fail events. You can configure notification on **Notifications** tab of project settings or in `notifications` section of `appveyor.yml`:
 
@@ -24,7 +19,7 @@ Build notifications are defined on project level and triggered on build success 
 > NOTE: Notifications defined on project settings UI are merged with notifications defined in `appveyor.yml`.
 
 
-<a id="global-email"></a>
+
 ## Global email notifications
 
 Email notification preferences sent for all projects are unique for every user and can be changed on [Notifications](https://ci.appveyor.com/notifications) page.
@@ -39,7 +34,7 @@ You can limit the amount of email notifications you receive:
 ![email notifications](/site/images/docs/notifications/email-notifications.png)
 
 
-<a id="project-email"></a>
+
 ## Project email notifications
 
 You can define email notifications specific to a project.
@@ -89,7 +84,7 @@ Default message body template:
         on_build_status_changed: true|false
 {% endraw %}
 
-<a id="hipchat"></a>
+
 ## HipChat
 
 HipChat has two versions of API: v1 and v2. AppVeyor supports both versions though notifications sent using API v1 allow specifying "from" field:
@@ -140,7 +135,7 @@ Default HipChat message template:
 
 > Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
-<a id="slack"></a>
+
 ## Slack
 
 Slack notification nicely differentiates between passed and failed builds by changing color of AppVeyor logo:
@@ -181,7 +176,7 @@ Default Slack message template:
 
 
 
-<a id="campfire"></a>
+
 ## Campfire
 
 ### Authentication token
@@ -215,7 +210,7 @@ Default Campfire message template:
 > Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
 
-<a id="vso-team-rooms"></a>
+
 ## VSO Team Rooms
 
 ### Authentication
@@ -243,7 +238,7 @@ Default VSO message template
         template: "{{message}}, {{commitId}}, ..."
 {% endraw %}
 
-<a id="webhooks"></a>
+
 ## Webhooks
 
 Configuring webhooks in `appveyor.yml`:
@@ -341,7 +336,6 @@ When webhook notification triggers AppVeyor makes POST request to the webhook UR
 
 
 
-<a id="message-template"></a>
 ## Customizing message template
 
 HipChat, Slack and Campfire providers support custom message template.
