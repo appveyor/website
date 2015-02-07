@@ -110,6 +110,7 @@
     <Compile Include="Engine\Markdown.cs" />
     <Compile Include="Engine\Page.cs" />
     <Compile Include="Engine\Paginator.cs" />
+    <Compile Include="Engine\Request.cs" />
     <Compile Include="Engine\Routes.cs" />
     <Compile Include="Engine\Site.cs" />
     <Compile Include="Engine\Tags\Highlight.cs" />

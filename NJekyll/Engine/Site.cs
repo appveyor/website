@@ -59,9 +59,6 @@ namespace NJekyll.Engine
             // load _config.yml
             _site = LoadSiteConfig();
 
-            // mobile flag
-            _site["is_mobile_safari"] = IsMobileSafari(HttpContext.Current);
-
             // site URL
             _site["url"] = HttpContext.Current.Request.Url.GetComponents(UriComponents.SchemeAndServer, UriFormat.Unescaped);
 
@@ -133,6 +130,7 @@ namespace NJekyll.Engine
             var context = new Context();
             context["site"] = _site;
             context["page"] = page;
+            context["request"] = new Request(HttpContext.Current);
             context.AddFilters(typeof(Filters));
 
             if (parameters != null)
@@ -335,25 +333,6 @@ namespace NJekyll.Engine
         public static void AddToCache(string key, object value, string[] dependencyPaths, string[] dependencyKeys)
         {
             HttpContext.Current.Cache.Insert(key, value, new System.Web.Caching.CacheDependency(dependencyPaths, dependencyKeys));
-        }
-
-        public static bool IsMobileSafari(HttpContext context)
-        {
-            if (context != null)
-            {
-                var userAgent = context.Request.UserAgent;
-
-                if (!string.IsNullOrEmpty(userAgent))
-                {
-                    var ipodIndex = userAgent.IndexOf("iPod");
-                    var iphoneIndex = userAgent.IndexOf("iPhone");
-                    var ipadIndex = userAgent.IndexOf("iPad");
-
-                    if (iphoneIndex > -1 || ipodIndex > -1 || ipadIndex > -1) return true;
-                }
-            }
-
-            return false;
         }
 
         #region YAML

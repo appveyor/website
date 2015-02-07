@@ -20,7 +20,7 @@
 
     {{ site.bundles.js }}
 
-    {% if site.is_mobile_safari %}
+    {% if request.is_mobile_safari %}
         <script>
         $(function () {
             $('body').scrollTop(1);
