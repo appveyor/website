@@ -33,6 +33,14 @@ For every cache item AppVeyor calculates checksum and if checksum does not match
 
 AppVeyor uses fastest compression level to minimize I/O and effectively deal with large number of small files. Build cache storage is physically located in the same datacenter as build workers. **Resulting archive should not exceed 100 MB.**
 
+### Cache dependencies
+
+It is possible to specify a dependency for each cache item:
+```
+cache:
+  - C:\ProgramData\chocolatey\lib -> appveyor.yml
+```
+This will mean invalidate `C:\ProgramData\chocolatey\lib` whenever `appveyor.yml` is changed. Dependency check is performed on build start and cache item won't be restored if dependency changed. At the end of successful build cache item will be updated.
 
 ## Configuring cache items
 
@@ -41,7 +49,7 @@ On Environment tab of project settings you can specify directories and files tha
 In `appveyor.yml`:
 
     cache:
-      - packages                     # preserve "packages" directory in the root of build folder
+      - packages -> **\packages.config  # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
       - projectA\libs
-      - node_modules                 # local npm modules
+      - node_modules                    # local npm modules
       - C:\Users\appveyor\AppData\Roaming\npm-cache
