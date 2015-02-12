@@ -1,0 +1,24 @@
+﻿<!--
+layout: one-column
+-->
+
+<div>
+    <h1>{{page.date | date:'MMMM d, yyyy'}}</h1>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    <div class="row">
+        <div class="columns small-6">
+            {% if page.previous %}
+            <a href="{{page.previous.url}}">Previous</a>
+            {% endif %}
+        </div>
+        <div class="columns small-6 text-right">
+            {% if page.next %}
+            <a href="{{page.next.url}}">Next</a>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -3,7 +3,7 @@ layout: post
 title: How AppVeyor improved the development cycle within biicode and GitHub
 ---
 
-*This is a guest blog post from Jordi Mon Companys from [biicode](https://www.biicode.com/) - the maker of C/C++ Dependency Manager.*
+*This is a guest blog post from María de Antón of [biicode](https://www.biicode.com/) - the maker of C/C++ Dependency Manager.*
 
 <hr>
 

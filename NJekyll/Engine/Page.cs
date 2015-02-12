@@ -136,7 +136,7 @@ namespace NJekyll.Engine
 
                 // calculate date and permalink from post URL
                 string pageName = permalinkParts.Last();
-                var match = Regex.Match(pageName, @"^(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})-(?<title>.+)");
+                var match = Regex.Match(pageName, @"^(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})(-(?<title>.+))?");
                 if (match.Success)
                 {
                     string year = match.Groups["year"].Value;

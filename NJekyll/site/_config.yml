@@ -2,6 +2,9 @@
   posts:
     permalink: /blog/:year/:month/:day/:title
     output: true
+  updates:
+    permalink: /updates/:year/:month/:day
+    output: true
   testimonials:
     output: false
 
