@@ -72,6 +72,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Node.js](http://nodejs.org/dist/) 0.10.36 x86:
     * 0.10.26 - 0.10.36 (x86 and x64)
     * 0.11.12 - 0.11.16 (x86 and x64)
+    * 0.12.0 (x86 and x64)
     * 0.8.25 - 0.8.28 (x86 and x64)
 * [io.js](https://iojs.org/dist/): 1.0.0 - 1.1.0 (x86 and x64)
     * Use the following PowerShell command to quickly switch Node.js version: `Install-Product node <version> [x86|x64]`
@@ -103,7 +104,7 @@ Below is the list of software pre-installed on Build Worker.
 
 * [Windows Azure PowerShell](https://github.com/Azure/azure-sdk-tools/releases) 0.8.7.1 (August 2014)
 * [Windows Azure CLI](http://azure.microsoft.com/en-us/downloads/)
-* [CMake](http://www.cmake.org/cmake/resources/software.html) 2.8
+* [CMake](http://www.cmake.org/cmake/resources/software.html) 3.1.2
 * [NuGet](http://docs.nuget.org/docs/start-here/installing-nuget) 2.8.3
 * [Chocolatey](http://chocolatey.org/) v0.9.8.27
 * [GitVersion](http://chocolatey.org/packages/GitVersion.Portable) 2.0.0
