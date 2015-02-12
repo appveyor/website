@@ -59,6 +59,11 @@ Below is the list of software pre-installed on Build Worker.
 * [Visual Studio Express 2013 for Windows with Update 3](http://www.microsoft.com/en-us/download/details.aspx?id=43729)
 * [Visual Studio Express 2013 for Web with Update 3](http://www.microsoft.com/en-us/download/details.aspx?id=43722 )
 
+## Visual Studio 2015
+
+* [Microsoft Visual Studio Ultimate 2015 CTP](https://support.microsoft.com/kb/2967191)
+* [Microsoft Visual Studio 2015 SDK CTP](https://support.microsoft.com/kb/2967191)
+
 ## Languages, libraries, frameworks
 
 * [C++ 11 CTP](http://blogs.msdn.com/b/vcblog/archive/2013/11/18/announcing-the-visual-c-compiler-november-2013-ctp.aspx)
