@@ -29,4 +29,4 @@ Add `InstallSelfSignedCert.ps1` PowerShell script into your repository:
 Then if using `appveyor.yml` call it like that (provided the script is in root of repo):
 
 	before_deploy:
-	  - ps: .\InstallSelfSignedCert.ps1
+	  - PowerShell .\InstallSelfSignedCert.ps1
