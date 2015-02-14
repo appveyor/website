@@ -11,3 +11,22 @@ Local deployment provider deploys artifacts containing web and Windows applicati
 
 Local deployment provider has exactly the same behavior and configuration settings as [Agent Deployment provider](/docs/deployment/agent) with the only difference is that applications
 are being installed locally on the build server.
+
+## Installing self-signed SSL certificate to a website
+
+Add `InstallSelfSignedCert.ps1` PowerShell script into your repository:
+
+	$cert = New-SelfSignedCertificate -DnsName ("localtest.me","*.localtest.me") -CertStoreLocation cert:\LocalMachine\My
+	$rootStore = Get-Item cert:\LocalMachine\Root
+	$rootStore.Open("ReadWrite")
+	$rootStore.Add($cert)
+	$rootStore.Close();
+	Import-Module WebAdministration
+	Set-Location IIS:\SslBindings
+	New-WebBinding -Name "Default Web Site" -IP "*" -Port 443 -Protocol https
+	$cert | New-Item 0.0.0.0!443
+
+Then if using `appveyor.yml` call it like that (provided the script is in root of repo):
+
+	before_deploy:
+	  - ps: .\InstallSelfSignedCert.ps1
