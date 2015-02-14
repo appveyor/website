@@ -90,6 +90,12 @@ To start SQL Server and Reporting Services:
     services:
       - mssql2014rs
 
+### Importing your existing database
+
+You can use the following PowerShell script to attach your own SQL Server database in `.MDF` format:
+
+<script src="https://gist.github.com/FeodorFitsner/6a734f5ee48de949df02.js"></script>
+
 
 ## MySQL
 
