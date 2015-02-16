@@ -41,7 +41,7 @@ or
 
     - path: '**\*.nupkg' # find all NuGet packages recursively
 
-See [appveyor.yml refence](/docs/appveyor-yml) for more details.
+See [appveyor.yml reference](/docs/appveyor-yml) for more details.
 
 
 ## Packaging multiple files in different locations into a single archive
