@@ -55,10 +55,8 @@ Below is the list of software pre-installed on Build Worker.
 
 ## Visual Studio 2013
 
-* [Visual Studio Express 2013 for Windows Desktop with Update 3](http://www.microsoft.com/en-us/download/details.aspx?id=43733)
-* [Visual Studio Express 2013 for Windows with Update 3](http://www.microsoft.com/en-us/download/details.aspx?id=43729)
-* [Visual Studio Express 2013 for Web with Update 3](http://www.microsoft.com/en-us/download/details.aspx?id=43722 )
 * [Visual Studio Community 2013 with Update 4](http://www.visualstudio.com/products/visual-studio-community-vs)
+* [Visual Studio 2013 SDK](http://www.visualstudio.com/downloads/download-visual-studio-vs)
 
 ## Languages, libraries, frameworks
 
