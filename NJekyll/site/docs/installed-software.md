@@ -76,7 +76,9 @@ Below is the list of software pre-installed on Build Worker.
 * [io.js](https://iojs.org/dist/): 1.0.0 - 1.1.0 (x86 and x64)
     * Use the following PowerShell command to quickly switch Node.js version: `Install-Product node <version> [x86|x64]`
     * Active default version in `PATH` is 0.10.36
-* [Go](http://golang.org/dl/) 1.3 x64
+* [Go](http://golang.org/dl/)
+	* 1.4.2 x86 (`C:\go` - default in `PATH`)
+	* 1.4.2 x64 (`C:\go-x64`)
 * Java SE Development Kit (JDK)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) x64 (`C:\Program Files\Java\jdk1.7.0\bin` - default in `PATH`)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) x86 (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)
