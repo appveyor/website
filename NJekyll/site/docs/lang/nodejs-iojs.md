@@ -54,9 +54,13 @@ To switch to a different version of Node.js or io.js use the following PowerShel
 
     Install-Product node <version> [x86|x64]
 
-`<version>` can be specified as `MAJOR.MINOR` to install *the latest* Node.js or io.js build or `MAJOR.MINOR.BUILD` to install *specific* build. When `MAJOR` part of the `<version>` is `1` then **io.js** is installed.
+`<version>` can be specified as `MAJOR` to install *absolute latest* version of Node.js or io.js, `MAJOR.MINOR` to install *the latest* Node.js or io.js build or `MAJOR.MINOR.BUILD` to install *specific* build. When `MAJOR` part of the `<version>` is `1` then **io.js** is installed.
 
-For example to switch Node to the latest available Node.js 0.11.x version use:
+For example to switch runtime to the **latest version of Node.js** use this command (at the time of writing this is the latest 0.12.x branch):
+
+    Install-Product node 0
+
+To switch Node.js to the latest available 0.11.x branch use:
 
     Install-Product node 0.11
 
@@ -66,12 +70,12 @@ To select specific x64 version of Node 0.10.32:
 
 Any `1.x` version automatically assumes you want io.js, so to switch to the **latest version of io.js** use this command:
 
-    Install-Product node 1.0
+    Install-Product node 1
 
 In `appveyor.yml` you should prefix command with `ps` to tell AppVeyor it's PowerShell:
 
     install:
-    - ps: Install-Product node 1.0
+    - ps: Install-Product node 1
 
 ### How that works
 
