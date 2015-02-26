@@ -132,7 +132,7 @@ By default, all SQL Server services are stopped. You can choose SQL Server servi
     services:
       - mssql2014
 
-In connection string for local publishing you could either use standard SQL Server login/password or integrated security (`Intergrated security=SSPI`). Below is a complete example of `appveyor.yml` for building SSDT package, pushing it to build artifacts and then publishing to a local SQL Server:
+In connection string for local publishing you could either use standard SQL Server login/password or integrated security (`Integrated Security=SSPI`). Below is a complete example of `appveyor.yml` for building SSDT package, pushing it to build artifacts and then publishing to a local SQL Server:
 
     services:
       - mssql2014
