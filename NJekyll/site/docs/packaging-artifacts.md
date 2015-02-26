@@ -81,3 +81,18 @@ The following command pushes the contents of `app.publish` folder preserving dir
     ps: $root = Resolve-Path .\MyApp\bin\Debug\app.publish; [IO.Directory]::GetFiles($root.Path, '*.*', 'AllDirectories') | % { Push-AppveyorArtifact $_ -FileName $_.Substring($root.Path.Length + 1) -DeploymentName to-publish }
 
 See [Pushing artifacts from scripts](/docs/build-worker-api#push-artifact) for more details.
+
+## Getting information about uploaded artifacts
+
+After all artifacts uploaded and *before* starting deployment AppVeyor adds into PowerShell context `$artifacts` hash table with all artifacts. The key of this hash table is artifact *deployment name* and value is the object with the following fields:
+
+* `name` - artifact deployment name. GUID if was not specified;
+* `type` - artifact type;
+* `path` - local artifact path;
+* `url` - temporary download URL which is valid for 10 minutes.
+
+You can iterate through all elements of `$artifacts` hash table with the following code:
+
+foreach($artifactName in $artifacts.keys) {
+  $artifacts[$artifactName]
+}
