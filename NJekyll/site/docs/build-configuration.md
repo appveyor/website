@@ -408,7 +408,11 @@ The matrix is already optimized for fast failing. The logic is as follows:
 
 See [complete appveyor.yml reference](/docs/appveyor-yml) for full syntax.
 
+## Rolling builds
 
+"Rolling builds" are great for very active OSS projects with lengthy queue. Whenever you do a new commit to the same branch *OR* pull request all current queued/running builds for that branch or PR are cancelled and the new one is queued. Other words, rolling builds make sure that only the most recent commit is built.
+
+For example, you do commit `A` to `master` branch - it's being queued and then run. Then you do `B` commit to `master` branch while `A` is running - build of `A` will be cancelled immediately and `B` is queued. If you do another `C` commit while `B` is queued it will be cancelled and `C` queued.
 
 ## Scheduled builds
 
