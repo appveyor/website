@@ -25,7 +25,7 @@ The following is required on the server to run Deployment Agent:
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
 
-2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v2.4.16 from 02/11/2015)
+2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v2.4.22 from 02/26/2015)
 
 3. Specify **Environment access key** during Deployment Agent installation.
 
@@ -164,6 +164,10 @@ Other properties:
 * `service_name` - The name of Windows service. If specified Windows service will be created.
 
 * `service_display_name` - Display name of Windows service. If not specified `service_name` will be used.
+
+* `service_username` - The name of user account to run service under. If not specific `LocalSystem` is used.
+
+* `service_password` - User account password if `service_username` is set.
 
 * `path` - Application root directory. If not specified default application path is `c:\appveyor\applications\<artifact_name>`.
 
