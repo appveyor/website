@@ -53,3 +53,17 @@ In `appveyor.yml`:
       - projectA\libs
       - node_modules                    # local npm modules
       - C:\Users\appveyor\AppData\Roaming\npm-cache
+
+## Caching Chocolatey packages
+
+> Caching Chocolatey packages/installations might be tricky as it depends on whether the package is "portable" (installed from a zip - [7xip.commandline](https://chocolatey.org/packages/7zip.commandline) is a good example) or "native" (installed from MSI to `Program Files`, for example [git.install](https://chocolatey.org/packages/git.install)). Read more about [distinction between installable and portable applications](https://github.com/chocolatey/choco/wiki/ChocolateyFAQs#what-distinction-does-chocolatey-make-between-an-installable-and-a-portable-application). **The solution below works for "portable" packages only.**
+
+`C:\Users\appveyor\AppData\Local\Temp\chocolatey\` is used as a temp location for downloading packages and, generally, shouldn't be cached.
+
+Portable packages () are installed to `C:\ProgramData\chocolatey\lib` and "shim" for executable is added to `C:\ProgramData\chocolatey\bin`. So, the solution for caching portable packages could be:
+
+	cache:
+	- C:\ProgramData\chocolatey\bin -> appveyor.yml
+	- C:\ProgramData\chocolatey\lib -> appveyor.yml
+
+If your build logic is in some `my_build.cmd` you can use it as a dependency instead of `appveyor.yml`.
