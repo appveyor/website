@@ -28,7 +28,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4](http://www.microsoft.com/en-us/download/details.aspx?id=3062)
 * [Windows Phone SDK 8.0](http://www.microsoft.com/en-us/download/details.aspx?id=35471)
 * [Azure SDKs](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5
-* [AWS SDK .NET](http://aws.amazon.com/sdk-for-net/)
+* [AWS SDK .NET](http://aws.amazon.com/sdk-for-net/) v2.3.24.3
 * [Microsoft SilverLight 5 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=28359)
 * [Windows PowerShell 2.0 SDK](http://www.microsoft.com/en-ca/download/details.aspx?id=2560)
 * [DirectX SDK](http://www.microsoft.com/en-us/download/details.aspx?id=6812) (`C:\Program Files (x86)\Microsoft DirectX SDK`)
@@ -73,8 +73,10 @@ Below is the list of software pre-installed on Build Worker.
     * 0.11.12 - 0.11.16 (x86 and x64)
     * 0.12.0 (x86 and x64)
     * 0.8.25 - 0.8.28 (x86 and x64)
-* [io.js](https://iojs.org/dist/): 1.0.0 - 1.1.0 (x86 and x64)
+* [io.js](https://iojs.org/dist/): 1.0.0 - 1.5.0 (x86 and x64)
     * Use the following PowerShell command to quickly switch Node.js version: `Install-Product node <version> [x86|x64]`
+    * Switching to the latest io.js version: `Install-Product node 1`
+    * Switching to the latest Node.js version: `Install-Product node 0`
     * Active default version in `PATH` is 0.10.36
 * [Go](http://golang.org/dl/)
 	* 1.4.2 x86 (`C:\go` - default in `PATH`)
@@ -91,6 +93,8 @@ Below is the list of software pre-installed on Build Worker.
     * 2.0.0-p598 x64 (`C:\Ruby200-x64`) with RubyGems 2.0.15
     * 2.1.5 x86 (`C:\Ruby21`) with RubyGems 2.2.3
     * 2.1.5 x64 (`C:\Ruby21-x64`) with RubyGems 2.2.3
+    * 2.2.1 x86 (`C:\Ruby22`) with RubyGems 2.4.6
+    * 2.2.1 x64 (`C:\Ruby22-x64`) with RubyGems 2.4.6
 * [Python](https://www.python.org/downloads/windows/)
     * 2.7.8 x86 (`C:\Python27` - default in `PATH`)
     * 2.7.8 x64 (`C:\Python27-x64`)
@@ -99,6 +103,7 @@ Below is the list of software pre-installed on Build Worker.
     * 3.4.1 x86 (`C:\Python34`)
     * 3.4.1 x64 (`C:\Python34-x64`)
 * [Perl](http://www.activestate.com/activeperl/downloads) 5.20.1.2000 x86 (`C:\Perl` in `PATH`)
+* `Erlang OTP runtime 17.4 x64` installed into `C:\Program Files\erl6.3`
 * [MinGW](http://www.mingw.org/) (core components and compilers - `C:\MinGW`)
 
 ## Tools
@@ -107,7 +112,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Windows Azure CLI](http://azure.microsoft.com/en-us/downloads/)
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 3.1.2
 * [NuGet](http://docs.nuget.org/docs/start-here/installing-nuget) 2.8.3
-* [Chocolatey](http://chocolatey.org/) v0.9.8.27
+* [Chocolatey](http://chocolatey.org/) v0.9.8.33
 * [GitVersion](http://chocolatey.org/packages/GitVersion.Portable) 2.0.0
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
 
@@ -120,11 +125,11 @@ Below is the list of software pre-installed on Build Worker.
 
 ## Selenium browser testing
 
-* [Chrome Web Driver](http://chromedriver.storage.googleapis.com/index.html) 2.10
-* [Internet Explorer Web Driver](http://selenium-release.storage.googleapis.com/index.html) 2.42
+* [Chrome Web Driver](http://chromedriver.storage.googleapis.com/index.html) 2.14
+* [Internet Explorer Web Driver](http://selenium-release.storage.googleapis.com/index.html) 2.45
 * Internet Explorer 11
 * FireFox 30.0 x86
-* Chrome 36.0.1985.125
+* Chrome 41.0.2272.87
 
 
 ## Services and databases
