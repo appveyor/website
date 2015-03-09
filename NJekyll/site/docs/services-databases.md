@@ -131,10 +131,10 @@ To start PostgreSQL in `appveyor.yml`:
 
 This is an example how to supply PG credentials to work with command-line tools:
 
-	SET PGUSER=postgres
-	SET PGPASSWORD=Password12!
-	PATH=C:\Program Files\PostgreSQL\9.3\bin\;%PATH%
-	createdb YourDatabase
+    SET PGUSER=postgres
+    SET PGPASSWORD=Password12!
+    PATH=C:\Program Files\PostgreSQL\9.3\bin\;%PATH%
+    createdb YourDatabase
 
 ## Internet Information Services
 

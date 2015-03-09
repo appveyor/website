@@ -79,8 +79,8 @@ Below is the list of software pre-installed on Build Worker.
     * Switching to the latest Node.js version: `Install-Product node 0`
     * Active default version in `PATH` is 0.10.36
 * [Go](http://golang.org/dl/)
-	* 1.4.2 x86 (`C:\go` - default in `PATH`)
-	* 1.4.2 x64 (`C:\go-x64`)
+    * 1.4.2 x86 (`C:\go` - default in `PATH`)
+    * 1.4.2 x64 (`C:\go-x64`)
 * Java SE Development Kit (JDK)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) x64 (`C:\Program Files\Java\jdk1.7.0\bin` - default in `PATH`)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) x86 (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)

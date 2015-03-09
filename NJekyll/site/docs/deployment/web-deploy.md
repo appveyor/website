@@ -65,12 +65,12 @@ Just to give you a sense of the technique described in that article this is how 
 
 If files you would like to include into the package are in the same project and you don't need to change their archive paths then you could use a simpler approach. Just add the following `BeforeBuild` target to Web Application's `.csproj` or `.vbproj`:
 
-	<Target Name="BeforeBuild">
-	  <ItemGroup>
-	    <Content Include="some-path\*.*" />
+    <Target Name="BeforeBuild">
+      <ItemGroup>
+        <Content Include="some-path\*.*" />
         <Content Include="some-other-path\*.*" />
-	  </ItemGroup>
-	</Target>
+      </ItemGroup>
+    </Target>
 
 
 ## Web Deploy deployment settings
