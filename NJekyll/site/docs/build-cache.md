@@ -62,8 +62,8 @@ In `appveyor.yml`:
 
 Portable packages () are installed to `C:\ProgramData\chocolatey\lib` and "shim" for executable is added to `C:\ProgramData\chocolatey\bin`. So, the solution for caching portable packages could be:
 
-	cache:
-	- C:\ProgramData\chocolatey\bin -> appveyor.yml
-	- C:\ProgramData\chocolatey\lib -> appveyor.yml
+    cache:
+    - C:\ProgramData\chocolatey\bin -> appveyor.yml
+    - C:\ProgramData\chocolatey\lib -> appveyor.yml
 
 If your build logic is in some `my_build.cmd` you can use it as a dependency instead of `appveyor.yml`.

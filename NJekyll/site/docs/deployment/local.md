@@ -16,17 +16,17 @@ are being installed locally on the build server.
 
 Add `InstallSelfSignedCert.ps1` PowerShell script into your repository:
 
-	$cert = New-SelfSignedCertificate -DnsName ("localtest.me","*.localtest.me") -CertStoreLocation cert:\LocalMachine\My
-	$rootStore = Get-Item cert:\LocalMachine\Root
-	$rootStore.Open("ReadWrite")
-	$rootStore.Add($cert)
-	$rootStore.Close();
-	Import-Module WebAdministration
-	Set-Location IIS:\SslBindings
-	New-WebBinding -Name "Default Web Site" -IP "*" -Port 443 -Protocol https
-	$cert | New-Item 0.0.0.0!443
+    $cert = New-SelfSignedCertificate -DnsName ("localtest.me","*.localtest.me") -CertStoreLocation cert:\LocalMachine\My
+    $rootStore = Get-Item cert:\LocalMachine\Root
+    $rootStore.Open("ReadWrite")
+    $rootStore.Add($cert)
+    $rootStore.Close();
+    Import-Module WebAdministration
+    Set-Location IIS:\SslBindings
+    New-WebBinding -Name "Default Web Site" -IP "*" -Port 443 -Protocol https
+    $cert | New-Item 0.0.0.0!443
 
 Then if using `appveyor.yml` call it like that (provided the script is in root of repo):
 
-	before_deploy:
-	  - PowerShell .\InstallSelfSignedCert.ps1
+    before_deploy:
+      - PowerShell .\InstallSelfSignedCert.ps1
