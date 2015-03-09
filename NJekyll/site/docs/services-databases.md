@@ -96,6 +96,9 @@ You can use the following PowerShell script to attach your own SQL Server databa
 
 <script src="https://gist.github.com/FeodorFitsner/6a734f5ee48de949df02.js"></script>
 
+### Enabling TCP/IP, Named Pipes and setting instance alias
+
+<script src="https://gist.github.com/FeodorFitsner/d971c5a98782d211640d.js"></script>
 
 ## MySQL
 
