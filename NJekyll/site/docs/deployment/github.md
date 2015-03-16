@@ -43,7 +43,9 @@ To promote selected "tag" build to GitHub release:
 
 ## Provider settings
 
-* **Release name** (`release`) - Optional. The name of release. If not specified build tag or version is used as release name. You can use environment variables in release name, for example `myproduct-v$(appveyor_build_version)`. **Release name cannot contain whitespaces - this is GitHub requirement, not an AppVeyor limitation**.
+* **Tag name** (`tag`) - Optional. If not specified build tag or version is used. You can use environment variables in tag name, for example `myproduct-v$(appveyor_build_version)`.
+
+* **Release name** (`release`) - Optional. The name of release. If not specified tag name is used as release name. You can use environment variables in release name, for example `product release of v$(appveyor_build_version)`.
 
 * **Release description** (`description`) - optional release description.
 
