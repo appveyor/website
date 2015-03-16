@@ -76,6 +76,9 @@ To append that line to `.git-credentials` we use the following PowerShell comman
 
 > `.git-credentials` is very "sensitive" to a new line that must be `\n`. If you try appending a line with something more "natural" like `echo https://%access_token%:x-oauth-basic@github.com>> %USERPROFILE%\.git-credentials` it won't work because `\r\n` will be used.
 
+## Updating remote
+
+If you are pushing to the same *private* repository the build was cloned from you should probably update its remote or add a new one using HTTPS protocol.
 
 ## Conclusion
 
