@@ -34,5 +34,7 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_REPO_COMMIT_MESSAGE` - commit message
 * `APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED` - the rest of commit message after line break (if exists)
 * `APPVEYOR_SCHEDULED_BUILD` - `True` if the build runs by scheduler
+* `APPVEYOR_FORCED_BUILD` - `True` (or undefined) - builds started by "New Build" button, or from the same API
+* `APPVEYOR_RE_BUILD` - `True` (or undefined) - builds started the "Re-Build Commit" button, or from the same API
 * `PLATFORM` - platform name set on Build tab of project settings (or through `platform` parameter in `appveyor.yml`).
 * `CONFIGURATION` - configuration name set on Build tab of project settings (or through `configuration` parameter in `appveyor.yml`).
