@@ -120,7 +120,7 @@ If not specified and website does not exists default directory path is `c:\appve
 * `remove_files` - Agent uses Web Deploy to synchronize website folder contents. By default, it only adds new files and modifies existing.
 When `remove_files` is set to `true` Agent performs full content synchronization, i.e. deletes files at destination that don't exist in the package.
 
-* `skip_dirs` - Semicolon list of regular expressions specifying the list of directories to skip while synchronizing web site contents, for example `\\App_data;\\uploads`.
+* `skip_dirs` - semicolon list of regular expressions specifying the list of directories to skip while synchronizing web site contents, for example `\\App_data;\\uploads`.
 
 * `skip_files` - semicolon list of regular expressions specifying the list of files to skip while synchronizing web site contents, for example `web.config` (all web.configs) or only the root config for MVC apps `^((?!Views).)*web\.config$` (thanks to [this blog post](http://www.keza.net/2011/11/15/skipping-mvc-web-config-files-with-msdeploy/)).
 
@@ -150,7 +150,9 @@ Other properties:
 
 * `group` - Deployment group.
 
+* `skip_dirs` - semicolon list of regular expressions specifying the list of directories to skip while synchronizing application folder contents, for example `\\Logs;\\files`.
 
+* `skip_files` - semicolon list of regular expressions specifying the list of files to skip while synchronizing application folder contents.
 
 
 ## Deploying artifact package as a Windows service
@@ -175,6 +177,9 @@ Other properties:
 
 * `group` - Deployment group.
 
+* `skip_dirs` - semicolon list of regular expressions specifying the list of directories to skip while synchronizing application folder contents, for example `\\Logs;\\files`.
+
+* `skip_files` - semicolon list of regular expressions specifying the list of files to skip while synchronizing application folder contents.
 
 
 ## Publishing SSDT package artifact to SQL Server
