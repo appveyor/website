@@ -68,19 +68,19 @@ Below is the list of software pre-installed on Build Worker.
 * [WiX](http://wixtoolset.org/) 3.8
 * [Silverlight 5 x64 Developer Runtime](http://go.microsoft.com/fwlink/?LinkID=229324)
 * SQL Server Data tools for [Visual Studio 2012](http://msdn.microsoft.com/en-us/jj650015) and [2013](http://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
-* [Node.js](http://nodejs.org/dist/) 0.10.36 x86:
-    * 0.10.26 - 0.10.36 (x86 and x64)
+* [Node.js](http://nodejs.org/dist/) 0.10.37 x86 - default one:
+    * 0.10.26 - 0.10.37 (x86 and x64)
     * 0.11.12 - 0.11.16 (x86 and x64)
     * 0.12.0 (x86 and x64)
     * 0.8.25 - 0.8.28 (x86 and x64)
-* [io.js](https://iojs.org/dist/): 1.0.0 - 1.5.0 (x86 and x64)
+* [io.js](https://iojs.org/dist/): 1.0.0 - 1.5.1 (x86 and x64)
     * Use the following PowerShell command to quickly switch Node.js version: `Install-Product node <version> [x86|x64]`
     * Switching to the latest io.js version: `Install-Product node 1`
     * Switching to the latest Node.js version: `Install-Product node 0`
-    * Active default version in `PATH` is 0.10.36
+    * Active default version in `PATH` is 0.10.37
 * [Go](http://golang.org/dl/)
-    * 1.4.2 x86 (`C:\go` - default in `PATH`)
-    * 1.4.2 x64 (`C:\go-x64`)
+    * 1.4.2 x64 (`C:\go` - default in `PATH`)
+    * 1.4.2 x86 (`C:\go-x86`)
 * Java SE Development Kit (JDK)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) x64 (`C:\Program Files\Java\jdk1.7.0\bin` - default in `PATH`)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) x86 (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)
@@ -118,9 +118,9 @@ Below is the list of software pre-installed on Build Worker.
 
 ## Testing
 
-* [NUnit](http://nunit.org/index.php?p=download) 2.6.3
-* [xUnit](https://github.com/xunit/xunit/releases) 1.9.2
-* [xUnit](https://github.com/xunit/xunit/releases) 2.0.0
+* [NUnit](http://nunit.org/index.php?p=download) 2.6.3 in `C:\Tools\NUnit\bin`
+* [xUnit](https://github.com/xunit/xunit/releases) 1.9.2 in `C:\Tools\xUnit`
+* [xUnit](https://www.nuget.org/packages/xunit.runner.console/2.0.0) 2.0.0 RTM in `C:\Tools\xUnit20`
 * [Machine.Specifications (MSpec)](http://www.nuget.org/packages/Machine.Specifications)
 
 ## Selenium browser testing
