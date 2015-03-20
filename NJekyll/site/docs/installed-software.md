@@ -73,7 +73,7 @@ Below is the list of software pre-installed on Build Worker.
     * 0.11.12 - 0.11.16 (x86 and x64)
     * 0.12.0 (x86 and x64)
     * 0.8.25 - 0.8.28 (x86 and x64)
-* [io.js](https://iojs.org/dist/): 1.0.0 - 1.5.1 (x86 and x64)
+* [io.js](https://iojs.org/dist/): 1.0.0 - 1.6.1 (x86 and x64)
     * Use the following PowerShell command to quickly switch Node.js version: `Install-Product node <version> [x86|x64]`
     * Switching to the latest io.js version: `Install-Product node 1`
     * Switching to the latest Node.js version: `Install-Product node 0`
