@@ -1,5 +1,5 @@
 .pricing-banner {
-    background-color: #0B99D6;
+    background-color: #0b99d6;
     padding-bottom: 1rem;
 }
 
@@ -9,14 +9,13 @@
 }
 
 .pricing-banner .big-button {
-    background-color: #18C718;
+    background-color: #18c718;
 }
 
 .pricing-banner .big-button:hover,
 .pricing-banner .big-button:active {
-    background-color: #1ED11E;
+    background-color: #1ed11e;
 }
-
 
 .plans {
     margin-top: 2rem;
@@ -35,7 +34,7 @@
 }
 
 .pricing-table .price {
-    font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2.3rem;
 }
 
@@ -59,7 +58,7 @@
 
 .pricing-table .title {
     color: #fff;
-    font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.0rem;
     background-color: #999;
     padding: 0;
@@ -68,7 +67,7 @@
 
 .pricing-table.popular .title {
     font-size: 1.2rem;
-    background-color: #3EB33E;
+    background-color: #3eb33e;
 }
 
 .pricing-table.premium .title {

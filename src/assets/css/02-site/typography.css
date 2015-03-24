@@ -3,7 +3,9 @@ p {
     margin: 1rem 0;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
     font-size: 0.9rem;
 }
 
@@ -13,7 +15,8 @@ a {
     line-height: inherit;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: #00C7F4;
 }
 
@@ -59,7 +62,8 @@ h6 {
     font-size: 1rem;
 }
 
-code, pre {
+code,
+pre {
     font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     font-size: 0.8rem;
     font-weight: normal;
@@ -106,36 +110,4 @@ pre > code {
 
 li ul li {
     font-size: 0.8rem;
-}
-
-/* Medium and larger screens */
-/*@media only screen and (min-width: 40.063em) {
-    h1 {
-        font-size: 1.6rem;
-        color: #555;
-    }
-
-    h2 {
-        font-size: 2.3125rem;
-    }
-
-    h3 {
-        font-size: 1.6875rem;
-    }
-
-    h4 {
-        font-size: 1.4375rem;
-    }
-}*/
-
-.gist .gist-file {
-  border: none!important;
-}
-
-.gist .gist-data {
-  border-bottom: none!important;
-}
-
-.gist .gist-meta {
-  background-color: inherit!important;
 }

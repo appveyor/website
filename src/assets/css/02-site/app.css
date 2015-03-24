@@ -1,9 +1,4 @@
-html {
-  background-color: #fff;
-}
-
 body {
-    background: transparent;
     font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -15,10 +10,10 @@ body {
 /* for mobile screens */
 @media only screen and (max-width: 40em) {
     .left {
-        float: none!important;
+        float: none !important;
     }
     .right {
-        float: none!important;
+        float: none !important;
     }
 }
 
@@ -33,15 +28,15 @@ body {
     border-top: solid 1px #eee;
 }
 
-    .footer .columns {
-        margin-bottom: 1rem;
-        padding-top: 0.5rem;
-        font-size: 0.75rem;
-    }
+.footer .columns {
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    font-size: 0.75rem;
+}
 
-    .footer ul {
-        font-size: 0.75rem;
-    }
+.footer ul {
+    font-size: 0.75rem;
+}
 
 .footer ul {
     list-style: none;
@@ -49,26 +44,25 @@ body {
     padding: 0;
 }
 
-    .footer ul li {
-        display: inline-block;
-        margin: 0 1rem 0 0;
-        padding: 0;
-    }
+.footer ul li {
+    display: inline-block;
+    margin: 0 1rem 0 0;
+    padding: 0;
+}
 
-    .footer a,
-    .footer a:link,
-    .footer a:hover,
-    .footer a:active,
-    .footer a:visited {
-        color: #777;
-    }
+.footer a,
+.footer a:link,
+.footer a:hover,
+.footer a:active,
+.footer a:visited {
+    color: #777;
+}
 
 .copyright {
     padding-right: 10px;
 }
 
-.twitter
-{
+.twitter {
     display: inline-block;
     padding-left: 23px !important;
     background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAMCAYAAAC9QufkAAAAzElEQVR4AZXRM1xoYRiA8XNtb9dW2DK37Nqy91+78p61I3NOS7Zt15Lx9eQ31/A/ft4jzSJn5CE+KqW0i3DOC91YRzXM4ARzjYUtuvD9gtAK21AS2uCgsXCFwhLC8VDEWSKQBvBbY/ESM+LEFFLhj0oZCRGK4XuxNQqhbsH3KP6C9VvG/xTx0bv5YOWGYaeikfEHVNzmkRXkb4nCzjVhGe7IWA4wwogMhFq8k9fvBYYIQiLmoSBtIwMvjiIZP4Y/CjGODcyiEfHQl4G0C59u3zG5avzYAAAAAElFTkSuQmCC") no-repeat 4px 50%;
@@ -133,9 +127,4 @@ div.title h2 {
 .legal ol ol ol ol ol {
     margin-left: 2rem;
     list-style-type: upper-alpha;
-}
-
-/* misc */
-.disqus {
-    margin-top: 1.5rem;
 }

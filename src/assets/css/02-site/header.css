@@ -13,11 +13,11 @@
 .top-bar-section li a:not(.button):hover,
 .no-js .top-bar-section ul li:hover > a,
 .no-js .top-bar-section ul li:active > a {
-    background-color: #3A2F2F;
+    background-color: #3a2f2f;
 }
 
 .top-bar-section .dropdown li label {
-    color: #5F5555;
+    color: #5f5555;
 }
 
 /* divider */
@@ -28,7 +28,7 @@
 
 /* expanded menu on mobile phone */
 .top-bar.expanded .title-area {
-    background-color: #3A2F2F;
+    background-color: #3a2f2f;
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
@@ -36,7 +36,7 @@
 }
 
 .top-bar-section li:not(.has-form) a:hover:not(.button) {
-    background: none repeat scroll 0% 0% #3A2F2F;
+    background: none repeat scroll 0 0 #3a2f2f;
 }
 
 /* Medium and large screens */

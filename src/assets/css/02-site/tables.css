@@ -2,11 +2,14 @@ table {
     border-collapse: collapse;
 }
 
-table, td, th {
+table,
+td,
+th {
     border: 1px solid #ccc;
 }
 
-td, th {
+td,
+th {
     padding: 0.5rem;
 }
 
@@ -23,17 +26,4 @@ table.no-borders,
 table.no-borders td,
 table.no-borders th {
     border: none;
-}
-
-table tr th, table tr td {
-    font-size: inherit; /* fixes gist issue */
-}
-
-table tbody tr td,
-table tr td {
-    line-height: inherit; /* fixes gist issue */
-}
-
-.gist .gist-data {
-    overflow: inherit;
 }
