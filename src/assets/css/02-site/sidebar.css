@@ -24,15 +24,15 @@
     list-style: none;
 }
 
-    .sidebar ul li h4 {
-        text-transform: uppercase;
-        font-size: 1rem;
-    }
+.sidebar ul li h4 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
 
-    .sidebar ul li h4,
-    .sidebar ul li h4 a {
-        color: #777!important;
-    }
+.sidebar ul li h4,
+.sidebar ul li h4 a {
+    color: #777 !important;
+}
 
 /* 2nd level */
 .sidebar ul ul {
@@ -41,6 +41,6 @@
 
 .sidebar ul ul li a {
     display: block;
-    padding: 0.2rem 0.2rem;
+    padding: 0.2rem;
     font-size: 0.9rem;
 }

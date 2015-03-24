@@ -7,7 +7,7 @@
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    background-color: #FCF5E0;
+    background-color: #fcf5e0;
 }
 
 iframe {
@@ -21,8 +21,8 @@ iframe {
 .docs-content h6[id]:before {
     content: " ";
     display: block;
-    height: 60px;
-    margin-top: -60px;
+    height: 45px;
+    margin-top: -45px;
     visibility: hidden;
 }
 

@@ -1,49 +1,49 @@
 /* banner */
 .home-banner {
     text-align: center;
-    background-color: #0B99D6;
+    background-color: #0b99d6;
 }
 
-    .home-banner h1 {
-        font: 600 2.3rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #fff;
-        margin: 1.5rem 0 0;
-    }
+.home-banner h1 {
+    font: 600 2.3rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 1.5rem 0 0;
+}
 
-    .home-banner h2 {
-        font: normal 1.1rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        color: #fff;
-    }
+.home-banner h2 {
+    font: normal 1.1rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+}
 
-    .home-banner .buttons {
-        margin: 1.5rem 0 0 0;
-    }
+.home-banner .buttons {
+    margin: 1.5rem 0 0 0;
+}
 
-        .home-banner .buttons .big-button {
-            margin-bottom: 0.4rem;
-            background-color: #18C718;
-        }
+.home-banner .buttons .big-button {
+    margin-bottom: 0.4rem;
+    background-color: #18c718;
+}
 
-            .home-banner .buttons .big-button:hover,
-            .home-banner .buttons .big-button:active {
-                background-color: #1ED11E;
-            }
+.home-banner .buttons .big-button:hover,
+.home-banner .buttons .big-button:active {
+    background-color: #1ed11e;
+}
 
-    .home-banner .disclosure {
-        font-size: 0.75rem;
-        color: #e0e0e0;
-        margin: 0;
-    }
+.home-banner .disclosure {
+    font-size: 0.75rem;
+    color: #e0e0e0;
+    margin: 0;
+}
 
-    .home-banner img {
-        margin-top: 1.2rem;
-        margin-bottom: 1px;
-    }
+.home-banner img {
+    margin-top: 1.2rem;
+    margin-bottom: 1px;
+}
 
 
 /* Features and benefits */
 .features-container {
-    background-color: #3B3333;
+    background-color: #3b3333;
 }
 
 .features h2 {
@@ -58,23 +58,23 @@
     margin-top: 1rem;
 }
 
-    .feature h3 {
-        text-align: center;
-        font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 1.2rem;
-        color: #fff;
-        margin: 0.7rem 0 0.5rem 0;
-    }
+.feature h3 {
+    text-align: center;
+    font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0.7rem 0 0.5rem 0;
+}
 
-    .feature p {
-        font-family: "Open Sans", "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 0.9rem;
-        font-weight: 300;
-        text-align: center;
-        color: #e0e0e0;
-        margin: 0.5rem 0 2rem 0;
-        line-height: 1.3rem;
-    }
+.feature p {
+    font-family: "Open Sans", "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-align: center;
+    color: #e0e0e0;
+    margin: 0.5rem 0 2rem 0;
+    line-height: 1.3rem;
+}
 
 .home-sprite {
     background-image: url("../images/home/home-sprite.png");
@@ -86,23 +86,23 @@
     margin: 0 auto;
 }
 
-    /*.home-sprite*/.no-setup {
-        background-position: 0 0;
-        width: 78px;
-        height: 78px;
-    }
+/*.home-sprite*/.no-setup {
+    background-position: 0 0;
+    width: 78px;
+    height: 78px;
+}
 
-    /*.home-sprite*/.secure {
-        background-position: -78px 0;
-        width: 78px;
-        height: 78px;
-    }
+/*.home-sprite*/.secure {
+    background-position: -78px 0;
+    width: 78px;
+    height: 78px;
+}
 
-    /*.home-sprite*/.delivery {
-        background-position: -156px 0;
-        width: 78px;
-        height: 78px;
-    }
+/*.home-sprite*/.delivery {
+    background-position: -156px 0;
+    width: 78px;
+    height: 78px;
+}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min--moz-device-pixel-ratio: 2.0), only screen and (-o-min-device-pixel-ratio: 200/100), only screen and (min-device-pixel-ratio: 2.0) {
     .home-sprite {
