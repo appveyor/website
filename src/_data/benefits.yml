@@ -1,0 +1,30 @@
+-
+  text: No setup required and zero maintenance
+  mark: "yes"
+-
+  text: Developer-friendly build configs using UI or YAML - our config won’t kill you!
+  mark: "yes"
+-
+  text: Isolated build workers, pristine environment for every build, admin access to build workers
+  mark: "yes"
+-
+  text: Blazingly fast builds on dedicated hardware with SSD drives
+  mark: "yes"
+-
+  text: Built-in deployment and NuGet server
+  mark: "yes"
+-
+  text: Multi-branch builds to support your workflow
+  mark: "yes"
+-
+  text: Team work with granular permissions
+  mark: "yes"
+-
+  text: First-class support and vibrant community
+  mark: "yes"
+-
+  text: Pay-as-you-go, no upfront investment in expensive software
+  mark: "yes"
+-
+  text: 30-page guide on "How to setup CI for your project in 1 month"
+  mark: "yes"

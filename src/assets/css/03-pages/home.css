@@ -1,0 +1,378 @@
+/* banner */
+.home-banner {
+    text-align: center;
+    background-color: #0B99D6;
+}
+
+    .home-banner h1 {
+        font: 600 2.3rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #fff;
+        margin: 1.5rem 0 0;
+    }
+
+    .home-banner h2 {
+        font: normal 1.1rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #fff;
+    }
+
+    .home-banner .buttons {
+        margin: 1.5rem 0 0 0;
+    }
+
+        .home-banner .buttons .big-button {
+            margin-bottom: 0.4rem;
+            background-color: #18C718;
+        }
+
+            .home-banner .buttons .big-button:hover,
+            .home-banner .buttons .big-button:active {
+                background-color: #1ED11E;
+            }
+
+    .home-banner .disclosure {
+        font-size: 0.75rem;
+        color: #e0e0e0;
+        margin: 0;
+    }
+
+    .home-banner img {
+        margin-top: 1.2rem;
+        margin-bottom: 1px;
+    }
+
+
+/* Features and benefits */
+.features-container {
+    background-color: #3B3333;
+}
+
+.features h2 {
+    margin: 0.7rem 0;
+    text-align: center;
+    font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.feature {
+    margin-top: 1rem;
+}
+
+    .feature h3 {
+        text-align: center;
+        font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.2rem;
+        color: #fff;
+        margin: 0.7rem 0 0.5rem 0;
+    }
+
+    .feature p {
+        font-family: "Open Sans", "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 0.9rem;
+        font-weight: 300;
+        text-align: center;
+        color: #e0e0e0;
+        margin: 0.5rem 0 2rem 0;
+        line-height: 1.3rem;
+    }
+
+.home-sprite {
+    background-image: url("../images/home/home-sprite-new.png");
+    -webkit-background-size: 234px 78px;
+    -moz-background-size: 234px 78px;
+    background-size: 234px 78px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+}
+
+    /*.home-sprite*/.no-setup {
+        background-position: 0 0;
+        width: 78px;
+        height: 78px;
+    }
+
+    /*.home-sprite*/.secure {
+        background-position: -78px 0;
+        width: 78px;
+        height: 78px;
+    }
+
+    /*.home-sprite*/.delivery {
+        background-position: -156px 0;
+        width: 78px;
+        height: 78px;
+    }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min--moz-device-pixel-ratio: 2.0), only screen and (-o-min-device-pixel-ratio: 200/100), only screen and (min-device-pixel-ratio: 2.0) {
+    .home-sprite {
+        background-image: url("../images/home/home-sprite-new@2x.png");
+        -webkit-background-size: 234px 78px;
+        -moz-background-size: 234px 78px;
+        background-size: 234px 78px;
+    }
+}
+
+/* Small screens only*/
+@media only screen and (max-width: 40em) {
+    .home-banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-banner h2 {
+        font-size: 1.1rem;
+    }
+
+    .features h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Customers block */
+.customers-container {
+    margin-bottom: 1rem;
+}
+
+.customers-container h2 {
+    margin: 0.7rem 0;
+    text-align: center;
+    font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+}
+
+.customers-container .logos {
+    text-align: center;
+}
+
+/* Customer logos */
+/*.customer-logo {
+    background: url("../images/home/customers-sprite.png") no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.7rem 1rem;
+}
+
+.rackspace {
+    background-position: -8px -21px;*/
+    /*background-position: -168px -3px;*/
+    /*width: 150px;
+    height: 35px;
+}
+
+.telenor {
+    background-position: -168px -3px;
+    width: 136px;
+    height: 68px;
+}
+
+.microsoft {
+    background-position: -324px -23px;
+    width: 139px;
+    height: 30px;
+}
+
+.granicus {
+    background-position: -479px -24px;
+    width: 137px;
+    height: 29px;
+}
+
+.adazzle {
+    background-position: -633px -25px;
+    width: 98px;
+    height: 28px;
+}
+
+.bannerflow {
+    background-position: -8px -87px;
+    width: 150px;
+    height: 50px;
+}
+
+.snipcart {
+    background-position: -167px -94px;
+    width: 105px;
+    height: 35px;
+}
+
+.tachyus {
+    background-position: -286px -101px;
+    width: 96px;
+    height: 17px;
+}
+
+.stanford {
+    background-position: -401px -92px;
+    width: 101px;
+    height: 35px;
+}
+
+.ucdavis {
+    background-position: -523px -98px;
+    width: 107px;
+    height: 18px;
+}
+
+.redis {
+    background-position: -10px -161px;
+    width: 90px;
+    height: 30px;
+}
+
+.chef {
+    background-position: -121px -147px;
+    width: 55px;
+    height: 54px;
+}
+
+.mono {
+    background-position: -202px -148px;
+    width: 44px;
+    height: 54px;
+}
+
+.mongodb {
+    background-position: -269px -156px;
+    width: 110px;
+    height: 32px;
+}
+
+.grunt {
+    background-position: -404px -146px;
+    width: 46px;
+    height: 54px;
+}*/
+.customer-logo {
+    background: url("/assets/images/home/new-sprite-flattened.png") no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.7rem 1rem;
+}
+
+.microsoft {
+    background-position: 0 -26px;
+    width: 150px;
+    height: 32px;
+}
+
+.facebook {
+    background-position: -172px -7px;
+    width: 50px;
+    height: 50px;
+}
+
+.google {
+    background-position: -244px -10px;
+    width: 49px;
+    height: 50px;
+}
+
+.github {
+    background-position: -310px -5px;
+    width: 58px;
+    height: 58px;
+}
+
+.rackspace {
+    background-position: -383px -23px;
+    width: 139px;
+    height: 37px;
+}
+
+.telenor {
+    background-position: -25px -76px;
+    width: 108px;
+    height: 40px;
+}
+
+.nasa {
+    background-position: -149px -73px;
+    width: 69px;
+    height: 57px;
+}
+
+.zendesk {
+    background-position:-227px -80px;
+    width: 151px;
+    height: 35px;
+}
+
+.pivotal {
+    background-position: -393px -86px;
+    width: 115px;
+    height: 27px;
+}
+
+.umbraco {
+    background-position: -42px -135px;
+    width: 148px;
+    height: 45px;
+}
+
+.rightscale {
+    background-position: -212px -142px;
+    width: 198px;
+    height: 25px;
+}
+
+.chef {
+    background-position: -433px -127px;
+    width: 60px;
+    height: 64px;
+}
+
+.mozilla {
+    background-position: -33px -189px;
+    width: 178px;
+    height: 48px;
+}
+
+.puppet {
+    background-position: -229px -196px;
+    width: 121px;
+    height: 36px;
+}
+
+.stanford {
+    background-position: -373px -200px;
+    width: 142px;
+    height: 30px;
+}
+
+/* Benefits block */
+.benefits-container {
+    border-top: solid 1px #e6e6e6;
+}
+
+.benefits-container h2 {
+    margin: 0.7rem 0;
+    text-align: center;
+    font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+}
+
+.benefits-table .row:first-child .columns {
+    border-top: 1px solid #e6e3e0;
+}
+
+.benefits-table .columns {
+    line-height: 2.7rem;
+    border-bottom: 1px solid #e6e3e0;
+    /*background-color: #fbf9f7;*/
+    border-top: none;
+    font-size: 1.0rem;
+}
+
+.benefits-table .yes {
+    background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAeCAMAAAB3ypxcAAABEVBMVEX///8AtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQAAtQBObZg0AAAAWnRSTlMABggKDA8QEhMVFhgZGx0gISUnKSorLjAzNTY4Oj4/QEVGS0xRUlhZX2FmaG1ucHd4f4CHqbS6wMHFyszP0dTW2Nrd3uLj5ebn6evs7e7v8PLz9PX3+fv8/f742XGqAAAA+0lEQVR4AYXT504CURQE4LF3BNvau4gN7F0sYMGu9Hn/BzE5IZPIwp7v/809beDIHAK+XXIfru06yTQcqRpJ1ncQKVmlqaUQYb3ChmoSba2WKcdoZ7lEOemAmQ3QZOGXctoJE3wUJvDP3DflrAtm8pV8TkCA6U/KRTfM2AtJ5uOQqTfKVS9M/JEmF0PDeIFy0w8Ty7Hhfhgm8US5HYTBOSU7AACjeYq9DP1w3QeMPFBUR1O9lz1DdxR1Fe4+S9GMWsySoonLYpEh70HEnuVrxrka8zPv3KApLjkXbUorTj5Mec1Jm6lsINIeLR+bcGRI1rbgOrDs+o7SaOkPNwKKtIJfd7YAAAAASUVORK5CYII=") no-repeat right 50% / 19px 15px;
+}
+
+.benefits-table .no {
+    background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmBAMAAABaE/SdAAAAJ1BMVEX/////AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AAD/AABa1sw2AAAADHRSTlMAN2VmaGlqa2xt8P7DnIcVAAAAvklEQVR4XrXSoQ7CMBgE4AIpIKdR+D0HHl+D5xFmsISnqEdBgCXwBPQeiuR2Lc2PQO1Ut3zNbv3rxshkLTBrCljdBPaxsHPaki1f7yYzYIAnIGYGpB0ZQEgG9GTIsAWAdCADLnT+RUgGfc0FwiNZbjUnfIopHRiynAWhWM7JMrWFmhv4cH/e2b1izN3ZLoK2s6D9t/oMNvUZeD2ECrZae8KrRqQ9hFEz0hbPGZlZBrEyc0Kx+m6E+HuHpo0bIR8dYcBEYOoC1wAAAABJRU5ErkJggg==") no-repeat right 50% / 19px 19px;
+}
+
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+}

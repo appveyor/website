@@ -1,0 +1,36 @@
+    <div class="footer-container">
+        <div class="row footer">
+            <div class="columns medium-10">
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/docs">Documentation</a></li>
+                    <li><a href="http://help.appveyor.com/discussions" target="_blank">Support</a></li>
+                    <li><a href="/blog" target="_blank">Blog</a></li>
+                    <li><a href="/terms-of-service">Terms of service</a></li>
+                    <li><a href="/privacy-policy">Privacy policy</a></li>
+                    <li><a href="/eula">EULA</a></li>
+                </ul>
+            </div>
+            <div class="columns medium-2 text-right">
+                <ul>
+                    <li><a href="https://appveyor.statuspage.io" target="_blank">Status</a></li>
+                    <li><a href="https://twitter.com/appveyor" class="twitter" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/jquery-2.1.3.min.js"><\/script>')</script>
+    <script src="/assets/js/pack.js"></script>
+
+    <script>
+        Foundation.global.namespace = '';   // Work around UnCSS choking with `Error: Syntax error, unrecognized expression: [data-'Times New Roman'-topbar]`
+        $(document).foundation();
+        {% if page.layout == 'docs' %}
+        addAnchors('.docs-content h2, .docs-content h3, .docs-content h4, .docs-content h5, .docs-content h6');
+        {% endif %}
+    </script>
+</body>
+</html>

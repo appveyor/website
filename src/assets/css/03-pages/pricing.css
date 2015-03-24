@@ -1,0 +1,111 @@
+.pricing-banner {
+    background-color: #0B99D6;
+    padding-bottom: 1rem;
+}
+
+.pricing-banner h1,
+.pricing-banner .title h2 {
+    color: #fff;
+}
+
+.pricing-banner .big-button {
+    background-color: #18C718;
+}
+
+.pricing-banner .big-button:hover,
+.pricing-banner .big-button:active {
+    background-color: #1ED11E;
+}
+
+
+.plans {
+    margin-top: 2rem;
+}
+
+.pricing-table {
+    border: solid 1px #eee;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.pricing-table.popular {
+    margin-top: -10px;
+    border: solid 1px #eee;
+}
+
+.pricing-table .price {
+    font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2.3rem;
+}
+
+.pricing-table .price span {
+    font-size: 1rem;
+}
+
+.pricing-table .price.annual {
+    padding: 0 0 1rem 0;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.pricing-table .price.annual span {
+    font-size: 0.7rem;
+}
+
+.pricing-table .price.basic {
+    padding: 1.9rem 0;
+}
+
+.pricing-table .title {
+    color: #fff;
+    font-family: 'Open Sans', 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.0rem;
+    background-color: #999;
+    padding: 0;
+    line-height: 2rem;
+}
+
+.pricing-table.popular .title {
+    font-size: 1.2rem;
+    background-color: #3EB33E;
+}
+
+.pricing-table.premium .title {
+    background-color: #666;
+}
+
+.pricing-table .bullet-item {
+    padding: 0;
+    line-height: 2.5rem;
+}
+
+.pricing-table .cta-button {
+    padding: 1rem 0;
+}
+
+.pricing-table .cta-button .button {
+    margin: 0;
+    background-color: #00b500;
+    border-color: #00b500;
+    text-transform: uppercase;
+    padding: 0.7rem 1rem;
+}
+
+.pricing-table .cta-button .button:hover,
+.pricing-table .cta-button .button:active {
+    background-color: #00d600;
+    border-color: #00d600;
+    color: #fff;
+}
+
+.pricing-table.popular .title span {
+    font-size: 0.7rem;
+    position: absolute;
+    top: -5px;
+    right: 25px;
+}
+
+.pricing-table.popular .cta-button {
+    padding: 1.5rem 0;
+}

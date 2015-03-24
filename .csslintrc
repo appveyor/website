@@ -1,0 +1,12 @@
+{
+    "adjoining-classes": false,
+    "bulletproof-font-face": false,
+    "font-sizes": false,
+    "ids": false,
+    "important": false,
+    "overqualified-elements": false,
+    "qualified-headings": false,
+    "regex-selectors": false,
+    "unique-headings": false,
+    "unqualified-attributes": false
+}
