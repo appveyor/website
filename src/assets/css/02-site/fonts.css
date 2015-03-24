@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Segoe UI Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Segoe UI Bold'), local('SegoeUI-bold'), local('segoeuib');
+}
+
+@font-face {
+  font-family: 'Segoe UI Semibold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Segoe UI Semibold'), local('SegoeUI-Semibold');
+}
+
+@font-face {
+  font-family: 'Segoe UI Light';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Segoe UI Light'), local('SegoeUI-Light');
+}

@@ -1,0 +1,46 @@
+.sidebar {
+    margin-top: 20px;
+}
+
+.sidebar-content {
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.sidebar h4 {
+    margin-top: 0;
+}
+
+/* 1st level */
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+    .sidebar ul li h4 {
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    .sidebar ul li h4,
+    .sidebar ul li h4 a {
+        color: #777!important;
+    }
+
+/* 2nd level */
+.sidebar ul ul {
+    margin: 0 0 0.5rem 0.5rem;
+}
+
+.sidebar ul ul li a {
+    display: block;
+    padding: 0.2rem 0.2rem;
+    font-size: 0.9rem;
+}
