@@ -28,11 +28,11 @@ title: AppVeyor premium build environment and new pricing
 </p>
 
 <p>
-    There is a new entry-level plan for individual developers and small teams with 1 private project and 1 concurrent job building on Azure. There is an upgraded "Pro" plan now with <b>unlimited</b> number of projects and <b>super-fast builds</b>. For those teams actively using AppVeyor new "Premium" plan now offers 3 concurrent jobs on fast environment.
+    There is a new entry-level plan for individual developers and small teams with 1 private project and 1 concurrent job building on Azure. There is an upgraded "Pro" plan now with <strong>unlimited</strong> number of projects and <strong>super-fast builds</strong>. For those teams actively using AppVeyor new "Premium" plan now offers 3 concurrent jobs on fast environment.
 </p>
 
 <p>
-    Also, we introduce yearly pricing for "Pro" and "Premium" plans giving you <b>2 months free</b>!
+    Also, we introduce yearly pricing for "Pro" and "Premium" plans giving you <strong>2 months free</strong>!
 </p>
 
 <table style="width:70%;max-width:1042px;margin: 2rem auto;text-align:center;font-size: 100%;font-size:90%;" cellpadding="8" cellspacing="0" class="no-borders">
@@ -57,18 +57,18 @@ title: AppVeyor premium build environment and new pricing
         <td style="background-color:#f0f0f0;color:#666;"><span style="font-size:90%;">$1590</span>/year - 2 months free</td>
     </tr>
     <tr>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><b>1</b> private project</td>
+        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>1</strong> private project</td>
         <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><b>Unlimited</b> private projects</td>
+        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>Unlimited</strong> private projects</td>
         <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><b>Unlimited</b> private projects</td>
+        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>Unlimited</strong> private projects</td>
     </tr>
     <tr>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><b>1</b> concurrent job</td>
+        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>1</strong> concurrent job</td>
         <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><b>1</b> concurrent job</td>
+        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>1</strong> concurrent job</td>
         <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><b>3</b> concurrent jobs</td>
+        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>3</strong> concurrent jobs</td>
     </tr>
     <tr>
         <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;">-</td>
@@ -98,7 +98,7 @@ title: AppVeyor premium build environment and new pricing
 </p>
 
 <p>
-    If you are a student, educational organization or open-source project looking for more calculation power or concurrent jobs we provide <b>50% discount</b> on all plans.
+    If you are a student, educational organization or open-source project looking for more calculation power or concurrent jobs we provide <strong>50% discount</strong> on all plans.
 </p>
 
 <!-- AppVeyor on-premise -->

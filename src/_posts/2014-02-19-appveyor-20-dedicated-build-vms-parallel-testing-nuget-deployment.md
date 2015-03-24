@@ -67,7 +67,7 @@ Supported deployment providers: <a href="http://www.appveyor.com/docs/deploymen
 
 Great Windows software must provide user interface for any function it has. AppVeyor 2.0 follows this tradition and further extends project settings, so you can control build environment and inject custom script logic on any stage of build pipeline without ever touching your repository!
 
-For command-line gurus or those coming from Linux we added fancy YAML configuration support! Add <b>appveyor.yml</b> with project configuration into root of your repository and next time you fork the repo just add a new project in AppVeyor.
+For command-line gurus or those coming from Linux we added fancy YAML configuration support! Add <strong>appveyor.yml</strong> with project configuration into root of your repository and next time you fork the repo just add a new project in AppVeyor.
 
 <a href="http://www.appveyor.com/docs/build-configuration">Read more about build configuration</a>
 <div></div>
