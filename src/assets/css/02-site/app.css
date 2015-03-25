@@ -70,8 +70,8 @@ body {
 .twitter
 {
     display: inline-block;
-    padding-left: 23px!important;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAMCAYAAAC9QufkAAABB0lEQVR4AZXOMSiEcRzH4YcuYbzCdGWRUpYbDHKURSmLUgZlkd2CwWBQVhNZGKSUKFlkuOFSlMugRBThLAySRRR+K6/r8ql3+z3f/5vKbd3VoLEwmCmRrHv7fghzaEYRk0jjOYVeLMRRfwxc/4I92EA1oBMHOMNUYLVoxUkcT2MlRt4BowJKVo+rwPJ4QgOWMBsjOzhEi79bjAcuA8viCAOAJoyLT/keIbAb9PlfxwSO52/jN8ewjDqVuwhzTmBAHkXkVG4eCAyx9BCvF9CFKuXbw9oPDDEwEwO72ERGsiJG4u4LCBygA+3IYhhpAMAnVjER8BWAwDhFGzJ4wwdeUMI+1gPFTbJv45RQVTVst3YAAAAASUVORK5CYII=') no-repeat 4px 50%;
+    padding-left: 23px !important;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAMCAYAAAC9QufkAAAAzElEQVR4AZXRM1xoYRiA8XNtb9dW2DK37Nqy91+78p61I3NOS7Zt15Lx9eQ31/A/ft4jzSJn5CE+KqW0i3DOC91YRzXM4ARzjYUtuvD9gtAK21AS2uCgsXCFwhLC8VDEWSKQBvBbY/ESM+LEFFLhj0oZCRGK4XuxNQqhbsH3KP6C9VvG/xTx0bv5YOWGYaeikfEHVNzmkRXkb4nCzjVhGe7IWA4wwogMhFq8k9fvBYYIQiLmoSBtIwMvjiIZP4Y/CjGODcyiEfHQl4G0C59u3zG5avzYAAAAAElFTkSuQmCC") no-repeat 4px 50%;
 }
 
 /* articles */

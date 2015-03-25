@@ -65,7 +65,7 @@ To configure custom feed in Visual Studio open <strong>Tools → Options → 
 
 When you first open Manage NuGet packages dialog you will be presented with a dialog box asking for credentials:
 
-<a href="/assets/images/posts/nuget-support/nuget-visualstudio-auth.png"><img alt="nuget-visualstudio-auth" src="/assets/images/posts/nuget-support/nuget-visualstudio-auth.png" width="584" height="389"></a>
+<a href="/assets/images/docs/nuget-visualstudio-auth.png"><img alt="nuget-visualstudio-auth" src="/assets/images/docs/nuget-visualstudio-auth.png" width="584" height="389"></a>
 
 <h3>Command line</h3>
 
@@ -81,7 +81,7 @@ To configure AppVeyor project to use private NuGet feed during build you can use
 
 <ol>
     <li>Create a separate AppVeyor account for accessing NuGet feed.</li>
-    <li>On <strong>Environment</strong> tab of project settings add two environment variables <code>nuget_user</code> and <code>nuget_password</code>:<a href="/assets/images/posts/nuget-support/nuget-environment-variables.png"><img alt="nuget-environment-variables" src="/assets/images/posts/nuget-support/nuget-environment-variables.png" width="584" height="114"></a></li>
+    <li>On <strong>Environment</strong> tab of project settings add two environment variables <code>nuget_user</code> and <code>nuget_password</code>:<a href="/assets/images/docs/nuget-environment-variables.png"><img alt="nuget-environment-variables" src="/assets/images/docs/nuget-environment-variables.png" width="584" height="114"></a></li>
     <li>Into <strong>Install</strong> script box add this command:
 <pre><code>nuget sources add -Name MyAccountFeed -Source &lt;feed-url&gt; -UserName %nuget_user% -Password %nuget_password%</code></pre>
 </li>
