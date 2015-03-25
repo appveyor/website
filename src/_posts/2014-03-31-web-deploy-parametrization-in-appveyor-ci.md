@@ -15,7 +15,7 @@ Most common use cases for Web Deploy parametrization is updating node/attribute 
 <h3>Parameters.xml</h3>
 To enable Web Deploy parametrization add <code>parameters.xml</code> file in the root of your web application.
 
-<img src="/assets/images/posts/web-deploy-params/vs-solution-explorer.png" alt="vs-solution-explorer">
+<img src="/assets/images/docs/deployment/web-deploy/vs-solution-explorer.png" alt="vs-solution-explorer">
 
 <code>Parameters.xml</code> contains the list of parameters required (or supported) by your Web Deploy package. In the example below we introduce two parameters - one to update path to log file in <code>appSettings</code> section of <code>web.config</code> and another one to set database name in SQL script.
 
@@ -36,7 +36,7 @@ Parameter element describes the name, default value and the places where and how
 
 When Web Deploy package is built you can open it in the explorer and see <code>parameters.xml</code> in the root:
 
-<img src="/assets/images/posts/web-deploy-params/webdeploy-package.png" alt="webdeploy-package">
+<img src="/assets/images/docs/deployment/web-deploy/webdeploy-package.png" alt="webdeploy-package">
 
 Resulting <code>parameters.xml</code> combines your custom parameters and system ones such as <code>IIS Web Application Name</code>. You don’t have to set <code>IIS Web Application Name</code> parameter explicitly - AppVeyor does that for you.
 
@@ -46,11 +46,11 @@ Web Deploy provider in AppVeyor analyzes Web Deploy package and looks into <stro
 
 When promoting specific build from Environment page you set variables on environment settings page:
 
-<img src="/assets/images/posts/web-deploy-params/environment-variables.png" alt="environment-variables">
+<img src="/assets/images/docs/deployment/web-deploy/environment-variables.png" alt="environment-variables">
 
 When deploying during the build session environment variables are used instead. You can set build environment variables on Environment tab of project settings, <code>appveyor.yml</code> or programmatically during the build.
 
-<img src="/assets/images/posts/web-deploy-params/project-environment-variables.png" alt="project-environment-variables">
+<img src="/assets/images/docs/deployment/web-deploy/project-environment-variables.png" alt="project-environment-variables">
 
 Variables defined during the build override those ones defined on Environment level.
 
