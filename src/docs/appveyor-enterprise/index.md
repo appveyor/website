@@ -269,8 +269,8 @@ The following services are supported for sending out build notifications:
 Installing and configuring your own SMTP service is out-of-scope of this guide. However, for testing purposes you can try using SMTP server of your current email provider. For example, if you have Gmail account use these settings:
 
 * Server: smtp.gmail.com:587
-* Username: <your-gmail-email@gmail.com>
-* Password: <your-password>
+* Username: \<your-gmail-email@gmail.com\>
+* Password: \<your-password\>
 * Requires SSL: yes
 
 **Mailgun**

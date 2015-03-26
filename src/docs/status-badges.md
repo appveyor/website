@@ -60,10 +60,10 @@ You can customize SVG badge titles for *pending*, *failing* and *passing* states
 For example:
 
 {% highlight html %}
-https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20OK
+<img src="https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20OK" alt="Project Badge">
 {% endhighlight %}
 
-<img src="https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20OK">
+<img src="https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20OK" alt="Project Badge">
 
 ## Badges for projects with public repositories on GitHub and Bitbucket
 

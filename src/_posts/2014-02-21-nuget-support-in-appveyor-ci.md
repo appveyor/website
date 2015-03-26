@@ -26,8 +26,7 @@ You can use your AppVeyor account email/password to access password-protected Nu
 
 For publishing your own packages to account feed use the command:
 
-<pre><code> nuget push &lt;your-package.nupkg&gt; -ApiKey &lt;your-api-key&gt; -Source &lt;feed-url&gt;
-</code></pre>
+<pre><code>nuget push &lt;your-package.nupkg&gt; -ApiKey &lt;your-api-key&gt; -Source &lt;feed-url&gt;</code></pre>
 
 <ul>
 <li>Replace <code>&lt;your-api-key&gt;</code> and <code>&lt;feed-url&gt;</code> with values from Account <strong>→</strong> NuGet page.</li>
@@ -45,15 +44,13 @@ You can enable automatic publishing of NuGet packages during the build on <stro
 
 To generate <code>.nuspec</code> file for your project run the following command from project root directory:
 
-<pre><code>nuget spec
-</code></pre>
+<pre><code>nuget spec</code></pre>
 
 <h3>Pushing NuGet packages from build scripts</h3>
 
 To push NuGet package as artifact and publish it in both project and account feeds use this command anywhere in your build script:
 
-<pre><code>appveyor PushArtifact &lt;your-nugetpackage.nupkg&gt;
-</code></pre>
+<pre><code>appveyor PushArtifact &lt;your-nugetpackage.nupkg&gt;</code></pre>
 
 <blockquote>When you delete a project in AppVeyor its corresponding NuGet feed is deleted, however all NuGet packages from that feed remain published in account feed.</blockquote>
 
@@ -95,8 +92,7 @@ To configure AppVeyor project to use private NuGet feed during build you can use
 
 To restore Visual Studio solution NuGet packages before build add this command to <strong>Before build script</strong> box on <strong>Build</strong> tab of project settings (provided your <code>.sln</code> file or <code>packages.config</code> are in the root of repository):
 
-<pre><code>nuget restore
-</code></pre>
+<pre><code>nuget restore</code></pre>
 
 otherwise if project solution is in sub-directory:
 
