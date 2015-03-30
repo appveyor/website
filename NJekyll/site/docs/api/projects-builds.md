@@ -908,6 +908,28 @@ Request body:
         pullRequestId: 3
     }
 
+Response body:
+
+    {
+        "buildId":642688,
+        "jobs":[],
+        "buildNumber":308,
+        "version":"308",
+        "message":"...",
+        "branch":"master",
+        "isTag":false,
+        "commitId":"3a9e50dfb4dbf3c463b57ffd6453bf9cc103bcff",
+        "authorName":"...",
+        "authorUsername":"...",
+        "committerName":"...",
+        "committerUsername":"...",
+        "committed":"2015-03-29T06:59:41+00:00",
+        "pullRequestId":"86",
+        "pullRequestName":"...",
+        "messages":[],
+        "status":"queued",
+        "created":"2015-03-29T19:49:00.2126257+00:00"
+    }
 
 ### Cancel build
 
