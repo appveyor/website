@@ -14,6 +14,7 @@ Azure blob storage provider copies all or selected artifacts to Windows Azure st
 * **Container name** (`container`) - the name of storage container to copy to. Container name length must be between 3 and 63 symbols.
 * **Folder** (`folder`) - name of folder to copy to.
 * **Artifact** (`artifact`) - name of artifact to copy.
+* **Unzip artifacts before uploading to Azure Storage** (`unzip`) - set `true` to unpack `Zip` artifacts before uploading to storage. Default is `false`.
 
 Configuring in `appveyor.yml`:
 
@@ -25,3 +26,4 @@ Configuring in `appveyor.yml`:
       container: builds
       folder: $(APPVEYOR_PROJECT_SLUG)\$(APPVEYOR_BUILD_VERSION)
       artifact: myapp
+      unzip: false

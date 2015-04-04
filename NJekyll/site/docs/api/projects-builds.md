@@ -16,6 +16,7 @@ title: Projects and builds API
 * [Add project](#add-project)
 * [Update project](#update-project)
 * [Update project settings with YAML](#update-project-settings-with-yaml)
+* [Delete project build cache](#delete-project-build-cache)
 * [Delete project](#delete-project)
 
 # Builds
@@ -823,6 +824,14 @@ Request body (`plain/text`):
 
 Response: 204
 
+
+## Delete project build cache
+
+Request:
+
+    DELETE /api/projects/{accountName}/{projectSlug}/buildcache
+
+Response: 204
 
 
 ## Delete project

@@ -27,7 +27,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Microsoft Expression Blend Software Development Kit (SDK) for .NET 4](http://www.microsoft.com/en-us/download/details.aspx?id=10801)
 * [Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4](http://www.microsoft.com/en-us/download/details.aspx?id=3062)
 * [Windows Phone SDK 8.0](http://www.microsoft.com/en-us/download/details.aspx?id=35471)
-* [Azure SDKs](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5
+* [Azure SDKs](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5.1
 * [AWS SDK .NET](http://aws.amazon.com/sdk-for-net/) v2.3.24.3
 * [Microsoft SilverLight 5 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=28359)
 * [Windows PowerShell 2.0 SDK](http://www.microsoft.com/en-ca/download/details.aspx?id=2560)
@@ -65,15 +65,16 @@ Below is the list of software pre-installed on Build Worker.
 * [Microsoft .NET Framework 4.5.2 with Developer Pack](http://www.microsoft.com/en-ca/download/details.aspx?id=42637)
 * [Visual F# Out of Band Release 3.1.2](http://www.microsoft.com/en-us/download/details.aspx?id=44011)
 * [Microsoft .NET Portable Library Reference Assemblies 4.6](http://www.microsoft.com/en-us/download/details.aspx?id=40727)
+* [Microsoft Visual Studio Installer Projects](https://visualstudiogallery.msdn.microsoft.com/9abe329c-9bba-44a1-be59-0fbf6151054d) extension (`.vdproj` support).
 * [WiX](http://wixtoolset.org/) 3.8
 * [Silverlight 5 x64 Developer Runtime](http://go.microsoft.com/fwlink/?LinkID=229324)
 * SQL Server Data tools for [Visual Studio 2012](http://msdn.microsoft.com/en-us/jj650015) and [2013](http://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
-* [Node.js](http://nodejs.org/dist/) 0.10.37 x86 - default one:
-    * 0.10.26 - 0.10.37 (x86 and x64)
+* [Node.js](http://nodejs.org/dist/) 0.10.38 x86 - default one:
+    * 0.10.26 - 0.10.38 (x86 and x64)
     * 0.11.12 - 0.11.16 (x86 and x64)
-    * 0.12.0 (x86 and x64)
+    * 0.12.0 - 0.12.2 (x86 and x64)
     * 0.8.25 - 0.8.28 (x86 and x64)
-* [io.js](https://iojs.org/dist/): 1.0.0 - 1.6.1 (x86 and x64)
+* [io.js](https://iojs.org/dist/): 1.0.0 - 1.6.3 (x86 and x64)
     * Use the following PowerShell command to quickly switch Node.js version: `Install-Product node <version> [x86|x64]`
     * Switching to the latest io.js version: `Install-Product node 1`
     * Switching to the latest Node.js version: `Install-Product node 0`
@@ -96,12 +97,12 @@ Below is the list of software pre-installed on Build Worker.
     * 2.2.1 x86 (`C:\Ruby22`) with RubyGems 2.4.6
     * 2.2.1 x64 (`C:\Ruby22-x64`) with RubyGems 2.4.6
 * [Python](https://www.python.org/downloads/windows/)
-    * 2.7.8 x86 (`C:\Python27` - default in `PATH`)
-    * 2.7.8 x64 (`C:\Python27-x64`)
+    * 2.7.9 x86 (`C:\Python27` - default in `PATH`)
+    * 2.7.9 x64 (`C:\Python27-x64`)
     * 3.3.5 x86 (`C:\Python33`)
     * 3.3.5 x64 (`C:\Python33-x64`)
-    * 3.4.1 x86 (`C:\Python34`)
-    * 3.4.1 x64 (`C:\Python34-x64`)
+    * 3.4.3 x86 (`C:\Python34`)
+    * 3.4.3 x64 (`C:\Python34-x64`)
 * [Perl](http://www.activestate.com/activeperl/downloads) 5.20.1.2000 x86 (`C:\Perl` in `PATH`)
 * `Erlang OTP runtime 17.4 x64` installed into `C:\Program Files\erl6.3`
 * [MinGW](http://www.mingw.org/) (core components and compilers - `C:\MinGW`)

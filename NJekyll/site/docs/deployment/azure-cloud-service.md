@@ -61,6 +61,7 @@ Sample `appveyor.yml` configuration:
       artifact: myservice.cspkg
       target_profile: Cloud   # optional .cscfg configuration name to deploy with
       do_not_start_deployment: false
+      recreate_deployment: false
 
 To get `subscription_id` and `subscription_certificate` [download publish settings and subscription for your Azure account](https://manage.windowsazure.com/publishsettings)
 and then grab both values from downloaded `<subscription>.publishsettings` XML file.
