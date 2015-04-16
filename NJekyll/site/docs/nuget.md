@@ -137,7 +137,28 @@ otherwise, if project solution is in sub-directory:
 
 If you have enabled NuGet Package Restore for Visual Studio solution it will be automatically triggered in the AppVeyor build environment as `EnableNuGetPackageRestore` environment variable is already set to `true`.
 
+## Dealing with intermittent nuget.org issues
 
+Some notes how to deal with NuGet.org intermittent issues.
+
+### Use build cache for NuGet packages
+
+To avoid downloading packages from nuget.org on every build you can use [build cache](http://www.appveyor.com/docs/build-cache)
+
+If `packages` folder is in the root of your repo add this to `appveyor.yml`:
+
+	cache:
+	- packages -> **\packages.config
+
+That means *"preserve `packages` folder contents between builds unless any of `packages.config` changes"*.
+
+### Enable detailed logging
+
+If you experience `nuget restore` issues enable detailed logging with `-verbosity detailed` command line option, for example:
+
+    nuget restore -verbosity detailed
+
+This will help to better understand the root cause of the issue.
 
 ## External links
 
