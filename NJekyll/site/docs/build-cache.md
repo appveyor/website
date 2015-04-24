@@ -52,7 +52,7 @@ In `appveyor.yml`:
       - packages -> **\packages.config  # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
       - projectA\libs
       - node_modules                    # local npm modules
-      - C:\Users\appveyor\AppData\Roaming\npm-cache
+      - %APPDATA%\npm-cache             # npm cache
 
 ## Caching Chocolatey packages
 
