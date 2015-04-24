@@ -223,8 +223,6 @@ To add multi-line PowerShell script covering an entire event:
 	    Write-Host "Success"
 	  }
 
-The extra line breaks used above are required.
-
 
 ## Installing additional software
 
