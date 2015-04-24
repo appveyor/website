@@ -216,23 +216,12 @@ By default, script line is treated as batch command, but you can specify script 
 
 To add multi-line PowerShell script covering an entire event:
 
-    on_success: |
-      if($true)
-      {
-        Write-Host "Success"
-      }
-
-To add the same multi-line PowerShell script *inside* an event so other script lines could be added before / after:
-
-    on_success:
-    - ps: >-
-        if($true)
-
-        {
-
-          Write-Host "Success"
-
-        }
+	on_success:
+	  - ps: |
+	  if($true)
+	  {
+	    Write-Host "Success"
+	  }
 
 The extra line breaks used above are required.
 
