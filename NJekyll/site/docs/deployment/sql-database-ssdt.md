@@ -156,6 +156,7 @@ To enable database publishing from AppVeyor environment to your Azure SQL databa
 
 	169.54.128.0/27
 	169.54.128.128/27
+    138.91.141.243
 
 ![azure-sql-server-settings](/site/images/docs/deployment/sql-database/azure-sql-server-settings.png)
 
