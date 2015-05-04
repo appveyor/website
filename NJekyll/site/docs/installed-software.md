@@ -58,6 +58,14 @@ Below is the list of software pre-installed on Build Worker.
 * [Visual Studio Community 2013 with Update 4](http://www.visualstudio.com/products/visual-studio-community-vs)
 * [Visual Studio 2013 SDK](http://www.visualstudio.com/downloads/download-visual-studio-vs)
 
+## Visual Studio 2015
+
+`Visual Studio Community 2015 RC` with `Visual Studio 2015 SDK RC` are installed on a separate build worker image called `Visual Studio 2015 RC`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
+
+    os: Visual Studio 2015 RC
+
+> **Note to "Pro" customers:** Whenever custom build worker image is chosen the build will run on Azure, so there is about 3-4 minutes delay before build starts to provision build worker virtual machine.
+
 ## Languages, libraries, frameworks
 
 * [C++ 11 CTP](http://blogs.msdn.com/b/vcblog/archive/2013/11/18/announcing-the-visual-c-compiler-november-2013-ctp.aspx)
@@ -90,12 +98,13 @@ Below is the list of software pre-installed on Build Worker.
 * [Mono](http://www.go-mono.com/mono-downloads/download.html) 3.2.3
 * [Ruby](http://rubyinstaller.org/downloads/) with [DevKit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
     * 1.9.3-p551 (`C:\Ruby193` - default in `PATH`) with RubyGems 1.8.30
-    * 2.0.0-p598 x86 (`C:\Ruby200`) with RubyGems 2.0.15
-    * 2.0.0-p598 x64 (`C:\Ruby200-x64`) with RubyGems 2.0.15
-    * 2.1.5 x86 (`C:\Ruby21`) with RubyGems 2.2.3
-    * 2.1.5 x64 (`C:\Ruby21-x64`) with RubyGems 2.2.3
-    * 2.2.1 x86 (`C:\Ruby22`) with RubyGems 2.4.6
-    * 2.2.1 x64 (`C:\Ruby22-x64`) with RubyGems 2.4.6
+    * 2.0.0-p645 x86 (`C:\Ruby200`) with RubyGems 2.0.15
+    * 2.0.0-p645 x64 (`C:\Ruby200-x64`) with RubyGems 2.0.15
+    * 2.1.6 x86 (`C:\Ruby21`) with RubyGems 2.2.3
+    * 2.1.6 x64 (`C:\Ruby21-x64`) with RubyGems 2.2.3
+    * 2.2.2 x86 (`C:\Ruby22`) with RubyGems 2.4.6
+    * 2.2.2 x64 (`C:\Ruby22-x64`) with RubyGems 2.4.6
+    * `Bundler 1.9.5` is installed for all Ruby versions
 * [Python](https://www.python.org/downloads/windows/)
     * 2.7.9 x86 (`C:\Python27` - default in `PATH`)
     * 2.7.9 x64 (`C:\Python27-x64`)
