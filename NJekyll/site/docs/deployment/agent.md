@@ -67,7 +67,7 @@ There are few possible ways of packaging artifact deployable by Agent:
 
 3. From script, for example **After build script**:
 
-    `appveyor PushArtifact <zip_path> -Name MyApp`
+    `appveyor PushArtifact <zip_path> -DeploymentName MyApp`
 
 
 
