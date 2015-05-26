@@ -278,7 +278,7 @@ Artifact details:
 
 <!--[TBD - explain some usage scenarios]-->
 
-In your `before deploy.ps1` or `deploy.ps1` use the following code to run once per deployment/per cluster:
+In your `before-deploy.ps1` or `deploy.ps1` use the following code to run once per deployment/per cluster:
 
     if(Enter-OncePerDeployment "block_name")
     {
