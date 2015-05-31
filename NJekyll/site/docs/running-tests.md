@@ -245,4 +245,4 @@ xunit.console .\path\to\test-assembly.dll /xml .\xunit-results.xml
 See also:
 
 * [Parallel testing](/docs/parallel-testing)
-* [Pushing test results from scripts using Build Worker API](docs/build-worker-api#add-tests)
+* [Pushing test results from scripts using Build Worker API](/docs/build-worker-api#add-tests)
