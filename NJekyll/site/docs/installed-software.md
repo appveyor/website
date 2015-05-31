@@ -75,16 +75,16 @@ Below is the list of software pre-installed on Build Worker.
 * [Visual F# Out of Band Release 3.1.2](http://www.microsoft.com/en-us/download/details.aspx?id=44011)
 * [Microsoft .NET Portable Library Reference Assemblies 4.6](http://www.microsoft.com/en-us/download/details.aspx?id=40727)
 * [Microsoft Visual Studio Installer Projects](https://visualstudiogallery.msdn.microsoft.com/9abe329c-9bba-44a1-be59-0fbf6151054d) extension (`.vdproj` support).
-* [WiX](http://wixtoolset.org/) 3.8
+* [WiX](http://wixtoolset.org/) 3.9
 * [Silverlight 5 x64 Developer Runtime](http://go.microsoft.com/fwlink/?LinkID=229324)
 * SQL Server Data tools for [Visual Studio 2012](http://msdn.microsoft.com/en-us/jj650015) and [2013](http://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
 * [Node.js](http://nodejs.org/dist/) 0.10.38 x86 - default one:
     * 0.10.26 - 0.10.38 (x86 and x64)
     * 0.11.12 - 0.11.16 (x86 and x64)
-    * 0.12.0 - 0.12.2 (x86 and x64)
+    * 0.12.0 - 0.12.4 (x86 and x64)
     * 0.8.25 - 0.8.28 (x86 and x64)
     * Switching to the latest Node.js version: `Install-Product node 0`
-* [io.js](https://iojs.org/dist/): 1.0.0 - 2.0.1 (x86 and x64)
+* [io.js](https://iojs.org/dist/): 1.0.0 - 2.1.0 (x86 and x64)
     * Use the following PowerShell command to quickly switch Node.js version: `Install-Product node <version> [x86|x64]`
     * Switching to the latest io.js version: `Install-Product node ''`
 * [Go](http://golang.org/dl/)
@@ -114,7 +114,23 @@ Below is the list of software pre-installed on Build Worker.
     * 3.4.3 x64 (`C:\Python34-x64`)
 * [Perl](http://www.activestate.com/activeperl/downloads) 5.20.1.2000 x86 (`C:\Perl` in `PATH`)
 * `Erlang OTP runtime 17.4 x64` installed into `C:\Program Files\erl6.3`
-* [MinGW](http://www.mingw.org/) (core components and compilers - `C:\MinGW`)
+* [MinGW/MSYS 4.8.2 32-bit](http://www.mingw.org/) (core components and compilers - `C:\MinGW`)
+	* MinGW root directory: `C:\MinGW`
+	* MinGW bin directory: `C:\MinGW\bin`
+	* MSYS root directory: `C:\MinGW\msys\1.0`
+* Cygwin (`C:\cygwin`)
+* Qt (`C:\Qt`)
+	- Qt 5.4: `C:\Qt\5.4`
+	  - MinGW 4.9.1 (32 bit) OpenGL: `C:\Qt\5.4\mingw491_32`
+	  - msvc2013 32-bit OpenGL: `C:\Qt\5.4\msvc2013_64_opengl`
+	  - msvc2013 64-bit OpenGL: `C:\Qt\5.4\msvc2013_opengl`
+	- Qt 5.3: `C:\Qt\5.3`
+	  - MinGW 4.8.2 (32 bit): `C:\Qt\5.3\mingw482_32`
+	  - msvc2013 32-bit OpenGL: `C:\Qt\5.3\msvc2013_64_opengl`
+	  - msvc2013 64-bit OpenGL: `C:\Qt\5.3\msvc2013_opengl`
+	- Tools
+	  - MinGW 4.8.2: `C:\Qt\Tools\mingw482_32`
+	  - MinGW 4.9.1: `C:\Qt\Tools\mingw491_32`
 
 ## Tools
 
