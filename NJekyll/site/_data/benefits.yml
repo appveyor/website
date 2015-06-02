@@ -1,4 +1,4 @@
-﻿-
+-
   text: No setup required and zero maintenance
   mark: yes
 -
@@ -25,6 +25,3 @@
 -
   text: Pay-as-you-go, no upfront investment in expensive software
   mark: yes
--
-  text: 30-page guide on "How to setup CI for your project in 1 month"
-  mark: no

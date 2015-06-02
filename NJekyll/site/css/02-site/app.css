@@ -89,20 +89,50 @@ div.title h2 {
 
 /* legal */
 
-.legal ul { padding-left: 0; } /* 1st level */
-.legal ul ul { padding-left: 25px; } /* 2nd, 3rd levels */
-
-.legal li
-{
-    list-style: none;
-    margin-top: 0.5em;
-    background: none;
+.legal ol {
+    counter-reset: item;
+    list-style-type: none;
+    margin-left: 0;
 }
 
-.legal h2,
-.legal h3
-{
+.legal > ol > li {
     text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+}
+
+.legal ol li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+}
+
+.legal ol ol ol li:before {
+    content: none;
+}
+
+.legal ol ol {
+    margin-left: 1rem;
+    list-style-type: none;
+}
+
+.legal ol ol li {
+    text-transform: none;
+    margin: 0.5rem 0;
+}
+
+.legal ol ol ol {
+    margin-left: 2rem;
+    list-style-type: lower-alpha;
+}
+
+.legal ol ol ol ol {
+    margin-left: 2rem;
+    list-style-type: lower-roman;
+}
+
+.legal ol ol ol ol ol {
+    margin-left: 2rem;
+    list-style-type: upper-alpha;
 }
 
 /* misc */
