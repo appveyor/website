@@ -185,6 +185,10 @@ For unattended installation of `Web`, `Worker`, `BuildAgent` roles with all depe
 
     Install-AppVeyor -Force
 
+Installing AppVeyor Web and Worker roles only (if you are going to run builds on a different machines):
+
+    Install-AppVeyor -Roles Server -Force
+
 Installing AppVeyor with existing SQL Server:
 
     Install-AppVeyor -Force -SQLServer '(local)\SQLEXPRESS'
@@ -196,7 +200,19 @@ AppVeyor installer installs Web role to "Default Web Site". When the installatio
 
 ### Installing Build Agent
 
-[TBD]
+To install the latest version of Build Agent service on remote machine use the following command:
+
+    Install-AppVeyor -Roles BuildAgent -Force
+
+Next, you should configure Build Agent to connect AppVeyor Web role running on another server. Run `regedit` and find `HKEY_LOCAL_MACHINE\SOFTWARE\AppVeyor\Build Agent` key. Update the following values under that key:
+
+* `ApplicationUrl` - Web role URL, for example `http://<another-computer>` or `http://my-ci-server.cloudapp.net`.
+* `AuthorizationToken` - authorization token of Web role. Can be found on Web role machine under `HKEY_LOCAL_MACHINE\SOFTWARE\AppVeyor\Server` key.
+
+You can change the values of other parameters like `DeleteBuildFolderOnFinish`, `MaxConcurrentJobs` and `ProjectsDirectory`.
+
+The only reserved parameters that cannot be changed are `Mode` and `WorkersQueueName`.
+
 
 
 ## Updating AppVeyor
@@ -231,35 +247,47 @@ During installation AppVeyor uses randomly-generated values for security keys, a
 
 ### Non-UI system settings
 
-Location in the Registry.
+Some AppVeyor settings such as database or Service Bus connection strings cannot be changed on UI. These and other settings are stored in the registry under these keys:
+
+    HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\Server
+    HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\BuildAgent
+
 
 
 ## Known issues
 
-* Service Bus for Windows Server 1.1 doesn’t start if .NET 4.6 installed
+* Service Bus for Windows Server 1.1 doesn't work if .NET 4.6 installed which basically means AppVeyor Web and Worker roles cannot be installed on a computer with Visual Studio 2015 installed. However, you can have another server with Visual Studio 2015 installed and AppVeyor Build Agent installed.
 
 
 ### Troubleshooting
 
-* F5 in browser if there is a problem with SignalR
-* “AppVeyor” event log
+* If build real-time log stops working there might be a transient issue with SignalR. Do F5 in browser to restart SignalR connection.
+* If something doesn't work - [report the issue](http://www.appveyor.com/support) to AppVeyor team. While reporting the issue look into these places for possible errors/warning:
+	* Web browser's "Developer tools" - for any JavaScript-related errors.
+	* `AppVeyor` event log in Event Viewer under `Applications and Services Logs\AppVeyor`. Web, Worker and Build Agent roles write logs there.
+* Restart IIS and/or `Appveyor.Worker` and/or `Appveyor.BuildAgent` services. 
 
-## How to configure builds on Azure VMs
+## Running builds on Azure VMs
 
-Creating master image
-install build agent
-change URL
-specify worker mode
-make sure it connects to AppVeyor
-create storage account for VMs
-create storage account for build cache
-Configuring server
-Azure subscription ID and certificate
-Add Azure build regions
-Update plan (enable Force Azure)
-Add image (“Windows Server 2012 R2” is default one)
+> This section is still under construction - please [let us know](http://www.appveyor.com/support) if you are interested to run "stateless" builds on Azure VMs.
 
-## How to configure builds on Hyper-V VMs
+Setup process overview:
+
+* Creating "master" Azure VM
+* Installing build agent on master VM
+	* Change URL to point Web role
+	* Change agent mode to `Azure`
+* Start BuildAgent service to make sure it connects to AppVeyor Web role
+* Create Azure storage account for VMs
+* Create Azure storage account for build cache
+* Configuring server
+	* Azure subscription ID and certificate
+	* Add Azure build region
+	* Update plan (enable `ForceAzure`)
+	* Add "Windows Server 2012 R2" image as default
+
+
+## Running builds on Hyper-V VMs
 
 [TBD]
 
