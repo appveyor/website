@@ -7,16 +7,16 @@ title: Getting started with AppVeyor Enterprise
 
 <!--TOC-->
 
+<p style="color:red;font-weight:bold;">Note about this beta release - it's not intended for installing on production environment.</p>
+
 ## Introduction
 
-AppVeyor Enterprise is a downloadable version of AppVeyor CI that can be installed on your own premises behind the firewall. AppVeyor Enterprise is great solution for organizations willing to use AppVeyor for testing their applications, but in a fully controlled environment. While hosted AppVeyor CI service saves you from managing build environment, AppVeyor Enterprise has its own benefits:
+AppVeyor Enterprise is a downloadable version of AppVeyor CI that can be installed on your own premises behind the firewall. AppVeyor Enterprise is great solution for organizations willing to use AppVeyor for testing their applications in a fully controlled environment. While hosted AppVeyor CI service saves you from managing build environment, AppVeyor Enterprise has its own benefits:
 
-* Compliance with strict security requirements of your organization.
-* Any number of concurrent jobs for maximum parallelism.
-* Any number of build worker machines on your own hardware.
+* Compliance with organization security requirements
+* Any number of concurrent jobs for maximum parallelism
+* Any number of build worker machines on your own hardware
 * Any number of worker images under your own Azure subscription.
-
-> **General note about this release. This is beta release and it's not intended for installing on production environment.**
  
 
 ## Supported platforms
@@ -46,7 +46,9 @@ AppVeyor Enterprise is a downloadable version of AppVeyor CI that can be install
 
 ## How AppVeyor works
 
-[General diagram - web, worker, build agent, service bus, SQL Server, artifacts storage]
+AppVeyor is a distributed application consisting of several roles that can be installed on a single or multiple servers across the network.
+
+![AppVeyor General Diagram](/site/images/docs/appveyor-enterprise/appveyor-architecture-general.png)
 
 ### Web role
 
@@ -103,45 +105,57 @@ Installation notes:
 
 ###  Stateful vs stateless builds
 
-[TBD]
+AppVeyor can run builds on build workers of two types:
 
-### Concurrent jobs
+* **stateful** (or permanent) build workers
+* **stateless** (or transient) build workers
 
-[TBD]
+**Stateful workers**
 
+Stateful workers are "always on" Build Agent machines for which any changes are preserved between builds. For example, any Chocolatey package installed, any NuGet package downloaded or any database created stay there and "visible" for next builds. While stateful builds can drastically reduce overall build time by having everything ready and pre-heated for consequent builds they require your build scenarios to include "setup" and "teardown" code increasing complexity of your builds. This approach is recommended for builds with minimum environment changes.
+
+**Stateless workers**
+
+Stateless build workers are virtual machines provisioned from template or reset to the initial "clean" state and dedicated to a single build. When the build is finished machine is "decommissioned", i.e. either deleted or reverted to "clean" state and returned to the pool.
+
+Pros:
+
+* Dedicated pristine environment for every build
+* Build workers are on during the build only, thus preserving resources and reducing costs.
+
+Cons:
+
+* Additional time is required for provisioning and configuring build worker machines. 
 
 
 ## Supported topologies
 
 ### 1-tier
 
-All-in-one
+All AppVeyor roles with Redis, SQL Server and Service Bus are installed on a single machine. This is quick and easy way for small teams and individual developers to have their own build server on Azure or AWS virtual machine. 
 
-[Diagram]
+![AppVeyor All-in-one installation](/site/images/docs/appveyor-enterprise/appveyor-all-in-one.png)
 
 
 ### 2-tier
 
-Web and worker on one machine Build Agents on others
+Web and Worker roles along with dependencies are installed on one server and Build Agent services are installed on multiple servers.
 
-[Diagram]
+![AppVeyor 2-tier installation](/site/images/docs/appveyor-enterprise/appveyor-2-tier.png)
 
 
 ### Azure Cloud Service
 
-[Diagram]
+This is fault-tolerant and highly-available AppVeyor solution deployed as Azure Cloud Service inside your own Microsoft Azure subscription. It allows running builds on any cloud or on-premise virtual machines.
 
-What’s that? What are benefits? What is required (subscription)?
+Some of the advantages of this "private" cloud deployment:
 
-Contact us…
+* Unlimited scale - you control the number of Web and Worker instances and Redis, Storage, Azure SQL plans.
+* Practically zero maintenance with highest SLA backed up by Azure.
 
-### High-availability deployment
+![AppVeyor in Azure Cloud Service](/site/images/docs/appveyor-enterprise/appveyor-azure-cloud-service.png)
 
-[Diagram]
-
-What is out of scope
-Guide is in progress. Contact us if you are interested.
-
+[Contact us](http://www.appveyor.com/support) if you are interested in trying out this solution.
 
 
 ## Installing AppVeyor
@@ -151,7 +165,7 @@ Guide is in progress. Contact us if you are interested.
 * .NET 4.5.2 - is installed by AppVeyor installer or can be installed manually from [here](http://www.microsoft.com/en-ca/download/details.aspx?id=42642).
 * IIS (Web Role) with ASP.NET 4.5 and WebSockets enabled.
 * SQL Server with Mixed security mode enabled. If not installed AppVeyor installer will install SQL Server 2014 Express x64 as `SQL2014` instance.
-* Redis - is installed by AppVeyor installer of can be installed manually on port `6379`.
+* Redis - is installed by AppVeyor installer or can be installed manually on port `6379`.
 * Service Bus for Windows 1.1 - is installed by AppVeyor installer or can be installed manually using Web Platform Installer (Web PI).
 * SMTP server details or [Mailgun](http://www.mailgun.com/) account - for sending build email notifications.
 * [Microsoft Build Tools 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40760) or Visual Studio 2013 - for building .NET apps.
@@ -227,23 +241,43 @@ The following command updates all roles to the most recent version:
 
     Update-AppVeyor
 
-### Troubleshooting
-
-During installation AppVeyor uses randomly-generated values for security keys, account passwords and other sensitive values. All these values as well as other installer data such as AppVeyor roles and versions installed can be found under this registry key:
-
-    HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\Install
-
-
 
 ## Configuring AppVeyor
 
+To review and change AppVeyor configuration settings login as AppVeyor administrator and select **System Settings** in the account menu. 
+
 ### Artifact storage
 
-[TBD]
+For artifacts storage you can choose between **Local file system** and **Azure Blob storage**.
+
+By default, AppVeyor configures Local File System with `C:\AppVeyor\Artifacts` root directory.  
 
 ### Email notifications
 
-[TBD]
+The following services are supported for sending out build notifications:
+
+* SMTP server
+* Mailgun service
+* SendGrid (in development)
+
+**SMTP server**
+
+Installing and configuring your own SMTP service is out-of-scope of this guide. However, for testing purposes you can try using SMTP server of your current email provider. For example, if you have Gmail account use these settings:
+
+* Server: smtp.gmail.com:587
+* Username: <your-gmail-email@gmail.com>
+* Password: <your-password>
+* Requires SSL: yes
+
+**Mailgun**
+
+[Mailgun](http://www.mailgun.com/) is a managed email sending/receiving provider. You can send up to 10,000 messages per month for [free](http://www.mailgun.com/pricing).
+
+> AppVeyor is not affiliated with Mailgun in any way. We recommend it because we use it ourselves in production and love it.
+
+**SendGrid**
+
+[Let us know](http://www.appveyor.com/support) if you are interested in trying it out.
 
 ### Non-UI system settings
 
@@ -259,25 +293,31 @@ Some AppVeyor settings such as database or Service Bus connection strings cannot
 * Service Bus for Windows Server 1.1 doesn't work if .NET 4.6 installed which basically means AppVeyor Web and Worker roles cannot be installed on a computer with Visual Studio 2015 installed. However, you can have another server with Visual Studio 2015 installed and AppVeyor Build Agent installed.
 
 
-### Troubleshooting
+## Troubleshooting
+
+During installation AppVeyor uses randomly-generated values for security keys, account passwords and other sensitive values. All these values as well as other installer data such as AppVeyor roles and versions installed can be found under this registry key:
+
+    HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\Install
+
+When something goes wrong:
 
 * If build real-time log stops working there might be a transient issue with SignalR. Do F5 in browser to restart SignalR connection.
-* If something doesn't work - [report the issue](http://www.appveyor.com/support) to AppVeyor team. While reporting the issue look into these places for possible errors/warning:
+* Restart IIS and/or `Appveyor.Worker` and/or `Appveyor.BuildAgent` services.
+* Nothing helps - [report the issue](http://www.appveyor.com/support) to AppVeyor team. While reporting the issue look into these places for possible errors/warning:
 	* Web browser's "Developer tools" - for any JavaScript-related errors.
 	* `AppVeyor` event log in Event Viewer under `Applications and Services Logs\AppVeyor`. Web, Worker and Build Agent roles write logs there.
-* Restart IIS and/or `Appveyor.Worker` and/or `Appveyor.BuildAgent` services. 
 
 ## Running builds on Azure VMs
 
 > This section is still under construction - please [let us know](http://www.appveyor.com/support) if you are interested to run "stateless" builds on Azure VMs.
 
-Setup process overview:
+Setup process outline:
 
-* Creating "master" Azure VM
-* Installing build agent on master VM
+* Create "master" Azure VM
+* Install build agent on master VM
 	* Change URL to point Web role
 	* Change agent mode to `Azure`
-* Start BuildAgent service to make sure it connects to AppVeyor Web role
+	* Start BuildAgent service to make sure it connects to AppVeyor Web role
 * Create Azure storage account for VMs
 * Create Azure storage account for build cache
 * Configuring server
@@ -289,6 +329,12 @@ Setup process overview:
 
 ## Running builds on Hyper-V VMs
 
-[TBD]
+> This section is still under construction - please [let us know](http://www.appveyor.com/support) if you are interested to run "stateless" builds on Hyper-V VMs.
 
+Setup process outline:
 
+* Create "master" Hyper-V VM
+* Install build agent on master VM
+	* Change URL to point Web role
+	* Change agent mode to `HyperV`
+	* Start BuildAgent service to make sure it connects to AppVeyor Web role
