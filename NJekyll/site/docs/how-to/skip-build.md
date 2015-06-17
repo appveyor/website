@@ -14,7 +14,7 @@ title: Skip a build
 Every push to a repository triggers new AppVeyor build. If you are committing minor changes, say update to a documentation or static web page, you might want to skip a build.
 
 Add `[skip ci]` or `[ci skip]` anywhere to commit message and build won't be triggered by AppVeyor for that commit.
-
+Or explicitly skip AppVeyor with `[skip appveyor]` and still allow any other CI to build the commit (eg. Travis CI)
 
 
 ## Commits filter
