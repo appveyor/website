@@ -20,8 +20,9 @@ Today we are announcing availability of a new faster build environment for open-
 
 ## Custom images
 
-- If your project is using custom image for MinGW, Cygwin, Qt or Visual Studio 2015 RC we encourage you to switch to "default" image (remove "os:" setting from appveyor.yml) as build workers on a new OSS environment have all these software installed.
-- Our ultimate goal is to have a single "all-in-one" build worker image for open-source (and, eventually, Pro customers) with all Visual Studio versions and other tools installed. Custom images offer will be re-worked (self-manage interface, faster Azure VMs) and be available as a paid option. That means at some point after most of OSS accounts are migrated to a new environment, custom images (Unstable, MinGW, VS 2015, etc.) will become unavailable to free accounts.
+If your project is using custom image for MinGW, Cygwin, Qt or Visual Studio 2015 RC we encourage you to switch to "default" image (remove "os:" setting from appveyor.yml) as build workers on a new OSS environment have all these software installed.
+
+Our ultimate goal is to have a single "all-in-one" build worker image for open-source (and, eventually, Pro customers) with all Visual Studio versions and other tools installed. Custom images offer will be re-worked (self-manage interface, faster Azure VMs) and be available as a paid option. That means at some point after most of OSS accounts are migrated to a new environment, custom images (Unstable, MinGW, VS 2015, etc.) will become unavailable to free accounts.
 
 
 ## Technical specs
@@ -37,8 +38,7 @@ OSS build environment VMs have ~1 CPU core, 1.7 GB of memory and 1 GBs network c
 
 ## Xamarin support
 
-- Open-source build workers have Xamarin Platform pre-installed. However, you should have Xamarin license (either commercial or open-source) to run your Xamarin builds.
-- Read more about building Xamarin projects on AppVeyor in this article: http://www.appveyor.com/docs/lang/xamarin
+Open-source build workers have Xamarin Platform pre-installed. However, you should have Xamarin license (either commercial or open-source) to run your Xamarin builds. Read more about building Xamarin projects on AppVeyor in this article: [http://www.appveyor.com/docs/lang/xamarin](http://www.appveyor.com/docs/lang/xamarin)
 
 Hope your CI experience will get better with this exciting news!
 
