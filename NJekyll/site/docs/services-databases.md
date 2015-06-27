@@ -114,6 +114,11 @@ To start MySQL in `appveyor.yml`:
     services:
       - mysql
 
+This is an example how to supply MySql credentials to work with PowerShell tools:
+
+    $env:MYSQL_PWD="Password12!"
+    $cmd = '"C:\Program Files\MySql\MySQL Server 5.6\bin\mysql" -e "create database YourDatabase;" --user=root'
+    iex "& $cmd"
 
 ## PostgreSQL
 
