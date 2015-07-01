@@ -18,6 +18,7 @@ API URL is stored in `APPVEYOR_API_URL` environment variable and it is `localhos
 * [Update tests](#update-tests)
 * [Push artifact](#push-artifact)
 * [Update build details](#update-build-details)
+* [Start new build](#start-new-build)
 
 
 ## Add message
@@ -348,3 +349,40 @@ Request body (JSON):
         "committerName": "Jack",
         "committerEmail": "jack@brown.com"
     }
+
+## Start new build
+
+Call AppVeyor API to start a new build of specified project.
+
+### PowerShell
+
+    Start-AppveyorBuild -ApiKey <string>
+           [-AccountName <string>]
+           -ProjectSlug <string>
+           [-Branch <string>]
+           [-EnvironmentVariables <Hashtable>]
+
+Example:
+
+    Start-AppveyorBuild -ApiKey $env:api_key -ProjectSlug 'deploy-web' -EnvironmentVariables @{
+       var1 = 'value1'
+       var2 = 'value2'
+    }
+
+Parameters:
+
+    -ApiKey                - Required. AppVeyor account API key.
+    -AccountName           - Optional. AppVeyor account name.
+    -ProjectSlug           - Required. Project slug (from URL).
+    -Branch                - Optional. Default project branch is used if not specified.
+    -EnvironmentVariables  - Optional. Environment variables in the form var1=value1,var2=value2, ...
+
+> We recommend placing `ApiKey` value to environment variable (either General tab of project settings or as [secure variable](/docs/build-configuration#secure-variables) in `appveyor.yml`).
+
+### Command line
+
+    appveyor Start-AppveyorBuild [options]
+
+Options are similar to PowerShell cmdlet parameters. The only exception is `-EnvironmentVariables` that should have the following format:
+
+    var1=value1,var2=value2, ...
