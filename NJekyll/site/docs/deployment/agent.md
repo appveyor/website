@@ -25,7 +25,7 @@ The following is required on the server to run Deployment Agent:
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
 
-2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v2.6.4 from 06/02/2015)
+2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v3.0.6 from 07/01/2015)
 
 3. Specify **Environment access key** during Deployment Agent installation.
 
@@ -126,6 +126,8 @@ When `remove_files` is set to `true` Agent performs full content synchronization
 
 * `group` - Deployment group.
 
+* `deploy_order` - Optional. Allows changing the deployment order of artifacts. Artifacts are deployed in ascending order. Deployment order is set to `0` if not specified.
+
 > When deploying web app from Web Deploy package you can use [Web Deploy parametrization](/docs/deployment/web-deploy#web-deploy-parametrization) with environment variables.
 
 You can specify multiple bindings in `hostname`, `ip` and `port` separated by semi-colon. Below is an example of how 3 bindings can be configured:
@@ -154,6 +156,8 @@ Other properties:
 
 * `skip_files` - semicolon list of regular expressions specifying the list of files to skip while synchronizing application folder contents.
 
+* `deploy_order` - Optional. Allows changing the deployment order of artifacts. Artifacts are deployed in ascending order. Deployment order is set to `0` if not specified.
+
 
 ## Deploying artifact package as a Windows service
 
@@ -181,6 +185,8 @@ Other properties:
 
 * `skip_files` - semicolon list of regular expressions specifying the list of files to skip while synchronizing application folder contents.
 
+* `deploy_order` - Optional. Allows changing the deployment order of artifacts. Artifacts are deployed in ascending order. Deployment order is set to `0` if not specified.
+
 
 ## Publishing SSDT package artifact to SQL Server
 
@@ -205,6 +211,7 @@ For example, given `.dacpac` artifact's deployment name is `MyDatabase`:
     MyDatabase.sqlcmd.MYVAR                     hello, world!
     MyDatabase.backup_database_before_changes   true
 
+* `deploy_order` - Optional. Allows changing the deployment order of artifacts. Artifacts are deployed in ascending order. Deployment order is set to `0` if not specified.
 
 
 ## Installing MSI package artifact on remote machine
