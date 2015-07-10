@@ -10,7 +10,7 @@ AppVeyor starts every build on clean dedicated build worker VM. Sometimes the be
 To see RDP details to current build worker add this line to `init` phase of your build:
 
     init:
-    -ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+    - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 Remote Desktop connection details will be displayed and build will continue. Displaying RDP connection during `init` phase helps troubleshooting stuck builds.
 
@@ -18,6 +18,6 @@ Remote Desktop connection details will be displayed and build will continue. Dis
 If you need to investigate worker on build finish add `$blockRdp = $true;` to display Remote Desktop connection details and pause the build until a special "lock" file on VM desktop is deleted:
 
     on_finish:
-    -ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+    - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 > Your RDP session is limited by overall build time (40 min).
