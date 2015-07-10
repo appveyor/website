@@ -122,12 +122,12 @@ Below is the list of software pre-installed on Build Worker.
 * Qt (`C:\Qt`)
 	- Qt 5.4: `C:\Qt\5.4`
 	  - MinGW 4.9.1 (32 bit) OpenGL: `C:\Qt\5.4\mingw491_32`
-	  - msvc2013 32-bit OpenGL: `C:\Qt\5.4\msvc2013_64_opengl`
-	  - msvc2013 64-bit OpenGL: `C:\Qt\5.4\msvc2013_opengl`
+	  - msvc2013 64-bit OpenGL: `C:\Qt\5.4\msvc2013_64_opengl`
+	  - msvc2013 32-bit OpenGL: `C:\Qt\5.4\msvc2013_opengl`
 	- Qt 5.3: `C:\Qt\5.3`
 	  - MinGW 4.8.2 (32 bit): `C:\Qt\5.3\mingw482_32`
-	  - msvc2013 32-bit OpenGL: `C:\Qt\5.3\msvc2013_64_opengl`
-	  - msvc2013 64-bit OpenGL: `C:\Qt\5.3\msvc2013_opengl`
+	  - msvc2013 64-bit OpenGL: `C:\Qt\5.3\msvc2013_64_opengl`
+	  - msvc2013 32-bit OpenGL: `C:\Qt\5.3\msvc2013_opengl`
 	- Tools
 	  - MinGW 4.8.2: `C:\Qt\Tools\mingw482_32`
 	  - MinGW 4.9.1: `C:\Qt\Tools\mingw491_32`
