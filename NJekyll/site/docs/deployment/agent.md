@@ -25,7 +25,7 @@ The following is required on the server to run Deployment Agent:
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
 
-2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v3.0.6 from 07/01/2015)
+2. [Download Deployment Agent]({{site.url}}/downloads/AppveyorDeploymentAgent.msi) (v3.0.8 from 07/12/2015)
 
 3. Specify **Environment access key** during Deployment Agent installation.
 
@@ -99,6 +99,8 @@ Other settings:
 * `site_name` - The name of existing or new website, e.g. "Default Web Site".
 
 * `application_name` - optional web application name (IIS virtual directory) to deploy web app into.
+
+* `application_path` - optional root directory for web application (IIS virtual directory).
 
 * `apppool_name` - the name of IIS application pool. If pool does not exist it will be created.
 
