@@ -17,6 +17,7 @@ AppVeyor has most popular services and database engines pre-installed on all bui
 * [SQL Server 2014](#sql-server-2014)
 * [MySQL](#mysql)
 * [PostgreSQL](#postgresql)
+* [MongoDB](#mongodb)
 * [Internet Information Services](#internet-information-services)
 * [Microsoft Message Queuing](#microsoft-message-queuing)
 
@@ -122,17 +123,24 @@ This is an example how to supply MySql credentials to work with PowerShell tools
 
 ## PostgreSQL
 
-PostgreSQL 9.3 x64 database service is available on AppVeyor build workers.
+PostgreSQL 9.3 and 9.4 x64 database services are available on AppVeyor build workers.
 
-* Path: `C:\Program Files\PostgreSQL\9.3`
+* Path:
+	* `C:\Program Files\PostgreSQL\9.3`
+	* `C:\Program Files\PostgreSQL\9.4`
 * Server name: `127.0.0.1` or `localhost`
 * Server port: `5432`
 * `postgres` account password: `Password12!`
 
-To start PostgreSQL in `appveyor.yml`:
+To start PostgreSQL 9.4 in `appveyor.yml`:
 
     services:
-      - postgresql
+      - postgresql    # or postgresql94
+
+To start PostgreSQL 9.3 in `appveyor.yml`:
+
+    services:
+      - postgresql93
 
 This is an example how to supply PG credentials to work with command-line tools:
 
@@ -140,6 +148,21 @@ This is an example how to supply PG credentials to work with command-line tools:
     SET PGPASSWORD=Password12!
     PATH=C:\Program Files\PostgreSQL\9.3\bin\;%PATH%
     createdb YourDatabase
+
+## MongoDB
+
+MongoDB 3.0.4 database service is pre-installed on build workers.
+
+* Install directory: `C:\mongodb`
+* Config: `C:\mongodb\mongod.cfg`
+* Data path: `C:\mongodb\data\db`
+
+To start MongoDB in `appveyor.yml`:
+
+    services:
+      - mongodb
+
+
 
 ## Internet Information Services
 
