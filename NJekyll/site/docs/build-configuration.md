@@ -12,9 +12,53 @@ title: Build configuration
 
 Every build runs on a fresh virtual machine which is not shared with other builds and the state of which is not preserved between consequent builds. After the build is finished its virtual machine is decommissioned.
 
+### Virtual machine configurations
+
+<table>
+  <tr>
+    <th>Environment/configuration</th>
+    <th>CPU</th>
+    <th>Memory</th>
+    <th>Disk</th>
+    <th>Network</th>
+  </tr>
+  <tr>
+    <td>Pro</td>
+    <td>2 cores</td>
+    <td>2.5 GB</td>
+    <td>SSD 127 GB<br>(30 GB available)</td>
+    <td>1 Gbps</td>
+  </tr>
+  <tr>
+    <td>Open-Source (Free)</td>
+    <td>1 core</td>
+    <td>1.7 GB</td>
+    <td>SSD 127 GB<br>(20 GB available)</td>
+	<td>1 Gbps</td>
+  </tr>
+  <tr>
+    <td>Azure* (Pro)</td>
+    <td>2 cores<br>(Basic_A2)</td>
+    <td>3.5 GB</td>
+    <td>127 GB<br>(30 GB available)</td>
+    <td>200 Mbps</td>
+  </tr>
+  <tr>
+    <td>Azure* (open-source)</td>
+    <td>1 core<br>(Basic_A1)</td>
+    <td>1.75 GB</td>
+    <td>127 GB<br>(30 GB available)</td>
+    <td>100 Mbps</td>
+  </tr>
+</table>
+
+> \* When custom build worker image is used build runs on Microsoft Azure VM.
+
 Free plans run builds on VM instances with 1 virtual core, 1.75 GB of memory and 127 GB of disk space (Windows Azure "Small").
 
 Paid plans run on a dedicated hardware with faster CPUs and SSD drives. Each VM has 2 virtual cores, 1.5 GB of memory and 127 GB disk drives (with about 50 GB free).
+
+### IP addresses
 
 IP addresses assigned to build workers:
 
