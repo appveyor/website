@@ -52,11 +52,7 @@ Every build runs on a fresh virtual machine which is not shared with other build
   </tr>
 </table>
 
-> \* When custom build worker image is used build runs on Microsoft Azure VM.
-
-Free plans run builds on VM instances with 1 virtual core, 1.75 GB of memory and 127 GB of disk space (Windows Azure "Small").
-
-Paid plans run on a dedicated hardware with faster CPUs and SSD drives. Each VM has 2 virtual cores, 1.5 GB of memory and 127 GB disk drives (with about 50 GB free).
+> \* Builds configured to use custom image (`os` setting in `appveyor.yml` or `Operating system` on UI) run on virtual machines in Microsoft Azure data center.
 
 ### IP addresses
 
