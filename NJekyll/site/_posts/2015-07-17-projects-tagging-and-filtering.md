@@ -7,7 +7,7 @@ We've just deployed AppVeyor update introducing paging, filtering and tagging on
 
 <img src="/site/images/posts/projects-tagging-filtering/projects-filtered.png" alt="projects filtered">
 
-Default page size is 10. You can change page size on profile page: https://ci.appveyor.com/profile
+Default page size is 10. You can change page size on profile page: [https://ci.appveyor.com/profile](https://ci.appveyor.com/profile)
 
 Tags can be specified on General tab of project settings (at the very bottom of the page):
 
