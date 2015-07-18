@@ -23,17 +23,13 @@ In most cases you are good to go with the default **Auto** testing mode. This mo
 
 By default, **Auto** mode scans the entire build folder. For large projects this could be a time-consuming operation.
 
-In the **Test assemblies** box you can specify either assembly file name or wildcard.
+In the **Test assemblies** box you can specify one of the following:
 
-For example, to include tests from **all** assemblies with specific name:
+1. *Exact* path to an assembly relative to build root folder, for example `myproject\bin\debug\myassembly.dll`.
 
-    test-assembly.dll
+2. Assembly file name without a path - this case AppVeyor will perform recursive search of all assemblies with the given name.
 
-this is the same as:
-
-    **\*.test-assembly.dll
-
-which means, search build folder directories recursively for `test-assembly.dll` assemblies.
+3. Wildcard. If wildcard is used it should be full relative path. For example, to scan all folders recursively for `test-assembly.dll` specify `**\*.test-assembly.dll`.
 
 To match an assembly in a specific folder:
 
@@ -55,7 +51,7 @@ Configuring tests in `appveyor.yml`:
       # assemblies to test - optional
       assemblies:
         - test-assembly-A.dll
-        - test-assembly-B.dll
+        - '**\*.tests.dll'
 
       # categories to test - optional
       categories:
