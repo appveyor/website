@@ -29,12 +29,14 @@ Below is the list of software pre-installed on Build Worker.
 * [Microsoft Expression Blend Software Development Kit (SDK) for .NET 4](http://www.microsoft.com/en-us/download/details.aspx?id=10801)
 * [Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4](http://www.microsoft.com/en-us/download/details.aspx?id=3062)
 * [Windows Phone SDK 8.0](http://www.microsoft.com/en-us/download/details.aspx?id=35471)
-* [Azure SDKs](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5.1, 2.6
+* [Azure SDKs](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5.1, 2.6, 2.7
 * [Microsoft SilverLight 5 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=28359)
 * [Windows PowerShell 2.0 SDK](http://www.microsoft.com/en-ca/download/details.aspx?id=2560)
 * [DirectX SDK](http://www.microsoft.com/en-us/download/details.aspx?id=6812) (`C:\Program Files (x86)\Microsoft DirectX SDK`)
 * [AWS SDK .NET](http://aws.amazon.com/sdk-for-net/) v3.7.606.0
 * [AWS CLI](http://docs.aws.amazon.com/cli/latest/userguide/installing.html#install-msi-on-windows) 1.7.25
+* [TypeScript 1.4 for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/2d42d8dc-e085-45eb-a30b-3f7d50d55304)
+* [TypeScript 1.5 for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/b1fff87e-d68b-4266-8bba-46fad76bbf22)
 
 ## Visual Studio
 
@@ -59,16 +61,20 @@ Below is the list of software pre-installed on Build Worker.
 
 ### Visual Studio 2013
 
-* [Visual Studio Community 2013 with Update 4](http://www.visualstudio.com/products/visual-studio-community-vs)
+* [Visual Studio Community 2013 with Update 5](http://www.visualstudio.com/products/visual-studio-community-vs)
 * [Visual Studio 2013 SDK](http://www.visualstudio.com/downloads/download-visual-studio-vs)
 
 ### Visual Studio 2015
 
-`Visual Studio Community 2015 RC` with `Visual Studio 2015 SDK RC` are installed on a separate build worker image called `Visual Studio 2015 RC`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
+`Visual Studio Community 2015 RTM` with `Visual Studio 2015 SDK` are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
 
-    os: Visual Studio 2015 RC
+    os: Visual Studio 2015
 
-> **Note to "Pro" customers:** Whenever custom build worker image is chosen the build will run on Azure, so there is about 3-4 minutes delay before build starts to provision build worker virtual machine.
+> **Note to "Pro" customers:** Whenever custom build worker image is chosen the build will run on Azure, so there is about 3-4 minutes delay before build starts to provision build worker virtual machine. You can send us a request to move your account to new "OSS" environment with fast VMs and Visual Studio 2015 installed.
+
+## Xamarin
+
+[Xamarin Platform](https://xamarin.com/platform) is installed on all build workers.
 
 ## Languages, libraries, frameworks
 
