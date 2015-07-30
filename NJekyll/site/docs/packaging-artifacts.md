@@ -21,7 +21,11 @@ To push the entire `bin` folder as a single zip archive:
 
 To push all `*.nupkg` files in the build folder recursively:
 
-    *.nupkg
+    **\*.nupkg
+
+To push all `*.nupkg` files in sub-directory recursively:
+
+    subdir\**\*.nupkg
 
 To configure project artifacts in `appveyor.yml`:
 
