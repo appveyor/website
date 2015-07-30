@@ -197,7 +197,7 @@ To switch to the latest io.js version using this PowerShell command:
 ## Tools
 
 * [7-Zip](http://www.7-zip.org/) 9.20
-* [Windows Azure PowerShell](https://github.com/Azure/azure-sdk-tools/releases) 0.8.7.1 (August 2014)
+* [Windows Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 0.9.5 (July 2015)
 * [Windows Azure CLI](http://azure.microsoft.com/en-us/downloads/)
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 3.1.2
 * [NuGet](http://docs.nuget.org/docs/start-here/installing-nuget) 2.8.3
