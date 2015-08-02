@@ -66,15 +66,13 @@ Below is the list of software pre-installed on Build Worker.
 
 ### Visual Studio 2015
 
-`Visual Studio Community 2015 RTM` with `Visual Studio 2015 SDK` are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
+Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
 
     os: Visual Studio 2015
 
-> **Note to "Pro" customers:** Whenever custom build worker image is chosen the build will run on Azure, so there is about 3-4 minutes delay before build starts to provision build worker virtual machine. You can send us a request to move your account to new "OSS" environment with fast VMs and Visual Studio 2015 installed.
-
 ## Xamarin
 
-[Xamarin Platform](https://xamarin.com/platform) is installed on all build workers.
+[Xamarin Platform](https://xamarin.com/platform) is installed on `Visual Studio 2015` image.
 
 ## Languages, libraries, frameworks
 
