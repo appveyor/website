@@ -139,18 +139,9 @@ If you have enabled NuGet Package Restore for Visual Studio solution it will be 
 
 ## Dealing with intermittent nuget.org issues
 
-Some notes how to deal with NuGet.org intermittent issues.
+Sometimes you may experience issues restoring nuget packages from nuget.org thus failing your builds. We know this is frustrating, but there is something you can do to minimize your dependency on nuget.org availability.
 
-### Use build cache for NuGet packages
-
-To avoid downloading packages from nuget.org on every build you can use [build cache](http://www.appveyor.com/docs/build-cache)
-
-If `packages` folder is in the root of your repo add this to `appveyor.yml`:
-
-	cache:
-	- packages -> **\packages.config
-
-That means *"preserve `packages` folder contents between builds unless any of `packages.config` changes"*.
+We collected some notes how to better deal with intermittent nuget.org issues.
 
 ### Enable detailed logging
 
@@ -159,6 +150,32 @@ If you experience `nuget restore` issues enable detailed logging with `-verbosit
     nuget restore -verbosity detailed
 
 This will help to better understand the root cause of the issue.
+
+### Restore with retries
+
+The idea of "reliable" restore is simple - having batch file retrying nuget restore few times until `nuget restore` exit code is 0.
+
+Place [nuget-restore.cmd](https://gist.github.com/FeodorFitsner/508b71250295590e6408) in the root of your repo. 
+
+If solution file is located in the root of repo use this command to reliably restore nuget packages:
+
+    nuget-restore
+
+or
+
+    nuget-restore <path-to\solution.sln>
+
+
+### Use build cache for NuGet packages
+
+To avoid downloading packages from nuget.org on every build you can use [build cache](http://www.appveyor.com/docs/build-cache).
+
+If `packages` folder is in the root of your repo add this to `appveyor.yml`:
+
+	cache:
+	- packages -> **\packages.config
+
+That means *"preserve `packages` folder contents between builds unless any of `packages.config` changes"*.
 
 ## External links
 
