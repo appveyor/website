@@ -155,7 +155,7 @@ This will help to better understand the root cause of the issue.
 
 The idea of "reliable" restore is simple - having batch file retrying nuget restore few times until `nuget restore` exit code is 0.
 
-Place [nuget-restore.cmd](https://gist.github.com/FeodorFitsner/508b71250295590e6408) in the root of your repo. 
+Place [nuget-restore.cmd](https://github.com/appveyor/ci/blob/master/scripts/nuget-restore.cmd) in the root of your repo. 
 
 If solution file is located in the root of repo use this command to reliably restore nuget packages:
 
@@ -165,6 +165,11 @@ or
 
     nuget-restore <path-to\solution.sln>
 
+If you don't want to pollute your repository with `nuget-restore.cmd` you can download it from GitHub during the build:
+
+    before_build:
+      - appveyor DownloadFile https://raw.githubusercontent.com/appveyor/ci/master/scripts/nuget-restore.cmd
+      - nuget-restore
 
 ### Use build cache for NuGet packages
 
