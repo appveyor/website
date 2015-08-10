@@ -61,10 +61,13 @@ Below is the list of software pre-installed on Build Worker.
 
 ### Visual Studio 2013
 
-* [Visual Studio Community 2013 with Update 5](http://www.visualstudio.com/products/visual-studio-community-vs)
+* [Visual Studio Community 2013 with Update 4](http://www.visualstudio.com/products/visual-studio-community-vs)
 * [Visual Studio 2013 SDK](http://www.visualstudio.com/downloads/download-visual-studio-vs)
 
 ### Visual Studio 2015
+
+* Universal Windows App Dev Tools for Visual Studio 2015
+* Windows 10 SDK
 
 Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
 
@@ -105,7 +108,7 @@ To switch to the latest Node.js version (0.12.x) use this PowerShell command:
 
 ### io.js
 
-* 1.0.0 - 2.3.4 (x86 and x64)
+* 1.0.0 - 3.0.0 (x86 and x64)
 
 Use the following PowerShell command to quickly switch io.js version:
 
@@ -200,7 +203,8 @@ To switch to the latest io.js version using this PowerShell command:
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 3.1.2
 * [NuGet](http://docs.nuget.org/docs/start-here/installing-nuget) 2.8.3
 * [Chocolatey](http://chocolatey.org/) v0.9.9.8
-* [GitVersion](http://chocolatey.org/packages/GitVersion.Portable) 2.0.0
+* [
+* ](https://www.nuget.org/packages/GitVersion.CommandLine) 3.0.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
 
 ## Testing
@@ -235,7 +239,7 @@ To switch to the latest io.js version using this PowerShell command:
 
 ## Miscellaneous
 
-* [Code Contracts for .NET](http://visualstudiogallery.msdn.microsoft.com/1ec7db13-3363-46c9-851f-1ce455f66970) 1.7.11202.10
+* [Code Contracts for .NET](http://visualstudiogallery.msdn.microsoft.com/1ec7db13-3363-46c9-851f-1ce455f66970) 1.9.10714.2
 * WinRM client hosts set to `*`
 
 ## Getting the list of installed software
