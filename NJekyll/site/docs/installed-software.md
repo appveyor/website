@@ -203,8 +203,7 @@ To switch to the latest io.js version using this PowerShell command:
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 3.1.2
 * [NuGet](http://docs.nuget.org/docs/start-here/installing-nuget) 2.8.3
 * [Chocolatey](http://chocolatey.org/) v0.9.9.8
-* [
-* ](https://www.nuget.org/packages/GitVersion.CommandLine) 3.0.2
+* [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.0.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
 
 ## Testing
