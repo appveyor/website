@@ -255,7 +255,8 @@ Configuring webhooks in `appveyor.yml`:
           Authorization:
             secure: GhD+5xhLz/tkYY6AO3fcfQ==
         on_build_success: false
-        on_build_failure: True
+        on_build_failure: true
+        on_build_status_changed: true
 
 ### Webhook payload
 
