@@ -19,35 +19,30 @@ Every build runs on a fresh virtual machine which is not shared with other build
     <th>Environment/configuration</th>
     <th>CPU</th>
     <th>Memory</th>
-    <th>Disk</th>
     <th>Network</th>
   </tr>
   <tr>
     <td>Pro</td>
     <td>2 cores</td>
     <td>2.5 GB</td>
-    <td>SSD 127 GB<br>(30 GB available)</td>
     <td>1 Gbps</td>
   </tr>
   <tr>
     <td>Open-Source (Free)</td>
     <td>2 cores</td>
     <td>1.7 GB</td>
-    <td>SSD 127 GB<br>(2000 IOPS)</td>
-	<td>1 Gbps</td>
+    <td>1 Gbps</td>
   </tr>
   <tr>
     <td>Azure* (Pro)</td>
     <td>2 cores<br>(Basic_A2)</td>
     <td>3.5 GB</td>
-    <td>127 GB<br>(30 GB available)</td>
     <td>200 Mbps</td>
   </tr>
   <tr>
     <td>Azure* (open-source)</td>
     <td>1 core<br>(Basic_A1)</td>
     <td>1.75 GB</td>
-    <td>127 GB<br>(30 GB available)</td>
     <td>100 Mbps</td>
   </tr>
 </table>
