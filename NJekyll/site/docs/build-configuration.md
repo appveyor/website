@@ -31,9 +31,9 @@ Every build runs on a fresh virtual machine which is not shared with other build
   </tr>
   <tr>
     <td>Open-Source (Free)</td>
-    <td>1 core</td>
+    <td>2 cores</td>
     <td>1.7 GB</td>
-    <td>SSD 127 GB<br>(20 GB available)</td>
+    <td>SSD 127 GB<br>(2000 IOPS)</td>
 	<td>1 Gbps</td>
   </tr>
   <tr>
