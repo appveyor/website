@@ -47,7 +47,7 @@ To promote selected "tag" build to GitHub release:
 
 * **Release name** (`release`) - Optional. The name of release. If not specified tag name is used as release name. You can use environment variables in release name, for example `product release of v$(appveyor_build_version)`.
 
-* **Release description** (`description`) - optional release description.
+* **Release description** (`description`) - [mandatory release description](https://help.appveyor.com/discussions/problems/2975-github-deployment). If not specified, GitHub returns `422: Unprocessable entity` error.
 
 * **GitHub authentication token** (`auth_token`) - OAuth token used for authentication against GitHub API. You can generate [Personal API access token](https://github.com/blog/1509-personal-api-tokens) at [https://github.com/settings/tokens](https://github.com/settings/tokens). Minimal token scope is `repo` or `public_repo` to release on private or public repositories respectively. Be sure to encrypt your token using the **Account -> Encrypt data** tool.
 
@@ -61,6 +61,7 @@ To promote selected "tag" build to GitHub release:
 
     deploy:
       release: myproduct-v$(appveyor_build_version)
+      description: 'Release description'
       provider: GitHub
       auth_token:
         secure: <your encrypted token> # your encrypted token from GitHub
