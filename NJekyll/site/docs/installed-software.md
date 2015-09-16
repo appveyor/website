@@ -26,6 +26,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Windows SDK for Windows 8](http://msdn.microsoft.com/en-us/library/windows/desktop/hh852363.aspx)
 * [Windows SDK for Windows 8.1](http://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)
 * [Windows Driver Kit Version 7.1.0 (to support ATL)](http://www.microsoft.com/en-us/download/details.aspx?id=11800)
+* [Windows Driver Kit 10](https://msdn.microsoft.com/en-us/windows/hardware/dn913721.aspx)
 * [Microsoft Expression Blend Software Development Kit (SDK) for .NET 4](http://www.microsoft.com/en-us/download/details.aspx?id=10801)
 * [Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4](http://www.microsoft.com/en-us/download/details.aspx?id=3062)
 * [Windows Phone SDK 8.0](http://www.microsoft.com/en-us/download/details.aspx?id=35471)
@@ -88,11 +89,16 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 * [WiX](http://wixtoolset.org/) 3.9
 * [Silverlight 5 x64 Developer Runtime](http://go.microsoft.com/fwlink/?LinkID=229324)
 * SQL Server Data tools for [Visual Studio 2012](http://msdn.microsoft.com/en-us/jj650015) and [2013](http://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
+* Boost:
+	* 1.59.0 (`C:\Libraries\boost_1_59_0`)
+	* 1.58.0 (`C:\Libraries\boost_1_58_0`)
+	* 1.56.0 (`C:\Libraries\boost`)
 
 ### Node.js
 
 `0.12.7` is default Node.js installed on build workers.
 
+* 4.0.0 (x86 and x64)
 * 0.10.26 - 0.10.40 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
 * 0.12.0 - 0.12.7 (x86 and x64)
@@ -102,13 +108,17 @@ Use the following PowerShell command to quickly switch Node.js version:
 
     Install-Product node <version> [x86|x64]
 
-To switch to the latest Node.js version (0.12.x) use this PowerShell command:
+To switch to the latest `0.x.x` Node.js version (0.12.x) use this PowerShell command:
 
     Install-Product node 0
 
+To switch to the latest `4.x.x` Node.js version use this PowerShell command:
+
+    Install-Product node 4
+
 ### io.js
 
-* 1.0.0 - 3.0.0 (x86 and x64)
+* 1.0.0 - 3.3.0 (x86 and x64)
 
 Use the following PowerShell command to quickly switch io.js version:
 
@@ -116,7 +126,7 @@ Use the following PowerShell command to quickly switch io.js version:
     
 To switch to the latest io.js version using this PowerShell command:
 
-    Install-Product node ''
+    Install-Product node '3'
 
 ### Go
 
@@ -173,6 +183,7 @@ To switch to the latest io.js version using this PowerShell command:
 	* MinGW bin directory: `C:\MinGW\bin`
 	* MSYS root directory: `C:\MinGW\msys\1.0`
 * Cygwin (`C:\cygwin`)
+* MSYS2 (`C:\msys64`)
 
 ### Qt
 
@@ -201,7 +212,8 @@ To switch to the latest io.js version using this PowerShell command:
 * [Windows Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 0.9.5 (July 2015)
 * [Windows Azure CLI](http://azure.microsoft.com/en-us/downloads/)
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 3.1.2
-* [NuGet](http://docs.nuget.org/docs/start-here/installing-nuget) 2.8.3
+* [NuGet](http://docs.nuget.org/consume/installing-nuget) 2.8.5
+* [NuGet](http://blog.nuget.org/20150902/nuget-3.2RC.html) 3.2 RC on `Visual Studio 2015` images
 * [Chocolatey](http://chocolatey.org/) v0.9.9.8
 * [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.0.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
@@ -217,11 +229,11 @@ To switch to the latest io.js version using this PowerShell command:
 
 ### Selenium
 
-* [Chrome Web Driver](http://chromedriver.storage.googleapis.com/index.html) 2.14
-* [Internet Explorer Web Driver](http://selenium-release.storage.googleapis.com/index.html) 2.45
+* [Chrome Web Driver](http://chromedriver.storage.googleapis.com/index.html) 2.19
+* [Internet Explorer Web Driver](http://selenium-release.storage.googleapis.com/index.html) 2.47
 * Internet Explorer 11
-* FireFox 30.0 x86
-* Chrome 41.0.2272.87
+* FireFox 40.0.3 x86
+* Chrome 45.0.2454.85
 
 
 ## Services and databases
