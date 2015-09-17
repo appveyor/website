@@ -110,7 +110,7 @@ Other settings:
 
 * `hostname` - Host header value of website binding.
 
-* `protocol` - Protocol value of website binding. Could be either `http` (default if not specified) or `https`.
+* `protocol` - Protocol value of website binding. Could be `http` (default if not specified) or `https` or `net.tcp`.
 
 * `certificate` - Certificate associated with `https` binding. This value could be certificate name or thumbprint, for example `*.mydomain.com` or `0B2D18387549968CB4CC30F21D6CC4C0830B679B`. If certificate specified *protocol* is changed to `https`.
 
