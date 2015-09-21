@@ -167,7 +167,9 @@ To switch to the latest io.js version using this PowerShell command:
     * 3.3.5 x64 (`C:\Python33-x64`)
     * 3.4.3 x86 (`C:\Python34`)
     * 3.4.3 x64 (`C:\Python34-x64`)
-
+    * 3.5.0 x86 (`C:\Python35`)
+    * 3.5.0 x64 (`C:\Python35-x64`)
+    
 ### Perl
 
 * [Perl](http://www.activestate.com/activeperl/downloads) 5.20.1.2000 x86 (`C:\Perl` in `PATH`)
