@@ -152,11 +152,7 @@ In connection string for local publishing you could either use standard SQL Serv
 
 ### Azure SQL Server firewall settings
 
-To enable database publishing from AppVeyor environment to your Azure SQL database you should modify Azure SQL Server firewall settings and allow **Windows Azure Services** add the following two ranges of allowed IPs:
-
-	169.54.128.0/27
-	169.54.128.128/27
-    138.91.141.243
+To enable database publishing from AppVeyor environment to your Azure SQL database you should modify Azure SQL Server firewall settings and allow **Windows Azure Services** add the [following ranges of allowed IPs](/docs/build-configuration#ip-addresses).
 
 ![azure-sql-server-settings](/site/images/docs/deployment/sql-database/azure-sql-server-settings.png)
 
