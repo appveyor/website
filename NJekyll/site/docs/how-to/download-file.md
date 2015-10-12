@@ -77,3 +77,17 @@ Command syntax:
 Example:
 
     appveyor DownloadFile http://www.myserver.com/packages/installer.msi
+
+## Curl
+
+[Curl](http://curl.haxx.se) (`curl.exe`) comes bundled with [Git](https://git-scm.com) and is therefore also available on the build workers.  Users on Unix-like operating systems may be more familiar with this command.
+
+Command syntax:
+
+    curl [-fsSL…] [-o <output-filename>] [-m <timeout-in-seconds>] <url>
+
+For scripting, using `-fsS` (or `-fsSL`) is recommended.  For more info on what the flags do, see the [curl manual](http://curl.haxx.se/docs/manpage.html).  Be aware that if neither `-o` nor `-O` are given, curl will dump the data to standard output.
+
+Example:
+
+    curl -fsS -o installer.msi http://www.myserver.com/packages/installer.msi
