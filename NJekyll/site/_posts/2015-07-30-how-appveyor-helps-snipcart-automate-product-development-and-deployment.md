@@ -7,8 +7,6 @@ title: How AppVeyor Helps Snipcart Automate Product Development & Deployment
 
 <hr>
 
-![snipcart-logo](https://snipcart.com/media/9679/snipcart_logo1.png)
-
 When we launched our developer-centric e-commerce platform, finding a premium cloud-based continuous integration solution was a top priority. We used Jenkins at first, and, while we liked it, we were also looking forward to handling those operations directly in the cloud. For months, we kept our eyes and ears opened, searching for such a solution as we kept developing our product and growing our business.
 
 A few months ago, I stumbled upon AppVeyor while exploring the Tweetosphere one night. Upon skimming through their home page and documentation, I quickly realized this was exactly what our team and product needed. Since Snipcart's API is built on top of **ASP.NET Web API**, we needed to find a web-based solution that was supporting **.NET**. And that's exactly what I found that night with AppVeyor.

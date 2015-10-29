@@ -26,6 +26,8 @@ namespace NJekyll.Engine
         private static Dictionary<string, List<Page>> _collections = new Dictionary<string, List<Page>>(StringComparer.OrdinalIgnoreCase);
         private static Dictionary<string, string> cacheDependencyDirectories = new Dictionary<string, string>();
 
+        private static object _contentLoadLock = new object();
+
         private static string _siteRoot = null;
 
         public static string GetRedirect(string pageUrl)
@@ -38,11 +40,14 @@ namespace NJekyll.Engine
 
         public static void EnsureSiteLoaded()
         {
-            var contentIsActual = GetFromCache(SITE_CONTENT_VALID_CACHE_KEY);
-            if (contentIsActual == null)
+            lock(_contentLoadLock)
             {
-                LoadSite();
-                AddToCache(SITE_CONTENT_VALID_CACHE_KEY, DateTime.Now.ToString(), cacheDependencyDirectories.Keys.ToArray(), null);
+                var contentIsActual = GetFromCache(SITE_CONTENT_VALID_CACHE_KEY);
+                if (contentIsActual == null)
+                {
+                    LoadSite();
+                    AddToCache(SITE_CONTENT_VALID_CACHE_KEY, DateTime.Now.ToString(), cacheDependencyDirectories.Keys.ToArray(), null);
+                }
             }
         }
 
