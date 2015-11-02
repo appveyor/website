@@ -223,7 +223,7 @@ Test results endpoint URL has the following format:
 
 where:
 
-* `resultsType` - test framework name to parse test results; supported parsers: `mstest`, `xunit` and `nunit`.
+* `resultsType` - test framework name to parse test results; supported parsers: `mstest`, `xunit`, `nunit` and `junit`.
 * `jobId` - build job ID that is currently running; can be read from `APPVEYOR_JOB_ID` environment variable.
 
 Example build script in PowerShell that runs xUnit tests and then uploads results in XML format:
