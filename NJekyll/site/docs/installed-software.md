@@ -16,6 +16,7 @@ Below is the list of software pre-installed on Build Worker.
 ## Version control systems
 
 * [Git](http://git-scm.com/download/win) 1.9.5 (x86) (with `git config --global core.autocrlf input`)
+	* [Git Large File Storage](https://git-lfs.github.com/)
 * [Mercurial](http://mercurial.selenic.com/downloads) 3.1.1 (x86)
 * [Subversion](http://www.collab.net/downloads/subversion) 1.8.11 (x86)
 
@@ -57,19 +58,25 @@ Below is the list of software pre-installed on Build Worker.
 ### Visual Studio 2012
 
 * [Visual Studio Express 2012 for Windows Desktop](http://www.microsoft.com/en-us/download/details.aspx?id=34673)
-* [Visual Studio Express 2012 for Web](http://www.microsoft.com/en-us/download/details.aspx?id=30669)
-* [Visual Studio Express 2012 for Windows 8](http://www.microsoft.com/en-us/download/details.aspx?id=30664)
 * [TypeScript for Visual Studio 2012](http://www.microsoft.com/en-us/download/details.aspx?id=34790)
+* [Visual Studio 2012 Update 5](https://www.microsoft.com/en-ca/download/details.aspx?id=48708)
 
 ### Visual Studio 2013
 
 * [Visual Studio Community 2013 with Update 4](http://www.visualstudio.com/products/visual-studio-community-vs)
 * [Visual Studio 2013 SDK](http://www.visualstudio.com/downloads/download-visual-studio-vs)
+* [Python Tools for Visual Studio 2013](https://github.com/Microsoft/PTVS/releases)
+* [Node.js Tools for Visual Studio 2013](https://github.com/Microsoft/nodejstools#readme)
 
 ### Visual Studio 2015
 
 * Universal Windows App Dev Tools for Visual Studio 2015
 * Windows 10 SDK
+* [Python Tools for Visual Studio 2015](https://github.com/Microsoft/PTVS/releases)
+* [Node.js Tools for Visual Studio 2015](https://github.com/Microsoft/nodejstools#readme)
+* [Visual F# Tools 4.0 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=48179)
+* [Visual Studio 2015 Installer Projects](https://visualstudiogallery.msdn.microsoft.com/f1cc3f3e-c300-40a7-8797-c509fb8933b9)
+* [ASP.NET and Web Tools 2015 (Beta8)](https://www.microsoft.com/en-us/download/details.aspx?id=49442)
 
 Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
 
@@ -99,7 +106,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 `0.12.7` is default Node.js installed on build workers.
 
-* 4.0.0 - 4.1.0 (x86 and x64)
+* 4.0.0 - 5.0.0 (x86 and x64)
 * 0.10.26 - 0.10.40 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
 * 0.12.0 - 0.12.7 (x86 and x64)
@@ -113,9 +120,9 @@ To switch to the latest `0.x.x` Node.js version (0.12.x) use this PowerShell com
 
     Install-Product node 0
 
-To switch to the latest `4.x.x` Node.js version use this PowerShell command:
+To switch to the latest `5.x.x` Node.js version use this PowerShell command:
 
-    Install-Product node 4
+    Install-Product node ''
 
 ### io.js
 
@@ -132,16 +139,18 @@ To switch to the latest io.js version using this PowerShell command:
 ### Go
 
 * [Go](http://golang.org/dl/)
-    * 1.4.2 x64 (`C:\go` - default in `PATH`)
-    * 1.4.2 x86 (`C:\go-x86`)
+    * 1.5.1 x64 (`C:\go` - default in `PATH`)
+    * 1.5.1 x86 (`C:\go-x86`)
+    * 1.4.2 x64 (`C:\go14`)
+    * 1.4.2 x86 (`C:\go14-x86`)
 
 ### Java
 
 * Java SE Development Kit (JDK)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x64) (`C:\Program Files\Java\jdk1.7.0\bin` - default in `PATH`)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x86) (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)
-    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 45 (x64) (`C:\Program Files\Java\jdk1.8.0`)
-    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 45 (x86) (`C:\Program Files (x86)\Java\jdk1.8.0`)
+    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 66 (x64) (`C:\Program Files\Java\jdk1.8.0`)
+    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 66 (x86) (`C:\Program Files (x86)\Java\jdk1.8.0`)
 
 ### Mono
 
@@ -162,6 +171,8 @@ To switch to the latest io.js version using this PowerShell command:
 ### Python
 
 * [Python](https://www.python.org/downloads/windows/)
+    * 2.6.6 x86 (`C:\Python26`)
+    * 2.6.6 x64 (`C:\Python26-x64`)
     * 2.7.9 x86 (`C:\Python27` - default in `PATH`)
     * 2.7.9 x64 (`C:\Python27-x64`)
     * 3.3.5 x86 (`C:\Python33`)
@@ -170,6 +181,12 @@ To switch to the latest io.js version using this PowerShell command:
     * 3.4.3 x64 (`C:\Python34-x64`)
     * 3.5.0 x86 (`C:\Python35`)
     * 3.5.0 x64 (`C:\Python35-x64`)
+* Miniconda
+	* Miniconda 3.10.1 (Python 2.7.9.1) - `C:\Miniconda`
+	* Miniconda 3.10.1 x64 (Python 2.7.9.1): `C:\Miniconda-x64`
+	* Miniconda 3.10.1 (Python 3.4.3): `C:\Miniconda3`
+	* Miniconda 3.10.1 x64 (Python 3.4.3): `C:\Miniconda3-x64`
+* [Visual C++ Compiler for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266)
     
 ### Perl
 
