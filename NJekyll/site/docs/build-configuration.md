@@ -37,8 +37,6 @@ Every build runs on a fresh virtual machine which is not shared with other build
   </tr>
 </table>
 
-> \* Builds configured to use custom image (`os` setting in `appveyor.yml` or `Operating system` on UI) run on virtual machines in Microsoft Azure data center.
-
 ### IP addresses
 
 IP addresses assigned to build workers:
