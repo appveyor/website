@@ -229,8 +229,8 @@ To switch to the latest io.js version using this PowerShell command:
 ## Tools
 
 * [7-Zip](http://www.7-zip.org/) 9.20
-* [Git](https://git-scm.com) 1.9.5, which is bundled with:
-    * [Curl](http://curl.haxx.se) 7.30.0
+* [Git](https://git-scm.com) 2.6.3, which is bundled with:
+    * [Curl](http://curl.haxx.se) 7.45.0
 * [Windows Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 0.9.5 (July 2015)
 * [Windows Azure CLI](http://azure.microsoft.com/en-us/downloads/)
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 3.1.2
