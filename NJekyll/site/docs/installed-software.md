@@ -182,10 +182,12 @@ To switch to the latest io.js version using this PowerShell command:
     * 3.5.0 x86 (`C:\Python35`)
     * 3.5.0 x64 (`C:\Python35-x64`)
 * Miniconda
-	* Miniconda (Python 2.7.10) - `C:\Miniconda`
-	* Miniconda x64 (Python 2.7.10): `C:\Miniconda-x64`
-	* Miniconda3 (Python 3.5.0): `C:\Miniconda3`
-	* Miniconda3 x64 (Python 3.5.0): `C:\Miniconda3-x64`
+	* Miniconda2 3.18.3 (Python 2.7.10) - `C:\Miniconda`
+	* Miniconda2 3.18.3 x64 (Python 2.7.10): `C:\Miniconda-x64`
+	* Miniconda3 3.16.0 (Python 3.4.3): `C:\Miniconda3`
+	* Miniconda3 3.16.0 x64 (Python 3.4.3): `C:\Miniconda3-x64`
+	* Miniconda3 3.18.3 (Python 3.5.0): `C:\Miniconda35`
+	* Miniconda3 3.18.3 x64 (Python 3.5.0): `C:\Miniconda35-x64`
 * [Visual C++ Compiler for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266)
     
 ### Perl
