@@ -104,7 +104,7 @@ Every build goes through the following steps:
 
 ### Time limitations
 
-Free, Professional and Premium plans have a hard quota of 30 minutes on build execution time. Enterprise plans allow 50 minutes per build job.
+All plans have 60 minutes quota per build job.
 
 
 ## Configuring build
