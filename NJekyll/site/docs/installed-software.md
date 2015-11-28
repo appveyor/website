@@ -31,7 +31,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Microsoft Expression Blend Software Development Kit (SDK) for .NET 4](http://www.microsoft.com/en-us/download/details.aspx?id=10801)
 * [Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4](http://www.microsoft.com/en-us/download/details.aspx?id=3062)
 * [Windows Phone SDK 8.0](http://www.microsoft.com/en-us/download/details.aspx?id=35471)
-* [Azure SDKs](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5.1, 2.6, 2.7
+* [Azure SDKs](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5.1, 2.6, 2.7, 2.8
 * [Microsoft SilverLight 5 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=28359)
 * [Windows PowerShell 2.0 SDK](http://www.microsoft.com/en-ca/download/details.aspx?id=2560)
 * [DirectX SDK](http://www.microsoft.com/en-us/download/details.aspx?id=6812) (`C:\Program Files (x86)\Microsoft DirectX SDK`)
@@ -106,7 +106,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 `0.12.7` is default Node.js installed on build workers.
 
-* 4.0.0 - 5.0.0 (x86 and x64)
+* 4.0.0 - 5.1.0 (x86 and x64)
 * 0.10.26 - 0.10.40 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
 * 0.12.0 - 0.12.7 (x86 and x64)
@@ -233,7 +233,7 @@ To switch to the latest io.js version using this PowerShell command:
 * [7-Zip](http://www.7-zip.org/) 9.20
 * [Git](https://git-scm.com) 1.9.5, which is bundled with:
     * [Curl](http://curl.haxx.se) 7.30.0
-* [Windows Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 0.9.5 (July 2015)
+* [Windows Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 1.0.1 (November 2015)
 * [Windows Azure CLI](http://azure.microsoft.com/en-us/downloads/)
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 3.1.2
 * [NuGet](http://docs.nuget.org/consume/installing-nuget) 2.8.5
