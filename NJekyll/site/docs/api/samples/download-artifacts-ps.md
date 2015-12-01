@@ -38,5 +38,5 @@ layout: docs
 <span style="color:#5a525f;font-style:italic"># download artifact</span>
 <span style="color:#5a525f;font-style:italic"># -OutFile - is local file name where artifact will be downloaded into</span>
 Invoke-RestMethod -Method Get -Uri <span style="color:#0b6125">"<span style="color:#234a97">$apiUrl</span>/buildjobs/<span style="color:#234a97">$jobId</span>/artifacts/<span style="color:#234a97">$artifactFileName</span>"</span> <span style="color:#0b6125">`
-     -OutFile <span style="color:#234a97">$localArtifactPath</span> -Headers <span style="color:#234a97">$headers</span>
+     -OutFile <span style="color:#234a97">$localArtifactPath</span>
 </span></pre>
