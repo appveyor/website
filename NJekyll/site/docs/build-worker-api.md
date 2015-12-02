@@ -284,7 +284,7 @@ Options are similar to PowerShell cmdlet parameters.
 
 ### REST
 
-    PUT api/artifacts
+    POST api/artifacts
 
 Request body (JSON):
 
@@ -295,17 +295,26 @@ Request body (JSON):
         "type": "NuGetPackage"
     }
 
-Response body (JSON) contains temporary URL for uploading artifact:
+Response body (JSON) contains temporary URL for uploading artifact. If this is an appveyor.com address, like this:
 
     "https://ci.appveyor.com/api/artifacts/abc123/mypackage.nupkg"
 
-Then in PowerShell:
+Then the file can be uploaded using WebClient, e.g. in PowerShell:
 
     (New-Object System.Net.WebClient).UploadFile( `
         "https://ci.appveyor.com/api/artifacts/abc123/mypackage.nupkg", `
         "c:\projects\myproject\mypackage.nupkg")
 
+However, if the URL contains `storage.googleapis.com`, things are a little different. First, send a PUT to the returned URL containing the contents of the file in the body. Then, the artifact must be finalised with another call to the API endpoint:
 
+    PUT api/artifacts
+
+Request body (JSON):
+
+    {
+        "fileName": "mypackage.nupkg",
+        "size": <file_size_in_bytes>
+    }
 
 ## Update build details
 
