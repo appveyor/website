@@ -171,7 +171,7 @@ To run unit tests for Visual Studio test framework with real-time reporting use 
 
 
 
-### NUnit
+### NUnit 2.x
 
 To run NUnit tests with real-time reporting use command:
 
@@ -182,6 +182,11 @@ or for x86 assemblies:
     nunit-console-x86 <assembly> [options]
 
 
+### NUnit 3.x
+
+To run NUnit tests with reporting test results to AppVeyor use command:
+
+    nunit3-console <assembly> [options] --result=myresults.xml;format=AppVeyor
 
 ### xUnit
 
@@ -223,7 +228,12 @@ Test results endpoint URL has the following format:
 
 where:
 
-* `resultsType` - test framework name to parse test results; supported parsers: `mstest`, `xunit`, `nunit` and `junit`.
+* `resultsType` - test framework name to parse test results; supported parsers:
+	* `mstest`
+	* `xunit`
+	* `nunit`
+	* `nunit3`
+	* `junit`.
 * `jobId` - build job ID that is currently running; can be read from `APPVEYOR_JOB_ID` environment variable.
 
 Example build script in PowerShell that runs xUnit tests and then uploads results in XML format:
