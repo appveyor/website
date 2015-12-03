@@ -31,7 +31,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Microsoft Expression Blend Software Development Kit (SDK) for .NET 4](http://www.microsoft.com/en-us/download/details.aspx?id=10801)
 * [Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4](http://www.microsoft.com/en-us/download/details.aspx?id=3062)
 * [Windows Phone SDK 8.0](http://www.microsoft.com/en-us/download/details.aspx?id=35471)
-* [Azure SDKs](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5.1, 2.6, 2.7, 2.8
+* [Azure SDKs](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5.1, 2.6, 2.7.1, 2.8.1
 * [Microsoft SilverLight 5 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=28359)
 * [Windows PowerShell 2.0 SDK](http://www.microsoft.com/en-ca/download/details.aspx?id=2560)
 * [DirectX SDK](http://www.microsoft.com/en-us/download/details.aspx?id=6812) (`C:\Program Files (x86)\Microsoft DirectX SDK`)
@@ -40,6 +40,7 @@ Below is the list of software pre-installed on Build Worker.
 * [TypeScript 1.4 for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/2d42d8dc-e085-45eb-a30b-3f7d50d55304)
 * [TypeScript 1.5 for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/b1fff87e-d68b-4266-8bba-46fad76bbf22)
 * TypeScript 1.6.3 for Visual Studio 2015
+* TypeScript 1.7.4 for Visual Studio 2015
 
 ## Visual Studio
 
@@ -76,7 +77,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Node.js Tools for Visual Studio 2015](https://github.com/Microsoft/nodejstools#readme)
 * [Visual F# Tools 4.0 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=48179)
 * [Visual Studio 2015 Installer Projects](https://visualstudiogallery.msdn.microsoft.com/f1cc3f3e-c300-40a7-8797-c509fb8933b9)
-* [ASP.NET and Web Tools 2015 (Beta8)](https://www.microsoft.com/en-us/download/details.aspx?id=49442)
+* ASP.NET and Web Tools 2015 (RC1 Update1)
 
 Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
 
@@ -84,7 +85,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 ## Xamarin
 
-[Xamarin Platform](https://xamarin.com/platform) is installed on `Visual Studio 2015` image.
+[Xamarin Platform](https://xamarin.com/platform) v4.0.0.1697 is installed on `Visual Studio 2015` image.
 
 ## Languages, libraries, frameworks
 
@@ -247,6 +248,7 @@ To switch to the latest io.js version using this PowerShell command:
 ### Runners
 
 * [NUnit](http://nunit.org/index.php?p=download) 2.6.4 in `C:\Tools\NUnit\bin`
+* [NUnit3](https://github.com/nunit/nunit) 3.0.1 in `C:\Tools\NUnit3\bin`
 * [xUnit](https://github.com/xunit/xunit/releases) 1.9.2 in `C:\Tools\xUnit`
 * [xUnit](https://www.nuget.org/packages/xunit.runner.console/2.0.0) 2.0.0 RTM in `C:\Tools\xUnit20`
 * [Machine.Specifications (MSpec)](http://www.nuget.org/packages/Machine.Specifications)
