@@ -13,7 +13,8 @@ APIs:
 
 Samples:
 
-* [Downloading build artifact (PowerShell)](/docs/api/samples/download-artifacts-ps)
+* [Downloading build artifact (PowerShell - basic example)](/docs/api/samples/download-artifacts-ps)
+* [Downloading build artifact (PowerShell - advanced example)](/docs/api/samples/download-artifacts-advanced-ps)
 
 ## Authentication
 
