@@ -19,6 +19,7 @@ namespace NJekyll.Engine
                     // redirect to https://www.appveyor.com
                     var httpsUrl = new UriBuilder(originalUrl);
                     httpsUrl.Scheme = "https";
+                    httpsUrl.Port = 443;
                     if(!httpsUrl.Host.StartsWith("www."))
                     {
                         httpsUrl.Host = "www." + httpsUrl.Host;
