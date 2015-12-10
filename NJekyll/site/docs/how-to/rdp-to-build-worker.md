@@ -20,4 +20,4 @@ If you need to investigate worker on build finish add `$blockRdp = $true;` to di
     on_finish:
     - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
-> Your RDP session is limited by overall build time (40 min).
+> Your RDP session is limited by overall build time (60 min).
