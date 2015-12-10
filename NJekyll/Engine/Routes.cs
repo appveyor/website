@@ -13,20 +13,20 @@ namespace NJekyll.Engine
                 var request = context.HttpContext.Request;
                 var response = context.HttpContext.Response;
 
-                //var originalUrl = request.Url;
-                //if(request.HttpMethod == "GET" && originalUrl.Host != "localhost" && (originalUrl.Scheme != "https" || !originalUrl.Host.StartsWith("www.")))
-                //{
-                //    // redirect to https://www.appveyor.com
-                //    var httpsUrl = new UriBuilder(originalUrl);
-                //    httpsUrl.Scheme = "https";
-                //    httpsUrl.Port = 443;
-                //    if(!httpsUrl.Host.StartsWith("www."))
-                //    {
-                //        httpsUrl.Host = "www." + httpsUrl.Host;
-                //    }
-                //    response.RedirectPermanent(httpsUrl.ToString(), true);
-                //    return;
-                //}
+                var originalUrl = request.Url;
+                if(request.HttpMethod == "GET" && originalUrl.Host != "localhost" && (originalUrl.Scheme != "https" || !originalUrl.Host.StartsWith("www.")))
+                {
+                    // redirect to https://www.appveyor.com
+                    var httpsUrl = new UriBuilder(originalUrl);
+                    httpsUrl.Scheme = "https";
+                    httpsUrl.Port = 443;
+                    if(!httpsUrl.Host.StartsWith("www."))
+                    {
+                        httpsUrl.Host = "www." + httpsUrl.Host;
+                    }
+                    response.RedirectPermanent(httpsUrl.ToString(), true);
+                    return;
+                }
 
                 var pageUrl = request.Url.AbsolutePath.TrimEnd('/');
                 if (String.IsNullOrEmpty(pageUrl))
