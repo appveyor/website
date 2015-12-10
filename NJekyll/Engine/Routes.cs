@@ -24,10 +24,20 @@ namespace NJekyll.Engine
                 //    {
                 //        httpsUrl.Host = "www." + httpsUrl.Host;
                 //    }
-                //    response.StatusCode = 302;
                 //    response.RedirectPermanent(httpsUrl.ToString(), true);
                 //    return;
                 //}
+
+                var originalUrl = request.Url;
+                if (request.HttpMethod == "GET" && originalUrl.Host != "localhost" && !originalUrl.Host.StartsWith("www."))
+                {
+                    // redirect to www.appveyor.com
+                    var wwwUrl = new UriBuilder(originalUrl);
+                    wwwUrl.Host = "www." + wwwUrl.Host;
+
+                    response.RedirectPermanent(wwwUrl.ToString(), true);
+                    return;
+                }
 
                 var pageUrl = request.Url.AbsolutePath.TrimEnd('/');
                 if (String.IsNullOrEmpty(pageUrl))
