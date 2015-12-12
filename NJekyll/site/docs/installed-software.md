@@ -41,6 +41,9 @@ Below is the list of software pre-installed on Build Worker.
 * [TypeScript 1.5 for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/b1fff87e-d68b-4266-8bba-46fad76bbf22)
 * TypeScript 1.6.3 for Visual Studio 2015
 * TypeScript 1.7.4 for Visual Studio 2015
+* [Office Developer Tools for Visual Studio 2013](http://blogs.msdn.com/b/visualstudio/archive/2014/03/03/announcing-office-developer-tools-for-visual-studio-2013-march-2014-update.aspx)
+* [Office Developer Tools for Visual Studio 2015](https://www.visualstudio.com/en-us/features/office-tools-vs.aspx)
+* [Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013](https://www.microsoft.com/en-ca/download/details.aspx?id=42313)
 
 ## Visual Studio
 
@@ -85,7 +88,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 ## Xamarin
 
-[Xamarin Platform](https://xamarin.com/platform) v4.0.0.1697 is installed on `Visual Studio 2015` image.
+[Xamarin Platform](https://xamarin.com/platform) v4.0.0.1717 is installed on `Visual Studio 2015` image.
 
 ## Languages, libraries, frameworks
 
@@ -107,11 +110,13 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 `0.12.7` is default Node.js installed on build workers.
 
-* 4.0.0 - 5.1.0 (x86 and x64)
+* 4.0.0 - 5.2.0 (x86 and x64)
 * 0.10.26 - 0.10.40 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
 * 0.12.0 - 0.12.7 (x86 and x64)
 * 0.8.25 - 0.8.28 (x86 and x64)
+* Use `LTS` alias for `4.2.3`
+* Use `Stable` alias for `5.2.0`
 
 Use the following PowerShell command to quickly switch Node.js version:
 
@@ -238,10 +243,11 @@ To switch to the latest io.js version using this PowerShell command:
 * [Windows Azure CLI](http://azure.microsoft.com/en-us/downloads/)
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 3.1.2
 * [NuGet](http://docs.nuget.org/consume/installing-nuget) 2.8.5
-* [NuGet](http://blog.nuget.org/20150902/nuget-3.2RC.html) 3.2 on `Visual Studio 2015` images
+* [NuGet](http://blog.nuget.org/20150902/nuget-3.2RC.html) 3.3.0 on `Visual Studio 2015` images
 * [Chocolatey](http://chocolatey.org/) v0.9.9.8
 * [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.0.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
+* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2e
 
 ## Testing
 
@@ -258,8 +264,8 @@ To switch to the latest io.js version using this PowerShell command:
 * [Chrome Web Driver](http://chromedriver.storage.googleapis.com/index.html) 2.19
 * [Internet Explorer Web Driver](http://selenium-release.storage.googleapis.com/index.html) 2.47
 * Internet Explorer 11
-* FireFox 40.0.3 x86
-* Chrome 45.0.2454.85
+* FireFox 42.0
+* Chrome 47.0.2526.80
 
 
 ## Services and databases
