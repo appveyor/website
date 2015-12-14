@@ -5,42 +5,42 @@ title: Secure files
 
 # Secure files
 
-Sometimes you need to store sensitive information
+Sometimes you need to store sensitive information in your repositories.
 
-[Secure-file](https://github.com/appveyor/secure-file) utility can be used for encrypting/decrypting arbitrary files using Rijndael method. It enables you to safely store sensitive data (SSH keys, certificates, etc.) in the source control repository and then use it during the build. 
+The [Secure-file](https://github.com/appveyor/secure-file) utility can be used for encrypting/decrypting arbitrary files using the Rijndael method. It enables you to safely store sensitive data (SSH keys, certificates, etc.) in the source control repository and then use it during the build. 
 
-High-level scenario of using this utility in [AppVeyor CI](http://www.appveyor.com) environment:
+High-level scenario of using this utility in the [AppVeyor CI](http://www.appveyor.com) environment:
 
-- Encrypt file on development machine.
-- Commit encrypted file to source control.
-- Place "secret" to project environment variable.
-- Decrypt file during the build.
+- Encrypt the file on the development machine.
+- Commit the encrypted file to source control.
+- Place the "secret" into a project environment variable.
+- Decrypt the file during the build.
 
 
 ## Encrypting file on development machine
 
-From command line download [`secure-file` NuGet package](https://www.nuget.org/packages/secure-file/):
+From the command line download the [`secure-file` NuGet package](https://www.nuget.org/packages/secure-file/):
 
     nuget install secure-file -ExcludeVersion
 
-Encrypt file:
+File encryption:
 
     secure-file\tools\secure-file -encrypt C:\path-to\filename-to-encrypt.ext -secret MYSECRET1234
 
-Encrypted file will be saved in the same directory as input file, but with `.enc` extension added. You can optionally specify output file name with `-out` parameter.
+Encrypted file will be saved in the same directory as the input file, but with the `.enc` extension added. You can optionally specify output file name with the `-out` parameter.
 
-Commit encrypted file to source control.
+After that commit the encrypted file to source control.
 
 
-## Decrypting file in AppVeyor build
+## Decrypting files during an AppVeyor build
 
-Put "secret" value to project environment variables on Environment tab of project settings on in `appveyor.yml` as [secure variable](https://ci.appveyor.com/tools/encrypt):
+Put the "secret" value to the project environment variables on the _Environment_ tab of the project settings or in the `appveyor.yml` as a [secure variable](https://ci.appveyor.com/tools/encrypt):
 
     environment:
       my_secret:
         secure: BSNfEghh/l4KAC3jAcwAjgTibl6UHcZ08ppSFBieQ8E=
 
-To decrypt the file add these lines to `install` section of your project config:
+To decrypt the file, add these lines to the `install` section of your project config:
 
     install:
     - nuget install secure-file -ExcludeVersion
