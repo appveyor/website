@@ -41,14 +41,15 @@ Every build runs on a fresh virtual machine which is not shared with other build
 
 IP addresses assigned to build workers:
 
-	169.54.128.0/27
-	169.54.128.128/27
+    169.54.128.0/27
+    169.54.128.128/27
     198.23.110.32/29
     169.54.147.96/27
     50.23.71.176/29
     50.23.78.112/29
     50.97.254.64/27
     104.197.110.30
+    104.197.145.181
 
 IP address of AppVeyor workers (when deploying using "Environments"):
 
