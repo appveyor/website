@@ -5,6 +5,7 @@ title: Building Xamarin projects
 
 # Building Xamarin projects
 
+<!--TOC-->
 
 ## Introduction
 
@@ -38,6 +39,35 @@ You can securely specify your Xamarin account credentials on "Xamarin" tab of pr
 	  ios: true
 
 > Even if you use `appveyor.yml` for configuring your projects you can still set Xamarin account credentials on project UI and remove them from `appveyor.yml`.
+
+## Restoring Xamarin components
+
+To restore Xamarin components on build worker you use `xamarin-component.exe` tool. The tool is available at the following location: [https://components.xamarin.com/submit/xpkg](https://components.xamarin.com/submit/xpkg)
+- rename downloaded file to `xpkg.zip` and unzip to extract the tool.
+
+The main challenge of using this tool on a build server is that to restore components it requires autnetication with your Xamarin credentials,
+however `login` action prompts for password interactively thus blocking the build.
+
+Fortunately, it's possible to copy cached credentials ("cookie jar") from your local development machine to a build worker and it will work.
+
+On your local development machine open command prompt at the location with `xamarin-component.exe` tool and run the following command to authenticate:
+
+    xamarin-component.exe login <your-xamarin@email.com>
+	
+Cached credentials are stored in `C:\Users\<user>\.xamarin-credentials` file. Open that file and copy the number after `xamarin.com,` to a clipboard. 
+
+Open AppVeyor project settings and add a new environment variable called `XAMARIN_COOKIE` with the value from clipboard.
+
+To download and configure packaging restore tool add these PowerShell commands to "Install" section of your build (`install` section in `appveyor.yml`):
+
+    $zipPath = "$($env:APPVEYOR_BUILD_FOLDER)\xpkg.zip"
+    (New-Object Net.WebClient).DownloadFile('https://components.xamarin.com/submit/xpkg', $zipPath)
+    7z x $zipPath | Out-Null
+    Set-Content -path "$env:USERPROFILE\.xamarin-credentials" -value "xamarin.com,$env:XAMARIN_COOKIE"
+
+To restore components used in the solution add this command to "Before build" section (`before_build` section in `appveyoryml`):
+
+    xamarin-component.exe restore <path\to-you-solution.sln>
 
 ## External links
 
