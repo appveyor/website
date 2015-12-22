@@ -24,7 +24,11 @@ AppVeyor will find Azure Cloud Service project (`.ccproj`) and package it. Creat
 
 ![azure-cloud-service-artifacts](/site/images/docs/azure-cloud-service-artifacts.png)
 
-
+> If you get `error WAT200: No default service configuration "ServiceConfiguration.cscfg" could be found in the project` build error while using automatic package
+then you should define `TargetProfile` environment variable with the name of configuration you'd like to build:
+ 
+    environment:
+      TargetProfile: <your-target-profile-name>
 
 
 ## Packaging from script
