@@ -45,6 +45,8 @@ IP addresses assigned to build workers:
     50.23.78.115
     198.23.110.34
     198.23.110.35
+    104.197.110.30
+    104.197.145.181
 
 IP address of AppVeyor workers (when deploying using "Environments"):
 
