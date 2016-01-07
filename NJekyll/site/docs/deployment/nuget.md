@@ -25,3 +25,5 @@ Configuring in `appveyor.yml`:
       skip_symbols: false
       symbol_server:           # remove to push symbols to SymbolSource.org
       artifact: /.*\.nupkg/
+
+Your NuGet API key should be encrypted using this tool: https://ci.appveyor.com/tools/encrypt.
