@@ -15,7 +15,7 @@ title: Projects and builds API
 * [Get project settings in YAML](#get-project-settings-in-yaml)
 * [Add project](#add-project)
 * [Update project](#update-project)
-* [Update project settings with YAML](#update-project-settings-with-yaml)
+* [Update project settings in YAML](#update-project-settings-in-yaml)
 * [Delete project build cache](#delete-project-build-cache)
 * [Delete project](#delete-project)
 
