@@ -29,7 +29,7 @@ namespace NJekyll.Engine
                 //}
 
                 var originalUrl = request.Url;
-                if (request.HttpMethod == "GET" && originalUrl.Host != "localhost" && !originalUrl.Host.StartsWith("www."))
+                if (request.HttpMethod == "GET" && originalUrl.Host.Equals("appveyor.com", StringComparison.OrdinalIgnoreCase))
                 {
                     // redirect to www.appveyor.com
                     var wwwUrl = new UriBuilder(originalUrl);
