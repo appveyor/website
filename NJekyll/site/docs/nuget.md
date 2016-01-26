@@ -44,7 +44,7 @@ The project feed contains all build artifact packages of type "NuGet package". I
 
 You can enable automatic publishing of NuGet packages during the build on the project settings **Build** tab. When it is enabled AppVeyor calls `nuget pack` for every project in the solution that has a `.nuspec` file in its root and then publishes NuGet package artifacts in both project and account feeds.
 
-To generate a `.nuspec` file for your project run the following command from project root directory:
+To generate a `.nuspec` file for a project run the following command from within the *project* directory:
 
     nuget spec
 
