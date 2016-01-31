@@ -159,18 +159,18 @@ Place [nuget-restore.cmd](https://github.com/appveyor/ci/blob/master/scripts/nug
 
 If solution file is located in the root of repo use this command to reliably restore nuget packages:
 
-    appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/v3.2.0-rc/nuget.exe
+    appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
     nuget-restore
 
 or
 
-    appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/v3.2.0-rc/nuget.exe
+    appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
     nuget-restore <path-to\solution.sln>
 
 If you don't want to pollute your repository with `nuget-restore.cmd` you can download it from GitHub during the build:
 
     before_build:
-      - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/v3.2.0-rc/nuget.exe
+      - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
       - appveyor DownloadFile https://raw.githubusercontent.com/appveyor/ci/master/scripts/nuget-restore.cmd
       - nuget-restore
 
