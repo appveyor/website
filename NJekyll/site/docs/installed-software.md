@@ -15,8 +15,8 @@ Below is the list of software pre-installed on Build Worker.
 
 ## Version control systems
 
-* [Git](http://git-scm.com/download/win) 2.6.3 (x64) (with `git config --global core.autocrlf input`)
-	* [Git Large File Storage](https://git-lfs.github.com/)
+* [Git](http://git-scm.com/download/win) 2.7.0 (x64) (with `git config --global core.autocrlf input`)
+	* [Git Large File Storage](https://git-lfs.github.com/) 1.1
 * [Mercurial](http://mercurial.selenic.com/downloads) 3.1.1 (x86)
 * [Subversion](http://www.collab.net/downloads/subversion) 1.8.11 (x86)
 
@@ -40,7 +40,7 @@ Below is the list of software pre-installed on Build Worker.
 * [TypeScript 1.4 for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/2d42d8dc-e085-45eb-a30b-3f7d50d55304)
 * [TypeScript 1.5 for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/b1fff87e-d68b-4266-8bba-46fad76bbf22)
 * TypeScript 1.6.3 for Visual Studio 2015
-* TypeScript 1.7.4 for Visual Studio 2015
+* TypeScript 1.7.6 for Visual Studio 2015
 * [Office Developer Tools for Visual Studio 2013](http://blogs.msdn.com/b/visualstudio/archive/2014/03/03/announcing-office-developer-tools-for-visual-studio-2013-march-2014-update.aspx)
 * [Office Developer Tools for Visual Studio 2015](https://www.visualstudio.com/en-us/features/office-tools-vs.aspx)
 * [Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013](https://www.microsoft.com/en-ca/download/details.aspx?id=42313)
@@ -110,7 +110,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 `0.12.7` is default Node.js installed on build workers.
 
-* 4.0.0 - 5.2.0 (x86 and x64)
+* 4.0.0 - 5.5.0 (x86 and x64)
 * 0.10.26 - 0.10.40 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
 * 0.12.0 - 0.12.7 (x86 and x64)
