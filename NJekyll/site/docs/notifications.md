@@ -7,7 +7,8 @@ title: Build notifications
 
 <!--TOC-->
 
-Build notifications are defined on project level and triggered on build success or fail events. You can configure notification on **Notifications** tab of project settings or in `notifications` section of `appveyor.yml`:
+Build notifications are defined on project level and triggered on build success or fail events.
+You can configure notification on **Notifications** tab of project settings or in `notifications` section of `appveyor.yml`:
 
     notifications:
       - provider: <provider_1>
@@ -138,14 +139,38 @@ Default HipChat message template:
 
 ## Slack
 
-Slack notification nicely differentiates between passed and failed builds by changing color of AppVeyor logo:
+Slack sends notifications as message attachments which allows differentiating successful/failed builds/deployments with color.
 
 ![slack-build](/site/images/docs/notifications/slack-build.png)
 
-### Authentication token
+Slack notifications can be configured to use either *Authentication token* and *channel name* or *Incoming webhook*.
 
-Slack API authentication token can be generated on this page (**Authentication** section): <br/>
+### Authentication token with channel name  
+
+When authentication token is used channel name must be specified. Slack API authentication token can be generated on this page (**Authentication** section): <br/>
 [https://api.slack.com/web](https://api.slack.com/web)
+
+When you specify channel name make sure it starts with `#` sign if it's public channel, for example `#builds`.
+In `appveyor.yml` you need to quote channel name to pass YAML validation, for example:
+
+    - provider: Slack
+      auth_token:
+        secure: AAABBB+CCC==
+      channel: '#channel'
+      
+### Incoming webhook
+
+Slack notifications can be configured to use [Incoming webhook](https://api.slack.com/incoming-webhooks).
+When webhook is used channel name can be omitted as it's encoded into webhook URL.
+
+Follow **incoming webhook integration** link on [Incoming webhooks](https://api.slack.com/incoming-webhooks) page to 
+generate new incoming webhook.
+
+In `appveyor.yml` webhook URL can be set as secure string, for example:
+
+    - provider: Slack
+      incoming_webhook:
+        secure: AAABBB+CCC+DDD==
 
 ### Message template
 
