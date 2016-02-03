@@ -82,6 +82,10 @@ The table below summarizes key differences between two modes with lists of deplo
     <td><a href="/docs/deployment/github">GitHub Releases</a></td>
 </tr>
 <tr>
+    <td><a href="/docs/deployment/bintray">BinTray</a></td>
+    <td><a href="/docs/deployment/bintray">BinTray</a></td>
+</tr>
+<tr>
     <td>Script</td>
     <td>-</td>
 </tr>
