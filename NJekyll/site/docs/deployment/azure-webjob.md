@@ -12,6 +12,11 @@ There are two types of WebJob:
 * **Continuous** job when executable or script is continuously run with 1 minute intervals;
 * **Triggered** job which runs on schedule.
 
+## WebJob artifact
+
+WebJob artifact must be a `.zip` archive that contains either executable (`.exe`) or batch (`.cmd`, `.bat`) file.
+See [this page](https://github.com/projectkudu/kudu/wiki/Web-Jobs) for detailed requirements to job archive contents. 
+
 ## Publishing credentials
 
 To publish WebJob you need to know website Web Deploy credentials (username and password). Web Deploy credentials can be found in publish profile XML downloaded from website settings page (**Download publish profile** button) in [Azure Portal](https://portal.azure.com).
