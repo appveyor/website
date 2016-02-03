@@ -62,6 +62,10 @@ The table below summarizes key differences between two modes with lists of deplo
     <td><a href="/docs/deployment/sql-database-ssdt">SQL Database (SSDT)</a></td>
 </tr>
 <tr>
+    <td><a href="/docs/deployment/azure-webjob">Azure WebJob</a></td>
+    <td><a href="/docs/deployment/azure-webjob">Azure WebJob</a></td>
+</tr>
+<tr>
     <td><a href="/docs/deployment/azure-blob">Azure Blob</a></td>
     <td><a href="/docs/deployment/azure-blob">Azure Blob</a></td>
 </tr>
