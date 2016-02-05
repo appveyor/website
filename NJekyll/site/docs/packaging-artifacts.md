@@ -100,3 +100,28 @@ You can iterate through all elements of `$artifacts` hash table with the followi
 foreach($artifactName in $artifacts.keys) {
   $artifacts[$artifactName]
 }
+
+## Permalink to the last successful build artifact
+
+URL for fetching "last successful" artifact:
+
+    https://ci.appveyor.com/api/projects/<account>/<project>/artifacts/<artifact_file_path>
+
+URL parameters:
+
+* `branch` - if not specified the most recent successful build of *any branch* is fetched.
+* `job` - the name of the job. If a build contains multiple jobs then this parameter is mandatory. Value must be URL-encoded, for example `Configuration%3DRelease`.
+
+Examples:
+
+Downloading last successful artifact from all branches:
+
+    https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip
+
+Downloading last successful artifact for `master` branch:
+
+    https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?branch=master
+
+Downloading last successful artifact from `master` branch and "Release" job:
+
+    https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?branch=master&job=Configuration%3DRelease
