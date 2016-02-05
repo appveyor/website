@@ -151,28 +151,27 @@ If you experience `nuget restore` issues enable detailed logging with `-verbosit
 
 This will help to better understand the root cause of the issue.
 
+### Download latest NuGet command-line
+
+There is a chance that NuGet issue you are experiencing has been fixed in the latest `nuget.exe` which is available for download.
+
+To download the latest `nuget.exe` add this to "Install script" section of your build (or under `install` in `appveyor.yml`):
+
+      appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+
 ### Restore with retries
 
-The idea of "reliable" restore is simple - having batch file retrying nuget restore few times until `nuget restore` exit code is 0.
+The idea of "reliable" restore is simple - having batch file retrying `nuget restore` few times until the command exits with code 0.
 
-Place [nuget-restore.cmd](https://github.com/appveyor/ci/blob/master/scripts/nuget-restore.cmd) in the root of your repo. 
+There is such a batch file provided by AppVeyor Build Agent called `appveyor-retry.cmd`.
 
-If solution file is located in the root of repo use this command to reliably restore nuget packages:
+To use `appveyor-retry` with `nuget restore`:
 
-    appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
-    nuget-restore
+    appveyor-retry nuget restore
 
-or
-
-    appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
-    nuget-restore <path-to\solution.sln>
-
-If you don't want to pollute your repository with `nuget-restore.cmd` you can download it from GitHub during the build:
-
-    before_build:
-      - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
-      - appveyor DownloadFile https://raw.githubusercontent.com/appveyor/ci/master/scripts/nuget-restore.cmd
-      - nuget-restore
+or 
+    
+    appveyor-retry nuget restore <path-to\solution.sln>
 
 ### Use build cache for NuGet packages
 
