@@ -165,14 +165,14 @@ To switch to the latest io.js version using this PowerShell command:
 ### Ruby
 
 * [Ruby](http://rubyinstaller.org/downloads/) with [DevKit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
-    * 1.9.3-p551 (`C:\Ruby193` - default in `PATH`) with RubyGems 1.8.30
-    * 2.0.0-p645 x86 (`C:\Ruby200`) with RubyGems 2.0.15
-    * 2.0.0-p645 x64 (`C:\Ruby200-x64`) with RubyGems 2.0.15
-    * 2.1.6 x86 (`C:\Ruby21`) with RubyGems 2.2.3
-    * 2.1.6 x64 (`C:\Ruby21-x64`) with RubyGems 2.2.3
-    * 2.2.2 x86 (`C:\Ruby22`) with RubyGems 2.4.6
-    * 2.2.2 x64 (`C:\Ruby22-x64`) with RubyGems 2.4.6
-    * `Bundler 1.9.5` is installed for all Ruby versions
+    * 1.9.3-p551 (`C:\Ruby193` - default in `PATH`) with RubyGems 2.5.2
+    * 2.0.0-p648 x86 (`C:\Ruby200`) with RubyGems 2.5.2
+    * 2.0.0-p648 x64 (`C:\Ruby200-x64`) with RubyGems 2.5.2
+    * 2.1.8 x86 (`C:\Ruby21`) with RubyGems 2.5.2
+    * 2.1.8 x64 (`C:\Ruby21-x64`) with RubyGems 2.5.2
+    * 2.2.4 x86 (`C:\Ruby22`) with RubyGems 2.5.2
+    * 2.2.4 x64 (`C:\Ruby22-x64`) with RubyGems 2.5.2
+    * `Bundler 1.11.2` is installed for all Ruby versions
 
 ### Python
 
