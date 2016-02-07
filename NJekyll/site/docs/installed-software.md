@@ -204,6 +204,10 @@ To switch to the latest io.js version using this PowerShell command:
 
 * `Erlang OTP runtime 17.4 x64` installed into `C:\Program Files\erl6.3`
 
+### LLVM
+
+* [LLVM 3.7.1](http://llvm.org/releases/download.html#3.7.1)
+
 ### MinGW, MSYS, Cygwin
 
 * [MinGW/MSYS 4.8.2 32-bit](http://www.mingw.org/) (core components and compilers - `C:\MinGW`)
