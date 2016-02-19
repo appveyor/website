@@ -151,6 +151,12 @@ If you experience `nuget restore` issues enable detailed logging with `-verbosit
 
 This will help to better understand the root cause of the issue.
 
+### Disable Parallel Processing
+
+The restore process is more stable by disabling the parallel processing.
+
+    nuget restore -DisableParallelProcessing
+
 ### Download latest NuGet command-line
 
 There is a chance that NuGet issue you are experiencing has been fixed in the latest `nuget.exe` which is available for download.
