@@ -16,6 +16,7 @@ title: Projects and builds API
 * [Add project](#add-project)
 * [Update project](#update-project)
 * [Update project settings in YAML](#update-project-settings-in-yaml)
+* [Update project build number](#update-project-build-number)
 * [Delete project build cache](#delete-project-build-cache)
 * [Delete project](#delete-project)
 
@@ -821,6 +822,18 @@ Request body (`plain/text`):
       verbosity: minimal
       publish_wap: true
       ...
+
+Response: 204
+
+## Update project build number
+
+Request:
+
+    PUT /api/projects/{accountName}/{projectSlug}/settings/build-number
+
+Request body (`application/json`):
+
+    { nextBuildNumber: 35 }
 
 Response: 204
 
