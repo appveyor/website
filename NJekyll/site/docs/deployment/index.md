@@ -123,7 +123,7 @@ For example, to deploy from "master" branch and only artifacts built for "x86" p
 
 
 
-## Deploy on tag (GitHub only)
+## Deploy on tag (GitHub and GitLab only)
 
 By default AppVeyor starts a new build on any push to GitHub whether it's regular commit or a new tag. Repository tagging frequently used to trigger deployment.
 

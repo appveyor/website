@@ -86,7 +86,7 @@ Unlike white- and blacklisting `branches` section here works like a selector, no
 
 
 
-## Build on tags (GitHub only)
+## Build on tags (GitHub and GitLab only)
 
 By default AppVeyor starts a new build on any push to GitHub whether it's regular commit or a new tag. Repository tagging frequently used to trigger deployment.
 
