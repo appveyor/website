@@ -13,13 +13,43 @@ You can configure notification on **Notifications** tab of project settings or i
     notifications:
       - provider: <provider_1>
         settings: ...
+        on_build_success: true|false
+        on_build_failure: true|false
+        on_build_status_changed: true|false
 
       - provider: <provider_2>
         settings: ...
 
-> NOTE: Notifications defined on project settings UI are merged with notifications defined in `appveyor.yml`.
+> **Notifications defined on project settings UI are merged with notifications defined in appveyor.yml.**
 
+## Triggering notifications
 
+When notification is configured in `appveyor.yml` and no `on_build_` triggers are specified then all triggers
+are set to `true` meaning notification is sent on all three "success", "failure" and "status change" events.
+For example, if you have the following setup:
+
+    notifications:
+    - provider: Email
+      to:
+      - some@email.com
+
+it will be read by AppVeyor as:
+
+    notifications:
+    - provider: Email
+      to:
+      - some@email.com
+      on_build_success: true
+      on_build_failure: true
+      on_build_status_changed: true
+
+so, to do not receive notifications on build success specify:
+
+    notifications:
+    - provider: Email
+      to:
+      - some@email.com
+      on_build_success: false
 
 ## Global email notifications
 
