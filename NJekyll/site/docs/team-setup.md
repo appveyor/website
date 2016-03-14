@@ -7,6 +7,10 @@ title: Set up your team
 
 <!--TOC-->
 
+## Introduction
+
+[AppVeyor Team](https://ci.appveyor.com/team) page allows you adding new users or collaborators to your AppVeyor account as well as configure integration with GitHub teams.
+
 ## Definitions
 
 ### Account
