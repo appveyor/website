@@ -136,7 +136,7 @@ AppVeyor uses the **version** value for naming builds. You can have "through" bu
 
 You can specify version format in `appveyor.yml`:
 
-    version: 1.0.{build}
+    version: '1.0.{build}'
 
 
 ## AssemblyInfo patching
