@@ -185,7 +185,7 @@ At the moment it seems to be an issue with PowerShell and the way it redirects o
 
 Sometimes you may notice that output of some Node.js programs (especially those ones actively writing to both StdOut and StdErr) is garbled or missing.
 
-In two words, there was Windows-specific issue in Node.js with non-blocking StdErr ([joyent/node#3584](https://github.com/joyent/node/issues/3584)) which was fixed in this pull request [joyent/node#7196](https://github.com/joyent/node/pull/7196) and finally landed in **Node.js v0.11.13** ([joyent/node@20176a9](https://github.com/joyent/node/commit/20176a98416353d4596900793f739d5ebf4f0ee1)). There is a [great discussion of this problem](https://github.com/mapnik/node-mapnik/issues/257#issuecomment-44417280).
+In two words, there was Windows-specific issue in Node.js with non-blocking StdErr ([joyent/node#3584](https://github.com/joyent/node/issues/3584)) which was fixed in this pull request [joyent/node#7196](https://github.com/joyent/node/pull/7196) and finally landed in **Node.js v0.11.12** ([joyent/node@20176a9](https://github.com/joyent/node/commit/20176a98416353d4596900793f739d5ebf4f0ee1)). There is a [great discussion of this problem](https://github.com/mapnik/node-mapnik/issues/257#issuecomment-44417280).
 
 Solution - run your tests under Node.js 0.11.x.
 
