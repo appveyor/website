@@ -95,6 +95,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 * [C++ 11 CTP](http://blogs.msdn.com/b/vcblog/archive/2013/11/18/announcing-the-visual-c-compiler-november-2013-ctp.aspx)
 * .NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2
 * [Microsoft .NET Framework 4.5.2 with Developer Pack](http://www.microsoft.com/en-ca/download/details.aspx?id=42637)
+* [Visual F# 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=18706)
 * [Visual F# Out of Band Release 3.1.2](http://www.microsoft.com/en-us/download/details.aspx?id=44011)
 * [Microsoft .NET Portable Library Reference Assemblies 4.6](http://www.microsoft.com/en-us/download/details.aspx?id=40727)
 * [Microsoft Visual Studio Installer Projects](https://visualstudiogallery.msdn.microsoft.com/9abe329c-9bba-44a1-be59-0fbf6151054d) extension (`.vdproj` support).
@@ -108,15 +109,15 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 ### Node.js
 
-`0.12.7` is default Node.js installed on build workers.
+`4.4.x` is default Node.js installed on build workers.
 
-* 4.0.0 - 5.5.0 (x86 and x64)
-* 0.10.26 - 0.10.40 (x86 and x64)
+* 4.0.0 - 5.9.1 (x86 and x64)
+* 0.10.26 - 0.10.42 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
-* 0.12.0 - 0.12.7 (x86 and x64)
+* 0.12.0 - 0.12.10 (x86 and x64)
 * 0.8.25 - 0.8.28 (x86 and x64)
-* Use `LTS` alias for `4.2.3`
-* Use `Stable` alias for `5.2.0`
+* Use `LTS` alias for latest `4.x` release
+* Use `Stable` alias for latest `5.x` release
 
 Use the following PowerShell command to quickly switch Node.js version:
 
@@ -145,10 +146,12 @@ To switch to the latest io.js version using this PowerShell command:
 ### Go
 
 * [Go](http://golang.org/dl/)
-    * 1.5.1 x64 (`C:\go` - default in `PATH`)
-    * 1.5.1 x86 (`C:\go-x86`)
-    * 1.4.2 x64 (`C:\go14`)
-    * 1.4.2 x86 (`C:\go14-x86`)
+    * 1.6 x64 (`C:\go` - default in `PATH`)
+    * 1.6 x86 (`C:\go-x86`)
+    * 1.5.3 x64 (`C:\go15` - default in `PATH`)
+    * 1.5.3 x86 (`C:\go15-x86`)
+    * 1.4.3 x64 (`C:\go14`)
+    * 1.4.3 x86 (`C:\go14-x86`)
 
 ### Java
 
@@ -206,7 +209,7 @@ To switch to the latest io.js version using this PowerShell command:
 
 ### LLVM
 
-* [LLVM 3.7.1](http://llvm.org/releases/download.html#3.7.1)
+* [LLVM 3.8.0](http://llvm.org/releases/download.html#3.8.0) x64 (`C:\Program Files\LLVM\bin` in `PATH`)
 
 ### MinGW, MSYS, Cygwin
 
@@ -215,11 +218,18 @@ To switch to the latest io.js version using this PowerShell command:
 	* MinGW bin directory: `C:\MinGW\bin`
 	* MSYS root directory: `C:\MinGW\msys\1.0`
 * Cygwin (`C:\cygwin`)
+* Cygwin 64 (`C:\cygwin64`)
 * MSYS2 (`C:\msys64`)
 
 ### Qt
 
 * Qt (`C:\Qt`)
+	- Qt 5.6: `C:\Qt\5.6`
+	  - MinGW 4.9.2 32 bit: `C:\Qt\5.6\mingw49_32`
+	  - msvc2015 64-bit: `C:\Qt\5.6\msvc2015_64`
+	  - msvc2015 32-bit: `C:\Qt\5.6\msvc2015`      
+	  - msvc2013 64-bit: `C:\Qt\5.6\msvc2013_64`
+	  - msvc2013 32-bit: `C:\Qt\5.6\msvc2013`
 	- Qt 5.5: `C:\Qt\5.5`
 	  - MinGW 4.9.2 32 bit: `C:\Qt\5.5\mingw492_32`
 	  - msvc2013 64-bit: `C:\Qt\5.5\msvc2013_64`
@@ -241,24 +251,24 @@ To switch to the latest io.js version using this PowerShell command:
 ## Tools
 
 * [7-Zip](http://www.7-zip.org/) 9.20
-* [Git](https://git-scm.com) 1.9.5, which is bundled with:
-    * [Curl](http://curl.haxx.se) 7.30.0
-* [Windows Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 1.0.1 (November 2015)
-* [Windows Azure CLI](http://azure.microsoft.com/en-us/downloads/)
-* [CMake](http://www.cmake.org/cmake/resources/software.html) 3.4.0
-* [NuGet](http://docs.nuget.org/consume/installing-nuget) 2.8.5
-* [NuGet](http://blog.nuget.org/20150902/nuget-3.2RC.html) 3.3.0 on `Visual Studio 2015` images
+* [Microsoft Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 1.2.1 (February 2016)
+* [Microsoft Azure CLI](http://azure.microsoft.com/en-us/downloads/) 0.9.10
+* [CMake](http://www.cmake.org/cmake/resources/software.html) 3.5.0
+* [NuGet](https://dist.nuget.org/index.html) 2.8.6 on `Visual Studio 2013` image
+* [NuGet](https://dist.nuget.org/index.html) 3.3.0 on `Visual Studio 2015` image
 * [Chocolatey](http://chocolatey.org/) v0.9.9.8
 * [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.0.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
-* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2e
+* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2e (32-bit) (`C:\OpenSSL-Win32\bin`)
+* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2e (64-bit) (`C:\OpenSSL-Win64\bin`)
+* [NSIS](http://nsis.sourceforge.net/Download) 2.50 (`C:\Program Files (x86)\NSIS`)
 
 ## Testing
 
 ### Runners
 
 * [NUnit](http://nunit.org/index.php?p=download) 2.6.4 in `C:\Tools\NUnit\bin`
-* [NUnit3](https://github.com/nunit/nunit) 3.0.1 in `C:\Tools\NUnit3\bin`
+* [NUnit3](https://github.com/nunit/nunit) 3.2.0 in `C:\Tools\NUnit3\bin`
 * [xUnit](https://github.com/xunit/xunit/releases) 1.9.2 in `C:\Tools\xUnit`
 * [xUnit](https://www.nuget.org/packages/xunit.runner.console/2.0.0) 2.0.0 RTM in `C:\Tools\xUnit20`
 * [Machine.Specifications (MSpec)](http://www.nuget.org/packages/Machine.Specifications)
@@ -268,8 +278,8 @@ To switch to the latest io.js version using this PowerShell command:
 * [Chrome Web Driver](http://chromedriver.storage.googleapis.com/index.html) 2.19
 * [Internet Explorer Web Driver](http://selenium-release.storage.googleapis.com/index.html) 2.47
 * Internet Explorer 11
-* FireFox 42.0
-* Chrome 47.0.2526.80
+* FireFox 45.0
+* Chrome 49.0.2623.87
 
 
 ## Services and databases

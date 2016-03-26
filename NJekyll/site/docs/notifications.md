@@ -116,55 +116,6 @@ Default message body template:
 {% endraw %}
 
 
-## HipChat
-
-HipChat has two versions of API: v1 and v2. AppVeyor supports both versions though notifications sent using API v1 allow specifying "from" field:
-
-![hipchat-build-passed-api-v1](/site/images/docs/notifications/hipchat-build-passed-api-v1.png)
-
-![hipchat-build-failed-api-v1](/site/images/docs/notifications/hipchat-build-failed-api-v1.png)
-
-while API v2 always sends messages on behalf API token issuer:
-
-![hipchat-build-passed-api-v2](/site/images/docs/notifications/hipchat-build-passed-api-v2.png)
-
-![hipchat-build-failed-api-v2](/site/images/docs/notifications/hipchat-build-failed-api-v2.png)
-
-
-### Authentication token
-
-You can generate API v1 token on this page (you must be a group admin): <br/>
-`https://<your_account>.hipchat.com/admin/api`
-
-> **Notification** token type is enough for AppVeyor to post message to a room.
-
-You can generate API v2 token on this page: <br/>
-`https://<your_account>.hipchat.com/account/api`
-
-### Message template
-
-Default HipChat message template:
-
-{% raw %}
-    <a href=""{{buildUrl}}"">Build {{projectName}} {{buildVersion}} {{status}}</a><br/>
-    Commit <a href=""{{commitUrl}}"">{{commitId}}</a> by {{commitAuthor}} on {{commitDate}}:
-    <i>{{commitMessage}}</i>
-{% endraw %}
-
-[How to customize message template](#message-template)
-
-### appveyor.yml configuration
-
-{% raw %}
-    notifications:
-      - provider: HipChat
-        auth_token:
-          secure: RbOnSMSFKYzxzFRrxM1+XA==
-        room: ProjectA
-        template: "{{message}}, {{commitId}}, ..."
-{% endraw %}
-
-> Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
 
 ## Slack
@@ -229,6 +180,96 @@ Default Slack message template:
 
 > Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
+
+
+
+## GitHub Pull Request
+
+GitHub Pull Request notifications is a perfect way to notify all developers working on a pull request.
+AppVeyor can post a new comment with build results to a pull request being built. GitHub will send email notifications
+to all subscribed developers.
+
+![githubpullrequest-notifications](/site/images/docs/notifications/githubpullrequest-notifications.png)
+
+A new comment can be made on behalf of [AppVeyorBot](https://github.com/AppVeyorBot) GitHub account (public repositories only) or any
+custom GitHub account account ("bot") having access to your repositories. 
+
+
+### Message template
+
+Default GitHub Pull Request comment template:
+
+{% raw %}
+    {{#passed}}:white_check_mark:{{/passed}}{{#failed}}:x:{{/failed}} [Build {{&projectName}} {{buildVersion}} {{status}}]({{buildUrl}}) (commit {{commitUrl}} by @{{&commitAuthorUsername}})
+{% endraw %}
+
+[How to customize message template](#message-template) <br/>
+
+### appveyor.yml configuration
+
+{% raw %}
+    notifications:
+      - provider: GitHubPullRequest
+        auth_token:
+          secure: kBl9BlxvRMr9liHmnBs14A==
+        template: "{{#passed}}:white_check_ ..."
+{% endraw %}
+
+> Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
+
+
+
+
+
+## HipChat
+
+HipChat has two versions of API: v1 and v2. AppVeyor supports both versions though notifications sent using API v1 allow specifying "from" field:
+
+![hipchat-build-passed-api-v1](/site/images/docs/notifications/hipchat-build-passed-api-v1.png)
+
+![hipchat-build-failed-api-v1](/site/images/docs/notifications/hipchat-build-failed-api-v1.png)
+
+while API v2 always sends messages on behalf API token issuer:
+
+![hipchat-build-passed-api-v2](/site/images/docs/notifications/hipchat-build-passed-api-v2.png)
+
+![hipchat-build-failed-api-v2](/site/images/docs/notifications/hipchat-build-failed-api-v2.png)
+
+
+### Authentication token
+
+You can generate API v1 token on this page (you must be a group admin): <br/>
+`https://<your_account>.hipchat.com/admin/api`
+
+> **Notification** token type is enough for AppVeyor to post message to a room.
+
+You can generate API v2 token on this page: <br/>
+`https://<your_account>.hipchat.com/account/api`
+
+### Message template
+
+Default HipChat message template:
+
+{% raw %}
+    <a href=""{{buildUrl}}"">Build {{projectName}} {{buildVersion}} {{status}}</a><br/>
+    Commit <a href=""{{commitUrl}}"">{{commitId}}</a> by {{commitAuthor}} on {{commitDate}}:
+    <i>{{commitMessage}}</i>
+{% endraw %}
+
+[How to customize message template](#message-template)
+
+### appveyor.yml configuration
+
+{% raw %}
+    notifications:
+      - provider: HipChat
+        auth_token:
+          secure: RbOnSMSFKYzxzFRrxM1+XA==
+        room: ProjectA
+        template: "{{message}}, {{commitId}}, ..."
+{% endraw %}
+
+> Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
 
 
