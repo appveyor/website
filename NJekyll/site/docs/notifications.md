@@ -334,6 +334,13 @@ Default VSO message template
         template: "{{message}}, {{commitId}}, ..."
 {% endraw %}
 
+## Build status in tray - Catlight
+
+[Catlight](https://catlight.io) is a free application that runs on Windows and OS X. It shows current status of AppVeyor builds in tray (or menu bar on OS X). In addition, it will show a toaster notification when a build starts or completes.
+
+![catlight-build-started-notification](/site/images/docs/notifications/catlight-build-started-notification.png)
+
+[Using Catlight build status notifications with AppVeyor](https://catlight.io/a/appveyor-build-status-notifications)
 
 ## Webhooks
 
