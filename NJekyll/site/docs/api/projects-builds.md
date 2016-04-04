@@ -640,6 +640,18 @@ Request body:
        "repositoryName":"FeodorFitsner/demo-app"
     }
 
+Where `repositoryProvider` is one of:
+
+- `gitHub`
+- `bitBucket`
+- `vso` (Visual Studio Online)
+- `gitLab`
+- `kiln`
+- `stash`
+- `git`
+- `mercurial`
+- `subversion`
+
 Response:
 
     {
