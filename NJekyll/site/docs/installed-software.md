@@ -16,7 +16,7 @@ Below is the list of software pre-installed on Build Worker.
 ## Version control systems
 
 * [Git](http://git-scm.com/download/win) 2.7.0 (x64) (with `git config --global core.autocrlf input`)
-	* [Git Large File Storage](https://git-lfs.github.com/) 1.1
+	* [Git Large File Storage](https://git-lfs.github.com/) 1.1.2
 * [Mercurial](http://mercurial.selenic.com/downloads) 3.1.1 (x86)
 * [Subversion](http://www.collab.net/downloads/subversion) 1.8.11 (x86)
 
@@ -31,7 +31,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Microsoft Expression Blend Software Development Kit (SDK) for .NET 4](http://www.microsoft.com/en-us/download/details.aspx?id=10801)
 * [Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4](http://www.microsoft.com/en-us/download/details.aspx?id=3062)
 * [Windows Phone SDK 8.0](http://www.microsoft.com/en-us/download/details.aspx?id=35471)
-* [Azure SDKs](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5.1, 2.6, 2.7.1, 2.8.1
+* [Azure SDKs](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5.1, 2.6, 2.7.1, 2.8.1, 2.9
 * [Microsoft SilverLight 5 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=28359)
 * [Windows PowerShell 2.0 SDK](http://www.microsoft.com/en-ca/download/details.aspx?id=2560)
 * [DirectX SDK](http://www.microsoft.com/en-us/download/details.aspx?id=6812) (`C:\Program Files (x86)\Microsoft DirectX SDK`)
@@ -67,13 +67,14 @@ Below is the list of software pre-installed on Build Worker.
 
 ### Visual Studio 2013
 
-* [Visual Studio Community 2013 with Update 4](http://www.visualstudio.com/products/visual-studio-community-vs)
+* [Visual Studio Community 2013 with Update 5](http://www.visualstudio.com/products/visual-studio-community-vs)
 * [Visual Studio 2013 SDK](http://www.visualstudio.com/downloads/download-visual-studio-vs)
 * [Python Tools for Visual Studio 2013](https://github.com/Microsoft/PTVS/releases)
 * [Node.js Tools for Visual Studio 2013](https://github.com/Microsoft/nodejstools#readme)
 
 ### Visual Studio 2015
 
+* [Visual Studio Community 2015 with Update 2](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx)
 * Universal Windows App Dev Tools for Visual Studio 2015
 * Windows 10 SDK
 * [Python Tools for Visual Studio 2015](https://github.com/Microsoft/PTVS/releases)
@@ -111,10 +112,10 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 `4.4.x` is default Node.js installed on build workers.
 
-* 4.0.0 - 5.9.1 (x86 and x64)
-* 0.10.26 - 0.10.42 (x86 and x64)
+* 4.0.0 - 5.10.1 (x86 and x64)
+* 0.10.26 - 0.10.44 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
-* 0.12.0 - 0.12.10 (x86 and x64)
+* 0.12.0 - 0.12.13 (x86 and x64)
 * 0.8.25 - 0.8.28 (x86 and x64)
 * Use `LTS` alias for latest `4.x` release
 * Use `Stable` alias for latest `5.x` release
