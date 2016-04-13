@@ -16,7 +16,7 @@ AppVeyor allows you to deploy using multiple providers **as part of the build pr
 
 **Inline deployment** runs as the last phase in the [build pipeline](/docs/build-configuration#build-pipeline) and allows configuring multiple deployments running synchronously one-by-one with results in build console.
 
-**Environment deployment** is triggered manually or through API to deploy "green" build to existing environment. A new deployment is registered within a project/environment with results in deployment console.
+**Environment deployment** is triggered manually or through API to deploy "green" build to existing environment. A new deployment is registered within a project/environment with results in deployment console. If you don't have any existing environments, you can create one at https://ci.appveyor.com/environments.
 
 The table below summarizes key differences between two modes with lists of deployment providers available in each mode:
 
