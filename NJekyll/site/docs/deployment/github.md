@@ -5,7 +5,7 @@ title: Publishing artifacts to GitHub Releases
 
 # Publishing artifacts to GitHub Releases
 
-`GitHub` deployment provider uploads build artifacts to the existing GitHub release or creates a new release if not exists. You can publish artifacts during the build or use staged deployment by configuring new environment of `GitHub` type.
+`GitHub` deployment provider uploads build artifacts to the existing GitHub release or creates a new release if not exists. You can publish artifacts during the build or use staged deployment by configuring new environment of `GitHub` type at https://ci.appveyor.com/environments.
 
 Table of contents:
 
@@ -27,7 +27,7 @@ Alternatively, you may tell AppVeyor to create "draft" release to do final check
 
 ### Promoting selected tag to GitHub release
 
-In this scenario you configure a new "Environment" of GitHub type.
+In this scenario you configure a new "Environment" of GitHub type at https://ci.appveyor.com/environments, then:
 
 1. Add new tag in local repo.
 2. Push tag to GitHub repo and start a new AppVeyor build.
