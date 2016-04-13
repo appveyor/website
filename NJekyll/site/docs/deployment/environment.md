@@ -5,7 +5,7 @@ title: Deploying to existing environment
 
 # Deploying to existing environment
 
-Environment deployment provider starts asynchronous deployment to the existing environment with specified name.
+Environment deployment provider starts asynchronous deployment to the existing environment with specified name.  If you don't have any environments set up yet, you can create one at https://ci.appveyor.com/environments.
 
 ## Provider settings
 
