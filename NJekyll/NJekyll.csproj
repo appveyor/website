@@ -167,6 +167,7 @@
   <Target Name="BeforeBuild">
     <ItemGroup>
       <Content Include="site\**\*" />
+	  <Content Include="tools\**\*" />
     </ItemGroup>
   </Target>
   <Target Name="AfterBuild">
