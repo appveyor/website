@@ -334,15 +334,9 @@ Default VSO message template
         template: "{{message}}, {{commitId}}, ..."
 {% endraw %}
 
-## Build status in tray - Catlight
-
-[Catlight](https://catlight.io) is a free application that runs on Windows and OS X. It shows current status of AppVeyor builds in tray (or menu bar on OS X). In addition, it will show a toaster notification when a build starts or completes.
-
-![catlight-build-started-notification](/site/images/docs/notifications/catlight-build-started-notification.png)
-
-[Using Catlight build status notifications with AppVeyor](https://catlight.io/a/appveyor-build-status-notifications)
-
 ## Webhooks
+
+By default webhook notification makes `POST` request, but this can be changed to `GET` with `method` setting.
 
 Configuring webhooks in `appveyor.yml`:
 
@@ -350,6 +344,7 @@ Configuring webhooks in `appveyor.yml`:
 
       - provider: Webhook
         url: http://www.myhook1.com
+        method: GET
 
       - provider: Webhook
         url: http://www.myhook2.com
@@ -360,6 +355,18 @@ Configuring webhooks in `appveyor.yml`:
         on_build_success: false
         on_build_failure: true
         on_build_status_changed: true
+
+You can use Mustache variables (explained in the section below) in URL and header values, for example:
+
+{% raw %}
+    - provider: Webhook
+      url: http://requestb.in/test?appveyor_build_version={{build.BuildVersion}}&appveyor_commit_id={{build.CommitId}}
+      method: GET
+      headers:
+        APPVEYOR-PROJECT-NAME: '{{build.ProjectName}}'
+        APPVEYOR-BUILD-VERSION: '{{build.BuildVersion}}'
+        APPVEYOR-COMMIT-ID: '{{build.CommitId}}'
+{% endraw %}
 
 ### Webhook payload
 
@@ -450,3 +457,11 @@ Message template is a [Mustache template](http://mustache.github.io/mustache.5.h
     {{#passed}} Build {{projectName}} {{buildVersion}} passed {{/passed}}
     {{#failed}} Build {{projectName}} {{buildVersion}} failed {{/failed}}
 {% endraw %}
+
+## Build status in tray - Catlight
+
+[Catlight](https://catlight.io) is a free application that runs on Windows and OS X. It shows current status of AppVeyor builds in tray (or menu bar on OS X). In addition, it will show a toaster notification when a build starts or completes.
+
+![catlight-build-started-notification](/site/images/docs/notifications/catlight-build-started-notification.png)
+
+[Using Catlight build status notifications with AppVeyor](https://catlight.io/a/appveyor-build-status-notifications)
