@@ -33,7 +33,7 @@ Instance name: `SQL2008R2SP2`
 
 Sample connection string:
 
-    Server=(local)\SQL2008R2SP2;Database=master;User ID=sa;Password=Password12!
+    Server=(local)\SQL2008R2SP2;Database=master;UID=sa;PWD=Password12!
 
 To start SQL Server 2008 Express in `appveyor.yml`:
 
