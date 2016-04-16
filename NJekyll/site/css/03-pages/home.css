@@ -145,7 +145,7 @@
 }
 
 /* Customer logos */
-.customer-logo {
+/*.customer-logo {
     background: url("/site/images/home/customers-sprite.png") no-repeat;
     display: inline-block;
     vertical-align: middle;
@@ -153,8 +153,9 @@
 }
 
 .rackspace {
-    background-position: -8px -21px;
-    width: 150px;
+    background-position: -8px -21px;*/
+    /*background-position: -168px -3px;*/
+    /*width: 150px;
     height: 35px;
 }
 
@@ -240,8 +241,103 @@
     background-position: -404px -146px;
     width: 46px;
     height: 54px;
+}*/
+.customer-logo {
+    background: url("/site/images/home/new-sprite-flattened.png") no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.7rem 1rem;
 }
 
+.microsoft {
+    background-position: 0 -26px;
+    width: 150px;
+    height: 32px;
+}
+
+.facebook {
+    background-position: -172px -7px;
+    width: 50px;
+    height: 50px;
+}
+
+.google {
+    background-position: -244px -10px;
+    width: 49px;
+    height: 50px;
+}
+
+.github {
+    background-position: -310px -5px;
+    width: 58px;
+    height: 58px;
+}
+
+.rackspace {
+    background-position: -383px -23px;
+    width: 139px;
+    height: 37px;
+}
+
+.telenor {
+    background-position: -25px -76px;
+    width: 108px;
+    height: 40px;
+}
+
+.nasa {
+    background-position: -149px -73px;
+    width: 69px;
+    height: 57px;
+}
+
+.zendesk {
+    background-position:-227px -80px;
+    width: 151px;
+    height: 35px;
+}
+
+.pivotal {
+    background-position: -393px -86px;
+    width: 115px;
+    height: 27px;
+}
+
+.umbraco {
+    background-position: -42px -135px;
+    width: 148px;
+    height: 45px;
+}
+
+.rightscale {
+    background-position: -212px -142px;
+    width: 198px;
+    height: 25px;
+}
+
+.chef {
+    background-position: -433px -127px;
+    width: 60px;
+    height: 64px;
+}
+
+.mozilla {
+    background-position: -33px -189px;
+    width: 178px;
+    height: 48px;
+}
+
+.puppet {
+    background-position: -229px -196px;
+    width: 121px;
+    height: 36px;
+}
+
+.stanford {
+    background-position: -373px -200px;
+    width: 142px;
+    height: 30px;
+}
 
 /* Benefits block */
 .benefits-container {
