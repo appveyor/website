@@ -124,4 +124,4 @@ Downloading last successful artifact for `master` branch:
 
 Downloading last successful artifact from `master` branch and "Release" job:
 
-    https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?branch=master&job=Configuration%3DRelease
+    https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?branch=master&job=Configuration%3A+Release
