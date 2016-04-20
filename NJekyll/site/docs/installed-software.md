@@ -169,14 +169,16 @@ To switch to the latest io.js version using this PowerShell command:
 ### Ruby
 
 * [Ruby](http://rubyinstaller.org/downloads/) with [DevKit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
-    * 1.9.3-p551 (`C:\Ruby193` - default in `PATH`) with RubyGems 2.5.2
-    * 2.0.0-p648 x86 (`C:\Ruby200`) with RubyGems 2.5.2
-    * 2.0.0-p648 x64 (`C:\Ruby200-x64`) with RubyGems 2.5.2
-    * 2.1.8 x86 (`C:\Ruby21`) with RubyGems 2.5.2
-    * 2.1.8 x64 (`C:\Ruby21-x64`) with RubyGems 2.5.2
-    * 2.2.4 x86 (`C:\Ruby22`) with RubyGems 2.5.2
-    * 2.2.4 x64 (`C:\Ruby22-x64`) with RubyGems 2.5.2
-    * `Bundler 1.11.2` is installed for all Ruby versions
+    * 1.9.3-p551 (`C:\Ruby193\bin` - default in `PATH`) with RubyGems 2.6.3
+    * 2.0.0-p648 x86 (`C:\Ruby200\bin`) with RubyGems 2.6.3
+    * 2.0.0-p648 x64 (`C:\Ruby200-x64\bin`) with RubyGems 2.6.3
+    * 2.1.8 x86 (`C:\Ruby21\bin`) with RubyGems 2.6.3
+    * 2.1.8 x64 (`C:\Ruby21-x64\bin`) with RubyGems 2.6.3
+    * 2.2.4 x86 (`C:\Ruby22\bin`) with RubyGems 2.6.3
+    * 2.2.4 x64 (`C:\Ruby22-x64\bin`) with RubyGems 2.6.3
+    * 2.3.0 x86 (`C:\Ruby23\bin`) with RubyGems 2.6.3
+    * 2.3.0 x64 (`C:\Ruby23-x64\bin`) with RubyGems 2.6.3   
+    * `Bundler 1.11.2` is installed to all Ruby versions
 
 ### Python
 
