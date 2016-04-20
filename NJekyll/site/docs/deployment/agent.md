@@ -87,6 +87,32 @@ In order for Deployment Agent to deploy that artifact as IIS web site **Provider
 ![Artifacts](/site/images/docs/agent-provider-settings.png)
 
 
+## Overriding settings while deploying from build
+
+You can use environment variables for setting values on environment configuration, for example:
+
+![agent-settings-with-variables](/site/images/docs/deployment/agent/agent-settings-with-variables.png)
+
+where `site_name` is environment variable. At the bottom of that screen we are defining its "default" value,
+i.e. the value used when you deploy from Environments and build environment variables are not present.
+
+However, when you deploy from a build you can override those environment variables like:
+
+    deploy:
+    - provider: Environment
+    name: test-pc
+    site_name: www.site-to-deploy.com
+
+Alternatively, that site name can be deployed somewhere during the build, so the following construction is also possible:
+
+    environment:
+    site_to_deploy: www.site-to-deploy.com
+
+    deploy:
+    - provider: Environment
+    name: test-pc
+    site_name: $(site_to_deploy)
+
 
 
 ## Deploying artifact package as IIS web site
