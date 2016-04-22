@@ -360,12 +360,12 @@ You can use Mustache variables (explained in the section below) in URL and heade
 
 {% raw %}
     - provider: Webhook
-      url: http://requestb.in/test?appveyor_build_version={{build.BuildVersion}}&appveyor_commit_id={{build.CommitId}}
+      url: http://requestb.in/test?appveyor_build_version={{buildVersion}}&appveyor_commit_id={{commitId}}
       method: GET
       headers:
-        APPVEYOR-PROJECT-NAME: '{{build.ProjectName}}'
-        APPVEYOR-BUILD-VERSION: '{{build.BuildVersion}}'
-        APPVEYOR-COMMIT-ID: '{{build.CommitId}}'
+        APPVEYOR-PROJECT-NAME: '{{projectName}}'
+        APPVEYOR-BUILD-VERSION: '{{buildVersion}}'
+        APPVEYOR-COMMIT-ID: '{{commitId}}'
 {% endraw %}
 
 ### Webhook payload
