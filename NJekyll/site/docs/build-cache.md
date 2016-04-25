@@ -53,6 +53,9 @@ In `appveyor.yml`:
       - projectA\libs
       - node_modules                    # local npm modules
       - '%APPDATA%\npm-cache'             # npm cache
+      - '%USERPROFILE%\.nuget\packages -> **\project.json'  # project.json cache
+
+Note the use of single quotes around the entire line, when environment variables are used.
 
 ## Caching Chocolatey packages
 
