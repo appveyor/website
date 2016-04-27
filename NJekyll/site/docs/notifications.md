@@ -150,8 +150,7 @@ generate new incoming webhook.
 In `appveyor.yml` webhook URL can be set as secure string, for example:
 
     - provider: Slack
-      incoming_webhook:
-        secure: AAABBB+CCC+DDD==
+      incoming_webhook: https://hooks.slack.com/services/AAABBB+CCC+DDD==
 
 ### Message template
 
