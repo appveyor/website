@@ -28,3 +28,13 @@ You can setup a filter to skip builds for commits with specific messages or comi
 
       # Commit author's username, name, email or regexp maching one of these.
       author: John
+
+## Triggering builds on specific word in commit message
+
+You can use commit message filter with "inverse matching" regex to trigger builds only if commit messages contain specific word/phrase.
+
+For example, the following filter is telling AppVeyor to trigger builds only for commits having `build` in their commit messages:
+
+    skip_commits:
+      message: /^((?!build).)*$/
+
