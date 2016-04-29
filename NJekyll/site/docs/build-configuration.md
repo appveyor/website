@@ -232,6 +232,15 @@ When **PowerShell** is selected the entire body is treated as a single script, s
 
 PowerShell script is considered successful if it finishes without exception.
 
+If you need to check execution results of commands in the middle of PowerShell script you can verify `$LastExitCode` after calling
+a command and terminate earlier, for example:
+
+    vstest.console myassembly1.dll
+    if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
+    
+    vstest.console myassembly2.dll
+    if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }    
+
 There are a few ways of configuring scripts in `appveyor.yml`.
 
 For example, this is the same configuration as shown on the first screenshot:
