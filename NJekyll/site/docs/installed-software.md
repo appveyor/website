@@ -41,6 +41,7 @@ Below is the list of software pre-installed on Build Worker.
 * [TypeScript 1.5 for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/b1fff87e-d68b-4266-8bba-46fad76bbf22)
 * TypeScript 1.6.3 for Visual Studio 2015
 * TypeScript 1.7.6 for Visual Studio 2015
+* TypeScript 1.8.3 for Visual Studio 2015
 * [Office Developer Tools for Visual Studio 2013](http://blogs.msdn.com/b/visualstudio/archive/2014/03/03/announcing-office-developer-tools-for-visual-studio-2013-march-2014-update.aspx)
 * [Office Developer Tools for Visual Studio 2015](https://www.visualstudio.com/en-us/features/office-tools-vs.aspx)
 * [Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013](https://www.microsoft.com/en-ca/download/details.aspx?id=42313)
@@ -89,7 +90,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 ## Xamarin
 
-[Xamarin Platform](https://xamarin.com/platform) v4.0.0.1717 is installed on `Visual Studio 2015` image.
+[Xamarin Platform](https://xamarin.com/platform) v4.0.3 is installed on `Visual Studio 2015` image.
 
 ## Languages, libraries, frameworks
 
@@ -104,6 +105,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 * [Silverlight 5 x64 Developer Runtime](http://go.microsoft.com/fwlink/?LinkID=229324)
 * SQL Server Data tools for [Visual Studio 2012](http://msdn.microsoft.com/en-us/jj650015) and [2013](http://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
 * Boost:
+    * 1.60.0 (`C:\Libraries\boost_1_60_0`)
 	* 1.59.0 (`C:\Libraries\boost_1_59_0`)
 	* 1.58.0 (`C:\Libraries\boost_1_58_0`)
 	* 1.56.0 (`C:\Libraries\boost`)
@@ -112,7 +114,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 `4.4.x` is default Node.js installed on build workers.
 
-* 4.0.0 - 5.10.1 (x86 and x64)
+* 4.0.0 - 6.0.0 (x86 and x64)
 * 0.10.26 - 0.10.44 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
 * 0.12.0 - 0.12.13 (x86 and x64)
@@ -157,10 +159,12 @@ To switch to the latest io.js version using this PowerShell command:
 ### Java
 
 * Java SE Development Kit (JDK)
+    * [JDK 1.6](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html) Update 45 (x64) (`C:\Program Files\Java\jdk1.6.0\bin` - default in `PATH`)
+    * [JDK 1.6](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html) Update 45 (x86) (`C:\Program Files (x86)\Java\jdk1.6.0\bin`)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x64) (`C:\Program Files\Java\jdk1.7.0\bin` - default in `PATH`)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x86) (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)
-    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 66 (x64) (`C:\Program Files\Java\jdk1.8.0`)
-    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 66 (x86) (`C:\Program Files (x86)\Java\jdk1.8.0`)
+    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 92 (x64) (`C:\Program Files\Java\jdk1.8.0`)
+    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 92 (x86) (`C:\Program Files (x86)\Java\jdk1.8.0`)
 
 ### Mono
 
@@ -281,8 +285,8 @@ To switch to the latest io.js version using this PowerShell command:
 * [Chrome Web Driver](http://chromedriver.storage.googleapis.com/index.html) 2.19
 * [Internet Explorer Web Driver](http://selenium-release.storage.googleapis.com/index.html) 2.47
 * Internet Explorer 11
-* FireFox 45.0
-* Chrome 49.0.2623.87
+* FireFox 46.0
+* Chrome 50.0
 
 
 ## Services and databases
@@ -292,7 +296,8 @@ To switch to the latest io.js version using this PowerShell command:
 * [SQL Server 2014 Express with Advanced Services](http://www.microsoft.com/en-us/download/details.aspx?id=42299)
 * [PostgreSQL 9.3 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 * [PostgreSQL 9.4 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
-* [MySQL 5.6 x64](http://dev.mysql.com/downloads/windows/installer/5.6.html)
+* [PostgreSQL 9.5 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
+* [MySQL 5.7](http://dev.mysql.com/downloads/windows/installer/5.7.html)
 * [MongoDB 3.0.4](https://www.mongodb.org/downloads)
 * Internet Information Services (IIS) 8.5
 * MSMQ
