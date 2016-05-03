@@ -60,7 +60,17 @@ To push a NuGet package as an artifact and publish it in both project and accoun
 > When you delete a project in AppVeyor its corresponding NuGet feed is deleted, however all NuGet packages from that feed remain published in account feed.
 
 
+## Publishing NuGet symbols to AppVeyor account feed
 
+When automatic NuGet packaging is enabled NuGet symbol packages (`*.symbols.nupkg`) are not published to account or project feeds, however, you can setup additional
+deployment step to publish NuGet symbols to your AppVeyor account feed:
+
+    deploy:
+      - provider: NuGet
+        symbol_server: https://ci.appveyor.com/nuget/<your account feed id>/api/v2/package
+        api_key:
+          secure: <secure encrypted key here>
+        artifact: /.*\.symbols\.nupkg/
 
 
 ## Configuring private NuGet feed in Visual Studio
