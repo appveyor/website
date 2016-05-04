@@ -103,7 +103,7 @@ You can use the following PowerShell script to attach your own SQL Server databa
 
 ## MySQL
 
-MySQL 5.6 x64 database service is available on AppVeyor build workers.
+MySQL 5.7 x64 database service is available on AppVeyor build workers.
 
 * Path: `C:\Program Files\MySql\MySQL Server 5.7`
 * Server name: `127.0.0.1` or `localhost`
