@@ -105,7 +105,7 @@ You can use the following PowerShell script to attach your own SQL Server databa
 
 MySQL 5.7 x64 database service is available on AppVeyor build workers.
 
-* Path: `C:\Program Files\MySql\MySQL Server 5.7`
+* Path: `C:\Program Files (x86)\MySQL\MySQL Server 5.7`
 * Server name: `127.0.0.1` or `localhost`
 * Server port: `3306`
 * `root` password: `Password12!`
@@ -118,7 +118,7 @@ To start MySQL in `appveyor.yml`:
 This is an example how to supply MySql credentials to work with PowerShell tools:
 
     $env:MYSQL_PWD="Password12!"
-    $cmd = '"C:\Program Files\MySql\MySQL Server 5.7\bin\mysql" -e "create database YourDatabase;" --user=root'
+    $cmd = '"C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin\mysql" -e "create database YourDatabase;" --user=root'
     iex "& $cmd"
 
 ## PostgreSQL
