@@ -114,7 +114,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 `4.4.x` is default Node.js installed on build workers.
 
-* 4.0.0 - 6.0.0 (x86 and x64)
+* 4.0.0 - 6.1.0 (x86 and x64)
 * 0.10.26 - 0.10.44 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
 * 0.12.0 - 0.12.13 (x86 and x64)
@@ -149,10 +149,12 @@ To switch to the latest io.js version using this PowerShell command:
 ### Go
 
 * [Go](http://golang.org/dl/)
-    * 1.6 x64 (`C:\go` - default in `PATH`)
-    * 1.6 x86 (`C:\go-x86`)
-    * 1.5.3 x64 (`C:\go15` - default in `PATH`)
-    * 1.5.3 x86 (`C:\go15-x86`)
+    * 1.6.2 x64 (`C:\go` - default in `PATH`)
+    * 1.6.2 x86 (`C:\go-x86`)
+    * 1.6.2 x64 (`C:\go16`)
+    * 1.6.2 x86 (`C:\go16-x86`)    
+    * 1.5.4 x64 (`C:\go15`)
+    * 1.5.4 x86 (`C:\go15-x86`)
     * 1.4.3 x64 (`C:\go14`)
     * 1.4.3 x86 (`C:\go14-x86`)
 
@@ -257,7 +259,7 @@ To switch to the latest io.js version using this PowerShell command:
 
 ## Tools
 
-* [7-Zip](http://www.7-zip.org/) 9.20
+* [7-Zip](http://www.7-zip.org/) 15.14
 * [Microsoft Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 1.2.1 (February 2016)
 * [Microsoft Azure CLI](http://azure.microsoft.com/en-us/downloads/) 0.9.10
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 3.5.0
