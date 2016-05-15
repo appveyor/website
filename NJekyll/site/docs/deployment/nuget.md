@@ -26,7 +26,7 @@ Configuring in `appveyor.yml`:
       symbol_server:           # remove to push symbols to SymbolSource.org
       artifact: /.*\.nupkg/
 
-Your NuGet API key should be encrypted using this tool: https://ci.appveyor.com/tools/encrypt.
+Your NuGet API key should be encrypted using this tool: [https://ci.appveyor.com/tools/encrypt](https://ci.appveyor.com/tools/encrypt).
 
 ## Native packages with CoApp
 
