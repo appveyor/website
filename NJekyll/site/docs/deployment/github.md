@@ -7,6 +7,8 @@ title: Publishing artifacts to GitHub Releases
 
 `GitHub` deployment provider uploads build artifacts to the existing GitHub release or creates a new release if not exists. You can publish artifacts during the build or use staged deployment by configuring new environment of `GitHub` type at https://ci.appveyor.com/environments.
 
+Note that the provider name `GitHub` is case sensitive (e.g. not `Github`).
+
 Table of contents:
 
 <!--TOC-->
