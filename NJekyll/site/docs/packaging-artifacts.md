@@ -9,15 +9,15 @@ The **Artifacts** page of project settings tells AppVeyor which files and folder
 
 The artifact path must be relative to the root of repository. For example, to upload the `myproject.dll` assembly from the `bin` folder of a project enter:
 
-    myproject\bin\debug\myproject.dll
+    bin\debug\myproject.dll
 
 You can use wildcards and environment variables in the artifact path. Let's say the "configuration" variable contains the current build configuration. Then to upload all assemblies in the `bin` directory:
 
-    myproject\bin\$(configuration)\*.dll
+    bin\$(configuration)\*.dll
 
 To push the entire `bin` folder as a single zip archive:
 
-    myproject\bin
+    bin
 
 To push all `*.nupkg` files in the build folder recursively:
 
