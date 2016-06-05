@@ -5,7 +5,7 @@ title: Publishing artifacts to GitHub Releases
 
 # Publishing artifacts to GitHub Releases
 
-`GitHub` deployment provider uploads build artifacts to the existing GitHub release or creates a new release if not exists. You can publish artifacts during the build or use staged deployment by configuring new environment of `GitHub` type at https://ci.appveyor.com/environments.
+The `GitHub` deployment provider uploads build artifacts to an existing GitHub release or creates a new release if one does not already exist. You can publish artifacts during the build or use staged deployment by configuring new environment of `GitHub` type at https://ci.appveyor.com/environments.
 
 Note that the provider name `GitHub` is case sensitive (e.g. not `Github`).
 
@@ -18,13 +18,13 @@ Table of contents:
 
 ### Release every tag build
 
-In this scenario GitHub deployment step is configured to run as part of the build process.
+In this scenario, the GitHub deployment step is configured to run as part of the build process.
 
 1. Add new tag in local repo.
 2. Push tag to GitHub repo and start a new AppVeyor build.
 3. AppVeyor creates a new release based on that tag and uploads artifacts.
 
-Alternatively, you may tell AppVeyor to create "draft" release to do final check before making it public.
+Alternatively, you may tell AppVeyor to create a "draft" release so you can perform any final checks before making it public.
 
 
 ### Promoting selected tag to GitHub release
@@ -53,11 +53,13 @@ To promote selected "tag" build to GitHub release:
 
 * **GitHub authentication token** (`auth_token`) - OAuth token used for authentication against GitHub API. You can generate [Personal API access token](https://github.com/blog/1509-personal-api-tokens) at [https://github.com/settings/tokens](https://github.com/settings/tokens). Minimal token scope is `repo` or `public_repo` to release on private or public repositories respectively. Be sure to encrypt your token using the **Account -> Encrypt data** tool.
 
-* **Artifact to deploy** (`artifact`) - Optional. Allows specifying one or more build artifacts to be uploaded as release assets. The value could be comma-delimited list of artifact's file name, deployment name or regular expression matching one of these. For example `bin\release\MyLib.zip` or `/.*\.nupkg/`. Don't forget to [package your artifact](/docs/packaging-artifacts) first.
+* **Artifact to deploy** (`artifact`) - Optional. Allows specifying one or more build artifacts to be uploaded as release assets. The value could be comma-delimited list of artifact's file name, deployment name or regular expression matching one of these. For example `bin\release\MyLib.zip` or `/.*\.nupkg/`. Don't forget to [package your artifact](/docs/packaging-artifacts) first, as the deployment will fail if this value does not match `artifacts.name` or `artifacts.path` (even if the file exists.)
 
 * **Draft release** (`draft`) - `true` if draft release should be created; default is `false`.
 
 * **Pre-release** (`prerelease`) - `true` to mark release as "pre-release"; default is `false`.
+
+* **Force update** (`force_update`) - `true` to overwrite files in an existing release; default is `false` which will fail deployment if the release already exists on GitHub.
 
 ### Configuring in appveyor.yml
 

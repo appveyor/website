@@ -5,19 +5,19 @@ title: Packaging artifacts
 
 # Packaging artifacts
 
-The **Artifacts** page of project settings tells AppVeyor which files and folders should be uploaded to AppVeyor cloud storage during the build.
+The **Artifacts** page in the project settings tells AppVeyor which files and folders should be uploaded to AppVeyor cloud storage during the build.  Artifacts can be later deployed to other environments, however deployment is not possible unless a file is listed as an artifact first.
 
-The artifact path must be relative to the root of repository. For example, to upload `myproject.dll` assembly from `bin` folder of a project enter:
+The artifact path must be relative to the root of repository. For example, to upload the `myproject.dll` assembly from the `bin` folder of a project enter:
 
-    myproject\bin\debug\myproject.dll
+    bin\debug\myproject.dll
 
-You can use wildcards and environment variables in the artifact path. Let's say the "configuration" variable contains the current build configuration. Then to upload all assemblies in bin directory:
+You can use wildcards and environment variables in the artifact path. Let's say the "configuration" variable contains the current build configuration. Then to upload all assemblies in the `bin` directory:
 
-    myproject\bin\$(configuration)\*.dll
+    bin\$(configuration)\*.dll
 
 To push the entire `bin` folder as a single zip archive:
 
-    myproject\bin
+    bin
 
 To push all `*.nupkg` files in the build folder recursively:
 
@@ -27,7 +27,7 @@ To push all `*.nupkg` files in sub-directory recursively:
 
     subdir\**\*.nupkg
 
-To configure project artifacts in `appveyor.yml`:
+To configure project artifacts in `appveyor.yml`, use this syntax:
 
     artifacts:
       - path: test.zip
@@ -37,7 +37,7 @@ To configure project artifacts in `appveyor.yml`:
         name: test logs
         type: zip
 
-> IMPORTANT! If artifact path starts with `*` surround the value into single quotes, for example:
+> IMPORTANT! If the artifact path starts with `*` surround the value with single quotes, for example:
 
     - path: '*.nupkg'
 
@@ -54,7 +54,7 @@ To create a single "zip" artifact with multiple files from different locations y
 
     7z a myapp.zip %APPVEYOR_BUILD_FOLDER%\path\to\bin\*.dll
 
-Specifying absolute path here is required to remove paths from archive. However, if you need to preserve paths in archive use relative paths, like:
+Specifying the absolute path here is required to remove paths from archive. However, if you need to preserve paths in the archive use relative paths, like:
 
     7z a myapp.zip path\to\bin\*.dll
 
@@ -67,7 +67,7 @@ Finally, have only "myapp.zip" pushed to artifacts.
 
 ## Pushing artifacts from scripts
 
-You can use the following command-line to push file to build artifacts:
+You can use the following command-line to add a file to the list of build artifacts:
 
     appveyor PushArtifact <file_name>
 
@@ -75,12 +75,12 @@ or using PowerShell:
 
     Push-AppveyorArtifact <file_name>
 
-For example, to push all NuGet packages from build folder (non-recursive):
+For example, to push all NuGet packages from the build folder (non-recursive):
 
     after_build:
       - ps: Get-ChildItem .\*.nupkg | % { Push-AppveyorArtifact $_.FullName -FileName $_.Name }
 
-The following command pushes the contents of `app.publish` folder preserving directories structure:
+The following command pushes the contents of the `app.publish` folder while preserving the directory structure:
 
     ps: $root = Resolve-Path .\MyApp\bin\Debug\app.publish; [IO.Directory]::GetFiles($root.Path, '*.*', 'AllDirectories') | % { Push-AppveyorArtifact $_ -FileName $_.Substring($root.Path.Length + 1) -DeploymentName to-publish }
 
@@ -88,7 +88,7 @@ See [Pushing artifacts from scripts](/docs/build-worker-api#push-artifact) for m
 
 ## Getting information about uploaded artifacts
 
-After all artifacts uploaded and *before* starting deployment AppVeyor adds into PowerShell context `$artifacts` hash table with all artifacts. The key of this hash table is artifact *deployment name* and value is the object with the following fields:
+After all artifacts are uploaded and *before* starting deployment, AppVeyor adds into PowerShell context `$artifacts` hash table with all artifacts. The key of this hash table is the artifact *deployment name* and the value is an object with the following fields:
 
 * `name` - artifact deployment name. GUID if was not specified;
 * `type` - artifact type;
