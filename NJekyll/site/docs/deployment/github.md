@@ -53,11 +53,13 @@ To promote selected "tag" build to GitHub release:
 
 * **GitHub authentication token** (`auth_token`) - OAuth token used for authentication against GitHub API. You can generate [Personal API access token](https://github.com/blog/1509-personal-api-tokens) at [https://github.com/settings/tokens](https://github.com/settings/tokens). Minimal token scope is `repo` or `public_repo` to release on private or public repositories respectively. Be sure to encrypt your token using the **Account -> Encrypt data** tool.
 
-* **Artifact to deploy** (`artifact`) - Optional. Allows specifying one or more build artifacts to be uploaded as release assets. The value could be comma-delimited list of artifact's file name, deployment name or regular expression matching one of these. For example `bin\release\MyLib.zip` or `/.*\.nupkg/`. Don't forget to [package your artifact](/docs/packaging-artifacts) first.
+* **Artifact to deploy** (`artifact`) - Optional. Allows specifying one or more build artifacts to be uploaded as release assets. The value could be comma-delimited list of artifact's file name, deployment name or regular expression matching one of these. For example `bin\release\MyLib.zip` or `/.*\.nupkg/`. Don't forget to [package your artifact](/docs/packaging-artifacts) first, as the deployment will fail if this value does not match `artifacts.name` or `artifacts.path` (even if the file exists.)
 
 * **Draft release** (`draft`) - `true` if draft release should be created; default is `false`.
 
 * **Pre-release** (`prerelease`) - `true` to mark release as "pre-release"; default is `false`.
+
+* **Force update** (`force_update`) - `true` to overwrite files in an existing release; default is `false` which will fail deployment if the release already exists on GitHub.
 
 ### Configuring in appveyor.yml
 

@@ -5,7 +5,7 @@ title: Packaging artifacts
 
 # Packaging artifacts
 
-The **Artifacts** page of project settings tells AppVeyor which files and folders should be uploaded to AppVeyor cloud storage during the build.
+The **Artifacts** page in the project settings tells AppVeyor which files and folders should be uploaded to AppVeyor cloud storage during the build.  Artifacts can be later deployed to other environments, however deployment is not possible unless a file is listed as an artifact first.
 
 The artifact path must be relative to the root of repository. For example, to upload the `myproject.dll` assembly from the `bin` folder of a project enter:
 
