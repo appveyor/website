@@ -4,9 +4,15 @@ title: Support
 slug: support
 ---
 
-# Support channels
+# Support options
 
 <!--TOC-->
+
+## System status
+
+Check this page (powered by [StatusPage.io](https://www.statuspage.io/)) for any ongoing issues happening to AppVeyor:
+
+<a href="https://appveyor.statuspage.io" style="font-size:1.1rem;" target="_blank">https://appveyor.statuspage.io</a>
 
 ## Forums and support tickets
 
