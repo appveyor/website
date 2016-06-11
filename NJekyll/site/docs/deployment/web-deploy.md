@@ -103,7 +103,7 @@ See  [Configuring Deployment Properties for a Target Environment](http://www.asp
 
 ### Web Deploy Handler
 
-If you’re deploying to the Web Deploy Handler on the destination web server, you should specify the service endpoint and include the name of the IIS website as a query string parameter (for example, **https://STAGEWEB1:8172/MSDeploy.axd?site=DemoSite**).
+If you’re deploying to the Web Deploy Handler on the destination web server, you should specify the service endpoint and include the name of the IIS website as a query string parameter (for example, https://STAGEWEB1:8172/MSDeploy.axd?**site=DemoSite**).
 
 Typically, Web Deployment Handler uses Basic authentication which is enabled by default.
 
