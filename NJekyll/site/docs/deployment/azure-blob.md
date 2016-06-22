@@ -15,6 +15,7 @@ Azure blob storage provider copies all or selected artifacts to Windows Azure st
 * **Folder** (`folder`) - name of folder to copy to.
 * **Artifact** (`artifact`) - name of artifact to copy.
 * **Unzip artifacts before uploading to Azure Storage** (`unzip`) - set `true` to unpack `Zip` artifacts before uploading to storage. Default is `false`.
+* **Set blobs *Content Type* based on file extensions** (`set_content_type`) - set `true` to automatically configure content types based on file extensions, which default to `application/octet-stream` otherwise. Default is `false`.
 
 Configuring in `appveyor.yml`:
 
@@ -27,3 +28,4 @@ Configuring in `appveyor.yml`:
       folder: $(APPVEYOR_PROJECT_SLUG)\$(APPVEYOR_BUILD_VERSION)
       artifact: myapp
       unzip: false
+      set_content_type: false
