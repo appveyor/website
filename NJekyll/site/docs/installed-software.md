@@ -15,8 +15,8 @@ Below is the list of software pre-installed on Build Worker.
 
 ## Version control systems
 
-* [Git](http://git-scm.com/download/win) 2.7.0 (x64) (with `git config --global core.autocrlf input`)
-	* [Git Large File Storage](https://git-lfs.github.com/) 1.1.2
+* [Git](http://git-scm.com/download/win) 2.9.0 (x64) (with `git config --global core.autocrlf input`)
+	* [Git Large File Storage](https://git-lfs.github.com/) 1.2.0
 * [Mercurial](http://mercurial.selenic.com/downloads) 3.1.1 (x86)
 * [Subversion](http://www.collab.net/downloads/subversion) 1.8.11 (x86)
 
@@ -90,7 +90,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 ## Xamarin
 
-[Xamarin Platform](https://xamarin.com/platform) v4.0.3 is installed on `Visual Studio 2015` image.
+[Xamarin Platform](https://xamarin.com/platform) v4.0.4.4 is installed on `Visual Studio 2015` image.
 
 ## Languages, libraries, frameworks
 
@@ -114,7 +114,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 `4.4.x` is default Node.js installed on build workers.
 
-* 4.0.0 - 6.1.0 (x86 and x64)
+* 4.0.0 - 6.2.2 (x86 and x64)
 * 0.10.26 - 0.10.44 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
 * 0.12.0 - 0.12.13 (x86 and x64)
@@ -197,15 +197,15 @@ To switch to the latest io.js version using this PowerShell command:
     * 3.3.5 x64 (`C:\Python33-x64`)
     * 3.4.3 x86 (`C:\Python34`)
     * 3.4.3 x64 (`C:\Python34-x64`)
-    * 3.5.0 x86 (`C:\Python35`)
-    * 3.5.0 x64 (`C:\Python35-x64`)
+    * 3.5.1 x86 (`C:\Python35`)
+    * 3.5.1 x64 (`C:\Python35-x64`)
 * Miniconda
-	* Miniconda2 3.18.3 (Python 2.7.10) - `C:\Miniconda`
-	* Miniconda2 3.18.3 x64 (Python 2.7.10): `C:\Miniconda-x64`
+	* Miniconda2 4.0.5 (Python 2.7.11) - `C:\Miniconda`
+	* Miniconda2 4.0.5 x64 (Python 2.7.11): `C:\Miniconda-x64`
 	* Miniconda3 3.16.0 (Python 3.4.3): `C:\Miniconda3`
 	* Miniconda3 3.16.0 x64 (Python 3.4.3): `C:\Miniconda3-x64`
-	* Miniconda3 3.18.3 (Python 3.5.0): `C:\Miniconda35`
-	* Miniconda3 3.18.3 x64 (Python 3.5.0): `C:\Miniconda35-x64`
+	* Miniconda3 4.0.5 (Python 3.5.1): `C:\Miniconda35`
+	* Miniconda3 4.0.5 x64 (Python 3.5.1): `C:\Miniconda35-x64`
 * [Visual C++ Compiler for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266)
     
 ### Perl
@@ -233,7 +233,13 @@ To switch to the latest io.js version using this PowerShell command:
 ### Qt
 
 * Qt (`C:\Qt`)
-	- Qt 5.6: `C:\Qt\5.6`
+	- Qt 5.7: `C:\Qt\5.7`
+	  - MinGW 5.3.0 32 bit: `C:\Qt\5.7\mingw53_32`
+	  - msvc2015 64-bit: `C:\Qt\5.7\msvc2015_64`
+	  - msvc2015 32-bit: `C:\Qt\5.7\msvc2015`      
+	  - msvc2013 64-bit: `C:\Qt\5.7\msvc2013_64`
+	  - msvc2013 32-bit: `C:\Qt\5.7\msvc2013`
+	- Qt 5.6.1: `C:\Qt\5.6`
 	  - MinGW 4.9.2 32 bit: `C:\Qt\5.6\mingw49_32`
 	  - msvc2015 64-bit: `C:\Qt\5.6\msvc2015_64`
 	  - msvc2015 32-bit: `C:\Qt\5.6\msvc2015`      
@@ -252,6 +258,7 @@ To switch to the latest io.js version using this PowerShell command:
 	  - msvc2013 64-bit OpenGL: `C:\Qt\5.3\msvc2013_64_opengl`
 	  - msvc2013 32-bit OpenGL: `C:\Qt\5.3\msvc2013_opengl`
 	- Tools
+      - MinGW 5.3.0: `C:\Qt\Tools\mingw530_32`
 	  - MinGW 4.8.2: `C:\Qt\Tools\mingw482_32`
 	  - MinGW 4.9.1: `C:\Qt\Tools\mingw491_32`
 	  - MinGW 4.9.2: `C:\Qt\Tools\mingw492_32`
@@ -264,12 +271,12 @@ To switch to the latest io.js version using this PowerShell command:
 * [Microsoft Azure CLI](http://azure.microsoft.com/en-us/downloads/) 0.9.10
 * [CMake](http://www.cmake.org/cmake/resources/software.html) 3.5.0
 * [NuGet](https://dist.nuget.org/index.html) 2.8.6 on `Visual Studio 2013` image
-* [NuGet](https://dist.nuget.org/index.html) 3.3.0 on `Visual Studio 2015` image
+* [NuGet](https://dist.nuget.org/index.html) 3.4.4 on `Visual Studio 2015` image
 * [Chocolatey](http://chocolatey.org/) v0.9.9.8
 * [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.0.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
-* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2e (32-bit) (`C:\OpenSSL-Win32\bin`)
-* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2e (64-bit) (`C:\OpenSSL-Win64\bin`)
+* [OpenSSL Light](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2h (32-bit) (`C:\OpenSSL-Win32\bin`)
+* [OpenSSL Light](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2h (64-bit) (`C:\OpenSSL-Win64\bin`)
 * [NSIS](http://nsis.sourceforge.net/Download) 2.50 (`C:\Program Files (x86)\NSIS`)
 
 ## Testing
@@ -277,7 +284,7 @@ To switch to the latest io.js version using this PowerShell command:
 ### Runners
 
 * [NUnit](http://nunit.org/index.php?p=download) 2.6.4 in `C:\Tools\NUnit\bin`
-* [NUnit3](https://github.com/nunit/nunit) 3.2.0 in `C:\Tools\NUnit3\bin`
+* [NUnit3](https://github.com/nunit/nunit) 3.2.1 in `C:\Tools\NUnit3\bin`
 * [xUnit](https://github.com/xunit/xunit/releases) 1.9.2 in `C:\Tools\xUnit`
 * [xUnit](https://www.nuget.org/packages/xunit.runner.console/2.0.0) 2.0.0 RTM in `C:\Tools\xUnit20`
 * [Machine.Specifications (MSpec)](http://www.nuget.org/packages/Machine.Specifications)
@@ -296,6 +303,7 @@ To switch to the latest io.js version using this PowerShell command:
 * [SQL Server 2008 R2 SP2 Express Edition with Advanced Services (x64)](http://www.microsoft.com/en-US/download/details.aspx?id=30438)
 * [SQL Server 2012 SP1 Express with Advanced Services](http://www.microsoft.com/en-us/download/details.aspx?id=35579)
 * [SQL Server 2014 Express with Advanced Services](http://www.microsoft.com/en-us/download/details.aspx?id=42299)
+* [SQL Server 2016 Express](https://www.microsoft.com/en-us/download/details.aspx?id=52679)
 * [PostgreSQL 9.3 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 * [PostgreSQL 9.4 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 * [PostgreSQL 9.5 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
