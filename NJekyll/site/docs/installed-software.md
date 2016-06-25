@@ -15,7 +15,7 @@ Below is the list of software pre-installed on Build Worker.
 
 ## Version control systems
 
-* [Git](http://git-scm.com/download/win) 2.9.0 (x64) (with `git config --global core.autocrlf input`)
+* [Git](http://git-scm.com/download/win) 2.8.2 (x64) (with `git config --global core.autocrlf input`)
 	* [Git Large File Storage](https://git-lfs.github.com/) 1.2.0
 * [Mercurial](http://mercurial.selenic.com/downloads) 3.1.1 (x86)
 * [Subversion](http://www.collab.net/downloads/subversion) 1.8.11 (x86)
