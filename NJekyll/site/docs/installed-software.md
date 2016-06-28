@@ -75,7 +75,7 @@ Below is the list of software pre-installed on Build Worker.
 
 ### Visual Studio 2015
 
-* [Visual Studio Community 2015 with Update 2](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx)
+* [Visual Studio Community 2015 with Update 3](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx)
 * Universal Windows App Dev Tools for Visual Studio 2015
 * Windows 10 SDK
 * [Python Tools for Visual Studio 2015](https://github.com/Microsoft/PTVS/releases)
@@ -90,12 +90,13 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 ## Xamarin
 
-[Xamarin Platform](https://xamarin.com/platform) v4.0.4.4 is installed on `Visual Studio 2015` image.
+[Xamarin Platform](https://xamarin.com/platform) v4.1.1.3 is installed on `Visual Studio 2015` image.
 
 ## Languages, libraries, frameworks
 
 * [C++ 11 CTP](http://blogs.msdn.com/b/vcblog/archive/2013/11/18/announcing-the-visual-c-compiler-november-2013-ctp.aspx)
 * .NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2
+* .NET Core 1.0
 * [Microsoft .NET Framework 4.5.2 with Developer Pack](http://www.microsoft.com/en-ca/download/details.aspx?id=42637)
 * [Visual F# 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=18706)
 * [Visual F# Out of Band Release 3.1.2](http://www.microsoft.com/en-us/download/details.aspx?id=44011)
@@ -226,6 +227,8 @@ To switch to the latest io.js version using this PowerShell command:
 	* MinGW root directory: `C:\MinGW`
 	* MinGW bin directory: `C:\MinGW\bin`
 	* MSYS root directory: `C:\MinGW\msys\1.0`
+* MinGW-w64:
+    * `C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0`
 * Cygwin (`C:\cygwin`)
 * Cygwin 64 (`C:\cygwin64`)
 * MSYS2 (`C:\msys64`)
@@ -291,11 +294,11 @@ To switch to the latest io.js version using this PowerShell command:
 
 ### Selenium
 
-* [Chrome Web Driver](http://chromedriver.storage.googleapis.com/index.html) 2.19
-* [Internet Explorer Web Driver](http://selenium-release.storage.googleapis.com/index.html) 2.47
+* [Chrome Web Driver](http://chromedriver.storage.googleapis.com/index.html) 2.22
+* [Internet Explorer Web Driver](http://selenium-release.storage.googleapis.com/index.html) 2.53
 * Internet Explorer 11
-* FireFox 46.0
-* Chrome 50.0
+* FireFox 47
+* Chrome 51.0
 
 
 ## Services and databases
