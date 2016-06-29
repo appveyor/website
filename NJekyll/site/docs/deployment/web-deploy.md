@@ -202,3 +202,57 @@ When deploying during the build session environment variables are used instead. 
 ![project-environment-variables](/site/images/docs/deployment/web-deploy/project-environment-variables.png)
 
 Variables defined during the build override those ones defined on Environment level.
+
+
+## Using Web Deploy with a Node.js website
+
+Web Deploy works great as a deployment tool with a Node.js website. The trick is getting the website assests all packaged into a single zip-asset and then using web deploy to sync up this single zip.  
+To do this, we need to do _one_ main step in our _node build script_ (not in the AppVeyor build script, but in your personal node build script) and then _two_ main steps in our AppVeyor build-pipepline.
+
+- (Node script) First, you need to throw all your final assests into a temporary folder which contains your node site, all bundled and minified, etc. eg. `\src\dist`. Use whatever tools your comfortable with (ie. webpack/browserfy/grunt/gulp/etc..)
+- (AppVeyor configuration) Zip up this folder.
+- (AppVeyor configuration) Tell MsDeploy to deploy this zip folder to azure.
+
+eg AppVeyor script snippet...
+
+```
+artifacts:
+- path: src\dist\
+  name: final-app
+
+deploy:
+- provider: WebDeploy
+  server: https://<website_name>.scm.azurewebsites.net:443/msdeploy.axd?site=<website_name>
+  website: <website_name>
+  username: $<website_name>
+  password:
+    secure: <super secret password that was encrypted using the AppVeyor UI>
+  remove_files: true
+  app_offline: true
+  artifact: final-app
+```
+
+Lets break this down...
+
+```
+artifacts:
+- path: src\dist\
+  name: final-app
+```
+
+This will zip up all the contents in the `src\dist` folder to a zip file to some secret place and the zip file is 'tagged' with the name `final-app`.  
+Remember how we said to make sure your node-script places all our final node assets into this folder? That's why :)
+
+And next..
+
+```
+deploy:
+- provider: WebDeploy
+  <snip>
+  artifact: final-app
+```
+Notice how, in the `deploy` settings we have `artifact: final-app` ? That means: use the artifiact that was tagged/named `final-app` .. which happens to be some zip file previously made.
+
+And voila! The zip is now uploaded to Azure and auto-unzipped.  
+And old files will be removed.
+

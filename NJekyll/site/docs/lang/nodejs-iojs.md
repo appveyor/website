@@ -157,6 +157,11 @@ This configuration will produce a build with 4 jobs for all combinations of node
     io.js 1.0.x      x64
 
 
+## Deploying a Node.js website to Azure
+
+You can use Web Deploy to [deploy your Node.js website](/docs/deployment/web-deploy#using-web-deploy-with-a-node-js-website) to Azure.
+
+
 ## Known issues
 
 
