@@ -278,8 +278,8 @@ To switch to the latest io.js version using this PowerShell command:
 * [Chocolatey](http://chocolatey.org/) v0.9.9.8
 * [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.0.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
-* [OpenSSL Light](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2h (32-bit) (`C:\OpenSSL-Win32\bin`)
-* [OpenSSL Light](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2h (64-bit) (`C:\OpenSSL-Win64\bin`)
+* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2h (32-bit) (`C:\OpenSSL-Win32\bin`)
+* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2h (64-bit) (`C:\OpenSSL-Win64\bin`)
 * [NSIS](http://nsis.sourceforge.net/Download) 2.50 (`C:\Program Files (x86)\NSIS`)
 
 ## Testing
@@ -296,8 +296,9 @@ To switch to the latest io.js version using this PowerShell command:
 
 * [Chrome Web Driver](http://chromedriver.storage.googleapis.com/index.html) 2.22
 * [Internet Explorer Web Driver](http://selenium-release.storage.googleapis.com/index.html) 2.53
+* [FireFox Web Driver (geckodriver)](https://github.com/mozilla/geckodriver/releases) 0.8.0
 * Internet Explorer 11
-* FireFox 47
+* FireFox 47.0.1
 * Chrome 51.0
 
 
