@@ -15,6 +15,7 @@ AppVeyor has most popular services and database engines pre-installed on all bui
 * [SQL Server 2008](#sql-server-2008)
 * [SQL Server 2012](#sql-server-2012)
 * [SQL Server 2014](#sql-server-2014)
+* [SQL Server 2016](#sql-server-2016)
 * [MySQL](#mysql)
 * [PostgreSQL](#postgresql)
 * [MongoDB](#mongodb)
@@ -90,6 +91,23 @@ To start SQL Server and Reporting Services:
 
     services:
       - mssql2014rs
+
+## SQL Server 2016
+
+The latest version of **SQL Server 2016 Express** is available on AppVeyor build servers.
+
+Instance name: `SQL2016`
+
+`sa` password: `Password12!`
+
+Sample connection string:
+
+    Server=(local)\SQL2016;Database=master;User ID=sa;Password=Password12!
+
+To start SQL Server 2016 Express in `appveyor.yml`:
+
+    services:
+      - mssql2016
 
 ### Importing your existing database
 
