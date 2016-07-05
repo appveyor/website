@@ -8,15 +8,6 @@ module.exports = function(grunt) {
             src: "src"
         },
 
-        // Copy files that don't need compilation to dist/
-        copy: {
-            dist: {
-                files: [
-                    {dest: "<%= dirs.dest %>/", src: "assets/js/jquery*.min.js", expand: true, cwd: "<%= dirs.src %>/"},
-                ]
-            }
-        },
-
         jekyll: {
             site: {
                 options: {
@@ -68,8 +59,11 @@ module.exports = function(grunt) {
                 dest: "<%= dirs.dest %>/assets/css/pack.css"
             },
             js: {
-                src: ["<%= dirs.src %>/assets/js/**/*.js",
-                      "!<%= dirs.src %>/assets/js/jquery*.min.js"
+                src: [
+                    "<%= dirs.src %>/assets/js/jquery-*.min.js",
+                    "<%= dirs.src %>/assets/js/foundation/*.js",
+                    "<%= dirs.src %>/assets/js/anchor.js",
+                    "<%= dirs.src %>/assets/js/main.js"
                 ],
                 dest: "<%= dirs.dest %>/assets/js/pack.js"
             }
@@ -128,10 +122,7 @@ module.exports = function(grunt) {
                 src: "<%= dirs.dest %>/assets/css/**/{,*/}*.css"
             },
             js: {
-                src: [
-                    "<%= dirs.dest %>/assets/js/**/{,*/}*.js",
-                    "!<%= dirs.dest %>/assets/js/jquery*.min.js"
-                ]
+                src: "<%= dirs.dest %>/assets/js/**/{,*/}*.js"
             },
             images: {
                 src: [
@@ -260,7 +251,6 @@ module.exports = function(grunt) {
         "clean",
         "jekyll",
         "useminPrepare",
-        "copy",
         "concat",
         "uncss",
         "cssmin",
@@ -282,7 +272,6 @@ module.exports = function(grunt) {
     grunt.registerTask("dev", [
         "jekyll",
         "useminPrepare",
-        "copy",
         "concat",
         "filerev",
         "usemin"
