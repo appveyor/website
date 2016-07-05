@@ -1,10 +1,12 @@
 ---
 layout: one-column
 title: AppVeyor Platform Updates
+paginate:
+    collection:   updates
+    permalink:    /page/:num/   # pagination path (relative to template page)
 ---
 
-{% assign posts = site.updates | sort:"date" | reverse %}
-{% for post in posts %}
+{% for post in paginator.updates %}
     <h1 class="blog-post-title">
         <a href="{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a>
     </h1>
@@ -17,12 +19,12 @@ title: AppVeyor Platform Updates
 <div class="row">
     <div class="columns small-6">
         {% if paginator.next_page %}
-        <a href="/updates{{ paginator.next_page_path }}">&larr; Older</a>
+        <a href="{{ paginator.next_page_path }}">&larr; Older</a>
         {% endif %}
     </div>
     <div class="columns small-6 text-right">
         {% if paginator.previous_page %}
-        <a href="/updates{{ paginator.previous_page_path }}">Newer &rarr;</a>
+        <a href="{{ paginator.previous_page_path }}">Newer &rarr;</a>
         {% endif %}
     </div>
 </div>
