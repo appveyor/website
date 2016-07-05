@@ -79,5 +79,5 @@ To restore components used in the solution add this command to "Before build" se
 
 ## External links
 
-* [Learn more about Xamarin platform](https://www.xamarin.com)  
-* [Request Xamarin license for your open-source project](http://resources.xamarin.com/open-source-contributor.html)
+* [Learn more about Xamarin platform](https://www.xamarin.com/)
+* [Request Xamarin license for your open-source project](https://resources.xamarin.com/open-source-contributor.html)

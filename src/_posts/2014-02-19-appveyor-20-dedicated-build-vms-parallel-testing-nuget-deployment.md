@@ -34,7 +34,7 @@ Every account comes with a private password-protected NuGet feed aggregating pac
 
 Projects have separate NuGet feeds with all NuGet packages pushed as artifacts.
 
-<a href="http://www.appveyor.com/docs/nuget">Read more about NuGet support</a>
+<a href="https://www.appveyor.com/docs/nuget">Read more about NuGet support</a>
 <h2 id="build-matrix">Build matrix</h2>
 <img style="width:100%;max-width:395px;float:right;" src="/assets/images/newsletters/2014-02-18/build-matrix.png" alt="">
 
@@ -53,15 +53,15 @@ Build matrix supports the following dimensions:
 
 Large projects can contain hundreds and thousands of tests that could run for hours. AppVeyor 2.0 allows to split your tests into groups by categories, assemblies or custom criteria and run them as build jobs in parallel thus drastically reducing overall build time.
 
-<a href="http://www.appveyor.com/docs/parallel-testing">Read more about parallel testing</a>
+<a href="https://www.appveyor.com/docs/parallel-testing">Read more about parallel testing</a>
 <h2 id="deployment">Deployment</h2>
 <img style="width:100%;max-width:133px;float:right;" src="/assets/images/newsletters/2014-02-18/deploy.png" alt="">
 
 AppVeyor 2.0 has scriptless, repetitive one-click deployment to multiple environments! Deploy as part of the build or promote releases later - manually or through API.
 
-Supported deployment providers: <a href="http://www.appveyor.com/docs/deployment/web-deploy">Web Deploy</a>, <a href="http://www.appveyor.com/docs/deployment/ftp">FTP</a>, <a href="http://www.appveyor.com/docs/deployment/amazon-s3">Amazon S3</a>, <a href="http://www.appveyor.com/docs/deployment/azure-blob">Azure blob</a>, <a href="http://www.appveyor.com/docs/deployment/azure-cloud-service">Azure Cloud Services</a>, <a href="http://www.appveyor.com/docs/deployment/nuget">NuGet</a>, <a href="http://www.appveyor.com/docs/deployment/agent">Deployment Agent</a>, <a href="http://www.appveyor.com/docs/deployment/local">Local</a> (for integration testing) and Script.
+Supported deployment providers: <a href="https://www.appveyor.com/docs/deployment/web-deploy">Web Deploy</a>, <a href="https://www.appveyor.com/docs/deployment/ftp">FTP</a>, <a href="https://www.appveyor.com/docs/deployment/amazon-s3">Amazon S3</a>, <a href="https://www.appveyor.com/docs/deployment/azure-blob">Azure blob</a>, <a href="https://www.appveyor.com/docs/deployment/azure-cloud-service">Azure Cloud Services</a>, <a href="https://www.appveyor.com/docs/deployment/nuget">NuGet</a>, <a href="https://www.appveyor.com/docs/deployment/agent">Deployment Agent</a>, <a href="https://www.appveyor.com/docs/deployment/local">Local</a> (for integration testing) and Script.
 
-<a href="http://www.appveyor.com/docs/deployment">Read more about deployment</a>
+<a href="https://www.appveyor.com/docs/deployment">Read more about deployment</a>
 <h2 id="yaml">Fine-grained control over build configuration</h2>
 <img style="width:100%;max-width:203px;float:left;" src="/assets/images/newsletters/2014-02-18/yaml.png" alt="">
 
@@ -69,7 +69,7 @@ Great Windows software must provide user interface for any function it has. AppV
 
 For command-line gurus or those coming from Linux we added fancy YAML configuration support! Add <strong>appveyor.yml</strong> with project configuration into root of your repository and next time you fork the repo just add a new project in AppVeyor.
 
-<a href="http://www.appveyor.com/docs/build-configuration">Read more about build configuration</a>
+<a href="https://www.appveyor.com/docs/build-configuration">Read more about build configuration</a>
 <div></div>
 <h2 id="ui">All new refreshed, responsive and real-time UI</h2>
 AppVeyor 2.0 has completely re-designed UI to get results faster and on the go!
@@ -83,13 +83,13 @@ AngularJS, SignalrR and Foundation helped us to build great experience we're rea
     <li>Optimized for mobile screens.</li>
 </ul>
 <h2>Try AppVeyor now!</h2>
-<p style="margin:2rem 0;"><a style="font-size:14pt;color:#fff;text-decoration:none;background-color:#2cba2c;padding:.7rem 2rem;border-radius:4px;" href="http://www.appveyor.com/pricing">Sign up now</a></p>
+<p style="margin:2rem 0;"><a style="font-size:14pt;color:#fff;text-decoration:none;background-color:#2cba2c;padding:.7rem 2rem;border-radius:4px;" href="https://www.appveyor.com/pricing">Sign up now</a></p>
 
 <ul>
     <li>Free plan with support of public repositories only. <a href="mailto:team@appveyor.com">Let us know</a> if you need private repositories support or want to play with parallel testing and we'll be happy to enable them for your account.</li>
 </ul>
 <h2>Documentation</h2>
-<a href="http://www.appveyor.com/docs">http://www.appveyor.com/docs</a>
+<a href="https://www.appveyor.com/docs">https://www.appveyor.com/docs</a>
 <h2>Dicsussions</h2>
 <a href="http://help.appveyor.com/">http://help.appveyor.com</a>
 

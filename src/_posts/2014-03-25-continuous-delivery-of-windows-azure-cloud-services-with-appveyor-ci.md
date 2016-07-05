@@ -8,7 +8,7 @@ AppVeyor is Continuous Integration service for Windows developers to securely bu
 
 In this tutorial we'll guide you through the process of setting up a continuous delivery process for sample Azure Cloud Service (Azure CS) application starting from a code push to a repository and finishing with deployment of successful build to Azure.
 <h2>Note to Global Windows Azure Bootcamp attendees</h2>
-On Saturday, March 29, 2014 <a href="http://global.windowsazurebootcamp.com/">Global Windows Azure Bootcamp (GWAB)</a> will take place in 141 locations across the globe. If you are not registered yet go <a href="http://global.windowsazurebootcamp.com/locations/">find a location near you</a> and do that. AppVeyor CI is one of the sponsors of this event and during that time we will be giving <strong>2 free months</strong> with the purchase of <a href="http://www.appveyor.com/pricing">any AppVeyor plan</a> to all GWAB attendees.
+On Saturday, March 29, 2014 <a href="http://global.windowsazurebootcamp.com/">Global Windows Azure Bootcamp (GWAB)</a> will take place in 141 locations across the globe. If you are not registered yet go <a href="http://global.windowsazurebootcamp.com/locations/">find a location near you</a> and do that. AppVeyor CI is one of the sponsors of this event and during that time we will be giving <strong>2 free months</strong> with the purchase of <a href="https://www.appveyor.com/pricing">any AppVeyor plan</a> to all GWAB attendees.
 
 AppVeyor CI has tight relationship with Windows Azure platform. First of all, AppVeyor is built for Azure and it uses Azure IaaS to run your builds on dedicated virtual machines. Second, AppVeyor provides complete Continuous Delivery cycle for Azure projects, i.e. building, testing, packaging and deploying your web applications and Azure Cloud Services. GWAB training classes is a wonderful place to try AppVeyor and setup super-simple continuous integration for your lab project.
 <h2>Sample project on GitHub</h2>
@@ -48,7 +48,7 @@ Now let's deploy our "experimental" app to Windows Azure. Go to Environments an
 
 The form requires 3 prerequisites:
 <ul>
-    <li><span style="font-style:inherit;line-height:1.625;">Your Windows Azure account </span><strong style="font-style:inherit;line-height:1.625;">subscription details</strong> (Subscription ID and certificate)<span style="font-style:inherit;line-height:1.625;">.</span></li>
+    <li><span style="font-style:inherit;line-height:1.625;">Your Windows Azure account</span> <strong style="font-style:inherit;line-height:1.625;">subscription details</strong> (Subscription ID and certificate)<span style="font-style:inherit;line-height:1.625;">.</span></li>
     <li><strong>Storage account</strong> for uploading Azure CS package (.cspkg file produced during the build) and then deploying from it.</li>
     <li><strong>Cloud Service</strong> to deploy to.</li>
 </ul>

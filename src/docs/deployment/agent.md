@@ -42,7 +42,7 @@ The following is required on the server to run Deployment Agent:
 Run the following in PowerShell console:
 
 {% highlight powershell %}
-(new-object net.webclient).DownloadFile('http://www.appveyor.com/downloads/deployment-agent/latest/AppveyorDeploymentAgent.msi', 'AppveyorDeploymentAgent.msi')
+(new-object net.webclient).DownloadFile('https://www.appveyor.com/downloads/deployment-agent/latest/AppveyorDeploymentAgent.msi', 'AppveyorDeploymentAgent.msi')
 msiexec /i AppveyorDeploymentAgent.msi /quiet /qn /norestart /log install.log ENVIRONMENT_ACCESS_KEY=<your_access_key> DEPLOYMENT_GROUP=<your_deployment_group>
 {% endhighlight %}
 

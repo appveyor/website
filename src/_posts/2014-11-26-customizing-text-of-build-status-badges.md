@@ -17,6 +17,6 @@ For example:
 
     https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20OK&failingText=master%20-%20Fails
 
-Read more about status badges in [AppVeyor documentation](http://www.appveyor.com/docs/status-badges).
+Read more about status badges in [AppVeyor documentation](https://www.appveyor.com/docs/status-badges).
 
 Enjoy!

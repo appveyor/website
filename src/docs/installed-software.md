@@ -20,7 +20,7 @@ Below is the list of software pre-installed on Build Worker.
 
 * [Git](https://git-scm.com/download/win) 2.8.2 (x64) (with `git config --global core.autocrlf input`)
     * [Git Large File Storage](https://git-lfs.github.com/) 1.2.0
-* [Mercurial](http://mercurial.selenic.com/downloads) 3.1.1 (x86)
+* [Mercurial](https://www.mercurial-scm.org/downloads) 3.1.1 (x86)
 * [Subversion](http://www.collab.net/downloads/subversion) 1.8.11 (x86)
 
 ## SDKs
@@ -45,9 +45,9 @@ Below is the list of software pre-installed on Build Worker.
 * TypeScript 1.6.3 for Visual Studio 2015
 * TypeScript 1.7.6 for Visual Studio 2015
 * TypeScript 1.8.3 for Visual Studio 2015
-* [Office Developer Tools for Visual Studio 2013](https://blogs.msdn.com/b/visualstudio/archive/2014/03/03/announcing-office-developer-tools-for-visual-studio-2013-march-2014-update.aspx)
+* [Office Developer Tools for Visual Studio 2013](https://blogs.msdn.microsoft.com/visualstudio/2014/03/03/announcing-office-developer-tools-for-visual-studio-2013-march-2014-update/)
 * [Office Developer Tools for Visual Studio 2015](https://www.visualstudio.com/en-us/features/office-tools-vs.aspx)
-* [Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013](https://www.microsoft.com/en-ca/download/details.aspx?id=42313)
+* [Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=42313)
 
 ## Visual Studio
 
@@ -67,12 +67,12 @@ Below is the list of software pre-installed on Build Worker.
 
 * [Visual Studio Express 2012 for Windows Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=34673)
 * [TypeScript for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=34790)
-* [Visual Studio 2012 Update 5](https://www.microsoft.com/en-ca/download/details.aspx?id=48708)
+* [Visual Studio 2012 Update 5](https://www.microsoft.com/en-us/download/details.aspx?id=48708)
 
 ### Visual Studio 2013
 
-* [Visual Studio Community 2013 with Update 5](http://www.visualstudio.com/products/visual-studio-community-vs)
-* [Visual Studio 2013 SDK](http://www.visualstudio.com/downloads/download-visual-studio-vs)
+* [Visual Studio Community 2013 with Update 5](https://www.visualstudio.com/products/visual-studio-community-vs)
+* [Visual Studio 2013 SDK](https://www.visualstudio.com/downloads/download-visual-studio-vs)
 * [Python Tools for Visual Studio 2013](https://github.com/Microsoft/PTVS/releases)
 * [Node.js Tools for Visual Studio 2013](https://github.com/Microsoft/nodejstools#readme)
 
@@ -102,14 +102,14 @@ os: Visual Studio 2015
 * [C++ 11 CTP](https://blogs.msdn.microsoft.com/vcblog/2013/11/18/announcing-the-visual-c-compiler-november-2013-ctp/)
 * .NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2
 * .NET Core 1.0
-* [Microsoft .NET Framework 4.5.2 with Developer Pack](https://www.microsoft.com/en-ca/download/details.aspx?id=42637)
+* [Microsoft .NET Framework 4.5.2 with Developer Pack](https://www.microsoft.com/en-us/download/details.aspx?id=42637)
 * [Visual F# 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=18706)
 * [Visual F# Out of Band Release 3.1.2](https://www.microsoft.com/en-us/download/details.aspx?id=44011)
 * [Microsoft .NET Portable Library Reference Assemblies 4.6](https://www.microsoft.com/en-us/download/details.aspx?id=40727)
 * [Microsoft Visual Studio Installer Projects](https://visualstudiogallery.msdn.microsoft.com/9abe329c-9bba-44a1-be59-0fbf6151054d) extension (`.vdproj` support).
 * [WiX](http://wixtoolset.org/) 3.10
 * [Silverlight 5 x64 Developer Runtime](https://go.microsoft.com/fwlink/?LinkID=229324)
-* SQL Server Data tools for [Visual Studio 2012](https://msdn.microsoft.com/en-us/jj650015) and [2013](https://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
+* SQL Server Data tools for [Visual Studio 2012](https://msdn.microsoft.com/en-us/jj650015) and [2013](http://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
 * Boost:
     * 1.60.0 (`C:\Libraries\boost_1_60_0`)
     * 1.59.0 (`C:\Libraries\boost_1_59_0`)

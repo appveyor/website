@@ -14,7 +14,7 @@ This article demonstrates how you can simulate "Script" environment with regular
 The basic idea is having two AppVeyor projects:
 
 - **Main project** - this is your main project running tests and *producing artifacts*.
-- **Deployment project** - helper project *downloading artifacts* from specific build of "Main project" and deploying them with your custom script. Here, to "deploy" the build of "Main project" you could either manually run new build of deployment project from UI or use [AppVeyor API](http://www.appveyor.com/docs/build-worker-api#start-new-build).
+- **Deployment project** - helper project *downloading artifacts* from specific build of "Main project" and deploying them with your custom script. Here, to "deploy" the build of "Main project" you could either manually run new build of deployment project from UI or use [AppVeyor API](https://www.appveyor.com/docs/build-worker-api#start-new-build).
 
 ## Deployment project
 
@@ -122,7 +122,7 @@ branches:
 
 Main project is the project creating application packages and uploading them to build artifacts. With artifacts in place you can call deployment project (either manually or via API) to download and deploy artifacts.
 
-To start a new build of deployment project during the build use [`Start-AppveyorBuild`](http://www.appveyor.com/docs/build-worker-api#start-new-build) cmdlet:
+To start a new build of deployment project during the build use [`Start-AppveyorBuild`](https://www.appveyor.com/docs/build-worker-api#start-new-build) cmdlet:
 
 {% highlight yaml %}
 environment:

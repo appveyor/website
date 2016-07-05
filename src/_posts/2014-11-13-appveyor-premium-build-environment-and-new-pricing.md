@@ -123,7 +123,7 @@ title: AppVeyor premium build environment and new pricing
     To more actively engage the community in shaping AppVeyor we decided to host our entire website with documentation on GitHub where everyone could contribute by sending a pull request.
 </p>
 <p class="text-center">
-    <a href="http://github.com/appveyor/website">http://github.com/appveyor/website</a>
+    <a href="https://github.com/appveyor/website">https://github.com/appveyor/website</a>
 </p>
 
 <p>

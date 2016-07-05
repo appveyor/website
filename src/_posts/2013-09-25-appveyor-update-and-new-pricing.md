@@ -62,7 +62,7 @@ Out of the box AppVeyor pushes build artifacts in a cloud storage which is GEO-r
 </ul>
 See <a href="http://help.appveyor.com/kb/getting-started/packaging-artifacts">packaging artifacts</a> article for more details.
 <h2>Go language support</h2>
-<a href="http://golang.org/">Go language</a> from Google is gaining momentum and if you are interested in learning/using Go and coming from Windows world AppVeyor is a great platform for doing CI for your next Go project. Take a look at this <a href="https://bitbucket.org/appveyor/test-go/src">sample Go repository</a> (thanks <a href="https://twitter.com/nathany">Nathan Youngman</a> for his help) to see simple Go project structure and build.cmd to kick-off testing in AppVeyor CI environment.
+<a href="https://golang.org/">Go language</a> from Google is gaining momentum and if you are interested in learning/using Go and coming from Windows world AppVeyor is a great platform for doing CI for your next Go project. Take a look at this <a href="https://bitbucket.org/appveyor/test-go/src">sample Go repository</a> (thanks <a href="https://twitter.com/nathany">Nathan Youngman</a> for his help) to see simple Go project structure and build.cmd to kick-off testing in AppVeyor CI environment.
 <h2>API</h2>
 AppVeyor is a single page application (SPA) built with AngularJS (and we promise to tell about its internals in our blog) and all its functionality is available through REST API. We created lightweight <a href="https://github.com/AppVeyor/AppVeyor-PowerShell">AppVeyor API PowerShell library</a> which is currently used by <a href="https://github.com/AppVeyor/AppRolla">AppRolla deployment</a> script and shows how to authenticate API calls and get details about your projects. We will be adding more functions into it over time.
 <h2>Status badges</h2>
@@ -72,7 +72,7 @@ We processed a lot of feedback from our customers which allowed us to substantia
 
 What that means for you? Starting today (September 25th), we offer you a free 30-day trial with unlimited private repositories. During the trial period we will keep in touch with you closely to assist you with the new functionality and work out the best plan for your current needs.
 <h2>New pricing</h2>
-Our goal is to provide you outstanding service with competitive and reasonable <a href="http://www.appveyor.com/pricing">pricing</a>. We gave our pricing a second thought and came up with 3 simple paid plans:
+Our goal is to provide you outstanding service with competitive and reasonable <a href="https://www.appveyor.com/pricing">pricing</a>. We gave our pricing a second thought and came up with 3 simple paid plans:
 <ul>
     <li>Express - $19/month (1 private repository)</li>
     <li><strong>Professional - $39/month</strong> (10 private repositories)</li>
@@ -82,7 +82,7 @@ Compare to $67 per month AWS or Azure small instance running TeamCity or Jenkins
 
 AppVeyor is <strong>free for open-source projects</strong> with public repositories.
 <h2>We listen you!</h2>
-That’s a ton of new information that could be hard to digest. We are going to publish educational articles in <a href="http://blog.appveyor.com/">our blog</a> on various topics ranging from deployment automation to AppVeyor development secrets. We’ve been quite active on <a href="https://twitter.com/appveyor">Twitter</a> (and this is really cool support tool), so make sure to <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.appveyor.com%2Fpricing&amp;region=follow_link&amp;screen_name=appveyor&amp;tw_p=followbutton&amp;variant=2.0">follow us</a> to stay updated.
+That’s a ton of new information that could be hard to digest. We are going to publish educational articles in <a href="https://www.appveyor.com/blog/">our blog</a> on various topics ranging from deployment automation to AppVeyor development secrets. We’ve been quite active on <a href="https://twitter.com/appveyor">Twitter</a> (and this is really cool support tool), so make sure to <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.appveyor.com%2Fpricing&amp;region=follow_link&amp;screen_name=appveyor&amp;tw_p=followbutton&amp;variant=2.0">follow us</a> to stay updated.
 
 For now, if you have any questions please do not hesitate to drop us a message by just replying to this message or writing at <a href="mailto:team@appveyor.com">team@appveyor.com</a>, start a new discussion on <a href="http://help.appveyor.com/discussions">our forums</a> or submit feature request on <a href="http://appveyor.uservoice.com/">uservoice</a>.
 

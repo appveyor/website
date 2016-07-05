@@ -11,9 +11,9 @@ This article specifically describes migration of project from BitBucket's Mercu
 <h2>Install required software</h2>
 We assume you start from a clean Windows Server 2012 machine.
 <ul>
-    <li><a href="http://git-scm.com/">Git for Windows</a> (install the latest version, select "Run Git from the Windows Command Prompt" while installing Git)</li>
-    <li><a href="http://mercurial.selenic.com/downloads/">Mercurial 2.9 MSI installer - x86 Windows</a></li>
-    <li><a href="http://www.python.org/downloads/">Python 2.7.6</a></li>
+    <li><a href="https://git-scm.com/">Git for Windows</a> (install the latest version, select "Run Git from the Windows Command Prompt" while installing Git)</li>
+    <li><a href="https://www.mercurial-scm.org/downloads/">Mercurial 2.9 MSI installer - x86 Windows</a></li>
+    <li><a href="https://www.python.org/downloads/">Python 2.7.6</a></li>
     <li>add <code>c:\Python27</code> to <code>PATH</code></li>
 </ul>
 <span style="font-style:inherit;line-height:1.625;">Open command line prompt and make sure all tools are available in the <code>PATH</code>: </span>hg, git, python.

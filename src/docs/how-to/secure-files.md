@@ -9,7 +9,7 @@ Sometimes you need to store sensitive information in your repositories.
 
 The [Secure-file](https://github.com/appveyor/secure-file) utility can be used for encrypting/decrypting arbitrary files using the Rijndael method. It enables you to safely store sensitive data (SSH keys, certificates, etc.) in the source control repository and then use it during the build.
 
-High-level scenario of using this utility in the [AppVeyor CI](http://www.appveyor.com) environment:
+High-level scenario of using this utility in the [AppVeyor CI](https://www.appveyor.com) environment:
 
 - Encrypt the file on the development machine.
 - Commit the encrypted file to source control.

@@ -3,7 +3,7 @@ layout: post
 title: Build worker improvements
 ---
 
-While we are working on some new exciting stuff we continue improving things to make your AppVeyor experience even more smooth and streamlined. One of those recent improvements is a new build worker provisioning engine. Every build in AppVeyor runs on a dedicated virtual machine hosted in <a href="http://www.azure.microsoft.com/en-us/">Microsoft Azure</a> (yes, now it's called "Microsoft Azure"). Azure is a great platform - their VMs are considerably faster than competitors' and creation of a new VM is a blast (usually around 3 minutes). Simplified build flow is the following:
+While we are working on some new exciting stuff we continue improving things to make your AppVeyor experience even more smooth and streamlined. One of those recent improvements is a new build worker provisioning engine. Every build in AppVeyor runs on a dedicated virtual machine hosted in <a href="https://azure.microsoft.com/en-us/">Microsoft Azure</a> (yes, now it's called "Microsoft Azure"). Azure is a great platform - their VMs are considerably faster than competitors' and creation of a new VM is a blast (usually around 3 minutes). Simplified build flow is the following:
 <ul>
     <li>Build starts</li>
     <li>A new VM is provisioning from "master" image (VHD) or being taken from "pre-heated" cache.</li>
@@ -30,7 +30,7 @@ This new approach gives a <strong>number of benefits</strong>:
     <li>If there are no pre-heated VMs it would take around <strong>3 minutes to provision new VM</strong> from scratch.</li>
     <li>Whenever AppVeyor detects there is unhealthy VM worker it will re-schedule the build to another healthy instance, so generally it means being a bit longer in "Queued" state.</li>
 </ul>
-We also optimized worker "master" image (VHD) itself to make sure only minimum set of services is enabled to<strong> boot fast, eliminate lags and free more memory for your builds</strong>. Of course, you can still configure required services such as <a href="http://www.appveyor.com/docs/services-databases">IIS and SQL Server databases</a>.
+We also optimized worker "master" image (VHD) itself to make sure only minimum set of services is enabled to<strong> boot fast, eliminate lags and free more memory for your builds</strong>. Of course, you can still configure required services such as <a href="https://www.appveyor.com/docs/services-databases">IIS and SQL Server databases</a>.
 
 Oh, and we introduced <strong>Windows Server 2012 R2</strong> image which has almost identical configuration to Windows Server 2012 (except it doesn't have VS 2010 installed).
 

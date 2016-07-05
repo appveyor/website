@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "AppVeyor (https://github.com/appveyor)",
   "description": "The www.appveyor.com source code",
-  "homepage": "http://www.appveyor.com",
+  "homepage": "https://www.appveyor.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/appveyor/website.git"

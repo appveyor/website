@@ -3,7 +3,7 @@ layout: post
 title: NuGet support in AppVeyor CI
 ---
 
-<em><strong>NOTE</strong>: NuGet support is available in AppVeyor CI 2.0 which is currently in beta. Please <a title="AppVeyor 2.0: dedicated build VMs, parallel testing, NuGet, deployment and more" href="http://blog.appveyor.com/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment/">see this post</a> for AppVeyor 2.0 announcement and sign up information.</em>
+<em><strong>NOTE</strong>: NuGet support is available in AppVeyor CI 2.0 which is currently in beta. Please <a title="AppVeyor 2.0: dedicated build VMs, parallel testing, NuGet, deployment and more" href="https://www.appveyor.com/blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment/">see this post</a> for AppVeyor 2.0 announcement and sign up information.</em>
 
 AppVeyor CI has native NuGet support which becomes de-facto a packaging standard for .NET libraries and applications.
 

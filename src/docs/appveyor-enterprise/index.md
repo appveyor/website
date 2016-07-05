@@ -164,7 +164,7 @@ Some of the advantages of this "private" cloud deployment:
 
 ### Prerequisites
 
-* .NET 4.5.2 - is installed by AppVeyor installer or can be installed manually from [here](https://www.microsoft.com/en-ca/download/details.aspx?id=42642).
+* .NET 4.5.2 - is installed by AppVeyor installer or can be installed manually from [here](https://www.microsoft.com/en-us/download/details.aspx?id=42642).
 * IIS (Web Role) with ASP.NET 4.5 and WebSockets enabled.
 * SQL Server with Mixed security mode enabled. If not installed AppVeyor installer will install SQL Server 2014 Express x64 as `SQL2014` instance.
 * Redis - is installed by AppVeyor installer or can be installed manually on port `6379`.

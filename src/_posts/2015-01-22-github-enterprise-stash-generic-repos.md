@@ -52,5 +52,5 @@ Of course, the repository should be accessible over the Internet. However, hold 
 
 In case you missed that:
 
-- [We added test build worker image with Visual Studio 2015 CTP and SDK](http://www.appveyor.com/blog/2015/01/20/visual-studio-2015-ctp-image)
-- [io.js was deployed to build workers and "Testing with Node.js and io.js" guide published](http://www.appveyor.com/docs/lang/nodejs-iojs)
+- [We added test build worker image with Visual Studio 2015 CTP and SDK](https://www.appveyor.com/blog/2015/01/20/visual-studio-2015-ctp-image)
+- [io.js was deployed to build workers and "Testing with Node.js and io.js" guide published](https://www.appveyor.com/docs/lang/nodejs-iojs)

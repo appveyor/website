@@ -19,6 +19,7 @@ This Azure Store offer is a free "Continuous Integration in a box" solution for 
 
 
 ## Troubleshooting
+* When [contacting AppVeyor support](https://www.appveyor.com/support) we may ask you to provide AppVeyor logs. AppVeyor logs can be seen in "Event Viewer" under `Applications and Services Logs/AppVeyor`.
 
 * When [contacting AppVeyor support](https://www.appveyor.com/support) we may ask you to provide AppVeyor logs. AppVeyor logs can be seen in "Event Viewer" under `Applications and Services Logs/AppVeyor`.
 

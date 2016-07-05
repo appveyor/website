@@ -28,7 +28,7 @@ pagination:
 source:             src/
 destination:        _site/
 port:               4000
-url:                http://www.appveyor.com
+url:                https://www.appveyor.com
 encoding:           UTF-8
 
 # custom variables

@@ -30,7 +30,7 @@ title: AppVeyor 2.0 live with new pricing
         <img src="/assets/images/newsletters/2014-03-26/appveyor-screenshot-with-shadow.png" style="width:100%;max-width:1042px;">
     </p>
 
-    <p>Let me quickly recap <a href="http://blog.appveyor.com/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment/">what new features AppVeyor 2.0 brings</a> to you:</p>
+    <p>Let me quickly recap <a href="https://www.appveyor.com/blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment/">what new features AppVeyor 2.0 brings</a> to you:</p>
 
     <!-- At a glance -->
     <ul>

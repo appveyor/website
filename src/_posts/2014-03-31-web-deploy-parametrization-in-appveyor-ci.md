@@ -41,7 +41,7 @@ When Web Deploy package is built you can open it in the explorer and see <code>
 
 Resulting <code>parameters.xml</code> combines your custom parameters and system ones such as <code>IIS Web Application Name</code>. You don’t have to set <code>IIS Web Application Name</code> parameter explicitly - AppVeyor does that for you.
 
-Read more about defining parameters: <a href="http://technet.microsoft.com/en-us/library/dd569084(v=ws.10).aspx">http://technet.microsoft.com/en-us/library/dd569084(v=ws.10).aspx</a>
+Read more about defining parameters: <a href="https://technet.microsoft.com/en-us/library/dd569084(v=ws.10).aspx">https://technet.microsoft.com/en-us/library/dd569084(v=ws.10).aspx</a>
 <h3>Setting parameters during deployment</h3>
 Web Deploy provider in AppVeyor analyzes Web Deploy package and looks into <strong>environment variables</strong> to set parameter values with matching names.
 
@@ -55,10 +55,10 @@ When deploying during the build session environment variables are used instead. 
 
 Variables defined during the build override those ones defined on Environment level.
 
-Web Deploy parametrization is supported by <a href="http://www.appveyor.com/docs/deployment/agent">Deployment Agent</a> too when deploying from Web Deploy package.
+Web Deploy parametrization is supported by <a href="https://www.appveyor.com/docs/deployment/agent">Deployment Agent</a> too when deploying from Web Deploy package.
 
 Related articles:
 <ul>
-    <li><a href="http://www.appveyor.com/docs/deployment/web-deploy">Deploying using Web Deploy</a></li>
-    <li><a href="http://www.appveyor.com/docs/deployment/agent">Deploying to remote servers with AppVeyor Deployment Agent</a></li>
+    <li><a href="https://www.appveyor.com/docs/deployment/web-deploy">Deploying using Web Deploy</a></li>
+    <li><a href="https://www.appveyor.com/docs/deployment/agent">Deploying to remote servers with AppVeyor Deployment Agent</a></li>
 </ul>
