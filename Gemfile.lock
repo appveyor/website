@@ -1,3 +1,19 @@
+GIT
+  remote: https://github.com/appveyor/paginate.git
+  revision: 4ac754f6fe9470a3af3f6f5a8926e9917f727046
+  branch: custom
+  specs:
+    octopress-paginate (1.1.2)
+      octopress-hooks
+
+GIT
+  remote: https://github.com/octopress/hooks.git
+  revision: 9ec9efcbe8e2aa4d79d2a35543a29b51f3e6feb2
+  ref: 9ec9efc
+  specs:
+    octopress-hooks (2.6.1)
+      jekyll (>= 2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,6 +63,8 @@ DEPENDENCIES
   jekyll-feed (~> 0.6.0)
   jekyll-seo-tag (~> 2.0.0)
   jekyll-sitemap (~> 0.11.0)
+  octopress-hooks!
+  octopress-paginate!
 
 BUNDLED WITH
    1.12.5

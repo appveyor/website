@@ -12,14 +12,20 @@ gems:
     - jekyll-feed
     - jekyll-seo-tag
     - jekyll-sitemap
+    - octopress-paginate
 
 exclude:
-# we generate those files ourselves
-- "*.css"
-- "*.js"
+    # we generate those files ourselves
+    - "*.css"
+    - "*.js"
 
 # permalinks
 permalink:          pretty
+
+# pagination
+pagination:
+    limit:          false
+    per_page:       5
 
 # server
 source:             src/
@@ -54,7 +60,7 @@ collections:
         permalink: /blog/:year/:month/:day/:title/
         output: true
     newsletters:
-        permalink: /:collection/:path/
+        permalink: /:collection/:year/:month/:day/:title/
         output: false
     testimonials:
         output: false
