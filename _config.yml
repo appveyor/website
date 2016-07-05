@@ -33,7 +33,6 @@ encoding:           UTF-8
 
 # custom variables
 github_repo_root:    https://github.com/appveyor/website/tree/master/src
-google_analytics_id: UA-32029905-1
 
 collections:
     posts:
