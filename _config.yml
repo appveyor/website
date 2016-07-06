@@ -41,8 +41,6 @@ collections:
     newsletters:
         permalink: /:collection/:year/:month/:day/:title/
         output: false
-    releases:
-        output: false
     testimonials:
         output: false
     updates:
