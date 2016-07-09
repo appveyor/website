@@ -1,59 +1,54 @@
 -
   branches:
     only:
-    - master
+      - staging
 
   version: 1.0.{build}
 
-  configuration: Release
+  clone_depth: 10
 
-  before_build:
-  - cmd: nuget restore NJekyll.sln
+  environment:
+    matrix:
+      - ruby_folder_version: "23"
+        ruby_gems_folder: "2.3.0"
+        platform: "x86"
+#      - ruby_folder_version: "23-x64"
+#        ruby_gems_folder: "2.3.0"
+#        platform: "x64"
 
-  build:
-    project: NJekyll.sln
-    publish_wap: true
-    verbosity: minimal
+  install:
+    - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
+    - bundle install --retry 3
+    - ps: Install-Product node "6" $env:platform
+    - npm config set spin false
+    - npm install
 
-  test: off
+  build: off
 
-  deploy:
-  - provider: WebDeploy
-    server: https://appveyor.scm.azurewebsites.net:443/MsDeploy.axd?site=appveyor
-    website: appveyor
-    username: $appveyor
-    password:
-      secure: bmnhrbQkDbMznVcQCkzY+HFE9H+aDHJPY/5Ko4HCFZvNmXnnoilGV1Qve6V9D7vFV/FF/6lmykIopR5I7TE0cg==
-    remove_files: true
-    do_not_use_checksum: false
-    skip_dirs: '\\Downloads;\\App_Data'
+  test_script:
+    - ruby -v
+    - gem -v
+    - bundle -v
+    - node -v
+    - npm -v
+    - java -version
+    - npm test
 
--
-  branches:
-    only:
-    - staging
+  matrix:
+    fast_finish: true
 
-  version: 1.0.{build}
-
-  configuration: Release
-
-  before_build:
-  - cmd: nuget restore NJekyll.sln
-
-  build:
-    project: NJekyll.sln
-    publish_wap: true
-    verbosity: minimal
-
-  test: off
+  cache:
+    - 'C:\Ruby%ruby_folder_version%\bin -> Gemfile,Gemfile.lock'
+    - 'C:\Ruby%ruby_folder_version%\lib\ruby\gems\%ruby_gems_folder% -> Gemfile,Gemfile.lock'
+    - 'node_modules -> package.json'
 
   deploy:
-  - provider: WebDeploy
-    server: https://appveyor-staging.scm.azurewebsites.net:443/MsDeploy.axd?site=appveyor-staging
-    website: appveyor-staging
-    username: $appveyor-staging
-    password:
-      secure: spiLpaETY4B5iu+VfjOnNARX7wC8NmR63D+k6UCVN/gc3IsYufFuBX+Hpl9rkg30Z6dFMchBgiGqp2BbqIsXzQ==
-    remove_files: true
-    do_not_use_checksum: false
-    skip_dirs: '\\Downloads;\\App_Data'
+    - provider: WebDeploy
+      server: https://appveyor-staging.scm.azurewebsites.net:443/MsDeploy.axd?site=appveyor-staging
+      website: appveyor-staging
+      username: $appveyor-staging
+      password:
+        secure: spiLpaETY4B5iu+VfjOnNARX7wC8NmR63D+k6UCVN/gc3IsYufFuBX+Hpl9rkg30Z6dFMchBgiGqp2BbqIsXzQ==
+      remove_files: true
+      do_not_use_checksum: false
+      skip_dirs: '\\Downloads;\\App_Data'
