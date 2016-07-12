@@ -165,7 +165,7 @@ When `remove_files` is set to `true` Agent performs full content synchronization
 You can specify multiple bindings in `hostname`, `ip` and `port` separated by semi-colon. Below is an example of how 3 bindings can be configured:
 
 - http *:80:mysite.com
-- http *:80:mysite.com
+- http *:80:www.mysite.com
 - https *:443: cert=*.mysite.com
 
 ![agent-multiple-bindings](/site/images/docs/deployment/agent/agent-multiple-bindings.png)
