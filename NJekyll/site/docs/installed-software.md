@@ -94,7 +94,7 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 ## Languages, libraries, frameworks
 
-* [C++ 11 CTP](https://blogs.msdn.com/b/vcblog/archive/2013/11/18/announcing-the-visual-c-compiler-november-2013-ctp.aspx)
+* [C++ 11 CTP](https://blogs.msdn.microsoft.com/vcblog/2013/11/18/announcing-the-visual-c-compiler-november-2013-ctp/)
 * .NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2
 * .NET Core 1.0
 * [Microsoft .NET Framework 4.5.2 with Developer Pack](https://www.microsoft.com/en-ca/download/details.aspx?id=42637)
