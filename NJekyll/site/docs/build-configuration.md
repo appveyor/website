@@ -421,7 +421,7 @@ External links:
 
 ## Build queue
 
-Sometimes you may wonder why your build is not being run immediately or it's "queued" state longer than usual.
+Sometimes you may wonder why your build is not being run immediately or remains in "queued" state longer than usual.
 
 This is how builds scheduling works.
 
