@@ -45,7 +45,7 @@ You can securely specify your Xamarin account credentials on "Xamarin" tab of pr
 To restore Xamarin components on build worker you use `xamarin-component.exe` tool. The tool is available at the following location: [https://components.xamarin.com/submit/xpkg](https://components.xamarin.com/submit/xpkg)
 - rename downloaded file to `xpkg.zip` and unzip to extract the tool.
 
-The main challenge of using this tool on a build server is that to restore components it requires autnetication with your Xamarin credentials,
+The main challenge of using this tool on a build server is that to restore components it requires authentication with your Xamarin credentials,
 however `login` action prompts for password interactively thus blocking the build.
 
 Fortunately, it's possible to copy cached credentials ("cookie jar") from your local development machine to a build worker and it will work.
