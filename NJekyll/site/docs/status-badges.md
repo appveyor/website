@@ -55,7 +55,7 @@ For example:
 
 <image src="https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20OK">
 
-## Badges for projects with public repositories on GitHub and BitBucket
+## Badges for projects with public repositories on GitHub and Bitbucket
 
 You can infer badge URL for **projects with public repositories**, well, provided there is only a single project with this repository in AppVeyor.
 
