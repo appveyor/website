@@ -37,7 +37,7 @@ Whether it's sales question or support request you can always contact us by emai
 
 Whenever AppVeyor service or build workers are updated we add a new entry to this feed:
 
-<a href="/updates" style="font-size:1.1rem;">http://www.appveyor.com/updates</a>
+<a href="/updates" style="font-size:1.1rem;">https://www.appveyor.com/updates</a>
 
 * Subscribe to receive Technical updates email notification on your [profile page](https://ci.appveyor.com/profile).
 
@@ -62,7 +62,7 @@ Issue submission guidelines:
 
 ## StackOverflow
 
-You can use `appveyor` tag to [submit your question on StackOverflow](http://stackoverflow.com/tags/appveyor/info).
+You can use `appveyor` tag to [submit your question on StackOverflow](https://stackoverflow.com/tags/appveyor/info).
 
 ## Skype
 
