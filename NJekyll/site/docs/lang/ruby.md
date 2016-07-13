@@ -9,7 +9,7 @@ title: Testing with Ruby
 
 ## Installation
 
-Several Ruby verions are already preinstalled (see [details](/docs/installed-software#ruby)).
+Several Ruby versions are already preinstalled (see [details](/docs/installed-software#ruby)).
 We only need to add one of it to a PATH.
 
     # appveyor.yml
