@@ -21,7 +21,7 @@ All account feeds are password-protected. You can find the account feed URL and 
 
 You can use your AppVeyor account email/password to access password-protected NuGet feeds, although we recommend creating a separate user account just for these purposes (**Account -> Team**).
 
-> If you use the GitHub or BitBucket button to log in to AppVeyor you can reset your AppVeyor account password using the **Forgot password** link.
+> If you use the GitHub or Bitbucket button to log in to AppVeyor you can reset your AppVeyor account password using the **Forgot password** link.
 
 For publishing your own packages to your account feed use the command:
 
@@ -35,7 +35,7 @@ For publishing your own packages to your account feed use the command:
 
 ## Project NuGet feeds
 
-The project feed contains all build artifact packages of type "NuGet package". If it references a private GitHub or BitBucket repository the feed is password-protected; otherwise it is public access.
+The project feed contains all build artifact packages of type "NuGet package". If it references a private GitHub or Bitbucket repository the feed is password-protected; otherwise it is public access.
 
 
 

@@ -12,7 +12,7 @@ slug: docs
 
 ## Step 1 - Sign in with AppVeyor
 
-Use **GitHub** or **BitBucket** button to sign up with your existing developer account (OAuth) or create an AppVeyor account using your email and password.
+Use **GitHub** or **Bitbucket** button to sign up with your existing developer account (OAuth) or create an AppVeyor account using your email and password.
 
 
 
