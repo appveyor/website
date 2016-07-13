@@ -191,7 +191,7 @@ When Web Deploy package is built you can open it in the explorer and see `parame
 
 Resulting `parameters.xml` combines your custom parameters and system ones such as `IIS Web Application Name`. You don’t have to set `IIS Web Application Name` parameter explicitly - AppVeyor does that for you.
 
-Read more about defining parameters: [http://technet.microsoft.com/en-us/library/dd569084(v=ws.10).aspx](http://technet.microsoft.com/en-us/library/dd569084(v=ws.10).aspx)
+Read more about defining parameters: [https://technet.microsoft.com/en-us/library/dd569084(v=ws.10).aspx](https://technet.microsoft.com/en-us/library/dd569084(v=ws.10).aspx)
 
 ### Setting parameters during deployment
 
