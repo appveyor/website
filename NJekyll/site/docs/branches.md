@@ -90,7 +90,7 @@ Unlike white- and blacklisting `branches` section here works like a selector, no
 
 By default AppVeyor starts a new build on any push to GitHub, whether it's a regular commit or a new tag. Repository tagging is frequently used to trigger deployment.
 
-AppVeyor sets `APPVEYOR_REPO_TAG` environment variable to distinguish regular commits from tags - the value is `True` if tag was pushed; otherwise it's `False`. When it's `True` the name of tag is stored in `APPVEYOR_REPO_TAG_NAME`.
+AppVeyor sets `APPVEYOR_REPO_TAG` environment variable to distinguish regular commits from tags - the value is `true` if tag was pushed; otherwise it's `false`. When it's `true` the name of tag is stored in `APPVEYOR_REPO_TAG_NAME`.
 
 You can use `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for example:
 
