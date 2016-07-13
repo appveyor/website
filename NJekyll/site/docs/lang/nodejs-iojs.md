@@ -36,7 +36,7 @@ Put this simple `appveyor.yml` to the root of your repository and it should work
 
 ## Line endings
 
-By default, Git on build workers is configured with `git config --global core.autocrlf input` which means your repo is cloned "as is" without fixing new lines on Windows. If you have a file with a string `abc\n line2` it will be checked out exactly as `abc\n line2` and if there is `line1 \r\n line2` in the repo you'll get the same on checkout. See this SO answer explaining in details [`core.autocrlf` modes](http://stackoverflow.com/questions/1249932/git-1-6-4-beta-on-windows-msysgit-unix-or-dos-line-termination/1250133#1250133).
+By default, Git on build workers is configured with `git config --global core.autocrlf input` which means your repo is cloned "as is" without fixing new lines on Windows. If you have a file with a string `abc\n line2` it will be checked out exactly as `abc\n line2` and if there is `line1 \r\n line2` in the repo you'll get the same on checkout. See this SO answer explaining in details [`core.autocrlf` modes](https://stackoverflow.com/questions/1249932/git-1-6-4-beta-on-windows-msysgit-unix-or-dos-line-termination/1250133#1250133).
 
 However, if you expect Git to fix line endings on Windows and checkout *all* strings with `\r\n` you could tell Git doing that during `init` phase of your build which occurs *before* cloning command:
 
