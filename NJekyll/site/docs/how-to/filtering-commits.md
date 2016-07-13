@@ -50,14 +50,14 @@ For example, to start a new build only if commit message contains string `build`
 ### Skip commits
 
 You can setup a filter to skip builds coming from specific author(s).
-`author` value can author's username, name, email or regexp maching one of these.
+`author` value can be author's username, name, email or regular expression matching one of these.
 
 For example, to skip all commits from author with name `John Smith` add this:
 
     skip_commits:
       author: John Smith
 
-You can use regexp to skip commits from several persons:
+You can use regular expression to skip commits from several persons:
 
     skip_commits:
       author: /John|Jack/
