@@ -13,7 +13,7 @@ AppVeyor uses SSH to clone private Git repositories. When you add a project in A
 
 ## The problem with private sub-modules
 
-Git has [submodules](http://www.git-scm.com/book/en/v2/Git-Tools-Submodules) support and this is a wonderful tool for organizing large projects or reusing some code. While building your solution on AppVeyor you need to checkout sub-modules as part of your build. Well, you can use the following command during `install` phase which [occurs between `clone` and `build`](http://www.appveyor.com/docs/build-configuration#build-pipeline):
+Git has [submodules](https://www.git-scm.com/book/en/v2/Git-Tools-Submodules) support and this is a wonderful tool for organizing large projects or reusing some code. While building your solution on AppVeyor you need to checkout sub-modules as part of your build. Well, you can use the following command during `install` phase which [occurs between `clone` and `build`](https://www.appveyor.com/docs/build-configuration#build-pipeline):
 
     git submodule update --init --recursive
 

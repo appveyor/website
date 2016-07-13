@@ -2,5 +2,5 @@
 
 ## Staging
 
-"Staging" branch is published to this location: http://appveyor-staging.azurewebsites.net
+"Staging" branch is published to this location: https://appveyor-staging.azurewebsites.net
 

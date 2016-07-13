@@ -155,19 +155,19 @@ Some of the advantages of this "private" cloud deployment:
 
 ![AppVeyor in Azure Cloud Service](/site/images/docs/appveyor-enterprise/appveyor-azure-cloud-service.png)
 
-[Contact us](http://www.appveyor.com/support) if you are interested in trying out this solution.
+[Contact us](https://www.appveyor.com/support) if you are interested in trying out this solution.
 
 
 ## Installing AppVeyor
 
 ### Prerequisites
 
-* .NET 4.5.2 - is installed by AppVeyor installer or can be installed manually from [here](http://www.microsoft.com/en-ca/download/details.aspx?id=42642).
+* .NET 4.5.2 - is installed by AppVeyor installer or can be installed manually from [here](https://www.microsoft.com/en-ca/download/details.aspx?id=42642).
 * IIS (Web Role) with ASP.NET 4.5 and WebSockets enabled.
 * SQL Server with Mixed security mode enabled. If not installed AppVeyor installer will install SQL Server 2014 Express x64 as `SQL2014` instance.
 * Redis - is installed by AppVeyor installer or can be installed manually on port `6379`.
 * Service Bus for Windows 1.1 - is installed by AppVeyor installer or can be installed manually using Web Platform Installer (Web PI).
-* SMTP server details or [Mailgun](http://www.mailgun.com/) account - for sending build email notifications.
+* SMTP server details or [Mailgun](https://www.mailgun.com/) account - for sending build email notifications.
 * [Microsoft Build Tools 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40760) or Visual Studio 2013 - for building .NET apps.
 
 ### Getting installation script
@@ -176,7 +176,7 @@ AppVeyor installer is implemented as PowerShell module and used for installing a
 
 To install AppVeyor installer module open PowerShell console and enter the following command:
 
-    iex ((new-object net.webclient).DownloadString('http://www.appveyor.com/downloads/on-premise/install.ps1'))
+    iex ((new-object net.webclient).DownloadString('https://www.appveyor.com/downloads/on-premise/install.ps1'))
 
 The module is installed into `C:\Program Files\AppVeyor\Modules\appveyor-installer` directory and `C:\Program Files\AppVeyor\Modules` is added into `$PSModulePath` variable.
 
@@ -271,13 +271,13 @@ Installing and configuring your own SMTP service is out-of-scope of this guide. 
 
 **Mailgun**
 
-[Mailgun](http://www.mailgun.com/) is a managed email sending/receiving provider. You can send up to 10,000 messages per month for [free](http://www.mailgun.com/pricing).
+[Mailgun](https://www.mailgun.com/) is a managed email sending/receiving provider. You can send up to 10,000 messages per month for [free](https://www.mailgun.com/pricing).
 
 > AppVeyor is not affiliated with Mailgun in any way. We recommend it because we use it ourselves in production and love it.
 
 **SendGrid**
 
-[Let us know](http://www.appveyor.com/support) if you are interested in trying it out.
+[Let us know](https://www.appveyor.com/support) if you are interested in trying it out.
 
 ### Non-UI system settings
 
@@ -303,13 +303,13 @@ When something goes wrong:
 
 * If build real-time log stops working there might be a transient issue with SignalR. Do F5 in browser to restart SignalR connection.
 * Restart IIS and/or `Appveyor.Worker` and/or `Appveyor.BuildAgent` services.
-* Nothing helps - [report the issue](http://www.appveyor.com/support) to AppVeyor team. While reporting the issue look into these places for possible errors/warning:
+* Nothing helps - [report the issue](https://www.appveyor.com/support) to AppVeyor team. While reporting the issue look into these places for possible errors/warning:
 	* Web browser's "Developer tools" - for any JavaScript-related errors.
 	* `AppVeyor` event log in Event Viewer under `Applications and Services Logs\AppVeyor`. Web, Worker and Build Agent roles write logs there.
 
 ## Running builds on Azure VMs
 
-> This section is still under construction - please [let us know](http://www.appveyor.com/support) if you are interested to run "stateless" builds on Azure VMs.
+> This section is still under construction - please [let us know](https://www.appveyor.com/support) if you are interested to run "stateless" builds on Azure VMs.
 
 Setup process outline:
 
@@ -329,7 +329,7 @@ Setup process outline:
 
 ## Running builds on Hyper-V VMs
 
-> This section is still under construction - please [let us know](http://www.appveyor.com/support) if you are interested to run "stateless" builds on Hyper-V VMs.
+> This section is still under construction - please [let us know](https://www.appveyor.com/support) if you are interested to run "stateless" builds on Hyper-V VMs.
 
 Setup process outline:
 

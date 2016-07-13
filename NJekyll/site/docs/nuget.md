@@ -191,7 +191,7 @@ or
 
 ### Use build cache for NuGet packages
 
-To avoid downloading packages from nuget.org on every build you can use [build cache](http://www.appveyor.com/docs/build-cache).
+To avoid downloading packages from nuget.org on every build you can use [build cache](https://www.appveyor.com/docs/build-cache).
 
 If `packages` folder is in the root of your repo add this to `appveyor.yml`:
 
@@ -202,5 +202,5 @@ That means *"preserve `packages` folder contents between builds unless any of `p
 
 ## External links
 
-* [Configuring NuGet server to use Authentication](http://stackoverflow.com/questions/17928112/configuring-nuget-server-to-use-authentication)
-* [NuGet Configuration Settings](http://docs.nuget.org/docs/reference/nuget-config-settings)
+* [Configuring NuGet server to use Authentication](https://stackoverflow.com/questions/17928112/configuring-nuget-server-to-use-authentication)
+* [NuGet Configuration Settings](https://docs.nuget.org/consume/nuget-config-settings)

@@ -9,7 +9,7 @@ title: Building Xamarin projects
 
 ## Introduction
 
-`Visual Studio 2015` build image (which is default image for OSS plans) has [Xamarin Platform](https://xamarin.com/) pre-installed and allows building Android and iOS libraries.
+`Visual Studio 2015` build image (which is default image for OSS plans) has [Xamarin Platform](https://www.xamarin.com/) pre-installed and allows building Android and iOS libraries.
 
 > Building `.ipa` application packages requires Mac computer and is not currently supported.
 
@@ -71,5 +71,5 @@ To restore components used in the solution add this command to "Before build" se
 
 ## External links
 
-* [Learn more about Xamarin platform](http://xamarin.com)  
+* [Learn more about Xamarin platform](https://www.xamarin.com)  
 * [Request Xamarin license for your open-source project](http://resources.xamarin.com/open-source-contributor.html)

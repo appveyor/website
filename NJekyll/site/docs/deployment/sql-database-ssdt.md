@@ -5,7 +5,7 @@ title: Publishing SQL Server databases from SSDT packages
 
 # Publishing SQL Server databases from SSDT packages
 
-"SQL Database" (`SqlDatabase`) deployment provider allows incremental publishing of database changes from [SQL Server Data Tools](http://msdn.microsoft.com/en-us/library/hh272686(v=vs.103).aspx) (SSDT) package (`.dacpac`) to a local SQL Server instance, remote SQL Server or Azure SQL database.
+"SQL Database" (`SqlDatabase`) deployment provider allows incremental publishing of database changes from [SQL Server Data Tools](https://msdn.microsoft.com/en-us/library/hh272686(v=vs.103).aspx) (SSDT) package (`.dacpac`) to a local SQL Server instance, remote SQL Server or Azure SQL database.
 
 In this guide:
 
@@ -17,7 +17,7 @@ In this guide:
 
 - **Artifact** (`artifact`) - `.dacpac` artifact file name or deployment name or regexp matching one of these.
 - **Target SQL Server connection string** (`connection_string`) - SQL connection string to the target database. **Must include database name**. For example `server=(local)\SQLEXPRESS;database=test101;Integrated security=SSPI;`
-- **Register as a Data-tier Application** (`register_data_tier_application`) - default is `false`. You can read about Data-tier applications on [MSDN](http://msdn.microsoft.com/en-ca/library/ee210546.aspx) and also there is a nice introductory article on [CodeProject](http://www.codeproject.com/Articles/573144/Versioning-SQL-Server-Databases-using-SSDT).
+- **Register as a Data-tier Application** (`register_data_tier_application`) - default is `false`. You can read about Data-tier applications on [MSDN](https://msdn.microsoft.com/en-ca/library/ee210546.aspx) and also there is a nice introductory article on [CodeProject](https://www.codeproject.com/Articles/573144/Versioning-SQL-Server-Databases-using-SSDT).
 - **Block publish when database has drifted from registered version** (`block_when_drift_detected`) - default is `false`.
 
 Deployment behaviour:
