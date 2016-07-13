@@ -199,7 +199,7 @@ For unattended installation of `Web`, `Worker`, `BuildAgent` roles with all depe
 
     Install-AppVeyor -Force
 
-Installing AppVeyor Web and Worker roles only (if you are going to run builds on a different machines):
+Installing AppVeyor Web and Worker roles only (if you are going to run builds on different machines):
 
     Install-AppVeyor -Roles Server -Force
 
