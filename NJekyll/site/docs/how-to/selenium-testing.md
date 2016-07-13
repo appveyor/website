@@ -9,16 +9,16 @@ title: Selenium testing
 
 ## .NET
 
-### FireFox
+### Firefox
 
-AppVeyor build worker images are used to have the latest version of FireFox browser installed which at the time of writing was `47.0.1`.
+AppVeyor build worker images are used to have the latest version of Firefox browser installed which at the time of writing was `47.0.1`.
 
-You use `FirefoxDriver` class from [`Selenium WebDriver` library](https://www.nuget.org/packages/Selenium.WebDriver/) to run tests on FireFox.
+You use `FirefoxDriver` class from [`Selenium WebDriver` library](https://www.nuget.org/packages/Selenium.WebDriver/) to run tests on Firefox.
 
-**FireFox 46 and below**
+**Firefox 46 and below**
 
-If you need to run your tests against earlier versions of FireFox we recommend using [Chocolatey](https://chocolatey.org/packages/Firefox) for installing FireFox 46 and below.
-Just add this line to `install` section of your `appveyor.yml` to remove the current FireFox and install FireFox 46.0.1:
+If you need to run your tests against earlier versions of Firefox we recommend using [Chocolatey](https://chocolatey.org/packages/Firefox) for installing Firefox 46 and below.
+Just add this line to `install` section of your `appveyor.yml` to remove the current Firefox and install Firefox 46.0.1:
 
     install:
     - choco install firefox -version 46.0.1
@@ -27,9 +27,9 @@ In your tests you create `FirefoxDriver` as simply:
 
     var driver = new FirefoxDriver(); 
 
-**FireFox 47 and above**
+**Firefox 47 and above**
 
-Starting from FireFox 47.x the way WebDriver works has changed.
+Starting from Firefox 47.x the way WebDriver works has changed.
 
 First, it requires an additional executable called [geckodriver](https://github.com/mozilla/geckodriver/releases) which must be available on `PATH`.
 All AppVeyor build workers already have this executable in `C:\Tools\WebDriver` directory (`geckodriver.exe` and `wires.exe` files), so you don't need to worry about that.
