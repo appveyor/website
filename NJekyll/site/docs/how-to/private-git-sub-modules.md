@@ -9,7 +9,7 @@ title: Building private GitHub repositories with sub-modules
 
 ## How AppVeyor is cloning private repos
 
-AppVeyor uses SSH to clone private Git repositories. When you add a project in AppVeyor a new RSA key-pair is generated which consists of private and public keys. Public key is deployed to a remote Git repository using GitHub (or BitBucket) API and private key is pushed to build worker during the build. For SSH protocol to work on Windows private key should be located in `%USERPROFILE%\.ssh\id_rsa` file.
+AppVeyor uses SSH to clone private Git repositories. When you add a project in AppVeyor a new RSA key-pair is generated which consists of private and public keys. Public key is deployed to a remote Git repository using GitHub (or Bitbucket) API and private key is pushed to build worker during the build. For SSH protocol to work on Windows private key should be located in `%USERPROFILE%\.ssh\id_rsa` file.
 
 ## The problem with private sub-modules
 
