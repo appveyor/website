@@ -252,7 +252,7 @@ And next..
       <snip>
       artifact: final-app
 
-Notice how, in the `deploy` settings we have `artifact: final-app`? That means: use the artifiact that was tagged/named `final-app` .. which happens to be some zip file previously made.
+Notice how, in the `deploy` settings we have `artifact: final-app`? That means: use the artifact that was tagged/named `final-app` .. which happens to be some zip file previously made.
 
 And voila! The zip is now uploaded to Azure, auto-unzipped and old files will be removed.
 
