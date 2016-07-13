@@ -57,7 +57,7 @@ Encrypt access token using [Encrypt Data tool](https://ci.appveyor.com/tools/enc
 
 ## Enabling Git credential store
 
-Git doesn't preserve entered credentials between calls. However, it provides a mechanism for caching credentials called [Credential Store](http://git-scm.com/docs/git-credential-store). To enable credential store we use the following command:
+Git doesn't preserve entered credentials between calls. However, it provides a mechanism for caching credentials called [Credential Store](https://git-scm.com/docs/git-credential-store). To enable credential store we use the following command:
 
     git config --global credential.helper store
 
