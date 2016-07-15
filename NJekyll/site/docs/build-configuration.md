@@ -37,12 +37,6 @@ Every build runs on a fresh virtual machine which is not shared with other build
 IP addresses assigned to build workers:
 
     74.205.54.20
-
-    50.23.78.114
-    50.23.78.115
-    198.23.110.34
-    198.23.110.35
-
     104.197.110.30
     104.197.145.181
     146.148.85.29
