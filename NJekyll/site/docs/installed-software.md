@@ -227,7 +227,7 @@ To switch to the latest io.js version using this PowerShell command:
 	* MinGW root directory: `C:\MinGW`
 	* MinGW bin directory: `C:\MinGW\bin`
 	* MSYS root directory: `C:\MinGW\msys\1.0`
-* MinGW-w64:
+* MinGW-w64 5.3.0 32-bit:
 	* MinGW root directory: `C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0`
 	* MinGW bin directory: `C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin`
 * Cygwin (`C:\cygwin`)
