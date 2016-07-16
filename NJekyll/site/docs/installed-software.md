@@ -273,7 +273,7 @@ To switch to the latest io.js version using this PowerShell command:
 * [7-Zip](http://www.7-zip.org/) 15.14
 * [Microsoft Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 1.2.1 (February 2016)
 * [Microsoft Azure CLI](https://azure.microsoft.com/en-us/downloads/) 0.9.10
-* [CMake](https://cmake.org/download/) 3.5.0
+* [CMake](https://cmake.org/download/) 3.5.2
 * [NuGet](https://dist.nuget.org/index.html) 2.8.6 on `Visual Studio 2013` image
 * [NuGet](https://dist.nuget.org/index.html) 3.4.4 on `Visual Studio 2015` image
 * [Chocolatey](https://chocolatey.org/) v0.9.9.8
