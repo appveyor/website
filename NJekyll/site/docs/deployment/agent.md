@@ -103,8 +103,8 @@ However, when you deploy from a build you can override those environment variabl
 
     deploy:
     - provider: Environment
-    name: test-pc
-    site_name: www.site-to-deploy.com
+      name: test-pc
+      site_name: www.site-to-deploy.com
 
 Alternatively, that site name can be deployed somewhere during the build, so the following construction is also possible:
 
@@ -113,8 +113,8 @@ Alternatively, that site name can be deployed somewhere during the build, so the
 
     deploy:
     - provider: Environment
-    name: test-pc
-    site_name: $(site_to_deploy)
+      name: test-pc
+      site_name: $(site_to_deploy)
 
 
 
