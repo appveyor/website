@@ -109,7 +109,7 @@ However, when you deploy from a build you can override those environment variabl
 Alternatively, that site name can be deployed somewhere during the build, so the following construction is also possible:
 
     environment:
-    site_to_deploy: www.site-to-deploy.com
+      site_to_deploy: www.site-to-deploy.com
 
     deploy:
     - provider: Environment
