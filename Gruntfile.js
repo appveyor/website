@@ -244,7 +244,7 @@ module.exports = function(grunt) {
         "build",
         "csslint",
         "jshint",
-        "htmllint"
+        //"htmllint"
     ]);
 
     grunt.registerTask("dev", [
