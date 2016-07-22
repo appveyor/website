@@ -1,3 +1,5 @@
+/* jshint browser:false, node:true */
+
 "use strict";
 
 module.exports = function(grunt) {
@@ -5,7 +7,8 @@ module.exports = function(grunt) {
     grunt.initConfig({
         dirs: {
             dest: "_site",
-            src: "src"
+            src: "src",
+            tmp: ".tmp"
         },
 
         jekyll: {
@@ -54,15 +57,27 @@ module.exports = function(grunt) {
         },
 
         concat: {
+            foundation: {
+                src: [
+                    "<%= dirs.src %>/assets/css/foundation/normalize.css",
+                    "<%= dirs.src %>/assets/css/foundation/foundation.css"
+                ],
+                dest: "<%= dirs.tmp %>/css/foundation.css"
+            },
             css: {
-                src: ["<%= dirs.src %>/assets/css/**/*.css"],
+                src: [
+                    "<%= concat.foundation.dest %>",
+                    "<%= dirs.src %>/assets/css/site/*.css",
+                    "<%= dirs.src %>/assets/css/pages/*.css"
+                ],
                 dest: "<%= dirs.dest %>/assets/css/pack.css"
             },
             js: {
                 src: [
-                    "<%= dirs.src %>/assets/js/jquery-*.min.js",
-                    "<%= dirs.src %>/assets/js/foundation/*.js",
-                    "<%= dirs.src %>/assets/js/anchor.js",
+                    "<%= dirs.src %>/assets/js/vendor/jquery-*.min.js",
+                    "<%= dirs.src %>/assets/js/vendor/foundation/*.js",
+                    "<%= dirs.src %>/assets/js/vendor/anchor.js",
+                    "<%= dirs.src %>/assets/js/google-analytics.js",
                     "<%= dirs.src %>/assets/js/main.js"
                 ],
                 dest: "<%= dirs.dest %>/assets/js/pack.js"
@@ -119,10 +134,10 @@ module.exports = function(grunt) {
 
         filerev: {
             css: {
-                src: "<%= dirs.dest %>/assets/css/**/{,*/}*.css"
+                src: "<%= dirs.dest %>/assets/css/*.css"
             },
             js: {
-                src: "<%= dirs.dest %>/assets/js/**/{,*/}*.js"
+                src: "<%= dirs.dest %>/assets/js/*.js"
             },
             images: {
                 src: [
@@ -144,7 +159,10 @@ module.exports = function(grunt) {
             css: "<%= dirs.dest %>/assets/css/pack*.css",
             html: "<%= dirs.dest %>/**/*.html",
             options: {
-                assetsDirs: ["<%= dirs.dest %>/", "<%= dirs.dest %>/assets/images/"]
+                assetsDirs: [
+                    "<%= dirs.dest %>/",
+                    "<%= dirs.dest %>/assets/images/"
+                ]
             }
         },
 
@@ -174,11 +192,21 @@ module.exports = function(grunt) {
                 livereload: "<%= connect.livereload.options.livereload %>"
             },
             dev: {
-                files: ["<%= dirs.src %>/**", ".jshintrc", "_config.yml", "Gruntfile.js"],
+                files: [
+                    "<%= dirs.src %>/**",
+                    ".jshintrc",
+                    "_config.yml",
+                    "Gruntfile.js"
+                ],
                 tasks: "dev"
             },
             build: {
-                files: ["<%= dirs.src %>/**", ".jshintrc", "_config.yml", "Gruntfile.js"],
+                files: [
+                    "<%= dirs.src %>/**",
+                    ".jshintrc",
+                    "_config.yml",
+                    "Gruntfile.js"
+                ],
                 tasks: "build"
             }
         },
@@ -188,9 +216,8 @@ module.exports = function(grunt) {
                 csslintrc: ".csslintrc"
             },
             src: [
-                "<%= dirs.src %>/assets/css/02-site/*.css",
-                "!<%= dirs.src %>/assets/css/02-site/anchor.css",
-                "<%= dirs.src %>/assets/css/03-pages/*.css"
+                "<%= dirs.src %>/assets/css/site/*.css",
+                "<%= dirs.src %>/assets/css/pages/*.css"
             ]
         },
 
@@ -199,7 +226,10 @@ module.exports = function(grunt) {
                 jshintrc: ".jshintrc"
             },
             files: {
-                src: "Gruntfile.js"
+                src: [
+                    "Gruntfile.js",
+                    "<%= dirs.src %>/assets/js/*.js"
+                ]
             }
         },
 
@@ -238,7 +268,10 @@ module.exports = function(grunt) {
         },
 
         clean: {
-            dist: "<%= dirs.dest %>/"
+            dist: [
+                "<%= dirs.dest %>/",
+                "<%= dirs.tmp %>/"
+            ]
         }
 
     });

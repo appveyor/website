@@ -39,6 +39,6 @@ The `staging` branch is published to <https://appveyor-staging.azurewebsites.net
 
 Non-blocking TODO:
 
-* Rename/reorganize CSS/JS folder structure; no need for 1-2-3 etc filenames anymore
+* ~~Rename/reorganize CSS/JS folder structure; no need for 1-2-3 etc filenames anymore~~
 * Automate 404 testing
 * Move inline CSS to the respective files
