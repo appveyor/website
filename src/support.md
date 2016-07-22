@@ -14,13 +14,13 @@ description: Support options
 
 Check this page (powered by [StatusPage.io](https://www.statuspage.io/)) for any ongoing issues happening to AppVeyor:
 
-<a href="https://appveyor.statuspage.io" style="font-size:1.1rem;" target="_blank">https://appveyor.statuspage.io</a>
+<a href="https://appveyor.statuspage.io" target="_blank">https://appveyor.statuspage.io</a>
 
 ## Forums and support tickets
 
 AppVeyor support forums is a great source of solutions to various problems provided by AppVeyor team and community.
 
-<a href="http://help.appveyor.com" style="font-size:1.1rem;" target="_blank">http://help.appveyor.com</a>
+<a href="http://help.appveyor.com" target="_blank">http://help.appveyor.com</a>
 
 
 * Use forums if you want to report the issue, make a suggestion or have a general discussion.
@@ -30,16 +30,16 @@ AppVeyor support forums is a great source of solutions to various problems provi
 
 ## Email
 
-Whether it's sales question or support request you can always contact us by email:
+Whether it's a sales question or a support request you can always contact us by email:
 
-<a href="mailto:team@appveyor.com" style="font-size:1.1rem;">team@appveyor.com</a>
+[team@appveyor.com](mailto:team@appveyor.com)
 
 
 ## Technical updates
 
 Whenever AppVeyor service or build workers are updated we add a new entry to this feed:
 
-<a href="/updates" style="font-size:1.1rem;">https://www.appveyor.com/updates/</a>
+[https://www.appveyor.com/updates](/updates/)
 
 * Subscribe to receive Technical updates email notification on your [profile page](https://ci.appveyor.com/profile).
 
@@ -48,17 +48,16 @@ Whenever AppVeyor service or build workers are updated we add a new entry to thi
 
 See what's planned for development or what has just been delivered. AppVeyor maintains public GitHub repository to track development progress and you are welcome to submit your feature request or bug there:
 
-<a href="https://github.com/appveyor/ci/issues" style="font-size:1.1rem;" target="_blank">https://github.com/appveyor/ci/issues</a>
+<a href="https://github.com/appveyor/ci/issues" target="_blank">https://github.com/appveyor/ci/issues</a>
 
 Issue submission guidelines:
 
 * Do not submit duplicate issues. Search first and if similar request/bug found leave your comment there to upvote.
 * Be specific - avoid including few requests/bugs into a single issue. Sometimes, before submitting a new issue it makes sense to discuss it on [support forums](http://help.appveyor.com).
 
-
 ## Twitter
 
-<a href="https://twitter.com/appveyor" style="font-size:1.1rem;" target="_blank">@appveyor</a>
+<a href="https://twitter.com/appveyor" target="_blank">@appveyor</a>
 
 * You are welcome to ask a quick question on Twitter, but if 140 symbols is not enough to clearly formulate the problem or we are going to have multiple replies in conversation - please respect other AppVeyor subscribers and switch to either PM or [support forums](http://help.appveyor.com).
 

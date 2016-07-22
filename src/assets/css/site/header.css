@@ -36,7 +36,7 @@
 }
 
 .top-bar-section li:not(.has-form) a:hover:not(.button) {
-    background: none repeat scroll 0 0 #3a2f2f;
+    background-color: #3a2f2f;
 }
 
 /* Medium and large screens */

@@ -8,15 +8,6 @@ body {
     margin-bottom: 1rem;
 }
 
-/* for mobile screens */
-@media only screen and (max-width: 40em) {
-    .left {
-        float: none !important;
-    }
-    .right {
-        float: none !important;
-    }
-}
 
 /* footer
 ----------------------------------------------------------*/
@@ -37,9 +28,6 @@ body {
 
 .footer ul {
     font-size: 0.75rem;
-}
-
-.footer ul {
     list-style: none;
     margin: 0;
     padding: 0;

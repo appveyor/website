@@ -111,3 +111,8 @@ pre > code {
 li ul li {
     font-size: 0.8rem;
 }
+
+.new-feature {
+    color: red;
+    font-weight: 700;
+}

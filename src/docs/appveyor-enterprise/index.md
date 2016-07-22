@@ -9,7 +9,7 @@ title: Getting started with AppVeyor Enterprise
 * Comment to trigger ToC generation
 {:toc}
 
-<p style="color:red;font-weight:bold;">Note about this beta release - it's not intended for installing on production environment.</p>
+<p class="new-feature">Note about this beta release - it's not intended for installing on production environment.</p>
 
 ## Introduction
 
