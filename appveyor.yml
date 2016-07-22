@@ -1,0 +1,59 @@
+-
+  branches:
+    only:
+    - master
+
+  version: 1.0.{build}
+
+  configuration: Release
+
+  before_build:
+  - cmd: nuget restore NJekyll.sln
+
+  build:
+    project: NJekyll.sln
+    publish_wap: true
+    verbosity: minimal
+
+  test: off
+
+  deploy:
+  - provider: WebDeploy
+    server: https://appveyor.scm.azurewebsites.net:443/MsDeploy.axd?site=appveyor
+    website: appveyor
+    username: $appveyor
+    password:
+      secure: bmnhrbQkDbMznVcQCkzY+HFE9H+aDHJPY/5Ko4HCFZvNmXnnoilGV1Qve6V9D7vFV/FF/6lmykIopR5I7TE0cg==
+    remove_files: true
+    do_not_use_checksum: false
+    skip_dirs: '\\Downloads;\\App_Data'
+
+-
+  branches:
+    only:
+    - staging
+
+  version: 1.0.{build}
+
+  configuration: Release
+
+  before_build:
+  - cmd: nuget restore NJekyll.sln
+
+  build:
+    project: NJekyll.sln
+    publish_wap: true
+    verbosity: minimal
+
+  test: off
+
+  deploy:
+  - provider: WebDeploy
+    server: https://appveyor-staging.scm.azurewebsites.net:443/MsDeploy.axd?site=appveyor-staging
+    website: appveyor-staging
+    username: $appveyor-staging
+    password:
+      secure: spiLpaETY4B5iu+VfjOnNARX7wC8NmR63D+k6UCVN/gc3IsYufFuBX+Hpl9rkg30Z6dFMchBgiGqp2BbqIsXzQ==
+    remove_files: true
+    do_not_use_checksum: false
+    skip_dirs: '\\Downloads;\\App_Data'
