@@ -64,8 +64,7 @@ To be deployable with Deployment Agent *artifact must have a name*. Name should 
 
 There are few possible ways of packaging artifact deployable by Agent:
 
-1. When **Package Web Application projects** option is enabled on **Build** tab of project settings AppVeyor automatically publishes (applies web config transforms)
-   and uploads VS.NET Web Application projects as artifacts named after the name of VS.NET project.
+1. When **Package Web Applications for Web Deploy** or **Package Web Applications for XCopy deployment** option is enabled on **Build** tab of project settings, AppVeyor automatically publishes (applies appropriate .pubxml transforms) and uploads VS.NET Web Application projects as artifacts named after the name of VS.NET project.
 
 2. Specify **Deployment name** while adding artifact entry on **Artifacts** tab of project settings.
 
