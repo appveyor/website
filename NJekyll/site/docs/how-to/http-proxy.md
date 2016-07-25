@@ -46,6 +46,6 @@ Add these lines to `appveyor.yml` to enable AppVeyor HTTP proxy for npm:
 
     install:
     - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-http-proxy.ps1'))
-    - npm config set proxy http://%APPVEYOR_HTTP_PROXY_IP%:%APPVEYOR_HTTP_PROXY_PORT%
-    - npm config set https-proxy http://%APPVEYOR_HTTP_PROXY_IP%:%APPVEYOR_HTTP_PROXY_PORT%
+    - IF DEFINED APPVEYOR_HTTP_PROXY_IP npm config set proxy http://%APPVEYOR_HTTP_PROXY_IP%:%APPVEYOR_HTTP_PROXY_PORT%
+    - IF DEFINED APPVEYOR_HTTP_PROXY_IP npm config set https-proxy http://%APPVEYOR_HTTP_PROXY_IP%:%APPVEYOR_HTTP_PROXY_PORT%
 
