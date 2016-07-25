@@ -61,8 +61,6 @@ collections:
     newsletters:
         permalink: /:collection/:year/:month/:day/:title/
         output: false
-    testimonials:
-        output: false
     updates:
         permalink: /:collection/:year/:month/:day/
         output: true

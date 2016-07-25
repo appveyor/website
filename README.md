@@ -28,7 +28,7 @@ The `staging` branch is published to <https://appveyor-staging.azurewebsites.net
 * Fix pagination for /updates/
 * Fix HTML errors
 * Fix redirections
-* Fix Twitter testimonials
+* ~~Fix Twitter testimonials~~
 * ~~Fix pagination for /updates/~~
 * ~~Remove excessive indentation from code blocks and specify the language to use in highlighting in more places~~
 * ~~Add sitemap and feed.xml~~
