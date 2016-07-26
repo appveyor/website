@@ -45,7 +45,48 @@ AppVeyor will call:
 
     nuget pack SimpleConsole.Tests.csproj -OutputDirectory <temp_path>
 
-> To generate a `.nuspec` file for your project use the `nuget spec` command.
+For AppVeyor to *find* the `.nuspec` file, it needs to be:
+1. The same name as the `.csprj` file. For example (refer to the above image, again)
+ - project file: `SimpleConsole.Tests.csproj`  
+ - nuspec file: `SimpleConsole.Tests.nuspec`
+2. Side by side to the `.csproj` file. So the same folder, etc.
+
+If those two conditions are not met, then the nuget packaging will not work.  
+
+>If you have multiple `.nuspec's` then you cannot use this built in flow and will need to create your own powershell scripts and manually pack/deploy in another step, like the `build_success` step, for example.
+
+To pass the current AppVeyor build version into the generated nuget package (a `.nupkg`) you need to do two things:
+1. Add the `[assembly: AssemblyInformationalVersionAttribute("1.0")]` to the Visual Studio project's `AssemblyInfo.cs` file.
+eg.
+
+```
+// You can specify all the values or you can default the Build and Revision Numbers 
+// by using the '*' as shown below:
+// [assembly: AssemblyVersion("1.0.*")]
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyInformationalVersionAttribute("1.0")]
+```
+2. Modify the `<version>` element in the `.nuspec` file to: `<version>$version$</version>` (the `$version` will be replaced by AppVeyor during the NuGet packaging stage)
+3. Update your `appveyor.yml` file to tell it it [AssemblyInfo Patch](http://www.appveyor.com/docs/build-configuration#assemblyinfo-patching) the `AssemblyInfo.cs` file ... specifically, the new `AssemblyInformationalVersionAttribute` you've just added. 
+```
+assembly_info:
+  patch: true
+  file: AssemblyInfo.*
+  assembly_version: $(appveyor_build_version)
+  assembly_file_version: $(appveyor_build_version)
+  assembly_informational_version: $(appveyor_build_version)
+```
+
+So why do this / what is happening? NuGet uses the `ProductVersion` value of the dll ... which AppVeyor sets with the `assembly_informational_version` value of the `AssemblyInfo.cs`. 
+
+Example references: 
+- [Sample Project](https://github.com/FeodorFitsner/nuget-test)
+- [Sample AssemblyInfo.cs](https://github.com/FeodorFitsner/nuget-test/blob/master/MyNuGetLib/Properties/AssemblyInfo.cs)
+- [Sample .nuspec](https://github.com/FeodorFitsner/nuget-test/blob/master/MyNuGetLib/MyNuGetLib.nuspec)
+- [Sample appveyor.yml](https://github.com/FeodorFitsner/nuget-test/blob/master/appveyor.yml)
+
+> To generate a `.nuspec` file for your project use the `nuget spec` command or use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) to easily generate one manually.
 
 
 
