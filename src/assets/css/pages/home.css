@@ -131,117 +131,15 @@
 /* Customers block */
 .customers-container {
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .customers-container h2 {
     margin: 0.7rem 0;
-    text-align: center;
     font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.7rem;
 }
 
-.customers-container .logos {
-    text-align: center;
-}
-
-/* Customer logos */
-/*.customer-logo {
-    background: url("../images/home/customers-sprite.png") no-repeat;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0.7rem 1rem;
-}
-
-.rackspace {
-    background-position: -8px -21px;*/
-    /*background-position: -168px -3px;*/
-    /*width: 150px;
-    height: 35px;
-}
-
-.telenor {
-    background-position: -168px -3px;
-    width: 136px;
-    height: 68px;
-}
-
-.microsoft {
-    background-position: -324px -23px;
-    width: 139px;
-    height: 30px;
-}
-
-.granicus {
-    background-position: -479px -24px;
-    width: 137px;
-    height: 29px;
-}
-
-.adazzle {
-    background-position: -633px -25px;
-    width: 98px;
-    height: 28px;
-}
-
-.bannerflow {
-    background-position: -8px -87px;
-    width: 150px;
-    height: 50px;
-}
-
-.snipcart {
-    background-position: -167px -94px;
-    width: 105px;
-    height: 35px;
-}
-
-.tachyus {
-    background-position: -286px -101px;
-    width: 96px;
-    height: 17px;
-}
-
-.stanford {
-    background-position: -401px -92px;
-    width: 101px;
-    height: 35px;
-}
-
-.ucdavis {
-    background-position: -523px -98px;
-    width: 107px;
-    height: 18px;
-}
-
-.redis {
-    background-position: -10px -161px;
-    width: 90px;
-    height: 30px;
-}
-
-.chef {
-    background-position: -121px -147px;
-    width: 55px;
-    height: 54px;
-}
-
-.mono {
-    background-position: -202px -148px;
-    width: 44px;
-    height: 54px;
-}
-
-.mongodb {
-    background-position: -269px -156px;
-    width: 110px;
-    height: 32px;
-}
-
-.grunt {
-    background-position: -404px -146px;
-    width: 46px;
-    height: 54px;
-}*/
 .customer-logo {
     background: url("/assets/images/home/new-sprite-flattened.png") no-repeat;
     display: inline-block;
@@ -358,7 +256,6 @@
 .benefits-table .columns {
     line-height: 2.7rem;
     border-bottom: 1px solid #e6e3e0;
-    /*background-color: #fbf9f7;*/
     border-top: none;
     font-size: 1.0rem;
 }
