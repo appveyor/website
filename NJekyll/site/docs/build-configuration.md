@@ -400,14 +400,14 @@ For example, you do commit `A` to `master` branch - it's being queued and then r
 
 ## Scheduled builds
 
-AppVeyor uses [NCrontab library](https://code.google.com/p/ncrontab/) to calculate a build schedule.
+AppVeyor uses [NCrontab library](https://github.com/atifaziz/NCrontab) to calculate a build schedule.
 
 > Schedule hour values should be UTC.
 
 External links:
 
-* [Crontab expression syntax](https://code.google.com/p/ncrontab/wiki/CrontabExpression)
-* [Crontab examples](https://code.google.com/p/ncrontab/wiki/CrontabExamples)
+* [Crontab expression syntax](https://github.com/atifaziz/NCrontab/wiki/Crontab-Expression)
+* [Crontab examples](https://github.com/atifaziz/NCrontab/wiki/Crontab-Examples)
 
 
 ## Build queue
