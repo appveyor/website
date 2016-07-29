@@ -37,9 +37,9 @@ For Azure WebJobs schedule **must have 6 fields**:
     |    +------------- min (0 - 59)
     +--------------- second (0 -59)
 
-Azure WebJobs implementation uses [NCrontab](https://code.google.com/p/ncrontab/) library.
-You can read more about [crontab expression syntax](https://code.google.com/p/ncrontab/wiki/CrontabExpression) implemented by this library and
-some find [examples](https://code.google.com/p/ncrontab/wiki/CrontabExamples), but remember to add `0` as the first field for seconds.
+Azure WebJobs implementation uses [NCrontab](https://github.com/atifaziz/NCrontab) library.
+You can read more about [crontab expression syntax](https://github.com/atifaziz/NCrontabwiki/CrontabExpression) implemented by this library and
+some find [examples](https://github.com/atifaziz/NCrontabwiki/CrontabExamples), but remember to add `0` as the first field for seconds.
 
 ## Provider settings
 
