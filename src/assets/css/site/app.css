@@ -1,5 +1,8 @@
 body {
     font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.no-js body {
     padding-top: 45px;
 }
 
