@@ -133,15 +133,27 @@ Request body (JSON):
 
 ### PowerShell
 
-    Add-AppveyorTest -Name <string> [-Framework <string>] [-FileName <string>]
+    Add-AppveyorTest -Name <string> -Framework <string> -FileName <string>
            [-Outcome <outcome> { None | Running | Passed | Failed | Ignored | Skipped
            | Inconclusive | NotFound |  Cancelled | NotRunnable}] [-Duration <long>]
            [-ErrorMessage <string>] [-ErrorStackTrace <string>]
            [-StdOut <string>] [-StdErr <string>]
 
+AddTest options:
+
+      -Name             - Required. The name of test.
+      -Framework        - Required. The name of testing framework, e.g. NUnit, xUnit, MSTest.
+      -FileName         - Required. File name containg test.
+      -Outcome          - Test outcome: None, Running, Passed, Failed, Ignored, Skipped, Inconclusive, NotFound, Cancelled, NotRunnable
+      -Duration         - Test duration in milliseconds.
+      -ErrorMessage     - Error message of failed test.
+      -ErrorStackTrace  - Error stack trace of failed test.
+      -StdOut           - Standard console output from the test.
+      -StdErr           - Error output from the test.
+
 Example:
 
-    Add-AppveyorTest "Test A" -Outcome Passed -Duration 1000 # in milliseconds
+    Add-AppveyorTest -Name "Test A" -Framework NUnit -Filename a.exe -Outcome Passed -Duration 1000 # in milliseconds
 
 ### Command line
 
@@ -202,7 +214,7 @@ Request body (JSON):
 
 ### PowerShell
 
-    Update-AppveyorTest -Name <string> [-Framework <string>] [-FileName <string>]
+    Update-AppveyorTest -Name <string> -Framework <string> -FileName <string>
            -Outcome <outcome> { None | Running | Passed | Failed | Ignored | Skipped
            | Inconclusive | NotFound |  Cancelled | NotRunnable}] [-Duration <long>
            [-ErrorMessage <string>] [-ErrorStackTrace <string>]
@@ -210,13 +222,13 @@ Request body (JSON):
 
 Example:
 
-    Add-AppveyorTest "Test A" -Outcome Running
+    Add-AppveyorTest -Name "Test A" -Framework NUnit -FileName a.exe -Outcome Running
     Start-sleep -s 10
-    Update-AppveyorTest "Test A" -Outcome Passed -Duration 10000
+    Update-AppveyorTest -Name "Test A" -Framework NUnit -FileName a.exe -Outcome Passed -Duration 10000
 
 ### Command line
 
-    appveyor UpdateTest <name> [options]
+    appveyor UpdateTest -Name <name> [options]
 
 Options are similar to PowerShell cmdlet parameters.
 
