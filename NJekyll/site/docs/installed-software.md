@@ -31,7 +31,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Microsoft Expression Blend Software Development Kit (SDK) for .NET 4](https://www.microsoft.com/en-us/download/details.aspx?id=10801)
 * [Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4](https://www.microsoft.com/en-us/download/details.aspx?id=3062)
 * [Windows Phone SDK 8.0](https://www.microsoft.com/en-us/download/details.aspx?id=35471)
-* [Azure SDKs](https://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.2, 2.3, 2.4, 2.5.1, 2.6, 2.7.1, 2.8.1, 2.9
+* [Azure SDKs](https://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.3, 2.4, 2.5.1, 2.6, 2.7.1, 2.8.1, 2.9
 * [Microsoft SilverLight 5 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=28359)
 * [Windows PowerShell 2.0 SDK](https://www.microsoft.com/en-ca/download/details.aspx?id=2560)
 * [DirectX SDK](https://www.microsoft.com/en-us/download/details.aspx?id=6812) (`C:\Program Files (x86)\Microsoft DirectX SDK`)
