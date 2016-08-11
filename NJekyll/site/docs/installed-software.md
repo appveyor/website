@@ -90,19 +90,19 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 ## Xamarin
 
-[Xamarin Platform](https://xamarin.com/platform) v4.1.1.3 is installed on `Visual Studio 2015` image.
+[Xamarin Platform](https://xamarin.com/platform) v4.1.2.18 is installed on `Visual Studio 2015` image.
 
 ## Languages, libraries, frameworks
 
 * [C++ 11 CTP](https://blogs.msdn.microsoft.com/vcblog/2013/11/18/announcing-the-visual-c-compiler-november-2013-ctp/)
-* .NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2
+* .NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2, 4.6.0, 4.6.1, 4.6.2
 * .NET Core 1.0
 * [Microsoft .NET Framework 4.5.2 with Developer Pack](https://www.microsoft.com/en-ca/download/details.aspx?id=42637)
 * [Visual F# 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=18706)
 * [Visual F# Out of Band Release 3.1.2](https://www.microsoft.com/en-us/download/details.aspx?id=44011)
 * [Microsoft .NET Portable Library Reference Assemblies 4.6](https://www.microsoft.com/en-us/download/details.aspx?id=40727)
 * [Microsoft Visual Studio Installer Projects](https://visualstudiogallery.msdn.microsoft.com/9abe329c-9bba-44a1-be59-0fbf6151054d) extension (`.vdproj` support).
-* [WiX](http://wixtoolset.org/) 3.10
+* [WiX](http://wixtoolset.org/) 3.10.3.3007
 * [Silverlight 5 x64 Developer Runtime](https://go.microsoft.com/fwlink/?LinkID=229324)
 * SQL Server Data tools for [Visual Studio 2012](https://msdn.microsoft.com/en-us/jj650015) and [2013](https://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
 * Boost:
@@ -115,13 +115,13 @@ Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a 
 
 `4.4.x` is default Node.js installed on build workers.
 
-* 4.0.0 - 6.2.2 (x86 and x64)
-* 0.10.26 - 0.10.44 (x86 and x64)
+* 4.0.0 - 6.3.1 (x86 and x64)
+* 0.10.26 - 0.10.46 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
-* 0.12.0 - 0.12.13 (x86 and x64)
+* 0.12.0 - 0.12.15 (x86 and x64)
 * 0.8.25 - 0.8.28 (x86 and x64)
 * Use `LTS` alias for latest `4.x` release
-* Use `Stable` alias for latest `5.x` release
+* Use `Stable` alias for latest `6.x` release
 
 Use the following PowerShell command to quickly switch Node.js version:
 
@@ -131,7 +131,7 @@ To switch to the latest `0.x.x` Node.js version (0.12.x) use this PowerShell com
 
     Install-Product node 0
 
-To switch to the latest `5.x.x` Node.js version use this PowerShell command:
+To switch to the latest `6.x.x` Node.js version use this PowerShell command:
 
     Install-Product node ''
 
@@ -166,8 +166,8 @@ To switch to the latest io.js version using this PowerShell command:
     * [JDK 1.6](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html) Update 45 (x86) (`C:\Program Files (x86)\Java\jdk1.6.0\bin`)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x64) (`C:\Program Files\Java\jdk1.7.0\bin` - default in `PATH`)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x86) (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)
-    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 92 (x64) (`C:\Program Files\Java\jdk1.8.0`)
-    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 92 (x86) (`C:\Program Files (x86)\Java\jdk1.8.0`)
+    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 101 (x64) (`C:\Program Files\Java\jdk1.8.0`)
+    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 101 (x86) (`C:\Program Files (x86)\Java\jdk1.8.0`)
 
 ### Mono
 
@@ -176,30 +176,29 @@ To switch to the latest io.js version using this PowerShell command:
 ### Ruby
 
 * [Ruby](http://rubyinstaller.org/downloads/) with [DevKit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
-    * 1.9.3-p551 (`C:\Ruby193\bin` - default in `PATH`) with RubyGems 2.6.3
-    * 2.0.0-p648 x86 (`C:\Ruby200\bin`) with RubyGems 2.6.3
-    * 2.0.0-p648 x64 (`C:\Ruby200-x64\bin`) with RubyGems 2.6.3
-    * 2.1.8 x86 (`C:\Ruby21\bin`) with RubyGems 2.6.3
-    * 2.1.8 x64 (`C:\Ruby21-x64\bin`) with RubyGems 2.6.3
-    * 2.2.4 x86 (`C:\Ruby22\bin`) with RubyGems 2.6.3
-    * 2.2.4 x64 (`C:\Ruby22-x64\bin`) with RubyGems 2.6.3
-    * 2.3.0 x86 (`C:\Ruby23\bin`) with RubyGems 2.6.3
-    * 2.3.0 x64 (`C:\Ruby23-x64\bin`) with RubyGems 2.6.3   
-    * `Bundler 1.11.2` is installed to all Ruby versions
+    * 1.9.3-p551 (`C:\Ruby193\bin` - default in `PATH`)
+    * 2.0.0-p648 x86 (`C:\Ruby200\bin`)
+    * 2.0.0-p648 x64 (`C:\Ruby200-x64\bin`)
+    * 2.1.9 x86 (`C:\Ruby21\bin`)
+    * 2.1.9 x64 (`C:\Ruby21-x64\bin`)
+    * 2.2.5 x86 (`C:\Ruby22\bin`)
+    * 2.2.5 x64 (`C:\Ruby22-x64\bin`)
+    * 2.3.1 x86 (`C:\Ruby23\bin`)
+    * 2.3.1 x64 (`C:\Ruby23-x64\bin`)  
 
 ### Python
 
 * [Python](https://www.python.org/downloads/windows/)
     * 2.6.6 x86 (`C:\Python26`)
     * 2.6.6 x64 (`C:\Python26-x64`)
-    * 2.7.11 x86 (`C:\Python27` - default in `PATH`)
-    * 2.7.11 x64 (`C:\Python27-x64`)
+    * 2.7.12 x86 (`C:\Python27` - default in `PATH`)
+    * 2.7.12 x64 (`C:\Python27-x64`)
     * 3.3.5 x86 (`C:\Python33`)
     * 3.3.5 x64 (`C:\Python33-x64`)
-    * 3.4.3 x86 (`C:\Python34`)
-    * 3.4.3 x64 (`C:\Python34-x64`)
-    * 3.5.1 x86 (`C:\Python35`)
-    * 3.5.1 x64 (`C:\Python35-x64`)
+    * 3.4.4 x86 (`C:\Python34`)
+    * 3.4.4 x64 (`C:\Python34-x64`)
+    * 3.5.2 x86 (`C:\Python35`)
+    * 3.5.2 x64 (`C:\Python35-x64`)
 * Miniconda
 	* Miniconda2 4.0.5 (Python 2.7.11) - `C:\Miniconda`
 	* Miniconda2 4.0.5 x64 (Python 2.7.11): `C:\Miniconda-x64`
@@ -270,25 +269,26 @@ To switch to the latest io.js version using this PowerShell command:
 
 ## Tools
 
-* [7-Zip](http://www.7-zip.org/) 15.14
+* [7-Zip](http://www.7-zip.org/) 16.02
 * [Microsoft Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 1.2.1 (February 2016)
 * [Microsoft Azure CLI](https://azure.microsoft.com/en-us/downloads/) 0.9.10
 * [CMake](https://cmake.org/download/) 3.5.2
 * [NuGet](https://dist.nuget.org/index.html) 2.8.6 on `Visual Studio 2013` image
 * [NuGet](https://dist.nuget.org/index.html) 3.4.4 on `Visual Studio 2015` image
-* [Chocolatey](https://chocolatey.org/) v0.9.9.8
-* [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.0.2
+* [Chocolatey](https://chocolatey.org/) v0.9.10.3
+* [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.6.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
 * [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2h (32-bit) (`C:\OpenSSL-Win32\bin`)
 * [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2h (64-bit) (`C:\OpenSSL-Win64\bin`)
-* [NSIS](http://nsis.sourceforge.net/Download) 2.50 (`C:\Program Files (x86)\NSIS`)
+* [NSIS](http://nsis.sourceforge.net/Download) 3.0 (`C:\Program Files (x86)\NSIS`)
+* Coverity Scan 8.5.0.1
 
 ## Testing
 
 ### Runners
 
 * [NUnit](http://nunit.org/index.php?p=download) 2.6.4 in `C:\Tools\NUnit\bin`
-* [NUnit3](https://github.com/nunit/nunit) 3.2.1 in `C:\Tools\NUnit3\bin`
+* [NUnit3](https://github.com/nunit/nunit) 3.4.1 in `C:\Tools\NUnit3\bin`
 * [xUnit](https://github.com/xunit/xunit/releases) 1.9.2 in `C:\Tools\xUnit`
 * [xUnit](https://www.nuget.org/packages/xunit.runner.console/2.0.0) 2.0.0 RTM in `C:\Tools\xUnit20`
 * [Machine.Specifications (MSpec)](http://www.nuget.org/packages/Machine.Specifications)
@@ -308,7 +308,7 @@ To switch to the latest io.js version using this PowerShell command:
 * [SQL Server 2008 R2 SP2 Express Edition with Advanced Services (x64)](https://www.microsoft.com/en-US/download/details.aspx?id=30438)
 * [SQL Server 2012 SP1 Express with Advanced Services](https://www.microsoft.com/en-us/download/details.aspx?id=35579)
 * [SQL Server 2014 Express with Advanced Services](https://www.microsoft.com/en-us/download/details.aspx?id=42299)
-* [SQL Server 2016 Express](https://www.microsoft.com/en-us/download/details.aspx?id=52679)
+* [SQL Server 2016 Developer](https://www.microsoft.com/en-us/cloud-platform/sql-server-editions-developers)
 * [PostgreSQL 9.3 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 * [PostgreSQL 9.4 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 * [PostgreSQL 9.5 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
