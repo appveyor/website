@@ -139,6 +139,8 @@ In `appveyor.yml` you need to quote channel name to pass YAML validation, for ex
         secure: AAABBB+CCC==
       channel: '#channel'
       
+> Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
+      
 ### Incoming webhook
 
 Slack notifications can be configured to use [Incoming webhook](https://api.slack.com/incoming-webhooks).
@@ -150,8 +152,10 @@ generate new incoming webhook.
 In `appveyor.yml` webhook URL can be set as secure string, for example:
 
     - provider: Slack
-      incoming_webhook:
-        secure: AAABBB+CCC+DDD==
+      incoming_webhook: 
+        secure: AAABBB+CCC==
+
+> Encrypt webhook url on [this page](https://ci.appveyor.com/tools/encrypt).
 
 ### Message template
 
