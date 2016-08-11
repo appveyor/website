@@ -13,7 +13,7 @@ Put this simple `appveyor.yml` to the root of your repository and it should work
 
     # Test against this version of Node.js
     environment:
-      nodejs_version: "0.10"
+      nodejs_version: "0.12"
 
     # Install scripts. (runs after repo cloning)
     install:
@@ -48,7 +48,7 @@ However, if you expect Git to fix line endings on Windows and checkout *all* str
 
 ## Selecting Node.js or io.js version
 
-Build workers have the most recent versions of Node.js and io.js pre-installed - both `x86` and `x64`. If you do nothing your scripts will run under `Node.js 0.10.35 (x86)` (at the time of writing).
+Build workers have the most recent versions of Node.js and io.js pre-installed - both `x86` and `x64`. If you do nothing your scripts will run under `Node.js 0.12.0 (x86)` (at the time of writing).
 
 To switch to a different version of Node.js or io.js use the following PowerShell command:
 
@@ -64,9 +64,9 @@ To switch Node.js to the latest available 0.11.x branch use:
 
     Install-Product node 0.11
 
-To select specific x64 version of Node 0.10.32:
+To select specific x64 version of Node 0.12.0:
 
-    Install-Product node 0.10.32 x64
+    Install-Product node 0.12.0 x64
 
 Any `1.x` version automatically assumes you want io.js, so to switch to the **latest version of io.js** use this command:
 
