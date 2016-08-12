@@ -1,4 +1,7 @@
-/_site
-/node_modules
+/.bundle/
+/.tmp/
+/_site/
+/node_modules/
+/vendor/
 /npm-debug.log
 /src/.jekyll-metadata

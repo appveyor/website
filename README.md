@@ -1,5 +1,6 @@
 # The source code of [www.appveyor.com](https://www.appveyor.com/)
 
+[![Build status](https://ci.appveyor.com/api/projects/status/a8s3e1pd8070x2y9?svg=true)](https://ci.appveyor.com/project/AppVeyor-Website/website)
 [![dependencies Status](https://david-dm.org/gruntjs/appveyor/website.svg)](https://david-dm.org/appveyor/website)
 
 ## Getting started
