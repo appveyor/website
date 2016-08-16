@@ -1,0 +1,122 @@
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.no-js body {
+    padding-top: 45px;
+}
+
+.page-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* footer
+----------------------------------------------------------*/
+.footer-container {
+    background-color: #fff;
+    padding-top: 2rem;
+}
+
+.footer {
+    border-top: solid 1px #eee;
+}
+
+.footer .columns {
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.footer ul {
+    font-size: 0.75rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0 1rem 0 0;
+    padding: 0;
+}
+
+.footer a,
+.footer a:link,
+.footer a:hover,
+.footer a:active,
+.footer a:visited {
+    color: #777;
+}
+
+.copyright {
+    padding-right: 10px;
+}
+
+.twitter {
+    display: inline-block;
+    padding-left: 23px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAMCAYAAAC9QufkAAAAzElEQVR4AZXRM1xoYRiA8XNtb9dW2DK37Nqy91+78p61I3NOS7Zt15Lx9eQ31/A/ft4jzSJn5CE+KqW0i3DOC91YRzXM4ARzjYUtuvD9gtAK21AS2uCgsXCFwhLC8VDEWSKQBvBbY/ESM+LEFFLhj0oZCRGK4XuxNQqhbsH3KP6C9VvG/xTx0bv5YOWGYaeikfEHVNzmkRXkb4nCzjVhGe7IWA4wwogMhFq8k9fvBYYIQiLmoSBtIwMvjiIZP4Y/CjGODcyiEfHQl4G0C59u3zG5avzYAAAAAElFTkSuQmCC") no-repeat 4px 50%;
+}
+
+/* articles */
+div.title {
+    text-align: center;
+}
+
+div.title h2 {
+    margin: 20px 0 30px 0;
+    font-size: 17px;
+    font-weight: normal;
+    color: #777;
+}
+
+
+/* legal */
+
+.legal ol {
+    counter-reset: item;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.legal > ol > li {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+}
+
+.legal ol li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+}
+
+.legal ol ol ol li:before {
+    content: none;
+}
+
+.legal ol ol {
+    margin-left: 1rem;
+    list-style-type: none;
+}
+
+.legal ol ol li {
+    text-transform: none;
+    margin: 0.5rem 0;
+}
+
+.legal ol ol ol {
+    margin-left: 2rem;
+    list-style-type: lower-alpha;
+}
+
+.legal ol ol ol ol {
+    margin-left: 2rem;
+    list-style-type: lower-roman;
+}
+
+.legal ol ol ol ol ol {
+    margin-left: 2rem;
+    list-style-type: upper-alpha;
+}

@@ -1,0 +1,27 @@
+-
+  text: No setup required and zero maintenance
+  class: "yes"
+-
+  text: Developer-friendly build configs using UI or YAML - our config won’t kill you!
+  class: "yes"
+-
+  text: Isolated build workers, pristine environment for every build, admin access to build workers
+  class: "yes"
+-
+  text: Blazingly fast builds on dedicated hardware with SSD drives
+  class: "yes"
+-
+  text: Built-in deployment and NuGet server
+  class: "yes"
+-
+  text: Multi-branch builds to support your workflow
+  class: "yes"
+-
+  text: Team work with granular permissions
+  class: "yes"
+-
+  text: First-class support and vibrant community
+  class: "yes"
+-
+  text: Pay-as-you-go, no upfront investment in expensive software
+  class: "yes"

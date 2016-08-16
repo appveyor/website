@@ -1,0 +1,68 @@
+version: 1.0.{build}
+
+clone_depth: 10
+
+environment:
+  matrix:
+    - ruby_folder_version: "23"
+      ruby_gems_folder: "2.3.0"
+      platform: "x86"
+
+install:
+  - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
+  # Bundler downgrade should be removed when the issue is fixed upstream
+  #- gem uninstall bundler -x
+  #- gem install bundler -v "=1.10.6" --no-document
+  #- bundle install --retry 3 --jobs=%NUMBER_OF_PROCESSORS% --clean --deployment
+  - bundle install --retry 3 --jobs=%NUMBER_OF_PROCESSORS%
+  - ps: Install-Product node "4" $env:platform
+  - npm config set spin false
+  - npm install
+
+build: off
+
+test_script:
+  - ruby -v
+  - gem -v
+  - bundle -v
+  - node -v
+  - npm -v
+  - java -version
+  - npm test
+
+matrix:
+  fast_finish: true
+
+cache:
+#  - 'vendor -> appveyor.yml,Gemfile,Gemfile.lock'
+  - 'node_modules -> appveyor.yml,npm-shrinkwrap.json,package.json'
+
+deploy:
+
+  - provider: WebDeploy
+    server: https://appveyor-staging.scm.azurewebsites.net:443/MsDeploy.axd?site=appveyor-staging
+    website: appveyor-staging
+    username: $appveyor-staging
+    password:
+      secure: rblAkMA2sadykufv7pJYJacKbluycPc5xkhTP3E5J8KkXrjvV0gQQ9SF0IXvuLfZVQv6IBHrFIAbmmIA72mhJg==
+    remove_files: true
+    do_not_use_checksum: false
+    skip_dirs: '\\Downloads;\\App_Data'
+    on:
+      branch: staging    
+
+  - provider: WebDeploy
+    server: https://appveyor.scm.azurewebsites.net:443/MsDeploy.axd?site=appveyor
+    website: appveyor
+    username: $appveyor
+    password:
+      secure: pL+ugVnAjgM8JxucKetLmTuqS+ikdzREwXXamzn0+jbuxT7+/DjyX/lTVgOr6Qh7nmlE61mFlDb+cLipnWiamw==
+    remove_files: true
+    do_not_use_checksum: false
+    skip_dirs: '\\Downloads;\\App_Data'
+    on:
+      branch: master
+
+artifacts:
+  - path: _site/
+    name: site

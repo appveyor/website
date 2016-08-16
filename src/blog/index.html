@@ -1,0 +1,35 @@
+---
+layout: one-column
+title: Blog
+description: Blog archive
+paginate:
+    collection:   posts
+    permalink:    /page/:num/   # pagination path (relative to template page)
+---
+
+{% for post in paginator.posts %}
+    <h1 class="blog-post-title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </h1>
+
+    <p>
+        Posted on <strong>{{ post.date | date: "%B %d, %Y" }}</strong>
+    </p>
+
+    <div class="post-index-content">
+        {{ post.content }}
+    </div>
+{% endfor %}
+
+<div class="row">
+    <div class="columns small-6">
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}">&larr; Older</a>
+        {% endif %}
+    </div>
+    <div class="columns small-6 text-right">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}">Newer &rarr;</a>
+        {% endif %}
+    </div>
+</div>

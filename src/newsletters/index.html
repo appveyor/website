@@ -1,0 +1,31 @@
+---
+layout: one-column
+title: Newsletter archive
+description: Newsletter archive
+paginate:
+    collection:   newsletters
+    permalink:    /page/:num/   # pagination path (relative to template page)
+sitemap: false
+published: false
+---
+
+<h1>Newsletter archive</h1>
+
+{% for post in paginator.newsletters %}
+    <h2>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+{% endfor %}
+
+<div class="row">
+    <div class="columns small-6">
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}">&larr; Older</a>
+        {% endif %}
+    </div>
+    <div class="columns small-6">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}">Newer &rarr;</a>
+        {% endif %}
+    </div>
+</div>

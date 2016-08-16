@@ -1,0 +1,81 @@
+name:               AppVeyor
+description:        "#1 Continuous Delivery service for Windows"
+lang:               en
+
+markdown:           kramdown
+kramdown:
+#    header_offset: 1
+    input: GFM
+highlighter:        rouge
+
+gems:
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-sitemap
+    - octopress-paginate
+
+exclude:
+    # we generate those files ourselves
+    - "*.css"
+    - "*.js"
+
+# permalinks
+permalink:          pretty
+
+# pagination
+pagination:
+    limit:          false
+    per_page:       5
+
+# server
+source:             src/
+destination:        _site/
+port:               4000
+url:                https://www.appveyor.com
+encoding:           UTF-8
+
+# custom variables
+github_repo_root:    https://github.com/appveyor/website/tree/master/src
+
+# https://jekyllrb.com/docs/configuration/#front-matter-defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Feodor Fitsner"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      seo:
+        type: WebPage
+
+collections:
+    posts:
+        permalink: /blog/:year/:month/:day/:title/
+        output: true
+    newsletters:
+        permalink: /:collection/:year/:month/:day/:title/
+        output: false
+    updates:
+        permalink: /:collection/:year/:month/:day/
+        output: true
+
+feed:
+    description:    Latest information about AppVeyor.
+    path:           feed.xml
+    url:            https://www.appveyor.com
+
+# jekyll-seo-tag
+logo:               https://www.appveyor.com/assets/images/appveyor-logo-256.png
+
+twitter:
+  username:         appveyor
+
+social:
+  name:             AppVeyor
+  links:            ["https://twitter.com/appveyor"]
