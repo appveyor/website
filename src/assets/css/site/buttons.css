@@ -35,7 +35,7 @@ a.big-button:active {
 button,
 .button {
     cursor: pointer;
-    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #00b3e0;
     border: 1px dotted #00b3e0;
     -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;
