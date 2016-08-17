@@ -50,8 +50,8 @@ module.exports = function(grunt) {
                 cwd: "<%= dirs.dest %>",
                 dest: "<%= dirs.dest %>",
                 src: [
-                    "**/*.html",
-                    "!404.html"
+                    "**/*.aspx",
+                    "**/*.html"
                 ]
             }
         },
@@ -159,7 +159,7 @@ module.exports = function(grunt) {
 
         usemin: {
             css: "<%= dirs.dest %>/assets/css/pack*.css",
-            html: "<%= dirs.dest %>/**/*.html",
+            html: ["<%= dirs.dest %>/**/*.html", "<%= dirs.dest %>/**/*.aspx"],
             options: {
                 assetsDirs: [
                     "<%= dirs.dest %>/",
