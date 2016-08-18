@@ -17,7 +17,7 @@ We assume you start from a clean Windows Server 2012 machine.
 * <a href="https://www.python.org/downloads/">Python 2.7.6</a>
 * add `c:\Python27` to `PATH`
 
-<span style="font-style:inherit;line-height:1.625;">Open command line prompt and make sure all tools are available in the `PATH`: </span>hg, git, python.
+Open command line prompt and make sure all tools are available in the `PATH`: hg, git, python.
 
 ## Migration
 
@@ -84,7 +84,7 @@ If you need to map authors to new repository with different name/email create `a
 Feodor Fitsner <feodor@appveyor.com>=Feodor Fitsner <feodor@fitsner.com>
 ```
 
-<span style="font-style:inherit;line-height:1.625;">Run Python script to import Mercurial repo into Git one (you are running this script from Git repository directory):</span>
+Run Python script to import Mercurial repo into Git one (you are running this script from Git repository directory):
 
 ```text
 hg-fast-export.sh -r c:\projects\demoapp -A authors.txt

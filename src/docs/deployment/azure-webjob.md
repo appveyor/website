@@ -54,12 +54,12 @@ Configuring in `appveyor.yml`:
 
 ```yaml
 deploy:
-- provider: AzureWebJob
-  website: mywebsite
-  username: $mywebsite
-  password:
-    secure: AAABBB33CC/DDD+EEE==
-  artifact: myjob.zip
-  job_name: myjob-1
-  job_schedule: '* 0 * * * *'
+  - provider: AzureWebJob
+    website: mywebsite
+    username: $mywebsite
+    password:
+      secure: AAABBB33CC/DDD+EEE==
+    artifact: myjob.zip
+    job_name: myjob-1
+    job_schedule: '* 0 * * * *'
 ```

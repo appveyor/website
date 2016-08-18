@@ -11,7 +11,7 @@ Every AppVeyor account comes with following built-in NuGet feeds:
 * **Account feed** - password-protected feed aggregating NuGet packages from all projects with support of publishing of your own packages
 * **Project feeds** - collect all NuGet packages pushed to artifacts during the build
 
-<span style="color:#000000;font-weight:bold;font-style:inherit;line-height:1.625;">Account NuGet feed</span>
+## Account NuGet feed
 
 Account NuGet feed aggregates packages from all project feeds and allows publishing of your custom packages. All account feeds are password-protected. You can find account feed URL and its API key on **Account → NuGet** page:
 

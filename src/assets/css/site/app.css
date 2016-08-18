@@ -120,3 +120,8 @@ div.title h2 {
     margin-left: 2rem;
     list-style-type: upper-alpha;
 }
+
+.clear-both {
+    clear: both;
+}
+
