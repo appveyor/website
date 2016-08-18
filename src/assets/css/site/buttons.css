@@ -25,19 +25,6 @@ a.big-button:active {
     color: #fff;
 }
 
-.big-button.blue {
-    background-color: #0b99d6;
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
-    -o-transition: background-color 0.3s;
-    transition: background-color 0.3s;
-}
-
-.big-button.blue:hover,
-.big-button.blue:active {
-    background-color: #00bde8;
-}
-
 .action-buttons,
 .bottom-action-buttons {
     margin: 30px 0 0 0;

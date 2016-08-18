@@ -18,7 +18,7 @@ Now you can use AppVeyor practically with any repository out there whether it is
 
 All beloved GitHub features such as branch builds, Pull Requests and webhooks are available in [GitHub Enterprise](https://enterprise.github.com/) integration. AppVeyor can use both OAuth and Personal Access tokens to authenticate against your GitHub Enterprise repositories.
 
-<div style="clear:both;"></div>
+<div class="clear-both"></div>
 
 ## Atlassian Stash
 
@@ -26,7 +26,7 @@ All beloved GitHub features such as branch builds, Pull Requests and webhooks ar
 
 AppVeyor provides complete and seamless integration with [Atlassian Stash](https://www.atlassian.com/software/stash). Both OAuth and Basic authentications are supported. Whenever you add a new project in AppVeyor webhook and repository SSH key are automatically set.
 
-<div style="clear:both;"></div>
+<div class="clear-both"></div>
 
 ## Git, Mercurial and Subversion repositories
 
@@ -34,12 +34,11 @@ AppVeyor provides complete and seamless integration with [Atlassian Stash](https
 
 Now you can specify a URL to any repository hosted on the Internet! AppVeyor supports credentials and SSH authentication against those repositories.
 
-<div style="clear:both;"></div>
+<div class="clear-both"></div>
 
-<div style="background:#f5f5f5;padding:1rem;border-radius: 5px;margin: 2rem 0;">
-    <p style="margin: 0 0 1rem 0;text-align:center;font-size:16pt;font-weight:bold;color: #444;">Do we support your repository now?</p>
-
-    <p style="margin: 0 0 0 0;text-align:center;font-size:12pt;"><a href="mailto:team@appveyor.com">Send us a message</a> if you want to re-evaluate AppVeyor!</p>
+<div class="panel radius text-center">
+    <h4>Do we support your repository now?</h4>
+    <p><a href="mailto:team@appveyor.com">Send us a message</a> if you want to re-evaluate AppVeyor!</p>
 </div>
 
 
