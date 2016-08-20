@@ -3,11 +3,13 @@ layout: docs
 title: Selenium testing
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Selenium testing
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## .NET
 
@@ -17,7 +19,7 @@ AppVeyor build worker images are used to have the latest version of Firefox brow
 
 You use `FirefoxDriver` class from [`Selenium WebDriver` library](https://www.nuget.org/packages/Selenium.WebDriver/) to run tests on Firefox.
 
-**Firefox 46 and below**
+#### Firefox 46 and below
 
 If you need to run your tests against earlier versions of Firefox we recommend using [Chocolatey](https://chocolatey.org/packages/Firefox) for installing Firefox 46 and below.
 Just add this line to `install` section of your `appveyor.yml` to remove the current Firefox and install Firefox 46.0.1:
@@ -33,7 +35,7 @@ In your tests you create `FirefoxDriver` as simply:
 var driver = new FirefoxDriver();
 ```
 
-**Firefox 47 and above**
+#### Firefox 47 and above
 
 Starting from Firefox 47.x the way WebDriver works has changed.
 

@@ -3,11 +3,13 @@ layout: docs
 title: Running tests
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Running tests
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 AppVeyor has tight integration with the following testing frameworks:
 
@@ -39,7 +41,7 @@ or if build configuration is set in environment variable:
 
     **\bin\$(configuration)\test-assembly.dll
 
-> You can substitute any existing environment variable
+You can substitute any existing environment variable
 
 To match all assemblies ending with `.tests.dll`:
 
@@ -70,7 +72,7 @@ after_test:
   - script 2
 ```
 
-> If assembly path in `appveyor.yml` starts with `*` surround the value with single quotes to make YAML parser happy:
+If assembly path in `appveyor.yml` starts with `*` surround the value with single quotes to make YAML parser happy:
 
 ```yaml
 test:
@@ -262,8 +264,7 @@ $wc = New-Object 'System.Net.WebClient'
 $wc.UploadFile("https://ci.appveyor.com/api/testresults/xunit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\xunit-results.xml))
 ```
 
-
-> XML files must be uploaded as `multipart/form-data`.
+XML files must be uploaded as `multipart/form-data`.
 
 See also:
 

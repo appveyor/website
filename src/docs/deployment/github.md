@@ -3,10 +3,14 @@ layout: docs
 title: Publishing artifacts to GitHub Releases
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Publishing artifacts to GitHub Releases
 {:.no_toc}
 
-The `GitHub` deployment provider uploads build artifacts to an existing GitHub release or creates a new release if one does not already exist. You can publish artifacts during the build or use staged deployment by configuring new environment of `GitHub` type at https://ci.appveyor.com/environments.
+The `GitHub` deployment provider uploads build artifacts to an existing GitHub release
+or creates a new release if one does not already exist. You can publish artifacts during
+the build or use staged deployment by configuring new environment of `GitHub` type at
+<https://ci.appveyor.com/environments>.
 
 Note that the provider name `GitHub` is case sensitive (e.g. not `Github`).
 
@@ -14,6 +18,7 @@ Table of contents:
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 
 ## Usage scenarios
@@ -31,7 +36,7 @@ Alternatively, you may tell AppVeyor to create a "draft" release so you can perf
 
 ### Promoting selected tag to GitHub release
 
-In this scenario you configure a new "Environment" of GitHub type at https://ci.appveyor.com/environments, then:
+In this scenario you configure a new "Environment" of GitHub type at <https://ci.appveyor.com/environments>, then:
 
 1. Add new tag in local repo.
 2. Push tag to GitHub repo and start a new AppVeyor build.

@@ -3,11 +3,13 @@ layout: docs
 title: Status badges
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Status badges
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 A Project status badge is a dynamically generated image displaying the status of the last build. You can put a status badge on the home page of your GitHub project or intranet portal:
 
@@ -21,15 +23,15 @@ The default badge URL you see on the Badges tab returns the status of the last b
 
 To display the status of a specific branch append `/branch/<branch-name>` to that URL, for example:
 
-{% raw %}
-    https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva/branch/master
-{% endraw %}
+```text
+https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva/branch/master
+```
 
 To link specific branch with the project add `/branch/<branch-name>` to project URL, for example:
 
-{% raw %}
-    https://ci.appveyor.com/project/myaccount/myproject/branch/master
-{% endraw %}
+```text
+https://ci.appveyor.com/project/myaccount/myproject/branch/master
+```
 
 ## Retina support
 
@@ -75,11 +77,11 @@ You can infer badge URL for **projects with public repositories**, well, provide
 
 The format of badge status image URL:
 
-{% raw %}
-    https://ci.appveyor.com/api/projects/status/{github|bitbucket}/{repository}
-{% endraw %}
+```text
+https://ci.appveyor.com/api/projects/status/{github|bitbucket}/{repository}
+```
 
-For example: https://ci.appveyor.com/api/projects/status/github/gruntjs/grunt
+For example: `https://ci.appveyor.com/api/projects/status/github/gruntjs/grunt`
 
 Optional parameters:
 

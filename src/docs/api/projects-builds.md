@@ -176,7 +176,7 @@ Request:
 
 Response:
 
-> Response is the same as [Get project last build](#get-project-last-build)
+Response is the same as [Get project last build](#get-project-last-build)
 
 
 ## Get project build by version
@@ -187,7 +187,7 @@ Request:
 
 Response:
 
-> Response is the same as [Get project last build](#get-project-last-build)
+Response is the same as [Get project last build](#get-project-last-build)
 
 
 ## Get project history

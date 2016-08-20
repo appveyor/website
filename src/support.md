@@ -4,24 +4,27 @@ title: Support
 description: Support options
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Support options
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## System status
 
-Check this page (powered by [StatusPage.io](https://www.statuspage.io/)) for any ongoing issues happening to AppVeyor:
+Check this page (powered by [StatusPage.io](https://www.statuspage.io/))
+for any ongoing issues happening to AppVeyor:
 
-<a href="https://appveyor.statuspage.io" target="_blank">https://appveyor.statuspage.io</a>
+<http://appveyor.statuspage.io>
 
 ## Forums and support tickets
 
-AppVeyor support forums is a great source of solutions to various problems provided by AppVeyor team and community.
+AppVeyor support forums is a great source of solutions to various problems provided
+by AppVeyor team and community.
 
-<a href="http://help.appveyor.com" target="_blank">http://help.appveyor.com</a>
-
+<http://help.appveyor.com>
 
 * Use forums if you want to report the issue, make a suggestion or have a general discussion.
 * Forums are hosted by [Tender](https://tenderapp.com/). Tender does not support HTTPS on custom domains, so if you need accessing AppVeyor support forums via **HTTPS** please use this URL: [https://appveyor.tenderapp.com](https://appveyor.tenderapp.com)
@@ -48,7 +51,7 @@ Whenever AppVeyor service or build workers are updated we add a new entry to thi
 
 See what's planned for development or what has just been delivered. AppVeyor maintains public GitHub repository to track development progress and you are welcome to submit your feature request or bug there:
 
-<a href="https://github.com/appveyor/ci/issues" target="_blank">https://github.com/appveyor/ci/issues</a>
+<https://github.com/appveyor/ci/issues>
 
 Issue submission guidelines:
 

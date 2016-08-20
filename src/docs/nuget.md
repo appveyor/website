@@ -3,17 +3,18 @@ layout: docs
 title: NuGet
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # NuGet
 {:.no_toc}
 
 AppVeyor has built-in NuGet hosting. Every AppVeyor account comes with the following feeds:
 
-**Account feed** - password-protected feed that aggregates NuGet packages from all projects and supports publishing of your own packages.
-
-**Project feeds** - every project has a NuGet feed which stores all artifact packages of type "NuGet package" pushed during builds.
+* **Account feed** - password-protected feed that aggregates NuGet packages from all projects and supports publishing of your own packages.
+* **Project feeds** - every project has a NuGet feed which stores all artifact packages of type "NuGet package" pushed during builds.
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 
 ## Account NuGet feed
@@ -23,13 +24,14 @@ All account feeds are password-protected. You can find the account feed URL and 
 
 You can use your AppVeyor account email/password to access password-protected NuGet feeds, although we recommend creating a separate user account just for these purposes (**Account -> Team**).
 
-> If you use the GitHub or Bitbucket button to log in to AppVeyor you can reset your AppVeyor account password using the **Forgot password** link.
+If you use the GitHub or Bitbucket button to log in to AppVeyor you can reset your AppVeyor account
+password using the **Forgot password** link.
 
 For publishing your own packages to your account feed use the command:
 
      nuget push <your-package.nupkg> -ApiKey <your-api-key> -Source <feed-url>
 
-\* Replace `<your-api-key>` and `<feed-url>` with values from **Account -> NuGet** page.
+Replace `<your-api-key>` and `<feed-url>` with values from **Account -> NuGet** page.
 
 
 
@@ -55,7 +57,8 @@ To push a NuGet package as an artifact and publish it in both project and accoun
 
     appveyor PushArtifact <your-nugetpackage.nupkg>
 
-> When you delete a project in AppVeyor its corresponding NuGet feed is deleted, however all NuGet packages from that feed remain published in account feed.
+When you delete a project in AppVeyor its corresponding NuGet feed is deleted,
+however all NuGet packages from that feed remain published in account feed.
 
 
 ## Publishing NuGet symbols to AppVeyor account feed

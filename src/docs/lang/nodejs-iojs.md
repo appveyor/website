@@ -3,12 +3,13 @@ layout: docs
 title: Testing with Node.js and io.js
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Testing with Node.js and io.js
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
-
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## Quick start
 
@@ -50,7 +51,9 @@ init:
   - git config --global core.autocrlf true
 ```
 
-> Anyway, we do not recommend relying on `core.autocrlf` value set on AppVeyor build workers and always explicitly change this setting during the build or [have it configured per-repository](https://help.github.com/articles/dealing-with-line-endings/).
+We do not recommend relying on `core.autocrlf` value set on AppVeyor build workers
+and always explicitly change this setting during the build or
+[have it configured per-repository](https://help.github.com/articles/dealing-with-line-endings/).
 
 
 ## Selecting Node.js or io.js version

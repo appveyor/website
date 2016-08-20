@@ -4,10 +4,12 @@ title: About us
 description: About AppVeyor, why we built AppVeyor
 ---
 
+<!-- markdownlint-disable MD033 -->
 <div class="title">
     <h1>About us</h1>
     <h2>AppVeyor aims to give powerful Continuous Integration and Deployment tools to every .NET developer without the hassle of setting up and maintaining their own build server.</h2>
 </div>
+<!-- markdownlint-enable MD033 -->
 
 ## Why are we building AppVeyor?
 

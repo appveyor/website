@@ -3,13 +3,15 @@ layout: docs
 title: Deploying to remote servers with AppVeyor Deployment Agent
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Deploying to remote servers with AppVeyor Deployment Agent
 {:.no_toc}
+
 AppVeyor Deployment Agent (Deployment Agent) is a service running on remote server and helping to deploy select artifact as IIS website or Windows application/service.
 
 * Comment to trigger ToC generation
 {:toc}
-
+<!-- markdownlint-enable MD022 MD032 -->
 
 
 ## Software requirements
@@ -21,18 +23,13 @@ The following is required on the server to run Deployment Agent:
 * Web Role (IIS) is installed if you are deploying web site
 
 
-
 ## Installing AppVeyor Deployment Agent
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
-
 2. Download AppVeyor Deployment Agent (.msi)
-
-  * [**AppVeyor Deployment Agent - latest** (v3.12.0)]({{ site.url }}/downloads/deployment-agent/latest/AppveyorDeploymentAgent.msi)
-  * [AppVeyor Deployment Agent v3.12.0]({{ site.url }}/downloads/deployment-agent/3.12.0/AppveyorDeploymentAgent.msi)
-
+    * [**AppVeyor Deployment Agent - latest** (v3.12.0)]({{ site.url }}/downloads/deployment-agent/latest/AppveyorDeploymentAgent.msi)
+    * [AppVeyor Deployment Agent v3.12.0]({{ site.url }}/downloads/deployment-agent/3.12.0/AppveyorDeploymentAgent.msi)
 3. Specify **Environment access key** during Deployment Agent installation.
-
 4. Server is ready for deployment.
 
 
@@ -45,20 +42,18 @@ Run the following in PowerShell console:
 msiexec /i AppveyorDeploymentAgent.msi /quiet /qn /norestart /log install.log ENVIRONMENT_ACCESS_KEY=<your_access_key> DEPLOYMENT_GROUP=<your_deployment_group>
 ```
 
-> Replace `<your_access_key>` with your environment access key.
-
-> Replace `<your_deployment_group>` with your deployment group.
+Replace `<your_access_key>` and `<your_deployment_group>` with your environment access key and your your deployment group respectively.
 
 
 ## What artifacts can be deployed
 
 Deployment Agent recognizes artifacts of two types which may contain either web application or Windows application/service:
 
-* **Zip archive**
-* **Web Deploy package**
+* Zip archive
+* Web Deploy package
 
-To be deployable with Deployment Agent *artifact must have a name*. Name should not have any spaces. All unnamed artifacts are skipped by Deployment Agent provider.
-
+To be deployable with Deployment Agent *artifact must have a name*.
+Name should not have any spaces. All unnamed artifacts are skipped by Deployment Agent provider.
 
 
 ## How to get named artifacts
@@ -67,15 +62,12 @@ There are few possible ways of packaging artifact deployable by Agent:
 
 1. When **Package Web Application projects** option is enabled on **Build** tab of project settings AppVeyor automatically publishes (applies web config transforms)
    and uploads VS.NET Web Application projects as artifacts named after the name of VS.NET project.
-
 2. Specify **Deployment name** while adding artifact entry on **Artifacts** tab of project settings.
-
 3. From script, for example **After build script**:
 
-    ```
+    ```text
     appveyor PushArtifact <zip_path> -DeploymentName MyApp
     ```
-
 
 ## Configuring deployment settings
 
@@ -153,7 +145,9 @@ Other settings:
 * `group` - Deployment group.
 * `deploy_order` - Optional. Allows changing the deployment order of artifacts. Artifacts are deployed in ascending order. Deployment order is set to `0` if not specified.
 
-> When deploying web app from Web Deploy package you can use [Web Deploy parametrization](/docs/deployment/web-deploy#web-deploy-parametrization) with environment variables.
+When deploying web app from Web Deploy package you can use
+[Web Deploy parametrization](/docs/deployment/web-deploy#web-deploy-parametrization)
+with environment variables.
 
 You can specify multiple bindings in `hostname`, `ip` and `port` separated by semi-colon. Below is an example of how 3 bindings can be configured:
 
@@ -162,7 +156,6 @@ You can specify multiple bindings in `hostname`, `ip` and `port` separated by se
 * https \*:443: cert=\*.mysite.com
 
 ![agent-multiple-bindings](/assets/images/docs/deployment/agent/agent-multiple-bindings.png)
-
 
 
 ## Deploying artifact package as a Windows application
@@ -301,8 +294,7 @@ if (Enter-OncePerDeployment "block_name")
 }
 ```
 
-> Replace `block_name` with some value identifying operations inside the block, e.g. "install_sql"
-
+Replace `block_name` with some value identifying operations inside the block, e.g. "install_sql"
 
 
 ## Troubleshooting

@@ -3,21 +3,29 @@ layout: docs
 title: Building Xamarin projects
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Building Xamarin projects
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## Introduction
 
-`Visual Studio 2015` build image (which is default image for OSS plans) has [Xamarin Platform](https://www.xamarin.com/) pre-installed and allows building Android and iOS libraries.
+`Visual Studio 2015` build image (which is default image for OSS plans) has [Xamarin Platform](https://www.xamarin.com/)
+pre-installed and allows building Android and iOS libraries.
 
-> Building `.ipa` application packages requires Mac computer and is not currently supported.
+Building `.ipa` application packages requires Mac computer and is not currently supported.
 
-However, building Xamarin projects with MSBuild command line requires a valid Xamarin license (trial, commercial or open-source) which, once activated, is bound to specific computer. The license can be activated on a limited number of computers. **You should bring your own license (BYOL) to build Xamarin projects on AppVeyor platform.**
+However, building Xamarin projects with MSBuild command line requires a valid Xamarin license
+(trial, commercial or open-source) which, once activated, is bound to specific computer.
+The license can be activated on a limited number of computers.
+**You should bring your own license (BYOL) to build Xamarin projects on AppVeyor platform.**
 
-AppVeyor has a built-in tool for activating and deactivating Xamarin licenses. AppVeyor build workers are stateless which means their state is not preserved between builds. The license is activated on build start and deactivated on build finish.
+AppVeyor has a built-in tool for activating and deactivating Xamarin licenses.
+AppVeyor build workers are stateless which means their state is not preserved between builds.
+The license is activated on build start and deactivated on build finish.
 
 ## Setting up Xamarin account credentials
 
@@ -44,12 +52,14 @@ xamarin:
   ios: true
 ```
 
-> Even if you use `appveyor.yml` for configuring your projects you can still set Xamarin account credentials on project UI and remove them from `appveyor.yml`.
+Even if you use `appveyor.yml` for configuring your projects you can still set Xamarin account credentials on project UI and remove them from `appveyor.yml`.
 
 ## Restoring Xamarin components
 
-To restore Xamarin components on build worker you use `xamarin-component.exe` tool. The tool is available at the following location: [https://components.xamarin.com/submit/xpkg](https://components.xamarin.com/submit/xpkg)
-* rename downloaded file to `xpkg.zip` and unzip to extract the tool.
+To restore Xamarin components on build worker you use `xamarin-component.exe` tool.
+The tool is available at the following location: [https://components.xamarin.com/submit/xpkg](https://components.xamarin.com/submit/xpkg)
+
+Rrename downloaded file to `xpkg.zip` and unzip to extract the tool.
 
 The main challenge of using this tool on a build server is that to restore components it requires authentication with your Xamarin credentials,
 however `login` action prompts for password interactively thus blocking the build.

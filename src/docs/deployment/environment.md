@@ -5,7 +5,8 @@ title: Deploying to existing environment
 
 # Deploying to existing environment
 
-Environment deployment provider starts asynchronous deployment to the existing environment with specified name.  If you don't have any environments set up yet, you can create one at https://ci.appveyor.com/environments.
+Environment deployment provider starts asynchronous deployment to the existing environment with specified name.
+If you don't have any environments set up yet, you can create one at <https://ci.appveyor.com/environments>.
 
 ## Provider settings
 
@@ -31,11 +32,11 @@ Then, when deploying to that environment during the build you can define `websit
 
 ```yaml
 deploy:
-- provider: Environment
-  name: Azure Web Sites
-  website_name: Site-A
+  - provider: Environment
+    name: Azure Web Sites
+    website_name: Site-A
 
-- provider: Environment
-  name: Azure Web Sites
-  website_name: Site-B
+  - provider: Environment
+    name: Azure Web Sites
+    website_name: Site-B
 ```

@@ -3,11 +3,13 @@ layout: docs
 title: Build notifications
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Build notifications
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 Build notifications are defined on project level and triggered on build success or fail events.
 You can configure notification on **Notifications** tab of project settings or in `notifications` section of `appveyor.yml`:
@@ -24,7 +26,7 @@ notifications:
     settings: ...
 ```
 
-> **Notifications defined on project settings UI are merged with notifications defined in appveyor.yml.**
+**Notifications defined on project settings UI are merged with notifications defined in appveyor.yml.**
 
 ## Triggering notifications
 
@@ -202,7 +204,7 @@ notifications:
 {% endraw %}
 ```
 
-> Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
+Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
 
 ## GitHub Pull Request
@@ -239,7 +241,7 @@ notifications:
 {% endraw %}
 ```
 
-> Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
+Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
 
 ## HipChat
@@ -261,15 +263,15 @@ while API v2 always sends messages on behalf API token issuer:
 
 You can generate API v1 token on this page (you must be a group admin):
 
-```
+```text
 https://<your_account>.hipchat.com/admin/api
 ```
 
-> **Notification** token type is enough for AppVeyor to post message to a room.
+**Notification** token type is enough for AppVeyor to post message to a room.
 
 You can generate API v2 token on this page:
 
-```
+```text
 https://<your_account>.hipchat.com/account/api
 ```
 
@@ -300,8 +302,7 @@ notifications:
 {% endraw %}
 ```
 
-> Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
-
+Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
 
 ## Campfire
@@ -310,7 +311,7 @@ notifications:
 
 Campfire API authentication token can be generated on **My info** page:
 
-```
+```text
 https://<your_account>.campfirenow.com/member/edit
 ```
 
@@ -341,8 +342,7 @@ notifications:
 {% endraw %}
 ```
 
-> Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
-
+Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encrypt).
 
 
 ## VSO Team Rooms
@@ -355,10 +355,12 @@ Visual Studio Online team notifications are being sent on someone's behalf and t
 
 Default VSO message template
 
+```text
 {% raw %}
-    Build {{projectName}} {{buildVersion}} {{status}}: {{buildUrl}}
-    Commit #{{commitId}} by {{commitAuthor}} on {{commitDate}}: {{commitMessage}}
+Build {{projectName}} {{buildVersion}} {{status}}: {{buildUrl}}
+Commit #{{commitId}} by {{commitAuthor}} on {{commitDate}}: {{commitMessage}}
 {% endraw %}
+```
 
 ### appveyor.yml configuration
 
@@ -400,15 +402,17 @@ notifications:
 
 You can use Mustache variables (explained in the section below) in URL and header values, for example:
 
+```text
 {% raw %}
-    - provider: Webhook
-      url: http://requestb.in/test?appveyor_build_version={{buildVersion}}&appveyor_commit_id={{commitId}}
-      method: GET
-      headers:
-        APPVEYOR-PROJECT-NAME: '{{projectName}}'
-        APPVEYOR-BUILD-VERSION: '{{buildVersion}}'
-        APPVEYOR-COMMIT-ID: '{{commitId}}'
+- provider: Webhook
+  url: http://requestb.in/test?appveyor_build_version={{buildVersion}}&appveyor_commit_id={{commitId}}
+  method: GET
+  headers:
+    APPVEYOR-PROJECT-NAME: '{{projectName}}'
+    APPVEYOR-BUILD-VERSION: '{{buildVersion}}'
+    APPVEYOR-COMMIT-ID: '{{commitId}}'
 {% endraw %}
+```
 
 ### Webhook payload
 
@@ -486,8 +490,7 @@ When webhook notification triggers AppVeyor makes POST request to the webhook UR
 }
 ```
 
-> `eventName` can be either `build_success` or `build_failure`
-
+`eventName` can be either `build_success` or `build_failure`
 
 
 ## Customizing message template

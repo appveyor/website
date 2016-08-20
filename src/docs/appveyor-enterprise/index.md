@@ -3,13 +3,17 @@ layout: docs
 title: Getting started with AppVeyor Enterprise
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Getting started with AppVeyor Enterprise
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
+<!-- markdownlint-disable MD033 -->
 <p class="new-feature">Note about this beta release - it's not intended for installing on production environment.</p>
+<!-- markdownlint-enable MD033 -->
 
 ## Introduction
 
@@ -30,7 +34,7 @@ AppVeyor Enterprise is a downloadable version of AppVeyor CI that can be install
 * Windows 8.1 x64 any edition
 * Windows 8 x64 any edition
 
-> Why AppVeyor requires Windows 8/Server 2012 or higher? AppVeyor Web worker requires **WebSockets support** which was added in Windows 8/Server 2012. Windows 7/Server 2008 don't have built-in WebSockets support.
+Why AppVeyor requires Windows 8/Server 2012 or higher? AppVeyor Web worker requires **WebSockets support** which was added in Windows 8/Server 2012. Windows 7/Server 2008 don't have built-in WebSockets support.
 
 ### .NET
 
@@ -105,7 +109,7 @@ Installation notes:
 * Service should be running under account which is a member of local `Administrators` group.
 
 
-###  Stateful vs stateless builds
+### Stateful vs stateless builds
 
 AppVeyor can run builds on build workers of two types:
 
@@ -277,7 +281,8 @@ Installing and configuring your own SMTP service is out-of-scope of this guide. 
 
 [Mailgun](https://www.mailgun.com/) is a managed email sending/receiving provider. You can send up to 10,000 messages per month for [free](https://www.mailgun.com/pricing).
 
-> AppVeyor is not affiliated with Mailgun in any way. We recommend it because we use it ourselves in production and love it.
+AppVeyor is not affiliated with Mailgun in any way.
+We recommend it because we use it ourselves in production and love it.
 
 **SendGrid**
 
@@ -313,7 +318,8 @@ When something goes wrong:
 
 ## Running builds on Azure VMs
 
-> This section is still under construction - please [let us know](/support/) if you are interested to run "stateless" builds on Azure VMs.
+This section is still under construction - please [let us know](/support/) if you are interested
+to run "stateless" builds on Azure VMs.
 
 Setup process outline:
 
@@ -333,7 +339,8 @@ Setup process outline:
 
 ## Running builds on Hyper-V VMs
 
-> This section is still under construction - please [let us know](/support/) if you are interested to run "stateless" builds on Hyper-V VMs.
+This section is still under construction - please [let us know](/support/)
+if you are interested to run "stateless" builds on Hyper-V VMs.
 
 Setup process outline:
 

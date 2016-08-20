@@ -5,6 +5,8 @@ title: Team API
 
 # Team
 
+<!-- markdownlint-disable MD001 -->
+
 ### Users
 
 * [Get users](#get-users)
@@ -29,6 +31,7 @@ title: Team API
 * [Update role](#update-role)
 * [Delete role](#delete-role)
 
+<!-- markdownlint-enable MD001-->
 
 ## Get users
 

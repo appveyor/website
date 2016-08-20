@@ -3,25 +3,33 @@ layout: docs
 title: Deployment
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Deployment
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
-
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## Overview
 
-The fact AppVeyor deployment requires build artifacts on input makes deployment process predictable and repeatable.
+The fact AppVeyor deployment requires build artifacts on input makes deployment
+process predictable and repeatable.
 
-AppVeyor allows you to deploy using multiple providers **as part of the build process** (inline deployment) as well as **promote builds to existing environments** (environment deployment).
+AppVeyor allows you to deploy using multiple providers **as part of the build process**
+(inline deployment) as well as **promote builds to existing environments** (environment deployment).
 
-**Inline deployment** runs as the last phase in the [build pipeline](/docs/build-configuration#build-pipeline) and allows configuring multiple deployments running synchronously one-by-one with results in build console.
+**Inline deployment** runs as the last phase in the [build pipeline](/docs/build-configuration#build-pipeline)
+and allows configuring multiple deployments running synchronously one-by-one with results in build console.
 
-**Environment deployment** is triggered manually or through API to deploy "green" build to existing environment. A new deployment is registered within a project/environment with results in deployment console. If you don't have any existing environments, you can create one at https://ci.appveyor.com/environments.
+**Environment deployment** is triggered manually or through API to deploy "green" build to existing environment.
+A new deployment is registered within a project/environment with results in deployment console.
+If you don't have any existing environments, you can create one at <https://ci.appveyor.com/environments>.
 
-The table below summarizes key differences between two modes with lists of deployment providers available in each mode:
+The table below summarizes key differences between two modes with lists of deployment
+providers available in each mode:
 
+<!-- markdownlint-disable MD033 -->
 <table class="centered">
 <tr>
     <th>Inline deployment</th>
@@ -100,22 +108,26 @@ The table below summarizes key differences between two modes with lists of deplo
     <td>-</td>
 </tr>
 </table>
-
+<!-- markdownlint-enable MD033 -->
 
 
 ## Environment variables in provider settings
 
-You can use standard and custom environment variables in provider settings, for example you can set remote FTP folder as `$(appveyor_build_version)\artifacts` where `$(appveyor_build_version)` will be replaced with current build version.
-
+You can use standard and custom environment variables in provider settings, for example
+you can set remote FTP folder as `$(appveyor_build_version)\artifacts` where `$(appveyor_build_version)`
+will be replaced with current build version.
 
 
 ## Conditional deployment
 
-When you deploy as part of the build process you can control under which conditions deployment should be run.
+When you deploy as part of the build process you can control under which conditions
+deployment should be run.
 
-By default, AppVeyor deploys from all branches, but you can include only specific branches. Also, you can use any environment variables to have more complex conditions.
+By default, AppVeyor deploys from all branches, but you can include only specific branches.
+Also, you can use any environment variables to have more complex conditions.
 
-For example, to deploy from "master" branch and only artifacts built for "x86" platform (`platform` is the name of environment variable):
+For example, to deploy from "master" branch and only artifacts built for "x86" platform
+(`platform` is the name of environment variable):
 
 ```yaml
 - provider: Environment
@@ -125,14 +137,17 @@ For example, to deploy from "master" branch and only artifacts built for "x86" p
     platform: x86
 ```
 
-
 ## Deploy on tag (GitHub and GitLab only)
 
-By default AppVeyor starts a new build on any push to GitHub whether it's regular commit or a new tag. Repository tagging frequently used to trigger deployment.
+By default AppVeyor starts a new build on any push to GitHub whether it's regular commit or a new tag.
+Repository tagging frequently used to trigger deployment.
 
-AppVeyor sets `APPVEYOR_REPO_TAG` environment variable to distinguish regular commits from tags - the value is `true` if tag was pushed; otherwise it's `false`. When it's `true` the name of tag is stored in `APPVEYOR_REPO_TAG_NAME`.
+AppVeyor sets `APPVEYOR_REPO_TAG` environment variable to distinguish regular commits from tags -
+the value is `true` if tag was pushed; otherwise it's `false`. When it's `true` the name of tag
+is stored in `APPVEYOR_REPO_TAG_NAME`.
 
-You can use `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for example (for Environment provider):
+You can use `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for example
+(for Environment provider):
 
 ```yaml
 - provider: Environment

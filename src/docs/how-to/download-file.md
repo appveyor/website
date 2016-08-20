@@ -3,6 +3,7 @@ layout: docs
 title: Download file
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # How to download file
 {:.no_toc}
 
@@ -12,7 +13,7 @@ There is a number of ways you can use to download file in AppVeyor environment:
 
 * Comment to trigger ToC generation
 {:toc}
-
+<!-- markdownlint-enable MD022 MD032 -->
 
 
 ## Invoke-WebRequest cmdlet
@@ -33,7 +34,7 @@ $destination = "c:\application\data\newdata.xml"
 Invoke-WebRequest $source -OutFile $destination -Credential ftpUser
 ```
 
-> Examples taken from [this blog post](http://www.powershellatoms.com/basic/download-file-website-powershell/).
+Examples taken from [this blog post](http://www.powershellatoms.com/basic/download-file-website-powershell/).
 
 
 ## WebClient class
@@ -59,7 +60,7 @@ Command syntax:
 
     Start-FileDownload <url> [-FileName <string>] [-Timeout <int>]
 
-> Timeout value is milliseconds. Default timeout is 300000 (5 minutes).
+Timeout value is milliseconds. Default timeout is 300000 (5 minutes).
 
 For example, the following command downloads remote file to the current folder with `installer.msi` name:
 

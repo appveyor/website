@@ -3,11 +3,13 @@ layout: docs
 title: Enabling HTTP proxy on AppVeyor build workers
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Enabling HTTP proxy on AppVeyor build workers
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## Enabling HTTP proxy
 

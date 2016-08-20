@@ -3,11 +3,13 @@ layout: docs
 title: Testing with Ruby
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Testing with Ruby
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## Installation
 

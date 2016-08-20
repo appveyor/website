@@ -5,7 +5,8 @@ title: Building private GitHub repositories with sub-modules
 
 # Building private GitHub repositories with sub-modules
 
-> The following article was written specifically for GitHub, but some of these techniques could be applied to other Git hosting platforms as well.
+The following article was written specifically for GitHub, but some of these techniques
+could be applied to other Git hosting platforms as well.
 
 ## How AppVeyor is cloning private repos
 
@@ -43,14 +44,17 @@ In command prompt type the following command:
 
 When prompted enter key file name, say `submodules` and empty passphrase.
 
-> `ssh-keygen.exe` utility is part of Git installation for Windows and *typically* it's located in `C:\Program Files (x86)\Git\bin` directory.
+`ssh-keygen.exe` utility is part of Git installation for Windows and *typically* is located
+in `C:\Program Files (x86)\Git\bin` directory.
 
 In the current directory you'll find two files: `submodules` which contains private key and `submodules.pub` with public key.
 
 
 ## Add SSH public key to GitHub
 
-> If you have only one sub-module in your main repository you can add public key directly to sub-module repo, however if there are multiple dependencies GitHub won't allow you to add the same key again.
+If you have only one sub-module in your main repository you can add public key directly
+to sub-module repo, however if there are multiple dependencies GitHub won't allow you to add
+the same key again.
 
 Open `submodules.pub` file and copy its contents to clipboard.
 
@@ -105,8 +109,14 @@ install:
 
 ## Security considerations
 
-"Secure" variables means you can safely put them into `appveyor.yml` that is visible to others. Other than that they are just regular environment variables in a build session that could be easily displayed in a build log by simple `Get-ChildItem env:`.
+"Secure" variables means you can safely put them into `appveyor.yml` that is visible to others.
+Other than that they are just regular environment variables in a build session that could be
+easily displayed in a build log by simple `Get-ChildItem env:`.
 
-However, secure variables are *not* decoded during Pull Request builds which prevents someone from submitting PR with malicious build script displaying those variables. In more controlled environment through with a trusted team and private GitHub repositories there is an option on General tab of project settings to allow secure variables for PRs.
+However, secure variables are *not* decoded during Pull Request builds which prevents someone
+from submitting PR with malicious build script displaying those variables. In more controlled
+environment through with a trusted team and private GitHub repositories there is an option on
+General tab of project settings to allow secure variables for PRs.
 
-> **If you accidentally submitted any sensitive information into public repo or displayed it in a public build log don't wait - invalidate/change/re-generate that data immediately!**
+**If you accidentally submitted any sensitive information into public repo or displayed it
+in a public build log don't wait - invalidate/change/re-generate that data immediately!**

@@ -3,14 +3,15 @@ layout: docs
 title: Build Worker Installed Software
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Build Worker installed software
 {:.no_toc}
 
 Below is the list of software pre-installed on Build Worker.
 
-
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## Operating system
 
@@ -247,35 +248,35 @@ Install-Product node '3'
 ### Qt
 
 * Qt (`C:\Qt`)
-    - Qt 5.7: `C:\Qt\5.7`
-      - MinGW 5.3.0 32 bit: `C:\Qt\5.7\mingw53_32`
-      - msvc2015 64-bit: `C:\Qt\5.7\msvc2015_64`
-      - msvc2015 32-bit: `C:\Qt\5.7\msvc2015`
-      - msvc2013 64-bit: `C:\Qt\5.7\msvc2013_64`
-      - msvc2013 32-bit: `C:\Qt\5.7\msvc2013`
-    - Qt 5.6.1: `C:\Qt\5.6`
-      - MinGW 4.9.2 32 bit: `C:\Qt\5.6\mingw49_32`
-      - msvc2015 64-bit: `C:\Qt\5.6\msvc2015_64`
-      - msvc2015 32-bit: `C:\Qt\5.6\msvc2015`
-      - msvc2013 64-bit: `C:\Qt\5.6\msvc2013_64`
-      - msvc2013 32-bit: `C:\Qt\5.6\msvc2013`
-    - Qt 5.5: `C:\Qt\5.5`
-      - MinGW 4.9.2 32 bit: `C:\Qt\5.5\mingw492_32`
-      - msvc2013 64-bit: `C:\Qt\5.5\msvc2013_64`
-      - msvc2013 32-bit: `C:\Qt\5.5\msvc2013`
-    - Qt 5.4: `C:\Qt\5.4`
-      - MinGW 4.9.1 (32 bit) OpenGL: `C:\Qt\5.4\mingw491_32`
-      - msvc2013 64-bit OpenGL: `C:\Qt\5.4\msvc2013_64_opengl`
-      - msvc2013 32-bit OpenGL: `C:\Qt\5.4\msvc2013_opengl`
-    - Qt 5.3: `C:\Qt\5.3`
-      - MinGW 4.8.2 (32 bit): `C:\Qt\5.3\mingw482_32`
-      - msvc2013 64-bit OpenGL: `C:\Qt\5.3\msvc2013_64_opengl`
-      - msvc2013 32-bit OpenGL: `C:\Qt\5.3\msvc2013_opengl`
-    - Tools
-      - MinGW 5.3.0: `C:\Qt\Tools\mingw530_32`
-      - MinGW 4.8.2: `C:\Qt\Tools\mingw482_32`
-      - MinGW 4.9.1: `C:\Qt\Tools\mingw491_32`
-      - MinGW 4.9.2: `C:\Qt\Tools\mingw492_32`
+    * Qt 5.7: `C:\Qt\5.7`
+        * MinGW 5.3.0 32 bit: `C:\Qt\5.7\mingw53_32`
+        * msvc2015 64-bit: `C:\Qt\5.7\msvc2015_64`
+        * msvc2015 32-bit: `C:\Qt\5.7\msvc2015`
+        * msvc2013 64-bit: `C:\Qt\5.7\msvc2013_64`
+        * msvc2013 32-bit: `C:\Qt\5.7\msvc2013`
+    * Qt 5.6.1: `C:\Qt\5.6`
+        * MinGW 4.9.2 32 bit: `C:\Qt\5.6\mingw49_32`
+        * msvc2015 64-bit: `C:\Qt\5.6\msvc2015_64`
+        * msvc2015 32-bit: `C:\Qt\5.6\msvc2015`
+        * msvc2013 64-bit: `C:\Qt\5.6\msvc2013_64`
+        * msvc2013 32-bit: `C:\Qt\5.6\msvc2013`
+    * Qt 5.5: `C:\Qt\5.5`
+        * MinGW 4.9.2 32 bit: `C:\Qt\5.5\mingw492_32`
+        * msvc2013 64-bit: `C:\Qt\5.5\msvc2013_64`
+        * msvc2013 32-bit: `C:\Qt\5.5\msvc2013`
+    * Qt 5.4: `C:\Qt\5.4`
+        * MinGW 4.9.1 (32 bit) OpenGL: `C:\Qt\5.4\mingw491_32`
+        * msvc2013 64-bit OpenGL: `C:\Qt\5.4\msvc2013_64_opengl`
+        * msvc2013 32-bit OpenGL: `C:\Qt\5.4\msvc2013_opengl`
+    * Qt 5.3: `C:\Qt\5.3`
+        * MinGW 4.8.2 (32 bit): `C:\Qt\5.3\mingw482_32`
+        * msvc2013 64-bit OpenGL: `C:\Qt\5.3\msvc2013_64_opengl`
+        * msvc2013 32-bit OpenGL: `C:\Qt\5.3\msvc2013_opengl`
+    * Tools
+        * MinGW 5.3.0: `C:\Qt\Tools\mingw530_32`
+        * MinGW 4.8.2: `C:\Qt\Tools\mingw482_32`
+        * MinGW 4.9.1: `C:\Qt\Tools\mingw491_32`
+        * MinGW 4.9.2: `C:\Qt\Tools\mingw492_32`
 * [Qt Installer Framework 2.0.1](https://download.qt.io/official_releases/qt-installer-framework/2.0.1/)
 
 ## Tools

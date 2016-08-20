@@ -9,7 +9,7 @@ NuGet deployment provider publishes artifacts of type **NuGet package** to remot
 
 ## Provider settings
 
-* **NuGet server URL** (`server`) - NuGet feed URL, e.g. https://nugetserver.com/nuget/feed. If server is not specified package will be pushed to NuGet.org.
+* **NuGet server URL** (`server`) - NuGet feed URL, e.g. `https://nugetserver.com/nuget/feed`. If server is not specified package will be pushed to NuGet.org.
 * **API key** (`api_key`) - your API key
 * **Symbol server URL** (`symbol_server`) - Publishing URL for symbol server, If server is not specified symbol package will be pushed to SymbolSource.org.
 * **Do not publish symbol packages** (`skip_symbols`) - skip publishing of symbol packages.

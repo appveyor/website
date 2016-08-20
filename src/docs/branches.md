@@ -3,11 +3,13 @@ layout: docs
 title: Branches and Tags
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Branches and Tags
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 
 AppVeyor has built-in multi-branch support.
@@ -37,8 +39,7 @@ except:
   - playground
 ```
 
-> `gh-pages` branch is always excluded unless explicitly added in "only" list.
-
+`gh-pages` branch is always excluded unless explicitly added in "only" list.
 
 
 ## Conditional build configuration

@@ -23,7 +23,7 @@ The number of concurrent jobs is defined **per account**, so, for example, if yo
 
 It's possible to assign a custom plan to your account if you need more concurrent jobs. Please [contact us for a quote](mailto:team@appveyor.com).
 
-> You can split tests into jobs on the Free plan, but jobs will run in series as the Free plan allows 1 concurrent job per account.
+You can split tests into jobs on the Free plan, but jobs will run in series as the Free plan allows 1 concurrent job per account.
 
 ## Test categories
 
@@ -32,6 +32,7 @@ It's possible to assign a custom plan to your account if you need more concurren
 ![parallel testing diagram](/assets/images/docs/parallel-testing-diagram.png)
 
 ### Categorizing tests
+
 To assign a category to **Visual Studio** test apply the `TestCategory` attribute to a testing method:
 
 ```csharp
@@ -83,9 +84,9 @@ To configure parallel testing groups in `appveyor.yml`:
 ```yaml
 test:
   categories:
-    - Common       # A category common for all jobs
-    - [UI]         # 1st job
-    - [DAL, BL]    # 2nd job
+    - Common    # A category common for all jobs
+    - [UI]      # 1st job
+    - [DAL, BL] # 2nd job
 ```
 
 The configuration above will produce two jobs:
