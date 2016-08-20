@@ -5308,6 +5308,52 @@
         }
       }
     },
+    "markdownlint": {
+      "version": "0.2.0",
+      "from": "markdownlint@latest",
+      "resolved": "https://registry.npmjs.org/markdownlint/-/markdownlint-0.2.0.tgz",
+      "dependencies": {
+        "markdown-it": {
+          "version": "7.0.1",
+          "from": "markdown-it@>=7.0.0 <8.0.0",
+          "resolved": "https://registry.npmjs.org/markdown-it/-/markdown-it-7.0.1.tgz",
+          "dependencies": {
+            "argparse": {
+              "version": "1.0.7",
+              "from": "argparse@>=1.0.7 <2.0.0",
+              "resolved": "https://registry.npmjs.org/argparse/-/argparse-1.0.7.tgz",
+              "dependencies": {
+                "sprintf-js": {
+                  "version": "1.0.3",
+                  "from": "sprintf-js@>=1.0.2 <1.1.0",
+                  "resolved": "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz"
+                }
+              }
+            },
+            "entities": {
+              "version": "1.1.1",
+              "from": "entities@>=1.1.1 <1.2.0",
+              "resolved": "https://registry.npmjs.org/entities/-/entities-1.1.1.tgz"
+            },
+            "linkify-it": {
+              "version": "2.0.0",
+              "from": "linkify-it@>=2.0.0 <3.0.0",
+              "resolved": "https://registry.npmjs.org/linkify-it/-/linkify-it-2.0.0.tgz"
+            },
+            "mdurl": {
+              "version": "1.0.1",
+              "from": "mdurl@>=1.0.1 <2.0.0",
+              "resolved": "https://registry.npmjs.org/mdurl/-/mdurl-1.0.1.tgz"
+            },
+            "uc.micro": {
+              "version": "1.0.2",
+              "from": "uc.micro@>=1.0.1 <2.0.0",
+              "resolved": "https://registry.npmjs.org/uc.micro/-/uc.micro-1.0.2.tgz"
+            }
+          }
+        }
+      }
+    },
     "time-grunt": {
       "version": "1.4.0",
       "from": "time-grunt@>=1.4.0 <2.0.0",
