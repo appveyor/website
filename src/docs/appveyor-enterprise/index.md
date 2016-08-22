@@ -62,7 +62,7 @@ Web role has the following dependencies:
 
 * **IIS** 8.0 or higher with ASP.NET 4.5 and WebSockets installed
 * **SQL Server** with AppVeyor database
-* **Redis** server for application cache and [SignalR backplane](http://www.asp.net/signalr/overview/performance/scaleout-with-redis)
+* **Redis** server for application cache and [SignalR backplane](https://www.asp.net/signalr/overview/performance/scaleout-with-redis)
 * **Service Bus** for communicating with Worker role (see below).
 
 Installation notes:

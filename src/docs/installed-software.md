@@ -110,7 +110,7 @@ os: Visual Studio 2015
 * [Microsoft Visual Studio Installer Projects](https://visualstudiogallery.msdn.microsoft.com/9abe329c-9bba-44a1-be59-0fbf6151054d) extension (`.vdproj` support).
 * [WiX](http://wixtoolset.org/) 3.10.3.3007
 * [Silverlight 5 x64 Developer Runtime](https://go.microsoft.com/fwlink/?LinkID=229324)
-* SQL Server Data tools for [Visual Studio 2012](https://msdn.microsoft.com/en-us/jj650015) and [2013](http://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
+* SQL Server Data tools for [Visual Studio 2012](https://msdn.microsoft.com/en-us/jj650015) and [2013](https://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
 * Boost:
     * 1.60.0 (`C:\Libraries\boost_1_60_0`)
     * 1.59.0 (`C:\Libraries\boost_1_59_0`)
@@ -303,7 +303,7 @@ Install-Product node '3'
 * [NUnit3](https://github.com/nunit/nunit) 3.4.1 in `C:\Tools\NUnit3\bin`
 * [xUnit](https://github.com/xunit/xunit/releases) 1.9.2 in `C:\Tools\xUnit`
 * [xUnit](https://www.nuget.org/packages/xunit.runner.console/2.0.0) 2.0.0 RTM in `C:\Tools\xUnit20`
-* [Machine.Specifications (MSpec)](http://www.nuget.org/packages/Machine.Specifications)
+* [Machine.Specifications (MSpec)](https://www.nuget.org/packages/Machine.Specifications)
 
 ### Selenium
 

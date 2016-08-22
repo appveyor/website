@@ -116,5 +116,5 @@ with documentation on GitHub where everyone could contribute by sending a pull r
     <a href="https://github.com/appveyor/website">https://github.com/appveyor/website</a>
 </p>
 
-Website runs on a new [Jekyll](http://jekyllrb.com/)-like engine (we called it NJekyll),
+Website runs on a new [Jekyll](https://jekyllrb.com/)-like engine (we called it NJekyll),
 so you can grab it and use for your own website :)

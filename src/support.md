@@ -17,7 +17,7 @@ description: Support options
 Check this page (powered by [StatusPage.io](https://www.statuspage.io/))
 for any ongoing issues happening to AppVeyor:
 
-<http://appveyor.statuspage.io>
+<https://appveyor.statuspage.io>
 
 ## Forums and support tickets
 
