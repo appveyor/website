@@ -11,9 +11,7 @@ title: Getting started with AppVeyor Enterprise
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
-<!-- markdownlint-disable MD033 -->
 <p class="new-feature">Note about this beta release - it's not intended for installing on production environment.</p>
-<!-- markdownlint-enable MD033 -->
 
 ## Introduction
 

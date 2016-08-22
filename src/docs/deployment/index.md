@@ -29,7 +29,6 @@ If you don't have any existing environments, you can create one at <https://ci.a
 The table below summarizes key differences between two modes with lists of deployment
 providers available in each mode:
 
-<!-- markdownlint-disable MD033 -->
 <table class="centered">
 <tr>
     <th>Inline deployment</th>
@@ -108,7 +107,6 @@ providers available in each mode:
     <td>-</td>
 </tr>
 </table>
-<!-- markdownlint-enable MD033 -->
 
 
 ## Environment variables in provider settings

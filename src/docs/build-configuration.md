@@ -18,7 +18,6 @@ Every build runs on a fresh virtual machine which is not shared with other build
 
 ### Virtual machine configurations
 
-<!-- markdownlint-disable MD033 -->
 <table>
   <tr>
     <th>Environment/configuration</th>
@@ -36,7 +35,6 @@ Every build runs on a fresh virtual machine which is not shared with other build
     <td>4 GB</td>
   </tr>
 </table>
-<!-- markdownlint-enable MD033 -->
 
 ### IP addresses
 

@@ -4,14 +4,7 @@
   "line-length": false,
   "no-duplicate-header": false,
   "no-emphasis-as-header": false,
-  "no-inline-html": {
-    "allowed_elements": [
-      "a",
-      "br",
-      "img",
-      "sup"
-    ]
-  },
+  "no-inline-html":false,
   "no-multiple-blanks": false,
   "no-trailing-punctuation": {
     "punctuation": ".,;:!"
