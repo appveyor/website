@@ -4,7 +4,7 @@ title: Test image with Visual Studio 2015 CTP and SDK
 
 We've just added a new build worker image with Visual Studio 2015 CTP 5 installed!
 
-Both Visual Studio Ultimate 2015 CTP and Visual Studio 2015 SDK CTP were installed from [official download page](http://support.microsoft.com/kb/2967191).
+Both Visual Studio Ultimate 2015 CTP and Visual Studio 2015 SDK CTP were installed from [official download page](https://support.microsoft.com/kb/2967191).
 
 Build worker image is called `Visual Studio 2015 CTP`. You can select it on Environment tab of project settings (if you configure project on UI):
 

@@ -8,7 +8,7 @@ In this article we'll review these methods to find out which one to choose
 for using in AppVeyor CI environment.
 
 After reading the original
-[NuGet Package Restore article](http://docs.nuget.org/consume/package-restore)
+[NuGet Package Restore article](https://docs.nuget.org/consume/package-restore)
 on NuGet docs web site we see that today we have three options for restoring packages:
 
 ## Restoring packages as part of MSBuild process
