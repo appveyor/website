@@ -5,11 +5,9 @@ title: Getting started
 
 # Getting started
 
-<!-- markdownlint-disable MD033 -->
 <div class="flex-video widescreen">
     <iframe width="640" height="360" src="//www.youtube.com/embed/e1rVM4_nzWw?rel=0&amp;color=white" allowfullscreen></iframe>
 </div>
-<!-- markdownlint-enable MD022 MD032 -->
 
 ## Step 1 - Sign in with AppVeyor
 

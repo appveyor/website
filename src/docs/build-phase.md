@@ -61,14 +61,12 @@ Created Cloud Service package (`<project-name>.cspkg`) and default "Cloud" confi
 
 By default, MSBuild uses `<project>.Cloud.cscfg` cloud service configuration, but you can specify which configuration to use by adding a `TargetProfile` environment variable, for example:
 
-<!-- markdownlint-disable MD033 -->
 <table>
     <tr>
         <td>TargetProfile</td>
         <td>Staging</td>
     </tr>
 </table>
-<!-- markdownlint-enable MD033 -->
 
 #### Caveats
 
@@ -78,14 +76,12 @@ While trying to build an Azure Cloud Service project you may get the following (
 
 To fix this error add the following environment variable on the **Environment** tab of project settings:
 
-<!-- markdownlint-disable MD033 -->
 <table>
     <tr>
         <td>VisualStudioVersion</td>
         <td>12.0</td>
     </tr>
 </table>
-<!-- markdownlint-enable MD033 -->
 
 where 12.0 is your version of Visual Studio (VS 2013 - 12.0, VS 2012 - 11.0, VS 2010 - 10.0).
 
