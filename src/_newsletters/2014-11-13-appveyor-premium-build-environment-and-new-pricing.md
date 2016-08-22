@@ -132,7 +132,7 @@ title: AppVeyor premium build environment and new pricing
     </p>
 
     <p>
-        Website runs on a new <a href="http://jekyllrb.com/">Jekyll</a>-like engine (we called it NJekyll), so you can grab it and use for your own website :)
+        Website runs on a new <a href="https://jekyllrb.com/">Jekyll</a>-like engine (we called it NJekyll), so you can grab it and use for your own website :)
     </p>
 
     <p>
