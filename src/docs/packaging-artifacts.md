@@ -39,7 +39,7 @@ artifacts:
     type: zip
 ```
 
-> IMPORTANT! If the artifact path starts with `*` surround the value with single quotes, for example:
+IMPORTANT! If the artifact path starts with `*` surround the value with single quotes, for example:
 
 ```yaml
 - path: '*.nupkg'

@@ -15,7 +15,7 @@ on_success:
   - git push ...
 ```
 
-> **Note:** AppVeyor checks out only the last commit and not the entire branch. So you may have to check out the wanted branch: `git checkout master`
+**Note:** AppVeyor checks out only the last commit and not the entire branch. So you may have to check out the wanted branch: `git checkout master`
 
 But the main question here is how to authenticate Git commands. If you try using any Git command against remote repository you'll get stuck build because Git is asking for credentials. In most cases you can't supply username/password in command line (*we are not considering the case when credentials are embedded in repo URL as this is bad*).
 
@@ -74,7 +74,7 @@ For example, for GitHub access token it will be:
 
     https://<access-token>:x-oauth-basic@github.com
 
-> When authenticating with access token `x-oauth-basic` is used as a stub password.
+When authenticating with access token `x-oauth-basic` is used as a stub password.
 
 To append that line to `.git-credentials` we use the following PowerShell command:
 
@@ -82,7 +82,10 @@ To append that line to `.git-credentials` we use the following PowerShell comman
 ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
 ```
 
-> `.git-credentials` is very "sensitive" to a new line that must be `\n`. If you try appending a line with something more "natural" like `echo https://%access_token%:x-oauth-basic@github.com>> %USERPROFILE%\.git-credentials` it won't work because `\r\n` will be used.
+`.git-credentials` is very "sensitive" to a new line that must be `\n`.
+If you try appending a line with something more "natural" like
+`echo https://%access_token%:x-oauth-basic@github.com>> %USERPROFILE%\.git-credentials`
+it won't work because `\r\n` will be used.
 
 ## Indicate git user name and mail
 

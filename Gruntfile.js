@@ -93,7 +93,7 @@ module.exports = function(grunt) {
                     /(#|\.)dropdown(\-[a-zA-Z]+)?/,
                     /\.no\-js/,
                     /meta.foundation(\-[a-zA-Z]+)?/,
-                    ".anchorjs-link",
+                    ".anchorjs-link"
                 ],
                 htmlroot: "<%= dirs.dest %>",
                 ignoreSheets: [/fonts.googleapis/],
@@ -281,6 +281,24 @@ module.exports = function(grunt) {
     require("load-grunt-tasks")(grunt, { scope: "dependencies" });
     require("time-grunt")(grunt);
 
+    grunt.registerTask("markdownlint", "Run markdownlint", function () {
+        var done = this.async();
+        var markdownlint = require("markdownlint");
+        var options = {
+            config: require("./markdownlint.json"),
+            files: grunt.file.expand({ filter: "isFile" }, ["src/**/*.md", "!src/_newsletters/*.md", "!src/_posts/*.md"])
+        };
+
+        markdownlint(options, function callback(err, result) {
+            var resultString = err || (result || "").toString();
+
+            if (resultString) {
+                grunt.fail.warn("\n" + resultString + "\n");
+            }
+            done(!err || !resultString);
+        });
+    });
+
     grunt.registerTask("build", [
         "clean",
         "jekyll",
@@ -298,6 +316,7 @@ module.exports = function(grunt) {
         "build",
         "csslint",
         "jshint",
+        "markdownlint",
         "htmllint",
         "connect:linkChecker",
         "linkChecker"

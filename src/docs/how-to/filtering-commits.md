@@ -3,18 +3,20 @@ layout: docs
 title: Setting up commits filtering
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Setting up commits filtering
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## Introduction
 
 Every push to a repository triggers new AppVeyor build. If you are committing minor changes, say update to a documentation or static web page, you might want to skip a build.
 This article explains how to make AppVeyor starting new builds based on the contents of commit message, commit author or files affected by commit.
 
-> Currently, commits filtering functionality is available in `appveyor.yml` configuration only.
+Currently, commits filtering functionality is available in `appveyor.yml` configuration only.
 
 ## Commit message
 
@@ -135,9 +137,10 @@ which means the build will be started only if one of the modified files was insi
 * `full/path.txt` - specific file
 * `'**/*.html'` - all `.html` files within repository, recursive
 
->
-  * both `\` and `/` slashes are allowed.
-  * surround value with single quotes if starts from `*`, e.g. `'*.txt'`
+Notes:
+
+* both `\` and `/` slashes are allowed.
+* surround value with single quotes if starts from `*`, e.g. `'*.txt'`
 
 The following example triggers new build for changes in `src\ProjectA` folder only:
 

@@ -3,11 +3,13 @@ layout: docs
 title: Build configuration
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Build configuration
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 
 ## Build environment
@@ -16,6 +18,7 @@ Every build runs on a fresh virtual machine which is not shared with other build
 
 ### Virtual machine configurations
 
+<!-- markdownlint-disable MD033 -->
 <table>
   <tr>
     <th>Environment/configuration</th>
@@ -33,6 +36,7 @@ Every build runs on a fresh virtual machine which is not shared with other build
     <td>4 GB</td>
   </tr>
 </table>
+<!-- markdownlint-enable MD033 -->
 
 ### IP addresses
 
@@ -94,7 +98,12 @@ Project builds can be configured by either `appveyor.yml` or on the user interfa
 
 Each method has pros and cons. Via the User interface one can control every aspect of the build process without ever touching the repository. On the other hand, YAML may seem more sophisticated and familiar for those coming from a Linux platform. Another thing to consider is that when you fork/clone a project with its configuration stored in `appveyor.yml`, you simply add a new project in AppVeyor referencing repo and you are good to go.
 
-> It's worth noticing that both `appveyor.yml` and UI configuration are mutually exclusive. It's always either YAML or UI - the settings from each are not merged. If you have `appveyor.yml` in your repo it will override all settings made on the UI unless explicitly disabled by **Ignore appveyor.yml**. The only exceptions are environment variables and notification settings. Environment variables defined on UI are getting merged with those ones defined in `appveyor.yml`. Variable values with the same names are getting overridden with values from UI.
+It's worth noticing that both `appveyor.yml` and UI configuration are mutually exclusive.
+It's always either YAML or UI - the settings from each are not merged. If you have `appveyor.yml`
+in your repo it will override all settings made on the UI unless explicitly disabled
+by **Ignore appveyor.yml**. The only exceptions are environment variables and notification settings.
+Environment variables defined on UI are getting merged with those ones defined in `appveyor.yml`.
+Variable values with the same names are getting overridden with values from UI.
 
 
 ### appveyor.yml
@@ -106,7 +115,6 @@ While working with YAML there are few important points to be aware of:
 
 * YAML format is sensitive to indentations that must be **spaces**. Do not use tabs to indent configuration sections.
 * Section names in YAML are case-sensitive, so "deploy" and "Deploy" are different things in YAML.
-
 
 
 ## Build versioning
@@ -143,7 +151,6 @@ You can use environment variables substitution in file name and version formats,
 ```yaml
 assembly_version: $(appveyor_build_version)
 ```
-
 
 
 ## Clone directory
@@ -199,10 +206,14 @@ environment:
     secure: <encrypt_value>
 ```
 
-> "Secure" variables means you can safely put them into `appveyor.yml` that is visible to others. Other than that they are just regular environment variables in a build session that could be easily displayed in a build log by simple `Get-ChildItem env:`.
+"Secure" variables means you can safely put them into `appveyor.yml` that is visible to others.
+Other than that they are just regular environment variables in a build session that could be easily
+displayed in a build log by simple `Get-ChildItem env:`.
 
->However, secure variables are *not* decoded during Pull Request builds which prevents someone from submitting PR with malicious build script displaying those variables. In more controlled environment through with a trusted team and private GitHub repositories there is an option on General tab of project settings to allow secure variables for PRs.
-
+However, secure variables are *not* decoded during Pull Request builds which prevents someone
+from submitting PR with malicious build script displaying those variables. In more controlled
+environment through with a trusted team and private GitHub repositories there is an option on
+General tab of project settings to allow secure variables for PRs.
 
 
 ## Script blocks in build configuration
@@ -347,15 +358,15 @@ environment:
   common_var2: value2
 
   matrix:
-  # first group
-  - db: mysql
-    provider: mysql
+    # first group
+    - db: mysql
+      provider: mysql
 
-  # second group
-  - db: mssql
-    provider: mssql
-    password:
-      secure: DHEU39J6X9VD376==
+    # second group
+    - db: mssql
+      provider: mssql
+      password:
+        secure: DHEU39J6X9VD376==
 
 platform:
   - x86
@@ -428,7 +439,7 @@ For example, you do commit `A` to `master` branch - it's being queued and then r
 
 AppVeyor uses [NCrontab library](https://github.com/atifaziz/NCrontab) to calculate a build schedule.
 
-> Schedule hour values should be UTC.
+Schedule hour values should be UTC.
 
 External links:
 

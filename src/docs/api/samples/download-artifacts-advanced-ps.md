@@ -11,7 +11,7 @@ Get-AppVeyorArtifacts ACCOUNT PROJECT -Token TOKEN -Flat `
 -Proxy http://proxy.example.com:8080/ -ProxyUseDefaultCredentials
 ```
 
-<hr>
+---
 
 ```powershell
 function Get-AppVeyorArtifacts

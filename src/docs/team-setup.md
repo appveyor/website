@@ -3,11 +3,13 @@ layout: docs
 title: Set up your team
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Set up your team
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## Introduction
 
@@ -33,7 +35,9 @@ Each account has *account owner* - a user who registered that account. Owner bel
 
 *User* is authenticating entity or *login* which is uniquely identified by email address. User is created under certain account and belongs to that account. User can have only one role assigned.
 
-> Once certain email is added as a user into AppVeyor account that user cannot have their own account. If you need to move a user to his/her own account delete this user from your account, allow them to register their own AppVeyor account and then add that email back as collaborator.
+Once certain email is added as a user into AppVeyor account that user cannot have their own account.
+If you need to move a user to his/her own account delete this user from your account,
+allow them to register their own AppVeyor account and then add that email back as collaborator.
 
 ### Collaborator
 

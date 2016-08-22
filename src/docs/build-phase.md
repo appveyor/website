@@ -11,7 +11,8 @@ The following command is used:
 
     msbuild <project> /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
 
-> Custom logger is required to push MSBuild warning and errors in real-time to build console. You may use this logger in your own build scripts.
+Custom logger is required to push MSBuild warning and errors in real-time to build console.
+You may use this logger in your own build scripts.
 
 `<project>` is a Visual Studio project (`*.*proj`) or solution (`*.sln`) file. If project or solution file is not specified on project settings AppVeyor searches for the first occurence of `*.sln` or `*.*proj` file in the build clone directory recursively.
 
@@ -45,8 +46,7 @@ AppVeyor will call:
 
     nuget pack SimpleConsole.Tests.csproj -OutputDirectory <temp_path>
 
-> To generate a `.nuspec` file for your project use the `nuget spec` command.
-
+To generate a `.nuspec` file for your project use the `nuget spec` command.
 
 
 ### Packaging Azure Cloud Service projects
@@ -61,12 +61,14 @@ Created Cloud Service package (`<project-name>.cspkg`) and default "Cloud" confi
 
 By default, MSBuild uses `<project>.Cloud.cscfg` cloud service configuration, but you can specify which configuration to use by adding a `TargetProfile` environment variable, for example:
 
+<!-- markdownlint-disable MD033 -->
 <table>
     <tr>
         <td>TargetProfile</td>
         <td>Staging</td>
     </tr>
 </table>
+<!-- markdownlint-enable MD033 -->
 
 #### Caveats
 
@@ -76,12 +78,14 @@ While trying to build an Azure Cloud Service project you may get the following (
 
 To fix this error add the following environment variable on the **Environment** tab of project settings:
 
+<!-- markdownlint-disable MD033 -->
 <table>
     <tr>
         <td>VisualStudioVersion</td>
         <td>12.0</td>
     </tr>
 </table>
+<!-- markdownlint-enable MD033 -->
 
 where 12.0 is your version of Visual Studio (VS 2013 - 12.0, VS 2012 - 11.0, VS 2010 - 10.0).
 

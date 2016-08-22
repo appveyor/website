@@ -3,14 +3,15 @@ layout: docs
 title: Deploying Azure Cloud Services
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Deploying Azure Cloud Services
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 Azure Cloud Service deployment provider assumes there is only one **Azure Cloud Service package** (file with `.cspkg` extension) in build artifacts and at least one **Azure Cloud Service configuration** artifact (file with `.cscfg` extension).
-
 
 
 ## Automatic packaging
@@ -28,8 +29,9 @@ AppVeyor will find Azure Cloud Service project (`.ccproj`) and package it. Creat
 
 ![azure-cloud-service-artifacts](/assets/images/docs/azure-cloud-service-artifacts.png)
 
-> If you get `error WAT200: No default service configuration "ServiceConfiguration.cscfg" could be found in the project` build error while using automatic package
-then you should define `TargetProfile` environment variable with the name of configuration you'd like to build:
+If you get `error WAT200: No default service configuration "ServiceConfiguration.cscfg" could be found in the project`
+build error while using automatic package then you should define `TargetProfile`
+environment variable with the name of configuration you'd like to build:
 
     environment:
       TargetProfile: <your-target-profile-name>
@@ -46,8 +48,8 @@ To push package and configuration to artifacts:
     appveyor PushArtifact <azure-cs-project>.cspkg
     appveyor PushArtifact ServiceConfiguration.<config>.cscfg -FileName <azure-cs-project>.cscfg
 
-> Replace `<azure-cs-project>` with the name of your Azure CS project and `<config>` with the name of target configuration, e.g. `Cloud`, `Local`.
-
+Replace `<azure-cs-project>` with the name of your Azure CS project and `<config>`
+with the name of target configuration, e.g. `Cloud`, `Local`.
 
 
 ## Configuring deployment
@@ -81,6 +83,7 @@ and then grab both values from downloaded `<subscription>.publishsettings` XML f
 When deploying Cloud Services to different environments you don't want to re-build application package every time with different configurations, but you want to deploy the same package (artifact) with some environment-specific settings configured during deployment. When using Cloud Service Deploy the problem can be easily solved by Web Deploy parametrization.
 
 ### Setting parameters during deployment
+
 Cloud Service Deploy provider analyzes the deployment package and looks into environment variables to set parameter values with matching names.
 
 When promoting specific build from Environment page you set variables on environment settings page:

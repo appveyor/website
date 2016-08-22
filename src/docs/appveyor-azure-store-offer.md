@@ -9,7 +9,6 @@ title: AppVeyor for Azure Store offer
 
 This Azure Store offer is a free "Continuous Integration in a box" solution for Windows developers. It includes AppVeyor CI installed on a single Azure virtual machine and enables running multiple builds in parallel. The virtual machine has pre-installed software to work with Git, Mercurial and Subversion repositories as well as build and test .NET projects. You can install additional software to support your own stack: Node.js, Ruby, Python, Java, etc.
 
-
 ## Installation notes
 
 * For better results we recommend installing to at least "A2" instance.
@@ -17,12 +16,9 @@ This Azure Store offer is a free "Continuous Integration in a box" solution for 
 * Follow instructions of AppVeyor installation script. The script will install all AppVeyor dependencies and additional software. The time required to complete the installation depends on selected options and virtual machine instance type.
 * When installation script is done open `http://<vm-name>.cloudapp.net` in the browser, create AppVeyor admin login and start building your projects!
 
-
 ## Troubleshooting
-* When [contacting AppVeyor support](/support/) we may ask you to provide AppVeyor logs. AppVeyor logs can be seen in "Event Viewer" under `Applications and Services Logs/AppVeyor`.
 
-* When [contacting AppVeyor support](/support/) we may ask you to provide AppVeyor logs. AppVeyor logs can be seen in "Event Viewer" under `Applications and Services Logs/AppVeyor`.
-
+When [contacting AppVeyor support](/support/) we may ask you to provide AppVeyor logs. AppVeyor logs can be seen in "Event Viewer" under `Applications and Services Logs/AppVeyor`.
 
 ## High-availability or multi-agent configurations
 

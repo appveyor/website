@@ -3,6 +3,7 @@ layout: docs
 title: Deploying using Web Deploy
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Deploying using Web Deploy
 {:.no_toc}
 
@@ -10,6 +11,7 @@ Application can be automatically deployed during the build to staging environmen
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 
 ## Creating Web Deploy package
@@ -21,12 +23,11 @@ During “MSBuild” phase AppVeyor automatically detects Web Application projec
 
 ![project-settings](/assets/images/docs/deployment/web-deploy/project-settings.png)
 
-> Here you may also set required configuration to choose proper web.config transformation.
+Here you may also set required configuration to choose proper web.config transformation.
 
 AppVeyor uses the following command to create Web Deploy package:
 
     msbuild <web_app.csproj> /t:Package /p:PackageLocation=<web-deploy-package.zip> /p:PackageAsSingleFile=True
-
 
 
 ### Custom packaging
@@ -103,7 +104,7 @@ Web deploy provider settings are specified on Deployment tab of project settings
 
 ### Remote agent service
 
-If you’re deploying to the remote agent service on the destination web server, you can specify the target computer name (for example, **TESTWEB1** or **TESTWEB1.fabrikam.net**), or you can specify the remote agent endpoint (for example, **http://TESTWEB1/MSDEPLOYAGENTSERVICE**). The deployment works the same way in each case.
+If you’re deploying to the remote agent service on the destination web server, you can specify the target computer name (for example, `TESTWEB1` or `TESTWEB1.fabrikam.net`), or you can specify the remote agent endpoint (for example, `http://TESTWEB1/MSDEPLOYAGENTSERVICE`). The deployment works the same way in each case.
 
 Typically, NTLM should be enabled when deploying to remote agent service.
 
@@ -112,7 +113,7 @@ See [Configuring Deployment Properties for a Target Environment](https://www.asp
 
 ### Web Deploy Handler
 
-If you’re deploying to the Web Deploy Handler on the destination web server, you should specify the service endpoint and include the name of the IIS website as a query string parameter (for example, **https://STAGEWEB1:8172/MSDeploy.axd?site=DemoSite**).
+If you’re deploying to the Web Deploy Handler on the destination web server, you should specify the service endpoint and include the name of the IIS website as a query string parameter (for example, `https://STAGEWEB1:8172/MSDeploy.axd?site=DemoSite`).
 
 Typically, Web Deployment Handler uses Basic authentication which is enabled by default.
 
@@ -172,6 +173,7 @@ Most common use cases for Web Deploy parametrization is updating node/attribute 
 * Database name in SQL install script
 
 ### Parameters.xml
+
 To enable Web Deploy parametrization add `parameters.xml` file in the root of your web application.
 
 ![vs-solution-explorer](/assets/images/docs/deployment/web-deploy/vs-solution-explorer.png)

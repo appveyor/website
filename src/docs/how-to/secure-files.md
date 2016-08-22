@@ -50,4 +50,4 @@ install:
   - secure-file\tools\secure-file -decrypt path-to\encrypted-filename.ext.enc -secret %my_secret%
 ```
 
-> Note that file won't be decrypted on Pull Request builds as secure variables are not set during PR build.
+Note that file won't be decrypted on Pull Request builds as secure variables are not set during PR build.

@@ -3,6 +3,7 @@ layout: docs
 title: Publishing SQL Server databases from SSDT packages
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Publishing SQL Server databases from SSDT packages
 {:.no_toc}
 
@@ -12,7 +13,7 @@ In this guide:
 
 * Comment to trigger ToC generation
 {:toc}
-
+<!-- markdownlint-enable MD022 MD032 -->
 
 
 ## Provider settings

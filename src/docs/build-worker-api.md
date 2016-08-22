@@ -364,7 +364,7 @@ Request body (JSON):
            [-AuthorName <string>] [-AuthorEmail <string>]
            [-CommitterName <string>] [-CommitterEmail <string>]
 
-> Be careful - if you set `Version` make sure it is unique for the current project.
+Be careful - if you set `Version` make sure it is unique for the current project.
 
 Example:
 
@@ -429,7 +429,7 @@ Parameters:
     -Branch                - Optional. Default project branch is used if not specified.
     -EnvironmentVariables  - Optional. Environment variables in the form var1=value1,var2=value2, ...
 
-> We recommend placing `ApiKey` value to environment variable (either General tab of project settings or as [secure variable](/docs/build-configuration#secure-variables) in `appveyor.yml`).
+We recommend placing `ApiKey` value to environment variable (either General tab of project settings or as [secure variable](/docs/build-configuration#secure-variables) in `appveyor.yml`).
 
 ### Command line
 
