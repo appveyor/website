@@ -6,9 +6,7 @@
   "no-emphasis-as-header": false,
   "no-inline-html":false,
   "no-multiple-blanks": false,
-  "no-trailing-punctuation": {
-    "punctuation": ".,;:!"
-  },
+  "no-trailing-punctuation": false,
   "ol-prefix": {
     "style": "ordered"
   },
