@@ -39,6 +39,12 @@ AppVeyor HTTP proxy details will be stored in environment variables:
 To setup Maven builds to use HTTP proxy create `set-maven-proxy.ps1` PowerShell script to your repository with the following contents:
 
 ```powershell
+if (!(Test-Path env:\APPVEYOR_HTTP_PROXY_PORT)) {
+    # No proxy port set in environment
+    Write-Host "Skip writing maven settings file, no proxy set" -ForegroundColor Yellow
+    return
+}
+
 $mavenConfig = '<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
