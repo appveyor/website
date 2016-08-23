@@ -8,6 +8,9 @@ environment:
       ruby_gems_folder: "2.3.0"
       platform: "x86"
 
+init:
+- ps: if($env:appveyor_repo_branch -ne 'master') { $env:non_master = 'true' }
+
 install:
   - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
   # Bundler downgrade should be removed when the issue is fixed upstream
@@ -49,7 +52,7 @@ deploy:
     do_not_use_checksum: false
     skip_dirs: '\\Downloads;\\App_Data'
     on:
-      branch: staging    
+      non_master: true    
 
   - provider: WebDeploy
     server: https://appveyor.scm.azurewebsites.net:443/MsDeploy.axd?site=appveyor
