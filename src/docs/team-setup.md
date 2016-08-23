@@ -9,7 +9,6 @@ title: Set up your team
 
 * Comment to trigger ToC generation
 {:toc}
-<!-- markdownlint-enable MD022 MD032 -->
 
 ## Introduction
 
@@ -126,3 +125,4 @@ Now you are logged in with your GitHub user and are managing "organizational" ac
 
 Setup GitHub teams or add individual collaborators/users as described above in this document.
 
+<!-- markdownlint-enable MD022 MD032 -->
