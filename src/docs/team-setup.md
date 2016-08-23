@@ -9,6 +9,7 @@ title: Set up your team
 
 * Comment to trigger ToC generation
 {:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## Introduction
 
@@ -117,12 +118,10 @@ Make sure your GitHub user has owner/admin rights on the repositories you are go
 #### Add yourself as co-administrator
 
 Go to [Team](https://ci.appveyor.com/team) page and add a new collaborator with primary email address of your GitHub account and *Administrator* role.
-**Sign out from AppVeyor**. Login again, but now with "GitHub" button - you will be presented with dropdown displaying two accounts
-- your personal account and `{organization}` account you just created. Select `{organization}` account and click "GitHub" sign in button again.
+**Sign out from AppVeyor**. Login again, but now with "GitHub" button - you will be presented with dropdown displaying two accounts - your personal
+account and `{organization}` account you just created. Select `{organization}` account and click "GitHub" sign in button again.
 Now you are logged in with your GitHub user and are managing "organizational" account.
 
 #### Add your co-workers
 
 Setup GitHub teams or add individual collaborators/users as described above in this document.
-
-<!-- markdownlint-enable MD022 MD032 -->
