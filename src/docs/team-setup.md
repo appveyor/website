@@ -67,9 +67,9 @@ To switch between accounts user must first **sign out**. While signing in again 
 
 You can remove yourself as a collaborator from a certain account on [profile page](https://ci.appveyor.com/profile).
 
-## GitHub teams
+## GitHub integration
 
-### GitHub integration notes
+### Limitations
 
 * works only with "GitHub" sign in button. If you login with email/password teams membership is not applied.
 * does not translate/use GitHub repository permissions. AppVeyor uses your teams membership to determine which AppVeyor accounts you have access to and with what role.
@@ -94,3 +94,34 @@ To resolve this limitation we recommend creating another GitHub team, for exampl
     ------------                  -----------------
     MyOrg/AppVeyor Admins         Administrator
     MyOrg/AppVeyor Developers     Developer
+
+
+### Setting up AppVeyor account for GitHub organization
+
+When you've initially signed up for AppVeyor with "GitHub" button on either [Sign up](https://ci.appveyor.com/signup) or [Login](https://ci.appveyor.com/login) pages
+a new AppVeyor account is automatically created for you. This account is named after your GitHub username and can be considered as a "personal" account.
+
+However, in most cases you want to have "organizational" account bound to some GitHub organization and GitHub users assigned to that organization can manage projects under that AppVeyor account.
+Also, "Organizational" account allows having project URLs containing organization name, for example `https://ci.appveyor.com/project/{organization}/{project}`.
+
+You can easily create an "organizational" account in AppVeyor.
+
+**Register a new AppVeyor account with email/password**
+
+You should have a separate email address which does not exist in AppVeyor and will be used as "organizational" account owner, for example `{organization}-appveyor@your-domain.com`.
+Go to [Sign up](https://ci.appveyor.com/signup) page and register a new account with that email and password. For "Your name" use something like "{organization} admin".
+
+Next, navigate to [Account details](https://ci.appveyor.com/account) page and check/rename "Account name" - this is `{organization}` name that will be used in project URLs.
+On the same page authorize AppVeyor to access GitHub. A new OAuth token will be generated and used for accessing organization's repositories and teams on bahalf of your GitHub user.
+Make sure your GitHub user has owner/admin rights on the repositories you are going to add later as AppVeyor projects.
+
+**Add yourself as co-administrator**
+
+Go to [Team](https://ci.appveyor.com/team) page and add a new collaborator with primary email address of your GitHub account and *Administrator* role.
+**Sign out from AppVeyor**. Login again, but now with "GitHub" button - you will be presented with dropdown displaying two accounts - your personal
+account and `{organization}` account you just created. Select `{organization}` account and click "GitHub" sign in button again.
+Now you are logged in with your GitHub user and are managing "organizational" account.
+
+**Add your co-workers**
+
+Setup GitHub teams or add individual collaborators/users as described above in this document.
