@@ -16,7 +16,7 @@ In this section we'll describe two ways of running tests in parallel:
 
 Parallel testing works for [Premium and Enterprise plans](/pricing/) with 2 and 4 concurrent jobs respectively.
 
-The number of concurrent jobs is defined **per account**, so, for example, if you run 2 builds with 4 jobs each (8 jobs in total) then you will 4 of those jobs will run at the same time. When a job from project A finishes then the first job of project B will start. This behaviour is illustrated below:
+The number of concurrent jobs is defined **per account**, so, for example, if you run 2 builds with 4 jobs each (8 jobs in total) then 4 of those jobs will run at the same time. When a job from project A finishes then the first job of project B will start. This behaviour is illustrated below:
 
 * Project A: 2 jobs finished, 2 jobs running.
 * Project B: 2 jobs running, 2 jobs pending.
