@@ -67,9 +67,9 @@ To switch between accounts user must first **sign out**. While signing in again 
 
 You can remove yourself as a collaborator from a certain account on [profile page](https://ci.appveyor.com/profile).
 
-## GitHub teams
+## GitHub integration
 
-### GitHub integration notes
+### Limitations
 
 * works only with "GitHub" sign in button. If you login with email/password teams membership is not applied.
 * does not translate/use GitHub repository permissions. AppVeyor uses your teams membership to determine which AppVeyor accounts you have access to and with what role.
@@ -94,3 +94,7 @@ To resolve this limitation we recommend creating another GitHub team, for exampl
     ------------                  -----------------
     MyOrg/AppVeyor Admins         Administrator
     MyOrg/AppVeyor Developers     Developer
+
+### Setting up AppVeyor account for GitHub organization
+
+TBD
