@@ -3,17 +3,12 @@ layout: docs
 title: Testing with Ruby
 ---
 
-<!-- markdownlint-disable MD022 MD032 -->
 # Testing with Ruby
-{:.no_toc}
-
-* Comment to trigger ToC generation
-{:toc}
-<!-- markdownlint-enable MD022 MD032 -->
 
 ## Installation
 
-Several Ruby versions are already preinstalled (see [details](/docs/installed-software#ruby)).
+Several Ruby versions are already preinstalled
+(see [details](/docs/installed-software#ruby)).
 We only need to add one of it to a PATH.
 
 ```yaml
@@ -66,7 +61,8 @@ Add 64-bit Rubies as `200-x64`, `21-x64` etc. Do not use `Platform: x64`.
 
 ## Caching
 
-Ruby's gems can be easily cached by AppVeyor, but they are installed into long and complex path,
+Ruby's gems can be easily cached by AppVeyor,
+but they are installed into long and complex path,
 like `C:\Ruby21\lib\ruby\gems\2.1.0\gems`.
 
 One should better force Bundler to put gems into well know path, eg:
