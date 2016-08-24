@@ -8,7 +8,7 @@ title: Testing with Ruby
 ## Installation
 
 Several Ruby versions are already preinstalled
-(see [details](/docs/installed-software#ruby)).
+(see [details](../installed-software#ruby)).
 We only need to add one of it to a PATH.
 
 ```yaml
@@ -95,3 +95,17 @@ before_test:
 test_script:
   - bundle exec rake
 ```
+
+## Build Worker API
+
+AppVeyor offers [API](../build-worker-api) for reporting during build process.
+
+It was implemented in
+[appveyor-worker](https://rubygems.org/gems/appveyor-worker) gem.
+
+Just include it into your project's Gemfile.
+Progress of your tests will be automagically displayed on project build page
+in real time and stack traces (for failed tests)
+will become available thru web-interface.
+
+You can also send messages and set environment variables from your tests.
