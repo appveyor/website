@@ -8,7 +8,7 @@ title: Testing with Ruby
 ## Installation
 
 Several Ruby versions are already preinstalled
-(see [details](../installed-software#ruby)).
+(see [details](/docs/installed-software#ruby)).
 We only need to add one of it to a PATH.
 
 ```yaml
@@ -98,7 +98,7 @@ test_script:
 
 ## Build Worker API
 
-AppVeyor offers [API](../build-worker-api) for reporting during build process.
+AppVeyor offers [API](/docs/build-worker-api) for reporting during build process.
 
 It was implemented in
 [appveyor-worker](https://rubygems.org/gems/appveyor-worker) gem.
