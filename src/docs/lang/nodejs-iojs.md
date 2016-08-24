@@ -132,11 +132,11 @@ To test under latest version of Node.js and io.js you can specify in `appveyor.y
 ```yaml
 environment:
   matrix:
-  # node.js
-  - nodejs_version: "0.10"
-  - nodejs_version: "0.11"
-  # io.js
-  - nodejs_version: "1.0"
+    # node.js
+    - nodejs_version: "0.10"
+    - nodejs_version: "0.11"
+    # io.js
+    - nodejs_version: "1.0"
 
 install:
   - ps: Install-Product node $env:nodejs_version
@@ -155,8 +155,8 @@ What if you need to test under specific version of Node.js for both x86 and x64 
 ```yaml
 environment:
   matrix:
-  - nodejs_version: "0.10"
-  - nodejs_version: "1.0"
+    - nodejs_version: "0.10"
+    - nodejs_version: "1.0"
 
 platform:
   - x86
@@ -181,8 +181,6 @@ You can use Web Deploy to [deploy your Node.js website](/docs/deployment/web-dep
 
 ## Known issues
 
-
-
 ### Wrong output encoding
 
 When running `npm install` (or any other Node.js program writing to a console) you may notice that Unicode symbols written to build console look wrong:
@@ -206,7 +204,6 @@ To fix that run it in "shell" mode:
 At the moment it seems to be an issue with PowerShell and the way it redirects output from console apps to a custom PowerShell host.
 
 
-
 ### Garbled or missing output
 
 Sometimes you may notice that output of some Node.js programs (especially those ones actively writing to both StdOut and StdErr) is garbled or missing.
@@ -214,7 +211,6 @@ Sometimes you may notice that output of some Node.js programs (especially those 
 In two words, there was Windows-specific issue in Node.js with non-blocking StdErr ([joyent/node#3584](https://github.com/joyent/node/issues/3584)) which was fixed in this pull request [joyent/node#7196](https://github.com/joyent/node/pull/7196) and finally landed in **Node.js v0.11.12** ([joyent/node@20176a9](https://github.com/joyent/node/commit/20176a98416353d4596900793f739d5ebf4f0ee1)). There is a [great discussion of this problem](https://github.com/mapnik/node-mapnik/issues/257#issuecomment-44417280).
 
 Solution - run your tests under Node.js 0.11.x.
-
 
 
 ### Locking errors (EPERM, EEXIST, tgz.lock)

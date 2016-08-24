@@ -4,7 +4,7 @@
   "line-length": false,
   "no-duplicate-header": false,
   "no-emphasis-as-header": false,
-  "no-inline-html":false,
+  "no-inline-html": false,
   "no-multiple-blanks": false,
   "no-trailing-punctuation": false,
   "ol-prefix": {
@@ -12,5 +12,8 @@
   },
   "ul-indent": {
     "indent": 4
+  },
+  "ul-style": {
+    "style": "asterisk"
   }
 }

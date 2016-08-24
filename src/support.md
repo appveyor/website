@@ -74,12 +74,12 @@ You can use `appveyor` tag to [submit your question on StackOverflow](https://st
 
 ## FAQ
 
-**What are support hours?**
+### What are support hours?
 
 We aim to respond on any email inquiry or forum post in 24 hours, but, usually, we respond within 12 hours during our working hours: Monday - Friday 9am - 5pm PST (Vancouver, BC).
 [Contact us](mailto:team@appveyor.com) if you have any concerns or special support requirements.
 
-**What is "Priority technical support" offered with Pro and Premium plans?**
+### What is "Priority technical support" offered with Pro and Premium plans?
 
 * Faster response time. With priority support you get initial response within few hours or even minutes (during working hours - Mon-Fri 9am-5pm PST).
 * Priority in fixing bugs or implementing new features - requests from Premium customers are always first in line.

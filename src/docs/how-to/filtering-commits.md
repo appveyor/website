@@ -22,7 +22,7 @@ Currently, commits filtering functionality is available in `appveyor.yml` config
 
 ### Skip commits
 
-`skip_commits.message` setting allows skipping commits with a message matching regular expression:
+`skip_commits.message` setting allows skipping commits with a message matching regular expression.
 
 For example, the following configuration won't start new builds on commits with `[chore]` in their message:
 
@@ -31,7 +31,7 @@ skip_commits:
   message: /\[chore\]/
 ```
 
-**Skip directive in commit message**
+### Skip directive in commit message
 
 AppVeyor supports "standard" directives to skip a build of particular commit.
 
