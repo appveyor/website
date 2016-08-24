@@ -74,13 +74,19 @@ module.exports = function(grunt) {
             },
             js: {
                 src: [
-                    "<%= dirs.src %>/assets/js/vendor/jquery-*.min.js",
-                    "<%= dirs.src %>/assets/js/vendor/foundation/*.js",
                     "<%= dirs.src %>/assets/js/vendor/anchor.js",
                     "<%= dirs.src %>/assets/js/google-analytics.js",
                     "<%= dirs.src %>/assets/js/main.js"
                 ],
                 dest: "<%= dirs.dest %>/assets/js/pack.js"
+            },
+            jqueryJS: {
+                src: [
+                    "<%= dirs.src %>/assets/js/vendor/jquery-*.min.js",
+                    "<%= dirs.src %>/assets/js/vendor/foundation/*.js",
+                    "<%= dirs.src %>/assets/js/jquery.js"
+                ],
+                dest: "<%= dirs.dest %>/assets/js/jquery-pack.js"
             }
         },
 
@@ -127,7 +133,8 @@ module.exports = function(grunt) {
             },
             minify: {
                 files: {
-                    "<%= concat.js.dest %>": "<%= concat.js.dest %>"
+                    "<%= concat.js.dest %>": "<%= concat.js.dest %>",
+                    "<%= concat.jqueryJS.dest %>": "<%= concat.jqueryJS.dest %>"
                 }
             }
         },
