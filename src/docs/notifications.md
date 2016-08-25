@@ -26,7 +26,7 @@ notifications:
     settings: ...
 ```
 
-**Notifications defined on project settings UI are merged with notifications defined in appveyor.yml.**
+**Warning**: Notifications defined on project settings UI are merged with notifications defined in appveyor.yml.
 
 ## Triggering notifications
 

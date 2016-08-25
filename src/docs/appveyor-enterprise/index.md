@@ -114,11 +114,11 @@ AppVeyor can run builds on build workers of two types:
 * **stateful** (or permanent) build workers
 * **stateless** (or transient) build workers
 
-**Stateful workers**
+#### Stateful workers
 
 Stateful workers are "always on" Build Agent machines for which any changes are preserved between builds. For example, any Chocolatey package installed, any NuGet package downloaded or any database created stay there and "visible" for next builds. While stateful builds can drastically reduce overall build time by having everything ready and pre-heated for consequent builds they require your build scenarios to include "setup" and "teardown" code increasing complexity of your builds. This approach is recommended for builds with minimum environment changes.
 
-**Stateless workers**
+#### Stateless workers
 
 Stateless build workers are virtual machines provisioned from template or reset to the initial "clean" state and dedicated to a single build. When the build is finished machine is "decommissioned", i.e. either deleted or reverted to "clean" state and returned to the pool.
 
@@ -199,7 +199,7 @@ For installing AppVeyor roles use `Install-AppVeyor` cmdlet. `Install-AppVeyor` 
 * `-Version` - AppVeyor version to install. If not specified the most recent version will be installed. To get the list of all available versions use `Get-AppVeyorVersions` cmdlet.
 * `-Express` - used for unattended "all-in-one" installation on clean machine. Perfect solution for provisioning your own build server on Azure or AWS VM. Installs all AppVeyor dependencies and AppVeyor components.
 
-**Examples**
+#### Examples
 
 For unattended installation of `Web`, `Worker`, `BuildAgent` roles with all dependencies such as IIS, SQL Server, Service Bus, Redis, Git, NuGet, etc. use this command:
 
@@ -266,7 +266,7 @@ The following services are supported for sending out build notifications:
 * Mailgun service
 * SendGrid (in development)
 
-**SMTP server**
+#### SMTP server
 
 Installing and configuring your own SMTP service is out-of-scope of this guide. However, for testing purposes you can try using SMTP server of your current email provider. For example, if you have Gmail account use these settings:
 
@@ -275,14 +275,14 @@ Installing and configuring your own SMTP service is out-of-scope of this guide. 
 * Password: \<your-password\>
 * Requires SSL: yes
 
-**Mailgun**
+#### Mailgun
 
 [Mailgun](https://www.mailgun.com/) is a managed email sending/receiving provider. You can send up to 10,000 messages per month for [free](https://www.mailgun.com/pricing).
 
 AppVeyor is not affiliated with Mailgun in any way.
 We recommend it because we use it ourselves in production and love it.
 
-**SendGrid**
+#### SendGrid
 
 [Let us know](/support/) if you are interested in trying it out.
 

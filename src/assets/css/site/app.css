@@ -1,9 +1,12 @@
 body {
     font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 45px;
 }
 
-.no-js body {
-    padding-top: 45px;
+@media only screen and (max-width: 40em) {
+    body {
+        padding-top: 0;
+    }
 }
 
 .page-title {
