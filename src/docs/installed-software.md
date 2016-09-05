@@ -309,9 +309,9 @@ Install-Product node '3'
 
 * [Chrome Web Driver](https://chromedriver.storage.googleapis.com/index.html) 2.22
 * [Internet Explorer Web Driver](https://selenium-release.storage.googleapis.com/index.html) 2.53
-* [FireFox Web Driver (geckodriver)](https://github.com/mozilla/geckodriver/releases) 0.8.0
+* [Firefox Web Driver (geckodriver)](https://github.com/mozilla/geckodriver/releases) 0.8.0
 * Internet Explorer 11
-* FireFox 47.0.1
+* Firefox 47.0.1
 * Chrome 51.0
 
 
