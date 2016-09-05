@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/appveyor/paginate.git
-  revision: 4ac754f6fe9470a3af3f6f5a8926e9917f727046
+  revision: 498bbd166ebef0344d5d903764fd3299387e92ef
   branch: custom
   specs:
     octopress-paginate (1.1.2)
