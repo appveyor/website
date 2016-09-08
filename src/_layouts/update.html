@@ -6,11 +6,15 @@ layout: one-column
     <h1>{{ page.date | date: "%B %d, %Y" }}</h1>
 
     <div class="row">
-        <div class="columns small-12">
-            {% if page.previous_page %}
-            <a href="{{ page.previous.url }}" style="margin-right: 2rem;">&larr; Previous update</a>
+        <div class="columns small-6">
+            {% if page.previous %}
+            <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous update</a>
             {% endif %}
+        </div>
+        <div class="columns small-6 text-right">
+            {% if page.next %}
             <a href="/updates/">All updates</a>
+            {% endif %}
         </div>
     </div>
 
