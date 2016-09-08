@@ -123,6 +123,7 @@ URL for fetching "last successful" artifact:
 URL parameters:
 
 * `branch` - if not specified the most recent successful build of *any branch* is fetched.
+* `tag` - if not specified the most recent successful build of *any tag* is fetched.
 * `job` - the name of the job. If a build contains multiple jobs then this parameter is mandatory. Value must be URL-encoded, for example `Configuration%3DRelease`.
 * `all` - lookup for artifact in not only successful builds, but in `successful`, `failed` and `cancelled` ones. Default is `false`.
 
@@ -139,6 +140,10 @@ Downloading artifact for last successful build of `master` branch:
 Downloading artifact from last successful build of `master` branch and "Release" job:
 
     https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?branch=master&job=Configuration%3A+Release
+
+Downloading artifact for last successful build of `1.1` tag:
+
+    https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?tag=1.1
 
 Downloading artifact from any successful/failed/cancelled build of any branch:
 
