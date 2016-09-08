@@ -2,9 +2,13 @@
 title: Converting a Mercurial repository to Git on Windows
 ---
 
-Vast majority of AppVeyor customers uses Git, specifically GitHub. Historically, we've been using Mercurial for AppVeyor source control, but recently due to the growing popularity and ecosystem of Git and GitHub we thought maybe it's time to jump Git train and start using it for AppVeyor projects.
+The vast majority of AppVeyor customers use Git, specifically GitHub. Historically, we've been using
+Mercurial for AppVeyor source control, but recently due to the growing popularity and ecosystem of Git
+and GitHub we thought maybe it's time to jump Git train and start using it for AppVeyor projects.
 
-The first problem we faced with was converting existing Mercurial repositories to Git with preserving all history and authors. If you search in Google for <a href="https://www.google.ca/search?q=converting+mercurial+to+git+windows&amp;oq=converting+mercurial+to+git+windows">converting mercurial to git on windows</a> you will find some (mostly similar) posts on SO, but none of them worked for us if followed "as is" on Windows. After many trials we found the way that 100% works and could be easily reproduced - everything was done from scratch on a clean Windows Server 2012 machine.
+The first problem we faced with was converting existing Mercurial repositories to Git with preserving
+all history and authors.
+If you search in Google for <a href="https://www.google.ca/search?q=converting+mercurial+to+git+windows&amp;oq=converting+mercurial+to+git+windows">converting mercurial to git on windows</a> you will find some (mostly similar) posts on SO, but none of them worked for us if followed "as is" on Windows. After many trials we found the way that 100% works and could be easily reproduced - everything was done from scratch on a clean Windows Server 2012 machine.
 
 This article specifically describes migration of project from BitBucket's Mercurial repository (<a href="https://bitbucket.org/appveyor/demoapp">original</a>) to GitHub (<a href="https://github.com/AppVeyor/DemoApp">migrated</a>) using <a href="http://repo.or.cz/w/fast-export.git"><strong>hg-fast-export</strong></a> tool.
 
@@ -35,7 +39,7 @@ Clone source Mercurial repository:
 hg clone https://bitbucket.org/appveyor/demoapp
 ```
 
-Create empty GitHub repository and clone it to `demoapp_git` directory:
+Create an empty GitHub repository and clone it to `demoapp_git` directory:
 
 ```text
 git clone https://github.com/AppVeyor/DemoApp.git demoapp_git

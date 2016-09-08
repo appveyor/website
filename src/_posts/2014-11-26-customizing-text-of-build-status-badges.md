@@ -14,7 +14,9 @@ To customize SVG badge titles for *pending*, *failing* and *passing* states add 
 
 For example:
 
-    https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20OK&failingText=master%20-%20Fails
+```text
+https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true&passingText=master%20-%20OK&failingText=master%20-%20Fails
+```
 
 Read more about status badges in [AppVeyor documentation](/docs/status-badges/).
 

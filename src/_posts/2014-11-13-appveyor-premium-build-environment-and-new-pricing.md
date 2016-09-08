@@ -28,63 +28,70 @@ now offers 3 concurrent jobs on fast environment.
 
 Also, we introduce yearly pricing for "Pro" and "Premium" plans giving you **2 months free**!
 
-<table style="width:70%;max-width:1042px;margin: 2rem auto;" class="no-borders centered pricing-post-table">
+<div class="row">
+<div class="columns small-12 medium-8 medium-offset-2">
+<table class="no-borders pricing-post-table-2 centered">
+    <thead>
+        <tr>
+            <th>Basic</th>
+            <th>&nbsp;</th>
+            <th>Pro</th>
+            <th>&nbsp;</th>
+            <th>Premium</th>
+        </tr>
+    </thead>
     <tr>
-        <td style="width: 33%; background-color: #25AAE3; color: #fff; font-size: 130%;">Basic</td>
+        <td><span class="large">$19</span>/month</td>
         <td>&nbsp;</td>
-        <td style="width: 33%; background-color: #0b99d6; color: #fff; font-size: 130%;">Pro</td>
+        <td><span class="large">$59</span>/month</td>
         <td>&nbsp;</td>
-        <td style="width: 33%; background-color: #0684BA; color: #fff; font-size: 130%;">Premium</td>
+        <td><span class="large">$159</span>/month</td>
     </tr>
     <tr>
-        <td style="background-color:#f0f0f0;" rowspan="2"><span style="font-size:220%;">$19</span>/month</td>
-        <td></td>
-        <td style="background-color:#f0f0f0;"><span style="font-size:220%;">$59</span>/month</td>
-        <td></td>
-        <td style="background-color:#f0f0f0;"><span style="font-size:220%;">$159</span>/month</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td><span class="small">$590</span>/year - 2 months free</td>
+        <td>&nbsp;</td>
+        <td><span class="small">$1590</span>/year - 2 months free</td>
     </tr>
     <tr>
-        <td></td>
-        <td style="background-color:#f0f0f0;color:#666;"><span style="font-size:90%;">$590</span>/year - 2 months free</td>
-        <td></td>
-        <td style="background-color:#f0f0f0;color:#666;"><span style="font-size:90%;">$1590</span>/year - 2 months free</td>
+        <td><strong>1</strong> private project</td>
+        <td>&nbsp;</td>
+        <td><strong>Unlimited</strong> private projects</td>
+        <td>&nbsp;</td>
+        <td><strong>Unlimited</strong> private projects</td>
     </tr>
     <tr>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>1</strong> private project</td>
-        <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>Unlimited</strong> private projects</td>
-        <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>Unlimited</strong> private projects</td>
+        <td><strong>1</strong> concurrent job</td>
+        <td>&nbsp;</td>
+        <td><strong>1</strong> concurrent job</td>
+        <td>&nbsp;</td>
+        <td><strong>3</strong> concurrent jobs</td>
     </tr>
     <tr>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>1</strong> concurrent job</td>
-        <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>1</strong> concurrent job</td>
-        <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;"><strong>3</strong> concurrent jobs</td>
+        <td>-</td>
+        <td>&nbsp;</td>
+        <td>Super-fast build environment</td>
+        <td>&nbsp;</td>
+        <td>Super-fast build environment</td>
     </tr>
     <tr>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;">-</td>
-        <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;">Super-fast build environment</td>
-        <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;">Super-fast build environment</td>
+        <td>-</td>
+        <td>&nbsp;</td>
+        <td>Instant build start</td>
+        <td>&nbsp;</td>
+        <td>Instant build start</td>
     </tr>
     <tr>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;">-</td>
-        <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;">Instant build start</td>
-        <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;">Instant build start</td>
-    </tr>
-    <tr>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;">Forums support</td>
-        <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;">Priority technical support</td>
-        <td></td>
-        <td style="padding: 15px 0; border: dotted 1px #ddd;border-top:none;">Priority technical support</td>
+        <td>Forums support</td>
+        <td>&nbsp;</td>
+        <td>Priority technical support</td>
+        <td>&nbsp;</td>
+        <td>Priority technical support</td>
     </tr>
 </table>
+</div>
+</div>
 
 All existing plans are honored.
 

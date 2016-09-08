@@ -2,7 +2,10 @@
 title: AppVeyor update and new pricing
 ---
 
-It’s been a while since we last talked as we were working hard implementing really cool stuff and processing user requests to make AppVeyor more stable, secure and fast. Today we are thrilled to announce a huge update to AppVeyor CI service and start of its commercial availability!
+It’s been a while since we last talked as we were working hard implementing really cool stuff
+and processing user requests to make AppVeyor more stable, secure and fast.
+Today we are thrilled to announce a huge update to AppVeyor CI service and start of its commercial
+availability!
 
 ## Summary of what we prepared for you
 
@@ -20,7 +23,9 @@ It’s been a while since we last talked as we were working hard implementing re
 
 ## Deployment
 
-We spent long nights polishing our new <a href="https://github.com/AppVeyor/AppRolla">PowerShell deployment framework - AppRolla</a>. AppRolla is extensible framework tightly integrated with AppVeyor for automating deployment of distributed .NET applications to multi-server environments.
+We spent long nights polishing our new [PowerShell deployment framework - AppRolla](https://github.com/AppVeyor/AppRolla).
+AppRolla is extensible framework tightly integrated with AppVeyor for automating deployment
+of distributed .NET applications to multi-server environments.
 
 Just some of its features and benefits:
 
@@ -38,15 +43,24 @@ Checkout <a href="http://help.appveyor.com/kb/using-appveyor/web-application-pr
 
 ## Kiln integration
 
-We got numerous requests from our customers to integrate AppVeyor with <a href="http://www.fogcreek.com/kiln/">Kiln source control</a> from FogCreek Software. Though we are not affiliated with them Kiln looks compelling for projects with private repositories because of its per-user pricing (yes, you can create any number of repositories) and cool “Kiln harmony” feature when every single repository can be used from both Git and Mercurial, simultaneously. Integration with AppVeyor does not require an additional Kiln user - you just create a new “access token” and use it when creating a new project in AppVeyor.
+We got numerous requests from our customers to integrate AppVeyor with [Kiln source control](http://www.fogcreek.com/kiln/)
+ from FogCreek Software. Though we are not affiliated with them Kiln looks compelling for projects
+with private repositories because of its per-user pricing (yes, you can create any number of repositories)
+and cool “Kiln harmony” feature when every single repository can be used from both Git and Mercurial,
+simultaneously. Integration with AppVeyor does not require an additional Kiln user - you just create
+a new “access token” and use it when creating a new project in AppVeyor.
 
 ## GitHub integration improvements
 
-We added GitHub organizations support and revised OAuth scopes required to access your GitHub account and repositories. AppVeyor makes sure only the minimum set of GitHub permissions is requested just to do the job.
+We added GitHub organizations support and revised OAuth scopes required to access your GitHub account
+and repositories. AppVeyor makes sure only the minimum set of GitHub permissions is requested just to do
+the job.
 
 ## Build scripts
 
-In addition to high-level “Visual Studio solution” and “MSBuild” scenarios we added custom build scripts with maximum control over CI process. You can author build script in PowerShell or as a batch file and use <a href="http://help.appveyor.com/kb/using-appveyor/software-installed-on-appveyor-build-servers">any build tools</a> like MSBuild, PSake, NUnit, xUnit, Node.js in your custom workflow.
+In addition to high-level “Visual Studio solution” and “MSBuild” scenarios we added custom build scripts
+with maximum control over CI process. You can author build script in PowerShell or as a batch file and
+use <a href="http://help.appveyor.com/kb/using-appveyor/software-installed-on-appveyor-build-servers">any build tools</a> like MSBuild, PSake, NUnit, xUnit, Node.js in your custom workflow.
 
 While running a custom build script AppVeyor provides you integration points for:
 
@@ -89,7 +103,8 @@ What that means for you? Starting today (September 25th), we offer you a free 30
 
 ## New pricing
 
-Our goal is to provide you outstanding service with competitive and reasonable <a href="/pricing/">pricing</a>. We gave our pricing a second thought and came up with 3 simple paid plans:
+Our goal is to provide you outstanding service with competitive and reasonable
+[pricing](/pricing/). We gave our pricing a second thought and came up with 3 simple paid plans:
 
 * Express - $19/month (1 private repository)
 * **Professional - $39/month** (10 private repositories)
@@ -101,9 +116,12 @@ AppVeyor is **free for open-source projects** with public repositories.
 
 ## We listen you!
 
-That’s a ton of new information that could be hard to digest. We are going to publish educational articles in <a href="/blog/">our blog</a> on various topics ranging from deployment automation to AppVeyor development secrets. We’ve been quite active on <a href="https://twitter.com/appveyor">Twitter</a> (and this is really cool support tool), so make sure to <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.appveyor.com%2Fpricing&amp;region=follow_link&amp;screen_name=appveyor&amp;tw_p=followbutton&amp;variant=2.0">follow us</a> to stay updated.
+That’s a ton of new information that could be hard to digest. We are going to publish educational
+articles in <a href="/blog/">our blog</a> on various topics ranging from deployment automation to
+AppVeyor development secrets. We’ve been quite active on <a href="https://twitter.com/appveyor">Twitter</a>
+(and this is really cool support tool), so make sure to <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.appveyor.com%2Fpricing&amp;region=follow_link&amp;screen_name=appveyor&amp;tw_p=followbutton&amp;variant=2.0">follow us</a> to stay updated.
 
-For now, if you have any questions please do not hesitate to drop us a message by just replying to this message or writing at <a href="mailto:team@appveyor.com">team@appveyor.com</a>, start a new discussion on <a href="http://help.appveyor.com/discussions">our forums</a> or submit feature request on <a href="https://appveyor.uservoice.com/">uservoice</a>.
+For now, if you have any questions please do not hesitate to drop us a message at <a href="mailto:team@appveyor.com">team@appveyor.com</a>, start a new discussion on <a href="http://help.appveyor.com/discussions">our forums</a> or submit feature request on <a href="https://appveyor.uservoice.com/">uservoice</a>.
 
 Best regards,
 Feodor Fitsner, AppVeyor founder and developer

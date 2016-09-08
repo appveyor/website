@@ -4,122 +4,112 @@ date: 2014-03-26
 title: AppVeyor 2.0 live with new pricing
 ---
 
-<div style="font-family:'Segoe UI',Arial,Sans-Serif;font-size:10pt;width:100%; max-width:1042px;margin: 0 auto;">
 
-    <p>
-        Hello,<br />
-        I’m thrilled to announce that AppVeyor 2.0 officially goes Live and with the new aggressive pricing!
-    </p>
+Hello,<br />
+I’m thrilled to announce that AppVeyor 2.0 officially goes Live and with the new aggressive pricing!
 
-    <h2 style="font-size:170%;font-weight:normal;color:#333;margin: 20px 0 5px 0;">The New AppVeyor</h2>
+## The New AppVeyor
 
-    <p>
-        After being almost two months in private and then public beta we finally upgraded production environment to AppVeyor 2.0 and developers truly love it!
-    </p>
+After being almost two months in private and then public beta we finally upgraded production
+environment to AppVeyor 2.0 and developers truly love it!
 
-    <p style="text-align: center;margin: 2.5rem 0;">
-        <img src="/assets/images/newsletters/2014-03-26/appveyor-screenshot-with-shadow.png" alt="AppVeyor screenshot" style="width:100%;max-width:1042px;">
-    </p>
+<p class="text-center">
+    <img src="/assets/images/newsletters/2014-03-26/appveyor-screenshot-with-shadow.png" alt="AppVeyor screenshot">
+</p>
 
-    <p>Let me quickly recap <a href="/blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment/">what new features AppVeyor 2.0 brings</a> to you:</p>
+Let me quickly recap [what new features AppVeyor 2.0 brings](/blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment)
+to you:
 
-    <!-- At a glance -->
-    <ul>
-        <li style="margin-bottom:0.3rem;">Builds run on dedicated virtual machines</li>
-        <li style="margin-bottom:0.3rem;">Project configuration in YAML (aka appveyor.yml)</li>
-        <li style="margin-bottom:0.3rem;">Fine-grained control over build process</li>
-        <li style="margin-bottom:0.3rem;">NuGet feeds hosting</li>
-        <li style="margin-bottom:0.3rem;">Build matrix and parallel testing</li>
-        <li style="margin-bottom:0.3rem;">Built-in deployment to multiple environments</li>
-        <li style="margin-bottom:0.3rem;">Responsive, real-time UI</li>
-        <li style="margin-bottom:0.3rem;">A lot of other improvements and fixes</li>
-    </ul>
+* Builds run on dedicated virtual machines
+* Project configuration in YAML (aka `appveyor.yml`)
+* Fine-grained control over build process
+* NuGet feeds hosting
+* Build matrix and parallel testing
+* Built-in deployment to multiple environments
+* Responsive, real-time UI
+* A lot of other improvements and fixes
 
-    <!-- New pricing -->
-    <h2 style="font-size:170%;font-weight:normal;color:#333;margin: 20px 0 5px 0;">The New Pricing</h2>
+## The New Pricing
 
-    <p>
-        AppVeyor 2.0 moved from shared build farm to dedicated build machines.
-        With that change it was obvious the current pricing scheme must be adjusted to justify new architecture.
-        We received a signal from our customers that new plans felt pricey and not affordable for individual developers and small teams.
-        This was not exactly our intention. We don’t want you to go through nightmare of installing TeamCity or Jenkins on Azure VM! :)
-    </p>
+AppVeyor 2.0 moved from shared build farm to dedicated build machines. With that change it was obvious
+the current pricing scheme must be adjusted to justify new architecture. We received a signal from our
+customers that new plans felt pricey and not affordable for individual developers and small teams.
+This was not exactly our intention. We don’t want you to go through nightmare of installing TeamCity
+or Jenkins on Azure VM! :)
 
-    <p>
-        We want AppVeyor to be a great tool in the hands of every Windows developer! We listened to you and we revisited our plans
-        before going Live to make sure AppVeyor pricing works for everyone.
-    </p>
+We want AppVeyor to be a great tool in the hands of every Windows developer! We listened to you and we
+revisited our plans before going Live to make sure AppVeyor pricing works for everyone.
 
-    <p>
-        New plans:
-    </p>
+New plans:
 
-    <table style="width:100%;max-width:1042px;margin: 0 auto;text-align:center;font-size: 100%;" class="centered pricing-post-table">
+<table class="no-borders pricing-post-table centered">
+    <thead>
         <tr>
-            <td style="width: 25%; background-color: #bbb; color: #fff; font-size: 130%;">Open source</td>
+            <th>Open source</th>
+            <th>&nbsp;</th>
+            <th>Professional</th>
+            <th>&nbsp;</th>
+            <th>Premium</th>
+            <th>&nbsp;</th>
+            <th>Enterprise</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>FREE</strong></td>
             <td>&nbsp;</td>
-            <td style="width: 25%; background-color: #3EB33E; color: #fff; font-size: 130%; ">Professional</td>
+            <td><strong>$39</strong>/month</td>
             <td>&nbsp;</td>
-            <td style="width: 25%; background-color: #FF6633; color: #fff; font-size: 130%; ">Premium</td>
+            <td><strong>$79</strong>/month</td>
             <td>&nbsp;</td>
-            <td style="width: 25%; background-color: #555; color: #fff; font-size: 130%; ">Enterprise</td>
+            <td>from <strong>$319</strong>/month</td>
         </tr>
         <tr>
-            <td style="background-color:#f0f0f0;"><span style="font-size:170%;">FREE</span></td>
-            <td></td>
-            <td style="background-color:#f0f0f0;"><span style="font-size:170%;">$39</span>/month</td>
-            <td></td>
-            <td style="background-color:#f0f0f0;"><span style="font-size:170%;">$79</span>/month</td>
-            <td></td>
-            <td style="background-color:#f0f0f0;">from <span style="font-size:170%;">$319</span>/month</td>
+            <td>Unlimited public repositories</td>
+            <td>&nbsp;</td>
+            <td>10 private repositories</td>
+            <td>&nbsp;</td>
+            <td>Unlimited private repositories</td>
+            <td>&nbsp;</td>
+            <td>Unlimited private repositories</td>
         </tr>
         <tr>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">Unlimited public repositories</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">10 private repositories</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">Unlimited private repositories</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">Unlimited private repositories</td>
+            <td>1 concurrent job</td>
+            <td>&nbsp;</td>
+            <td>1 concurrent job</td>
+            <td>&nbsp;</td>
+            <td>2 concurrent jobs</td>
+            <td>&nbsp;</td>
+            <td>4+ concurrent jobs</td>
         </tr>
         <tr>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">1 concurrent job</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">1 concurrent job</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">2 concurrent jobs</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">4+ concurrent jobs</td>
+            <td>Forums support</td>
+            <td>&nbsp;</td>
+            <td>Email support</td>
+            <td>&nbsp;</td>
+            <td>Email support</td>
+            <td>&nbsp;</td>
+            <td>Priority technical support</td>
         </tr>
         <tr>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">Forums support</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">Email support</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">Email support</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">Priority technical support</td>
+            <td>-</td>
+            <td>&nbsp;</td>
+            <td>-</td>
+            <td>&nbsp;</td>
+            <td>-</td>
+            <td>&nbsp;</td>
+            <td>Phone/Skype support</td>
         </tr>
-        <tr>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">-</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">-</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">-</td>
-            <td></td>
-            <td style="padding: 15px 0; border-bottom: dotted 1px #eee;">Phone/Skype support</td>
-        </tr>
-    </table>
+    </tbody>
+</table>
 
-    <p style="font-size: 130%;">
-        <a href="https://ci.appveyor.com/plan">Sign in</a> to your existing account and start using AppVeyor for your next project!
-    </p>
+[Sign in](https://ci.appveyor.com/plan) to your existing account and start using AppVeyor for your
+next project!
 
-    <p>
-        Feodor Fitsner, <br />
-        AppVeyor founder and developer
-    </p>
+Feodor Fitsner,<br />
+AppVeyor founder and developer
 
-    <p style="font-size: 85%;color:#777;">AppVeyor Systems Inc. 318 Homer St, Vancouver, BC, V6B 2V2<br />
-        To stop receiving emails from AppVeyor please use this <a href="">unsubscribe</a> link.</p>
-</div>
+<p class="gray">
+    AppVeyor Systems Inc. 318 Homer St, Vancouver, BC, V6B 2V2<br />
+    To stop receiving emails from AppVeyor please use this <a href="">unsubscribe</a> link.
+</p>

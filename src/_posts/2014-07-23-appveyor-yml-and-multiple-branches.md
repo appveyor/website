@@ -2,12 +2,18 @@
 title: appveyor.yml and multiple branches
 ---
 
-<h2>The problem</h2>
-If you use <a href="http://nvie.com/posts/a-successful-git-branching-model/">git flow</a> you may want to have a different build configuration (e.g. deploying to a different environment) in a feature branch. Changing <code>appveyor.yml</code> in a feature branch becomes an issue when you merge it into master overriding <code>appveyor.yml</code> and breaking master builds.
-<h2>The solution</h2>
-To solve this problem AppVeyor allows having multiple per-branch configurations in a single <code>appveyor.yml</code>.
+## The problem
 
-Multiple configurations are defined as a <strong>list</strong> with <code>branches</code> section in every item that:
+If you use [git flow](http://nvie.com/posts/a-successful-git-branching-model/) you may want to have
+a different build configuration (e.g. deploying to a different environment) in a feature branch.
+Changing `appveyor.yml` in a feature branch becomes an issue when you merge it into master overriding
+`appveyor.yml` and breaking master builds.
+
+## The solution
+
+To solve this problem AppVeyor allows having multiple per-branch configurations in a single `appveyor.yml`.
+
+Multiple configurations are defined as a **list** with `branches` section in every item that:
 
 ```yaml
 # configuration for "master" branch
@@ -41,11 +47,14 @@ Multiple configurations are defined as a <strong>list</strong> with <code>branch
   configuration: Debug
 ```
 
-Unlike white- and blacklisting <code>branches</code> section here works like a selector, not a filter. Configuration selection algorithm is the following:
-<ul>
-    <li>Check configurations with <code>branches/only</code> section defined. If branch is found in configuration's <code>only</code> section use this configuration.</li>
-    <li>Check configurations with <code>branches/except</code> section defined. If branch is NOT found in configuration's <code>except</code>section use this configuration.</li>
-    <li>Check configurations WITHOUT <code>branches</code> section. If such configuration found use it.</li>
-    <li>If all previous steps fail build is not run.</li>
-</ul>
+Unlike white- and blacklisting `branches` section here works like a selector, not a filter.
+Configuration selection algorithm is the following:
+
+* Check configurations with `branches/only` section defined.
+  If branch is found in configuration's `only` section use this configuration.
+* Check configurations with `branches/except` section defined.
+  If branch is NOT found in configuration's `except`section use this configuration.
+* Check configurations **without** `branches` section. If such configuration is found use it.
+* If all previous steps fail, the build is not run.
+
 Enjoy!

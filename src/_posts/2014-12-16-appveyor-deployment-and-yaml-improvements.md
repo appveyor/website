@@ -26,9 +26,7 @@ Now AppVeyor offers a new [SQL Database deployment provider](/docs/deployment/sq
 for incremental publishing of SSDT packages to a local SQL Server instance, remote SQL Server
 or Azure SQL databases.
 
-<p>
-    <img src="/assets/images/newsletters/2014-12-16/sql-database-provider-settings.png" alt="SQL database provider settings">
-</p>
+![SQL database provider settings](/assets/images/newsletters/2014-12-16/sql-database-provider-settings.png)
 
 SQL Database provider uses SQL Server Data-tier Application Framework (DacFx) and as most of AppVeyor
 deployment providers it can be used during the build for staging deployment as well as a new "environment"
@@ -43,7 +41,8 @@ though it organically complements a new "unified" FTP provider.
 
 ## Install MSI packages with Deployment Agent
 
-With improved AppVeyor Deployment Agent it's now possible to [install MSI packages](/docs/deployment/agent#installing-msi-package-artifact-on-remote-machine)
+With the improved AppVeyor Deployment Agent it's now possible to
+[install MSI packages](/docs/deployment/agent#installing-msi-package-artifact-on-remote-machine)
 on staging and production environments behind the firewall.
 With MSI added you can use Agent to deploy various types of workloads: web applications,
 windows services, console apps, SQL Databases and MSI packages. [Read more](/docs/deployment/agent/)
@@ -61,8 +60,7 @@ so you get immediate feedback if there is something wrong with project config an
 there is a [new page for validating appveyor.yml](https://ci.appveyor.com/tools/validate-yaml)
 instead of try-and-fail process:
 
-<img src="/assets/images/newsletters/2014-12-16/validate-yaml.png" alt="Validate YAML">
-
+![Validate YAML](/assets/images/newsletters/2014-12-16/validate-yaml.png)
 
 ## Export project configuration in YAML
 
@@ -70,8 +68,7 @@ You can easily switch your projects to YAML and benefit from portable and versio
 There is a new tab on AppVeyor project settings which allows you to see how project changes made
 through UI would look in appveyor.yml:
 
-<img src="/assets/images/newsletters/2014-12-16/export-yaml.png" alt="Export YAML">
-
+![Export YAML](/assets/images/newsletters/2014-12-16/export-yaml.png)
 
 ## New REST API for configuring project with YAML
 
@@ -81,4 +78,5 @@ With all these parsing and exporting improvements in YAML config we also added t
 [get project settings in YAML](/docs/api/projects-builds#get-project-settings-in-yaml) and
 [update project setting in YAML](/docs/api/projects-builds#update-project-settings-in-yaml).
 
-Holidays are coming and we would like to wish all our customers more green builds and less bugs! Merry Christmas and Happy New Year!
+Holidays are coming and we would like to wish all our customers more green builds and less bugs!
+Merry Christmas and Happy New Year!

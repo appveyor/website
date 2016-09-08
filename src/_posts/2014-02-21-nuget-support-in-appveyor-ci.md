@@ -19,7 +19,7 @@ Account NuGet feed aggregates packages from all project feeds and allows publish
 
 You can use your AppVeyor account email/password to access password-protected NuGet feeds although we recommend creating a separate user account just for these purposes (**Account → Team**).
 
-> If you use GitHub or BitBucket button to login AppVeyor you can reset your AppVeyor account password usingForgot password link.
+If you use GitHub or BitBucket button to login AppVeyor you can reset your AppVeyor account password using the **Forgot password** link.
 
 For publishing your own packages to account feed use the command:
 
@@ -47,13 +47,15 @@ nuget spec
 
 ### Pushing NuGet packages from build scripts
 
-To push NuGet package as artifact and publish it in both project and account feeds use this command anywhere in your build script:
+To push NuGet package as artifact and publish it in both project and account feeds use this command
+anywhere in your build script:
 
 ```text
 appveyor PushArtifact <your-nugetpackage.nupkg>
 ```
 
-> When you delete a project in AppVeyor its corresponding NuGet feed is deleted, however all NuGet packages from that feed remain published in account feed.
+When you delete a project in AppVeyor its corresponding NuGet feed is deleted, however all NuGet
+packages from that feed remain published in account feed.
 
 ## Configuring private NuGet feed on your development machine
 
