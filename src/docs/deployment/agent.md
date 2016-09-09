@@ -19,7 +19,7 @@ AppVeyor Deployment Agent (Deployment Agent) is a service running on remote serv
 The following is required on the server to run Deployment Agent:
 
 * Windows Server 2012 (Windows 8) or newer
-* .NET Framework 4.5.1 or newer
+* .NET Framework 4.5.2 or newer
 * Web Role (IIS) is installed if you are deploying web site
 
 
