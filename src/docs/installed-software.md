@@ -76,6 +76,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Visual Studio 2013 SDK](https://www.visualstudio.com/downloads/download-visual-studio-vs)
 * [Python Tools for Visual Studio 2013](https://github.com/Microsoft/PTVS/releases)
 * [Node.js Tools for Visual Studio 2013](https://github.com/Microsoft/nodejstools#readme)
+* WDK 8
 
 ### Visual Studio 2015
 
@@ -83,10 +84,11 @@ Below is the list of software pre-installed on Build Worker.
 * Universal Windows App Dev Tools for Visual Studio 2015
 * Windows 10 SDK
 * [Python Tools for Visual Studio 2015](https://github.com/Microsoft/PTVS/releases)
-* [Node.js Tools for Visual Studio 2015](https://github.com/Microsoft/nodejstools#readme)
+* [Node.js Tools 1.2 for Visual Studio 2015](https://github.com/Microsoft/nodejstools#readme)
 * [Visual F# Tools 4.0 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=48179)
 * [Visual Studio 2015 Installer Projects](https://visualstudiogallery.msdn.microsoft.com/f1cc3f3e-c300-40a7-8797-c509fb8933b9)
 * ASP.NET and Web Tools 2015 (RC1 Update1)
+* WDK 10.0.14393
 
 Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
 
@@ -121,13 +123,13 @@ os: Visual Studio 2015
 
 `4.4.x` is default Node.js installed on build workers.
 
-* 4.0.0 - 6.3.1 (x86 and x64)
+* 6.0.0 - 6.5.0 (x86 and x64) - use `Stable` alias for latest `6.x` release
+* 4.0.0 - 4.5.0 (x86 and x64) - use `LTS` alias for latest `4.x` release
+* 5.0.0 - 5.12.0 (x86 and x64)
 * 0.10.26 - 0.10.46 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
 * 0.12.0 - 0.12.15 (x86 and x64)
 * 0.8.25 - 0.8.28 (x86 and x64)
-* Use `LTS` alias for latest `4.x` release
-* Use `Stable` alias for latest `6.x` release
 
 Use the following PowerShell command to quickly switch Node.js version:
 
@@ -162,10 +164,12 @@ Install-Product node '3'
 ### Go
 
 * [Go](https://golang.org/dl/)
-    * 1.6.2 x64 (`C:\go` - default in `PATH`)
-    * 1.6.2 x86 (`C:\go-x86`)
-    * 1.6.2 x64 (`C:\go16`)
-    * 1.6.2 x86 (`C:\go16-x86`)
+    * 1.7.1 x64 (`C:\go` - default in `PATH`)
+    * 1.7.1 x86 (`C:\go-x86`)
+    * 1.7.1 x64 (`C:\go17`)
+    * 1.7.1 x86 (`C:\go17-x86`)    
+    * 1.6.3 x64 (`C:\go16`)
+    * 1.6.3 x86 (`C:\go16-x86`)
     * 1.5.4 x64 (`C:\go15`)
     * 1.5.4 x86 (`C:\go15-x86`)
     * 1.4.3 x64 (`C:\go14`)
@@ -180,6 +184,8 @@ Install-Product node '3'
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x86) (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)
     * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 101 (x64) (`C:\Program Files\Java\jdk1.8.0`)
     * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 101 (x86) (`C:\Program Files (x86)\Java\jdk1.8.0`)
+* [Maven](https://maven.apache.org/) 3.3.9 (`C:\Program Files (x86)\Apache\Maven` - added to `PATH`) 
+
 
 ### Mono
 
@@ -230,7 +236,7 @@ Install-Product node '3'
 
 ### LLVM
 
-* [LLVM 3.8.0](http://llvm.org/releases/download.html#3.8.0) x64 (`C:\Program Files\LLVM\bin` in `PATH`)
+* [LLVM 3.9.0](http://llvm.org/releases/download.html#3.9.0) x64 (`C:\Program Files\LLVM\bin` in `PATH`)
 
 ### MinGW, MSYS, Cygwin
 
@@ -284,7 +290,7 @@ Install-Product node '3'
 * [7-Zip](http://www.7-zip.org/) 16.02
 * [Microsoft Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 1.2.1 (February 2016)
 * [Microsoft Azure CLI](https://azure.microsoft.com/en-us/downloads/) 0.9.10
-* [CMake](https://cmake.org/download/) 3.5.2
+* [CMake](https://cmake.org/download/) 3.6.2
 * [NuGet](https://dist.nuget.org/index.html) 2.8.6 on `Visual Studio 2013` image
 * [NuGet](https://dist.nuget.org/index.html) 3.4.4 on `Visual Studio 2015` image
 * [Chocolatey](https://chocolatey.org/) v0.9.10.3
