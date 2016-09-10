@@ -23,7 +23,7 @@ environment for compatibility with previous NuGet versions).
 Starting from NuGet 2.7 this method is considered as obsolete
 as it requires additional folder with nuget.exe, nuget.targets
 and do not work in some scenarios (remember that chicken/egg
-(problem with BCL packages)[https://blogs.msdn.microsoft.com/dotnet/2013/08/22/improved-package-restore/].
+[problem with BCL packages](https://blogs.msdn.microsoft.com/dotnet/2013/08/22/improved-package-restore/).
 
 ## Automatic package restore in Visual Studio
 
@@ -31,7 +31,7 @@ This method is part of NuGet Visual Studio add-in (.vsix),
 heavily relies on VS events and works in interactive mode, not build environment.
 Excerpt from that page:
 
-<img src="/assets/images/posts/nuget-restore/nuget-restore-excerpt.png" alt="nuget-restore-excerpt">
+![NuGet restore excerpt](/assets/images/posts/nuget-restore/nuget-restore-excerpt.png)
 
 In other words, restore occurs in Visual Studio and **before** MSBuild process.
 
@@ -42,7 +42,7 @@ This is exactly what we need and do in AppVeyor build environment!
 All that you need is to put "nuget restore" command into "Install scripts"
 or "Before build scripts" box of your project settings:
 
-<img src="/assets/images/posts/nuget-restore/before-build-nuget-restore.png" alt="before-build-nuget-restore">
+![before-build-nuget-restore](/assets/images/posts/nuget-restore/before-build-nuget-restore.png)
 
 or in appveyor.yml:
 

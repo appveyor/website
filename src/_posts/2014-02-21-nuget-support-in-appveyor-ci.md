@@ -2,7 +2,7 @@
 title: NuGet support in AppVeyor CI
 ---
 
-<em>**NOTE**: NuGet support is available in AppVeyor CI 2.0 which is currently in beta. Please <a title="AppVeyor 2.0: dedicated build VMs, parallel testing, NuGet, deployment and more" href="/blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment/">see this post</a> for AppVeyor 2.0 announcement and sign up information.</em>
+<em>**NOTE**: NuGet support is available in AppVeyor CI 2.0 which is currently in beta. Please [see this post](/blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment/) for AppVeyor 2.0 announcement and sign up information.</em>
 
 AppVeyor CI has native NuGet support which becomes de-facto a packaging standard for .NET libraries and applications.
 
@@ -15,11 +15,11 @@ Every AppVeyor account comes with following built-in NuGet feeds:
 
 Account NuGet feed aggregates packages from all project feeds and allows publishing of your custom packages. All account feeds are password-protected. You can find account feed URL and its API key on **Account → NuGet** page:
 
-<img alt="nuget-account" src="/assets/images/posts/nuget-support/nuget-account.png" width="584" height="305">
+![nuget-account](/assets/images/posts/nuget-support/nuget-account.png)
 
 You can use your AppVeyor account email/password to access password-protected NuGet feeds although we recommend creating a separate user account just for these purposes (**Account → Team**).
 
-> If you use GitHub or BitBucket button to login AppVeyor you can reset your AppVeyor account password usingForgot password link.
+If you use GitHub or BitBucket button to login AppVeyor you can reset your AppVeyor account password using the **Forgot password** link.
 
 For publishing your own packages to account feed use the command:
 
@@ -33,7 +33,7 @@ Replace `<your-api-key>` and `<feed-url>` with values from Account **→**�
 
 Project feed collects all NuGet packages pushed to artifacts during the build. Project feed is password-protected if the project references private GitHub or BitBucket repository; otherwise project feed has public access:
 
-<img alt="nuget-project-feed" src="/assets/images/posts/nuget-support/nuget-project-feed1.png" width="584" height="296">
+![nuget-project-feed](/assets/images/posts/nuget-support/nuget-project-feed1.png)
 
 ### Automatic publishing of NuGet projects
 
@@ -47,13 +47,15 @@ nuget spec
 
 ### Pushing NuGet packages from build scripts
 
-To push NuGet package as artifact and publish it in both project and account feeds use this command anywhere in your build script:
+To push NuGet package as artifact and publish it in both project and account feeds use this command
+anywhere in your build script:
 
 ```text
 appveyor PushArtifact <your-nugetpackage.nupkg>
 ```
 
-> When you delete a project in AppVeyor its corresponding NuGet feed is deleted, however all NuGet packages from that feed remain published in account feed.
+When you delete a project in AppVeyor its corresponding NuGet feed is deleted, however all NuGet
+packages from that feed remain published in account feed.
 
 ## Configuring private NuGet feed on your development machine
 
@@ -63,7 +65,7 @@ To configure custom feed in Visual Studio open **Tools → Options → Packag
 
 When you first open Manage NuGet packages dialog you will be presented with a dialog box asking for credentials:
 
-<img alt="nuget-visualstudio-auth" src="/assets/images/docs/nuget-visualstudio-auth.png" width="584" height="389">
+![nuget-visualstudio-auth](/assets/images/docs/nuget-visualstudio-auth.png)
 
 ### Command line
 
@@ -81,7 +83,7 @@ To configure AppVeyor project to use private NuGet feed during build you can use
 
 1. Create a separate AppVeyor account for accessing NuGet feed.
 2. On **Environment** tab of project settings add two environment variables `nuget_user` and `nuget_password`:
-   <img alt="nuget-environment-variables" src="/assets/images/docs/nuget-environment-variables.png" width="584" height="114">
+   ![nuget-environment-variables](/assets/images/docs/nuget-environment-variables.png)
 3. Into **Install** script box add this command:
 
     ```text

@@ -28,10 +28,93 @@ table.no-borders th {
     border: none;
 }
 
-.pricing-post-table tbody > tr > td:nth-child(even) {
+
+.pricing-post-table > thead > tr > th:nth-child(1) {
+    background-color: #bbbbbb;
+}
+
+.pricing-post-table > thead > tr > th:nth-child(3) {
+    background-color: #3eb33e;
+}
+
+.pricing-post-table > thead > tr > th:nth-child(5) {
+    background-color: #ff6633;
+}
+
+.pricing-post-table > thead > tr > th:nth-child(7) {
+    background-color: #555555;
+}
+
+.pricing-post-table tr > td:nth-child(even),
+.pricing-post-table tr > th:nth-child(even) {
     padding: 10px;
 }
 
-.pricing-post-table tbody > tr > td:nth-child(odd) {
+.pricing-post-table tr > td:nth-child(odd),
+.pricing-post-table tr > th:nth-child(odd) {
     padding: 11px;
+    width: 25%;
+}
+
+.pricing-post-table > thead > tr > th {
+    color: white;
+    font-weight: bold;
+}
+
+
+.pricing-post-table-2 tr > th {
+    color: white;
+    font-size: 130%;
+    font-weight: 400;
+}
+
+.pricing-post-table-2 tr > td:nth-child(even),
+.pricing-post-table-2 tr > th:nth-child(even) {
+    padding: 10px;
+    background-color: white !important;
+    border: none !important;
+}
+
+.pricing-post-table-2 tr > td:nth-child(odd),
+.pricing-post-table-2 tr > th:nth-child(odd) {
+    width: 32%;
+}
+
+.pricing-post-table-2 > thead > tr > th:nth-child(1) {
+    background-color: #25AAE3;
+}
+
+.pricing-post-table-2 > thead > tr > th:nth-child(3) {
+    background-color: #0b99d6;
+}
+
+.pricing-post-table-2 > thead > tr > th:nth-child(5) {
+    background-color: #0684ba;
+}
+
+.pricing-post-table-2 > tbody > tr:nth-child(1) > td,
+.pricing-post-table-2 > tbody > tr:nth-child(2) > td {
+    background-color: #f0f0f0;
+}
+
+.pricing-post-table-2 > tbody > tr:nth-child(2) > td {
+    color: #666;
+}
+
+.pricing-post-table-2 > tbody > tr:nth-child(3) > td,
+.pricing-post-table-2 > tbody > tr:nth-child(4) > td,
+.pricing-post-table-2 > tbody > tr:nth-child(5) > td,
+.pricing-post-table-2 > tbody > tr:nth-child(6) > td,
+.pricing-post-table-2 > tbody > tr:nth-child(7) > td {
+    border: dotted 1px #ddd;
+    border-top: none;
+    padding: 15px 0;
+}
+
+.pricing-post-table-2 .small {
+    font-size: 90%;
+}
+
+.pricing-post-table-2 .large {
+    font-size: 220%;
 }

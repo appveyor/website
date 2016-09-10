@@ -2,7 +2,8 @@
 title: AppVeyor CI overview presentation
 ---
 
-In this short presentation I'm talking about AppVeyor CI features and benefits, comparing it to the existing continuous integration solutions and giving some hints about future plans.
+In this short presentation I'm talking about AppVeyor CI features and benefits, comparing it
+to the existing continuous integration solutions and giving some hints about future plans.
 
 <div class="row">
     <div class="columns small-12 medium-6">

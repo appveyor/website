@@ -116,3 +116,8 @@ li ul li {
     color: red;
     font-weight: 700;
 }
+
+.gray,
+.grey {
+    color: gray;
+}

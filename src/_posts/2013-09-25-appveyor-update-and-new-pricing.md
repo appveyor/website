@@ -2,7 +2,10 @@
 title: AppVeyor update and new pricing
 ---
 
-It’s been a while since we last talked as we were working hard implementing really cool stuff and processing user requests to make AppVeyor more stable, secure and fast. Today we are thrilled to announce a huge update to AppVeyor CI service and start of its commercial availability!
+It’s been a while since we last talked as we were working hard implementing really cool stuff
+and processing user requests to make AppVeyor more stable, secure and fast.
+Today we are thrilled to announce a huge update to AppVeyor CI service and start of its commercial
+availability!
 
 ## Summary of what we prepared for you
 
@@ -20,7 +23,9 @@ It’s been a while since we last talked as we were working hard implementing re
 
 ## Deployment
 
-We spent long nights polishing our new <a href="https://github.com/AppVeyor/AppRolla">PowerShell deployment framework - AppRolla</a>. AppRolla is extensible framework tightly integrated with AppVeyor for automating deployment of distributed .NET applications to multi-server environments.
+We spent long nights polishing our new [PowerShell deployment framework - AppRolla](https://github.com/AppVeyor/AppRolla).
+AppRolla is extensible framework tightly integrated with AppVeyor for automating deployment
+of distributed .NET applications to multi-server environments.
 
 Just some of its features and benefits:
 
@@ -30,7 +35,7 @@ Just some of its features and benefits:
 * Modify application configuration files upon deployment
 * Extensible with your own custom deployment tasks
 
-Checkout <a href="http://help.appveyor.com/kb/using-appveyor/web-application-project-deployment-to-staging-and-production-environments">web application project deployment</a> article to learn how to:
+Checkout [web application project deployment](http://help.appveyor.com/kb/using-appveyor/web-application-project-deployment-to-staging-and-production-environments) article to learn how to:
 
 * Setup automatic deployment of web application project to Staging server as part of CI process.
 * Promote project release to Production environment with a click of a button.
@@ -38,15 +43,24 @@ Checkout <a href="http://help.appveyor.com/kb/using-appveyor/web-application-pr
 
 ## Kiln integration
 
-We got numerous requests from our customers to integrate AppVeyor with <a href="http://www.fogcreek.com/kiln/">Kiln source control</a> from FogCreek Software. Though we are not affiliated with them Kiln looks compelling for projects with private repositories because of its per-user pricing (yes, you can create any number of repositories) and cool “Kiln harmony” feature when every single repository can be used from both Git and Mercurial, simultaneously. Integration with AppVeyor does not require an additional Kiln user - you just create a new “access token” and use it when creating a new project in AppVeyor.
+We got numerous requests from our customers to integrate AppVeyor with [Kiln source control](http://www.fogcreek.com/kiln/)
+from FogCreek Software. Though we are not affiliated with them Kiln looks compelling for projects
+with private repositories because of its per-user pricing (yes, you can create any number of repositories)
+and cool “Kiln harmony” feature when every single repository can be used from both Git and Mercurial,
+simultaneously. Integration with AppVeyor does not require an additional Kiln user - you just create
+a new “access token” and use it when creating a new project in AppVeyor.
 
 ## GitHub integration improvements
 
-We added GitHub organizations support and revised OAuth scopes required to access your GitHub account and repositories. AppVeyor makes sure only the minimum set of GitHub permissions is requested just to do the job.
+We added GitHub organizations support and revised OAuth scopes required to access your GitHub account
+and repositories. AppVeyor makes sure only the minimum set of GitHub permissions is requested just to do
+the job.
 
 ## Build scripts
 
-In addition to high-level “Visual Studio solution” and “MSBuild” scenarios we added custom build scripts with maximum control over CI process. You can author build script in PowerShell or as a batch file and use <a href="http://help.appveyor.com/kb/using-appveyor/software-installed-on-appveyor-build-servers">any build tools</a> like MSBuild, PSake, NUnit, xUnit, Node.js in your custom workflow.
+In addition to high-level “Visual Studio solution” and “MSBuild” scenarios we added custom build scripts
+with maximum control over CI process. You can author build script in PowerShell or as a batch file and
+use [any build tools](http://help.appveyor.com/kb/using-appveyor/software-installed-on-appveyor-build-servers) like MSBuild, PSake, NUnit, xUnit, Node.js in your custom workflow.
 
 While running a custom build script AppVeyor provides you integration points for:
 
@@ -54,7 +68,7 @@ While running a custom build script AppVeyor provides you integration points for
 * communicating testing results back to AppVeyor
 * pushing artifacts to build artifacts storage
 
-See <a href="http://help.appveyor.com/kb/using-appveyor/custom-build-scripts">creating custom build scripts</a> article for more details.
+See [creating custom build scripts](http://help.appveyor.com/kb/using-appveyor/custom-build-scripts) article for more details.
 
 ## Custom storage for build artifacts
 
@@ -67,29 +81,44 @@ Out of the box AppVeyor pushes build artifacts in a cloud storage which is GEO-r
 * Control public access to artifacts.
 * You won’t be affected by artifacts retention policy (it’s not yet implemented, but coming in the future) - store as many versions as you need.
 
-See <a href="http://help.appveyor.com/kb/getting-started/packaging-artifacts">packaging artifacts</a> article for more details.
+See [packaging artifacts](http://help.appveyor.com/kb/getting-started/packaging-artifacts) article for more details.
 
 ## Go language support
 
-<a href="https://golang.org/">Go language</a> from Google is gaining momentum and if you are interested in learning/using Go and coming from Windows world AppVeyor is a great platform for doing CI for your next Go project. Take a look at this <a href="https://bitbucket.org/appveyor/test-go/src">sample Go repository</a> (thanks <a href="https://twitter.com/nathany">Nathan Youngman</a> for his help) to see simple Go project structure and build.cmd to kick-off testing in AppVeyor CI environment.
+[Go language](https://golang.org/) from Google is gaining momentum and if you are interested in
+learning/using Go and coming from Windows world AppVeyor is a great platform for doing CI for your
+next Go project. Take a look at this [sample Go repository](https://bitbucket.org/appveyor/test-go/src)
+(thanks [Nathan Youngman](https://twitter.com/nathany) for his help) to see simple Go project structure
+and build.cmd to kick-off testing in AppVeyor CI environment.
 
 ## API
 
-AppVeyor is a single page application (SPA) built with AngularJS (and we promise to tell about its internals in our blog) and all its functionality is available through REST API. We created lightweight <a href="https://github.com/AppVeyor/AppVeyor-PowerShell">AppVeyor API PowerShell library</a> which is currently used by <a href="https://github.com/AppVeyor/AppRolla">AppRolla deployment</a> script and shows how to authenticate API calls and get details about your projects. We will be adding more functions into it over time.
+AppVeyor is a single page application (SPA) built with AngularJS (and we promise to tell about its
+internals in our blog) and all its functionality is available through REST API. We created lightweight
+[AppVeyor API PowerShell library](https://github.com/AppVeyor/AppVeyor-PowerShell) which is currently
+used by [AppRolla deployment](https://github.com/AppVeyor/AppRolla) script and shows how to
+authenticate API calls and get details about your projects. We will be adding more functions into it
+over time.
 
 ## Status badges
 
-You can put the image on your project website displaying the status of the last build. URL of this image and markdown snippet could be found on “Status badges” tab of project settings.
+You can put the image on your project website displaying the status of the last build. URL of this image
+and markdown snippet could be found on “Status badges” tab of project settings.
 
 ## Start of commercial availability
 
-We processed a lot of feedback from our customers which allowed us to substantially improve AppVeyor CI, increase its security and stability. We have a strong feeling that AppVeyor is ready for prime time and today we announce its commercial availability.
+We processed a lot of feedback from our customers which allowed us to substantially improve AppVeyor CI,
+increase its security and stability. We have a strong feeling that AppVeyor is ready for prime time and
+today we announce its commercial availability.
 
-What that means for you? Starting today (September 25th), we offer you a free 30-day trial with unlimited private repositories. During the trial period we will keep in touch with you closely to assist you with the new functionality and work out the best plan for your current needs.
+What that means for you? Starting today (September 25th), we offer you a free 30-day trial with unlimited
+private repositories. During the trial period we will keep in touch with you closely to assist you with
+the new functionality and work out the best plan for your current needs.
 
 ## New pricing
 
-Our goal is to provide you outstanding service with competitive and reasonable <a href="/pricing/">pricing</a>. We gave our pricing a second thought and came up with 3 simple paid plans:
+Our goal is to provide you outstanding service with competitive and reasonable
+[pricing](/pricing/). We gave our pricing a second thought and came up with 3 simple paid plans:
 
 * Express - $19/month (1 private repository)
 * **Professional - $39/month** (10 private repositories)
@@ -101,9 +130,14 @@ AppVeyor is **free for open-source projects** with public repositories.
 
 ## We listen you!
 
-That’s a ton of new information that could be hard to digest. We are going to publish educational articles in <a href="/blog/">our blog</a> on various topics ranging from deployment automation to AppVeyor development secrets. We’ve been quite active on <a href="https://twitter.com/appveyor">Twitter</a> (and this is really cool support tool), so make sure to <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.appveyor.com%2Fpricing&amp;region=follow_link&amp;screen_name=appveyor&amp;tw_p=followbutton&amp;variant=2.0">follow us</a> to stay updated.
+That’s a ton of new information that could be hard to digest. We are going to publish educational
+articles in [our blog](/blog/) on various topics ranging from deployment automation to
+AppVeyor development secrets. We’ve been quite active on [Twitter](https://twitter.com/appveyor)
+(and this is really cool support tool), so make sure to [follow us](https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.appveyor.com%2Fpricing&amp;region=follow_link&amp;screen_name=appveyor&amp;tw_p=followbutton&amp;variant=2.0) to stay updated.
 
-For now, if you have any questions please do not hesitate to drop us a message by just replying to this message or writing at <a href="mailto:team@appveyor.com">team@appveyor.com</a>, start a new discussion on <a href="http://help.appveyor.com/discussions">our forums</a> or submit feature request on <a href="https://appveyor.uservoice.com/">uservoice</a>.
+For now, if you have any questions please do not hesitate to drop us a message at [team@appveyor.com](mailto:team@appveyor.com),
+start a new discussion on [our forums](http://help.appveyor.com/discussions) or submit a feature request
+on [UserVoice](https://appveyor.uservoice.com/).
 
 Best regards,
 Feodor Fitsner, AppVeyor founder and developer

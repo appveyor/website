@@ -293,7 +293,7 @@ module.exports = function(grunt) {
         var markdownlint = require("markdownlint");
         var options = {
             config: require("./markdownlint.json"),
-            files: grunt.file.expand({ filter: "isFile" }, ["src/**/*.md", "!src/_newsletters/*.md", "!src/_posts/*.md"])
+            files: grunt.file.expand({ filter: "isFile" }, ["src/**/*.md"])
         };
 
         markdownlint(options, function callback(err, result) {

@@ -1,4 +1,4 @@
-# The source code of [www.appveyor.com](https://www.appveyor.com/)
+# The source code of <https://www.appveyor.com/>
 
 [![Build status](https://ci.appveyor.com/api/projects/status/a8s3e1pd8070x2y9/branch/master?svg=true)](https://ci.appveyor.com/project/AppVeyor-Website/website)
 [![dependencies Status](https://david-dm.org/appveyor/website/status.svg)](https://david-dm.org/appveyor/website)
@@ -26,4 +26,3 @@ The `staging` branch is published to <https://appveyor-staging.azurewebsites.net
 ### TODO:
 
 * Fix HTML errors due to duplicate IDs in /updates/
-* Move inline CSS to the respective files
