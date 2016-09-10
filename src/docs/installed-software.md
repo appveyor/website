@@ -167,7 +167,7 @@ Install-Product node '3'
     * 1.7.1 x64 (`C:\go` - default in `PATH`)
     * 1.7.1 x86 (`C:\go-x86`)
     * 1.7.1 x64 (`C:\go17`)
-    * 1.7.1 x86 (`C:\go17-x86`)    
+    * 1.7.1 x86 (`C:\go17-x86`)
     * 1.6.3 x64 (`C:\go16`)
     * 1.6.3 x86 (`C:\go16-x86`)
     * 1.5.4 x64 (`C:\go15`)
@@ -184,7 +184,7 @@ Install-Product node '3'
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x86) (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)
     * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 101 (x64) (`C:\Program Files\Java\jdk1.8.0`)
     * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 101 (x86) (`C:\Program Files (x86)\Java\jdk1.8.0`)
-* [Maven](https://maven.apache.org/) 3.3.9 (`C:\Program Files (x86)\Apache\Maven` - added to `PATH`) 
+* [Maven](https://maven.apache.org/) 3.3.9 (`C:\Program Files (x86)\Apache\Maven` - added to `PATH`)
 
 
 ### Mono
