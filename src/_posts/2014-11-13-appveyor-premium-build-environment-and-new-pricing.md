@@ -119,9 +119,7 @@ People contribute their priceless knowledge and experience on [AppVeyor forums](
 To more actively engage the community in shaping AppVeyor we decided to host our entire website
 with documentation on GitHub where everyone could contribute by sending a pull request.
 
-<p class="text-center">
-    <a href="https://github.com/appveyor/website">https://github.com/appveyor/website</a>
-</p>
+See <https://github.com/appveyor/website>.
 
-Website runs on a new [Jekyll](https://jekyllrb.com/)-like engine (we called it NJekyll),
+The website runs on a new [Jekyll](https://jekyllrb.com/)-like engine (we called it NJekyll),
 so you can grab it and use for your own website :)

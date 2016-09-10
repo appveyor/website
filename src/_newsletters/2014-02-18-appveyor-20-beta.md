@@ -54,7 +54,16 @@ Large projects can contain hundreds and thousands of tests that could run for ho
 
 AppVeyor 2.0 has scriptless, repetitive one-click deployment to multiple environments! Deploy as part of the build or promote releases later - manually or through API.
 
-Supported deployment providers: <a href="/docs/deployment/web-deploy/">Web Deploy</a>, <a href="/docs/deployment/ftp/">FTP</a>, <a href="/docs/deployment/amazon-s3">Amazon S3</a>, <a href="/docs/deployment/azure-blob/">Azure blob</a>, <a href="/docs/deployment/azure-cloud-service/">Azure Cloud Services</a>, <a href="/docs/deployment/nuget/">NuGet</a>, <a href="/docs/deployment/agent/">Deployment Agent</a>, <a href="/docs/deployment/local/">Local</a> (for integration testing) and Script.
+Supported deployment providers:
+
+* [Web Deploy](/docs/deployment/web-deploy/)
+* [FTP](/docs/deployment/ftp/)
+* [Amazon S3](/docs/deployment/amazon-s3/)
+* [Azure blob](/docs/deployment/azure-blob/)
+* [Azure Cloud Services](/docs/deployment/azure-cloud-service/)
+* [NuGet](/docs/deployment/nuget/)
+* [Deployment Agent](/docs/deployment/agent/)
+* [Local](/docs/deployment/local/) (for integration testing) and Script
 
 [Read more about deployment](/docs/deployment/)
 

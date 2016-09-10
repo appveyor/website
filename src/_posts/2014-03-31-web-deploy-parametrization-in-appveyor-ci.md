@@ -18,7 +18,7 @@ Most common use cases for Web Deploy parametrization is updating node/attribute 
 
 To enable Web Deploy parametrization add `parameters.xml` file in the root of your web application.
 
-<img src="/assets/images/docs/deployment/web-deploy/vs-solution-explorer.png" alt="vs-solution-explorer">
+![vs-solution-explorer](/assets/images/docs/deployment/web-deploy/vs-solution-explorer.png)
 
 `Parameters.xml` contains the list of parameters required (or supported) by your Web Deploy package. In the example below we introduce two parameters - one to update path to log file in `appSettings` section of `web.config` and another one to set database name in SQL script.
 
@@ -39,7 +39,7 @@ Parameter element describes the name, default value and the places where and how
 
 When Web Deploy package is built you can open it in the explorer and see `parameters.xml` in the root:
 
-<img src="/assets/images/docs/deployment/web-deploy/webdeploy-package.png" alt="webdeploy-package">
+![webdeploy-package](/assets/images/docs/deployment/web-deploy/webdeploy-package.png)
 
 Resulting `parameters.xml` combines your custom parameters and system ones such as `IIS Web Application Name`. You don’t have to set `IIS Web Application Name` parameter explicitly - AppVeyor does that for you.
 
@@ -51,17 +51,17 @@ Web Deploy provider in AppVeyor analyzes Web Deploy package and looks into **env
 
 When promoting specific build from Environment page you set variables on environment settings page:
 
-<img src="/assets/images/docs/deployment/web-deploy/environment-variables.png" alt="environment-variables">
+![environment-variables](/assets/images/docs/deployment/web-deploy/environment-variables.png)
 
 When deploying during the build session environment variables are used instead. You can set build environment variables on Environment tab of project settings, `appveyor.yml` or programmatically during the build.
 
-<img src="/assets/images/docs/deployment/web-deploy/project-environment-variables.png" alt="project-environment-variables">
+![project-environment-variables](/assets/images/docs/deployment/web-deploy/project-environment-variables.png)
 
 Variables defined during the build override those ones defined on Environment level.
 
-Web Deploy parametrization is supported by <a href="/docs/deployment/agent/">Deployment Agent</a> too when deploying from Web Deploy package.
+Web Deploy parametrization is supported by [Deployment Agent](/docs/deployment/agent/) too when deploying from Web Deploy package.
 
 Related articles:
 
-* <a href="/docs/deployment/web-deploy/">Deploying using Web Deploy</a>
-* <a href="/docs/deployment/agent/">Deploying to remote servers with AppVeyor Deployment Agent</a>
+* [Deploying using Web Deploy](/docs/deployment/web-deploy/)
+* [Deploying to remote servers with AppVeyor Deployment Agent](/docs/deployment/agent/)

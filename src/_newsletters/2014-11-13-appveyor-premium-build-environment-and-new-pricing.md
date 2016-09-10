@@ -98,27 +98,30 @@ Also, we introduce yearly pricing for "Pro" and "Premium" plans giving you **2 m
 
 All existing plans are honored.
 
-If you are a student, educational organization or open-source project looking for more calculation power or concurrent jobs we provide **50% discount** on all plans.
+If you are a student, educational organization or open-source project looking for more calculation
+power or concurrent jobs we provide **50% discount** on all plans.
 
 
 ## AppVeyor on-premise
 
-You may have noticed that we don’t have "Enterprise" plan anymore. This is because "Enterprise" is reserved for AppVeyor on-premise edition that will be available in January 2015!
+You may have noticed that we don’t have "Enterprise" plan anymore. This is because "Enterprise" is
+reserved for AppVeyor on-premise edition that will be available in January 2015!
 
-If you are interested to be a beta tester just reply to this message and we’ll add you to the "AppVeyor Enterprise early bird" mailing list.
+If you are interested to be a beta tester just reply to this message and we’ll add you to the
+"AppVeyor Enterprise early bird" mailing list.
 We'll be publishing more information and roadmap for on-premise in the coming weeks.
 
 
 ## Updated website
 
-AppVeyor has gathered many great open-source projects, such as Mono, Julia, Grunt, Redis, nodegit, Chocolatey, JSON.net just to mention a few. People contribute their priceless knowledge and experience on <a href="http://help.appveyor.com/discussions">AppVeyor forums</a>.
+AppVeyor has gathered many great open-source projects, such as Mono, Julia, Grunt, Redis, nodegit,
+Chocolatey, JSON.net just to mention a few. People contribute their priceless knowledge and experience
+on [AppVeyor forums](http://help.appveyor.com/discussions).
 
-To more actively engage the community in shaping AppVeyor we decided to host our entire website with documentation on GitHub where everyone could contribute by sending a pull request.
+To more actively engage the community in shaping AppVeyor we decided to host our entire website with
+documentation on GitHub where everyone could contribute by sending a pull request.
 
-
-<p class="text-center">
-    <a href="https://github.com/appveyor/website">https://github.com/appveyor/website</a>
-</p>
+See <https://github.com/appveyor/website>.
 
 The website runs on a new [Jekyll](https://jekyllrb.com/)-like engine (we called it **NJekyll**),
 so you can grab it and use for your own website :)

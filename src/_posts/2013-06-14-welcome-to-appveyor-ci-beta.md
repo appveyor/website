@@ -18,7 +18,7 @@ the tool:
 You can help us to make AppVeyor a great tool by providing feedback and suggestions.
 You can provide feedback by replying to this email and writing directly to me.
 You can start a new discussion on our [community forums](http://help.appveyor.com/discussions).
-You can vote for feature requests or add new ones on our [uservoice portal](https://appveyor.uservoice.com/).
+You can vote for feature requests or add new ones on our [UserVoice portal](https://appveyor.uservoice.com/).
 We are still working on filling up our [KB database](http://help.appveyor.com/kb),
 so expect new articles in the coming weeks.
 
