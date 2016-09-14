@@ -27,6 +27,9 @@ title: Projects and builds API
 * [Start build of Pull Request (GitHub only)](#start-build-of-pull-request-github-only)
 * [Cancel build](#cancel-build)
 
+# Build Jobs
+
+* [Download build log](#download-build-log)
 
 ## Get projects
 
@@ -1000,3 +1003,13 @@ Request:
     DELETE /api/builds/{accountName}/{projectSlug}/{buildVersion}
 
 Response: 204
+
+### Download build log
+
+Request:
+
+    GET /api/buildjobs/{jobId}/log
+
+Response:
+
+Text file with the log.
