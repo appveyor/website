@@ -1,12 +1,4 @@
 GIT
-  remote: https://github.com/octopress/hooks.git
-  revision: 9ec9efcbe8e2aa4d79d2a35543a29b51f3e6feb2
-  ref: 9ec9efc
-  specs:
-    octopress-hooks (2.6.1)
-      jekyll (>= 2.0)
-
-GIT
   remote: https://github.com/octopress/paginate.git
   revision: 9b3e42f03fe05e19e819a00134b40f63416f736b
   ref: 9b3e42f
@@ -46,6 +38,8 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
+    octopress-hooks (2.6.2)
+      jekyll (>= 2.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     rb-fsevent (0.9.7)
@@ -63,7 +57,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.7.0)
   jekyll-seo-tag (~> 2.0.0)
   jekyll-sitemap (~> 0.11.0)
-  octopress-hooks!
   octopress-paginate!
 
 BUNDLED WITH
