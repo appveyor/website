@@ -22,7 +22,7 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_PULL_REQUEST_TITLE` - GitHub Pull Request title
 * `APPVEYOR_JOB_ID` - AppVeyor unique job ID;
 * `APPVEYOR_JOB_NAME` - job name;
-* `APPVEYOR_REPO_PROVIDER` - GitHub, Bitbucket or Kiln;
+* `APPVEYOR_REPO_PROVIDER` - `github`, `bitbucket`, `kiln`, `vso` or `gitlab`;
 * `APPVEYOR_REPO_SCM` - `git` or `mercurial`;
 * `APPVEYOR_REPO_NAME` - repository name in format `owner-name/repo-name`;
 * `APPVEYOR_REPO_BRANCH` - build branch. For Pull Request commits it is **base** branch PR is merging into;
