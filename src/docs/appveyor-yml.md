@@ -64,6 +64,12 @@ only_commits:
 #    - Project-A/
 #    - Project-B/
 
+# Do not build feature branch with open Pull Requests
+skip_branch_with_pr: true
+
+# Maximum number of concurrent jobs for the project
+max_jobs: 1
+
 #---------------------------------#
 #    environment configuration    #
 #---------------------------------#
