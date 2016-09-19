@@ -20,7 +20,7 @@ Below is the list of software pre-installed on Build Worker.
 ## Version control systems
 
 * [Git](https://git-scm.com/download/win) 2.8.2 (x64) (with `git config --global core.autocrlf input`)
-    * [Git Large File Storage](https://git-lfs.github.com/) 1.2.0
+    * [Git Large File Storage](https://git-lfs.github.com/) 1.4.1
 * [Mercurial](https://www.mercurial-scm.org/downloads) 3.1.1 (x86)
 * [Subversion](http://www.collab.net/downloads/subversion) 1.8.11 (x86)
 
@@ -35,7 +35,8 @@ Below is the list of software pre-installed on Build Worker.
 * [Microsoft Expression Blend Software Development Kit (SDK) for .NET 4](https://www.microsoft.com/en-us/download/details.aspx?id=10801)
 * [Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4](https://www.microsoft.com/en-us/download/details.aspx?id=3062)
 * [Windows Phone SDK 8.0](https://www.microsoft.com/en-us/download/details.aspx?id=35471)
-* [Azure SDKs](https://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.3, 2.4, 2.5.1, 2.6, 2.7.1, 2.8.1, 2.9
+* [Azure SDKs](https://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.3, 2.4, 2.5.1, 2.6, 2.7.1, 2.8.1, 2.9.5
+* [Microsoft Azure Storage Emulator](https://azure.microsoft.com/en-us/downloads/) 4.5
 * [Microsoft SilverLight 5 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=28359)
 * [Windows PowerShell 2.0 SDK](https://www.microsoft.com/en-ca/download/details.aspx?id=2560)
 * [DirectX SDK](https://www.microsoft.com/en-us/download/details.aspx?id=6812) (`C:\Program Files (x86)\Microsoft DirectX SDK`)
@@ -87,7 +88,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Node.js Tools 1.2 for Visual Studio 2015](https://github.com/Microsoft/nodejstools#readme)
 * [Visual F# Tools 4.0 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=48179)
 * [Visual Studio 2015 Installer Projects](https://visualstudiogallery.msdn.microsoft.com/f1cc3f3e-c300-40a7-8797-c509fb8933b9)
-* ASP.NET and Web Tools 2015 (RC1 Update1)
+* Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)
 * WDK 10.0.14393
 
 Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
@@ -98,14 +99,14 @@ os: Visual Studio 2015
 
 ## Xamarin
 
-[Xamarin Platform](https://xamarin.com/platform) v4.1.2.18 is installed on `Visual Studio 2015` image.
+[Xamarin Platform](https://xamarin.com/platform) v4.2.0.680 is installed on `Visual Studio 2015` image.
 
 ## Languages, libraries, frameworks
 
 * [C++ 11 CTP](https://blogs.msdn.microsoft.com/vcblog/2013/11/18/announcing-the-visual-c-compiler-november-2013-ctp/)
 * .NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2, 4.6.0, 4.6.1, 4.6.2
-* .NET Core 1.0
-* [Microsoft .NET Framework 4.5.2 with Developer Pack](https://www.microsoft.com/en-us/download/details.aspx?id=42637)
+* .NET Core 1.0.0
+* .NET Core 1.0.1
 * [Visual F# 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=18706)
 * [Visual F# Out of Band Release 3.1.2](https://www.microsoft.com/en-us/download/details.aspx?id=44011)
 * [Microsoft .NET Portable Library Reference Assemblies 4.6](https://www.microsoft.com/en-us/download/details.aspx?id=40727)
@@ -123,7 +124,7 @@ os: Visual Studio 2015
 
 `4.4.x` is default Node.js installed on build workers.
 
-* 6.0.0 - 6.5.0 (x86 and x64) - use `Stable` alias for latest `6.x` release
+* 6.0.0 - 6.6.0 (x86 and x64) - use `Stable` alias for latest `6.x` release
 * 4.0.0 - 4.5.0 (x86 and x64) - use `LTS` alias for latest `4.x` release
 * 5.0.0 - 5.12.0 (x86 and x64)
 * 0.10.26 - 0.10.46 (x86 and x64)
