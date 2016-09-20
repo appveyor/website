@@ -237,8 +237,8 @@ For example, given `.msi` artifact's deployment name is `MyAppInstall`:
 
 ## Running PowerShell scripts on target server during deployment
 
-`before-deploy.ps1` PowerShell script in the root of application folder will be called **before** every succssful deployment.
-`deploy.ps1` PowerShell script in the root of application folder will be called **after** every succssful deployment.
+`before-deploy.ps1` PowerShell script in the root of application folder will be called **before** every deployment.
+`deploy.ps1` PowerShell script in the root of application folder will be called **after** every successful deployment.
 
 During scripts execution the following environment variables are available:
 
