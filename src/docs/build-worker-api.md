@@ -300,6 +300,7 @@ Request body (JSON):
 
     Push-AppveyorArtifact <path> [-FileName <string>] [-DeploymentName <string>]
            [-Type <type> {Auto, WebDeployPackage}]
+           [-Verbosity <string> {Normal, Minimal, Quiet}]
 
 Example:
 
