@@ -92,7 +92,7 @@ Example:
 
 Command syntax:
 
-    curl [-fsSL…] [-o <output-filename>] [-m <timeout-in-seconds>] <url>
+    curl [-fsSL...] [-o <output-filename>] [-m <timeout-in-seconds>] <url>
 
 For scripting, using `-fsS` (or `-fsSL`) is recommended.  For more info on what the flags do, see the [curl manual](https://curl.haxx.se/docs/manpage.html).  Be aware that if neither `-o` nor `-O` are given, curl will dump the data to standard output.
 
