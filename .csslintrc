@@ -4,6 +4,7 @@
     "bulletproof-font-face": false,
     "font-sizes": false,
     "important": false,
+    "order-alphabetical": false,
     "overqualified-elements": false,
     "qualified-headings": false,
     "unique-headings": false,
