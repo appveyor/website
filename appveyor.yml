@@ -33,7 +33,7 @@ matrix:
   fast_finish: true
 
 cache:
-#  - 'vendor -> appveyor.yml,Gemfile,Gemfile.lock'
+  - 'vendor -> appveyor.yml,Gemfile,Gemfile.lock'
   - 'node_modules -> appveyor.yml,npm-shrinkwrap.json,package.json'
 
 deploy:
