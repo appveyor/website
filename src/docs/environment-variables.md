@@ -46,5 +46,3 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_FILE_DOWNLOAD_TIMEOUT` - timeout in seconds to download arbirtary files using `appveyor DownloadFile` command. Default is 300 (5 minutes);
 * `APPVEYOR_REPOSITORY_SHALLOW_CLONE_TIMEOUT` - timeout in seconds to download repository (GitHub, Bitbucket or VSTS) as zip file (shallow clone). Default is 1800 (30 minutes);
 * `APPVEYOR_CACHE_ENTRY_UPLOAD_DOWNLOAD_TIMEOUT` - timeout in seconds to download or upload each cache entry. Default is 300 (5 minutes);
-* `APPVEYOR_UPLOAD_DOWNLOAD_BUFFER` - buffer in KB for uploading/downloading artifacts and cache items. Default is 32 (32 KB);
-* `APPVEYOR_CACHE_ENTRY_COMPRESSION_LEVEL` - one of the valus of [CompressionLevel Enumeration](https://msdn.microsoft.com/en-us/library/system.io.compression.compressionlevel(v=vs.110).aspx). Default is `Optimal`;

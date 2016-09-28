@@ -3,7 +3,15 @@ layout: docs
 title: Packaging artifacts
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Packaging artifacts
+{:.no_toc}
+
+* Comment to trigger ToC generation
+{:toc}
+<!-- markdownlint-enable MD022 MD032 -->
+
+## Basics
 
 The **Artifacts** page in the project settings tells AppVeyor which files and folders should be uploaded to AppVeyor cloud storage during the build.  Artifacts can be later deployed to other environments, however deployment is not possible unless a file is listed as an artifact first.
 
