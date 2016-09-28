@@ -73,6 +73,17 @@ install:
   - ps: Start-FileDownload 'http://www.myserver.com/packages/installer.msi'
 ```
 
+If you are getting the following error while downloading 
+
+```
+Start-FileDownloadInternal : Error downloading remote file: One or more errors occurred.
+Inner Exception: The request was aborted: Could not create SSL/TLS secure channel.
+```
+this most probably means that build worker and server could not agree on SSL protocol, because server does not support modern protocol with highest security. If you understand this security risk and trust that server, you can relax SSL client settings in build PowerShell session by the following statement called before `Start-FileDownload`
+
+```
+[Net.ServicePointManager]::SecurityProtocol = 'Ssl3, Tls, Tls11, Tls12'
+```
 
 ## AppVeyor command-line utility
 
