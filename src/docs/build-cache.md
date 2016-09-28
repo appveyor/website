@@ -3,11 +3,18 @@ layout: docs
 title: Build cache
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Caching data between builds
+{:.no_toc}
+
+* Comment to trigger ToC generation
+{:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## What is build cache
 
-AppVeyor runs every build on a clean virtual machine. Virtual machine state is not preserved between build which means every build downloads sources, install NuGet packages, Node.js modules, Ruby gems or pulls dependencies.
+AppVeyor runs every build on a clean virtual machine. Virtual machine state is not preserved between builds which means every build downloads sources,
+installs NuGet packages, Node.js modules, Ruby gems or pulls dependencies.
 
 *Build cache* allows you to preserve contents of selected directories and files between project builds.
 
@@ -81,3 +88,79 @@ cache:
 ```
 
 If your build logic is in some `my_build.cmd` you can use it as a dependency instead of `appveyor.yml`.
+
+
+## Cache size (beta)
+
+With the introduction of the new cache we are also changing the way it's metered.
+
+The total size of build cache is limited per account and depends on the plan:
+
+<table class="centered">
+<tr>
+    <th>Free</th>
+    <th>Basic</th>
+    <th>Pro</th>
+    <th>Premium</th>
+</tr>
+<tr>
+    <td>1 GB</td>
+    <td>1 GB</td>
+    <td>5 GB</td>
+    <td>20 GB</td>
+</tr>
+</table>
+
+It's a hard quota which means the build will fail while trying to upload cache item exceeding the quota.<br>
+The maximum size of a single cache entry is still limited, but increased to 3 GB.
+
+
+## Cache speed vs size (beta)
+
+The new cache uses `7z` to compress/uncompress files before transferring them to the cache storage.
+We chose `7z` over built-in .NET compression library because it's generally faster, produces smaller archives and works with hidden files out-of-the-box.
+
+While compressing cache item, by default AppVeyor uses `7z` with `zip` algorithm and compression level `1` ("Fastest") thus producing archive faster, but with larger size (`-tzip -mx=1` args).
+However, you can change compression behavior of `7z` by providing your own command line args in `APPVEYOR_CACHE_ENTRY_ZIP_ARGS` environment variable.
+For example, to enable `LZMA` compression method with the highest possible compression ratio set this variable to `-t7z -m0=lzma -mx=9`.
+
+## Cleaning up cache
+
+There is a number of ways you can remove unused/broken cache items from the cache.
+
+### Remove cache entry from build config
+
+Just comment out cache entry in `appveyor.yml` (or remove on UI) and re-run the build:
+
+```yaml
+cache:
+  #- packages
+```
+
+Upon successful completion of the build cache item will be deleted from the cache.
+
+### Add/change dependency
+
+If your cache is defined like this:
+
+```yaml
+cache:
+  - packages
+```
+
+add the dependency to `packages` entry:
+
+```yaml
+cache:
+  - packages -> appveyor.yml    # or any other file
+```
+
+and the next time the build is run the cache item will be invalidated/deleted in the beginning of the build.
+
+### REST API
+
+You can use AppVeyor REST API to delete build cache of specific project.
+Use CURL, Postman, Fiddler, PowerShell or your favorite web debugging tool to run the following query
+(with [Authorization header](/docs/api/#authentication) of course):
+
+    DELETE https://ci.appveyor.com/api/projects/{accountName}/{projectSlug}/buildcache

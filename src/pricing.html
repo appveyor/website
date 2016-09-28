@@ -25,6 +25,7 @@ description: Plans and Pricing
                                     <li class="price basic">$29<span>/month</span></li>
                                     <li class="bullet-item"><strong>1</strong> private project</li>
                                     <li class="bullet-item"><strong>1</strong> concurrent job</li>
+                                    <li class="bullet-item">1 GB build cache</li>
                                     <li class="bullet-item">Forums support</li>
                                     <li class="cta-button"><a class="button medium radius" href="https://ci.appveyor.com/signup">Start free 14-day trial</a></li>
                                 </ul>
@@ -36,6 +37,7 @@ description: Plans and Pricing
                                     <li class="price annual">$590<span>/year - 2 months free</span></li>
                                     <li class="bullet-item"><strong>Unlimited</strong> private projects</li>
                                     <li class="bullet-item"><strong>1</strong> concurrent job</li>
+                                    <li class="bullet-item">5 GB build cache</li>
                                     <li class="bullet-item">Priority technical support</li>
                                     <li class="cta-button"><a class="button medium radius" href="https://ci.appveyor.com/signup">Start free 14-day trial</a></li>
                                 </ul>
@@ -47,6 +49,7 @@ description: Plans and Pricing
                                     <li class="price annual">$990<span>/year - 2 months free</span></li>
                                     <li class="bullet-item"><strong>Unlimited</strong> private projects</li>
                                     <li class="bullet-item"><strong>2</strong> concurrent jobs</li>
+                                    <li class="bullet-item">20 GB build cache</li>
                                     <li class="bullet-item">Priority technical support</li>
                                     <li class="cta-button"><a class="button medium radius" href="https://ci.appveyor.com/signup">Start free 14-day trial</a></li>
                                 </ul>
@@ -128,6 +131,13 @@ description: Plans and Pricing
             <h3>What is your refund policy?</h3>
             <p>
                 For monthly subscriptions, there are no refunds. For annual subscription there is 30-day money back guarantee.
+            </p>
+
+            <h3>What is build cache?</h3>
+            <p>
+                AppVeyor runs every build on a clean virtual machine. Virtual machine state is not preserved between builds which means every build downloads sources,
+                installs NuGet packages, Node.js modules, Ruby gems or pulls dependencies.
+                <a href="/docs/build-cache/">Build cache</a> allows you to preserve contents of selected directories and files between project builds.
             </p>
         </div>
     </div>
