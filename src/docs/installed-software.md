@@ -328,7 +328,6 @@ Install-Product node '3'
 * [SQL Server 2012 SP1 Express with Advanced Services](https://www.microsoft.com/en-us/download/details.aspx?id=35579)
 * [SQL Server 2014 Express with Advanced Services](https://www.microsoft.com/en-us/download/details.aspx?id=42299)
 * [SQL Server 2016 Developer](https://www.microsoft.com/en-us/cloud-platform/sql-server-editions-developers)  
-  Note that all MS SQL servers are stopped by default and set to use the same default port. Therefore please start and stop them sequentially to avoid port conflicts.
 * [PostgreSQL 9.3 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 * [PostgreSQL 9.4 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 * [PostgreSQL 9.5 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
@@ -336,6 +335,8 @@ Install-Product node '3'
 * [MongoDB 3.0.4](https://www.mongodb.org/downloads)
 * Internet Information Services (IIS) 8.5
 * MSMQ
+
+  Note that all MS SQL servers are stopped by default and set to use the same default port. Therefore please start and stop them sequentially to avoid port conflicts.
 
 ## Miscellaneous
 
