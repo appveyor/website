@@ -336,6 +336,8 @@ Install-Product node '3'
 * Internet Information Services (IIS) 8.5
 * MSMQ
 
+  Note that all MS SQL servers are stopped by default and set to use the same default port. Therefore please start and stop them sequentially to avoid port conflicts.
+
 ## Miscellaneous
 
 * [Code Contracts for .NET](https://visualstudiogallery.msdn.microsoft.com/1ec7db13-3363-46c9-851f-1ce455f66970) 1.9.10714.2
