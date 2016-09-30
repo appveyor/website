@@ -327,7 +327,7 @@ Install-Product node '3'
 * [SQL Server 2008 R2 SP2 Express Edition with Advanced Services (x64)](https://www.microsoft.com/en-US/download/details.aspx?id=30438)
 * [SQL Server 2012 SP1 Express with Advanced Services](https://www.microsoft.com/en-us/download/details.aspx?id=35579)
 * [SQL Server 2014 Express with Advanced Services](https://www.microsoft.com/en-us/download/details.aspx?id=42299)
-* [SQL Server 2016 Developer](https://www.microsoft.com/en-us/cloud-platform/sql-server-editions-developers)  
+* [SQL Server 2016 Developer](https://www.microsoft.com/en-us/cloud-platform/sql-server-editions-developers)
 * [PostgreSQL 9.3 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 * [PostgreSQL 9.4 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
 * [PostgreSQL 9.5 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
