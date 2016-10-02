@@ -4,8 +4,8 @@ body {
 }
 
 @media only screen and (max-width: 40em) {
-    body {
-        padding-top: 0;
+    .top-bar.expanded {
+        margin-top: -45px;
     }
 }
 
