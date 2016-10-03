@@ -4,7 +4,7 @@ date: 2014-11-13
 title: AppVeyor premium build environment and new pricing
 ---
 
-Hello,<br />
+Hello,<br/>
 Based on feedback from our customers we've been working on improving AppVeyor performance
 and got amazing results!
 
@@ -126,5 +126,5 @@ See <https://github.com/appveyor/website>.
 The website runs on a new [Jekyll](https://jekyllrb.com/)-like engine (we called it **NJekyll**),
 so you can grab it and use for your own website :)
 
-Feodor Fitsner,<br />
+Feodor Fitsner,<br/>
 AppVeyor founder and developer
