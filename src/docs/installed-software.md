@@ -90,6 +90,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Visual Studio 2015 Installer Projects](https://visualstudiogallery.msdn.microsoft.com/f1cc3f3e-c300-40a7-8797-c509fb8933b9)
 * Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)
 * WDK 10.0.14393
+* SQL Server Data Tools (SSDT) 16.3 (14.0.60812.0) for Visual Studio 2015
 
 Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
 
