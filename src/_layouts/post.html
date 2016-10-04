@@ -2,27 +2,25 @@
 layout: one-column
 ---
 
-<div>
-    <h1>{{ page.title }}</h1>
+<h1>{{ page.title }}</h1>
 
-    <p>
-        Posted on <strong>{{ page.date | date: "%B %d, %Y" }}</strong>
-    </p>
+<p>
+    Posted on <strong>{{ page.date | date: "%B %d, %Y" }}</strong>
+</p>
 
-    <div class="post-content">
-        {{ content }}
+<div class="post-content">
+    {{ content }}
+</div>
+
+<div class="row">
+    <div class="columns small-6">
+        {% if page.previous %}
+        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">Previous post</a>
+        {% endif %}
     </div>
-
-    <div class="row">
-        <div class="columns small-6">
-            {% if page.previous %}
-            <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">Previous post</a>
-            {% endif %}
-        </div>
-        <div class="columns small-6 text-right">
-            {% if page.next %}
-            <a href="{{ page.next.url }}" title="{{ page.next.title }}">Next post</a>
-            {% endif %}
-        </div>
+    <div class="columns small-6 text-right">
+        {% if page.next %}
+        <a href="{{ page.next.url }}" title="{{ page.next.title }}">Next post</a>
+        {% endif %}
     </div>
 </div>

@@ -126,6 +126,6 @@ AppVeyor founder and developer
 </p>
 
 <p class="gray">
-    AppVeyor Systems Inc. 318 Homer St, Vancouver, BC, V6B 2V2<br />
+    AppVeyor Systems Inc. 318 Homer St, Vancouver, BC, V6B 2V2<br/>
     To stop receiving emails from AppVeyor please use this <a href="">unsubscribe</a> link.
 </p>

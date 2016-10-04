@@ -5,7 +5,7 @@ title: AppVeyor 2.0 live with new pricing
 ---
 
 
-Hello,<br />
+Hello,<br/>
 I’m thrilled to announce that AppVeyor 2.0 officially goes Live and with the new aggressive pricing!
 
 ## The New AppVeyor
@@ -106,10 +106,10 @@ New plans:
 [Sign in](https://ci.appveyor.com/plan) to your existing account and start using AppVeyor for your
 next project!
 
-Feodor Fitsner,<br />
+Feodor Fitsner,<br/>
 AppVeyor founder and developer
 
 <p class="gray">
-    AppVeyor Systems Inc. 318 Homer St, Vancouver, BC, V6B 2V2<br />
+    AppVeyor Systems Inc. 318 Homer St, Vancouver, BC, V6B 2V2<br/>
     To stop receiving emails from AppVeyor please use this <a href="">unsubscribe</a> link.
 </p>

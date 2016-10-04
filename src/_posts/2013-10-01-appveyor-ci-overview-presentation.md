@@ -9,8 +9,8 @@ to the existing continuous integration solutions and giving some hints about fut
     <div class="columns small-12 medium-6">
         <div class="flex-video">
             <iframe src="//www.slideshare.net/slideshow/embed_code/26764707" width="425" height="355" class="slideshare-embed" allowfullscreen></iframe>
-        <div>
-    <div>
-<div>
+        </div>
+    </div>
+</div>
 
 Enjoy!

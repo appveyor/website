@@ -79,7 +79,7 @@ and [update project setting in YAML](/docs/api/projects-builds#update-project-se
 Holidays are coming and we would like to wish all our customers more green builds and less bugs!
 Merry Christmas and Happy New Year!
 
-Feodor Fitsner,<br />
+Feodor Fitsner,<br/>
 AppVeyor founder and developer
 
 Follow us on Twitter: [@appveyor](https://twitter.com/appveyor)
