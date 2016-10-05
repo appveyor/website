@@ -48,7 +48,7 @@
 
 /* Top menu items */
 .top-bar-section ul li > a {
-    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.70rem;
     text-transform: uppercase;
     color: #e2dddd;
@@ -56,7 +56,7 @@
 
 /* Dropdown menu items*/
 .top-bar-section .dropdown li a {
-    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #e2dddd;
     font-size: 0.8rem;
     text-transform: none;
