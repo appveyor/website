@@ -337,7 +337,7 @@ Install-Product node '3'
 * Internet Information Services (IIS) 8.5
 * MSMQ
 
-  Note that all MS SQL servers are stopped by default and set to use the same default port. Therefore please start and stop them sequentially to avoid port conflicts.
+  Note that all MS SQL servers are stopped by default and set to use the same default port. Therefore please start and stop them sequentially to avoid port conflicts. To allow all SQL Server instances to be started simultaneously, please run [this script](https://gist.github.com/FeodorFitsner/a7eba7f44f9becacd3abddca27974e93) at `init` stage.
 
 ## Miscellaneous
 
