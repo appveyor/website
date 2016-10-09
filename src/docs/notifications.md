@@ -414,7 +414,7 @@ You can use Mustache variables (explained in the section below) in URL and heade
 {% endraw %}
 ```
 
-### Webhook payload
+### Webhook payload (default)
 
 When webhook notification triggers AppVeyor makes POST request to the webhook URL and passes JSON data in the body:
 
@@ -492,6 +492,43 @@ When webhook notification triggers AppVeyor makes POST request to the webhook UR
 
 `eventName` can be either `build_success` or `build_failure`
 
+### Webhook payload (custom)
+
+Webhook request body can be customized for cases like notifying New Relic.
+
+Configuring custom webhook request body with default content type (`application/json`) in `appveyor.yml`:
+
+```yaml
+notifications:
+- provider: Webhook
+  url: http://requestb.in/p7cjenp7
+  method: POST
+  headers:
+    X-Api-Key: 
+     secure: 9vNz+tHM2nuER4MTf+iIbg==
+  body: >-
+    {
+        "foo":  "bar"
+    }
+```
+You can set custom Content-Type header for non-JSON content in `appveyor.yml`:
+
+```yaml
+notifications:
+- provider: Webhook
+  url: http://requestb.in/1hnkf4y1
+  method: POST
+  content_type: application/xml
+  body: >-
+    <?xml version="1.0" encoding="UTF-8"?>
+
+    <Objects>
+       <Object Type="System.Collections.Hashtable">
+          <Property Name="Key" Type="System.String">foo</Property>
+          <Property Name="Value" Type="System.String">bar</Property>
+       </Object>
+    </Objects>
+```
 
 ## Customizing message template
 
