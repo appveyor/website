@@ -504,13 +504,14 @@ notifications:
   url: http://requestb.in/p7cjenp7
   method: POST
   headers:
-    X-Api-Key: 
+    X-Api-Key:
      secure: 9vNz+tHM2nuER4MTf+iIbg==
   body: >-
     {
         "foo":  "bar"
     }
 ```
+
 You can set custom Content-Type header for non-JSON content in `appveyor.yml`:
 
 ```yaml
