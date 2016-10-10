@@ -47,7 +47,8 @@ some find [examples](https://github.com/atifaziz/NCrontabwiki/CrontabExamples), 
 * **Web Deploy username** (`username`) - Web Deploy username.
 * **Web Deploy password** (`password`) - Web Deploy password.
 * **WebJob name** (`job_name`) - Optional. Job name - can contain alphanumerics and dashes, for example `myjob-1`.
-* **WebJob schedule in crontab format** (`job_schedule`) - Optional. Job run schedule in **crontab** format. If job schedule is specified job will be published as *triggered*; otherwise as *continuous*. Schedule
+* **WebJob schedule in crontab format** (`job_schedule`) - Optional. Job run schedule in **crontab** format. If schedule is not specified and job is not set as **Manually triggered**, job is published as *continuous* job; otherwise *triggered*.
+* **Manually triggered WebJob (no schedule)** (`manually_triggered`) - Optional. If set schedule is ignored.
 * **Artifact(s) to deploy** (`artifact`) - Optional. Artifact "deployment name" or filename to push. If not specified all `.zip` artifacts from selected build will be published as WebJobs. If you are publishing multiple jobs in a single deployment then omit `job_name` setting - this case job name will be extrapolated from artifact file name.
 
 Configuring in `appveyor.yml`:
