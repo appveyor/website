@@ -123,7 +123,7 @@ os: Visual Studio 2015
 
 ### Node.js
 
-`4.4.x` is default Node.js installed on build workers.
+`4.x` is default Node.js installed on build workers.
 
 * 6.0.0 - 6.6.0 (x86 and x64) - use `Stable` alias for latest `6.x` release
 * 4.0.0 - 4.5.0 (x86 and x64) - use `LTS` alias for latest `4.x` release
