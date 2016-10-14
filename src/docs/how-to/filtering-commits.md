@@ -83,7 +83,7 @@ only_commits:
 ```
 
 
-## Commit files (GitHub only)
+## Commit files (GitHub and Bitbucket only)
 
 ### Skip commits
 
