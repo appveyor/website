@@ -201,6 +201,15 @@ services:
   - mysql
 ```
 
+By default named pipes are not enabled for MySQL. If you need them, please add the following PowerShell statements at `install` stage:
+
+```powershell
+$iniPath="C:\ProgramData\MySQL\MySQL Server 5.7\my.ini"
+$newText = ([System.IO.File]::ReadAllText($iniPath)).Replace("# enable-named-pipe", "enable-named-pipe")
+[System.IO.File]::WriteAllText($iniPath, $newText)
+Restart-Service MySQL57
+```
+
 This is an example how to supply MySql credentials to work with PowerShell tools:
 
 ```powershell
