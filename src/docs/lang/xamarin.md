@@ -23,7 +23,7 @@ Building `.ipa` application packages requires Mac computer and is not currently 
 To restore Xamarin components on build worker you use `xamarin-component.exe` tool.
 The tool is available at the following location: [https://components.xamarin.com/submit/xpkg](https://components.xamarin.com/submit/xpkg)
 
-Rrename downloaded file to `xpkg.zip` and unzip to extract the tool.
+Rename the downloaded file to `xpkg.zip` and unzip to extract the tool.
 
 The main challenge of using this tool on a build server is that to restore components it requires authentication with your Xamarin credentials,
 however `login` action prompts for password interactively thus blocking the build.
