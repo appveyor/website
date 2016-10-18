@@ -91,6 +91,7 @@ Below is the list of software pre-installed on Build Worker.
 * Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)
 * WDK 10.0.14393
 * SQL Server Data Tools (SSDT) 16.3 (14.0.60812.0) for Visual Studio 2015
+* Azure Service Fabric and Tools 5.3.301.9590 for Visual Studio 2015
 
 Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
 
@@ -116,6 +117,7 @@ os: Visual Studio 2015
 * [Silverlight 5 x64 Developer Runtime](https://go.microsoft.com/fwlink/?LinkID=229324)
 * SQL Server Data tools for [Visual Studio 2012](https://msdn.microsoft.com/en-us/jj650015) and [2013](https://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
 * Boost:
+    * 1.62.0 (`C:\Libraries\boost_1_62_0`)
     * 1.60.0 (`C:\Libraries\boost_1_60_0`)
     * 1.59.0 (`C:\Libraries\boost_1_59_0`)
     * 1.58.0 (`C:\Libraries\boost_1_58_0`)
@@ -125,12 +127,12 @@ os: Visual Studio 2015
 
 `4.x` is default Node.js installed on build workers.
 
-* 6.0.0 - 6.6.0 (x86 and x64) - use `Stable` alias for latest `6.x` release
-* 4.0.0 - 4.5.0 (x86 and x64) - use `LTS` alias for latest `4.x` release
+* 6.0.0 - 6.8.1 (x86 and x64) - use `Stable` alias for latest `6.x` release
+* 4.0.0 - 4.6.0 (x86 and x64) - use `LTS` alias for latest `4.x` release
 * 5.0.0 - 5.12.0 (x86 and x64)
-* 0.10.26 - 0.10.46 (x86 and x64)
+* 0.10.26 - 0.10.47 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
-* 0.12.0 - 0.12.15 (x86 and x64)
+* 0.12.0 - 0.12.16 (x86 and x64)
 * 0.8.25 - 0.8.28 (x86 and x64)
 
 Use the following PowerShell command to quickly switch Node.js version:
@@ -298,8 +300,8 @@ Install-Product node '3'
 * [Chocolatey](https://chocolatey.org/) v0.9.10.3
 * [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.6.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
-* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2h (32-bit) (`C:\OpenSSL-Win32\bin`)
-* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2h (64-bit) (`C:\OpenSSL-Win64\bin`)
+* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2j (32-bit) (`C:\OpenSSL-Win32\bin`)
+* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2j (64-bit) (`C:\OpenSSL-Win64\bin`)
 * [NSIS](http://nsis.sourceforge.net/Download) 3.0 (`C:\Program Files (x86)\NSIS`)
 * Coverity Scan 8.5.0.1
 
@@ -315,12 +317,12 @@ Install-Product node '3'
 
 ### Selenium
 
-* [Chrome Web Driver](https://chromedriver.storage.googleapis.com/index.html) 2.22
+* [Chrome Web Driver](https://chromedriver.storage.googleapis.com/index.html) 2.24
 * [Internet Explorer Web Driver](https://selenium-release.storage.googleapis.com/index.html) 2.53
 * [Firefox Web Driver (geckodriver)](https://github.com/mozilla/geckodriver/releases) 0.8.0
 * Internet Explorer 11
-* Firefox 47.0.1
-* Chrome 51.0
+* Firefox 49.0.1
+* Chrome 53.0
 
 
 ## Services and databases
