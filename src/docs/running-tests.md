@@ -15,7 +15,7 @@ AppVeyor has tight integration with the following testing frameworks:
 
 * [Visual Studio Unit Testing framework (MSTest)](https://msdn.microsoft.com/en-us/library/dd264975.aspx)
 * [NUnit](http://www.nunit.org/)
-* [xUnit](https://github.com/xunit/xunit)
+* [xUnit.net](https://github.com/xunit/xunit)
 * [Machine.Specifications (MSpec)](https://github.com/machine/machine.specifications)
 
 This does not, however, mean you can't run your own favourite testing frameworks (like Jasmine, JSLint, Pester) within AppVeyor, but rather that AppVeyor provides **automatic discovery, execution and real-time reporting** for the frameworks listed above.
@@ -121,7 +121,7 @@ public void TestA()
 }
 ```
 
-### xUnit (C#)
+### xUnit.net (C#)
 
 Applying category to a test method:
 
@@ -173,7 +173,7 @@ public class when_transferring_between_two_accounts : AccountSpecs
 
 ## Calling test runners from your custom scripts
 
-The AppVeyor build environment includes runners for MSTest, NUnit and xUnit frameworks that are integrated with the build console to push real-time results while running tests.
+The AppVeyor build environment includes runners for MSTest, NUnit and xUnit.net frameworks that are integrated with the build console to push real-time results while running tests.
 
 You can install and use your own build runners for frameworks above, communication with the build console must be done via text output from those runners.
 
@@ -205,9 +205,9 @@ To run NUnit tests with reporting test results to AppVeyor use command:
 
     nunit3-console <assembly> [options] --result=myresults.xml;format=AppVeyor
 
-### xUnit
+### xUnit.net
 
-To run xUnit tests with real-time reporting use command:
+To run xUnit.net tests with real-time reporting use command:
 
     xunit.console <assembly> /appveyor
 
@@ -253,7 +253,7 @@ where:
     * `junit`.
 * `jobId` - build job ID that is currently running; can be read from `APPVEYOR_JOB_ID` environment variable.
 
-Example build script in PowerShell that runs xUnit tests and then uploads results in XML format:
+Example build script in PowerShell that runs xUnit.net tests and then uploads results in XML format:
 
 ```powershell
 # run tests
