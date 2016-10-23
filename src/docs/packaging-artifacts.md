@@ -60,9 +60,9 @@ or
 ```
 
 The following artifact types are supported:
- 
+
 * `Auto` (default) - infer type automatically from file extension
-* `WebDeployPackage` - Web Deploy package with `.zip` extension 
+* `WebDeployPackage` - Web Deploy package with `.zip` extension
 * `NuGetPackage` - `.nupkg` files
 * `AzureCloudService` - `.cspkg` files
 * `AzureCloudServiceConfig` - `.cscfg` files
