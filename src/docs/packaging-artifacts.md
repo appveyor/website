@@ -59,6 +59,17 @@ or
 - path: '**\*.nupkg' # find all NuGet packages recursively
 ```
 
+The following artifact types are supported:
+ 
+* `Auto` (default) - infer type automatically from file extension
+* `WebDeployPackage` - Web Deploy package with `.zip` extension 
+* `NuGetPackage` - `.nupkg` files
+* `AzureCloudService` - `.cspkg` files
+* `AzureCloudServiceConfig` - `.cscfg` files
+* `SsdtPackage`- `.dacpac` files
+* `Zip` - `.zip` files
+* `File` - any other file types
+
 See [appveyor.yml reference](/docs/appveyor-yml/) for more details.
 
 
