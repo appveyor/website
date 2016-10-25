@@ -114,7 +114,7 @@ Default message body template:
 {% endraw %}
 ```
 
-[How to customize message template](#message-template)
+[How to customize message template](#customizing-message-template)
 
 ### appveyor.yml configuration
 
@@ -126,7 +126,7 @@ notifications:
       - user1@email.com
       - user2@email.com
     subject: 'Build {{status}}'                  # optional
-    message: "{{message}}, {{commitId}}, ..."    # optional
+    message: "{{template_variable_1}}, {{template_variable_2}}, ..."    # optional
     on_build_success: true|false
     on_build_failure: true|false
     on_build_status_changed: true|false
@@ -187,7 +187,7 @@ _{{commitMessage}}_
 {% endraw %}
 ```
 
-* [How to customize message template](#message-template)
+* [How to customize message template](#customizing-message-template)
 * [Slack message formatting guide](https://api.slack.com/docs/formatting)
 
 
@@ -200,7 +200,7 @@ notifications:
     auth_token:
       secure: kBl9BlxvRMr9liHmnBs14A==
     channel: development
-    template: "{{message}}, {{commitId}}, ..."
+    template: "{{template_variable_1}}, {{template_variable_2}}, ..."
 {% endraw %}
 ```
 
@@ -227,7 +227,7 @@ Default GitHub Pull Request comment template:
 {% raw %}{{#passed}}:white_check_mark:{{/passed}}{{#failed}}:x:{{/failed}} [Build {{&projectName}} {{buildVersion}} {{status}}]({{buildUrl}}) (commit {{commitUrl}} by @{{&commitAuthorUsername}}){% endraw %}
 ```
 
-[How to customize message template](#message-template)
+[How to customize message template](#customizing-message-template)
 
 ### appveyor.yml configuration
 
@@ -287,7 +287,7 @@ Commit <a href=""{{commitUrl}}"">{{commitId}}</a> by {{commitAuthor}} on {{commi
 {% endraw %}
 ```
 
-[How to customize message template](#message-template)
+[How to customize message template](#customizing-message-template)
 
 ### appveyor.yml configuration
 
@@ -298,7 +298,7 @@ notifications:
     auth_token:
       secure: RbOnSMSFKYzxzFRrxM1+XA==
     room: ProjectA
-    template: "{{message}}, {{commitId}}, ..."
+    template: "{{template_variable_1}}, {{template_variable_2}}, ..."
 {% endraw %}
 ```
 
@@ -326,7 +326,7 @@ Commit #{{commitId}} by {{commitAuthor}} on {{commitDate}}: {{commitMessage}}
 {% endraw %}
 ```
 
-[How to customize message template](#message-template)
+[How to customize message template](#customizing-message-template)
 
 ### appveyor.yml configuration
 
@@ -338,7 +338,7 @@ notifications:
     auth_token:
       secure: RifLRG8Vfyol+sNhj9u2JA==
     room: ProjectA
-    template: "{{message}}, {{commitId}}, ..."
+    template: "{{template_variable_1}}, {{template_variable_2}}, ..."
 {% endraw %}
 ```
 
@@ -372,7 +372,7 @@ notifications:
     username: <alternate-username>
     password: <your-password>
     room: ProjectA
-    template: "{{message}}, {{commitId}}, ..."
+    template: "{{template_variable_1}}, {{template_variable_2}}, ..."
 {% endraw %}
 ```
 
@@ -532,8 +532,6 @@ notifications:
 ```
 
 ## Customizing message template
-
-HipChat, Slack and Campfire providers support custom message template.
 
 Message template is a [Mustache template](http://mustache.github.io/mustache.5.html) with the same data as `eventData` field in webhook JSON payload above, for example:
 
