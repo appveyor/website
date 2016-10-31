@@ -557,16 +557,13 @@ notifications:
   to:
   - some@email.com
   message: >-
-    <p>Build messages:</p>
-
+    <p>Build messages:</p>  
     <ul>
-
     {{#jobs}}
       {{#messages}}
         <li>{{message}}</li>
       {{/messages}}
     {{/jobs}}
-
     </ul>
   on_build_success: true
   on_build_failure: true
