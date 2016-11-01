@@ -544,7 +544,7 @@ Message template is a [Mustache template](http://mustache.github.io/mustache.5.h
 
 ## Adding custom value to notification
 
-Sometimes `eventdata` from webhook JSON payload is not enough and you need to pass some custom value into notification. One possible trick to do this is to alter build job message. 
+Sometimes `eventdata` from webhook JSON payload is not enough and you need to pass some custom value into notification. One possible trick to do this is to alter build job message.
 
 For example, you need to add some custom warning which appears because of some special condition. Let's say you want to send specific message in email notification if variable `a` is greater than `b`. In this case you can add the following into your appveyor.yml:
 
@@ -557,7 +557,7 @@ And add the following to notification template:
 
 ```html
 {% raw %}
-<p>Build messages:</p>  
+<p>Build messages:</p>
     <ul>
     {{#jobs}}
       {{#messages}}
