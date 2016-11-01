@@ -556,6 +556,7 @@ test_script:
 And add the following to notification template:
 
 ```html
+{% raw %}
 <p>Build messages:</p>  
     <ul>
     {{#jobs}}
@@ -564,6 +565,7 @@ And add the following to notification template:
       {{/messages}}
     {{/jobs}}
     </ul>
+{% endraw %}
 ```
 
 ## Build status in tray - Catlight
