@@ -127,8 +127,9 @@ os: Visual Studio 2015
 
 `4.x` is default Node.js installed on build workers.
 
-* 6.0.0 - 6.8.1 (x86 and x64) - use `Stable` alias for latest `6.x` release
-* 4.0.0 - 4.6.0 (x86 and x64) - use `LTS` alias for latest `4.x` release
+* 7.0.0 - use `Stable` alias for latest `7.x` release
+* 6.0.0 - 6.9.1 (x86 and x64)
+* 4.0.0 - 4.6.1 (x86 and x64) - use `LTS` alias for latest `4.x` release
 * 5.0.0 - 5.12.0 (x86 and x64)
 * 0.10.26 - 0.10.47 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
@@ -304,6 +305,7 @@ Install-Product node '3'
 * [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2j (64-bit) (`C:\OpenSSL-Win64\bin`)
 * [NSIS](http://nsis.sourceforge.net/Download) 3.0 (`C:\Program Files (x86)\NSIS`)
 * Coverity Scan 8.5.0.1
+* [Yarn](https://yarnpkg.com/) 0.16.1
 
 ## Testing
 
