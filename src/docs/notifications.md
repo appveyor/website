@@ -542,6 +542,32 @@ Message template is a [Mustache template](http://mustache.github.io/mustache.5.h
 {% endraw %}
 ```
 
+## Adding custom value to notification
+
+Sometimes `eventdata` from webhook JSON payload is not enough and you need to pass some custom value into notification. One possible trick to do this is to alter build job message.
+
+For example, you need to add some custom warning which appears because of some special condition. Let's say you want to send specific message in email notification if variable `a` is greater than `b`. In this case you can add the following into your appveyor.yml:
+
+```yaml
+test_script:
+- ps: if ($a -gt $b) {Add-AppveyorMessage "My custom warning"}
+```
+
+And add the following to notification template:
+
+```html
+{% raw %}
+<p>Build messages:</p>
+    <ul>
+    {{#jobs}}
+      {{#messages}}
+        <li>{{message}}</li>
+      {{/messages}}
+    {{/jobs}}
+    </ul>
+{% endraw %}
+```
+
 ## Build status in tray - Catlight
 
 [Catlight](https://catlight.io) is a free application that runs on Windows and OS X. It shows current status of AppVeyor builds in tray (or menu bar on OS X). In addition, it will show a toaster notification when a build starts or completes.
