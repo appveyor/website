@@ -548,16 +548,15 @@ Sometimes `eventdata` from webhook JSON payload is not enough and you need to pa
 
 For example, you need to add some custom warning which appears because of some special condition. Let's say you want to send specific message in email notification if variable `a` is greater than `b`. In this case you can add the following into your appveyor.yml:
 
-```text
+```yaml
 test_script:
 - ps: if ($a -gt $b) {Add-AppveyorMessage "My custom warning"}
+```
 
-notifications:
-- provider: Email
-  to:
-  - some@email.com
-  message: >-
-    <p>Build messages:</p>  
+And add the following to notification template:
+
+```html
+<p>Build messages:</p>  
     <ul>
     {{#jobs}}
       {{#messages}}
@@ -565,8 +564,6 @@ notifications:
       {{/messages}}
     {{/jobs}}
     </ul>
-  on_build_success: true
-  on_build_failure: true
 ```
 
 ## Build status in tray - Catlight
