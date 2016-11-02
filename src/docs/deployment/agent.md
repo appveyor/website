@@ -128,6 +128,7 @@ Other settings:
 * `application_name` - optional web application name (IIS virtual directory) to deploy web app into.
 * `application_path` - optional root directory for web application (IIS virtual directory).
 * `apppool_name` - the name of IIS application pool. If pool does not exist it will be created.
+* `aspnet_core` - Optimize application pool for ASP.NET Core. No needed for classic websites, add and set to `true` for ASP.NET Core.
 * `port` - Port of website binding.
 * `ip` - IP address of website binding.
 * `hostname` - Host header value of website binding.
