@@ -277,7 +277,7 @@ module.exports = function(grunt) {
                     crawler.addFetchCondition(function (url) {
                         return url.path !== "/assets/js/j.src" &&
                                url.path !== "/assets/js/+g+" &&
-                               url.path !== "/assets/images/testimonials/%27+c+%27" &&
+                               url.path !== "/feed.xml" &&
                                url.port !== "9023";
                     });
                 },
