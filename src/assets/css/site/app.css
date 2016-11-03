@@ -134,3 +134,11 @@ div.title h2 {
 .margin-left {
     margin-left: 2rem;
 }
+
+
+@media (max-width: 40em) {
+    .footer ul li {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+}
