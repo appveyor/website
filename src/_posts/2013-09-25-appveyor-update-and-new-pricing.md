@@ -21,7 +21,7 @@ availability!
 * Other small improvements and bug fixes based on community feedback
 * New pricing
 
-## Deployment
+## Deployment script
 
 We spent long nights polishing our new [PowerShell deployment framework - AppRolla](https://github.com/AppVeyor/AppRolla).
 AppRolla is extensible framework tightly integrated with AppVeyor for automating deployment
