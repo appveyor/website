@@ -112,7 +112,7 @@ You should have a separate email address which does not exist in AppVeyor and wi
 Go to [Sign up](https://ci.appveyor.com/signup) page and register a new account with that email and password. For "Your name" use something like "{organization} admin".
 
 Next, navigate to [Account details](https://ci.appveyor.com/account) page and check/rename "Account name" - this is {% raw %}<code>{organization}</code>{% endraw %} name that will be used in project URLs.
-On the same page authorize AppVeyor to access GitHub. A new OAuth token will be generated and used for accessing organization's repositories and teams on bahalf of your GitHub user.
+On the same page authorize AppVeyor to access GitHub. A new OAuth token will be generated and used for accessing organization's repositories and teams on behalf of your GitHub user.
 Make sure your GitHub user has owner/admin rights on the repositories you are going to add later as AppVeyor projects.
 
 #### Add yourself as co-administrator
