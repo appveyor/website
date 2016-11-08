@@ -1,7 +1,7 @@
 ---
 title: AWS Elastic Beanstalk deployment
 ---
-Appveyor does not support AWS Elastic Beanstalk deployment out of the box right now. However it can be automated in Appveyor with help of some scripting. Here is small guild based on [this support forum discussion] (https://github.com/appveyor/ci/issues/45#issuecomment-165571187).
+Appveyor does not support AWS Elastic Beanstalk deployment out of the box right now. However it can be automated in Appveyor with help of some scripting. Here is small guild based on [this support forum discussion] (<https://github.com/appveyor/ci/issues/45#issuecomment-165571187>).
 
 * In the root folder of your web application create text file named awsdeploy.txt.
 
@@ -42,7 +42,8 @@ deploy_script:
 ```
 
 Here is example web application folder structure:
-```
+
+```text
 Directory of C:\Projects\WebApplication1
 
 09/15/2016  02:48 AM    <DIR>          .
