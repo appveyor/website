@@ -1,0 +1,45 @@
+.legal ol {
+    counter-reset: item;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.legal > ol > li {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+}
+
+.legal ol li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+}
+
+.legal ol ol ol li:before {
+    content: none;
+}
+
+.legal ol ol {
+    margin-left: 1rem;
+    list-style-type: none;
+}
+
+.legal ol ol li {
+    text-transform: none;
+    margin: 0.5rem 0;
+}
+
+.legal ol ol ol {
+    margin-left: 2rem;
+    list-style-type: lower-alpha;
+}
+
+.legal ol ol ol ol {
+    margin-left: 2rem;
+    list-style-type: lower-roman;
+}
+
+.legal ol ol ol ol ol {
+    margin-left: 2rem;
+    list-style-type: upper-alpha;
+}

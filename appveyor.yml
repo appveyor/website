@@ -5,7 +5,6 @@ clone_depth: 10
 environment:
   matrix:
     - ruby_folder_version: "23"
-      ruby_gems_folder: "2.3.0"
       platform: "x86"
 
 init:
@@ -14,7 +13,7 @@ init:
 install:
   - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
   - bundle install --retry 3 --jobs=%NUMBER_OF_PROCESSORS% --clean --path vendor\bundle
-  - ps: Install-Product node "4" $env:platform
+  - ps: Install-Product node "6" $env:platform
   - npm config set spin false
   - npm install
 
