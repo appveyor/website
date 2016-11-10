@@ -35,12 +35,13 @@ To specify the list of branches that must be ignored:
 
 ```yaml
 except:
-  - /dev.*/     # You can use Regex expression to match multiple branch name(s)
+  - /dev.*/     # You can use Regular expression to match multiple branch name(s)
   - playground
 ```
 
 `gh-pages` branch is always excluded unless explicitly added in "only" list.
 
+**Regular expressions** should be surrounded by `/`, otherise Appveyor will do simple case insensitive string comparison.
 
 ## Conditional build configuration
 
