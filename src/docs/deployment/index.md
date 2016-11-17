@@ -151,7 +151,6 @@ You can use `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for 
 - provider: Environment
   name: production
   on:
-    branch: master
     appveyor_repo_tag: true
 ```
 
