@@ -1,21 +1,21 @@
 ---
 title: AWS Elastic Beanstalk
 ---
-Appveyor does not support AWS Elastic Beanstalk deployment out of the box right now. However it can be automated in Appveyor with help of some scripting. Here is small guide based on [this support forum discussion] (<https://github.com/appveyor/ci/issues/45#issuecomment-165571187>).
+
+Appveyor does not support AWS Elastic Beanstalk deployment out of the box right now.
+However it can be automated in Appveyor with help of some scripting.
+Here is small guide based on [this support forum discussion](https://github.com/appveyor/ci/issues/45#issuecomment-165571187).
 
 * In the root folder of your web application create text file named `awsdeploy.txt`.
-
 * Add the following to `awsdeploy.txt`:
 
-```text
-Template = ElasticBeanstalk
-Container.ApplicationHealthcheckPath = /healthcheck
-```
+  ```text
+  Template = ElasticBeanstalk
+  Container.ApplicationHealthcheckPath = /healthcheck
+  ```
 
 * Add `AWSAccessKeyId` as environment variable and `AWSSecretKey` as secure environment variable.
-
 * Set **Package Web Applications for XCopy deployment** in build stage.
-
 * Set the following as a deployment script:
 
 ```text
