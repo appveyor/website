@@ -6,7 +6,7 @@ title: Creating a Signed and ZipAligned APK (for Google Play) from Xamarin
 
 This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software Developer Lead at [RES](http://resgroup.github.io/).
 
-This post is written from the point of view of someone (me) who is already proficient in C#, but was new to Xamarin, Mobile phone development, and AppVeyor. 
+This post is written from the point of view of someone (me) who is already proficient in C#, but was new to Xamarin, Mobile phone development, and AppVeyor.
 
 It contains from scratch steps to create a Xamarin Android application, to build it on AppVeyor and to publish it to the Play Store. You can [look at the repo I created to test this post](https://github.com/ceddlyburge/create-signed-zipaligned-xamarin-apk-on-appveyor) if you get stuck.
 
@@ -28,31 +28,32 @@ Select the **YourAppName.Droid** project and run it. This should show the bare b
 
 If you have Hyper-V enabled (maybe you use Docker), then you might get an Deployment Error when doing this. [Disable Hyper-V and restart your machine to fix this](http://stackoverflow.com/questions/31613607/visual-studio-2015-emulator-for-android-not-working-xde-exe-exit-code-3).
 
-You might also run in to compile errors due to [ridiculous dependency weirdness](http://stackoverflow.com/questions/40081826/system-missingmethodexception-method-android-support-v4-widget-drawerlayout-ad). 
+You might also run in to compile errors due to [ridiculous dependency weirdness](http://stackoverflow.com/questions/40081826/system-missingmethodexception-method-android-support-v4-widget-drawerlayout-ad).
 
 ## Create APK file manually
 
-To tell Google about your app, you have to make some changes to the *Properties\AndroidManifest.xml* file of the **YourAppName.Droid** project. 
+To tell Google about your app, you have to make some changes to the *Properties\AndroidManifest.xml* file of the **YourAppName.Droid** project.
 
-- Add a `package="com.yourappname"` (or similar) attribute to the root `manifest` node. The package name must be unique on Google Play and must follow normal [java package name conventions](https://en.wikipedia.org/wiki/Java_package#Package_naming_conventions). Most people use their url in reverse (eg com.yourappname instead of yourappname.com) and stick to lower case. 
-- Add an `android:versionCode="1"` attribute to the root `manifest` node. This is an integer and it must be incremented every time you upload an apk on Google Play.
-- Add an `android:versionName="0.1` attribute to the root `manifest` node. This value can be anything you like and is displayed in Google Play.
-- Change the `label` attribute on the `application` node to YourAppName.
+* Add a `package="com.yourappname"` (or similar) attribute to the root `manifest` node. The package name must be unique on Google Play and must follow normal [java package name conventions](https://en.wikipedia.org/wiki/Java_package#Package_naming_conventions). Most people use their url in reverse (eg com.yourappname instead of yourappname.com) and stick to lower case.
+* Add an `android:versionCode="1"` attribute to the root `manifest` node. This is an integer and it must be incremented every time you upload an apk on Google Play.
+* Add an `android:versionName="0.1` attribute to the root `manifest` node. This value can be anything you like and is displayed in Google Play.
+* Change the `label` attribute on the `application` node to YourAppName.
 
 Visual studio has some tools to create an APK, and they seem to be in constant churn, but at the time of writing, the process is as follows.
-- Change the *"Build Configuration"* to *"App Store"*.
-- Select the **YourAppName.droid** project and click *"Build - Archive"* from the main menu.
-- The archive manager window will appear and build your app.
-- Click *"Distribute"*, which will pop up the Distribute window.
-- Initially you won't have a signing identity, so click on the green plus button and fill in the details to create one.
-- Once created, double click on it and note where it is on disk (**YourKeyStoreFilename** from now on)
-- Click *"Save As"* to create an APK.
+
+* Change the *"Build Configuration"* to *"App Store"*.
+* Select the **YourAppName.droid** project and click *"Build - Archive"* from the main menu.
+* The archive manager window will appear and build your app.
+* Click *"Distribute"*, which will pop up the Distribute window.
+* Initially you won't have a signing identity, so click on the green plus button and fill in the details to create one.
+* Once created, double click on it and note where it is on disk (**YourKeyStoreFilename** from now on)
+* Click *"Save As"* to create an APK.
 
 ## Upload the APK to Google Play
 
-- Create a Developer Account on [Google Play Developer Console](https://play.google.com/apps/publish) (this costs $25)
-- Click *"Add New Application"* and add **YourAppName**
-- Upload the APK that you saved in the previous step
+* Create a Developer Account on [Google Play Developer Console](https://play.google.com/apps/publish) (this costs $25)
+* Click *"Add New Application"* and add **YourAppName**
+* Upload the APK that you saved in the previous step
 
 ## Publish the App on Google Play (probably just to Alpha or Beta)
 
@@ -68,14 +69,14 @@ When working with appveyor, it always makes sense to test on your own computer f
 
 Being as we are making a new version of the apk, we need to increment `android:versionCode` in *Properties/AndroidManifest.xml*.
 
-There are some [Xamarin MSBuild targets](https://developer.xamarin.com/guides/android/under_the_hood/build_process/#22-build-targets), which we can use to create a Signed and ZipAligned apk as below. 
+There are some [Xamarin MSBuild targets](https://developer.xamarin.com/guides/android/under_the_hood/build_process/#22-build-targets), which we can use to create a Signed and ZipAligned apk as below.
 
 There are 2 passwords required in the command because [java KeyStores](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) can contain multiple Alias'. So the first password is to access the KeyStore, and the second one is to access the specific alias. Visual studio hides this complexity from you and assigns the same password to both places.
 
 I do a lot of work in GIT Bash, but this statement only works in Batch (the windows command line), I think because of parameter escaping.
 
-```
-MSBuild "/t:SignAndroidPackage" "/p:Configuration=Release" "/p:AndroidKeyStore=true" "/p:AndroidSigningKeyAlias=YourKeyAlias" "/p:AndroidSigningKeyPass=YourKeyStorePassword" "/p:AndroidSigningKeyStore=YourKeyStoreFilename" "/p:AndroidSigningStorePass=YourKeyStorePassword"  "YourAppName.csproj" 
+```batch
+MSBuild "/t:SignAndroidPackage" "/p:Configuration=Release" "/p:AndroidKeyStore=true" "/p:AndroidSigningKeyAlias=YourKeyAlias" "/p:AndroidSigningKeyPass=YourKeyStorePassword" "/p:AndroidSigningKeyStore=YourKeyStoreFilename" "/p:AndroidSigningStorePass=YourKeyStorePassword"  "YourAppName.csproj"
 ```
 
 This will create **com.yourappname-Signed.apk** in the *bin\release* folder. Upload this to Google Play to make sure that everything is working properly.
@@ -83,18 +84,20 @@ This will create **com.yourappname-Signed.apk** in the *bin\release* folder. Upl
 ## Automate APK creation on AppVeyor
 
 You will need to link an AppVeyor account to your GitHub one, so let's do that:
-- Navigate to your repo in GitHub
-- Click "Settings" on the repo
-- Click "Integrations and services"
-- Click "Browse Directory"
-- Click "AppVeyor"
-- Click "Configure"
-- Click "Grant Access"
+
+* Navigate to your repo in GitHub
+* Click "Settings" on the repo
+* Click "Integrations and services"
+* Click "Browse Directory"
+* Click "AppVeyor"
+* Click "Configure"
+* Click "Grant Access"
 
 Now Log in to [AppVeyor.com](https://ci.appveyor.com), probably using your GitHub account
-- Click "Projects"
-- Click "New Project"
-- Choose your GitHub repository and click "Add"
+
+* Click "Projects"
+* Click "New Project"
+* Choose your GitHub repository and click "Add"
 
 MSBuild needs to access your KeyStore file in order to sign the apk, so copy **YourKeyStoreFilename** in to the folder of **YourAppName.Droid** project (called **YourKeyStoreLocalFilename** from now on).
 
