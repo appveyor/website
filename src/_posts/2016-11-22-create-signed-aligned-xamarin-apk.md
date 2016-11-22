@@ -121,7 +121,7 @@ artifacts:
 
 Remember to update `android:versionCode` and then push to GitHub. This will trigger a build on AppVeyor. The `build_script` section will call msbuild to create the signed and zipaligned apk file, and the `artifacts` section will archive the apk file so we can download it later.
 
-Go to [AppVeyor.com](ci.appveyor.com), click on your project, click on *"Artifacts"*, download the apk file, and then upload it to google to check that everything has worked properly.
+Go to [AppVeyor.com](https://ci.appveyor.com), click on your project, click on *"Artifacts"*, download the apk file, and then upload it to google to check that everything has worked properly.
 
 ## Conclusion
 
