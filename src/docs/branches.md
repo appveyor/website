@@ -92,7 +92,7 @@ Unlike white- and blacklisting `branches` section here works like a selector, no
 * If all previous steps fail build is not run.
 
 
-## Build on tags (GitHub and GitLab only)
+## Build on tags (GitHub, GitLab and BitBucket only)
 
 By default AppVeyor starts a new build on any push to GitHub, whether it's a regular commit or a new tag. Repository tagging is frequently used to trigger deployment.
 
@@ -103,9 +103,33 @@ You can use `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for 
 ```yaml
 - provider: Environment
   name: production
-  on:
-    branch: master
+  on:    
     appveyor_repo_tag: true
+```
+
+However please note that `branch` and `appveyor_repo_tag` are mutually exclusive. This is because in case of tag, it replaces branch in webhook content and there are no practically reliable way to recognize from what branch tag was created. Therefore with this setting deployment will happen only for master branch:
+
+```yaml
+- provider: Environment
+  name: production
+  on:
+    branch: master # only this will work
+    appveyor_repo_tag: true # condition will never be evaluated
+```
+
+So if you need to deploy on both branch and tag, please create two `provider` sections under `deploy` like this:
+
+```yaml
+deploy:
+  - provider: Environment
+    name: production
+    on:    
+      branch: master
+
+  - provider: Environment
+    name: production
+    on:      
+      appveyor_repo_tag: true
 ```
 
 You can disable builds on new tags through UI (General tab of project settings) or in `appveyor.yml`:
