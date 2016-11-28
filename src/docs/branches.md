@@ -103,7 +103,7 @@ You can use `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for 
 ```yaml
 - provider: Environment
   name: production
-  on:    
+  on:
     appveyor_repo_tag: true
 ```
 
@@ -123,12 +123,12 @@ So if you need to deploy on both branch and tag, please create two `provider` se
 deploy:
   - provider: Environment
     name: production
-    on:    
+    on:
       branch: master
 
   - provider: Environment
     name: production
-    on:      
+    on:
       appveyor_repo_tag: true
 ```
 
