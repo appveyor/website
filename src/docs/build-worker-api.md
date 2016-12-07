@@ -374,6 +374,15 @@ $version = Get-Date -Format "mmddyyyy-HHmm"
 Update-AppveyorBuild -Version "1.0-$version"
 ```
 
+Example to title build for Gist from GitHub, the typically empty commit subject/message confuses AppVeyor:
+
+```powershell
+$gitData = ConvertFrom-StringData (git log -1 --format=format:"commitId=%H%nmessage=%s%ncommitted=%aD" | out-string)
+if ($gitData['message'] -eq "") { $gitData['message'] = "No commit message available for $($gitData['commitid'])" }
+# View the data with Write-Output @gitData
+Update-AppveyorBuild @gitData
+```
+
 ### Command line
 
     appveyor UpdateBuild [options]
