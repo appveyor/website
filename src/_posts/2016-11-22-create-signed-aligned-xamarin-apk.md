@@ -8,9 +8,7 @@ This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software D
 
 This post is written from the point of view of someone (me) who is already proficient in C#, but was new to Xamarin, Mobile phone development, and AppVeyor.
 
-It contains from scratch steps to create a Xamarin Android application, to build it on AppVeyor and to publish it to the Play Store. You can [look at the repo I created to test this post](https://github.com/ceddlyburge/create-signed-zipaligned-xamarin-apk-on-appveyor) if you get stuck.
-
-I am developing on Windows, so these steps probably won't work if you are developing on a Mac.
+It contains from scratch steps to create a Xamarin Android application (in Visual Studio), to build it on AppVeyor and to publish it to the Play Store. You can [look at the repo I created to test this post](https://github.com/ceddlyburge/create-signed-zipaligned-xamarin-apk-on-appveyor) if you get stuck.
 
 First, install Xamarin from [https://www.xamarin.com/download](https://www.xamarin.com/download).
 
@@ -63,7 +61,7 @@ It's all simple stuff that can be done within the Developer Console. Some screen
 
 There are a lot of optional things you can do as well, which can be worthwhile if you want to publish a killer app. The [Google Launch Checklist](https://developer.android.com/distribute/tools/launch-checklist.html), is comprehensive, but takes a long time to read.
 
-## Automate APL creation locally
+## Automate APK creation locally
 
 When working with appveyor, it always makes sense to test on your own computer first. The feedback is immediate and you iterate very quickly. It takes a lot longer to modify the appveyor.yml file, push it and wait for a build to go through. Also, if it works locally but doesn't work on AppVeyor, you know the problem is a configuration difference between your computer and the AppVeyor environment (eg a different version of msbuild).
 
