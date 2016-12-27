@@ -1,6 +1,7 @@
 ---
 title: SonarQube Analysis
 ---
+
 This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software Developer Lead at [RES](http://resgroup.github.io/).
 
 SonarQube / SonarSource analyses code, highlights quality issues and calculates metrics such as technical debt. More information is available on [SonarSource.com](https://www.sonarsource.com/).
@@ -60,7 +61,7 @@ Instead of committing SonarQube executables to the repo, we will download them d
 ### Install SonarQube MSBuild Runner
 
 * Open a new administrator command prompt / powershell.
-* ```choco install "msbuild-sonarqube-runner" -y```
+* `choco install "msbuild-sonarqube-runner" -y`
 
 ### Analyse and upload to SonarQube
 
