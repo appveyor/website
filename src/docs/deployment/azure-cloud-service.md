@@ -27,7 +27,7 @@ build:
 
 AppVeyor will find Azure Cloud Service project (`.ccproj`) and package it. Created Cloud Service package (`<project-name>.cspkg`) and default "Cloud" configuration (`<project-name>.cscfg`) will be published to build artifacts. In addition to that **all** `.cscfg` files found in Cloud Service project folder are pushed to artifacts with names `<project-name>.<config>.cscfg`. Build artifacts page would look like below:
 
-![azure-cloud-service-artifacts](/assets/images/docs/azure-cloud-service-artifacts.png)
+![azure-cloud-service-artifacts](/assets/img/docs/azure-cloud-service-artifacts.png)
 
 If you get `error WAT200: No default service configuration "ServiceConfiguration.cscfg" could be found in the project`
 build error while using automatic package then you should define `TargetProfile`
@@ -88,10 +88,10 @@ Cloud Service Deploy provider analyzes the deployment package and looks into env
 
 When promoting specific build from Environment page you set variables on environment settings page:
 
-![environment-variables](/assets/images/docs/deployment/web-deploy/environment-variables.png)
+![environment-variables](/assets/img/docs/deployment/web-deploy/environment-variables.png)
 
 When deploying during the build session environment variables are used instead. You can set build environment variables on Environment tab of project settings, `appveyor.yml` or programmatically during the build.
 
-![project-environment-variables](/assets/images/docs/deployment/web-deploy/project-environment-variables.png)
+![project-environment-variables](/assets/img/docs/deployment/web-deploy/project-environment-variables.png)
 
 Variables defined during the build override those ones defined on Environment level.

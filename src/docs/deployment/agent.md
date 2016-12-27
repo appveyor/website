@@ -79,18 +79,18 @@ Settings have format `<artifact_name>.<setting_name>` where `<artifact_name>` is
 
 For example, let the build has the following artifacts:
 
-![Artifacts](/assets/images/docs/agent-deploy-artifacts.png)
+![Artifacts](/assets/img/docs/agent-deploy-artifacts.png)
 
 In order for Deployment Agent to deploy that artifact as IIS web site **Provider settings** will be:
 
-![Artifacts](/assets/images/docs/agent-provider-settings.png)
+![Artifacts](/assets/img/docs/agent-provider-settings.png)
 
 
 ## Overriding settings while deploying from build
 
 You can use environment variables for setting values on environment configuration, for example:
 
-![agent-settings-with-variables](/assets/images/docs/deployment/agent/agent-settings-with-variables.png)
+![agent-settings-with-variables](/assets/img/docs/deployment/agent/agent-settings-with-variables.png)
 
 where `site_name` is environment variable. At the bottom of that screen we are defining its "default" value,
 i.e. the value used when you deploy from Environments and build environment variables are not present.
@@ -158,7 +158,7 @@ You can specify multiple bindings in `hostname`, `ip` and `port` separated by se
 * http \*:80:www.mysite.com
 * https \*:443: cert=\*.mysite.com
 
-![agent-multiple-bindings](/assets/images/docs/deployment/agent/agent-multiple-bindings.png)
+![agent-multiple-bindings](/assets/img/docs/deployment/agent/agent-multiple-bindings.png)
 
 
 ## Deploying artifact package as a Windows application

@@ -185,7 +185,7 @@ You can use Web Deploy to [deploy your Node.js website](/docs/deployment/web-dep
 
 When running `npm install` (or any other Node.js program writing to a console) you may notice that Unicode symbols written to build console look wrong:
 
-![node-output-wrong](/assets/images/docs/lang/node-output-wrong.png)
+![node-output-wrong](/assets/img/docs/lang/node-output-wrong.png)
 
 This is because you are calling that program from PowerShell:
 
@@ -199,7 +199,7 @@ To fix that run it in "shell" mode:
 - npm install
 ```
 
-![node-output-correct](/assets/images/docs/lang/node-output-correct.png)
+![node-output-correct](/assets/img/docs/lang/node-output-correct.png)
 
 At the moment it seems to be an issue with PowerShell and the way it redirects output from console apps to a custom PowerShell host.
 

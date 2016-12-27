@@ -68,7 +68,7 @@
     padding: 0 15px;
 }
 .top-bar .name h1 a {
-    background: transparent url("../images/logo.png") no-repeat 0 50%;
+    background: transparent url("../img/logo.png") no-repeat 0 50%;
     -webkit-background-size: 120px 22px;
     -moz-background-size: 120px 22px;
     background-size: 120px 22px;
@@ -82,7 +82,7 @@
  only screen and (-o-min-device-pixel-ratio: 200/100),
  only screen and (min-device-pixel-ratio: 2.0) {
     .top-bar .name h1 a {
-        background: transparent url("../images/logo-2x.png") no-repeat 0 50%;
+        background: transparent url("../img/logo-2x.png") no-repeat 0 50%;
         -webkit-background-size: 120px 22px;
         -moz-background-size: 120px 22px;
         background-size: 120px 22px;

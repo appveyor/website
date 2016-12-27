@@ -166,10 +166,10 @@ module.exports = function(grunt) {
             },
             images: {
                 src: [
-                    "<%= dirs.dest %>/assets/images/**/*.{jpg,jpeg,gif,png,svg}",
-                    "!<%= dirs.dest %>/assets/images/appveyor-logo*.png",
-                    "!<%= dirs.dest %>/assets/images/favicons/*.{jpg,jpeg,gif,png,svg}",
-                    "!<%= dirs.dest %>/assets/images/testimonials/*.png"
+                    "<%= dirs.dest %>/assets/img/**/*.{jpg,jpeg,gif,png,svg}",
+                    "!<%= dirs.dest %>/assets/img/appveyor-logo*.png",
+                    "!<%= dirs.dest %>/assets/img/favicons/*.{jpg,jpeg,gif,png,svg}",
+                    "!<%= dirs.dest %>/assets/img/testimonials/*.png"
                 ]
             }
         },
@@ -188,7 +188,7 @@ module.exports = function(grunt) {
             options: {
                 assetsDirs: [
                     "<%= dirs.dest %>/",
-                    "<%= dirs.dest %>/assets/images/"
+                    "<%= dirs.dest %>/assets/img/"
                 ]
             }
         },

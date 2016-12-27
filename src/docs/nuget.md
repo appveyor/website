@@ -82,7 +82,7 @@ To configure a custom feed in Visual Studio open **Tools -> Options -> Package M
 
 When you first open the Manage NuGet packages dialog you will be presented with a dialog box asking for credentials:
 
-![nuget environment variables](/assets/images/docs/nuget-visualstudio-auth.png)
+![nuget environment variables](/assets/img/docs/nuget-visualstudio-auth.png)
 
 
 
@@ -100,7 +100,7 @@ AppVeyor allows you to automatically register *account* and/or *project* private
 
 You can enable that through UI on NuGet tab of project settings:
 
-![nuget-project-sources.png](/assets/images/docs/nuget-project-sources.png)
+![nuget-project-sources.png](/assets/img/docs/nuget-project-sources.png)
 
 or in `appveyor.yml`:
 
@@ -119,7 +119,7 @@ To configure an AppVeyor project to use private NuGet feeds during a build you c
 1. Create a separate AppVeyor account for accessing NuGet feed.
 2. On the **Environment** tab of project settings add the two environment variables, `nuget_user` and `nuget_password`:
 
-   ![nuget environment variables](/assets/images/docs/nuget-environment-variables.png)
+   ![nuget environment variables](/assets/img/docs/nuget-environment-variables.png)
 
 3. Into **Install script** box, add this command:
 

@@ -14,7 +14,7 @@ dedicated build machines with admin access, build matrix with jobs parallelizati
 deployment.
 
 <p class="text-center">
-    <img src="/assets/images/posts/2014-02-18/appveyor-screenshot-wireframe.png" alt="Wireframe Screenshot">
+    <img src="/assets/img/posts/2014-02-18/appveyor-screenshot-wireframe.png" alt="Wireframe Screenshot">
 </p>
 
 ## What’s new at a glance
@@ -29,7 +29,7 @@ deployment.
 
 <h2 id="vms">Builds run on dedicated Virtual Machines</h2>
 
-<img class="right" src="/assets/images/posts/2014-02-18/Windows_Azure_logo.png" alt="">
+<img class="right" src="/assets/img/posts/2014-02-18/Windows_Azure_logo.png" alt="">
 
 In AppVeyor 2.0 we are moving away from shared build servers to dedicated VMs. Every build job runs on pristine VM with admin rights! This was probably the main reason for kicking-off this release.
 
@@ -42,7 +42,7 @@ In AppVeyor 2.0 we are moving away from shared build servers to dedicated VMs. E
 
 AppVeyor 2.0 has built-in hosting for private and public NuGet feeds.
 
-<img class="left" src="/assets/images/posts/2014-02-18/nuget-logo.png" alt="">
+<img class="left" src="/assets/img/posts/2014-02-18/nuget-logo.png" alt="">
 
 Every account comes with a private password-protected NuGet feed aggregating packages from all projects and enabling publishing of your custom packages.
 
@@ -55,7 +55,7 @@ Projects have separate NuGet feeds with all NuGet packages pushed as artifacts.
 
 ## Build matrix
 
-<img class="right" src="/assets/images/posts/2014-02-18/build-matrix.png" alt="">
+<img class="right" src="/assets/img/posts/2014-02-18/build-matrix.png" alt="">
 
 Easily build/test for multiple configurations. Specify which operating systems, build configurations and platforms you would like to include into build matrix and AppVeyor will start a build with multiple jobs for all combinations.
 
@@ -70,7 +70,7 @@ Build matrix supports the following dimensions:
 
 ## Parallel testing
 
-<img class="left" src="/assets/images/posts/2014-02-18/parallel-testing.png" alt="">
+<img class="left" src="/assets/img/posts/2014-02-18/parallel-testing.png" alt="">
 
 Large projects can contain hundreds and thousands of tests that could run for hours. AppVeyor 2.0 allows to split your tests into groups by categories, assemblies or custom criteria and run them as build jobs in parallel thus drastically reducing overall build time.
 
@@ -81,7 +81,7 @@ Large projects can contain hundreds and thousands of tests that could run for ho
 
 ## Deployment
 
-<img class="right" src="/assets/images/posts/2014-02-18/deploy.png" alt="">
+<img class="right" src="/assets/img/posts/2014-02-18/deploy.png" alt="">
 
 AppVeyor 2.0 has scriptless, repetitive one-click deployment to multiple environments! Deploy as part of the build or promote releases later - manually or through API.
 
@@ -103,7 +103,7 @@ Supported deployment providers:
 
 <h2 id="yaml">Fine-grained control over build configuration</h2>
 
-<img class="left" src="/assets/images/posts/2014-02-18/yaml.png" alt="">
+<img class="left" src="/assets/img/posts/2014-02-18/yaml.png" alt="">
 
 Great Windows software must provide user interface for any function it has. AppVeyor 2.0 follows this tradition and further extends project settings, so you can control build environment and inject custom script logic on any stage of build pipeline without ever touching your repository!
 

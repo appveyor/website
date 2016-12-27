@@ -227,7 +227,7 @@ To run MSpec tests with real-time reporting use command:
 
 AppVeyor build console has **Tests** tab with test results updated in a real-time as tests run:
 
-![build messages](/assets/images/docs/build-tests.png)
+![build messages](/assets/img/docs/build-tests.png)
 
 So, how to get there from a script if you use your own test runner or a different non-supported testing framework?
 

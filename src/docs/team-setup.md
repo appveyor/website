@@ -61,7 +61,7 @@ A user can be assigned to multiple accounts with different roles. Existing user 
 
 To switch between accounts user must first **sign out**. While signing in again user will be presented with a dropdown listing all accounts he/she is assigned:
 
-![select-account-on-signin](/assets/images/docs/select-account-on-signin.png)
+![select-account-on-signin](/assets/img/docs/select-account-on-signin.png)
 
 ## Leaving account
 

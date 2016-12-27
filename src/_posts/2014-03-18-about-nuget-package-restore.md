@@ -31,7 +31,7 @@ This method is part of NuGet Visual Studio add-in (.vsix),
 heavily relies on VS events and works in interactive mode, not build environment.
 Excerpt from that page:
 
-![NuGet restore excerpt](/assets/images/posts/nuget-restore/nuget-restore-excerpt.png)
+![NuGet restore excerpt](/assets/img/posts/nuget-restore/nuget-restore-excerpt.png)
 
 In other words, restore occurs in Visual Studio and **before** MSBuild process.
 
@@ -42,7 +42,7 @@ This is exactly what we need and do in AppVeyor build environment!
 All that you need is to put "nuget restore" command into "Install scripts"
 or "Before build scripts" box of your project settings:
 
-![before-build-nuget-restore](/assets/images/posts/nuget-restore/before-build-nuget-restore.png)
+![before-build-nuget-restore](/assets/img/posts/nuget-restore/before-build-nuget-restore.png)
 
 or in appveyor.yml:
 

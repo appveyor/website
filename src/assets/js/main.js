@@ -22,7 +22,7 @@
 
         var testimonialEl = testimonialsContainer.querySelector("img");
         var testimonialImage = testimonialImages[Math.floor(Math.random() * testimonialImages.length)];
-        var imgPath = "/assets/images/testimonials/" + testimonialImage;
+        var imgPath = "/assets/img/testimonials/" + testimonialImage;
 
         testimonialEl.setAttribute("src", imgPath);
         testimonialEl.classList.add("loaded");

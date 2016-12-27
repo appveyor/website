@@ -74,7 +74,7 @@ You can limit the amount of email notifications you receive:
 * Do not send notifications at all
 * Send only if build status has changed
 
-![email notifications](/assets/images/docs/notifications/email-notifications.png)
+![email notifications](/assets/img/docs/notifications/email-notifications.png)
 
 
 
@@ -139,7 +139,7 @@ notifications:
 
 Slack sends notifications as message attachments which allows differentiating successful/failed builds/deployments with color.
 
-![slack-build](/assets/images/docs/notifications/slack-build.png)
+![slack-build](/assets/img/docs/notifications/slack-build.png)
 
 Slack notifications can be configured to use either *Authentication token* and *channel name* or *Incoming webhook*.
 
@@ -213,7 +213,7 @@ GitHub Pull Request notifications is a perfect way to notify all developers work
 AppVeyor can post a new comment with build results to a pull request being built. GitHub will send email notifications
 to all subscribed developers.
 
-![githubpullrequest-notifications](/assets/images/docs/notifications/githubpullrequest-notifications.png)
+![githubpullrequest-notifications](/assets/img/docs/notifications/githubpullrequest-notifications.png)
 
 A new comment can be made on behalf of [AppVeyorBot](https://github.com/AppVeyorBot) GitHub account (public repositories only) or any
 custom GitHub account account ("bot") having access to your repositories.
@@ -248,15 +248,15 @@ Encrypt authentication token on [this page](https://ci.appveyor.com/tools/encryp
 
 HipChat has two versions of API: v1 and v2. AppVeyor supports both versions though notifications sent using API v1 allow specifying "from" field:
 
-![hipchat-build-passed-api-v1](/assets/images/docs/notifications/hipchat-build-passed-api-v1.png)
+![hipchat-build-passed-api-v1](/assets/img/docs/notifications/hipchat-build-passed-api-v1.png)
 
-![hipchat-build-failed-api-v1](/assets/images/docs/notifications/hipchat-build-failed-api-v1.png)
+![hipchat-build-failed-api-v1](/assets/img/docs/notifications/hipchat-build-failed-api-v1.png)
 
 while API v2 always sends messages on behalf API token issuer:
 
-![hipchat-build-passed-api-v2](/assets/images/docs/notifications/hipchat-build-passed-api-v2.png)
+![hipchat-build-passed-api-v2](/assets/img/docs/notifications/hipchat-build-passed-api-v2.png)
 
-![hipchat-build-failed-api-v2](/assets/images/docs/notifications/hipchat-build-failed-api-v2.png)
+![hipchat-build-failed-api-v2](/assets/img/docs/notifications/hipchat-build-failed-api-v2.png)
 
 
 ### Authentication token
@@ -572,6 +572,6 @@ And add the following to notification template:
 
 [Catlight](https://catlight.io) is a free application that runs on Windows and OS X. It shows current status of AppVeyor builds in tray (or menu bar on OS X). In addition, it will show a toaster notification when a build starts or completes.
 
-![catlight-build-started-notification](/assets/images/docs/notifications/catlight-build-started-notification.png)
+![catlight-build-started-notification](/assets/img/docs/notifications/catlight-build-started-notification.png)
 
 [Using Catlight build status notifications with AppVeyor](https://catlight.io/a/appveyor-build-status-notifications)

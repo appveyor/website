@@ -40,7 +40,7 @@ If the project folder contains a `*.nuspec` file AppVeyor will try to package th
 
 For example, given the following project structure:
 
-![nuget-pack-project](/assets/images/docs/nuget-pack-project.png)
+![nuget-pack-project](/assets/img/docs/nuget-pack-project.png)
 
 AppVeyor will call:
 

@@ -14,7 +14,7 @@ Now you can use AppVeyor practically with any repository out there whether it is
 
 ## GitHub Enterprise
 
-<img src="/assets/images/posts/github-enterprise-stash/github.png" class="left margin-right" alt="GitHub logo">
+<img src="/assets/img/posts/github-enterprise-stash/github.png" class="left margin-right" alt="GitHub logo">
 
 All beloved GitHub features such as branch builds, Pull Requests and webhooks are available in [GitHub Enterprise](https://enterprise.github.com/) integration. AppVeyor can use both OAuth and Personal Access tokens to authenticate against your GitHub Enterprise repositories.
 
@@ -22,7 +22,7 @@ All beloved GitHub features such as branch builds, Pull Requests and webhooks ar
 
 ## Atlassian Stash
 
-<img src="/assets/images/posts/github-enterprise-stash/stash.png" class="right margin-left" alt="Atlassian Stash logo">
+<img src="/assets/img/posts/github-enterprise-stash/stash.png" class="right margin-left" alt="Atlassian Stash logo">
 
 AppVeyor provides complete and seamless integration with [Atlassian Stash](https://www.atlassian.com/software/stash). Both OAuth and Basic authentications are supported. Whenever you add a new project in AppVeyor webhook and repository SSH key are automatically set.
 
@@ -30,7 +30,7 @@ AppVeyor provides complete and seamless integration with [Atlassian Stash](https
 
 ## Git, Mercurial and Subversion repositories
 
-<img src="/assets/images/posts/github-enterprise-stash/git-mercurial-subversion.png" class="left margin-right" alt="Git - Mercurial - SVN logo">
+<img src="/assets/img/posts/github-enterprise-stash/git-mercurial-subversion.png" class="left margin-right" alt="Git - Mercurial - SVN logo">
 
 Now you can specify a URL to any repository hosted on the Internet! AppVeyor supports credentials and SSH authentication against those repositories.
 

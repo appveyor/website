@@ -27,7 +27,7 @@ Now AppVeyor offers a new [SQL Database deployment provider](/docs/deployment/sq
 incremental publishing of SSDT packages to a local SQL Server instance, remote SQL Server or Azure SQL
 databases.
 
-![SQL database provider settings](/assets/images/posts/2014-12-16/sql-database-provider-settings.png)
+![SQL database provider settings](/assets/img/posts/2014-12-16/sql-database-provider-settings.png)
 
 SQL Database provider uses SQL Server Data-tier Application Framework (DacFx) and as most of AppVeyor
 deployment providers it can be used during the build for staging deployment as well as a new "environment"
@@ -59,7 +59,7 @@ feedback if there is something wrong with project config and as a bonus there is
 [new page for validating appveyor.yml](https://ci.appveyor.com/tools/validate-yaml) instead of try-and-fail
 process:
 
-![Validate YAML](/assets/images/posts/2014-12-16/validate-yaml.png)
+![Validate YAML](/assets/img/posts/2014-12-16/validate-yaml.png)
 
 ## Export project configuration in YAML
 
@@ -67,7 +67,7 @@ You can easily switch your projects to YAML and benefit from portable and versio
 There is a new tab on AppVeyor project settings which allows you to see how project changes made through
 UI would look in appveyor.yml:
 
-![Export YAML](/assets/images/posts/2014-12-16/export-yaml.png)
+![Export YAML](/assets/img/posts/2014-12-16/export-yaml.png)
 
 ## New REST API for configuring project with YAML
 
