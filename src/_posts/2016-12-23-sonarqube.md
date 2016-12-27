@@ -78,12 +78,12 @@ Add and commit an **appveyor.yml** file to the root of the repository as follows
 
 ```yaml
 before_build:
- - nuget restore
+  - nuget restore
 build_script:
- - choco install "msbuild-sonarqube-runner" -y
- - MSBuild.SonarQube.Runner.exe begin /k:"YourUniqueProjectName" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=YourSonarQubeToken"
- - msbuild "YourProjectName.sln"
- - MSBuild.SonarQube.Runner.exe end /d:"sonar.login=YourSonarQubeToken"
+  - choco install "msbuild-sonarqube-runner" -y
+  - MSBuild.SonarQube.Runner.exe begin /k:"YourUniqueProjectName" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=YourSonarQubeToken"
+  - msbuild "YourProjectName.sln"
+  - MSBuild.SonarQube.Runner.exe end /d:"sonar.login=YourSonarQubeToken"
 ```
 
 Again, you can check the results at [sonarqube.com](https://sonarqube.com/).
@@ -127,13 +127,13 @@ environment:
   github_auth_token:
     secure: EncryptedGitHubAuthToken
 before_build:
- - nuget restore
+  - nuget restore
 build_script:
- - choco install "msbuild-sonarqube-runner" -y
- - ps: if ($env:APPVEYOR_PULL_REQUEST_NUMBER) { MSBuild.SonarQube.Runner.exe begin /k:"YourUniqueProjectName" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=YourSonarQubeToken" /d:"sonar.analysis.mode=preview" /d:"sonar.github.pullRequest=$env:APPVEYOR_PULL_REQUEST_NUMBER" /d:"sonar.github.repository=YourRepositoryUrl" /d:"sonar.github.oauth=$env:EncryptedGitHubAuthToken" }
- - ps: if (-Not $env:APPVEYOR_PULL_REQUEST_NUMBER) { MSBuild.SonarQube.Runner.exe begin /k:"YourUniqueProjectName" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=YourSonarQubeToken" }
- - msbuild "YourProjectName.sln"
- - MSBuild.SonarQube.Runner.exe end /d:"sonar.login=YourSonarQubeToken"
+  - choco install "msbuild-sonarqube-runner" -y
+  - ps: if ($env:APPVEYOR_PULL_REQUEST_NUMBER) { MSBuild.SonarQube.Runner.exe begin /k:"YourUniqueProjectName" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=YourSonarQubeToken" /d:"sonar.analysis.mode=preview" /d:"sonar.github.pullRequest=$env:APPVEYOR_PULL_REQUEST_NUMBER" /d:"sonar.github.repository=YourRepositoryUrl" /d:"sonar.github.oauth=$env:EncryptedGitHubAuthToken" }
+  - ps: if (-Not $env:APPVEYOR_PULL_REQUEST_NUMBER) { MSBuild.SonarQube.Runner.exe begin /k:"YourUniqueProjectName" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=YourSonarQubeToken" }
+  - msbuild "YourProjectName.sln"
+  - MSBuild.SonarQube.Runner.exe end /d:"sonar.login=YourSonarQubeToken"
 ```
 
 ## Conclusion
