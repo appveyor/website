@@ -9,7 +9,7 @@ This post is written from the point of view of someone (me) who is already profi
 
 It contains from scratch steps to run the SonarQube analysis on a sample project and to publish the results to the publicly available Nemo instance of SonarQube. You can [look at the repo I created to test this post](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor) if you get stuck.
 
-## Create a new repository on GitHub
+## Create a new GitHub repository
 
 If you are new to GitHub, see [this getting started guide](https://guides.github.com/activities/hello-world/), otherwise simply create a new repo and git clone it somewhere convenient.
 
@@ -136,7 +136,7 @@ build_script:
   - MSBuild.SonarQube.Runner.exe end /d:"sonar.login=YourSonarQubeToken"
 ```
 
-## Conclusion
+## Wrapping Up
 
 SonarQube is maturing fast and is becoming industry standard, and happily it is easy to integrate Open Source projects with the publicly available SonarQube server and AppVeyor. The [SonarLint Visual Studio Plugin](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio) is fantastic at spotting problems before you commit them, and the [GitHub integration](http://docs.sonarqube.org/display/PLUG/GitHub+Plugin) allows you to control the quality of contributions.
 
