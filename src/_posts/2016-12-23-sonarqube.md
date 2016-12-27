@@ -69,7 +69,7 @@ Instead of committing SonarQube executables to the repo, we will download them d
 * `"**YourPathToMSBuild**\MSBuild.exe" "**YourProjectName**.sln"`
 * `MSBuild.SonarQube.Runner.exe end /d:"sonar.login=**YourSonarQubeToken**"`
 
-When finished, you will be able to see the results at [sonarqube.com/](https://sonarqube.com/). If it isn't working, make sure you are using MSBuild 14 and [Java 1.8 or later](http://stackoverflow.com/questions/40249947/msbuild-sonarqube-runner-exe-cant-access-https-sonarqube-com). The SonarQube [Getting Started](https://about.sonarqube.com/get-started/) page is excellent if these instructions become out of date.
+When finished, you will be able to see the results at [sonarqube.com/](https://sonarqube.com). If it isn't working, make sure you are using MSBuild 14 and [Java 1.8 or later](http://stackoverflow.com/questions/40249947/msbuild-sonarqube-runner-exe-cant-access-https-sonarqube-com). The SonarQube [Getting Started](https://about.sonarqube.com/get-started/) page is excellent if these instructions become out of date.
 
 ## Run SonarQube Analysis on AppVeyor
 
