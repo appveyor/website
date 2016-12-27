@@ -23,7 +23,7 @@ deployment.
 * [NuGet hosting](#nuget)
 * [Build matrix](#build-matrix)
 * [Parallel testing](#parallel-testing)
-* [Deployment to multiple environments](#deployment)
+* [Deployment to multiple environments](#deploying)
 * [Build configuration in YAML](#yaml)
 * [Responsive UI](#ui)
 
