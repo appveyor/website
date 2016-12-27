@@ -11,7 +11,9 @@ $(function() {
         href = typeof href === "string" ? href : $(this).attr("href");
 
         if (href !== "#" && href.indexOf("#") === 0) {
-            $("html, body").animate({ scrollTop: $(href).offset().top - $fromTop });
+            $("html, body").animate({
+                scrollTop: $(href).offset().top - $fromTop
+            });
         }
     };
 

@@ -75,6 +75,7 @@ module.exports = function(grunt) {
             js: {
                 src: [
                     "<%= dirs.src %>/assets/js/vendor/anchor.js",
+                    "<%= dirs.src %>/assets/js/no-js-class.js",
                     "<%= dirs.src %>/assets/js/google-analytics.js",
                     "<%= dirs.src %>/assets/js/main.js"
                 ],
