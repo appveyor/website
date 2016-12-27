@@ -79,7 +79,7 @@ Large projects can contain hundreds and thousands of tests that could run for ho
 <div class="clear-both"></div>
 
 
-## Deployment
+## Deploying
 
 <img class="right" src="/assets/images/posts/2014-02-18/deploy.png" alt="">
 
