@@ -51,7 +51,7 @@ GEM
       ffi (>= 0.5.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
-    sass (3.4.22)
+    sass (3.4.23)
 
 PLATFORMS
   x64-mingw32
@@ -64,4 +64,4 @@ DEPENDENCIES
   octopress-paginate!
 
 BUNDLED WITH
-   1.13.6
+   1.13.7
