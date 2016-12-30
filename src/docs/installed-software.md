@@ -19,9 +19,9 @@ Below is the list of software pre-installed on Build Worker.
 
 ## Version control systems
 
-* [Git](https://git-scm.com/download/win) 2.8.2 (x64) (with `git config --global core.autocrlf input`)
-    * [Git Large File Storage](https://git-lfs.github.com/) 1.4.1
-* [Mercurial](https://www.mercurial-scm.org/downloads) 3.1.1 (x86)
+* [Git](https://git-scm.com/download/win) 2.11.0 (x64) (with `git config --global core.autocrlf input`)
+    * [Git Large File Storage](https://git-lfs.github.com/) 1.5.3
+* [Mercurial](https://www.mercurial-scm.org/downloads) 4.0.1 (x86)
 * [Subversion](http://www.collab.net/downloads/subversion) 1.8.11 (x86)
 
 ## SDKs
@@ -90,7 +90,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Visual Studio 2015 Installer Projects](https://visualstudiogallery.msdn.microsoft.com/f1cc3f3e-c300-40a7-8797-c509fb8933b9)
 * Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)
 * WDK 10.0.14393
-* SQL Server Data Tools (SSDT) 16.3 (14.0.60812.0) for Visual Studio 2015
+* SQL Server Data Tools (SSDT) 16.5 (14.0.61021.0) for Visual Studio 2015
 * Azure Service Fabric and Tools 5.3.301.9590 for Visual Studio 2015
 
 Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
@@ -127,13 +127,13 @@ os: Visual Studio 2015
 
 `4.x` is default Node.js installed on build workers.
 
-* 7.0.0 - 7.2.0 - use `Stable` alias for latest `7.x` release
-* 6.0.0 - 6.9.1 (x86 and x64)
-* 4.0.0 - 4.6.2 (x86 and x64) - use `LTS` alias for latest `4.x` release
+* 7.0.0 - 7.3.0 - use `Stable` alias for latest `7.x` release
+* 6.0.0 - 6.9.2 (x86 and x64)
+* 4.0.0 - 4.7.0 (x86 and x64) - use `LTS` alias for latest `4.x` release
 * 5.0.0 - 5.12.0 (x86 and x64)
-* 0.10.26 - 0.10.47 (x86 and x64)
+* 0.10.26 - 0.10.48 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
-* 0.12.0 - 0.12.16 (x86 and x64)
+* 0.12.0 - 0.12.18 (x86 and x64)
 * 0.8.25 - 0.8.28 (x86 and x64)
 
 Use the following PowerShell command to quickly switch Node.js version:
@@ -204,31 +204,33 @@ Install-Product node '3'
     * 2.0.0-p648 x64 (`C:\Ruby200-x64\bin`)
     * 2.1.9 x86 (`C:\Ruby21\bin`)
     * 2.1.9 x64 (`C:\Ruby21-x64\bin`)
-    * 2.2.5 x86 (`C:\Ruby22\bin`)
-    * 2.2.5 x64 (`C:\Ruby22-x64\bin`)
-    * 2.3.1 x86 (`C:\Ruby23\bin`)
-    * 2.3.1 x64 (`C:\Ruby23-x64\bin`)
+    * 2.2.6 x86 (`C:\Ruby22\bin`)
+    * 2.2.6 x64 (`C:\Ruby22-x64\bin`)
+    * 2.3.3 x86 (`C:\Ruby23\bin`)
+    * 2.3.3 x64 (`C:\Ruby23-x64\bin`)
 
 ### Python
 
 * [Python](https://www.python.org/downloads/windows/)
     * 2.6.6 x86 (`C:\Python26`)
     * 2.6.6 x64 (`C:\Python26-x64`)
-    * 2.7.12 x86 (`C:\Python27` - default in `PATH`)
-    * 2.7.12 x64 (`C:\Python27-x64`)
+    * 2.7.13 x86 (`C:\Python27` - default in `PATH`)
+    * 2.7.13 x64 (`C:\Python27-x64`)
     * 3.3.5 x86 (`C:\Python33`)
     * 3.3.5 x64 (`C:\Python33-x64`)
     * 3.4.4 x86 (`C:\Python34`)
     * 3.4.4 x64 (`C:\Python34-x64`)
     * 3.5.2 x86 (`C:\Python35`)
     * 3.5.2 x64 (`C:\Python35-x64`)
+    * 3.6.0 x86 (`C:\Python36`)
+    * 3.6.0 x64 (`C:\Python36-x64`)    
 * Miniconda
-    * Miniconda2 4.0.5 (Python 2.7.11) - `C:\Miniconda`
-    * Miniconda2 4.0.5 x64 (Python 2.7.11): `C:\Miniconda-x64`
+    * Miniconda2 4.2.12 (Python 2.7.12) - `C:\Miniconda`
+    * Miniconda2 4.2.12 x64 (Python 2.7.12): `C:\Miniconda-x64`
     * Miniconda3 3.16.0 (Python 3.4.3): `C:\Miniconda3`
     * Miniconda3 3.16.0 x64 (Python 3.4.3): `C:\Miniconda3-x64`
-    * Miniconda3 4.0.5 (Python 3.5.1): `C:\Miniconda35`
-    * Miniconda3 4.0.5 x64 (Python 3.5.1): `C:\Miniconda35-x64`
+    * Miniconda3 4.2.12 (Python 3.5.2): `C:\Miniconda35`
+    * Miniconda3 4.2.12 x64 (Python 3.5.2): `C:\Miniconda35-x64`
 * [Visual C++ Compiler for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266)
 
 ### Perl
@@ -259,7 +261,7 @@ Install-Product node '3'
 ### Qt
 
 * Qt (`C:\Qt`)
-    * Qt 5.7: `C:\Qt\5.7`
+    * Qt 5.7.1: `C:\Qt\5.7`
         * MinGW 5.3.0 32 bit: `C:\Qt\5.7\mingw53_32`
         * msvc2015 64-bit: `C:\Qt\5.7\msvc2015_64`
         * msvc2015 32-bit: `C:\Qt\5.7\msvc2015`
@@ -292,20 +294,20 @@ Install-Product node '3'
 
 ## Tools
 
-* [7-Zip](http://www.7-zip.org/) 16.02
+* [7-Zip](http://www.7-zip.org/) 16.04
 * [Microsoft Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 1.2.1 (February 2016)
 * [Microsoft Azure CLI](https://azure.microsoft.com/en-us/downloads/) 0.9.10
-* [CMake](https://cmake.org/download/) 3.6.2
+* [CMake](https://cmake.org/download/) 3.7.1
 * [NuGet](https://dist.nuget.org/index.html) 2.8.6 on `Visual Studio 2013` image
-* [NuGet](https://dist.nuget.org/index.html) 3.4.4 on `Visual Studio 2015` image
-* [Chocolatey](https://chocolatey.org/) v0.9.10.3
+* [NuGet](https://dist.nuget.org/index.html) 3.5.0 on `Visual Studio 2015` image
+* [Chocolatey](https://chocolatey.org/) v0.10.3
 * [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.6.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
 * [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2j (32-bit) (`C:\OpenSSL-Win32\bin`)
 * [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2j (64-bit) (`C:\OpenSSL-Win64\bin`)
 * [NSIS](http://nsis.sourceforge.net/Download) 3.0 (`C:\Program Files (x86)\NSIS`)
 * Coverity Scan 8.5.0.1
-* [Yarn](https://yarnpkg.com/) 0.16.1
+* [Yarn](https://yarnpkg.com/) 0.18.1
 
 ## Testing
 
