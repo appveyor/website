@@ -223,7 +223,7 @@ Install-Product node '3'
     * 3.5.2 x86 (`C:\Python35`)
     * 3.5.2 x64 (`C:\Python35-x64`)
     * 3.6.0 x86 (`C:\Python36`)
-    * 3.6.0 x64 (`C:\Python36-x64`) 
+    * 3.6.0 x64 (`C:\Python36-x64`)
 * Miniconda
     * Miniconda2 4.2.12 (Python 2.7.12) - `C:\Miniconda`
     * Miniconda2 4.2.12 x64 (Python 2.7.12): `C:\Miniconda-x64`
