@@ -29,7 +29,7 @@ You can split tests into jobs on the Free plan, but jobs will run in series as t
 
 .NET unit-testing frameworks allow for assigning categories to a test. By specifying which categories we'd like to run for each job one can drastically reduce the overall build time. The diagram below illustrates the idea:
 
-![parallel testing diagram](/assets/images/docs/parallel-testing-diagram.png)
+![parallel testing diagram](/assets/img/docs/parallel-testing-diagram.png)
 
 ### Categorizing tests
 
@@ -77,7 +77,7 @@ public void MyTest()
 
 Add **parallel testing groups** on the **Tests** tab of project settings. For example, a project with the following configuration will have builds with 2 jobs each running tests of category A and B respectively:
 
-![test categories](/assets/images/docs/test-categories.png)
+![test categories](/assets/img/docs/test-categories.png)
 
 To configure parallel testing groups in `appveyor.yml`:
 
@@ -91,7 +91,7 @@ test:
 
 The configuration above will produce two jobs:
 
-![test categories](/assets/images/docs/parallel-testing-jobs.png)
+![test categories](/assets/img/docs/parallel-testing-jobs.png)
 
 
 ## Environment variables
@@ -102,11 +102,11 @@ For example, using the fact that the **Test assemblies** field on the **Tests** 
 
 On the **Environment** tab, add two groups of variables with `test_assembly` (you can use any name) in each:
 
-![test categories](/assets/images/docs/environment-variables-groups.png)
+![test categories](/assets/img/docs/environment-variables-groups.png)
 
 Then on the **Tests** tab specify which assemblies to test using the environment variable:
 
-![test categories](/assets/images/docs/test-assemblies.png)
+![test categories](/assets/img/docs/test-assemblies.png)
 
 The same configuration in `appveyor.yml`:
 

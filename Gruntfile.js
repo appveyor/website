@@ -75,6 +75,7 @@ module.exports = function(grunt) {
             js: {
                 src: [
                     "<%= dirs.src %>/assets/js/vendor/anchor.js",
+                    "<%= dirs.src %>/assets/js/no-js-class.js",
                     "<%= dirs.src %>/assets/js/google-analytics.js",
                     "<%= dirs.src %>/assets/js/main.js"
                 ],
@@ -165,10 +166,10 @@ module.exports = function(grunt) {
             },
             images: {
                 src: [
-                    "<%= dirs.dest %>/assets/images/**/*.{jpg,jpeg,gif,png,svg}",
-                    "!<%= dirs.dest %>/assets/images/appveyor-logo*.png",
-                    "!<%= dirs.dest %>/assets/images/favicons/*.{jpg,jpeg,gif,png,svg}",
-                    "!<%= dirs.dest %>/assets/images/testimonials/*.png"
+                    "<%= dirs.dest %>/assets/img/**/*.{jpg,jpeg,gif,png,svg}",
+                    "!<%= dirs.dest %>/assets/img/appveyor-logo*.png",
+                    "!<%= dirs.dest %>/assets/img/favicons/*.{jpg,jpeg,gif,png,svg}",
+                    "!<%= dirs.dest %>/assets/img/testimonials/*.png"
                 ]
             }
         },
@@ -187,7 +188,7 @@ module.exports = function(grunt) {
             options: {
                 assetsDirs: [
                     "<%= dirs.dest %>/",
-                    "<%= dirs.dest %>/assets/images/"
+                    "<%= dirs.dest %>/assets/img/"
                 ]
             }
         },

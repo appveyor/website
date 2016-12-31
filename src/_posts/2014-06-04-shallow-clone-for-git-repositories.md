@@ -19,7 +19,7 @@ By default AppVeyor clones entire repository with all the history. You can limit
 commits you'd like to clone. This feature works for Git repositories hosted at GitHub, BitBucket and Kiln.
 You can set clone depth on General tab of project settings:
 
-![Git clone depth](/assets/images/posts/shallow-clone/git-clone-depth.png)
+![Git clone depth](/assets/img/posts/shallow-clone/git-clone-depth.png)
 
 To set clone depth in `appveyor.yml` add the following in the root of config:
 
@@ -39,7 +39,7 @@ for regular commits, branch commits and pull requests.
 
 You can enable this option through UI on **General** tab of project settings:
 
-![GitHub shallow clone](/assets/images/posts/shallow-clone/github-shallow-clone.png)
+![GitHub shallow clone](/assets/img/posts/shallow-clone/github-shallow-clone.png)
 
 To enable it through `appveyor.yml` add the following in the root of config:
 

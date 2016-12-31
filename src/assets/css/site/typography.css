@@ -89,8 +89,6 @@ pre {
     padding: 0.5rem 0.5rem;
     background-color: #f9f9f9;
     border: 1px solid #eee;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
     border-radius: 2px;
     overflow-x: auto;
     white-space: pre;

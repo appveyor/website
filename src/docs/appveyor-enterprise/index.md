@@ -52,7 +52,7 @@ Why AppVeyor requires Windows 8/Server 2012 or higher? AppVeyor Web worker requi
 
 AppVeyor is a distributed application consisting of several roles that can be installed on a single or multiple servers across the network.
 
-![AppVeyor General Diagram](/assets/images/docs/appveyor-enterprise/appveyor-architecture-general.png)
+![AppVeyor General Diagram](/assets/img/docs/appveyor-enterprise/appveyor-architecture-general.png)
 
 ### Web role
 
@@ -138,14 +138,14 @@ Cons:
 
 All AppVeyor roles with Redis, SQL Server and Service Bus are installed on a single machine. This is quick and easy way for small teams and individual developers to have their own build server on Azure or AWS virtual machine.
 
-![AppVeyor All-in-one installation](/assets/images/docs/appveyor-enterprise/appveyor-all-in-one.png)
+![AppVeyor All-in-one installation](/assets/img/docs/appveyor-enterprise/appveyor-all-in-one.png)
 
 
 ### 2-tier
 
 Web and Worker roles along with dependencies are installed on one server and Build Agent services are installed on multiple servers.
 
-![AppVeyor 2-tier installation](/assets/images/docs/appveyor-enterprise/appveyor-2-tier.png)
+![AppVeyor 2-tier installation](/assets/img/docs/appveyor-enterprise/appveyor-2-tier.png)
 
 
 ### Azure Cloud Service
@@ -157,7 +157,7 @@ Some of the advantages of this "private" cloud deployment:
 * Unlimited scale - you control the number of Web and Worker instances and Redis, Storage, Azure SQL plans.
 * Practically zero maintenance with highest SLA backed up by Azure.
 
-![AppVeyor in Azure Cloud Service](/assets/images/docs/appveyor-enterprise/appveyor-azure-cloud-service.png)
+![AppVeyor in Azure Cloud Service](/assets/img/docs/appveyor-enterprise/appveyor-azure-cloud-service.png)
 
 [Contact us](/support/) if you are interested in trying out this solution.
 

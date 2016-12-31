@@ -77,9 +77,7 @@
 }
 
 .home-sprite {
-    background-image: url("../images/home/home-sprite.png");
-    -webkit-background-size: 234px 78px;
-    -moz-background-size: 234px 78px;
+    background-image: url("../img/home/home-sprite.png");
     background-size: 234px 78px;
     background-repeat: no-repeat;
     display: block;
@@ -106,7 +104,7 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min--moz-device-pixel-ratio: 2.0), only screen and (-o-min-device-pixel-ratio: 200/100), only screen and (min-device-pixel-ratio: 2.0) {
     .home-sprite {
-        background-image: url("../images/home/home-sprite@2x.png");
+        background-image: url("../img/home/home-sprite@2x.png");
         -webkit-background-size: 234px 78px;
         -moz-background-size: 234px 78px;
         background-size: 234px 78px;
@@ -141,7 +139,7 @@
 }
 
 .customer-logo {
-    background: url("/assets/images/home/new-sprite-flattened.png") no-repeat;
+    background: url("/assets/img/home/new-sprite-flattened.png") no-repeat;
     display: inline-block;
     vertical-align: middle;
     margin: 0.7rem 1rem;

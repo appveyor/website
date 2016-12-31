@@ -18,7 +18,7 @@ AppVeyor CI has tight relationship with Windows Azure platform. First of all, Ap
 
 We've created a simple Azure Cloud Service solution created in Visual Studio 2013 and consisting of a WebRole and xUnit test projects. You can find [sample project repository on GitHub](https://github.com/FeodorFitsner/azure-cs-demo).
 
-![](/assets/images/posts/azure-cs-ci/repository2.png)
+![Repository](/assets/img/posts/azure-cs-ci/repository2.png)
 
 Note, that we don't have "NuGet Package Restore" enabled for VS solution (no .nuget folder in repository). This is not necessary in AppVeyor environment - below you'll see how to do that.
 
@@ -28,13 +28,13 @@ If you don't have AppVeyor account yet you should definitely get one!
 Go to <https://ci.appveyor.com/signup> and use "GitHub" button to sign up
 for Free plan which allows you building public repositories.
 
-![signup](/assets/images/posts/azure-cs-ci/signup2.png)
+![signup](/assets/img/posts/azure-cs-ci/signup2.png)
 
 ## Add new project
 
 Click New project and select GitHub repository:
 
-![](/assets/images/posts/azure-cs-ci/new-project2.png)
+![New project](/assets/img/posts/azure-cs-ci/new-project2.png)
 
 AppVeyor will automatically configure webhook for the repo to start a new build on every push.
 
@@ -42,17 +42,17 @@ AppVeyor will automatically configure webhook for the repo to start a new build 
 
 To enable restore of NuGet packages during the build open project settings and add "nuget restore" command into **before build script**:
 
-![Project settings](/assets/images/posts/azure-cs-ci/project-settings1.png)
+![Project settings](/assets/img/posts/azure-cs-ci/project-settings1.png)
 
 ## Start new build
 
 Run **New build** and see its progress in a real-time build console:
 
-![Build control](/assets/images/posts/azure-cs-ci/build-console1.png)
+![Build control](/assets/img/posts/azure-cs-ci/build-console1.png)
 
 If you click Artifacts tab upon build completion you will see that AppVeyor automatically detected and packaged Azure Cloud Service project along with its configuration:
 
-![Build artifacts](/assets/images/posts/azure-cs-ci/build-artifacts1.png)
+![Build artifacts](/assets/img/posts/azure-cs-ci/build-artifacts1.png)
 
 In just a few minutes we have a pretty decent Continuous Integration process for our Azure Cloud Service!
 
@@ -60,7 +60,7 @@ In just a few minutes we have a pretty decent Continuous Integration process for
 
 Now let's deploy our "experimental" app to Windows Azure. Go to Environments and add new "Azure Cloud Service" environment:
 
-![Azure CS settings](/assets/images/posts/azure-cs-ci/azure-cs-settings1.png)
+![Azure CS settings](/assets/img/posts/azure-cs-ci/azure-cs-settings1.png)
 
 The form requires 3 prerequisites:
 
@@ -72,31 +72,31 @@ The form requires 3 prerequisites:
 
 [Download Azure account publishing profile](https://manage.windowsazure.com/publishsettings/Index?client=vs&amp;SchemaVersion=1.0) and open it in text editor. Copy subscription ID and Base64 encoded subscription certificate.
 
-![Certificate](/assets/images/posts/azure-cs-ci/certificate.png)
+![Certificate](/assets/img/posts/azure-cs-ci/certificate.png)
 
 ## Start new deployment
 
 Now kick off new deployment of **azure-cs-demo** project to **azure demo** environment:
 
-![New deployment](/assets/images/posts/azure-cs-ci/new-deployment1.png)
+![New deployment](/assets/img/posts/azure-cs-ci/new-deployment1.png)
 
 Select the build to deploy:
 
-![](/assets/images/posts/azure-cs-ci/new-deployment-select-build1.png)
+![New deployment select build](/assets/img/posts/azure-cs-ci/new-deployment-select-build1.png)
 
 Observe the progress of deployment in the real-time console:
 
-![](/assets/images/posts/azure-cs-ci/azure-deployment-complete1.png)
+![Azure deployment complete](/assets/img/posts/azure-cs-ci/azure-deployment-complete1.png)
 
 Azure Cloud Service package from build 1.0.2 artifacts has been deployed and you can see the results in Azure Portal:
 
-![](/assets/images/posts/azure-cs-ci/azure-portal-deployment1.png)
+![Azure portal deployment](/assets/img/posts/azure-cs-ci/azure-portal-deployment1.png)
 
 ## Deploying as part of the build
 
 Now after we triggered deployment manually from UI we'd like to completely automate the process and deploy during successful build. To setup deployment to azure demo environment open "Deployment" tab of project properties, add new "Environment" deployment and specify "azure demo" as environment name:
 
-![](/assets/images/posts/azure-cs-ci/project-deployment1.png)
+![Project deployment](/assets/img/posts/azure-cs-ci/project-deployment1.png)
 
 Done! Next time you push your changes into GitHub repository or start a new build on UI AppVeyor will build solution, run tests and deploy to Azure.
 

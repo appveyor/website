@@ -43,9 +43,9 @@ $headers = @{
 Invoke-RestMethod -Uri 'https://ci.appveyor.com/api/roles' -Headers $headers -Method Get
 ```
 
-<!-- markdownlint-disable MD003 MD022-->
+<!-- markdownlint-disable MD003 MD022 -->
 ### C\#
-<!-- markdownlint-enable MD003 MD022-->
+<!-- markdownlint-enable MD003 MD022 -->
 
 The following code sample uses `HttpClient` class from `Microsoft.AspNet.WebApi.Client` NuGet package to get the list of roles from authenticated account:
 
