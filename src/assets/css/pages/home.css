@@ -78,8 +78,6 @@
 
 .home-sprite {
     background-image: url("../img/home/home-sprite.png");
-    -webkit-background-size: 234px 78px;
-    -moz-background-size: 234px 78px;
     background-size: 234px 78px;
     background-repeat: no-repeat;
     display: block;

@@ -69,31 +69,15 @@
 }
 .top-bar .name h1 a {
     background: transparent url("../img/logo.png") no-repeat 0 50%;
-    -webkit-background-size: 120px 22px;
-    -moz-background-size: 120px 22px;
     background-size: 120px 22px;
     display: inline-block;
     width: 120px;
     text-indent: -9999px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2.0),
- only screen and (min--moz-device-pixel-ratio: 2.0),
- only screen and (-o-min-device-pixel-ratio: 200/100),
- only screen and (min-device-pixel-ratio: 2.0) {
+@media only screen and (min-device-pixel-ratio: 2.0) {
     .top-bar .name h1 a {
         background: transparent url("../img/logo-2x.png") no-repeat 0 50%;
-        -webkit-background-size: 120px 22px;
-        -moz-background-size: 120px 22px;
         background-size: 120px 22px;
     }
-}
-
-
-/* Gravatar */
-.top-bar-section .active-user img {
-    margin: -2px 4px 0 0;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
 }
