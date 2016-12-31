@@ -194,7 +194,7 @@ $env:MY_VARIABLE="value"
 
 When you work with OSS projects and you’d like to hide some sensitive data from everyone’s eyes you can use **secure variables** in `appveyor.yml`.
 
-AppVeyor generates a unique encryption key for every account. To encrypt variable values go to **Account -> Encrypt data** tool.
+AppVeyor generates a unique encryption key for every account. To encrypt variable values go to **Account &rarr; Encrypt data** tool.
 
 To use encrypted variable in `appveyor.yml`:
 

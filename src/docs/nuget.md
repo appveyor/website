@@ -20,9 +20,9 @@ AppVeyor has built-in NuGet hosting. Every AppVeyor account comes with the follo
 ## Account NuGet feed
 
 Account NuGet feed aggregates packages from all project feeds and allows publishing of your custom packages.
-All account feeds are password-protected. You can find the account feed URL and its API key on **Account -> NuGet** page.
+All account feeds are password-protected. You can find the account feed URL and its API key on **Account &rarr; NuGet** page.
 
-You can use your AppVeyor account email/password to access password-protected NuGet feeds, although we recommend creating a separate user account just for these purposes (**Account -> Team**).
+You can use your AppVeyor account email/password to access password-protected NuGet feeds, although we recommend creating a separate user account just for these purposes (**Account &rarr; Team**).
 
 If you use the GitHub or Bitbucket button to log in to AppVeyor you can reset your AppVeyor account
 password using the **Forgot password** link.
@@ -31,7 +31,7 @@ For publishing your own packages to your account feed use the command:
 
      nuget push <your-package.nupkg> -ApiKey <your-api-key> -Source <feed-url>
 
-Replace `<your-api-key>` and `<feed-url>` with values from **Account -> NuGet** page.
+Replace `<your-api-key>` and `<feed-url>` with values from **Account &rarr; NuGet** page.
 
 
 
@@ -78,7 +78,7 @@ deploy:
 
 ## Configuring private NuGet feed in Visual Studio
 
-To configure a custom feed in Visual Studio open **Tools -> Options -> Package Manager -> Package Sources** and add new feed.
+To configure a custom feed in Visual Studio open **Tools &rarr; Options &rarr; Package Manager &rarr; Package Sources** and add new feed.
 
 When you first open the Manage NuGet packages dialog you will be presented with a dialog box asking for credentials:
 

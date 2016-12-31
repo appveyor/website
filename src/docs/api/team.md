@@ -31,7 +31,7 @@ title: Team API
 * [Update role](#update-role)
 * [Delete role](#delete-role)
 
-<!-- markdownlint-enable MD001-->
+<!-- markdownlint-enable MD001 -->
 
 ## Get users
 
