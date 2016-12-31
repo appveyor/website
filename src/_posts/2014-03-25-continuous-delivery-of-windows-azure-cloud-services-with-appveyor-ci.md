@@ -18,7 +18,7 @@ AppVeyor CI has tight relationship with Windows Azure platform. First of all, Ap
 
 We've created a simple Azure Cloud Service solution created in Visual Studio 2013 and consisting of a WebRole and xUnit test projects. You can find [sample project repository on GitHub](https://github.com/FeodorFitsner/azure-cs-demo).
 
-![](/assets/img/posts/azure-cs-ci/repository2.png)
+![Repository](/assets/img/posts/azure-cs-ci/repository2.png)
 
 Note, that we don't have "NuGet Package Restore" enabled for VS solution (no .nuget folder in repository). This is not necessary in AppVeyor environment - below you'll see how to do that.
 
@@ -34,7 +34,7 @@ for Free plan which allows you building public repositories.
 
 Click New project and select GitHub repository:
 
-![](/assets/img/posts/azure-cs-ci/new-project2.png)
+![New project](/assets/img/posts/azure-cs-ci/new-project2.png)
 
 AppVeyor will automatically configure webhook for the repo to start a new build on every push.
 
@@ -82,21 +82,21 @@ Now kick off new deployment of **azure-cs-demo** project to **azure demo** envir
 
 Select the build to deploy:
 
-![](/assets/img/posts/azure-cs-ci/new-deployment-select-build1.png)
+![New deployment select build](/assets/img/posts/azure-cs-ci/new-deployment-select-build1.png)
 
 Observe the progress of deployment in the real-time console:
 
-![](/assets/img/posts/azure-cs-ci/azure-deployment-complete1.png)
+![Azure deployment complete](/assets/img/posts/azure-cs-ci/azure-deployment-complete1.png)
 
 Azure Cloud Service package from build 1.0.2 artifacts has been deployed and you can see the results in Azure Portal:
 
-![](/assets/img/posts/azure-cs-ci/azure-portal-deployment1.png)
+![Azure portal deployment](/assets/img/posts/azure-cs-ci/azure-portal-deployment1.png)
 
 ## Deploying as part of the build
 
 Now after we triggered deployment manually from UI we'd like to completely automate the process and deploy during successful build. To setup deployment to azure demo environment open "Deployment" tab of project properties, add new "Environment" deployment and specify "azure demo" as environment name:
 
-![](/assets/img/posts/azure-cs-ci/project-deployment1.png)
+![Project deployment](/assets/img/posts/azure-cs-ci/project-deployment1.png)
 
 Done! Next time you push your changes into GitHub repository or start a new build on UI AppVeyor will build solution, run tests and deploy to Azure.
 
