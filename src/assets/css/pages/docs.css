@@ -12,6 +12,10 @@ iframe {
     border: 0;
 }
 
+ul > li > p {
+    margin: 0;
+}
+
 
 /* anchor.js override */
 @media (max-width: 640px) {
