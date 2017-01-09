@@ -314,6 +314,24 @@ module.exports = function(grunt) {
             }
         },
 
+        accessibility: {
+            options: {
+                accessibilityLevel: 'WCAG2AA',
+                browser: true,
+                reportLevels: {
+                    notice: false,
+                    warning: false,
+                    error: true
+                }
+            },
+            test: {
+                src: [
+                    '<%= htmllint.src %>',
+                    '!<%= dirs.dest %>/docs/build-environment/*.html'
+                ]
+            }
+        },
+
         clean: {
             dist: [
                 '<%= dirs.dest %>/',
@@ -347,6 +365,7 @@ module.exports = function(grunt) {
         'eslint',
         'markdownlint',
         'htmllint',
+        'accessibility',
         'connect:linkChecker',
         'linkChecker'
     ]);
