@@ -21,13 +21,13 @@ Currently custom build environment feature is not generally available. It is bei
 
 During this step you will be needed to collect number of configuration and authentication setting for later use with AppVeyor. To avoid confusion we recommend to prepare some deployment notes (it can be just notepad file in **secure** location or password manager section), with the following fields:
 
-- Client ID
-- Client Secret
-- Tenant ID
-- Subscription ID
-- VMs resource group
-- Location
-- Security group name
+* Client ID
+* Client Secret
+* Tenant ID
+* Subscription ID
+* VMs resource group
+* Location
+* Security group name
 
 Now let us start with creating AAD application.
 
