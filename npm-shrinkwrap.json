@@ -230,9 +230,9 @@
       "resolved": "https://registry.npmjs.org/camelcase-keys/-/camelcase-keys-2.1.0.tgz"
     },
     "caniuse-db": {
-      "version": "1.0.30000602",
+      "version": "1.0.30000604",
       "from": "caniuse-db@>=1.0.30000214 <2.0.0",
-      "resolved": "https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30000602.tgz"
+      "resolved": "https://registry.npmjs.org/caniuse-db/-/caniuse-db-1.0.30000604.tgz"
     },
     "caseless": {
       "version": "0.11.0",
@@ -265,9 +265,9 @@
           "resolved": "https://registry.npmjs.org/entities/-/entities-1.1.1.tgz"
         },
         "lodash": {
-          "version": "4.17.3",
+          "version": "4.17.4",
           "from": "lodash@>=4.1.0 <5.0.0",
-          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.3.tgz"
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz"
         }
       }
     },
@@ -849,9 +849,9 @@
       "resolved": "https://registry.npmjs.org/grunt-contrib-csslint/-/grunt-contrib-csslint-2.0.0.tgz",
       "dependencies": {
         "lodash": {
-          "version": "4.17.3",
+          "version": "4.17.4",
           "from": "lodash@>=4.8.2 <5.0.0",
-          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.3.tgz"
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz"
         }
       }
     },
@@ -893,19 +893,19 @@
       "resolved": "https://registry.npmjs.org/grunt-filerev/-/grunt-filerev-2.3.1.tgz"
     },
     "grunt-html": {
-      "version": "8.1.0",
-      "from": "grunt-html@>=8.1.0 <9.0.0",
-      "resolved": "https://registry.npmjs.org/grunt-html/-/grunt-html-8.1.0.tgz",
+      "version": "8.2.0",
+      "from": "grunt-html@>=8.2.0 <9.0.0",
+      "resolved": "https://registry.npmjs.org/grunt-html/-/grunt-html-8.2.0.tgz",
       "dependencies": {
         "async": {
-          "version": "2.1.2",
-          "from": "async@2.1.2",
-          "resolved": "https://registry.npmjs.org/async/-/async-2.1.2.tgz"
+          "version": "2.1.4",
+          "from": "async@2.1.4",
+          "resolved": "https://registry.npmjs.org/async/-/async-2.1.4.tgz"
         },
         "lodash": {
-          "version": "4.17.3",
+          "version": "4.17.4",
           "from": "lodash@>=4.14.0 <5.0.0",
-          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.3.tgz"
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz"
         }
       }
     },
@@ -969,9 +969,9 @@
           "resolved": "https://registry.npmjs.org/gzip-size/-/gzip-size-3.0.0.tgz"
         },
         "lodash": {
-          "version": "4.17.3",
+          "version": "4.17.4",
           "from": "lodash@>=4.14.0 <5.0.0",
-          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.3.tgz"
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz"
         },
         "maxmin": {
           "version": "2.1.0",
@@ -1310,9 +1310,9 @@
       "resolved": "https://registry.npmjs.org/linerstream/-/linerstream-0.1.4.tgz"
     },
     "linkify-it": {
-      "version": "2.0.2",
+      "version": "2.0.3",
       "from": "linkify-it@>=2.0.0 <3.0.0",
-      "resolved": "https://registry.npmjs.org/linkify-it/-/linkify-it-2.0.2.tgz"
+      "resolved": "https://registry.npmjs.org/linkify-it/-/linkify-it-2.0.3.tgz"
     },
     "livereload-js": {
       "version": "2.2.2",
@@ -1464,9 +1464,9 @@
       "resolved": "https://registry.npmjs.org/negotiator/-/negotiator-0.6.1.tgz"
     },
     "no-case": {
-      "version": "2.3.0",
+      "version": "2.3.1",
       "from": "no-case@>=2.2.0 <3.0.0",
-      "resolved": "https://registry.npmjs.org/no-case/-/no-case-2.3.0.tgz"
+      "resolved": "https://registry.npmjs.org/no-case/-/no-case-2.3.1.tgz"
     },
     "nopt": {
       "version": "3.0.6",
@@ -2079,9 +2079,9 @@
               "resolved": "https://registry.npmjs.org/async/-/async-2.1.4.tgz"
             },
             "lodash": {
-              "version": "4.17.3",
+              "version": "4.17.4",
               "from": "lodash@>=4.14.0 <5.0.0",
-              "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.3.tgz"
+              "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.4.tgz"
             }
           }
         },
@@ -2188,9 +2188,9 @@
       "resolved": "https://registry.npmjs.org/verror/-/verror-1.3.6.tgz"
     },
     "vnu-jar": {
-      "version": "16.6.29",
-      "from": "vnu-jar@16.6.29",
-      "resolved": "https://registry.npmjs.org/vnu-jar/-/vnu-jar-16.6.29.tgz"
+      "version": "17.0.1",
+      "from": "vnu-jar@17.0.1",
+      "resolved": "https://registry.npmjs.org/vnu-jar/-/vnu-jar-17.0.1.tgz"
     },
     "webidl-conversions": {
       "version": "2.0.1",
