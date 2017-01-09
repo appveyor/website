@@ -6,7 +6,7 @@ title: Getting started
 # Getting started
 
 <div class="flex-video widescreen">
-    <iframe width="640" height="360" src="//www.youtube.com/embed/e1rVM4_nzWw?rel=0&amp;color=white" allowfullscreen></iframe>
+    <iframe width="640" height="360" src="//www.youtube.com/embed/e1rVM4_nzWw?rel=0&amp;color=white" allowfullscreen title="Getting started video"></iframe>
 </div>
 
 ## Step 1 - Sign in with AppVeyor
