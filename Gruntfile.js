@@ -268,7 +268,8 @@ module.exports = function(grunt) {
             },
             src: [
                 "<%= dirs.dest %>/**/*.html",
-                "!<%= dirs.dest %>/updates/**/*.html"
+                "!<%= dirs.dest %>/updates/index.html",
+                "!<%= dirs.dest %>/updates/page/**/*.html"
             ]
         },
 
