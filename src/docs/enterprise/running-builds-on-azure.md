@@ -66,6 +66,7 @@ Now let us start with creating AAD application.
 * Select Resource group created before and navigate to **Access control (IAM)**
 * New Azure portal's *blade* will open on the right, press **Add** on top of it
 * In rightmost *blade* select **Contributor**
+
 * Yet another blade named **Add users** will open
   * By default, it displays only Microsoft (Live Id) accounts
   * Use search to find AAD application you created before in the old portal
