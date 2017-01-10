@@ -199,7 +199,7 @@ Run one or more of below scripts to install and/or enable test framework of your
 ## Prepare master VHD
 
 * Shutdown VM from within RDP session
-  * You can use `Ctrl - Alt - End` to reach shutdown menu or run ` Stop-Computer` from PowerShell
+  * You can use `Ctrl-Alt-End` to reach shutdown menu or run ` Stop-Computer` from PowerShell
 * Open new Azure Portal, navigate to **Virtual machines**, and wait until VM is fully stopped
 * Delete VM with portal (this will leave VHD with all software installed before)
 * Check master VHD location:
@@ -249,11 +249,12 @@ At **project** level:
   * **Settings** > **Environment** > **Build worker image**: Select your build worker image from drop-down
 * **YAML**:
 
-```
+```yaml
 build_cloud: <private_build_cloud_name>
 image: <private_build_cloud_image>
 ```
 
 At **project** level:
+
 * Set environment variable "APPVEYOR_BUILD_WORKER_CLOUD" to your private build cloud name
   * This assumes that default and custom build clouds have build worker image with the same name (for example **Visual Studio 2015**)
