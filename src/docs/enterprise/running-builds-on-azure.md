@@ -240,6 +240,12 @@ Run one or more of below scripts to install and/or enable test framework of your
     * **Job start timeout, seconds**: 1200 or more
     * **Provisioning attempts**: 2 or more
 
+## Make build worker image available for configuration
+
+* Navigate to **Build environment** > **Build worker images**
+* Press **Add image**
+* Enter what you set as **IMAGE NAME** in previous step
+
 ## How to route build to your own cloud
 
 At **project** level:
