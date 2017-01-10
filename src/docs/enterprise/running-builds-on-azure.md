@@ -230,7 +230,7 @@ Run one or more of below scripts to install and/or enable test framework of your
 * **Machine size**: Select **DS** series or better (assuming you selected **premium performance** when created storage account)
 * **Disk storage account name**: *Disk storage account name* from deployment notes
 * **Disk storage container**: Storage container where VMs will be created, for example **vms**
-* **Virtual network name**: Name of auto-created VNET for your VM resource group. It should look like <vm_resource_group>-vnet. Please open Azure Portal, navigate resource of type **Virtual Network** and ensure that name you entered is correct.
+* **Virtual network name**: Name of auto-created VNET for your VM resource group. It should look like `<vm_resource_group>-vnet`. Please open Azure Portal, navigate resource of type **Virtual Network** and ensure that name you entered is correct.
 * **Subnet name**: In Azure Portal under **Virtual Network** navigate to **Subnets** and copy-paste subnet name. Usually it is **default**
 * **Security group name**: *Security group name* from deployment notes
 * Images
