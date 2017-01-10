@@ -46,7 +46,7 @@ Now let us start with creating AAD application.
 * Next save Tenant ID for future use. For that you need to copy GUID from browser address bar
   * You can see two GUIDs there if you are still in **CONFIGURE** page. You need first which is following `Directory/`
   * Save it in your deployment notes as a **Tenant ID**
-* Finally save Subscription ID to complete deployment notes.
+* Finally save Subscription ID to complete deployment notes
   * Navigate to **Subscriptions** in the top right, choose **Manage subscription/directory**, select, copy and save your **Subscription ID** in deployment notes.
 
 ## Create new Resource Group in new Portal
@@ -199,7 +199,7 @@ Run one or more of below scripts to install and/or enable test framework of your
 ## Prepare master VHD
 
 * Shutdown VM from within RDP session
-  * You can use `Ctrl-Alt-End` to reach shutdown menu or run ` Stop-Computer` from PowerShell
+  * You can use `Ctrl-Alt-End` to reach shutdown menu or run `Stop-Computer` from PowerShell
 * Open new Azure Portal, navigate to **Virtual machines**, and wait until VM is fully stopped
 * Delete VM with portal (this will leave VHD with all software installed before)
 * Check master VHD location:
