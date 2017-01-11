@@ -46,7 +46,7 @@
     background-color: #3b3333;
 }
 
-.features h2 {
+.features-container h2 {
     margin: 0.7rem 0;
     text-align: center;
     font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -121,7 +121,7 @@
         font-size: 1.1rem;
     }
 
-    .features h2 {
+    .features-container h2 {
         font-size: 1.4rem;
     }
 }

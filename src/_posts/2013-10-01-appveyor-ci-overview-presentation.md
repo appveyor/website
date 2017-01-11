@@ -8,7 +8,7 @@ to the existing continuous integration solutions and giving some hints about fut
 <div class="row">
     <div class="columns small-12 medium-6">
         <div class="flex-video">
-            <iframe src="//www.slideshare.net/slideshow/embed_code/26764707" width="425" height="355" class="slideshare-embed" allowfullscreen></iframe>
+            <iframe src="//www.slideshare.net/slideshow/embed_code/26764707" width="425" height="355" class="slideshare-embed" allowfullscreen title="AppVeyor CI slideshare video"></iframe>
         </div>
     </div>
 </div>

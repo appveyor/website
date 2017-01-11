@@ -168,7 +168,6 @@ module.exports = function(grunt) {
                 src: [
                     "<%= dirs.dest %>/assets/img/**/*.{jpg,jpeg,gif,png,svg}",
                     "!<%= dirs.dest %>/assets/img/appveyor-logo*.png",
-                    "!<%= dirs.dest %>/assets/img/favicons/*.{jpg,jpeg,gif,png,svg}",
                     "!<%= dirs.dest %>/assets/img/testimonials/*.png"
                 ]
             }
@@ -263,12 +262,14 @@ module.exports = function(grunt) {
         htmllint: {
             options: {
                 ignore: [
-                    "Consider using the \"h1\" element as a top-level heading only (all \"h1\" elements are treated as top-level headings by many screen readers and other tools)."
+                    "Consider using the \"h1\" element as a top-level heading only (all \"h1\" elements are treated as top-level headings by many screen readers and other tools).",
+                    "Attribute \"color\" not allowed on element \"link\" at this point."
                 ]
             },
             src: [
                 "<%= dirs.dest %>/**/*.html",
-                "!<%= dirs.dest %>/updates/**/*.html"
+                "!<%= dirs.dest %>/updates/index.html",
+                "!<%= dirs.dest %>/updates/page/**/*.html"
             ]
         },
 
