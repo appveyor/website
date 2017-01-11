@@ -18,11 +18,11 @@ Here is small guide based on [this support forum discussion](https://github.com/
 * Set **Package Web Applications for XCopy deployment** in build stage.
 * Set the following as a deployment script:
 
-```text
-$packageweb = $artifacts.values | Where-Object { $_.path -like '*WebApplication1.zip' }
-$exe = "C:\Program Files (x86)\AWS Tools\Deployment Tool\awsdeploy.exe"
-&$exe -r "-DDeploymentPackage=$($packageweb.path)" "-DEnvironment.Name=MyAppWeb-test123" "-DApplication.Name=MyAppWeb123" "-DRegion=eu-west-1" "-DAWSAccessKey=$env:AWSAccessKeyId" "-DAWSSecretKey=$env:AWSSecretKey" "C:\projects\WebApplication1\awsdeploy.txt"
-```
+  ```text
+  $packageweb = $artifacts.values | Where-Object { $_.path -like '*WebApplication1.zip' }
+  $exe = "C:\Program Files (x86)\AWS Tools\Deployment Tool\awsdeploy.exe"
+  &$exe -r "-DDeploymentPackage=$($packageweb.path)" "-DEnvironment.Name=MyAppWeb-test123" "-DApplication.Name=MyAppWeb123" "-DRegion=eu-west-1" "-DAWSAccessKey=$env:AWSAccessKeyId" "-DAWSSecretKey=$env:AWSSecretKey" "C:\projects\WebApplication1\awsdeploy.txt"
+  ```
 
 Note that this script assumes that application was already deployed at least once to Beanstalk, otherwise you need to replace -r switch with -w for single first deployment.
 
@@ -36,15 +36,13 @@ environment:
 build:
   publish_wap_xcopy: true
 deploy_script:
-- ps: >-
+  - ps: >-
     $packageweb = $artifacts.values | Where-Object { $_.path -like '*WebApplication1.zip' }
-
     $exe = "C:\Program Files (x86)\AWS Tools\Deployment Tool\awsdeploy.exe"
-
     &$exe -r "-DDeploymentPackage=$($packageweb.path)" "-DEnvironment.Name=MyAppWeb-test123" "-DApplication.Name=MyAppWeb123" "-DRegion=eu-west-1" "-DAWSAccessKey=$env:AWSAccessKeyId" "-DAWSSecretKey=$env:AWSSecretKey" "C:\projects\WebApplication1\awsdeploy.txt"
 ```
 
-Here is example web application folder structure:
+Here is an example web application folder structure:
 
 ```text
 Directory of C:\Projects\WebApplication1
