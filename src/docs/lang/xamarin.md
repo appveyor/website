@@ -38,7 +38,7 @@ Or, if you're running on a Mac:
 
     mono xamarin-component.exe login <your-xamarin@email.com>
     
-Cached credentials are stored in `C:\Users\<user>\.xamarin-credentials` file (or, on a Mac: `/Users/zachi/.xamarin-credentials`). Open that file and copy the number after `xamarin.com,` to a clipboard.
+Cached credentials are stored in `C:\Users\<user>\.xamarin-credentials` file (or, on a Mac: `/Users/<user>/.xamarin-credentials`). Open that file and copy the number after `xamarin.com,` to a clipboard.
 
 Open AppVeyor project settings and add a new environment variable called `XAMARIN_COOKIE` with the value from clipboard.
 
