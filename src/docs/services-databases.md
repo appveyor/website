@@ -189,7 +189,7 @@ sqlcmd -S "(local)" -U "sa" -P "Password12!" -Q "SELECT * FROM information_schem
 
 MySQL 5.7 x64 database service is available on AppVeyor build workers.
 
-* Path: `C:\Program Files\MySql\MySQL Server 5.7`
+* Path: `C:\Program Files\MySQL\MySQL Server 5.7`
 * Server name: `127.0.0.1` or `localhost`
 * Server port: `3306`
 * `root` password: `Password12!`
@@ -214,7 +214,7 @@ This is an example how to supply MySql credentials to work with PowerShell tools
 
 ```powershell
 $env:MYSQL_PWD="Password12!"
-$cmd = '"C:\Program Files\MySql\MySQL Server 5.7\bin\mysql" -e "create database YourDatabase;" --user=root'
+$cmd = '"C:\Program Files\MySQL\MySQL Server 5.7\bin\mysql" -e "create database YourDatabase;" --user=root'
 iex "& $cmd"
 ```
 
@@ -229,6 +229,13 @@ PostgreSQL 9.3 and 9.4 x64 database services are available on AppVeyor build wor
 * Server name: `127.0.0.1` or `localhost`
 * Server port: `5432`
 * `postgres` account password: `Password12!`
+
+To start PostgreSQL 9.5 in `appveyor.yml`:
+
+```yaml
+services:
+  - postgresql  # or postgresql95
+```
 
 To start PostgreSQL 9.4 in `appveyor.yml`:
 
@@ -249,7 +256,7 @@ This is an example how to supply PG credentials to work with command-line tools:
 ```bat
 SET PGUSER=postgres
 SET PGPASSWORD=Password12!
-PATH=C:\Program Files\PostgreSQL\9.3\bin\;%PATH%
+PATH=C:\Program Files\PostgreSQL\9.4\bin\;%PATH%
 createdb YourDatabase
 ```
 
