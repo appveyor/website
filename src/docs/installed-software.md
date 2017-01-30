@@ -270,7 +270,7 @@ Install-Product node '3'
         * msvc2015 32-bit: `C:\Qt\5.7\msvc2015`
         * msvc2013 64-bit: `C:\Qt\5.7\msvc2013_64`
         * msvc2013 32-bit: `C:\Qt\5.7\msvc2013`
-    * Qt 5.6.1: `C:\Qt\5.6`
+    * Qt 5.6.2: `C:\Qt\5.6`
         * MinGW 4.9.2 32 bit: `C:\Qt\5.6\mingw49_32`
         * msvc2015 64-bit: `C:\Qt\5.6\msvc2015_64`
         * msvc2015 32-bit: `C:\Qt\5.6\msvc2015`
