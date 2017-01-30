@@ -11,7 +11,7 @@ Biicode is a C and C++ dependency manager. Continuous Integration with AppVeyor 
 At biicode we use AppVeyor Continuous Integration to automatically build and publish our new commits and releases to biicode.
 
 <p class="text-center">
-    <img src="/assets/images/posts/biicode/biicode-logo.png" alt="Biicode Logo" width="250" height="75">
+    <img src="/assets/img/posts/biicode/biicode-logo.png" alt="Biicode Logo" width="250" height="75">
 </p>
 
 Most of our users are pretty familiar with VCS like github or bitbucket, and lately they've been asking for a full workflow to develop their projects with GitHub and [biicode](http://www.biicode.com/).

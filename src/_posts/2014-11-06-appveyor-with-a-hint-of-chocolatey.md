@@ -2,7 +2,7 @@
 title: AppVeyor with a hint of Chocolatey
 ---
 
-<img class="right" src="/assets/images/posts/chocolatey/chocolatey-logo.png" alt="Chocolatey-Logo" width="279" height="53">
+<img class="right" src="/assets/img/posts/chocolatey/chocolatey-logo.png" alt="Chocolatey-Logo" width="279" height="53">
 
 [Chocolatey](https://chocolatey.org/) is a wonderful tool that allows you installing your favourite
 programs with a single command. Unlike regular process of installing software with interactive setup

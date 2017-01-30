@@ -74,7 +74,7 @@ There are 2 passwords required in the command because [java KeyStores](https://d
 I do a lot of work in GIT Bash, but this statement only works in Batch (the windows command line), I think because of parameter escaping.
 
 ```batch
-MSBuild "/t:SignAndroidPackage" "/p:Configuration=Release" "/p:AndroidKeyStore=true" "/p:AndroidSigningKeyAlias=YourKeyAlias" "/p:AndroidSigningKeyPass=YourKeyStorePassword" "/p:AndroidSigningKeyStore=YourKeyStoreFilename" "/p:AndroidSigningStorePass=YourKeyStorePassword"  "YourAppName.csproj"
+MSBuild "/t:SignAndroidPackage" "/p:Configuration=Release" "/p:AndroidKeyStore=true" "/p:AndroidSigningKeyAlias=YourKeyAlias" "/p:AndroidSigningKeyPass=YourKeyStorePassword" "/p:AndroidSigningKeyStore=YourKeyStoreFilename" "/p:AndroidSigningStorePass=YourKeyStorePassword" "YourAppName.csproj"
 ```
 
 This will create **com.yourappname-Signed.apk** in the *bin\release* folder. Upload this to Google Play to make sure that everything is working properly.
@@ -107,14 +107,14 @@ Now that we have everything we need, add an *appveyor.yml* file to the root of y
 
 ```yaml
 environment:
- keystore-password:
-  secure: DSwAr4fYt3Q35Sjob5qAN5uj # YourPassword for keystore
+  keystore-password:
+    secure: DSwAr4fYt3Q35Sjob5qAN5uj # YourPassword for keystore
 before_build:
- - nuget restore
+  - nuget restore
 build_script:
- - msbuild "/t:SignAndroidPackage" "/p:Configuration=Release" "/p:AndroidKeyStore=true" "/p:AndroidSigningKeyAlias=YourKeyAlias" "/p:AndroidSigningKeyPass=%keystore-password%" "/p:AndroidSigningKeyStore=YourLocalKeyStoreFilename" "/p:AndroidSigningStorePass=%keystore-password%"  "YourAppName.Droid\YourAppName.csproj"
+  - msbuild "/t:SignAndroidPackage" "/p:Configuration=Release" "/p:AndroidKeyStore=true" "/p:AndroidSigningKeyAlias=YourKeyAlias" "/p:AndroidSigningKeyPass=%keystore-password%" "/p:AndroidSigningKeyStore=YourLocalKeyStoreFilename" "/p:AndroidSigningStorePass=%keystore-password%"  "YourAppName.Droid\YourAppName.csproj"
 artifacts:
- - path: YourAppName.Droid\bin\Release\com.yourappname-Signed.apk
+  - path: YourAppName.Droid\bin\Release\com.yourappname-Signed.apk
 ```
 
 Remember to update `android:versionCode` and then push to GitHub. This will trigger a build on AppVeyor. The `build_script` section will call msbuild to create the signed and zipaligned apk file, and the `artifacts` section will archive the apk file so we can download it later.

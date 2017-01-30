@@ -4,8 +4,6 @@
     font-size: 0.8rem;
     color: #887766;
     text-align: center;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     background-color: #fcf5e0;
 }
@@ -14,9 +12,12 @@ iframe {
     border: 0;
 }
 
+ul > li > p {
+    margin: 0;
+}
 
-/* anchor.js overrides */
 
+/* anchor.js override */
 @media (max-width: 640px) {
   .anchorjs-link {
     display: none;

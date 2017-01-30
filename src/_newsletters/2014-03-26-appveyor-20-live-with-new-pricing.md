@@ -14,7 +14,7 @@ After being almost two months in private and then public beta we finally upgrade
 environment to AppVeyor 2.0 and developers truly love it!
 
 <p class="text-center">
-    <img src="/assets/images/newsletters/2014-03-26/appveyor-screenshot-with-shadow.png" alt="AppVeyor screenshot">
+    <img src="/assets/img/newsletters/2014-03-26/appveyor-screenshot-with-shadow.png" alt="AppVeyor screenshot">
 </p>
 
 Let me quickly recap [what new features AppVeyor 2.0 brings](/blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment)

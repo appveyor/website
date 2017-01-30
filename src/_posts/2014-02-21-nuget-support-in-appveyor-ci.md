@@ -15,7 +15,7 @@ Every AppVeyor account comes with following built-in NuGet feeds:
 
 Account NuGet feed aggregates packages from all project feeds and allows publishing of your custom packages. All account feeds are password-protected. You can find account feed URL and its API key on **Account → NuGet** page:
 
-![nuget-account](/assets/images/posts/nuget-support/nuget-account.png)
+![nuget-account](/assets/img/posts/nuget-support/nuget-account.png)
 
 You can use your AppVeyor account email/password to access password-protected NuGet feeds although we recommend creating a separate user account just for these purposes (**Account → Team**).
 
@@ -33,7 +33,7 @@ Replace `<your-api-key>` and `<feed-url>` with values from Account **→**�
 
 Project feed collects all NuGet packages pushed to artifacts during the build. Project feed is password-protected if the project references private GitHub or BitBucket repository; otherwise project feed has public access:
 
-![nuget-project-feed](/assets/images/posts/nuget-support/nuget-project-feed1.png)
+![nuget-project-feed](/assets/img/posts/nuget-support/nuget-project-feed1.png)
 
 ### Automatic publishing of NuGet projects
 
@@ -65,7 +65,7 @@ To configure custom feed in Visual Studio open **Tools → Options → Packag
 
 When you first open Manage NuGet packages dialog you will be presented with a dialog box asking for credentials:
 
-![nuget-visualstudio-auth](/assets/images/docs/nuget-visualstudio-auth.png)
+![nuget-visualstudio-auth](/assets/img/docs/nuget-visualstudio-auth.png)
 
 ### Command line
 
@@ -83,7 +83,7 @@ To configure AppVeyor project to use private NuGet feed during build you can use
 
 1. Create a separate AppVeyor account for accessing NuGet feed.
 2. On **Environment** tab of project settings add two environment variables `nuget_user` and `nuget_password`:
-   ![nuget-environment-variables](/assets/images/docs/nuget-environment-variables.png)
+   ![nuget-environment-variables](/assets/img/docs/nuget-environment-variables.png)
 3. Into **Install** script box add this command:
 
     ```text

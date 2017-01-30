@@ -162,13 +162,13 @@ deploy:
 
 To enable database publishing from AppVeyor environment to your Azure SQL database you should modify Azure SQL Server firewall settings and allow **Windows Azure Services** add the [following ranges of allowed IPs](/docs/build-configuration#ip-addresses).
 
-![azure-sql-server-settings](/assets/images/docs/deployment/sql-database/azure-sql-server-settings.png)
+![azure-sql-server-settings](/assets/img/docs/deployment/sql-database/azure-sql-server-settings.png)
 
 ### SSDT project settings
 
 In Visual Studio open SSDT project properties and select **Microsoft Azure SQL Database** as a Target platform:
 
-![ssdt-project-settings-for-azure](/assets/images/docs/deployment/sql-database/ssdt-project-settings-for-azure.png)
+![ssdt-project-settings-for-azure](/assets/img/docs/deployment/sql-database/ssdt-project-settings-for-azure.png)
 
 
 ## Publishing to internal SQL Server with Deployment Agent

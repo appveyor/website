@@ -10,12 +10,7 @@ a.big-button {
     font-size: 0.9rem;
     background-color: #00b500;
     margin: 0 5px 1rem 0;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
     border-radius: 4px;
-    -webkit-transition: background-color 0.3s;
-    -moz-transition: background-color 0.3s;
-    -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
 }
 
@@ -38,9 +33,6 @@ button,
     font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #00b3e0;
     border: 1px dotted #00b3e0;
-    -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;
-    -moz-transition: background-color 300ms ease-out, border-color 300ms ease-out;
-    -o-transition: background-color 300ms ease-out, border-color 300ms ease-out;
     transition: background-color 300ms ease-out, border-color 300ms ease-out;
 }
 

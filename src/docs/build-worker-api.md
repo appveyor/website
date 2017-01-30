@@ -23,7 +23,7 @@ API URL is stored in `APPVEYOR_API_URL` environment variable and it is `localhos
 
 ## Add message
 
-![build messages](/assets/images/docs/build-messages.png)
+![build messages](/assets/img/docs/build-messages.png)
 
 ### PowerShell
 
@@ -135,7 +135,7 @@ Request body (JSON):
 
 ## Add tests
 
-![build messages](/assets/images/docs/build-tests.png)
+![build messages](/assets/img/docs/build-tests.png)
 
 ### PowerShell
 
@@ -294,7 +294,7 @@ Request body (JSON):
 
 ## Push artifact
 
-![build messages](/assets/images/docs/build-artifacts.png)
+![build messages](/assets/img/docs/build-artifacts.png)
 
 ### PowerShell
 
@@ -356,7 +356,7 @@ Request body (JSON):
 
 ## Update build details
 
-![build details](/assets/images/docs/build-details.png)
+![build details](/assets/img/docs/build-details.png)
 
 ### PowerShell
 
@@ -372,6 +372,15 @@ Example:
 ```powershell
 $version = Get-Date -Format "mmddyyyy-HHmm"
 Update-AppveyorBuild -Version "1.0-$version"
+```
+
+Example to title build for Gist from GitHub, the typically empty commit subject/message confuses AppVeyor:
+
+```powershell
+$gitData = ConvertFrom-StringData (git log -1 --format=format:"commitId=%H%nmessage=%s%ncommitted=%aD" | out-string)
+if ($gitData['message'] -eq "") { $gitData['message'] = "No commit message available for $($gitData['commitid'])" }
+# View the data with Write-Output @gitData
+Update-AppveyorBuild @gitData
 ```
 
 ### Command line

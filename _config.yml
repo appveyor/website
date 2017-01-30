@@ -71,7 +71,7 @@ feed:
     url:            https://www.appveyor.com
 
 # jekyll-seo-tag
-logo:               https://www.appveyor.com/assets/images/appveyor-logo-256.png
+logo:               https://www.appveyor.com/assets/img/appveyor-logo-256.png
 
 twitter:
   username:         appveyor

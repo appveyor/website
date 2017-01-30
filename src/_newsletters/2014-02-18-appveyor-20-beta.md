@@ -19,13 +19,13 @@ dedicated build machines with admin access, build matrix with jobs parallelizati
 deployment.
 
 <p class="text-center">
-    <img src="/assets/images/posts/2014-02-18/appveyor-screenshot-wireframe.png" alt="Wireframe Screenshot">
+    <img src="/assets/img/posts/2014-02-18/appveyor-screenshot-wireframe.png" alt="Wireframe Screenshot">
 </p>
 
 
 ## Build matrix
 
-<img class="right" src="/assets/images/posts/2014-02-18/build-matrix.png" alt="Build matrix">
+<img class="right" src="/assets/img/posts/2014-02-18/build-matrix.png" alt="Build matrix">
 
 Easily build/test for multiple configurations. Specify which operating systems, build configurations and platforms you would like to include into build matrix and AppVeyor will start a build with multiple jobs for all combinations.
 
@@ -39,7 +39,7 @@ Build matrix supports the following dimensions:
 
 ## Parallel testing
 
-<img class="left" src="/assets/images/posts/2014-02-18/parallel-testing.png" alt="">
+<img class="left" src="/assets/img/posts/2014-02-18/parallel-testing.png" alt="Parallel testing">
 
 Large projects can contain hundreds and thousands of tests that could run for hours. AppVeyor 2.0 allows to split your tests into groups by categories, assemblies or custom criteria and run them as build jobs in parallel thus drastically reducing overall build time.
 
@@ -50,7 +50,7 @@ Large projects can contain hundreds and thousands of tests that could run for ho
 
 ## Deployment
 
-<img class="right" src="/assets/images/posts/2014-02-18/deploy.png" alt="">
+<img class="right" src="/assets/img/posts/2014-02-18/deploy.png" alt="Deploy">
 
 AppVeyor 2.0 has scriptless, repetitive one-click deployment to multiple environments! Deploy as part of the build or promote releases later - manually or through API.
 
@@ -72,7 +72,7 @@ Supported deployment providers:
 
 <h2 id="yaml">Fine-grained control over build configuration</h2>
 
-<img class="left" src="/assets/images/posts/2014-02-18/yaml.png" alt="">
+<img class="left" src="/assets/img/posts/2014-02-18/yaml.png" alt="YAML">
 
 Great Windows software must provide user interface for any function it has. AppVeyor 2.0 follows this tradition and further extends project settings, so you can control build environment and inject custom script logic on any stage of build pipeline without ever touching your repository!
 

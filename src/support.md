@@ -60,7 +60,7 @@ Issue submission guidelines:
 
 ## Twitter
 
-<a href="https://twitter.com/appveyor" target="_blank">@appveyor</a>
+<a href="https://twitter.com/appveyor" target="_blank" rel="noopener">@appveyor</a>
 
 * You are welcome to ask a quick question on Twitter, but if 140 symbols is not enough to clearly formulate the problem or we are going to have multiple replies in conversation - please respect other AppVeyor subscribers and switch to either PM or [support forums](http://help.appveyor.com).
 

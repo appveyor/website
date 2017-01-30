@@ -29,7 +29,7 @@ PowerShell remoting. That approach had a number of disadvantages:
 The new provisioning mechanism works "inside out", i.e. Build Agent is started on VM boot and is
 "listening" for incoming command from AppVeyor using Web Sockets.
 
-![build-no-provisioning](/assets/images/posts/build-workers/build-no-provisioning.png)
+![build-no-provisioning](/assets/img/posts/build-workers/build-no-provisioning.png)
 
 This new approach gives a **number of benefits**:
 

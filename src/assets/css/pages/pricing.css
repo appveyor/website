@@ -23,9 +23,7 @@
 
 .pricing-table {
     border: solid 1px #eee;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 .pricing-table.popular {

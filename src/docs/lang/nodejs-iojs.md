@@ -16,9 +16,9 @@ title: Testing with Node.js and io.js
 Put this simple `appveyor.yml` to the root of your repository and it should work for the most Node.js projects out there:
 
 ```yaml
-# Test against this version of Node.js
+# Test against the latest version of this Node.js version
 environment:
-  nodejs_version: "0.10"
+  nodejs_version: "6"
 
 # Install scripts. (runs after repo cloning)
 install:
@@ -42,9 +42,12 @@ build: off
 
 ## Line endings
 
-By default, Git on build workers is configured with `git config --global core.autocrlf input` which means your repo is cloned "as is" without fixing new lines on Windows. If you have a file with a string `abc\n line2` it will be checked out exactly as `abc\n line2` and if there is `line1 \r\n line2` in the repo you'll get the same on checkout. See this SO answer explaining in details [`core.autocrlf` modes](https://stackoverflow.com/questions/1249932/git-1-6-4-beta-on-windows-msysgit-unix-or-dos-line-termination/1250133#1250133).
+By default, Git on build workers is configured with `git config --global core.autocrlf input` which means your repo is cloned "as is" without fixing new lines on Windows.
+If you have a file with a string `abc\n line2` it will be checked out exactly as `abc\n line2` and if there is `line1 \r\n line2` in the repo
+you'll get the same on checkout. See this SO answer explaining in details [`core.autocrlf` modes](https://stackoverflow.com/questions/1249932/git-1-6-4-beta-on-windows-msysgit-unix-or-dos-line-termination/1250133#1250133).
 
-However, if you expect Git to fix line endings on Windows and checkout *all* strings with `\r\n` you could tell Git doing that during `init` phase of your build which occurs *before* cloning command:
+However, if you expect Git to fix line endings on Windows and checkout *all* strings with `\r\n` you could tell Git doing that during `init`
+phase of your build which occurs *before* cloning command:
 
 ```yaml
 init:
@@ -58,25 +61,28 @@ and always explicitly change this setting during the build or
 
 ## Selecting Node.js or io.js version
 
-Build workers have the most recent versions of Node.js and io.js pre-installed - both `x86` and `x64`. If you do nothing your scripts will run under `Node.js 0.10.35 (x86)` (at the time of writing).
+Build workers have the most recent versions of Node.js and io.js pre-installed - both `x86` and `x64`.
+If you do nothing your scripts will run under `Node.js 4.7.x (x86)` (at the time of writing).
 
 To switch to a different version of Node.js or io.js use the following PowerShell command:
 
     Install-Product node <version> [x86|x64]
 
-`<version>` can be specified as `MAJOR` to install *absolute latest* version of Node.js or io.js, `MAJOR.MINOR` to install *the latest* Node.js or io.js build or `MAJOR.MINOR.BUILD` to install *specific* build. When `MAJOR` part of the `<version>` is `1` then **io.js** is installed.
+`<version>` can be specified as `MAJOR` to install *absolute latest* version of Node.js or io.js,
+`MAJOR.MINOR` to install *the latest* Node.js or io.js build or `MAJOR.MINOR.BUILD` to install *specific* build.
+When `MAJOR` part of the `<version>` is `1` then **io.js** is installed.
 
-For example to switch runtime to the **latest version of Node.js** use this command (at the time of writing this is the latest 0.12.x branch):
+For example to switch runtime to the **latest version of Node.js** use this command (at the time of writing this is the latest 7.x branch):
 
-    Install-Product node 0
+    Install-Product node ''
 
-To switch Node.js to the latest available 0.11.x branch use:
+To switch Node.js to the latest available 6.x branch use:
 
-    Install-Product node 0.11
+    Install-Product node 6
 
-To select specific x64 version of Node 0.10.32:
+To select specific x64 version of Node 6.9.3:
 
-    Install-Product node 0.10.32 x64
+    Install-Product node 6.9.3 x64
 
 Any `1.x` version automatically assumes you want io.js, so to switch to the **latest version of io.js** use this command:
 
@@ -91,7 +97,9 @@ install:
 
 ### How that works
 
-Pre-installed Node.js distributives are stored in `C:\avvm\node` folder. When you run `Install-Product node` command it's, basically, moving `nodejs` or `iojs` folder from there to `Program Files`, so the switch is very quick. To check what versions are available on build worker you could do `dir C:\avvm\node`.
+Pre-installed Node.js distributives are stored in `C:\avvm\node` folder. When you run `Install-Product node` command it's,
+basically, moving `nodejs` or `iojs` folder from there to `Program Files`, so the switch is very quick.
+To check what versions are available on build worker you could do `dir C:\avvm\node`.
 
 The following paths are always added to `PATH` environment variable:
 
@@ -103,15 +111,17 @@ The following paths are always added to `PATH` environment variable:
 
 ### Installing *any* version of Node.js or io.js
 
-Sometimes pre-installed versions of Node.js or io.js are little behind (this is especially true for io.js), but what if you need to test under bleeding edge. You could use another PowerShell cmdlet which does full re-install of Node.js or io.js to a selected version.
+Sometimes pre-installed versions of Node.js or io.js are little behind (this is especially true for io.js),
+but what if you need to test under bleeding edge. You could use another PowerShell cmdlet which does full
+re-install of Node.js or io.js to a selected version.
 
     Update-NodeJsInstallation <version> [x86|x64]
 
 Here `<version>` is **exact version** of Node.js or io.js.
 
-For example the following command will download and install io.js 1.0.2:
+For example the following command will download and install Node.js 5.12.0:
 
-    Update-NodeJsInstallation 1.0.2
+    Update-NodeJsInstallation 5.12.0
 
 There is a helper cmdlet checking remote dist directory of Node.js or io.js to determine absolute latest build available:
 
@@ -133,8 +143,8 @@ To test under latest version of Node.js and io.js you can specify in `appveyor.y
 environment:
   matrix:
     # node.js
-    - nodejs_version: "0.10"
-    - nodejs_version: "0.11"
+    - nodejs_version: "4"
+    - nodejs_version: "6"
     # io.js
     - nodejs_version: "1.0"
 
@@ -147,7 +157,7 @@ To allow failing jobs for bleeding-edge Node.js versions:
 ```yaml
 matrix:
   allow_failures:
-    - nodejs_version: "0.11"
+    - nodejs_version: "7"
 ```
 
 What if you need to test under specific version of Node.js for both x86 and x64 platforms? You could add another "dimension" to the matrix, for example:
@@ -155,8 +165,8 @@ What if you need to test under specific version of Node.js for both x86 and x64 
 ```yaml
 environment:
   matrix:
-    - nodejs_version: "0.10"
-    - nodejs_version: "1.0"
+    - nodejs_version: "4"
+    - nodejs_version: "6"
 
 platform:
   - x86
@@ -168,10 +178,10 @@ install:
 
 This configuration will produce a build with 4 jobs for all combinations of node version and platform:
 
-    Node.js 0.10.x   x86
-    Node.js 0.10.x   x64
-    io.js 1.0.x      x86
-    io.js 1.0.x      x64
+    Node.js 4.x   x86
+    Node.js 4.x   x64
+    Node.js 6.x   x86
+    Node.js 6.x   x64
 
 
 ## Deploying a Node.js website to Azure
@@ -185,7 +195,7 @@ You can use Web Deploy to [deploy your Node.js website](/docs/deployment/web-dep
 
 When running `npm install` (or any other Node.js program writing to a console) you may notice that Unicode symbols written to build console look wrong:
 
-![node-output-wrong](/assets/images/docs/lang/node-output-wrong.png)
+![node-output-wrong](/assets/img/docs/lang/node-output-wrong.png)
 
 This is because you are calling that program from PowerShell:
 
@@ -199,7 +209,7 @@ To fix that run it in "shell" mode:
 - npm install
 ```
 
-![node-output-correct](/assets/images/docs/lang/node-output-correct.png)
+![node-output-correct](/assets/img/docs/lang/node-output-correct.png)
 
 At the moment it seems to be an issue with PowerShell and the way it redirects output from console apps to a custom PowerShell host.
 
@@ -210,7 +220,7 @@ Sometimes you may notice that output of some Node.js programs (especially those 
 
 In two words, there was Windows-specific issue in Node.js with non-blocking StdErr ([joyent/node#3584](https://github.com/joyent/node/issues/3584)) which was fixed in this pull request [joyent/node#7196](https://github.com/joyent/node/pull/7196) and finally landed in **Node.js v0.11.12** ([joyent/node@20176a9](https://github.com/joyent/node/commit/20176a98416353d4596900793f739d5ebf4f0ee1)). There is a [great discussion of this problem](https://github.com/mapnik/node-mapnik/issues/257#issuecomment-44417280).
 
-Solution - run your tests under Node.js 0.11.x.
+Solution - run your tests under the latest Node.js.
 
 
 ### Locking errors (EPERM, EEXIST, tgz.lock)

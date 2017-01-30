@@ -4,7 +4,7 @@ title: SonarQube Analysis
 
 This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software Developer Lead at [RES](http://resgroup.github.io/).
 
-SonarQube / SonarSource analyses code, highlights quality issues and calculates metrics such as technical debt. More information is available on [SonarSource.com](https://www.sonarsource.com/).
+SonarQube / SonarSource analyzes code, highlights quality issues and calculates metrics such as technical debt. More information is available on [SonarSource.com](https://www.sonarsource.com/).
 
 This post is written from the point of view of someone (me) who is already proficient in C#, and had even used SonarQube, but was new to AppVeyor and integrating SonarQube with GitHub.
 
@@ -18,9 +18,9 @@ If you are new to GitHub, see [this getting started guide](https://guides.github
 
 In my version of Visual Studio (Community 2015), you can do this by clicking on *"File - New - Project"* on the main menu, then *"Class Library"* from *"Templates - Visual C#"*. Give it a interesting name, which I will assume to be **YourProjectName** for the rest of this post.
 
-Add some code that has some quality issues (eg a variable that is declared but never used). You can use the [the full list of SonarQube C# issues](http://dist.sonarsource.com/reports/coverage/rules/csharpsquid_rules_coverage.html) for inspiration. Alternatively you can copy and paste [some of mine](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor/blob/master/ExampleSonarQubeIssues.cs).
+Add some code that has some quality issues (e.g. a variable that is declared but never used). You can use the [the full list of SonarQube C# issues](http://dist.sonarsource.com/reports/coverage/rules/csharpsquid_rules_coverage.html) for inspiration. Alternatively you can copy and paste [some of mine](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor/blob/master/ExampleSonarQubeIssues.cs).
 
-Install the [SonarLint Visual Studio Plugin](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio). This highlights quality issues in your code as you type and gives you a chance to fix them before comitting.
+Install the [SonarLint Visual Studio Plugin](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio). This highlights quality issues in your code as you type and gives you a chance to fix them before committing.
 
 ## Integrate with AppVeyor
 
@@ -49,7 +49,7 @@ Now Log in to [AppVeyor.com](https://ci.appveyor.com), probably using your GitHu
 
 ## Run SonarQube Analysis Locally
 
-When working with appveyor, it always makes sense to test on your own computer first. The feedback is immediate and you iterate very quickly. It takes a lot longer to modify the appveyor.yml file, push it and wait for a build to go through. Also, if it works locally but doesn't work on AppVeyor, you know the problem is a configuration difference between your computer and the AppVeyor environment (eg a different version of msbuild).
+When working with AppVeyor, it always makes sense to test on your own computer first. The feedback is immediate and you iterate very quickly. It takes a lot longer to modify the `appveyor.yml` file, push it and wait for a build to go through. Also, if it works locally but doesn't work on AppVeyor, you know the problem is a configuration difference between your computer and the AppVeyor environment (e.g. a different version of msbuild).
 
 Instead of committing SonarQube executables to the repo, we will download them during the build using Chocolatey.
 
@@ -63,7 +63,7 @@ Instead of committing SonarQube executables to the repo, we will download them d
 * Open a new administrator command prompt / powershell.
 * `choco install "msbuild-sonarqube-runner" -y`
 
-### Analyse and upload to SonarQube
+### Analyze and upload to SonarQube
 
 ```batch
 MSBuild.SonarQube.Runner.exe begin /k:"**YourUniqueProjectName**" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=**YourSonarQubeToken**"
@@ -103,7 +103,7 @@ To add a standard [![Quality Gate](https://sonarqube.com/api/badges/gate?key=Son
 
 ## Integrate SonarQube with Pull Requests
 
-SonarQube can analyse Pull Requests for quality issues, which you can see on [this pull request](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor/pull/3).
+SonarQube can analyze Pull Requests for quality issues, which you can see on [this pull request](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor/pull/3).
 
 This requires a GitHub authentication token, which must be secured, secure variables to be enabled in pull requests and a differential build for Pull Requests.
 
@@ -119,7 +119,7 @@ On [AppVeyor](https://ci.appveyor.com), click your user name in the top right ha
 
 ### Allowing Secure Variables in Pull Requests
 
-Normally AppVeyor will not decrypt secure variables in Pull Requests, as in this case a Hacker could send you a PR and then read all of your secure data. However, for SonarQube to analyse Pull Requests, it is necessary. You need to decide whether you can live with this.
+Normally AppVeyor will not decrypt secure variables in Pull Requests, as in this case a Hacker could send you a PR and then read all of your secure data. However, for SonarQube to analyze Pull Requests, it is necessary. You need to decide whether you can live with this.
 
 If you can, go to [AppVeyor](https://ci.appveyor.com), click on your project, click *"Settings"*, tick *"Enable secure variables in Pull Requests from the same repository only"* and click *"Save"*.
 

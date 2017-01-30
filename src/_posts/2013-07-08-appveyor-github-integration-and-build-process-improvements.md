@@ -20,7 +20,7 @@ All these changes are immediately available!
 
 It is now possible to sign up and login using GitHub account:
 
-![AppVeyor login with GitHub](/assets/images/posts/github-integration/appveyor-login-with-github1.png)
+![AppVeyor login with GitHub](/assets/img/posts/github-integration/appveyor-login-with-github1.png)
 
 AppVeyor uses OAuth authentication, so your GitHub account credentials are not stored
 in AppVeyor database.
@@ -32,13 +32,13 @@ It is now possible to select authorization scope: only public projects or public
 projects. This feature is a must for developers who are members of some organizations and not
 allowed to give outside access to their private repositories.
 
-![Connect GitHub/BitBucket](/assets/images/posts/github-integration/tour-connect-github-bitbucket.png)
+![Connect GitHub/BitBucket](/assets/img/posts/github-integration/tour-connect-github-bitbucket.png)
 
 ## MSBuild log saving and displaying
 
 Detailed MSBuild log is now saved for every build and can be downloaded from project version screen:
 
-![appveyor-download-build-log](/assets/images/posts/github-integration/appveyor-download-build-log1.png)
+![appveyor-download-build-log](/assets/img/posts/github-integration/appveyor-download-build-log1.png)
 
 ## Project integration flow stability improvements
 

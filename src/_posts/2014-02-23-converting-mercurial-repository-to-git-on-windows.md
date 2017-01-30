@@ -53,7 +53,7 @@ git clone http://repo.or.cz/r/fast-export.git
 
 Open `c:\projects\fast-export\hg-fast-export.py` in Notepad and replace highlighted region with the code below:
 
-![hg-fast-export](/assets/images/posts/hg-to-git/hg-fast-export.png)
+![hg-fast-export](/assets/img/posts/hg-to-git/hg-fast-export.png)
 
 ```python
 #!/usr/bin/env python

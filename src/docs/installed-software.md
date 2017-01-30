@@ -19,9 +19,9 @@ Below is the list of software pre-installed on Build Worker.
 
 ## Version control systems
 
-* [Git](https://git-scm.com/download/win) 2.8.2 (x64) (with `git config --global core.autocrlf input`)
-    * [Git Large File Storage](https://git-lfs.github.com/) 1.4.1
-* [Mercurial](https://www.mercurial-scm.org/downloads) 3.1.1 (x86)
+* [Git](https://git-scm.com/download/win) 2.11.0 (x64) (with `git config --global core.autocrlf input`)
+    * [Git Large File Storage](https://git-lfs.github.com/) 1.5.3
+* [Mercurial](https://www.mercurial-scm.org/downloads) 4.0.1 (x86)
 * [Subversion](http://www.collab.net/downloads/subversion) 1.8.11 (x86)
 
 ## SDKs
@@ -36,7 +36,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4](https://www.microsoft.com/en-us/download/details.aspx?id=3062)
 * [Windows Phone SDK 8.0](https://www.microsoft.com/en-us/download/details.aspx?id=35471)
 * [Azure SDKs](https://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.3, 2.4, 2.5.1, 2.6, 2.7.1, 2.8.1, 2.9.5
-* [Microsoft Azure Storage Emulator](https://azure.microsoft.com/en-us/downloads/) 4.5
+* [Microsoft Azure Storage Emulator](https://azure.microsoft.com/en-us/downloads/) 4.6
 * [Microsoft SilverLight 5 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=28359)
 * [Windows PowerShell 2.0 SDK](https://www.microsoft.com/en-ca/download/details.aspx?id=2560)
 * [DirectX SDK](https://www.microsoft.com/en-us/download/details.aspx?id=6812) (`C:\Program Files (x86)\Microsoft DirectX SDK`)
@@ -47,6 +47,7 @@ Below is the list of software pre-installed on Build Worker.
 * TypeScript 1.6.3 for Visual Studio 2015
 * TypeScript 1.7.6 for Visual Studio 2015
 * TypeScript 1.8.3 for Visual Studio 2015
+* TypeScript 2.1.5 for Visual Studio 2015
 * [Office Developer Tools for Visual Studio 2013](https://blogs.msdn.microsoft.com/visualstudio/2014/03/03/announcing-office-developer-tools-for-visual-studio-2013-march-2014-update/)
 * [Office Developer Tools for Visual Studio 2015](https://www.visualstudio.com/en-us/features/office-tools-vs.aspx)
 * [Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=42313)
@@ -90,7 +91,7 @@ Below is the list of software pre-installed on Build Worker.
 * [Visual Studio 2015 Installer Projects](https://visualstudiogallery.msdn.microsoft.com/f1cc3f3e-c300-40a7-8797-c509fb8933b9)
 * Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)
 * WDK 10.0.14393
-* SQL Server Data Tools (SSDT) 16.3 (14.0.60812.0) for Visual Studio 2015
+* SQL Server Data Tools (SSDT) 16.5 (14.0.61021.0) for Visual Studio 2015
 * Azure Service Fabric and Tools 5.3.301.9590 for Visual Studio 2015
 
 Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
@@ -117,6 +118,7 @@ os: Visual Studio 2015
 * [Silverlight 5 x64 Developer Runtime](https://go.microsoft.com/fwlink/?LinkID=229324)
 * SQL Server Data tools for [Visual Studio 2012](https://msdn.microsoft.com/en-us/jj650015) and [2013](https://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
 * Boost:
+    * 1.63.0 (`C:\Libraries\boost_1_63_0`)
     * 1.62.0 (`C:\Libraries\boost_1_62_0`)
     * 1.60.0 (`C:\Libraries\boost_1_60_0`)
     * 1.59.0 (`C:\Libraries\boost_1_59_0`)
@@ -127,14 +129,15 @@ os: Visual Studio 2015
 
 `4.x` is default Node.js installed on build workers.
 
-* 7.0.0 - use `Stable` alias for latest `7.x` release
-* 6.0.0 - 6.9.1 (x86 and x64)
-* 4.0.0 - 4.6.1 (x86 and x64) - use `LTS` alias for latest `4.x` release
+* 7.0.0 - 7.4.0 - use `Stable` alias for latest `7.x` release
+* 6.0.0 - 6.9.4 (x86 and x64)
+* 4.0.0 - 4.7.2 (x86 and x64) - use `LTS` alias for latest `4.x` release
 * 5.0.0 - 5.12.0 (x86 and x64)
-* 0.10.26 - 0.10.47 (x86 and x64)
+* 0.10.26 - 0.10.48 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
-* 0.12.0 - 0.12.16 (x86 and x64)
+* 0.12.0 - 0.12.18 (x86 and x64)
 * 0.8.25 - 0.8.28 (x86 and x64)
+* 0.6.21 (x86 and x64)
 
 Use the following PowerShell command to quickly switch Node.js version:
 
@@ -204,31 +207,33 @@ Install-Product node '3'
     * 2.0.0-p648 x64 (`C:\Ruby200-x64\bin`)
     * 2.1.9 x86 (`C:\Ruby21\bin`)
     * 2.1.9 x64 (`C:\Ruby21-x64\bin`)
-    * 2.2.5 x86 (`C:\Ruby22\bin`)
-    * 2.2.5 x64 (`C:\Ruby22-x64\bin`)
-    * 2.3.1 x86 (`C:\Ruby23\bin`)
-    * 2.3.1 x64 (`C:\Ruby23-x64\bin`)
+    * 2.2.6 x86 (`C:\Ruby22\bin`)
+    * 2.2.6 x64 (`C:\Ruby22-x64\bin`)
+    * 2.3.3 x86 (`C:\Ruby23\bin`)
+    * 2.3.3 x64 (`C:\Ruby23-x64\bin`)
 
 ### Python
 
 * [Python](https://www.python.org/downloads/windows/)
     * 2.6.6 x86 (`C:\Python26`)
     * 2.6.6 x64 (`C:\Python26-x64`)
-    * 2.7.12 x86 (`C:\Python27` - default in `PATH`)
-    * 2.7.12 x64 (`C:\Python27-x64`)
+    * 2.7.13 x86 (`C:\Python27` - default in `PATH`)
+    * 2.7.13 x64 (`C:\Python27-x64`)
     * 3.3.5 x86 (`C:\Python33`)
     * 3.3.5 x64 (`C:\Python33-x64`)
     * 3.4.4 x86 (`C:\Python34`)
     * 3.4.4 x64 (`C:\Python34-x64`)
     * 3.5.2 x86 (`C:\Python35`)
     * 3.5.2 x64 (`C:\Python35-x64`)
+    * 3.6.0 x86 (`C:\Python36`)
+    * 3.6.0 x64 (`C:\Python36-x64`)
 * Miniconda
-    * Miniconda2 4.0.5 (Python 2.7.11) - `C:\Miniconda`
-    * Miniconda2 4.0.5 x64 (Python 2.7.11): `C:\Miniconda-x64`
+    * Miniconda2 4.2.12 (Python 2.7.12) - `C:\Miniconda`
+    * Miniconda2 4.2.12 x64 (Python 2.7.12): `C:\Miniconda-x64`
     * Miniconda3 3.16.0 (Python 3.4.3): `C:\Miniconda3`
     * Miniconda3 3.16.0 x64 (Python 3.4.3): `C:\Miniconda3-x64`
-    * Miniconda3 4.0.5 (Python 3.5.1): `C:\Miniconda35`
-    * Miniconda3 4.0.5 x64 (Python 3.5.1): `C:\Miniconda35-x64`
+    * Miniconda3 4.2.12 (Python 3.5.2): `C:\Miniconda35`
+    * Miniconda3 4.2.12 x64 (Python 3.5.2): `C:\Miniconda35-x64`
 * [Visual C++ Compiler for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266)
 
 ### Perl
@@ -259,7 +264,7 @@ Install-Product node '3'
 ### Qt
 
 * Qt (`C:\Qt`)
-    * Qt 5.7: `C:\Qt\5.7`
+    * Qt 5.7.1: `C:\Qt\5.7`
         * MinGW 5.3.0 32 bit: `C:\Qt\5.7\mingw53_32`
         * msvc2015 64-bit: `C:\Qt\5.7\msvc2015_64`
         * msvc2015 32-bit: `C:\Qt\5.7\msvc2015`
@@ -292,20 +297,20 @@ Install-Product node '3'
 
 ## Tools
 
-* [7-Zip](http://www.7-zip.org/) 16.02
+* [7-Zip](http://www.7-zip.org/) 16.04
 * [Microsoft Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 1.2.1 (February 2016)
 * [Microsoft Azure CLI](https://azure.microsoft.com/en-us/downloads/) 0.9.10
-* [CMake](https://cmake.org/download/) 3.6.2
+* [CMake](https://cmake.org/download/) 3.7.1
 * [NuGet](https://dist.nuget.org/index.html) 2.8.6 on `Visual Studio 2013` image
-* [NuGet](https://dist.nuget.org/index.html) 3.4.4 on `Visual Studio 2015` image
-* [Chocolatey](https://chocolatey.org/) v0.9.10.3
+* [NuGet](https://dist.nuget.org/index.html) 3.5.0 on `Visual Studio 2015` image
+* [Chocolatey](https://chocolatey.org/) v0.10.3
 * [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.6.2
 * FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
 * [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2j (32-bit) (`C:\OpenSSL-Win32\bin`)
 * [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2j (64-bit) (`C:\OpenSSL-Win64\bin`)
-* [NSIS](http://nsis.sourceforge.net/Download) 3.0 (`C:\Program Files (x86)\NSIS`)
+* [NSIS](http://nsis.sourceforge.net/Download) 3.01 (`C:\Program Files (x86)\NSIS`)
 * Coverity Scan 8.5.0.1
-* [Yarn](https://yarnpkg.com/) 0.16.1
+* [Yarn](https://yarnpkg.com/) 0.18.1
 
 ## Testing
 
@@ -319,12 +324,12 @@ Install-Product node '3'
 
 ### Selenium
 
-* [Chrome Web Driver](https://chromedriver.storage.googleapis.com/index.html) 2.24
-* [Internet Explorer Web Driver](https://selenium-release.storage.googleapis.com/index.html) 2.53
-* [Firefox Web Driver (geckodriver)](https://github.com/mozilla/geckodriver/releases) 0.8.0
+* [Chrome Web Driver](https://chromedriver.storage.googleapis.com/index.html) 2.27
+* [Internet Explorer Web Driver](https://selenium-release.storage.googleapis.com/index.html) 3.0
+* [Firefox Web Driver (geckodriver)](https://github.com/mozilla/geckodriver/releases) 0.13.0
 * Internet Explorer 11
-* Firefox 49.0.1
-* Chrome 53.0
+* Firefox 50.1.0
+* Chrome 55.0
 
 
 ## Services and databases

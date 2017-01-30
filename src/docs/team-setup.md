@@ -61,7 +61,7 @@ A user can be assigned to multiple accounts with different roles. Existing user 
 
 To switch between accounts user must first **sign out**. While signing in again user will be presented with a dropdown listing all accounts he/she is assigned:
 
-![select-account-on-signin](/assets/images/docs/select-account-on-signin.png)
+![select-account-on-signin](/assets/img/docs/select-account-on-signin.png)
 
 ## Leaving account
 
@@ -77,7 +77,7 @@ You can remove yourself as a collaborator from a certain account on [profile pag
 
 ### Understanding relationship between GitHub team and AppVeyor role
 
-Your access as a GitHub user to a certain AppVeyor account is controlled by `GitHub team <-> AppVeyor role` relationship which is 1-to-1 under given AppVeyor account. That means that GitHub team can be mapped to a single AppVeyor role only. Under different account the same GitHub team can be mapped to a different role from that account.
+Your access as a GitHub user to a certain AppVeyor account is controlled by *GitHub team &harr; AppVeyor* role relationship which is 1-to-1 under given AppVeyor account. That means that GitHub team can be mapped to a single AppVeyor role only. Under different account the same GitHub team can be mapped to a different role from that account.
 
 **Important note:** If GitHub user belongs to two or more teams defined in AppVeyor there is no way for AppVeyor to resolve account role the user should be assigned to. For example, suppose you added mapping for two GitHub teams:
 
@@ -112,7 +112,7 @@ You should have a separate email address which does not exist in AppVeyor and wi
 Go to [Sign up](https://ci.appveyor.com/signup) page and register a new account with that email and password. For "Your name" use something like "{organization} admin".
 
 Next, navigate to [Account details](https://ci.appveyor.com/account) page and check/rename "Account name" - this is {% raw %}<code>{organization}</code>{% endraw %} name that will be used in project URLs.
-On the same page authorize AppVeyor to access GitHub. A new OAuth token will be generated and used for accessing organization's repositories and teams on bahalf of your GitHub user.
+On the same page authorize AppVeyor to access GitHub. A new OAuth token will be generated and used for accessing organization's repositories and teams on behalf of your GitHub user.
 Make sure your GitHub user has owner/admin rights on the repositories you are going to add later as AppVeyor projects.
 
 #### Add yourself as co-administrator
