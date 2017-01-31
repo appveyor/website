@@ -1,11 +1,3 @@
-GIT
-  remote: https://github.com/octopress/paginate.git
-  revision: 9b3e42f03fe05e19e819a00134b40f63416f736b
-  ref: 9b3e42f
-  specs:
-    octopress-paginate (1.1.2)
-      octopress-hooks
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -43,6 +35,8 @@ GEM
     mercenary (0.3.6)
     octopress-hooks (2.6.2)
       jekyll (>= 2.0)
+    octopress-paginate (1.2.0)
+      octopress-hooks
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -61,7 +55,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.8.0)
   jekyll-seo-tag (~> 2.1.0)
   jekyll-sitemap (~> 1.0.0)
-  octopress-paginate!
+  octopress-paginate (~> 1.2.0)
 
 BUNDLED WITH
    1.14.3
