@@ -261,6 +261,17 @@ module.exports = function(grunt) {
             }
         },
 
+        markdownlint: {
+            all: {
+                options: {
+                    config: grunt.file.readJSON('./markdownlint.json')
+                },
+                src: [
+                    'src/**/*.md'
+                ]
+            }
+        },
+
         htmllint: {
             options: {
                 ignore: [
@@ -308,24 +319,6 @@ module.exports = function(grunt) {
     // Load any grunt plugins found in package.json.
     require('load-grunt-tasks')(grunt, { scope: 'dependencies' });
     require('time-grunt')(grunt);
-
-    grunt.registerTask('markdownlint', 'Run markdownlint', function () {
-        var done = this.async();
-        var markdownlint = require('markdownlint');
-        var options = {
-            config: require('./markdownlint.json'),
-            files: grunt.file.expand({ filter: 'isFile' }, ['src/**/*.md'])
-        };
-
-        markdownlint(options, function callback(err, result) {
-            var resultString = err || (result || '').toString();
-
-            if (resultString) {
-                grunt.fail.warn('\n' + resultString + '\n');
-            }
-            done(!err || !resultString);
-        });
-    });
 
     grunt.registerTask('build', [
         'clean',

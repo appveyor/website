@@ -32,10 +32,10 @@
     "grunt-html": "^8.2.0",
     "grunt-jekyll": "^0.4.4",
     "grunt-link-checker": "^0.2.0",
+    "grunt-markdownlint": "^1.0.23",
     "grunt-uncss": "^0.6.1",
     "grunt-usemin": "^3.1.1",
     "load-grunt-tasks": "^3.5.2",
-    "markdownlint": "^0.3.1",
     "time-grunt": "^1.4.0"
   },
   "engines": {
