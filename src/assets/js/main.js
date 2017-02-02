@@ -1,18 +1,17 @@
-/* jshint jquery:true */
 /* global anchors:true */
 
 (function() {
-    "use strict";
+    'use strict';
 
     function testimonialsDefer() {
-        var testimonialsContainer = document.getElementById("testimonials");
+        var testimonialsContainer = document.getElementById('testimonials');
         var testimonialImages = [
-            "twitter-levgimelfarb.png",
-            "twitter-menonHari.png",
-            "twitter-nathanchere.png",
-            "twitter-patrickroos.png",
-            "twitter-ritasker.png",
-            "twitter-twith2sugars.png"
+            'twitter-levgimelfarb.png',
+            'twitter-menonHari.png',
+            'twitter-nathanchere.png',
+            'twitter-patrickroos.png',
+            'twitter-ritasker.png',
+            'twitter-twith2sugars.png'
         ];
 
 
@@ -20,16 +19,16 @@
             return;
         }
 
-        var testimonialEl = testimonialsContainer.querySelector("img");
+        var testimonialEl = testimonialsContainer.querySelector('img');
         var testimonialImage = testimonialImages[Math.floor(Math.random() * testimonialImages.length)];
-        var imgPath = "/assets/img/testimonials/" + testimonialImage;
+        var imgPath = '/assets/img/testimonials/' + testimonialImage;
 
-        testimonialEl.setAttribute("src", imgPath);
-        testimonialEl.classList.add("loaded");
+        testimonialEl.setAttribute('src', imgPath);
+        testimonialEl.classList.add('loaded');
 
     }
 
-    window.addEventListener("load", testimonialsDefer, false);
+    window.addEventListener('load', testimonialsDefer, false);
 
-    anchors.add(".docs-content h2, .docs-content h3, .docs-content h4, .docs-content h5, .docs-content h6");
+    anchors.add('.docs-content h2, .docs-content h3, .docs-content h4, .docs-content h5, .docs-content h6');
 })();
