@@ -1,17 +1,17 @@
 /* jshint jquery:true */
 
 $(function() {
-    "use strict";
+    'use strict';
 
     $(document).foundation();
 
     var scrollIfAnchor = function (href) {
-        var $fromTop = $(".top-bar").height();
+        var $fromTop = $('.top-bar').height();
 
-        href = typeof href === "string" ? href : $(this).attr("href");
+        href = typeof href === 'string' ? href : $(this).attr('href');
 
-        if (href !== "#" && href.indexOf("#") === 0) {
-            $("html, body").animate({
+        if (href !== '#' && href.indexOf('#') === 0) {
+            $('html, body').animate({
                 scrollTop: $(href).offset().top - $fromTop
             });
         }
@@ -19,5 +19,5 @@ $(function() {
 
     scrollIfAnchor(window.location.hash);
 
-    $("body").on("click", "a", scrollIfAnchor);
+    $('body').on('click', 'a', scrollIfAnchor);
 });
