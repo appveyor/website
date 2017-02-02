@@ -1,5 +1,3 @@
-/* jshint browser:false, node:true */
-
 'use strict';
 
 module.exports = function(grunt) {
@@ -223,7 +221,7 @@ module.exports = function(grunt) {
             dev: {
                 files: [
                     '<%= dirs.src %>/**',
-                    '.jshintrc',
+                    '.eslintrc.json',
                     '_config.yml',
                     'Gruntfile.js'
                 ],
@@ -232,7 +230,7 @@ module.exports = function(grunt) {
             build: {
                 files: [
                     '<%= dirs.src %>/**',
-                    '.jshintrc',
+                    '.eslintrc.json',
                     '_config.yml',
                     'Gruntfile.js'
                 ],
@@ -250,14 +248,15 @@ module.exports = function(grunt) {
             ]
         },
 
-        jshint: {
+        eslint: {
             options: {
-                jshintrc: '.jshintrc'
+                config: '.eslintrc.json'
             },
-            files: {
+            src: {
                 src: [
                     'Gruntfile.js',
-                    '<%= dirs.src %>/assets/js/*.js'
+                    '<%= dirs.src %>/assets/js/*.js',
+                    '!<%= dirs.src %>/assets/js/google-analytics.js'
                 ]
             }
         },
@@ -345,7 +344,7 @@ module.exports = function(grunt) {
     grunt.registerTask('test', [
         'build',
         'csslint',
-        'jshint',
+        'eslint',
         'markdownlint',
         'htmllint',
         'connect:linkChecker',

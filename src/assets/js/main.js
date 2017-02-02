@@ -1,4 +1,3 @@
-/* jshint jquery:true */
 /* global anchors:true */
 
 (function() {

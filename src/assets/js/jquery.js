@@ -1,4 +1,4 @@
-/* jshint jquery:true */
+/* eslint-env jquery */
 
 $(function() {
     'use strict';
