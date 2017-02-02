@@ -109,12 +109,12 @@ module.exports = function(grunt) {
         uncss: {
             options: {
                 ignore: [
-                    /(#|\.)top-bar(\-[a-zA-Z]+)?/,
-                    /(#|\.)topbar(\-[a-zA-Z]+)?/,
-                    /(#|\.)f-topbar-fixed(\-[a-zA-Z]+)?/,
-                    /(#|\.)dropdown(\-[a-zA-Z]+)?/,
-                    /\.no\-js/,
-                    /meta.foundation(\-[a-zA-Z]+)?/,
+                    /(#|\.)top-bar(-[a-zA-Z]+)?/,
+                    /(#|\.)topbar(-[a-zA-Z]+)?/,
+                    /(#|\.)f-topbar-fixed(-[a-zA-Z]+)?/,
+                    /(#|\.)dropdown(-[a-zA-Z]+)?/,
+                    /\.no-js/,
+                    /meta.foundation(-[a-zA-Z]+)?/,
                     '.anchorjs-link'
                 ],
                 htmlroot: '<%= dirs.dest %>',
