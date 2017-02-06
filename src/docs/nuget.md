@@ -121,7 +121,7 @@ To configure an AppVeyor project to use private NuGet feeds during a build you c
 
    ![nuget environment variables](/assets/img/docs/nuget-environment-variables.png)
 
-3. Into **Install script** box, add this command:
+3. Into **Install script** box (or under 'install' tag if you use YAML), add this command:
 
         nuget sources add -Name MyAccountFeed -Source <feed-url> -UserName %nuget_user% -Password %nuget_password%
 
