@@ -24,6 +24,8 @@ AppVeyor has most popular services and database engines pre-installed on all bui
 
 By default, their corresponding Windows services are stopped to reduce build machine boot time. On the **Environment** tab of project settings or in `appveyor.yml` you can configure which services must be started after the build machine has booted.
 
+Also please note that all MS SQL servers use the same default port 1433. Therefore please start and stop them sequentially to avoid port conflicts. To allow all SQL Server instances to be started simultaneously, please run [this script](https://gist.github.com/FeodorFitsner/a7eba7f44f9becacd3abddca27974e93) at `init` stage.
+
 ## SQL Server 2008
 
 The latest version of **SQL Server 2008 Express R2 SP2 with Advanced Services** is available on AppVeyor build servers. This is a full install with Database Engine, Replication, Full-Text Search, Reporting Services and Management Studio Express enabled.
