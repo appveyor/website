@@ -27,7 +27,6 @@ module.exports = function(grunt) {
                     decodeEntities: true,
                     ignoreCustomComments: [/^\s*google(off|on):\s/],
                     minifyCSS: {
-                        compatibility: 'ie9',
                         keepSpecialComments: 0
                     },
                     minifyJS: true,
@@ -95,7 +94,7 @@ module.exports = function(grunt) {
                     'last 2 version',
                     '> 1%',
                     'Edge >= 12',
-                    'Explorer >= 9',
+                    'Explorer >= 11',
                     'Firefox ESR',
                     'Opera 12.1'
                 ]
@@ -130,8 +129,7 @@ module.exports = function(grunt) {
         cssmin: {
             minify: {
                 options: {
-                    keepSpecialComments: 0,
-                    compatibility: 'ie9'
+                    keepSpecialComments: 0
                 },
                 files: {
                     '<%= concat.css.dest %>': '<%= concat.css.dest %>'
