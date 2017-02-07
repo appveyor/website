@@ -14,9 +14,7 @@ title: Setup Master VM
 ## Setup Master VM
 
 Login to Master VM via RDP.
-Please note that your builds will be run under the user you are currently logged in with, so if you want to run builds under different username please
-create a new user and re-login before contunue to the next steps. We recommend using standard `appveyor` username.
-
+Please note that your builds will be run under the user you are currently logged in with, so if you want to run builds under different username please create a new user and re-login before contunue to the next steps.
 
 ### Basic configuration
 
