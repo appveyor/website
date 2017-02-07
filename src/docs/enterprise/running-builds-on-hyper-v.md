@@ -28,7 +28,7 @@ Currently custom build environment feature is not generally available. It is bei
 
 ### Create Virtual Switch
 
-If Hyper-V host already has **Virtual Switch** of type **External**, which uses Hyper-V Server NIC with access to the Internet, and it is OK to use it for build VMs, please go to [Create Master VM](/docs/enterprise/running-builds-on-hyper-v/#create-master-vm) step 
+If Hyper-V host already has **Virtual Switch** of type **External**, which uses Hyper-V Server NIC with access to the Internet, and it is OK to use it for build VMs, please go to [Create Master VM](/docs/enterprise/running-builds-on-hyper-v/#create-master-vm) step
 
 * In **Hyper-V manager** navigate to **Virtual Switch Manager** on right top panel
 * In **Virtual Switch Manager** select **External** and press **Create Virtual Switch**
@@ -57,7 +57,6 @@ If Hyper-V host already has **Virtual Switch** of type **External**, which uses 
 * Shutdown Master VM
 * Open **Virtual Hard Disks** folder (it can be found in Hyper-V settings, usually `C:\Users\Public\Documents\Hyper-V\Virtual Hard Disks`) and copy it to the folder AppVeyor will read it from, for example `C:\VHDs`
     * Alternatively original `.vhdx` file of Master VM can be used by AppVeyor. This is OK if Master VM is stopped and only one Hyper-V server if used. In case of many Hyper-V servers, Master VM `.vhdx` should be copied across all Hyper-V servers
-
 
 ## Setting up custom cloud and images in AppVeyor
 
@@ -95,7 +94,6 @@ If Hyper-V host already has **Virtual Switch** of type **External**, which uses 
 * [Download location](https://www.appveyor.com/downloads/host-agent/latest/AppveyorHostAgent.msi)
 * Installation settings
     * **Host authorization token**: token generated or manually entered during [Setting up custom cloud and images in AppVeyor](http://localhost:4000/docs/enterprise/running-builds-on-hyper-v/#setting-up-custom-cloud-and-images-in-appveyor) step
-    
 
 ## How to route build to your own cloud
 
