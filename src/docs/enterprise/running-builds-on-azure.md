@@ -21,12 +21,14 @@ Currently custom build environment feature is not generally available. It is bei
 
 During this step you will be needed to collect number of configuration and authentication setting for later use with AppVeyor. To avoid confusion we recommend to prepare some deployment notes (it can be just notepad file in **secure** location or password manager section), with the following fields:
 
+* AAD application name
 * Client ID
 * Client Secret
 * Tenant ID
 * Subscription ID
 * VMs resource group
 * Location
+* Disk storage account name
 * Security group name
 
 Now let us start with creating AAD application.
@@ -36,12 +38,12 @@ Now let us start with creating AAD application.
 * Select **APPLICATIONS** tab
 * Select **Add** in the bottom. **Add application** wizard will pop up
     * Choose **Add an application that my organization is developing**
-    * Name it descriptively, for example **Appveyor build**
+    * Name it descriptively (for example **Appveyor build**) copy it and save in your deployment notes as a **AAD application name**
     * Select **WEB APPLICATION AND/OR WEB API** type
     * **SIGN-ON URL** and **APP ID URI** are not going to be used in our scenario, so add anything which is well-recognize-able like [http://appveyor-build](http://appveyor-build)
 * Select **CONFIGURE** tab
     * Navigate to **CLIENT ID**, copy it and save in your deployment notes as a **Client ID**
-    * Navigate to **keys**, select duration, and press save icon on the bottom of the screen
+    * Navigate to **keys**, select duration, and press **SAVE** icon on the bottom of the screen
     * Secure key will be displayed, copy it and save in your deployment notes as a **Client Secret**
 * Next save Tenant ID for future use. For that you need to copy GUID from browser address bar
     * You can see two GUIDs there if you are still in **CONFIGURE** page. You need first which is following `Directory/`
@@ -68,7 +70,7 @@ Now let us start with creating AAD application.
 * In rightmost *blade* select **Contributor**
 * Yet another blade named **Add users** will open
     * By default, it displays only Microsoft (Live Id) accounts
-    * Use search to find AAD application you created before in the old portal
+    * Use search to find **AAD application name** from your deployment notes
 * Press **Select** and **OK** to confirm your selection
 * Do not close Azure Portal
 
@@ -86,7 +88,7 @@ Now let us start with creating AAD application.
     * Ensure that you selected **Storage accounts** and not **Storage accounts (classic)**
 * Press **Add**
 * In **Create storage account** *blade* enter/select the following (only important settings described, please feel free to leave default value for others):
-    * Descriptive name, which still satisfies storage account naming restrictions (**appveyorbuildsa** for our example)
+    * Descriptive name, which still satisfies storage account naming restrictions (**appveyorbuildsa** for our example).
     * Deployment model: Resource manager
     * Performance: premium (not mandatory, but recommended, however it will require **DS** series or better VMs)
     * Replication: Locally-redundant storage (LRS) is good enough for our purpose
@@ -231,7 +233,7 @@ Run one or more of below scripts to install and/or enable test framework of your
 * **Disk storage account name**: *Disk storage account name* from deployment notes
 * **Disk storage container**: Storage container where VMs will be created, for example **vms**
 * **Virtual network name**: Name of auto-created VNET for your VM resource group. It should look like `<vm_resource_group>-vnet`. Please open Azure Portal, navigate resource of type **Virtual Network** and ensure that name you entered is correct.
-* **Subnet name**: In Azure Portal under **Virtual Network** navigate to **Subnets** and copy-paste subnet name. Usually it is **default**
+* **Subnet name**: In Azure Portal under **Virtual Networks** navigate to **Subnets** and copy-paste subnet name. Usually it is **default**. Optionally you can create separate subnet for AppVeyor build VMs.
 * **Security group name**: *Security group name* from deployment notes
 * Images
     * **IMAGE NAME**: Image name as you want to see it in AppVeyor UI and YAML, for example **VS2013 with WMF3**
