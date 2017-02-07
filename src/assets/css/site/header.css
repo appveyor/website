@@ -68,16 +68,9 @@
     padding: 0 15px;
 }
 .top-bar .name h1 a {
-    background: transparent url("../img/logo.png") no-repeat 0 50%;
+    background: transparent url("../img/appveyor-navbar.svg") no-repeat 0 50%;
     background-size: 120px 22px;
     display: inline-block;
     width: 120px;
     text-indent: -9999px;
-}
-
-@media only screen and (min-device-pixel-ratio: 2.0) {
-    .top-bar .name h1 a {
-        background: transparent url("../img/logo-2x.png") no-repeat 0 50%;
-        background-size: 120px 22px;
-    }
 }
