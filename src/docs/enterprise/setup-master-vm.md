@@ -13,8 +13,10 @@ title: Setup Master VM
 
 ## Setup Master VM
 
-Login to Master VM via RDP (if RDP session was closed since previous step).
-Please note that profile of user you are loggen in with, will be used during each build run. Therefore if you do not like this user (for example you want it's name look more suitable for service, not a person), please create new user and re-login before contunue with next steps.
+Login to Master VM via RDP.
+Please note that your builds will be run under the user you are currently logged in with, so if you want to run builds under different username please
+create a new user and re-login before contunue to the next steps. We recommend using standard `appveyor` username.
+
 
 ### Basic configuration
 
@@ -52,7 +54,7 @@ If you are using .NET stack you probably need some version of MSBuild and/or Vis
 * [MSBuild 2015](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_msbuild_tools_2015.ps1)
 * [Visual Studio 2015](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_vs2015.ps1)
 
-Or install other build framework of your choice.
+Install other build framework of your choice.
 
 ### Test framework
 
@@ -69,7 +71,7 @@ Run one or more of below scripts to install and/or enable test framework of your
 
 * [Download and install AppVeyor Build Agent](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_appveyor_build_agent.ps1)
 
-  At this moment you have to decide if AppVeyor build agent will run in **interactive** (as a startup application) or **headless** (as a windows service) mode. Though **headless** mode seems more "server-style" and stable from the first look, we recommend **interactive** mode. One of most important advantages of **interactive** mode is ability to run UI tests seamlessly. Potential advantages of **headless** mode like ability to run build without user logon or automatic service recovery is not that important during short life cycle of build VM.
+At this moment you have to decide if AppVeyor build agent will run in **interactive** (as a startup application) or **headless** (as a windows service) mode. Though **headless** mode seems more "server-style" and stable from the first look, we recommend **interactive** mode. One of most important advantages of **interactive** mode is ability to run UI tests seamlessly. Potential advantages of **headless** mode like ability to run build without user logon or automatic service recovery is not that important during short life cycle of build VM.
 
 * **Hyper-V only**: [Set Build Agent mode to **Hyper-V**](https://github.com/appveyor/ci/blob/master/scripts/enterprise/set_hyperv_build_agent_mode.ps1)
 
@@ -85,4 +87,4 @@ Run one or more of below scripts to install and/or enable test framework of your
 
 #### Troubleshooting Build Agent
 
-   If you hit any issues with AppVeyor Build Agent start, first place to look is AppVeyor event log, which is located at **Applications and Services Logs** > **AppVeyor**.
+If you hit any issues with AppVeyor Build Agent start, first place to look is AppVeyor event log, which is located at **Applications and Services Logs** > **AppVeyor**.

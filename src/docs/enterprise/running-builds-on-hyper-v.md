@@ -13,14 +13,14 @@ title: Running builds on Hyper-V
 
 ## Enable custom build environment
 
-Currently custom build environment feature is not generally available. It is being enabled for specific accounts per request. Please send an email to team@appveyor.com if you decide to try this feature.
+Currently custom build environment feature is not generally available. It is being enabled for specific accounts per request. Please send an email to [team@appveyor.com](mailto:team@appveyor.com) if you decide to try this feature.
 
 ## Prepare host machine
 
 ### Minimum requirements:
 
 * Windows Server 2012 R2 (Windows 8.1) or higher
-* .NET Framework 4.5
+* .NET Framework 4.5.2
 * Hyper-V role installed
 * Enough free memory and disk space to run guest VMs
 * Internet connectivity
@@ -46,11 +46,11 @@ If Hyper-V host already has **Virtual Switch** of type **External**, which uses 
 
 * Follow [those steps](/docs/enterprise/setup-master-vm/) to setup software required for build process. It is tested PowerShell scripts which can be simple copy-pasted to PowerShell window (started in privileged mode). Some notes:
     * We strongly recommend to run everything from [Basic configuration](/docs/enterprise/setup-master-vm/#basic-configuration) and [Essential 3rd-party software](/docs/enterprise/setup-master-vm/#essential-3rd-party-software)
-    * You can skip one of msbuild and VS version or both if you dont need them in [Build framework](/docs/enterprise/setup-master-vm/#build-framework) step
+    * You can skip one of msbuild and VS version or both if you don't need them in [Build framework](/docs/enterprise/setup-master-vm/#build-framework) step
     * You can skip test framework you do not need in [Test framework](/docs/enterprise/setup-master-vm/#test-framework) step
     * Steps [AppVeyor Build Agent](/docs/enterprise/setup-master-vm/#appveyor-build-agent) and [Tuning for Interactive mode](/docs/enterprise/setup-master-vm/#tuning-for-interactive-mode) are mandatory
 
-* Install additional software needed
+* Install additional software if needed
 
 ## Prepare master VHD
 
@@ -62,7 +62,7 @@ If Hyper-V host already has **Virtual Switch** of type **External**, which uses 
 
 * Login to AppVeyor portal
 * Navigate to your account name on the top right and select **Build environment** option from drop-down menu
-    * If **Build environment** option is not available, please contact team@appveyor.com and ask to enable **Private build clouds** feature
+    * If **Build environment** option is not available, please contact [team@appveyor.com](mailto:team@appveyor.com) and ask to enable **Private build clouds** feature
 * Press **Add cloud**, select cloud type **Hyper-V**
 
 **Complete the following settings**:
