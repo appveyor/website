@@ -93,7 +93,7 @@ If Hyper-V host already has **Virtual Switch** of type **External**, which uses 
 
 * [Download location](https://www.appveyor.com/downloads/host-agent/latest/AppveyorHostAgent.msi)
 * Installation settings
-    * **Host authorization token**: token generated or manually entered during [Setting up custom cloud and images in AppVeyor](http://localhost:4000/docs/enterprise/running-builds-on-hyper-v/#setting-up-custom-cloud-and-images-in-appveyor) step
+    * **Host authorization token**: token generated or manually entered during [Setting up custom cloud and images in AppVeyor](/docs/enterprise/running-builds-on-hyper-v/#setting-up-custom-cloud-and-images-in-appveyor) step
 
 ## How to route build to your own cloud
 
