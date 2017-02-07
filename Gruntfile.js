@@ -163,6 +163,7 @@ module.exports = function(grunt) {
             images: {
                 src: [
                     '<%= dirs.dest %>/assets/img/**/*.{jpg,jpeg,gif,png,svg}',
+                    '!<%= dirs.dest %>/assets/img/favicons/*.{jpg,jpeg,gif,png,svg}',
                     '!<%= dirs.dest %>/assets/img/appveyor-logo*.png',
                     '!<%= dirs.dest %>/assets/img/testimonials/*.png'
                 ]
