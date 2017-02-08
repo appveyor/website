@@ -28,9 +28,16 @@
         <nav class="top-bar" data-topbar>
             <ul class="title-area">
                 <li class="name">
-                    <h1><a class="collapse-only" href="/">AppVeyor</a></h1>
+                    <a class="collapse-only" href="/">
+                        {% include appveyor-navbar.svg %}
+                    </a>
                 </li>
-                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+               <li class="toggle-topbar menu-icon">
+                   <a href="#">
+                       <span class="show-for-sr">Menu</span>
+                       <span aria-hidden="true"></span>
+                   </a>
+                </li>
             </ul>
             <div class="top-bar-section">
                 <!-- Left Nav -->

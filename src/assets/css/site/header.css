@@ -64,13 +64,14 @@
 }
 
 /* Logo */
-.top-bar .name h1 {
-    padding: 0 15px;
-}
-.top-bar .name h1 a {
-    background: transparent url("../img/appveyor-navbar.svg") no-repeat 0 50%;
-    background-size: 120px 22px;
+.top-bar .name a {
     display: inline-block;
-    width: 120px;
-    text-indent: -9999px;
+    padding: 8px 15px 0 15px;
+}
+
+.top-bar .name a svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 126px;
+    height: 23px;
 }
