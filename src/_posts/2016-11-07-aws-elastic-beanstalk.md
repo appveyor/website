@@ -37,8 +37,11 @@ build:
   publish_wap_xcopy: true
 deploy_script:
   - ps: >-
+
     $packageweb = $artifacts.values | Where-Object { $_.path -like '*WebApplication1.zip' }
+
     $exe = "C:\Program Files (x86)\AWS Tools\Deployment Tool\awsdeploy.exe"
+
     &$exe -r "-DDeploymentPackage=$($packageweb.path)" "-DEnvironment.Name=MyAppWeb-test123" "-DApplication.Name=MyAppWeb123" "-DRegion=eu-west-1" "-DAWSAccessKey=$env:AWSAccessKeyId" "-DAWSSecretKey=$env:AWSSecretKey" "C:\projects\WebApplication1\awsdeploy.txt"
 ```
 
