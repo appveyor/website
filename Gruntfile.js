@@ -27,8 +27,11 @@ module.exports = function(grunt) {
                     decodeEntities: true,
                     ignoreCustomComments: [/^\s*google(off|on):\s/],
                     minifyCSS: {
-                        compatibility: 'ie9',
-                        keepSpecialComments: 0
+                        level: {
+                            1: {
+                                specialComments: 0
+                            }
+                        }
                     },
                     minifyJS: true,
                     minifyURLs: false,
@@ -95,7 +98,7 @@ module.exports = function(grunt) {
                     'last 2 version',
                     '> 1%',
                     'Edge >= 12',
-                    'Explorer >= 9',
+                    'Explorer >= 11',
                     'Firefox ESR',
                     'Opera 12.1'
                 ]
@@ -130,8 +133,11 @@ module.exports = function(grunt) {
         cssmin: {
             minify: {
                 options: {
-                    keepSpecialComments: 0,
-                    compatibility: 'ie9'
+                    level: {
+                        1: {
+                            specialComments: 0
+                        }
+                    }
                 },
                 files: {
                     '<%= concat.css.dest %>': '<%= concat.css.dest %>'
@@ -165,6 +171,7 @@ module.exports = function(grunt) {
             images: {
                 src: [
                     '<%= dirs.dest %>/assets/img/**/*.{jpg,jpeg,gif,png,svg}',
+                    '!<%= dirs.dest %>/assets/img/favicons/*.{jpg,jpeg,gif,png,svg}',
                     '!<%= dirs.dest %>/assets/img/appveyor-logo*.png',
                     '!<%= dirs.dest %>/assets/img/testimonials/*.png'
                 ]
