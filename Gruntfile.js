@@ -27,7 +27,11 @@ module.exports = function(grunt) {
                     decodeEntities: true,
                     ignoreCustomComments: [/^\s*google(off|on):\s/],
                     minifyCSS: {
-                        keepSpecialComments: 0
+                        level: {
+                            1: {
+                                specialComments: 0
+                            }
+                        }
                     },
                     minifyJS: true,
                     minifyURLs: false,
@@ -129,7 +133,11 @@ module.exports = function(grunt) {
         cssmin: {
             minify: {
                 options: {
-                    keepSpecialComments: 0
+                    level: {
+                        1: {
+                            specialComments: 0
+                        }
+                    }
                 },
                 files: {
                     '<%= concat.css.dest %>': '<%= concat.css.dest %>'
