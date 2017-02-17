@@ -18,6 +18,7 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_BUILD_ID` - AppVeyor unique build ID;
 * `APPVEYOR_BUILD_NUMBER` - build number;
 * `APPVEYOR_BUILD_VERSION` - build version;
+* `APPVEYOR_BUILD_WORKER_IMAGE` - build worker image name;
 * `APPVEYOR_PULL_REQUEST_NUMBER` - GitHub Pull Request number;
 * `APPVEYOR_PULL_REQUEST_TITLE` - GitHub Pull Request title
 * `APPVEYOR_JOB_ID` - AppVeyor unique job ID;
