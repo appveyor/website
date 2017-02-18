@@ -116,11 +116,11 @@ AppVeyor supports dot-file-style YAML named `.appveyor.yml` as is. Another custo
 ### Alternative YAML file location
 
 It is possible to keep YAML file outside of repository. For that place YAML file **as a plain text** (Content-Type: text/plain) and **anonymously accessible** at some HTTP (or HTTPS) location. If using some web hosting, let file has `.txt` extension for it to get correct content type. However better option is to use [permalink to GitHub gist raw file](https://gist.github.com/dragon788/dadcc5d1d1258b5d0d56), and take advantage of keeping file change history on GitHub.
-After that place URL to YAML file to **Custom configuration .yml file name** setting. Needless to say that [secure variables](### Secure variables) should be used for secrets in YAML file.
+After that place URL to YAML file to **Custom configuration .yml file name** setting. Needless to say that [secure variables](#secure-variables) should be used for secrets in YAML file.
 
 ### Classic Git repositories and YAML
 
-Classic Git (unlike GitHub or BitBucket) does not allow individual file check in, therefore YAML file in classic Git repository is being ignored. Workaround is to use [Alternative YAML file location](### Alternative YAML file location) described above.
+Classic Git (unlike GitHub or BitBucket) does not allow individual file check in, therefore YAML file in classic Git repository is being ignored. Workaround is to use [Alternative YAML file location](#alternative-yaml-file-location) described above.
 
 ### YAML format notes
 
