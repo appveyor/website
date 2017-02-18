@@ -29,7 +29,7 @@ AppVeyor uses the following command to create Web Deploy package:
 
     msbuild <web_app.csproj> /t:Package /p:PackageLocation=<web-deploy-package.zip> /p:PackageAsSingleFile=True
 
-By default, Web application project artifact deployment name is the same as project name. However, in some cases it can be useful to customize deployment name. This especially makes sense when multiple Web application projects use the same [Agent deployment]( https://www.appveyor.com/docs/deployment/agent/#deploying-artifact-package-as-iis-web-site) Environment. For Agent deployment, artifact deployment name is a key setting and it would be convenient to have the same deployment name for all projects using certain Agent deployment Environment. To achieve this, provide custom value for `APPVEYOR_WAP_ARTIFACT_NAME` environment variable.
+By default, Web application project artifact deployment name is the same as project name. However, in some cases it can be useful to customize deployment name. This especially makes sense when multiple Web application projects use the same [Agent deployment](/docs/deployment/agent/#deploying-artifact-package-as-iis-web-site) Environment. For Agent deployment, artifact deployment name is a key setting and it would be convenient to have the same deployment name for all projects using certain Agent deployment Environment. To achieve this, provide custom value for `APPVEYOR_WAP_ARTIFACT_NAME` environment variable.
 
 ### Custom packaging
 
@@ -37,7 +37,7 @@ If you build your app using a script or build framework like MSBuild, PSake or r
 
     appveyor PushArtifact <path-to-package.zip> -Type WebDeployPackage
 
-Optionally, use `-DeploymentName` switch, can be useful with [Agent deployment]( https://www.appveyor.com/docs/deployment/agent/#deploying-artifact-package-as-iis-web-site) Environment as described in previous section.
+Optionally, use `-DeploymentName` switch, can be useful with [Agent deployment](/docs/deployment/agent/#deploying-artifact-package-as-iis-web-site) Environment as described in previous section.
 
 ### Including extra files into Web Deploy package
 
