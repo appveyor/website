@@ -102,7 +102,7 @@ os: Visual Studio 2015
 
 ## Xamarin
 
-[Xamarin Platform](https://xamarin.com/platform) v4.2.0.680 is installed on `Visual Studio 2015` image.
+[Xamarin Platform](https://xamarin.com/platform) v4.2.2.11 is installed on `Visual Studio 2015` image.
 
 ## Languages, libraries, frameworks
 
@@ -129,9 +129,9 @@ os: Visual Studio 2015
 
 `4.x` is default Node.js installed on build workers.
 
-* 7.0.0 - 7.4.0 - use `Stable` alias for latest `7.x` release
-* 6.0.0 - 6.9.4 (x86 and x64)
-* 4.0.0 - 4.7.2 (x86 and x64) - use `LTS` alias for latest `4.x` release
+* 7.0.0 - 7.5.0 - use `Stable` alias for latest `7.x` release
+* 6.0.0 - 6.9.5 (x86 and x64)
+* 4.0.0 - 4.7.3 (x86 and x64) - use `LTS` alias for latest `4.x` release
 * 5.0.0 - 5.12.0 (x86 and x64)
 * 0.10.26 - 0.10.48 (x86 and x64)
 * 0.11.12 - 0.11.16 (x86 and x64)
@@ -172,12 +172,14 @@ Install-Product node '3'
 ### Go
 
 * [Go](https://golang.org/dl/)
-    * 1.7.1 x64 (`C:\go` - default in `PATH`)
-    * 1.7.1 x86 (`C:\go-x86`)
-    * 1.7.1 x64 (`C:\go17`)
-    * 1.7.1 x86 (`C:\go17-x86`)
-    * 1.6.3 x64 (`C:\go16`)
-    * 1.6.3 x86 (`C:\go16-x86`)
+    * 1.8.0 x64 (`C:\go` - default in `PATH`)
+    * 1.8.0 x86 (`C:\go-x86`)
+    * 1.8.0 x64 (`C:\go18`)
+    * 1.8.0 x86 (`C:\go18-x86`)    
+    * 1.7.5 x64 (`C:\go17`)
+    * 1.7.5 x86 (`C:\go17-x86`)
+    * 1.6.4 x64 (`C:\go16`)
+    * 1.6.4 x86 (`C:\go16-x86`)
     * 1.5.4 x64 (`C:\go15`)
     * 1.5.4 x86 (`C:\go15-x86`)
     * 1.4.3 x64 (`C:\go14`)
@@ -190,8 +192,8 @@ Install-Product node '3'
     * [JDK 1.6](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html) Update 45 (x86) (`C:\Program Files (x86)\Java\jdk1.6.0\bin`)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x64) (`C:\Program Files\Java\jdk1.7.0\bin` - default in `PATH`)
     * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x86) (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)
-    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 101 (x64) (`C:\Program Files\Java\jdk1.8.0`)
-    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 101 (x86) (`C:\Program Files (x86)\Java\jdk1.8.0`)
+    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 121 (x64) (`C:\Program Files\Java\jdk1.8.0`)
+    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 121 (x86) (`C:\Program Files (x86)\Java\jdk1.8.0`)
 * [Maven](https://maven.apache.org/) 3.3.9 (`C:\Program Files (x86)\Apache\Maven` - added to `PATH`)
 
 
@@ -223,17 +225,19 @@ Install-Product node '3'
     * 3.3.5 x64 (`C:\Python33-x64`)
     * 3.4.4 x86 (`C:\Python34`)
     * 3.4.4 x64 (`C:\Python34-x64`)
-    * 3.5.2 x86 (`C:\Python35`)
-    * 3.5.2 x64 (`C:\Python35-x64`)
+    * 3.5.3 x86 (`C:\Python35`)
+    * 3.5.3 x64 (`C:\Python35-x64`)
     * 3.6.0 x86 (`C:\Python36`)
     * 3.6.0 x64 (`C:\Python36-x64`)
 * Miniconda
-    * Miniconda2 4.2.12 (Python 2.7.12) - `C:\Miniconda`
-    * Miniconda2 4.2.12 x64 (Python 2.7.12): `C:\Miniconda-x64`
+    * Miniconda2 4.3.11 (Python 2.7.13) - `C:\Miniconda`
+    * Miniconda2 4.3.11 x64 (Python 2.7.13): `C:\Miniconda-x64`
     * Miniconda3 3.16.0 (Python 3.4.3): `C:\Miniconda3`
     * Miniconda3 3.16.0 x64 (Python 3.4.3): `C:\Miniconda3-x64`
     * Miniconda3 4.2.12 (Python 3.5.2): `C:\Miniconda35`
     * Miniconda3 4.2.12 x64 (Python 3.5.2): `C:\Miniconda35-x64`
+    * Miniconda3 4.3.11 (Python 3.6.0): `C:\Miniconda36`
+    * Miniconda3 4.3.11 x64 (Python 3.6.0): `C:\Miniconda36-x64`
 * [Visual C++ Compiler for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266)
 
 ### Perl
@@ -250,13 +254,13 @@ Install-Product node '3'
 
 ### MinGW, MSYS, Cygwin
 
-* [MinGW/MSYS 4.8.2 32-bit](http://www.mingw.org/) (core components and compilers - `C:\MinGW`)
+* [MinGW/MSYS 5.3.0 32-bit](http://www.mingw.org/) (core components and compilers - `C:\MinGW`)
     * MinGW root directory: `C:\MinGW`
     * MinGW bin directory: `C:\MinGW\bin`
     * MSYS root directory: `C:\MinGW\msys\1.0`
-* MinGW-w64 5.3.0 32-bit:
-    * MinGW root directory: `C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0`
-    * MinGW bin directory: `C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin`
+* MinGW-w64:
+    * MinGW 5.3.0: `C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0`
+    * MinGW 6.3.0: `C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1`
 * Cygwin (`C:\cygwin`)
 * Cygwin 64 (`C:\cygwin64`)
 * MSYS2 (`C:\msys64`)
@@ -264,6 +268,12 @@ Install-Product node '3'
 ### Qt
 
 * Qt (`C:\Qt`)
+    * Qt 5.8.0: `C:\Qt\5.8`
+        * MinGW 5.3.0 32 bit: `C:\Qt\5.8\mingw53_32`
+        * msvc2015 64-bit: `C:\Qt\5.8\msvc2015_64`
+        * msvc2015 32-bit: `C:\Qt\5.8\msvc2015`
+        * msvc2013 64-bit: `C:\Qt\5.8\msvc2013_64`
+        * msvc2013 32-bit: `C:\Qt\5.8\msvc2013`
     * Qt 5.7.1: `C:\Qt\5.7`
         * MinGW 5.3.0 32 bit: `C:\Qt\5.7\mingw53_32`
         * msvc2015 64-bit: `C:\Qt\5.7\msvc2015_64`
@@ -298,9 +308,9 @@ Install-Product node '3'
 ## Tools
 
 * [7-Zip](http://www.7-zip.org/) 16.04
-* [Microsoft Azure PowerShell](https://github.com/Azure/azure-powershell/releases) 1.2.1 (February 2016)
+* [Microsoft Azure PowerShell - January 2017](https://github.com/Azure/azure-powershell/releases)
 * [Microsoft Azure CLI](https://azure.microsoft.com/en-us/downloads/) 0.9.10
-* [CMake](https://cmake.org/download/) 3.7.1
+* [CMake](https://cmake.org/download/) 3.7.2
 * [NuGet](https://dist.nuget.org/index.html) 2.8.6 on `Visual Studio 2013` image
 * [NuGet](https://dist.nuget.org/index.html) 3.5.0 on `Visual Studio 2015` image
 * [Chocolatey](https://chocolatey.org/) v0.10.3
@@ -309,8 +319,8 @@ Install-Product node '3'
 * [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2j (32-bit) (`C:\OpenSSL-Win32\bin`)
 * [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2j (64-bit) (`C:\OpenSSL-Win64\bin`)
 * [NSIS](http://nsis.sourceforge.net/Download) 3.01 (`C:\Program Files (x86)\NSIS`)
-* Coverity Scan 8.5.0.1
-* [Yarn](https://yarnpkg.com/) 0.18.1
+* Coverity Scan 8.7.0
+* [Yarn](https://yarnpkg.com/) 0.20.3
 
 ## Testing
 
@@ -326,10 +336,10 @@ Install-Product node '3'
 
 * [Chrome Web Driver](https://chromedriver.storage.googleapis.com/index.html) 2.27
 * [Internet Explorer Web Driver](https://selenium-release.storage.googleapis.com/index.html) 3.0
-* [Firefox Web Driver (geckodriver)](https://github.com/mozilla/geckodriver/releases) 0.13.0
+* [Firefox Web Driver (geckodriver)](https://github.com/mozilla/geckodriver/releases) 0.14.0
 * Internet Explorer 11
-* Firefox 50.1.0
-* Chrome 55.0
+* Firefox 51.0.1
+* Chrome 56.0
 
 
 ## Services and databases
