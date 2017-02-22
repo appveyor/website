@@ -17,7 +17,7 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-feed (0.8.0)
+    jekyll-feed (0.9.1)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
@@ -52,10 +52,10 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.4.0)
-  jekyll-feed (~> 0.8.0)
+  jekyll-feed (~> 0.9.1)
   jekyll-seo-tag (~> 2.1.0)
   jekyll-sitemap (~> 1.0.0)
   octopress-paginate (~> 1.2.0)
 
 BUNDLED WITH
-   1.14.4
+   1.14.5
