@@ -13,6 +13,60 @@ Below is the list of software pre-installed on Build Worker.
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
+<table class="software-list">
+    <tr>
+        <th>Software / Image</th>
+        <th class="rotate"><div><span>Visual Studio 2013</span></div></th>
+        <th class="rotate"><div><span>Visual Studio 2015</span></div></th>
+        <th class="rotate"><div><span>Visual Studio 2017</span></div></th>
+    </tr>
+    <tr>
+        <th class="section" colspan="4"><h3>Operating system</h3></th>
+    </tr>
+    <tr>
+        <td>Windows Server 2012 R2</td>
+        <td class="yes"></td>
+        <td class="yes"></td>
+        <td class="no"></td>
+    </tr>
+    <tr>
+        <td>Windows Server 2016</td>
+        <td class="no"></td>
+        <td class="no"></td>
+        <td class="yes"></td>
+    </tr>
+    <!-- Version control systems -->
+    <tr>
+        <th class="section" colspan="4"><h3>Version control systems</h3></th>
+    </tr>
+    <tr>
+        <td><a href="https://git-scm.com/download/win">Git</a> 2.11.0 (x64) (with <code class="highlighter-rouge">git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td><a href="https://git-lfs.github.com/">Git Large File Storage</a> 1.5.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td><a href="https://www.mercurial-scm.org/downloads">Mercurial</a> 4.0.1 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td><a href="http://www.collab.net/downloads/subversion">Subversion</a> 1.8.11 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <!-- Node.js -->
+    <tr>
+        <th class="section" colspan="4"><h3>Node.js</h3></th>
+    </tr>
+    <tr><td>7.0.0 - 7.5.0 - use <code class="highlighter-rouge">Stable</code> alias for latest <code class="highlighter-rouge">7.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>6.0.0 - 6.9.5 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>4.0.0 - 4.7.3 (x86 and x64) - use <code class="highlighter-rouge">LTS</code> alias for latest <code class="highlighter-rouge">4.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>5.0.0 - 5.12.0 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>0.10.26 - 0.10.48 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>0.11.12 - 0.11.16 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>0.12.0 - 0.12.18 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>0.8.25 - 0.8.28 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>0.6.21 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+</table>
+
+
 ## Operating system
 
 * Windows Server 2012 R2 (x64)
