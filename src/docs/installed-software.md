@@ -405,11 +405,11 @@ title: Build Worker Installed Software
     </tr>
     <tr>
         <tr><td>Erlang OTP runtime 17.4 x64 installed into <code>C:\Program Files\erl6.3</code></td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
         <tr><td>Erlang OTP runtime 19.2 x64 installed into <code>C:\Program Files\erl8.2</code></td>
-        <td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+        <td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <!-- LLVM -->
     <tr>
@@ -417,7 +417,7 @@ title: Build Worker Installed Software
     </tr>
     <tr>
         <tr><td>LLVM 3.9.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</code></td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <!-- MinGW, MSYS, Cygwin -->
     <tr>
