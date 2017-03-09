@@ -30,10 +30,10 @@ title: Build Worker Installed Software
             <li><a href="#silverlight">Silverlight</a></li>
             <li><a href="#boost">Boost</a></li>
             <li><a href="#node-js">Node.js</a></li>
-            <li><a href="#go-golang">Go (Golang)</a></li>
-            <li><a href="#java-se-development-kit-jdk">Java SE Development Kit (JDK)</a></li>
+            <li><a href="#golang">Go (Golang)</a></li>
+            <li><a href="#java">Java SE Development Kit (JDK)</a></li>
             <li><a href="#mono">Mono</a></li>
-            <li><a href="#ruby-with-devkit">Ruby</a></li>
+            <li><a href="#ruby">Ruby</a></li>
             <li><a href="#python">Python</a></li>
             <li><a href="#miniconda">Miniconda</a></li>
             <li><a href="#perl">Perl</a></li>
@@ -63,7 +63,7 @@ title: Build Worker Installed Software
         <th class="rotate"><div><span>Visual Studio 2017</span></div></th>
     </tr>
     <tr>
-        <th class="section" colspan="4"><h3>Operating system</h3></th>
+        <th class="section" colspan="4"><h3 id="operating-system">Operating system</h3></th>
     </tr>
     <tr>
         <td>Windows Server 2012 R2</td>
@@ -79,7 +79,7 @@ title: Build Worker Installed Software
     </tr>
     <!-- Docker -->
     <tr>
-        <th class="section" colspan="4"><h3>Docker</h3></th>
+        <th class="section" colspan="4"><h3 id="docker">Docker</h3></th>
     </tr>
     <tr>
         <td>
@@ -96,7 +96,7 @@ title: Build Worker Installed Software
     </tr>
     <!-- Version control systems -->
     <tr>
-        <th class="section" colspan="4"><h3>Version control systems</h3></th>
+        <th class="section" colspan="4"><h3 id="version-control-systems">Version control systems</h3></th>
     </tr>
     <tr>
         <td>Git 2.11.0 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -112,12 +112,12 @@ title: Build Worker Installed Software
     </tr>
     <!-- Visual Studio 2008 -->
     <tr>
-        <th class="section" colspan="4"><h3>Visual Studio 2008</h3></th>
+        <th class="section" colspan="4"><h3 id="visual-studio-2008">Visual Studio 2008</h3></th>
     </tr>
     <tr><td>Visual C++ 2008 Express</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2010 -->
     <tr>
-        <th class="section" colspan="4"><h3>Visual Studio 2010</h3></th>
+        <th class="section" colspan="4"><h3 id="visual-studio-2010">Visual Studio 2010</h3></th>
     </tr>
     <tr><td>Visual C# 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Visual Basic 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -126,14 +126,14 @@ title: Build Worker Installed Software
     <tr><td>Visual Studio 2010 Service Pack 1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2012 -->
     <tr>
-        <th class="section" colspan="4"><h3>Visual Studio 2012</h3></th>
+        <th class="section" colspan="4"><h3 id="visual-studio-2012">Visual Studio 2012</h3></th>
     </tr>
     <tr><td>Visual Studio Express 2012 for Windows Desktop</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Visual Studio 2012 Update 5</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data tools for Visual Studio 2012</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2013 -->
     <tr>
-        <th class="section" colspan="4"><h3>Visual Studio 2013</h3></th>
+        <th class="section" colspan="4"><h3 id="visual-studio-2013">Visual Studio 2013</h3></th>
     </tr>
     <tr><td>Visual Studio Community 2013 with Update 5</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Visual Studio 2013 SDK</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -148,7 +148,7 @@ title: Build Worker Installed Software
     <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2015 -->
     <tr>
-        <th class="section" colspan="4"><h3>Visual Studio 2015</h3></th>
+        <th class="section" colspan="4"><h3 id="visual-studio-2015">Visual Studio 2015</h3></th>
     </tr>
     <tr><td>Visual Studio Community 2015 with Update 3</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Universal Windows App Dev Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -167,12 +167,12 @@ title: Build Worker Installed Software
     <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2017 -->
     <tr>
-        <th class="section" colspan="4"><h3>Visual Studio 2017</h3></th>
+        <th class="section" colspan="4"><h3 id="visual-studio-2017">Visual Studio 2017</h3></th>
     </tr>
     <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- SDKs -->
     <tr>
-        <th class="section" colspan="4"><h3>Windows SDKs</h3></th>
+        <th class="section" colspan="4"><h3 id="windows-sdks">Windows SDKs</h3></th>
     </tr>
     <tr><td>Microsoft Windows SDK for Windows 7 and .NET Framework 3.5 SP1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Windows SDK for Windows 7 and .NET Framework 3.5 SP1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -194,7 +194,7 @@ title: Build Worker Installed Software
     <tr><td>WiX Toolset 3.10.3.3007</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- TypeScript -->
     <tr>
-        <th class="section" colspan="4"><h3>TypeScript</h3></th>
+        <th class="section" colspan="4"><h3 id="typescript">TypeScript</h3></th>
     </tr>
     <tr><td>TypeScript 1.4 for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>TypeScript 1.5 for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -205,7 +205,7 @@ title: Build Worker Installed Software
     <tr><td>TypeScript 2.1.5 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Azure SDKs -->
     <tr>
-        <th class="section" colspan="4"><h3>Azure</h3></th>
+        <th class="section" colspan="4"><h3 id="azure">Azure</h3></th>
     </tr>
     <tr><td>Azure SDK 2.3</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Azure SDK 2.4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -220,13 +220,13 @@ title: Build Worker Installed Software
     <tr><td>Microsoft Azure CLI 0.9.10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Xamarin -->
     <tr>
-        <th class="section" colspan="4"><h3>Xamarin</h3></th>
+        <th class="section" colspan="4"><h3 id="xamarin">Xamarin</h3></th>
     </tr>
     <tr><td>Xamarin v4.2.2.11</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Xamarin v4.3.0.784</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- .NET Framework -->
     <tr>
-        <th class="section" colspan="4"><h3>.NET Framework</h3></th>
+        <th class="section" colspan="4"><h3 id="net-framework">.NET Framework</h3></th>
     </tr>
     <tr><td>.NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Framework 4.6.0, 4.6.1, 4.6.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -234,14 +234,14 @@ title: Build Worker Installed Software
     <tr><td>.NET Core 1.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
-        <th class="section" colspan="4"><h3>Silverlight</h3></th>
+        <th class="section" colspan="4"><h3 id="silverlight">Silverlight</h3></th>
     </tr>
     <tr><td>Silverlight 5 x64 Developer Runtime</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft SilverLight 5 SDK</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft SilverLight 4 SDK</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Boost -->
     <tr>
-        <th class="section" colspan="4"><h3>Boost</h3></th>
+        <th class="section" colspan="4"><h3 id="boost">Boost</h3></th>
     </tr>
     <tr><td>
     <ul>
@@ -255,7 +255,7 @@ title: Build Worker Installed Software
     </td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Node.js -->
     <tr>
-        <th class="section" colspan="4"><h3>Node.js</h3></th>
+        <th class="section" colspan="4"><h3 id="node-js">Node.js</h3></th>
     </tr>
     <tr>
         <td>
@@ -284,7 +284,7 @@ title: Build Worker Installed Software
     </tr>
     <!-- Go -->
     <tr>
-        <th class="section" colspan="4"><h3>Go (Golang)</h3></th>
+        <th class="section" colspan="4"><h3 id="golang">Go (Golang)</h3></th>
     </tr>
     <tr>
         <td>
@@ -307,7 +307,7 @@ title: Build Worker Installed Software
     </tr>
     <!-- Java -->
     <tr>
-        <th class="section" colspan="4"><h3>Java SE Development Kit (JDK)</h3></th>
+        <th class="section" colspan="4"><h3 id="java">Java SE Development Kit (JDK)</h3></th>
     </tr>
     <tr>
         <td>
@@ -325,12 +325,12 @@ title: Build Worker Installed Software
     <tr><td>Maven 3.3.9</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Mono -->
     <tr>
-        <th class="section" colspan="4"><h3>Mono</h3></th>
+        <th class="section" colspan="4"><h3 id="mono">Mono</h3></th>
     </tr>
     <tr><td>Mono 4.0.2 SR2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Ruby -->
     <tr>
-        <th class="section" colspan="4"><h3>Ruby (with DevKit)</h3></th>
+        <th class="section" colspan="4"><h3 id="ruby">Ruby (with DevKit)</h3></th>
     </tr>
     <tr>
         <td>
@@ -350,7 +350,7 @@ title: Build Worker Installed Software
     </tr>
     <!-- Python -->
     <tr>
-        <th class="section" colspan="4"><h3>Python</h3></th>
+        <th class="section" colspan="4"><h3 id="python">Python</h3></th>
     </tr>
     <tr>
         <td>
@@ -374,7 +374,7 @@ title: Build Worker Installed Software
     <tr><td>Visual C++ Compiler for Python 2.7</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Miniconda -->
     <tr>
-        <th class="section" colspan="4"><h3>Miniconda</h3></th>
+        <th class="section" colspan="4"><h3 id="miniconda">Miniconda</h3></th>
     </tr>
     <tr>
         <td>
@@ -393,7 +393,7 @@ title: Build Worker Installed Software
     </tr>
     <!-- Perl -->
     <tr>
-        <th class="section" colspan="4"><h3>Perl</h3></th>
+        <th class="section" colspan="4"><h3 id="perl">Perl</h3></th>
     </tr>
     <tr>
         <td>Perl 5.20.1.2000 x86 (<code>C:\Perl</code> in <code>PATH</code>)</td>
@@ -401,7 +401,7 @@ title: Build Worker Installed Software
     </tr>
     <!-- Erlang -->
     <tr>
-        <th class="section" colspan="4"><h3>Erlang</h3></th>
+        <th class="section" colspan="4"><h3 id="erlang">Erlang</h3></th>
     </tr>
     <tr>
         <td>Erlang OTP runtime 17.4 x64 installed into <code>C:\Program Files\erl6.3</code></td>
@@ -413,7 +413,7 @@ title: Build Worker Installed Software
     </tr>
     <!-- LLVM -->
     <tr>
-        <th class="section" colspan="4"><h3>LLVM</h3></th>
+        <th class="section" colspan="4"><h3 id="llvm">LLVM</h3></th>
     </tr>
     <tr>
         <td>LLVM 3.9.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</code></td>
@@ -421,7 +421,7 @@ title: Build Worker Installed Software
     </tr>
     <!-- MinGW, MSYS, Cygwin -->
     <tr>
-        <th class="section" colspan="4"><h3>MinGW, MSYS, Cygwin</h3></th>
+        <th class="section" colspan="4"><h3 id="mingw-msys-cygwin">MinGW, MSYS, Cygwin</h3></th>
     </tr>
     <tr>
         <td>
@@ -466,7 +466,7 @@ title: Build Worker Installed Software
     </tr>
     <!-- Qt -->
     <tr>
-        <th class="section" colspan="4"><h3>Qt</h3></th>
+        <th class="section" colspan="4"><h3 id="qt">Qt</h3></th>
     </tr>
     <tr>
         <td>
@@ -537,7 +537,7 @@ title: Build Worker Installed Software
     </tr>
     <!-- Tools -->
     <tr>
-        <th class="section" colspan="4"><h3>Tools</h3></th>
+        <th class="section" colspan="4"><h3 id="tools">Tools</h3></th>
     </tr>
     <tr><td>7-Zip 16.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -554,7 +554,7 @@ title: Build Worker Installed Software
     <tr><td>Yarn 0.20.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Test runners -->
     <tr>
-        <th class="section" colspan="4"><h3>Test runners</h3></th>
+        <th class="section" colspan="4"><h3 id="test-runners">Test runners</h3></th>
     </tr>
     <tr><td>NUnit 2.6.4 in <code>C:\Tools\NUnit\bin</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NUnit 3.4.1 in <code>C:\Tools\NUnit3\bin</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -563,21 +563,21 @@ title: Build Worker Installed Software
     <tr><td>Machine.Specifications (MSpec)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
     <tr>
-        <th class="section" colspan="4"><h3>Web browsers</h3></th>
+        <th class="section" colspan="4"><h3 id="web-browsers">Web browsers</h3></th>
     </tr>
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox 51.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Chrome 56.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
-        <th class="section" colspan="4"><h3>Selenium testing</h3></th>
+        <th class="section" colspan="4"><h3 id="selenium-testing">Selenium testing</h3></th>
     </tr>
     <tr><td>Chrome Web Driver 2.27</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox Web Driver (geckodriver) 0.14.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
-        <th class="section" colspan="4"><h3>Databases</h3></th>
+        <th class="section" colspan="4"><h3 id="databases">Databases</h3></th>
     </tr>
     <tr><td>SQL Server 2008 R2 SP2 Express Edition with Advanced Services (x64)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server 2012 SP1 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -590,7 +590,7 @@ title: Build Worker Installed Software
     <tr><td>MongoDB 3.0.4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Services -->
     <tr>
-        <th class="section" colspan="4"><h3>Services</h3></th>
+        <th class="section" colspan="4"><h3 id="services">Services</h3></th>
     </tr>
     <tr><td>Internet Information Services (IIS) 8.5</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Internet Information Services (IIS) 10</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
