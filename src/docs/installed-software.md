@@ -52,12 +52,12 @@ title: Build Worker Installed Software
             <li><a href="#databases">Databases</a></li>
             <li><a href="#services">Services</a></li>
         </ul>
-    </div>        
+    </div>
 </div>
 
 <table class="software-list">
     <tr>
-        <th>Software / Image</th>
+        <th>Software installed / Build worker image</th>
         <th class="rotate"><div><span>Visual Studio 2013</span></div></th>
         <th class="rotate"><div><span>Visual Studio 2015</span></div></th>
         <th class="rotate"><div><span>Visual Studio 2017</span></div></th>
