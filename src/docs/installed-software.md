@@ -6,7 +6,54 @@ title: Build Worker Installed Software
 <!-- markdownlint-disable MD022 MD032 -->
 # Build Worker installed software
 
-Below is the list of software pre-installed on Build Worker:
+<div class="row">
+    <div class="columns medium-4">
+        <ul>
+            <li><a href="#operating-system">Operating system</a></li>
+            <li><a href="#docker">Docker</a></li>
+            <li><a href="#version-control-systems">Version control systems</a></li>
+            <li><a href="#visual-studio-2008">Visual Studio 2008</a></li>
+            <li><a href="#visual-studio-2010">Visual Studio 2010</a></li>
+            <li><a href="#visual-studio-2012">Visual Studio 2012</a></li>
+            <li><a href="#visual-studio-2013">Visual Studio 2013</a></li>
+            <li><a href="#visual-studio-2015">Visual Studio 2015</a></li>
+            <li><a href="#visual-studio-2017">Visual Studio 2017</a></li>
+            <li><a href="#windows-sdks">Windows SDKs</a></li>
+            <li><a href="#typescript">TypeScript</a></li>
+            <li><a href="#azure">Azure</a></li>
+        </ul>
+    </div>
+    <div class="columns medium-4">
+        <ul>
+            <li><a href="#xamarin">Xamarin</a></li>
+            <li><a href="#net-framework">.NET Framework</a></li>
+            <li><a href="#silverlight">Silverlight</a></li>
+            <li><a href="#boost">Boost</a></li>
+            <li><a href="#node-js">Node.js</a></li>
+            <li><a href="#go-golang">Go (Golang)</a></li>
+            <li><a href="#java-se-development-kit-jdk">Java SE Development Kit (JDK)</a></li>
+            <li><a href="#mono">Mono</a></li>
+            <li><a href="#ruby-with-devkit">Ruby</a></li>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#miniconda">Miniconda</a></li>
+            <li><a href="#perl">Perl</a></li>
+        </ul>
+    </div>
+    <div class="columns medium-4">
+        <ul>
+            <li><a href="#erlang">Erlang</a></li>
+            <li><a href="#llvm">LLVM</a></li>
+            <li><a href="#mingw-msys-cygwin">MinGW, MSYS, Cygwin</a></li>
+            <li><a href="#qt">Qt</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#test-runners">Test runners</a></li>
+            <li><a href="#web-browsers">Web browsers</a></li>
+            <li><a href="#selenium-testing">Selenium testing</a></li>
+            <li><a href="#databases">Databases</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+    </div>        
+</div>
 
 <table class="software-list">
     <tr>
@@ -46,7 +93,7 @@ Below is the list of software pre-installed on Build Worker:
             </li>
         </ul>
         </td><td class="no"></td><td class="no"></td><td class="yes"></td>
-    </tr>  
+    </tr>
     <!-- Version control systems -->
     <tr>
         <th class="section" colspan="4"><h3>Version control systems</h3></th>
@@ -136,7 +183,7 @@ Below is the list of software pre-installed on Build Worker:
     <tr><td>Windows Driver Kit 10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Windows 10 SDK 10.0.10586</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Windows 10 SDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Windows 10 SDK 10.0.26624</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>    
+    <tr><td>Windows 10 SDK 10.0.26624</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Expression Blend Software Development Kit (SDK) for .NET 4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Windows Phone SDK 8.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -170,7 +217,7 @@ Below is the list of software pre-installed on Build Worker:
     <tr><td>Microsoft Azure Storage Emulator 4.6</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Azure Storage Emulator 5.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure PowerShell</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft Azure CLI 0.9.10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>    
+    <tr><td>Microsoft Azure CLI 0.9.10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Xamarin -->
     <tr>
         <th class="section" colspan="4"><h3>Xamarin</h3></th>
@@ -363,7 +410,7 @@ Below is the list of software pre-installed on Build Worker:
     <tr>
         <tr><td>Erlang OTP runtime 19.2 x64 installed into <code>C:\Program Files\erl8.2</code></td>
         <td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    </tr>    
+    </tr>
     <!-- LLVM -->
     <tr>
         <th class="section" colspan="4"><h3>LLVM</h3></th>
