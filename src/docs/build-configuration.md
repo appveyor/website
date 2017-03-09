@@ -414,7 +414,7 @@ matrix:
     - <condition>: <value>
 ```
 
-`<condition>` can be `os`, `configuration`, `platform`, `test_category` or the name of environment variable.
+`<condition>` can be `os`, `image`, `configuration`, `platform`, `test_category` or the name of environment variable.
 
 For example, to allow job failing on Node.js 0.11 (TBD - add link to Node.js instructions):
 
