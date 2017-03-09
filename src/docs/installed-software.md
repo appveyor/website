@@ -54,7 +54,7 @@ Below is the list of software pre-installed on Build Worker.
     <!-- SDKs -->
     <tr>
         <th class="section" colspan="4"><h3>Windows SDKs</h3></th>
-    </tr>    
+    </tr>
     <tr><td>Microsoft Windows SDK for Windows 7 and .NET Framework 3.5 SP1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Windows SDK for Windows 7 and .NET Framework 3.5 SP1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Windows SDK for Windows 7 and .NET Framework 4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -129,6 +129,7 @@ Below is the list of software pre-installed on Build Worker.
     <tr><td>SQL Server Data tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Office Developer Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2015 -->
     <tr>
         <th class="section" colspan="4"><h3>Visual Studio 2015</h3></th>
@@ -149,6 +150,7 @@ Below is the list of software pre-installed on Build Worker.
     <tr><td>WiX Toolset 3.10.3.3007</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data tools for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Office Developer Tools for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Xamarin -->
     <tr>
         <th class="section" colspan="4"><h3>Xamarin</h3></th>
@@ -180,8 +182,8 @@ Below is the list of software pre-installed on Build Worker.
         <li>Boost 1.59.0 (<code>C:\Libraries\boost_1_59_0</code>)</li>
         <li>Boost 1.58.0 (<code>C:\Libraries\boost_1_58_0</code>)</li>
         <li>Boost 1.56.0 (<code>C:\Libraries\boost</code>)</li>
-    </ul>    
-    </td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>    
+    </ul>
+    </td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Node.js -->
     <tr>
         <th class="section" colspan="4"><h3>Node.js</h3></th>
@@ -241,12 +243,12 @@ Below is the list of software pre-installed on Build Worker.
     <tr>
         <td>
             <ul>
-                <li>JDK 1.6 Update 45 (x64) (<code class="highlighter-rouge">C:\Program Files\Java\jdk1.6.0\bin</code> - default in <code class="highlighter-rouge">PATH</code>)</li>
-                <li>JDK 1.6 Update 45 (x86) (<code class="highlighter-rouge">C:\Program Files (x86)\Java\jdk1.6.0\bin</code>)</li>
-                <li>JDK 1.7 Update 79 (x64) (<code class="highlighter-rouge">C:\Program Files\Java\jdk1.7.0\bin</code> - default in <code class="highlighter-rouge">PATH</code>)</li>
-                <li>JDK 1.7 Update 79 (x86) (<code class="highlighter-rouge">C:\Program Files (x86)\Java\jdk1.7.0\bin</code>)</li>
-                <li>JDK 1.8 Update 121 (x64) (<code class="highlighter-rouge">C:\Program Files\Java\jdk1.8.0</code>)</li>
-                <li>JDK 1.8 Update 121 (x86) (<code class="highlighter-rouge">C:\Program Files (x86)\Java\jdk1.8.0</code>)</li>
+                <li>JDK 1.6 Update 45 (x64) (<code>C:\Program Files\Java\jdk1.6.0\bin</code> - default in <code>PATH</code>)</li>
+                <li>JDK 1.6 Update 45 (x86) (<code>C:\Program Files (x86)\Java\jdk1.6.0\bin</code>)</li>
+                <li>JDK 1.7 Update 79 (x64) (<code>C:\Program Files\Java\jdk1.7.0\bin</code> - default in <code>PATH</code>)</li>
+                <li>JDK 1.7 Update 79 (x86) (<code>C:\Program Files (x86)\Java\jdk1.7.0\bin</code>)</li>
+                <li>JDK 1.8 Update 121 (x64) (<code>C:\Program Files\Java\jdk1.8.0</code>)</li>
+                <li>JDK 1.8 Update 121 (x86) (<code>C:\Program Files (x86)\Java\jdk1.8.0</code>)</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -256,7 +258,7 @@ Below is the list of software pre-installed on Build Worker.
     <tr>
         <th class="section" colspan="4"><h3>Mono</h3></th>
     </tr>
-    <tr><td>Mono 4.0.2 SR2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>    
+    <tr><td>Mono 4.0.2 SR2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Ruby -->
     <tr>
         <th class="section" colspan="4"><h3>Ruby (with DevKit)</h3></th>
@@ -264,15 +266,15 @@ Below is the list of software pre-installed on Build Worker.
     <tr>
         <td>
             <ul>
-                <li>Ruby 1.9.3-p551 (<code class="highlighter-rouge">C:\Ruby193\bin</code> - default in <code class="highlighter-rouge">PATH</code>)</li>
-                <li>Ruby 2.0.0-p648 x86 (<code class="highlighter-rouge">C:\Ruby200\bin</code>)</li>
-                <li>Ruby 2.0.0-p648 x64 (<code class="highlighter-rouge">C:\Ruby200-x64\bin</code>)</li>
-                <li>Ruby 2.1.9 x86 (<code class="highlighter-rouge">C:\Ruby21\bin</code>)</li>
-                <li>Ruby 2.1.9 x64 (<code class="highlighter-rouge">C:\Ruby21-x64\bin</code>)</li>
-                <li>Ruby 2.2.6 x86 (<code class="highlighter-rouge">C:\Ruby22\bin</code>)</li>
-                <li>Ruby 2.2.6 x64 (<code class="highlighter-rouge">C:\Ruby22-x64\bin</code>)</li>
-                <li>Ruby 2.3.3 x86 (<code class="highlighter-rouge">C:\Ruby23\bin</code>)</li>
-                <li>Ruby 2.3.3 x64 (<code class="highlighter-rouge">C:\Ruby23-x64\bin</code>)</li>
+                <li>Ruby 1.9.3-p551 (<code>C:\Ruby193\bin</code> - default in <code>PATH</code>)</li>
+                <li>Ruby 2.0.0-p648 x86 (<code>C:\Ruby200\bin</code>)</li>
+                <li>Ruby 2.0.0-p648 x64 (<code>C:\Ruby200-x64\bin</code>)</li>
+                <li>Ruby 2.1.9 x86 (<code>C:\Ruby21\bin</code>)</li>
+                <li>Ruby 2.1.9 x64 (<code>C:\Ruby21-x64\bin</code>)</li>
+                <li>Ruby 2.2.6 x86 (<code>C:\Ruby22\bin</code>)</li>
+                <li>Ruby 2.2.6 x64 (<code>C:\Ruby22-x64\bin</code>)</li>
+                <li>Ruby 2.3.3 x86 (<code>C:\Ruby23\bin</code>)</li>
+                <li>Ruby 2.3.3 x64 (<code>C:\Ruby23-x64\bin</code>)</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -284,23 +286,23 @@ Below is the list of software pre-installed on Build Worker.
     <tr>
         <td>
             <ul>
-                <li>Python 2.6.6 x86 (<code class="highlighter-rouge">C:\Python26</code>)</li>
-                <li>Python 2.6.6 x64 (<code class="highlighter-rouge">C:\Python26-x64</code>)</li>
-                <li>Python 2.7.13 x86 (<code class="highlighter-rouge">C:\Python27</code> - default in <code class="highlighter-rouge">PATH</code>)</li>
-                <li>Python 2.7.13 x64 (<code class="highlighter-rouge">C:\Python27-x64</code>)</li>
-                <li>Python 3.3.5 x86 (<code class="highlighter-rouge">C:\Python33</code>)</li>
-                <li>Python 3.3.5 x64 (<code class="highlighter-rouge">C:\Python33-x64</code>)</li>
-                <li>Python 3.4.4 x86 (<code class="highlighter-rouge">C:\Python34</code>)</li>
-                <li>Python 3.4.4 x64 (<code class="highlighter-rouge">C:\Python34-x64</code>)</li>
-                <li>Python 3.5.3 x86 (<code class="highlighter-rouge">C:\Python35</code>)</li>
-                <li>Python 3.5.3 x64 (<code class="highlighter-rouge">C:\Python35-x64</code>)</li>
-                <li>Python 3.6.0 x86 (<code class="highlighter-rouge">C:\Python36</code>)</li>
-                <li>Python 3.6.0 x64 (<code class="highlighter-rouge">C:\Python36-x64</code>)</li>
+                <li>Python 2.6.6 x86 (<code>C:\Python26</code>)</li>
+                <li>Python 2.6.6 x64 (<code>C:\Python26-x64</code>)</li>
+                <li>Python 2.7.13 x86 (<code>C:\Python27</code> - default in <code>PATH</code>)</li>
+                <li>Python 2.7.13 x64 (<code>C:\Python27-x64</code>)</li>
+                <li>Python 3.3.5 x86 (<code>C:\Python33</code>)</li>
+                <li>Python 3.3.5 x64 (<code>C:\Python33-x64</code>)</li>
+                <li>Python 3.4.4 x86 (<code>C:\Python34</code>)</li>
+                <li>Python 3.4.4 x64 (<code>C:\Python34-x64</code>)</li>
+                <li>Python 3.5.3 x86 (<code>C:\Python35</code>)</li>
+                <li>Python 3.5.3 x64 (<code>C:\Python35-x64</code>)</li>
+                <li>Python 3.6.0 x86 (<code>C:\Python36</code>)</li>
+                <li>Python 3.6.0 x64 (<code>C:\Python36-x64</code>)</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
-        <tr><td>Visual C++ Compiler for Python 2.7</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     </tr>
+    <tr><td>Visual C++ Compiler for Python 2.7</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Miniconda -->
     <tr>
         <th class="section" colspan="4"><h3>Miniconda</h3></th>
@@ -308,14 +310,14 @@ Below is the list of software pre-installed on Build Worker.
     <tr>
         <td>
             <ul>
-                <li>Miniconda2 4.3.11 (Python 2.7.13) - <code class="highlighter-rouge">C:\Miniconda</code></li>
-                <li>Miniconda2 4.3.11 x64 (Python 2.7.13): <code class="highlighter-rouge">C:\Miniconda-x64</code></li>
-                <li>Miniconda3 3.16.0 (Python 3.4.3): <code class="highlighter-rouge">C:\Miniconda3</code></li>
-                <li>Miniconda3 3.16.0 x64 (Python 3.4.3): <code class="highlighter-rouge">C:\Miniconda3-x64</code></li>
-                <li>Miniconda3 4.2.12 (Python 3.5.2): <code class="highlighter-rouge">C:\Miniconda35</code></li>
-                <li>Miniconda3 4.2.12 x64 (Python 3.5.2): <code class="highlighter-rouge">C:\Miniconda35-x64</code></li>
-                <li>Miniconda3 4.3.11 (Python 3.6.0): <code class="highlighter-rouge">C:\Miniconda36</code></li>
-                <li>Miniconda3 4.3.11 x64 (Python 3.6.0): <code class="highlighter-rouge">C:\Miniconda36-x64</code></li>
+                <li>Miniconda2 4.3.11 (Python 2.7.13) - <code>C:\Miniconda</code></li>
+                <li>Miniconda2 4.3.11 x64 (Python 2.7.13): <code>C:\Miniconda-x64</code></li>
+                <li>Miniconda3 3.16.0 (Python 3.4.3): <code>C:\Miniconda3</code></li>
+                <li>Miniconda3 3.16.0 x64 (Python 3.4.3): <code>C:\Miniconda3-x64</code></li>
+                <li>Miniconda3 4.2.12 (Python 3.5.2): <code>C:\Miniconda35</code></li>
+                <li>Miniconda3 4.2.12 x64 (Python 3.5.2): <code>C:\Miniconda35-x64</code></li>
+                <li>Miniconda3 4.3.11 (Python 3.6.0): <code>C:\Miniconda36</code></li>
+                <li>Miniconda3 4.3.11 x64 (Python 3.6.0): <code>C:\Miniconda36-x64</code></li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -325,8 +327,8 @@ Below is the list of software pre-installed on Build Worker.
         <th class="section" colspan="4"><h3>Perl</h3></th>
     </tr>
     <tr>
-        <tr><td>Perl 5.20.1.2000 x86 (<code class="highlighter-rouge">C:\Perl</code> in <code class="highlighter-rouge">PATH</code>)</td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+        <td>Perl 5.20.1.2000 x86 (<code>C:\Perl</code> in <code>PATH</code>)</td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <!-- Erlang -->
     <tr>
@@ -341,7 +343,7 @@ Below is the list of software pre-installed on Build Worker.
         <th class="section" colspan="4"><h3>LLVM</h3></th>
     </tr>
     <tr>
-        <tr><td>LLVM 3.9.0 x64 (<code class="highlighter-rouge">C:\Program Files\LLVM\bin</code> in <code class="highlighter-rouge">PATH</code>)</code></td>
+        <tr><td>LLVM 3.9.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</code></td>
         <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     </tr>
     <!-- MinGW, MSYS, Cygwin -->
@@ -349,145 +351,178 @@ Below is the list of software pre-installed on Build Worker.
         <th class="section" colspan="4"><h3>MinGW, MSYS, Cygwin</h3></th>
     </tr>
     <tr>
-        <tr><td>
+        <td>
             <ul>
                 <li>
-                    MinGW 32-bit 5.3.0 (core components and compilers - <code class="highlighter-rouge">C:\MinGW)</code>
+                    MinGW 32-bit 5.3.0 (core components and compilers - <code>C:\MinGW)</code>
                     <ul>
-                        <li>MinGW root directory: <code class="highlighter-rouge">C:\MinGW</code></li>
-                        <li>MinGW bin directory: <code class="highlighter-rouge">C:\MinGW\bin</code></li>
-                        <li>MSYS root directory: <code class="highlighter-rouge">C:\MinGW\msys\1.0</code></li>
+                        <li>MinGW root directory: <code>C:\MinGW</code></li>
+                        <li>MinGW bin directory: <code>C:\MinGW\bin</code></li>
+                        <li>MSYS root directory: <code>C:\MinGW\msys\1.0</code></li>
                     </ul>
                 </li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
-        <tr><td>
+        <td>
             <ul>
                 <li>
                     MinGW-w64
                     <ul>
-                        <li>5.3.0: <code class="highlighter-rouge">C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0</code></li>
-                        <li>6.3.0: <code class="highlighter-rouge">C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1</code></li>
+                        <li>5.3.0: <code>C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0</code></li>
+                        <li>6.3.0: <code>C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1</code></li>
                     </ul>
                 </li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
-        <tr><td>Cygwin (<code class="highlighter-rouge">C:\cygwin</code>)</td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+        <td>Cygwin (<code>C:\cygwin</code>)</td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
-        <tr><td>Cygwin 64 (<code class="highlighter-rouge">C:\cygwin64</code>)</td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    </tr> 
+        <td>Cygwin 64 (<code>C:\cygwin64</code>)</td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+    </tr>
     <tr>
-        <tr><td>MSYS2 (<code class="highlighter-rouge">C:\msys64</code>)</td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    </tr>                     
+        <td>MSYS2 (<code>C:\msys64</code>)</td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <!-- Qt -->
+    <tr>
+        <th class="section" colspan="4"><h3>Qt</h3></th>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.8.0: <code>C:\Qt\5.8</code>
+                <ul>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.8\mingw53_32</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.8\msvc2015_64</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.8\msvc2015</code></li>
+                <li>msvc2013 64-bit: <code>C:\Qt\5.8\msvc2013_64</code></li>
+                <li>msvc2013 32-bit: <code>C:\Qt\5.8\msvc2013</code></li>
+                </ul>
+            </li>
+            <li>Qt 5.7.1: <code>C:\Qt\5.7</code>
+                <ul>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.7\mingw53_32</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.7\msvc2015_64</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.7\msvc2015</code></li>
+                <li>msvc2013 64-bit: <code>C:\Qt\5.7\msvc2013_64</code></li>
+                <li>msvc2013 32-bit: <code>C:\Qt\5.7\msvc2013</code></li>
+                </ul>
+            </li>
+            <li>Qt 5.6.2: <code>C:\Qt\5.6</code>
+                <ul>
+                <li>MinGW 4.9.2 32 bit: <code>C:\Qt\5.6\mingw49_32</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.6\msvc2015_64</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.6\msvc2015</code></li>
+                <li>msvc2013 64-bit: <code>C:\Qt\5.6\msvc2013_64</code></li>
+                <li>msvc2013 32-bit: <code>C:\Qt\5.6\msvc2013</code></li>
+                </ul>
+            </li>
+            <li>Qt 5.5: <code>C:\Qt\5.5</code>
+                <ul>
+                <li>MinGW 4.9.2 32 bit: <code>C:\Qt\5.5\mingw492_32</code></li>
+                <li>msvc2013 64-bit: <code>C:\Qt\5.5\msvc2013_64</code></li>
+                <li>msvc2013 32-bit: <code>C:\Qt\5.5\msvc2013</code></li>
+                </ul>
+            </li>
+            <li>Qt 5.4: <code>C:\Qt\5.4</code>
+                <ul>
+                <li>MinGW 4.9.1 (32 bit) OpenGL: <code>C:\Qt\5.4\mingw491_32</code></li>
+                <li>msvc2013 64-bit OpenGL: <code>C:\Qt\5.4\msvc2013_64_opengl</code></li>
+                <li>msvc2013 32-bit OpenGL: <code>C:\Qt\5.4\msvc2013_opengl</code></li>
+                </ul>
+            </li>
+            <li>Qt 5.3: <code>C:\Qt\5.3</code>
+                <ul>
+                <li>MinGW 4.8.2 (32 bit): <code>C:\Qt\5.3\mingw482_32</code></li>
+                <li>msvc2013 64-bit OpenGL: <code>C:\Qt\5.3\msvc2013_64_opengl</code></li>
+                <li>msvc2013 32-bit OpenGL: <code>C:\Qt\5.3\msvc2013_opengl</code></li>
+                </ul>
+            </li>
+            <li>Tools
+                <ul>
+                <li>MinGW 5.3.0: <code>C:\Qt\Tools\mingw530_32</code></li>
+                <li>MinGW 4.8.2: <code>C:\Qt\Tools\mingw482_32</code></li>
+                <li>MinGW 4.9.1: <code>C:\Qt\Tools\mingw491_32</code></li>
+                <li>MinGW 4.9.2: <code>C:\Qt\Tools\mingw492_32</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>Qt Installer Framework 2.0.1</td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <!-- Tools -->
+    <tr>
+        <th class="section" colspan="4"><h3>Tools</h3></th>
+    </tr>
+    <tr><td>7-Zip 16.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Azure PowerShell - January 2017</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Azure CLI 0.9.10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>CMake 3.7.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>NuGet 3.5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chocolatey v0.10.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>GitVersion 3.6.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>OpenSSL 1.0.2j (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>OpenSSL 1.0.2j (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>NSIS 3.01 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Coverity Scan 8.7.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Yarn 0.20.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Test runners -->
+    <tr>
+        <th class="section" colspan="4"><h3>Test runners</h3></th>
+    </tr>
+    <tr><td>NUnit 2.6.4 in <code>C:\Tools\NUnit\bin</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>NUnit 3.4.1 in <code>C:\Tools\NUnit3\bin</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>xUnit 1.9.2 in <code>C:\Tools\xUnit</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>xUnit 2.0.0 RTM in <code>C:\Tools\xUnit20</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Machine.Specifications (MSpec)</a></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Web browsers -->
+    <tr>
+        <th class="section" colspan="4"><h3>Web browsers</h3></th>
+    </tr>
+    <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 51.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 56.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Selenium testing -->
+    <tr>
+        <th class="section" colspan="4"><h3>Selenium testing</h3></th>
+    </tr>
+    <tr><td>Chrome Web Driver 2.27</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Internet Explorer Web Driver 3.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox Web Driver (geckodriver) 0.14.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Databases -->
+    <tr>
+        <th class="section" colspan="4"><h3>Databases</h3></th>
+    </tr>
+    <tr><td>SQL Server 2008 R2 SP2 Express Edition with Advanced Services (x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server 2012 SP1 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server 2014 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server 2016 Developer</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 9.3 x64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 9.4 x64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 9.5 x64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MongoDB 3.0.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Services -->
+    <tr>
+        <th class="section" colspan="4"><h3>Services</h3></th>
+    </tr>    
+    <tr><td>Internet Information Services (IIS) 8.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MSMQ</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
 </table>
-
-### Qt
-
-* Qt (`C:\Qt`)
-    * Qt 5.8.0: `C:\Qt\5.8`
-        * MinGW 5.3.0 32 bit: `C:\Qt\5.8\mingw53_32`
-        * msvc2015 64-bit: `C:\Qt\5.8\msvc2015_64`
-        * msvc2015 32-bit: `C:\Qt\5.8\msvc2015`
-        * msvc2013 64-bit: `C:\Qt\5.8\msvc2013_64`
-        * msvc2013 32-bit: `C:\Qt\5.8\msvc2013`
-    * Qt 5.7.1: `C:\Qt\5.7`
-        * MinGW 5.3.0 32 bit: `C:\Qt\5.7\mingw53_32`
-        * msvc2015 64-bit: `C:\Qt\5.7\msvc2015_64`
-        * msvc2015 32-bit: `C:\Qt\5.7\msvc2015`
-        * msvc2013 64-bit: `C:\Qt\5.7\msvc2013_64`
-        * msvc2013 32-bit: `C:\Qt\5.7\msvc2013`
-    * Qt 5.6.2: `C:\Qt\5.6`
-        * MinGW 4.9.2 32 bit: `C:\Qt\5.6\mingw49_32`
-        * msvc2015 64-bit: `C:\Qt\5.6\msvc2015_64`
-        * msvc2015 32-bit: `C:\Qt\5.6\msvc2015`
-        * msvc2013 64-bit: `C:\Qt\5.6\msvc2013_64`
-        * msvc2013 32-bit: `C:\Qt\5.6\msvc2013`
-    * Qt 5.5: `C:\Qt\5.5`
-        * MinGW 4.9.2 32 bit: `C:\Qt\5.5\mingw492_32`
-        * msvc2013 64-bit: `C:\Qt\5.5\msvc2013_64`
-        * msvc2013 32-bit: `C:\Qt\5.5\msvc2013`
-    * Qt 5.4: `C:\Qt\5.4`
-        * MinGW 4.9.1 (32 bit) OpenGL: `C:\Qt\5.4\mingw491_32`
-        * msvc2013 64-bit OpenGL: `C:\Qt\5.4\msvc2013_64_opengl`
-        * msvc2013 32-bit OpenGL: `C:\Qt\5.4\msvc2013_opengl`
-    * Qt 5.3: `C:\Qt\5.3`
-        * MinGW 4.8.2 (32 bit): `C:\Qt\5.3\mingw482_32`
-        * msvc2013 64-bit OpenGL: `C:\Qt\5.3\msvc2013_64_opengl`
-        * msvc2013 32-bit OpenGL: `C:\Qt\5.3\msvc2013_opengl`
-    * Tools
-        * MinGW 5.3.0: `C:\Qt\Tools\mingw530_32`
-        * MinGW 4.8.2: `C:\Qt\Tools\mingw482_32`
-        * MinGW 4.9.1: `C:\Qt\Tools\mingw491_32`
-        * MinGW 4.9.2: `C:\Qt\Tools\mingw492_32`
-* [Qt Installer Framework 2.0.1](https://download.qt.io/official_releases/qt-installer-framework/2.0.1/)
-
-## Tools
-
-* [7-Zip](http://www.7-zip.org/) 16.04
-* [Microsoft Azure PowerShell - January 2017](https://github.com/Azure/azure-powershell/releases)
-* [Microsoft Azure CLI](https://azure.microsoft.com/en-us/downloads/) 0.9.10
-* [CMake](https://cmake.org/download/) 3.7.2
-* [NuGet](https://dist.nuget.org/index.html) 2.8.6 on `Visual Studio 2013` image
-* [NuGet](https://dist.nuget.org/index.html) 3.5.0 on `Visual Studio 2015` image
-* [Chocolatey](https://chocolatey.org/) v0.10.3
-* [GitVersion](https://www.nuget.org/packages/GitVersion.CommandLine) 3.6.2
-* FxCop 10.0 (`C:\Program Files (x86)\Microsoft Fxcop 10.0`)
-* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2j (32-bit) (`C:\OpenSSL-Win32\bin`)
-* [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) 1.0.2j (64-bit) (`C:\OpenSSL-Win64\bin`)
-* [NSIS](http://nsis.sourceforge.net/Download) 3.01 (`C:\Program Files (x86)\NSIS`)
-* Coverity Scan 8.7.0
-* [Yarn](https://yarnpkg.com/) 0.20.3
-
-## Testing
-
-### Runners
-
-* [NUnit](http://nunit.org/index.php?p=download) 2.6.4 in `C:\Tools\NUnit\bin`
-* [NUnit3](https://github.com/nunit/nunit) 3.4.1 in `C:\Tools\NUnit3\bin`
-* [xUnit](https://github.com/xunit/xunit/releases) 1.9.2 in `C:\Tools\xUnit`
-* [xUnit](https://www.nuget.org/packages/xunit.runner.console/2.0.0) 2.0.0 RTM in `C:\Tools\xUnit20`
-* [Machine.Specifications (MSpec)](https://www.nuget.org/packages/Machine.Specifications)
-
-### Selenium
-
-* [Chrome Web Driver](https://chromedriver.storage.googleapis.com/index.html) 2.27
-* [Internet Explorer Web Driver](https://selenium-release.storage.googleapis.com/index.html) 3.0
-* [Firefox Web Driver (geckodriver)](https://github.com/mozilla/geckodriver/releases) 0.14.0
-* Internet Explorer 11
-* Firefox 51.0.1
-* Chrome 56.0
-
-
-## Services and databases
-
-* [SQL Server 2008 R2 SP2 Express Edition with Advanced Services (x64)](https://www.microsoft.com/en-US/download/details.aspx?id=30438)
-* [SQL Server 2012 SP1 Express with Advanced Services](https://www.microsoft.com/en-us/download/details.aspx?id=35579)
-* [SQL Server 2014 Express with Advanced Services](https://www.microsoft.com/en-us/download/details.aspx?id=42299)
-* [SQL Server 2016 Developer](https://www.microsoft.com/en-us/cloud-platform/sql-server-editions-developers)
-* [PostgreSQL 9.3 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
-* [PostgreSQL 9.4 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
-* [PostgreSQL 9.5 x64](http://www.enterprisedb.com/products-services-training/pgdownload#windows)
-* [MySQL 5.7](https://dev.mysql.com/downloads/windows/installer/5.7.html)
-* [MongoDB 3.0.4](https://www.mongodb.org/downloads)
-* Internet Information Services (IIS) 8.5
-* MSMQ
-
-  Note that all MS SQL servers are stopped by default and set to use the same default port 1433. Therefore please start and stop them sequentially to avoid port conflicts. To allow all SQL Server instances to be started simultaneously, please run [this script](https://gist.github.com/FeodorFitsner/a7eba7f44f9becacd3abddca27974e93) at `init` stage.
-
-## Miscellaneous
-
-* [Code Contracts for .NET](https://visualstudiogallery.msdn.microsoft.com/1ec7db13-3363-46c9-851f-1ce455f66970) 1.9.10714.2
-* WinRM client hosts set to `*`
 
 ## Getting the list of installed software
 
