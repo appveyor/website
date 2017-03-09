@@ -404,11 +404,11 @@ title: Build Worker Installed Software
         <th class="section" colspan="4"><h3>Erlang</h3></th>
     </tr>
     <tr>
-        <tr><td>Erlang OTP runtime 17.4 x64 installed into <code>C:\Program Files\erl6.3</code></td>
+        <td>Erlang OTP runtime 17.4 x64 installed into <code>C:\Program Files\erl6.3</code></td>
         <td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
-        <tr><td>Erlang OTP runtime 19.2 x64 installed into <code>C:\Program Files\erl8.2</code></td>
+        <td>Erlang OTP runtime 19.2 x64 installed into <code>C:\Program Files\erl8.2</code></td>
         <td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <!-- LLVM -->
@@ -416,7 +416,7 @@ title: Build Worker Installed Software
         <th class="section" colspan="4"><h3>LLVM</h3></th>
     </tr>
     <tr>
-        <tr><td>LLVM 3.9.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</code></td>
+        <td>LLVM 3.9.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</code></td>
         <td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <!-- MinGW, MSYS, Cygwin -->
@@ -560,7 +560,7 @@ title: Build Worker Installed Software
     <tr><td>NUnit 3.4.1 in <code>C:\Tools\NUnit3\bin</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>xUnit 1.9.2 in <code>C:\Tools\xUnit</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>xUnit 2.0.0 RTM in <code>C:\Tools\xUnit20</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Machine.Specifications (MSpec)</a></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Machine.Specifications (MSpec)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
     <tr>
         <th class="section" colspan="4"><h3>Web browsers</h3></th>
