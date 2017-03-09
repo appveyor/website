@@ -40,7 +40,7 @@ Below is the list of software pre-installed on Build Worker.
         <th class="section" colspan="4"><h3>Version control systems</h3></th>
     </tr>
     <tr>
-        <td><a href="https://git-scm.com/download/win">Git</a> 2.11.0 (x64) (with <code class="highlighter-rouge">git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td><a href="https://git-scm.com/download/win">Git</a> 2.11.0 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td><a href="https://git-lfs.github.com/">Git Large File Storage</a> 1.5.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -51,273 +51,345 @@ Below is the list of software pre-installed on Build Worker.
     <tr>
         <td><a href="http://www.collab.net/downloads/subversion">Subversion</a> 1.8.11 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
+    <!-- SDKs -->
+    <tr>
+        <th class="section" colspan="4"><h3>Windows SDKs</h3></th>
+    </tr>    
+    <tr><td>Microsoft Windows SDK for Windows 7 and .NET Framework 3.5 SP1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Windows SDK for Windows 7 and .NET Framework 3.5 SP1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Windows SDK for Windows 7 and .NET Framework 4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Windows SDK for Windows 8<td class="yes"></td></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Windows SDK for Windows 8.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Windows Driver Kit Version 7.1.0 (to support ATL)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Windows Driver Kit 10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Expression Blend Software Development Kit (SDK) for .NET 4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Windows Phone SDK 8.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td><a href="https://azure.microsoft.com/en-us/downloads/">Microsoft Azure Storage Emulator</a> 4.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft SilverLight 5 SDK</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Windows PowerShell 2.0 SDK</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>DirectX SDK (<code>C:\Program Files (x86)\Microsoft DirectX SDK</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS SDK .NET v3.7.606.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.7.25</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- TypeScript -->
+    <tr>
+        <th class="section" colspan="4"><h3>TypeScript</h3></th>
+    </tr>
+    <tr><td>TypeScript 1.4 for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>TypeScript 1.5 for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>TypeScript 1.6 for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>TypeScript 1.7 for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>TypeScript 1.8 for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>TypeScript 2.2 for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>TypeScript 2.1.5 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <!-- Azure SDKs -->
+    <tr>
+        <th class="section" colspan="4"><h3>Azure SDKs</h3></th>
+    </tr>
+    <tr><td>Azure SDK 2.3</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure SDK 2.4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure SDK 2.5.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure SDK 2.6</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure SDK 2.7.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure SDK 2.8.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure SDK 2.9.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Visual Studio 2008 -->
+    <tr>
+        <th class="section" colspan="4"><h3>Visual Studio 2008</h3></th>
+    </tr>
+    <tr><td>Visual C++ 2008 Express</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Visual Studio 2010 -->
+    <tr>
+        <th class="section" colspan="4"><h3>Visual Studio 2010</h3></th>
+    </tr>
+    <tr><td>Visual C# 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual Basic 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual C++ 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual Web Developer 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio 2010 Service Pack 1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Visual Studio 2012 -->
+    <tr>
+        <th class="section" colspan="4"><h3>Visual Studio 2012</h3></th>
+    </tr>
+    <tr><td>Visual Studio Express 2012 for Windows Desktop</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio 2012 Update 5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server Data tools for Visual Studio 2012</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Visual Studio 2013 -->
+    <tr>
+        <th class="section" colspan="4"><h3>Visual Studio 2013</h3></th>
+    </tr>
+    <tr><td>Visual Studio Community 2013 with Update 5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio 2013 SDK</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>WDK 8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual F# 3.1.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>WiX Toolset 3.10.3.3007</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server Data tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Office Developer Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Visual Studio 2015 -->
+    <tr>
+        <th class="section" colspan="4"><h3>Visual Studio 2015</h3></th>
+    </tr>
+    <tr><td>Visual Studio Community 2015 with Update 3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Universal Windows App Dev Tools for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Windows 10 SDK</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python Tools for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js Tools 1.2 for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual F# Tools 4.0 RTM</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio 2015 Installer Projects</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>WDK 10.0.14393</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server Data Tools (SSDT) 16.5 (14.0.61021.0) for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure Service Fabric and Tools 5.3.301.9590 for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft .NET Portable Library Reference Assemblies 4.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>WiX Toolset 3.10.3.3007</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server Data tools for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Office Developer Tools for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Xamarin -->
+    <tr>
+        <th class="section" colspan="4"><h3>Xamarin</h3></th>
+    </tr>
+    <tr><td>Xamarin v4.2.2.11</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Xamarin v4.3.0.784</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <!-- .NET Framework -->
+    <tr>
+        <th class="section" colspan="4"><h3>.NET Framework</h3></th>
+    </tr>
+    <tr><td>.NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Framework 4.6.0, 4.6.1, 4.6.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 1.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 1.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Silverlight -->
+    <tr>
+        <th class="section" colspan="4"><h3>Silverlight</h3></th>
+    </tr>
+    <tr><td>Silverlight 5 x64 Developer Runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Boost -->
+    <tr>
+        <th class="section" colspan="4"><h3>Boost</h3></th>
+    </tr>
+    <tr><td>
+    <ul>
+        <li>Boost 1.63.0 (<code>C:\Libraries\boost_1_63_0</code>)</li>
+        <li>Boost 1.62.0 (<code>C:\Libraries\boost_1_62_0</code>)</li>
+        <li>Boost 1.60.0 (<code>C:\Libraries\boost_1_60_0</code>)</li>
+        <li>Boost 1.59.0 (<code>C:\Libraries\boost_1_59_0</code>)</li>
+        <li>Boost 1.58.0 (<code>C:\Libraries\boost_1_58_0</code>)</li>
+        <li>Boost 1.56.0 (<code>C:\Libraries\boost</code>)</li>
+    </ul>    
+    </td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>    
     <!-- Node.js -->
     <tr>
         <th class="section" colspan="4"><h3>Node.js</h3></th>
     </tr>
-    <tr><td>7.0.0 - 7.5.0 - use <code class="highlighter-rouge">Stable</code> alias for latest <code class="highlighter-rouge">7.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>6.0.0 - 6.9.5 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>4.0.0 - 4.7.3 (x86 and x64) - use <code class="highlighter-rouge">LTS</code> alias for latest <code class="highlighter-rouge">4.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>5.0.0 - 5.12.0 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>0.10.26 - 0.10.48 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>0.11.12 - 0.11.16 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>0.12.0 - 0.12.18 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>0.8.25 - 0.8.28 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>0.6.21 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr>
+        <td>
+            <p><code>4.x</code> is default Node.js installed on build workers.</p>
+            <ul>
+                <li>Node.js 7.0.0 - 7.7.1 - use <code>Stable</code> alias for latest <code>7.x</code> release</li>
+                <li>Node.js 6.0.0 - 6.10.0 (x86 and x64) - use <code>LTS</code> alias for latest <code>6.x</code> release</li>
+                <li>Node.js 4.0.0 - 4.8.0 (x86 and x64)</li>
+                <li>Node.js 5.0.0 - 5.12.0 (x86 and x64)</li>
+                <li>Node.js 0.10.26 - 0.10.48 (x86 and x64)</li>
+                <li>Node.js 0.11.12 - 0.11.16 (x86 and x64)</li>
+                <li>Node.js 0.12.0 - 0.12.18 (x86 and x64)</li>
+                <li>Node.js 0.8.25 - 0.8.28 (x86 and x64)</li>
+                <li>io.js 1.0.0 - 3.3.0 (x86 and x64)</li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Node.js 0.6.21 (x86 and x64)</li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <!-- Go -->
+    <tr>
+        <th class="section" colspan="4"><h3>Go (Golang)</h3></th>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Go 1.8.0 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.8.0 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.8.0 x64 (<code>C:\go18</code>)</li>
+                <li>Go 1.8.0 x86 (<code>C:\go18-x86</code>)</li>
+                <li>Go 1.7.5 x64 (<code>C:\go17</code>)</li>
+                <li>Go 1.7.5 x86 (<code>C:\go17-x86</code>)</li>
+                <li>Go 1.6.4 x64 (<code>C:\go16</code>)</li>
+                <li>Go 1.6.4 x86 (<code>C:\go16-x86</code>)</li>
+                <li>Go 1.5.4 x64 (<code>C:\go15</code>)</li>
+                <li>Go 1.5.4 x86 (<code>C:\go15-x86</code>)</li>
+                <li>Go 1.4.3 x64 (<code>C:\go14</code>)</li>
+                <li>Go 1.4.3 x86 (<code>C:\go14-x86</code>)</li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <!-- Java -->
+    <tr>
+        <th class="section" colspan="4"><h3>Java SE Development Kit (JDK)</h3></th>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>JDK 1.6 Update 45 (x64) (<code class="highlighter-rouge">C:\Program Files\Java\jdk1.6.0\bin</code> - default in <code class="highlighter-rouge">PATH</code>)</li>
+                <li>JDK 1.6 Update 45 (x86) (<code class="highlighter-rouge">C:\Program Files (x86)\Java\jdk1.6.0\bin</code>)</li>
+                <li>JDK 1.7 Update 79 (x64) (<code class="highlighter-rouge">C:\Program Files\Java\jdk1.7.0\bin</code> - default in <code class="highlighter-rouge">PATH</code>)</li>
+                <li>JDK 1.7 Update 79 (x86) (<code class="highlighter-rouge">C:\Program Files (x86)\Java\jdk1.7.0\bin</code>)</li>
+                <li>JDK 1.8 Update 121 (x64) (<code class="highlighter-rouge">C:\Program Files\Java\jdk1.8.0</code>)</li>
+                <li>JDK 1.8 Update 121 (x86) (<code class="highlighter-rouge">C:\Program Files (x86)\Java\jdk1.8.0</code>)</li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr><td>Maven 3.3.9</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <!-- Mono -->
+    <tr>
+        <th class="section" colspan="4"><h3>Mono</h3></th>
+    </tr>
+    <tr><td>Mono 4.0.2 SR2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>    
+    <!-- Ruby -->
+    <tr>
+        <th class="section" colspan="4"><h3>Ruby (with DevKit)</h3></th>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Ruby 1.9.3-p551 (<code class="highlighter-rouge">C:\Ruby193\bin</code> - default in <code class="highlighter-rouge">PATH</code>)</li>
+                <li>Ruby 2.0.0-p648 x86 (<code class="highlighter-rouge">C:\Ruby200\bin</code>)</li>
+                <li>Ruby 2.0.0-p648 x64 (<code class="highlighter-rouge">C:\Ruby200-x64\bin</code>)</li>
+                <li>Ruby 2.1.9 x86 (<code class="highlighter-rouge">C:\Ruby21\bin</code>)</li>
+                <li>Ruby 2.1.9 x64 (<code class="highlighter-rouge">C:\Ruby21-x64\bin</code>)</li>
+                <li>Ruby 2.2.6 x86 (<code class="highlighter-rouge">C:\Ruby22\bin</code>)</li>
+                <li>Ruby 2.2.6 x64 (<code class="highlighter-rouge">C:\Ruby22-x64\bin</code>)</li>
+                <li>Ruby 2.3.3 x86 (<code class="highlighter-rouge">C:\Ruby23\bin</code>)</li>
+                <li>Ruby 2.3.3 x64 (<code class="highlighter-rouge">C:\Ruby23-x64\bin</code>)</li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <!-- Python -->
+    <tr>
+        <th class="section" colspan="4"><h3>Python</h3></th>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Python 2.6.6 x86 (<code class="highlighter-rouge">C:\Python26</code>)</li>
+                <li>Python 2.6.6 x64 (<code class="highlighter-rouge">C:\Python26-x64</code>)</li>
+                <li>Python 2.7.13 x86 (<code class="highlighter-rouge">C:\Python27</code> - default in <code class="highlighter-rouge">PATH</code>)</li>
+                <li>Python 2.7.13 x64 (<code class="highlighter-rouge">C:\Python27-x64</code>)</li>
+                <li>Python 3.3.5 x86 (<code class="highlighter-rouge">C:\Python33</code>)</li>
+                <li>Python 3.3.5 x64 (<code class="highlighter-rouge">C:\Python33-x64</code>)</li>
+                <li>Python 3.4.4 x86 (<code class="highlighter-rouge">C:\Python34</code>)</li>
+                <li>Python 3.4.4 x64 (<code class="highlighter-rouge">C:\Python34-x64</code>)</li>
+                <li>Python 3.5.3 x86 (<code class="highlighter-rouge">C:\Python35</code>)</li>
+                <li>Python 3.5.3 x64 (<code class="highlighter-rouge">C:\Python35-x64</code>)</li>
+                <li>Python 3.6.0 x86 (<code class="highlighter-rouge">C:\Python36</code>)</li>
+                <li>Python 3.6.0 x64 (<code class="highlighter-rouge">C:\Python36-x64</code>)</li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <tr><td>Visual C++ Compiler for Python 2.7</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    </tr>
+    <!-- Miniconda -->
+    <tr>
+        <th class="section" colspan="4"><h3>Miniconda</h3></th>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Miniconda2 4.3.11 (Python 2.7.13) - <code class="highlighter-rouge">C:\Miniconda</code></li>
+                <li>Miniconda2 4.3.11 x64 (Python 2.7.13): <code class="highlighter-rouge">C:\Miniconda-x64</code></li>
+                <li>Miniconda3 3.16.0 (Python 3.4.3): <code class="highlighter-rouge">C:\Miniconda3</code></li>
+                <li>Miniconda3 3.16.0 x64 (Python 3.4.3): <code class="highlighter-rouge">C:\Miniconda3-x64</code></li>
+                <li>Miniconda3 4.2.12 (Python 3.5.2): <code class="highlighter-rouge">C:\Miniconda35</code></li>
+                <li>Miniconda3 4.2.12 x64 (Python 3.5.2): <code class="highlighter-rouge">C:\Miniconda35-x64</code></li>
+                <li>Miniconda3 4.3.11 (Python 3.6.0): <code class="highlighter-rouge">C:\Miniconda36</code></li>
+                <li>Miniconda3 4.3.11 x64 (Python 3.6.0): <code class="highlighter-rouge">C:\Miniconda36-x64</code></li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <!-- Perl -->
+    <tr>
+        <th class="section" colspan="4"><h3>Perl</h3></th>
+    </tr>
+    <tr>
+        <tr><td>Perl 5.20.1.2000 x86 (<code class="highlighter-rouge">C:\Perl</code> in <code class="highlighter-rouge">PATH</code>)</td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    </tr>
+    <!-- Erlang -->
+    <tr>
+        <th class="section" colspan="4"><h3>Erlang</h3></th>
+    </tr>
+    <tr>
+        <tr><td>Erlang OTP runtime 17.4 x64 installed into <code>C:\Program Files\erl6.3</code></td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    </tr>
+    <!-- LLVM -->
+    <tr>
+        <th class="section" colspan="4"><h3>LLVM</h3></th>
+    </tr>
+    <tr>
+        <tr><td>LLVM 3.9.0 x64 (<code class="highlighter-rouge">C:\Program Files\LLVM\bin</code> in <code class="highlighter-rouge">PATH</code>)</code></td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    </tr>
+    <!-- MinGW, MSYS, Cygwin -->
+    <tr>
+        <th class="section" colspan="4"><h3>MinGW, MSYS, Cygwin</h3></th>
+    </tr>
+    <tr>
+        <tr><td>
+            <ul>
+                <li>
+                    MinGW 32-bit 5.3.0 (core components and compilers - <code class="highlighter-rouge">C:\MinGW)</code>
+                    <ul>
+                        <li>MinGW root directory: <code class="highlighter-rouge">C:\MinGW</code></li>
+                        <li>MinGW bin directory: <code class="highlighter-rouge">C:\MinGW\bin</code></li>
+                        <li>MSYS root directory: <code class="highlighter-rouge">C:\MinGW\msys\1.0</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    </tr>
+    <tr>
+        <tr><td>
+            <ul>
+                <li>
+                    MinGW-w64
+                    <ul>
+                        <li>5.3.0: <code class="highlighter-rouge">C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0</code></li>
+                        <li>6.3.0: <code class="highlighter-rouge">C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    </tr>
+    <tr>
+        <tr><td>Cygwin (<code class="highlighter-rouge">C:\cygwin</code>)</td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    </tr>
+    <tr>
+        <tr><td>Cygwin 64 (<code class="highlighter-rouge">C:\cygwin64</code>)</td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    </tr> 
+    <tr>
+        <tr><td>MSYS2 (<code class="highlighter-rouge">C:\msys64</code>)</td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    </tr>                     
 </table>
-
-
-## Operating system
-
-* Windows Server 2012 R2 (x64)
-
-## Version control systems
-
-* [Git](https://git-scm.com/download/win) 2.11.0 (x64) (with `git config --global core.autocrlf input`)
-    * [Git Large File Storage](https://git-lfs.github.com/) 1.5.3
-* [Mercurial](https://www.mercurial-scm.org/downloads) 4.0.1 (x86)
-* [Subversion](http://www.collab.net/downloads/subversion) 1.8.11 (x86)
-
-## SDKs
-
-* [Microsoft Windows SDK for Windows 7 and .NET Framework 3.5 SP1](https://www.microsoft.com/en-us/download/details.aspx?id=3138)
-* [Microsoft Windows SDK for Windows 7 and .NET Framework 4](https://www.microsoft.com/en-us/download/details.aspx?id=8279)
-* [Windows SDK for Windows 8](https://msdn.microsoft.com/en-us/library/windows/desktop/hh852363.aspx)
-* [Windows SDK for Windows 8.1](https://msdn.microsoft.com/en-us/windows/desktop/bg162891.aspx)
-* [Windows Driver Kit Version 7.1.0 (to support ATL)](https://www.microsoft.com/en-us/download/details.aspx?id=11800)
-* [Windows Driver Kit 10](https://msdn.microsoft.com/en-us/windows/hardware/dn913721.aspx)
-* [Microsoft Expression Blend Software Development Kit (SDK) for .NET 4](https://www.microsoft.com/en-us/download/details.aspx?id=10801)
-* [Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4](https://www.microsoft.com/en-us/download/details.aspx?id=3062)
-* [Windows Phone SDK 8.0](https://www.microsoft.com/en-us/download/details.aspx?id=35471)
-* [Azure SDKs](https://azure.microsoft.com/en-us/downloads/archive-net-downloads/) 2.3, 2.4, 2.5.1, 2.6, 2.7.1, 2.8.1, 2.9.5
-* [Microsoft Azure Storage Emulator](https://azure.microsoft.com/en-us/downloads/) 4.6
-* [Microsoft SilverLight 5 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=28359)
-* [Windows PowerShell 2.0 SDK](https://www.microsoft.com/en-ca/download/details.aspx?id=2560)
-* [DirectX SDK](https://www.microsoft.com/en-us/download/details.aspx?id=6812) (`C:\Program Files (x86)\Microsoft DirectX SDK`)
-* [AWS SDK .NET](https://aws.amazon.com/sdk-for-net/) v3.7.606.0
-* [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/installing.html#install-msi-on-windows) 1.7.25
-* [TypeScript 1.4 for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/2d42d8dc-e085-45eb-a30b-3f7d50d55304)
-* [TypeScript 1.5 for Visual Studio 2013](https://visualstudiogallery.msdn.microsoft.com/b1fff87e-d68b-4266-8bba-46fad76bbf22)
-* TypeScript 1.6.3 for Visual Studio 2015
-* TypeScript 1.7.6 for Visual Studio 2015
-* TypeScript 1.8.3 for Visual Studio 2015
-* TypeScript 2.1.5 for Visual Studio 2015
-* [Office Developer Tools for Visual Studio 2013](https://blogs.msdn.microsoft.com/visualstudio/2014/03/03/announcing-office-developer-tools-for-visual-studio-2013-march-2014-update/)
-* [Office Developer Tools for Visual Studio 2015](https://www.visualstudio.com/en-us/features/office-tools-vs.aspx)
-* [Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013](https://www.microsoft.com/en-us/download/details.aspx?id=42313)
-
-## Visual Studio
-
-### Visual Studio 2008
-
-* [Visual C++ 2008 Express](https://go.microsoft.com/?linkid=7729279)
-
-### Visual Studio 2010
-
-* [Visual C# 2010 Express](https://go.microsoft.com/?linkid=9709939)
-* [Visual Basic 2010 Express](https://go.microsoft.com/?linkid=9709929)
-* [Visual C++ 2010 Express](https://go.microsoft.com/?linkid=9709949)
-* [Visual Web Developer 2010 Express](https://go.microsoft.com/fwlink/?LinkID=167874)
-* [Visual Studio 2010 Service Pack 1](https://www.microsoft.com/en-us/download/details.aspx?id=23691)
-
-### Visual Studio 2012
-
-* [Visual Studio Express 2012 for Windows Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=34673)
-* [TypeScript for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=34790)
-* [Visual Studio 2012 Update 5](https://www.microsoft.com/en-us/download/details.aspx?id=48708)
-
-### Visual Studio 2013
-
-* [Visual Studio Community 2013 with Update 5](https://www.visualstudio.com/products/visual-studio-community-vs)
-* [Visual Studio 2013 SDK](https://www.visualstudio.com/downloads/download-visual-studio-vs)
-* [Python Tools for Visual Studio 2013](https://github.com/Microsoft/PTVS/releases)
-* [Node.js Tools for Visual Studio 2013](https://github.com/Microsoft/nodejstools#readme)
-* WDK 8
-
-### Visual Studio 2015
-
-* [Visual Studio Community 2015 with Update 3](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx)
-* Universal Windows App Dev Tools for Visual Studio 2015
-* Windows 10 SDK
-* [Python Tools for Visual Studio 2015](https://github.com/Microsoft/PTVS/releases)
-* [Node.js Tools 1.2 for Visual Studio 2015](https://github.com/Microsoft/nodejstools#readme)
-* [Visual F# Tools 4.0 RTM](https://www.microsoft.com/en-us/download/details.aspx?id=48179)
-* [Visual Studio 2015 Installer Projects](https://visualstudiogallery.msdn.microsoft.com/f1cc3f3e-c300-40a7-8797-c509fb8933b9)
-* Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)
-* WDK 10.0.14393
-* SQL Server Data Tools (SSDT) 16.5 (14.0.61021.0) for Visual Studio 2015
-* Azure Service Fabric and Tools 5.3.301.9590 for Visual Studio 2015
-
-Visual Studio Community 2015 RTM with Visual Studio 2015 SDK are installed on a separate build worker image called `Visual Studio 2015`. You can select build worker image in "OS" dropdown on Environment tab of project settings or if you use `appveyor.yml` add that line:
-
-```yaml
-os: Visual Studio 2015
-```
-
-## Xamarin
-
-[Xamarin Platform](https://xamarin.com/platform) v4.2.2.11 is installed on `Visual Studio 2015` image.
-
-## Languages, libraries, frameworks
-
-* [C++ 11 CTP](https://blogs.msdn.microsoft.com/vcblog/2013/11/18/announcing-the-visual-c-compiler-november-2013-ctp/)
-* .NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2, 4.6.0, 4.6.1, 4.6.2
-* .NET Core 1.0.0
-* .NET Core 1.0.1
-* [Visual F# 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=18706)
-* [Visual F# Out of Band Release 3.1.2](https://www.microsoft.com/en-us/download/details.aspx?id=44011)
-* [Microsoft .NET Portable Library Reference Assemblies 4.6](https://www.microsoft.com/en-us/download/details.aspx?id=40727)
-* [Microsoft Visual Studio Installer Projects](https://visualstudiogallery.msdn.microsoft.com/9abe329c-9bba-44a1-be59-0fbf6151054d) extension (`.vdproj` support).
-* [WiX](http://wixtoolset.org/) 3.10.3.3007
-* [Silverlight 5 x64 Developer Runtime](https://go.microsoft.com/fwlink/?LinkID=229324)
-* SQL Server Data tools for [Visual Studio 2012](https://msdn.microsoft.com/en-us/jj650015) and [2013](https://stackoverflow.com/questions/15556339/how-to-build-sqlproj-projects-on-a-build-server) with `SqlPackage.exe` utility in `C:\Program Files (x86)\Microsoft SQL Server\120\DAC\bin` folder.
-* Boost:
-    * 1.63.0 (`C:\Libraries\boost_1_63_0`)
-    * 1.62.0 (`C:\Libraries\boost_1_62_0`)
-    * 1.60.0 (`C:\Libraries\boost_1_60_0`)
-    * 1.59.0 (`C:\Libraries\boost_1_59_0`)
-    * 1.58.0 (`C:\Libraries\boost_1_58_0`)
-    * 1.56.0 (`C:\Libraries\boost`)
-
-### Node.js
-
-`4.x` is default Node.js installed on build workers.
-
-* 7.0.0 - 7.5.0 - use `Stable` alias for latest `7.x` release
-* 6.0.0 - 6.9.5 (x86 and x64)
-* 4.0.0 - 4.7.3 (x86 and x64) - use `LTS` alias for latest `4.x` release
-* 5.0.0 - 5.12.0 (x86 and x64)
-* 0.10.26 - 0.10.48 (x86 and x64)
-* 0.11.12 - 0.11.16 (x86 and x64)
-* 0.12.0 - 0.12.18 (x86 and x64)
-* 0.8.25 - 0.8.28 (x86 and x64)
-* 0.6.21 (x86 and x64)
-
-Use the following PowerShell command to quickly switch Node.js version:
-
-    Install-Product node <version> [x86|x64]
-
-To switch to the latest `0.x.x` Node.js version (0.12.x) use this PowerShell command:
-
-```powershell
-Install-Product node 0
-```
-
-To switch to the latest `6.x.x` Node.js version use this PowerShell command:
-
-```powershell
-Install-Product node ''
-```
-
-### io.js
-
-* 1.0.0 - 3.3.0 (x86 and x64)
-
-Use the following PowerShell command to quickly switch io.js version:
-
-    Install-Product node <version> [x86|x64]
-
-To switch to the latest io.js version using this PowerShell command:
-
-```powershell
-Install-Product node '3'
-```
-
-### Go
-
-* [Go](https://golang.org/dl/)
-    * 1.8.0 x64 (`C:\go` - default in `PATH`)
-    * 1.8.0 x86 (`C:\go-x86`)
-    * 1.8.0 x64 (`C:\go18`)
-    * 1.8.0 x86 (`C:\go18-x86`)
-    * 1.7.5 x64 (`C:\go17`)
-    * 1.7.5 x86 (`C:\go17-x86`)
-    * 1.6.4 x64 (`C:\go16`)
-    * 1.6.4 x86 (`C:\go16-x86`)
-    * 1.5.4 x64 (`C:\go15`)
-    * 1.5.4 x86 (`C:\go15-x86`)
-    * 1.4.3 x64 (`C:\go14`)
-    * 1.4.3 x86 (`C:\go14-x86`)
-
-### Java
-
-* Java SE Development Kit (JDK)
-    * [JDK 1.6](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html) Update 45 (x64) (`C:\Program Files\Java\jdk1.6.0\bin` - default in `PATH`)
-    * [JDK 1.6](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html) Update 45 (x86) (`C:\Program Files (x86)\Java\jdk1.6.0\bin`)
-    * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x64) (`C:\Program Files\Java\jdk1.7.0\bin` - default in `PATH`)
-    * [JDK 1.7](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html) Update 79 (x86) (`C:\Program Files (x86)\Java\jdk1.7.0\bin`)
-    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 121 (x64) (`C:\Program Files\Java\jdk1.8.0`)
-    * [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) Update 121 (x86) (`C:\Program Files (x86)\Java\jdk1.8.0`)
-* [Maven](https://maven.apache.org/) 3.3.9 (`C:\Program Files (x86)\Apache\Maven` - added to `PATH`)
-
-
-### Mono
-
-* [Mono](http://www.mono-project.com/download/) 4.0.2 SR2
-
-### Ruby
-
-* [Ruby](http://rubyinstaller.org/downloads/) with [DevKit](https://github.com/oneclick/rubyinstaller/wiki/Development-Kit)
-    * 1.9.3-p551 (`C:\Ruby193\bin` - default in `PATH`)
-    * 2.0.0-p648 x86 (`C:\Ruby200\bin`)
-    * 2.0.0-p648 x64 (`C:\Ruby200-x64\bin`)
-    * 2.1.9 x86 (`C:\Ruby21\bin`)
-    * 2.1.9 x64 (`C:\Ruby21-x64\bin`)
-    * 2.2.6 x86 (`C:\Ruby22\bin`)
-    * 2.2.6 x64 (`C:\Ruby22-x64\bin`)
-    * 2.3.3 x86 (`C:\Ruby23\bin`)
-    * 2.3.3 x64 (`C:\Ruby23-x64\bin`)
-
-### Python
-
-* [Python](https://www.python.org/downloads/windows/)
-    * 2.6.6 x86 (`C:\Python26`)
-    * 2.6.6 x64 (`C:\Python26-x64`)
-    * 2.7.13 x86 (`C:\Python27` - default in `PATH`)
-    * 2.7.13 x64 (`C:\Python27-x64`)
-    * 3.3.5 x86 (`C:\Python33`)
-    * 3.3.5 x64 (`C:\Python33-x64`)
-    * 3.4.4 x86 (`C:\Python34`)
-    * 3.4.4 x64 (`C:\Python34-x64`)
-    * 3.5.3 x86 (`C:\Python35`)
-    * 3.5.3 x64 (`C:\Python35-x64`)
-    * 3.6.0 x86 (`C:\Python36`)
-    * 3.6.0 x64 (`C:\Python36-x64`)
-* Miniconda
-    * Miniconda2 4.3.11 (Python 2.7.13) - `C:\Miniconda`
-    * Miniconda2 4.3.11 x64 (Python 2.7.13): `C:\Miniconda-x64`
-    * Miniconda3 3.16.0 (Python 3.4.3): `C:\Miniconda3`
-    * Miniconda3 3.16.0 x64 (Python 3.4.3): `C:\Miniconda3-x64`
-    * Miniconda3 4.2.12 (Python 3.5.2): `C:\Miniconda35`
-    * Miniconda3 4.2.12 x64 (Python 3.5.2): `C:\Miniconda35-x64`
-    * Miniconda3 4.3.11 (Python 3.6.0): `C:\Miniconda36`
-    * Miniconda3 4.3.11 x64 (Python 3.6.0): `C:\Miniconda36-x64`
-* [Visual C++ Compiler for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266)
-
-### Perl
-
-* [Perl](https://www.activestate.com/activeperl/downloads) 5.20.1.2000 x86 (`C:\Perl` in `PATH`)
-
-### Erlang
-
-* `Erlang OTP runtime 17.4 x64` installed into `C:\Program Files\erl6.3`
-
-### LLVM
-
-* [LLVM 3.9.0](http://llvm.org/releases/download.html#3.9.0) x64 (`C:\Program Files\LLVM\bin` in `PATH`)
-
-### MinGW, MSYS, Cygwin
-
-* [MinGW/MSYS 5.3.0 32-bit](http://www.mingw.org/) (core components and compilers - `C:\MinGW`)
-    * MinGW root directory: `C:\MinGW`
-    * MinGW bin directory: `C:\MinGW\bin`
-    * MSYS root directory: `C:\MinGW\msys\1.0`
-* MinGW-w64:
-    * MinGW 5.3.0: `C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0`
-    * MinGW 6.3.0: `C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1`
-* Cygwin (`C:\cygwin`)
-* Cygwin 64 (`C:\cygwin64`)
-* MSYS2 (`C:\msys64`)
 
 ### Qt
 
