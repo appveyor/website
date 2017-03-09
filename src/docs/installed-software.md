@@ -5,13 +5,8 @@ title: Build Worker Installed Software
 
 <!-- markdownlint-disable MD022 MD032 -->
 # Build Worker installed software
-{:.no_toc}
 
-Below is the list of software pre-installed on Build Worker.
-
-* Comment to trigger ToC generation
-{:toc}
-<!-- markdownlint-enable MD022 MD032 -->
+Below is the list of software pre-installed on Build Worker:
 
 <table class="software-list">
     <tr>
@@ -35,22 +30,99 @@ Below is the list of software pre-installed on Build Worker.
         <td class="no"></td>
         <td class="yes"></td>
     </tr>
+    <!-- Docker -->
+    <tr>
+        <th class="section" colspan="4"><h3>Docker</h3></th>
+    </tr>
+    <tr>
+        <td>
+        <ul>
+            <li>
+                Docker for Windows Containers with base images:
+                <ul>
+                    <li>microsoft/windowsservercore (4d83c32ad497)</li>
+                    <li>microsoft/nanoserver (d9bccb9d4cac)</li>
+                </ul>
+            </li>
+        </ul>
+        </td><td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>  
     <!-- Version control systems -->
     <tr>
         <th class="section" colspan="4"><h3>Version control systems</h3></th>
     </tr>
     <tr>
-        <td><a href="https://git-scm.com/download/win">Git</a> 2.11.0 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.11.0 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td><a href="https://git-lfs.github.com/">Git Large File Storage</a> 1.5.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage 1.5.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td><a href="https://www.mercurial-scm.org/downloads">Mercurial</a> 4.0.1 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Mercurial 4.0.1 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td><a href="http://www.collab.net/downloads/subversion">Subversion</a> 1.8.11 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Subversion 1.8.11 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
+    <!-- Visual Studio 2008 -->
+    <tr>
+        <th class="section" colspan="4"><h3>Visual Studio 2008</h3></th>
+    </tr>
+    <tr><td>Visual C++ 2008 Express</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <!-- Visual Studio 2010 -->
+    <tr>
+        <th class="section" colspan="4"><h3>Visual Studio 2010</h3></th>
+    </tr>
+    <tr><td>Visual C# 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual Basic 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual C++ 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual Web Developer 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio 2010 Service Pack 1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <!-- Visual Studio 2012 -->
+    <tr>
+        <th class="section" colspan="4"><h3>Visual Studio 2012</h3></th>
+    </tr>
+    <tr><td>Visual Studio Express 2012 for Windows Desktop</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio 2012 Update 5</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server Data tools for Visual Studio 2012</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <!-- Visual Studio 2013 -->
+    <tr>
+        <th class="section" colspan="4"><h3>Visual Studio 2013</h3></th>
+    </tr>
+    <tr><td>Visual Studio Community 2013 with Update 5</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio 2013 SDK</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Python Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Node.js Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>WDK 8</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual F# 3.1.2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server Data tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Office Developer Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <!-- Visual Studio 2015 -->
+    <tr>
+        <th class="section" colspan="4"><h3>Visual Studio 2015</h3></th>
+    </tr>
+    <tr><td>Visual Studio Community 2015 with Update 3</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Universal Windows App Dev Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Python Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Node.js Tools 1.2 for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual F# Tools 4.0 RTM</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio 2015 Installer Projects</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>WDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server Data Tools (SSDT) 16.5 (14.0.61021.0) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure Service Fabric and Tools 5.3.301.9590 for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft .NET Portable Library Reference Assemblies 4.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server Data tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Office Developer Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <!-- Visual Studio 2017 -->
+    <tr>
+        <th class="section" colspan="4"><h3>Visual Studio 2017</h3></th>
+    </tr>
+    <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- SDKs -->
     <tr>
         <th class="section" colspan="4"><h3>Windows SDKs</h3></th>
@@ -62,15 +134,17 @@ Below is the list of software pre-installed on Build Worker.
     <tr><td>Windows SDK for Windows 8.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Windows Driver Kit Version 7.1.0 (to support ATL)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Windows Driver Kit 10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Windows 10 SDK 10.0.10586</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Windows 10 SDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Windows 10 SDK 10.0.26624</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>    
     <tr><td>Microsoft Expression Blend Software Development Kit (SDK) for .NET 4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Windows Phone SDK 8.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td><a href="https://azure.microsoft.com/en-us/downloads/">Microsoft Azure Storage Emulator</a> 4.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft SilverLight 5 SDK</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Windows PowerShell 2.0 SDK</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>DirectX SDK (<code>C:\Program Files (x86)\Microsoft DirectX SDK</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>AWS SDK .NET v3.7.606.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>AWS CLI 1.7.25</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Windows PowerShell 2.0 SDK</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>DirectX SDK (<code>C:\Program Files (x86)\Microsoft DirectX SDK</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>AWS SDK .NET v3.7.606.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>AWS CLI 1.7.25</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>WiX Toolset 3.10.3.3007</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- TypeScript -->
     <tr>
         <th class="section" colspan="4"><h3>TypeScript</h3></th>
@@ -84,7 +158,7 @@ Below is the list of software pre-installed on Build Worker.
     <tr><td>TypeScript 2.1.5 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Azure SDKs -->
     <tr>
-        <th class="section" colspan="4"><h3>Azure SDKs</h3></th>
+        <th class="section" colspan="4"><h3>Azure</h3></th>
     </tr>
     <tr><td>Azure SDK 2.3</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Azure SDK 2.4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -93,64 +167,10 @@ Below is the list of software pre-installed on Build Worker.
     <tr><td>Azure SDK 2.7.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Azure SDK 2.8.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Azure SDK 2.9.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <!-- Visual Studio 2008 -->
-    <tr>
-        <th class="section" colspan="4"><h3>Visual Studio 2008</h3></th>
-    </tr>
-    <tr><td>Visual C++ 2008 Express</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <!-- Visual Studio 2010 -->
-    <tr>
-        <th class="section" colspan="4"><h3>Visual Studio 2010</h3></th>
-    </tr>
-    <tr><td>Visual C# 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual Basic 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual C++ 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual Web Developer 2010 Express</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual Studio 2010 Service Pack 1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <!-- Visual Studio 2012 -->
-    <tr>
-        <th class="section" colspan="4"><h3>Visual Studio 2012</h3></th>
-    </tr>
-    <tr><td>Visual Studio Express 2012 for Windows Desktop</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual Studio 2012 Update 5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>SQL Server Data tools for Visual Studio 2012</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <!-- Visual Studio 2013 -->
-    <tr>
-        <th class="section" colspan="4"><h3>Visual Studio 2013</h3></th>
-    </tr>
-    <tr><td>Visual Studio Community 2013 with Update 5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual Studio 2013 SDK</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>WDK 8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual F# 3.1.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>WiX Toolset 3.10.3.3007</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>SQL Server Data tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Office Developer Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <!-- Visual Studio 2015 -->
-    <tr>
-        <th class="section" colspan="4"><h3>Visual Studio 2015</h3></th>
-    </tr>
-    <tr><td>Visual Studio Community 2015 with Update 3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Universal Windows App Dev Tools for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Windows 10 SDK</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python Tools for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js Tools 1.2 for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual F# Tools 4.0 RTM</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual Studio 2015 Installer Projects</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>WDK 10.0.14393</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>SQL Server Data Tools (SSDT) 16.5 (14.0.61021.0) for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Azure Service Fabric and Tools 5.3.301.9590 for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft .NET Portable Library Reference Assemblies 4.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>WiX Toolset 3.10.3.3007</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>SQL Server Data tools for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Office Developer Tools for Visual Studio 2015</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Azure Storage Emulator 4.6</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Azure Storage Emulator 5.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Azure PowerShell</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Azure CLI 0.9.10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>    
     <!-- Xamarin -->
     <tr>
         <th class="section" colspan="4"><h3>Xamarin</h3></th>
@@ -169,7 +189,9 @@ Below is the list of software pre-installed on Build Worker.
     <tr>
         <th class="section" colspan="4"><h3>Silverlight</h3></th>
     </tr>
-    <tr><td>Silverlight 5 x64 Developer Runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Silverlight 5 x64 Developer Runtime</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft SilverLight 5 SDK</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft SilverLight 4 SDK</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Boost -->
     <tr>
         <th class="section" colspan="4"><h3>Boost</h3></th>
@@ -183,7 +205,7 @@ Below is the list of software pre-installed on Build Worker.
         <li>Boost 1.58.0 (<code>C:\Libraries\boost_1_58_0</code>)</li>
         <li>Boost 1.56.0 (<code>C:\Libraries\boost</code>)</li>
     </ul>
-    </td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    </td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Node.js -->
     <tr>
         <th class="section" colspan="4"><h3>Node.js</h3></th>
@@ -253,7 +275,7 @@ Below is the list of software pre-installed on Build Worker.
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
-    <tr><td>Maven 3.3.9</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Maven 3.3.9</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Mono -->
     <tr>
         <th class="section" colspan="4"><h3>Mono</h3></th>
@@ -338,6 +360,10 @@ Below is the list of software pre-installed on Build Worker.
         <tr><td>Erlang OTP runtime 17.4 x64 installed into <code>C:\Program Files\erl6.3</code></td>
         <td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     </tr>
+    <tr>
+        <tr><td>Erlang OTP runtime 19.2 x64 installed into <code>C:\Program Files\erl8.2</code></td>
+        <td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    </tr>    
     <!-- LLVM -->
     <tr>
         <th class="section" colspan="4"><h3>LLVM</h3></th>
@@ -467,8 +493,7 @@ Below is the list of software pre-installed on Build Worker.
         <th class="section" colspan="4"><h3>Tools</h3></th>
     </tr>
     <tr><td>7-Zip 16.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft Azure PowerShell - January 2017</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft Azure CLI 0.9.10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.7.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 3.5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -507,20 +532,21 @@ Below is the list of software pre-installed on Build Worker.
     <tr>
         <th class="section" colspan="4"><h3>Databases</h3></th>
     </tr>
-    <tr><td>SQL Server 2008 R2 SP2 Express Edition with Advanced Services (x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>SQL Server 2012 SP1 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>SQL Server 2014 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>SQL Server 2016 Developer</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>PostgreSQL 9.3 x64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>PostgreSQL 9.4 x64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>PostgreSQL 9.5 x64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>MongoDB 3.0.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server 2008 R2 SP2 Express Edition with Advanced Services (x64)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server 2012 SP1 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server 2014 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server 2016 Developer with SP1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 9.3 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>PostgreSQL 9.4 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>PostgreSQL 9.5 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>MongoDB 3.0.4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Services -->
     <tr>
         <th class="section" colspan="4"><h3>Services</h3></th>
-    </tr>    
-    <tr><td>Internet Information Services (IIS) 8.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    </tr>
+    <tr><td>Internet Information Services (IIS) 8.5</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Internet Information Services (IIS) 10</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>MSMQ</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
 </table>
 
