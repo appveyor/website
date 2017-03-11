@@ -283,8 +283,7 @@ module.exports = function(grunt) {
             options: {
                 ignore: [
                     'Consider using the "h1" element as a top-level heading only (all "h1" elements are treated as top-level headings by many screen readers and other tools).',
-                    'Attribute "color" not allowed on element "link" at this point.',
-                    'The element "h3" must not appear as a descendant of the "th" element.'
+                    'Attribute "color" not allowed on element "link" at this point.'
                 ]
             },
             src: [
