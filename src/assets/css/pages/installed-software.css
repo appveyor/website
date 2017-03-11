@@ -1,0 +1,50 @@
+/* software list table */
+
+table.software-list {
+    width: 100%;
+}
+
+table.software-list td.yes {
+    background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGhJREFUeNpiZICBVYwJQDIfiA2gIheAeCJD2P8FIA4jVNF8IJnAgB0sACpOZISaNJ8BPwArPI9kHS5wAaTwPwMRgImBSMAE9R0hcIEJHASEwUSigwfiRiADFARA/ABJwQOwGESOASDAAFNHG+4w8yd3AAAAAElFTkSuQmCC") no-repeat 50% 50% / 10px 10px;
+    width: 5%;
+}
+
+table.software-list td.no {
+    background-color: transparent;
+    width: 5%;
+}
+
+th.rotate {
+  height: 140px;
+  white-space: nowrap;
+}
+
+th.rotate > div {
+  transform:
+    translate(0, 51px)
+    rotate(270deg);
+  width: 30px;
+}
+
+th.rotate > div > span {
+  padding: 0 5px;
+}
+
+th.section {
+    background-color: #eee;
+}
+
+th.section h2,
+th.section h3 {
+    margin: 0;
+    color: #222;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+table.software-list td > ul {
+    margin-bottom: 0;
+    list-style: none;
+    margin-left: 0;
+}
