@@ -5,8 +5,17 @@ table.software-list {
 }
 
 table.software-list td.yes {
-    background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGhJREFUeNpiZICBVYwJQDIfiA2gIheAeCJD2P8FIA4jVNF8IJnAgB0sACpOZISaNJ8BPwArPI9kHS5wAaTwPwMRgImBSMAE9R0hcIEJHASEwUSigwfiRiADFARA/ABJwQOwGESOASDAAFNHG+4w8yd3AAAAAElFTkSuQmCC") no-repeat 50% 50% / 10px 10px;
     width: 5%;
+}
+
+table.software-list td.yes::after {
+    background-color: #00aa01;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
 }
 
 table.software-list td.no {
@@ -15,19 +24,17 @@ table.software-list td.no {
 }
 
 th.rotate {
-  height: 140px;
-  white-space: nowrap;
+    height: 140px;
+    white-space: nowrap;
 }
 
 th.rotate > div {
-  transform:
-    translate(0, 51px)
-    rotate(270deg);
-  width: 30px;
+    transform: translate(0, 51px) rotate(270deg);
+    width: 30px;
 }
 
 th.rotate > div > span {
-  padding: 0 5px;
+    padding: 0 5px;
 }
 
 th.section {
