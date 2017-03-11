@@ -23,35 +23,28 @@ table.software-list td.no {
     width: 5%;
 }
 
-th.rotate {
+table.software-list th.rotate {
     height: 140px;
     white-space: nowrap;
 }
 
-th.rotate > div {
+table.software-list th.rotate > span {
+    display: block;
+    padding: 0 5px;
     transform: translate(0, 51px) rotate(270deg);
     width: 30px;
 }
 
-th.rotate > div > span {
-    padding: 0 5px;
-}
-
-th.section {
+table.software-list th.section {
     background-color: #eee;
-}
-
-th.section h2,
-th.section h3 {
-    margin: 0;
     color: #222;
+    font-family: inherit;
     font-size: 0.875rem;
     font-weight: bold;
-    font-family: inherit;
 }
 
 table.software-list td > ul {
+    list-style-type: none;
     margin-bottom: 0;
-    list-style: none;
     margin-left: 0;
 }
