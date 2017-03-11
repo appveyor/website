@@ -133,6 +133,18 @@ notifications:
 {% endraw %}
 ```
 
+Note that you can use template variables for message recipient. For example, this configuration will send email to failed commit author:
+
+```yaml
+{% raw %}
+notifications:
+  - provider: Email
+  to:
+  - '{{commitAuthorEmail}}'
+  ...
+  on_build_failure: true
+{% endraw %}
+```
 
 
 ## Slack
