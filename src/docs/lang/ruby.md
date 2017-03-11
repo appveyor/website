@@ -14,7 +14,7 @@ title: Testing with Ruby
 ## Installation
 
 Several Ruby versions are already preinstalled
-(see [details](/docs/installed-software#ruby)).
+(see [details](/docs/build-environment/#ruby)).
 We only need to add one of it to a PATH.
 
 ```yaml

@@ -1,10 +1,128 @@
 ---
 layout: docs
-title: Build Worker Installed Software
+title: Build Environment
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
-# Build Worker installed software
+# Build Environment
+{:.no_toc}
+
+* Comment to trigger ToC generation
+{:toc}
+<!-- markdownlint-enable MD022 MD032 -->
+
+Every build runs on a fresh virtual machine which is not shared with other builds and the state of which is not preserved between consequent builds. After the build is finished its virtual machine is decommissioned.
+
+## Build clouds
+
+AppVeyor runs builds on two build clouds:
+
+* Hyper-V
+* Google Compute Engine (GCE)
+
+### Hyper-V
+
+Hyper-V cloud is a primary build cloud hosted in RackSpace's San Antonio, TX data center.
+It is a pool of pre-heated virtual machines, so, generally, builds start faster on Hyper-V cloud.
+
+### Google Compute Engine
+
+Google Compute Engine (GCE) cloud is a secondary build cloud running in Google Cloud "Central US" zone.
+Builds are routed to GCE cloud when they use a custom build worker image not available on Hyper-V cloud.
+GCE cloud is also used as a failover solution for Hyper-V cloud.
+
+It usually takes a build around 3-4 minutes to start on GCE environment as this is the time required to provision and boot up build virtual machine.
+
+### Private build cloud
+
+There might be build scenarios that cannot be covered by AppVeyor build workers. For example, some proprietary software should be pre-installed to support your builds
+or you need more powerful build VMs or private network access.
+
+AppVeyor allows running builds on your own cloud:
+
+* Hyper-V server (on-premise or hosted)
+* Docker server (on-premise or hosted)
+* Azure virtual machines
+* Amazon Web Services (AWS)
+* Google Compute Engine (GCE)
+
+In this scenario AppVeyor service provides UI, orchestration, artifacts storage and NuGet feeds while AppVeyor build agents run on your virtual machines.
+Private build clouds are available to customers with [Premium plan](/pricing/) and can be enabled upon request. Please [let us know](mailto:team@appveyor.com) if you are interested.
+
+## Build VM configurations
+
+<table>
+  <tr>
+    <th>Build cloud / configuration</th>
+    <th>CPU</th>
+    <th>Memory</th>
+  </tr>
+  <tr>
+    <td>Hyper-V</td>
+    <td>2 cores</td>
+    <td>4 GB</td>
+  </tr>
+  <tr>
+    <td>GCE</td>
+    <td>2 cores</td>
+    <td>7.5 GB</td>
+  </tr>
+</table>
+
+## IP addresses
+
+IP addresses assigned to build workers:
+
+    74.205.54.20
+    104.197.110.30
+    104.197.145.181
+    146.148.85.29
+
+IP address of AppVeyor workers (when deploying from "Environments"):
+
+    138.91.141.243
+
+## Build worker images
+
+*Build worker image* is a template used to provision a virtual machine for your build. Physical implementation of the template depends on the build cloud platform
+and can be a master VHD for Hyper-V and Azure, snapshot or image for GCE or AWS.
+
+AppVeyor provides these "standard" build worker images:
+
+* `Visual Studio 2013`
+* `Visual Studio 2015`
+* `Visual Studio 2017`
+
+Below you can find the list of [pre-installed software](#pre-installed-software) for each image.
+
+## Choosing image for your builds
+
+If the build configuration does not specify build worker image then `Visual Studio 2015` image is used.
+
+You can select a different image on AppVeyor UI ("Environment" tab of project settings) or in `appveyor.yml`:
+
+    image: Visual Studio 2017
+
+> Please note that `appveyor.yml` has [precedance over UI settings](/docs/build-configuration/#appveyoryml-and-ui-coexistence),
+> so when `appveyor.yml` exists the image should be specified in YAML, not on UI.
+
+## Image updates
+
+AppVeyor team regularly (once in 2-3 weeks) updates build worker images by installing new or updating existing software.
+
+The history of build worker image updates can be found [here](/updates/).
+
+Before rolling out an image update we perform its extensive testing. However, not all usage scenarios can be covered by our automated tests and
+sometimes even a smallest change in the image can break someone's build. If that happened - no worries - you're covered!
+We provide an access to "last good" versions of build worker images from previous update:
+
+* `Previous Visual Studio 2013`
+* `Previous Visual Studio 2015`
+* `Previous Visual Studio 2017`
+
+You can use those images to unblock your builds while we are working together with you to understand the root cause and do a fix by the next image update.
+
+## Build worker images software
 
 <div class="row">
     <div class="columns medium-4">
@@ -19,12 +137,13 @@ title: Build Worker Installed Software
             <li><a href="#visual-studio-2015">Visual Studio 2015</a></li>
             <li><a href="#visual-studio-2017">Visual Studio 2017</a></li>
             <li><a href="#windows-sdks">Windows SDKs</a></li>
+            <li><a href="#misc-sdks">Misc SDKs</a></li>
             <li><a href="#typescript">TypeScript</a></li>
-            <li><a href="#azure">Azure</a></li>
         </ul>
     </div>
     <div class="columns medium-4">
         <ul>
+            <li><a href="#azure">Azure</a></li>
             <li><a href="#xamarin">Xamarin</a></li>
             <li><a href="#net-framework">.NET Framework</a></li>
             <li><a href="#silverlight">Silverlight</a></li>
@@ -36,11 +155,11 @@ title: Build Worker Installed Software
             <li><a href="#ruby">Ruby</a></li>
             <li><a href="#python">Python</a></li>
             <li><a href="#miniconda">Miniconda</a></li>
-            <li><a href="#perl">Perl</a></li>
         </ul>
     </div>
     <div class="columns medium-4">
         <ul>
+            <li><a href="#perl">Perl</a></li>
             <li><a href="#erlang">Erlang</a></li>
             <li><a href="#llvm">LLVM</a></li>
             <li><a href="#mingw-msys-cygwin">MinGW, MSYS, Cygwin</a></li>
@@ -93,6 +212,9 @@ title: Build Worker Installed Software
             </li>
         </ul>
         </td><td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>docker-compose 1.11.2</td><td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <!-- Version control systems -->
     <tr>
@@ -150,12 +272,11 @@ title: Build Worker Installed Software
     <tr>
         <th class="section" colspan="4"><h3 id="visual-studio-2015">Visual Studio 2015</h3></th>
     </tr>
-    <tr><td>Visual Studio Community 2015 with Update 3</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Universal Windows App Dev Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Community 2015 with Update 3</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Universal Windows App Dev Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Node.js Tools 1.2 for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Visual F# Tools 4.0 RTM</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Visual Studio 2015 Installer Projects</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual F# Tools 4.0 RTM</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>WDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 16.5 (14.0.61021.0) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -170,7 +291,7 @@ title: Build Worker Installed Software
         <th class="section" colspan="4"><h3 id="visual-studio-2017">Visual Studio 2017</h3></th>
     </tr>
     <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <!-- SDKs -->
+    <!-- Windows SDKs -->
     <tr>
         <th class="section" colspan="4"><h3 id="windows-sdks">Windows SDKs</h3></th>
     </tr>
@@ -189,9 +310,14 @@ title: Build Worker Installed Software
     <tr><td>Windows Phone SDK 8.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Windows PowerShell 2.0 SDK</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>DirectX SDK (<code>C:\Program Files (x86)\Microsoft DirectX SDK</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <!-- Misc SDKs -->
+    <tr>
+        <th class="section" colspan="4"><h3 id="misc-sdks">Misc SDKs</h3></th>
+    </tr>
     <tr><td>AWS SDK .NET v3.7.606.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>AWS CLI 1.7.25</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>WiX Toolset 3.10.3.3007</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>WiX Toolset 3.11 RC</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- TypeScript -->
     <tr>
         <th class="section" colspan="4"><h3 id="typescript">TypeScript</h3></th>
@@ -585,9 +711,11 @@ title: Build Worker Installed Software
     <tr><td>SQL Server 2016 Developer with SP1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 9.3 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>PostgreSQL 9.4 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>PostgreSQL 9.5 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>MongoDB 3.0.4</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>PostgreSQL 9.5 x64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MySQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MongoDB 3.2.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Services -->
     <tr>
         <th class="section" colspan="4"><h3 id="services">Services</h3></th>
@@ -596,15 +724,3 @@ title: Build Worker Installed Software
     <tr><td>Internet Information Services (IIS) 10</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>MSMQ</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
 </table>
-
-## Getting the list of installed software
-
-You can use the following PowerShell code to get the full list of software installed on build worker:
-
-```powershell
-$x64items = @(Get-ChildItem "HKLM:SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall")
-$x64items + @(Get-ChildItem "HKLM:SOFTWARE\wow6432node\Microsoft\Windows\CurrentVersion\Uninstall") `
-   | ForEach-object { Get-ItemProperty Microsoft.PowerShell.Core\Registry::$_ } `
-   | Sort-Object -Property DisplayName `
-   | Select-Object -Property DisplayName,DisplayVersion
-```

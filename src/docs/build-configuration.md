@@ -11,44 +11,6 @@ title: Build configuration
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
-
-## Build environment
-
-Every build runs on a fresh virtual machine which is not shared with other builds and the state of which is not preserved between consequent builds. After the build is finished its virtual machine is decommissioned.
-
-### Virtual machine configurations
-
-<table>
-  <tr>
-    <th>Environment/configuration</th>
-    <th>CPU</th>
-    <th>Memory</th>
-  </tr>
-  <tr>
-    <td>Pro, Premium</td>
-    <td>2 cores</td>
-    <td>4 GB or 7.5 GB</td>
-  </tr>
-  <tr>
-    <td>Open-Source (Free)</td>
-    <td>2 cores</td>
-    <td>4 GB</td>
-  </tr>
-</table>
-
-### IP addresses
-
-IP addresses assigned to build workers:
-
-    74.205.54.20
-    104.197.110.30
-    104.197.145.181
-    146.148.85.29
-
-IP address of AppVeyor workers (when deploying using "Environments"):
-
-    138.91.141.243
-
 ## Build pipeline
 
 Every build goes through the following steps:

@@ -165,7 +165,7 @@ deploy:
 
 ### Azure SQL Server firewall settings
 
-To enable database publishing from AppVeyor environment to your Azure SQL database you should modify Azure SQL Server firewall settings and allow **Windows Azure Services** add the [following ranges of allowed IPs](/docs/build-configuration#ip-addresses).
+To enable database publishing from AppVeyor environment to your Azure SQL database you should modify Azure SQL Server firewall settings and allow **Windows Azure Services** add the [following ranges of allowed IPs](/docs/build-environment/#ip-addresses).
 
 ![azure-sql-server-settings](/assets/img/docs/deployment/sql-database/azure-sql-server-settings.png)
 
