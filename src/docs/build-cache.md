@@ -43,6 +43,8 @@ For every cache item AppVeyor calculates checksum and if checksum does not match
 
 AppVeyor uses fastest compression level to minimize I/O and effectively deal with large number of small files. Build cache storage is physically located in the same datacenter as build workers. **Resulting archive should not exceed 100 MB.**
 
+**Note**: Saving cache is disabled in Pull Request builds.
+
 
 ### Cache dependencies
 
