@@ -1,23 +1,23 @@
-/* jshint jquery:true */
+/* eslint-env jquery */
 
 $(function() {
-    "use strict";
+    'use strict';
 
     $(document).foundation();
 
-    var scrollIfAnchor = function (href) {
-        var $fromTop = $(".top-bar").height();
+    function scrollIfAnchor(ref) {
+        var $fromTop = $('.top-bar').height();
 
-        href = typeof href === "string" ? href : $(this).attr("href");
+        var href = typeof ref === 'string' ? ref : $(this).attr('href');
 
-        if (href !== "#" && href.indexOf("#") === 0) {
-            $("html, body").animate({
+        if (href !== '#' && href.indexOf('#') === 0) {
+            $('html, body').animate({
                 scrollTop: $(href).offset().top - $fromTop
             });
         }
-    };
+    }
 
     scrollIfAnchor(window.location.hash);
 
-    $("body").on("click", "a", scrollIfAnchor);
+    $('body').on('click', 'a', scrollIfAnchor);
 });

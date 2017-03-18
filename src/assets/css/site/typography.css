@@ -110,7 +110,8 @@ li ul li {
     font-size: 0.8rem;
 }
 
-.new-feature {
+.new-feature,
+.warning-txt {
     color: red;
     font-weight: 700;
 }

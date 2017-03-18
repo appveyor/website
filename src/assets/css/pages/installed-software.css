@@ -1,0 +1,50 @@
+/* software list table */
+
+table.software-list {
+    width: 100%;
+}
+
+table.software-list td.yes {
+    width: 5%;
+}
+
+table.software-list td.yes::after {
+    background-color: #00aa01;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+}
+
+table.software-list td.no {
+    background-color: transparent;
+    width: 5%;
+}
+
+table.software-list th.rotate {
+    height: 140px;
+    white-space: nowrap;
+}
+
+table.software-list th.rotate > span {
+    display: block;
+    padding: 0 5px;
+    transform: translate(0, 51px) rotate(270deg);
+    width: 30px;
+}
+
+table.software-list th.section {
+    background-color: #eee;
+    color: #222;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+table.software-list td > ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+}

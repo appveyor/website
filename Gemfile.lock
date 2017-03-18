@@ -1,20 +1,12 @@
-GIT
-  remote: https://github.com/octopress/paginate.git
-  revision: 9b3e42f03fe05e19e819a00134b40f63416f736b
-  ref: 9b3e42f
-  specs:
-    octopress-paginate (1.1.2)
-      octopress-hooks
-
 GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     colorator (1.1.0)
-    ffi (1.9.17-x64-mingw32)
+    ffi (1.9.18-x64-mingw32)
     forwardable-extended (2.6.0)
-    jekyll (3.4.0)
+    jekyll (3.4.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -25,7 +17,7 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-feed (0.8.0)
+    jekyll-feed (0.9.1)
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
@@ -43,6 +35,8 @@ GEM
     mercenary (0.3.6)
     octopress-hooks (2.6.2)
       jekyll (>= 2.0)
+    octopress-paginate (1.2.0)
+      octopress-hooks
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -58,10 +52,10 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.4.0)
-  jekyll-feed (~> 0.8.0)
+  jekyll-feed (~> 0.9.1)
   jekyll-seo-tag (~> 2.1.0)
   jekyll-sitemap (~> 1.0.0)
-  octopress-paginate!
+  octopress-paginate (~> 1.2.0)
 
 BUNDLED WITH
-   1.14.3
+   1.14.6

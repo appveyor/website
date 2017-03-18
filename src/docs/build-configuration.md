@@ -11,44 +11,6 @@ title: Build configuration
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
-
-## Build environment
-
-Every build runs on a fresh virtual machine which is not shared with other builds and the state of which is not preserved between consequent builds. After the build is finished its virtual machine is decommissioned.
-
-### Virtual machine configurations
-
-<table>
-  <tr>
-    <th>Environment/configuration</th>
-    <th>CPU</th>
-    <th>Memory</th>
-  </tr>
-  <tr>
-    <td>Pro, Premium</td>
-    <td>2 cores</td>
-    <td>4 GB or 7.5 GB</td>
-  </tr>
-  <tr>
-    <td>Open-Source (Free)</td>
-    <td>2 cores</td>
-    <td>4 GB</td>
-  </tr>
-</table>
-
-### IP addresses
-
-IP addresses assigned to build workers:
-
-    74.205.54.20
-    104.197.110.30
-    104.197.145.181
-    146.148.85.29
-
-IP address of AppVeyor workers (when deploying using "Environments"):
-
-    138.91.141.243
-
 ## Build pipeline
 
 Every build goes through the following steps:
@@ -94,20 +56,35 @@ All plans have 60 minutes quota per build job.
 
 Project builds can be configured by either `appveyor.yml` or on the user interface.
 
+`appveyor.yml` is a project configuration file in YAML format that should be placed in the root of your repository.
+At a minimum `appveyor.yml` is just an empty file.
+
 Each method has pros and cons. Via the User interface one can control every aspect of the build process without ever touching the repository. On the other hand, YAML may seem more sophisticated and familiar for those coming from a Linux platform. Another thing to consider is that when you fork/clone a project with its configuration stored in `appveyor.yml`, you simply add a new project in AppVeyor referencing repo and you are good to go.
+
+### appveyor.yml and UI coexistence
 
 It's worth noticing that both `appveyor.yml` and UI configuration are mutually exclusive.
 It's always either YAML or UI - the settings from each are not merged. If you have `appveyor.yml`
 in your repo it will override all settings made on the UI unless explicitly disabled
-by **Ignore appveyor.yml**. The only exceptions are environment variables and notification settings.
-Environment variables defined on UI are getting merged with those ones defined in `appveyor.yml`.
-Variable values with the same names are getting overridden with values from UI.
+by **Ignore appveyor.yml**. The only exceptions are:
 
+* Environment variables. Variables defined on UI are getting merged with those ones defined in `appveyor.yml`. Variable values with the same names are getting overridden with values from UI.
+* Notification settings
 
-### appveyor.yml
+### YAML file alternative naming
 
-`appveyor.yml` is a project configuration file in YAML format that should be placed in the root of your repository.
-At a minimum `appveyor.yml` is just an empty file.
+AppVeyor supports dot-file-style YAML named `.appveyor.yml` as is. Another custom name like `experimental.yml` is also possible, and can be specified in **Custom configuration .yml file name** setting.
+
+### Alternative YAML file location
+
+It is possible to keep YAML file outside of repository. For that place YAML file **as a plain text** (Content-Type: text/plain) and **anonymously accessible** at some HTTP (or HTTPS) location. If using some web hosting, let file has `.txt` extension for it to get correct content type. However better option is to use [permalink to GitHub gist raw file](https://gist.github.com/dragon788/dadcc5d1d1258b5d0d56), and take advantage of keeping file change history on GitHub.
+After that place URL to YAML file to **Custom configuration .yml file name** setting. Needless to say that [secure variables](#secure-variables) should be used for secrets in YAML file.
+
+### Classic Git repositories and YAML
+
+Classic Git (unlike GitHub or BitBucket) does not allow individual file check in, therefore YAML file in classic Git repository is being ignored. Workaround is to use [Alternative YAML file location](#alternative-yaml-file-location) described above.
+
+### YAML format notes
 
 While working with YAML there are few important points to be aware of:
 
@@ -399,7 +376,7 @@ matrix:
     - <condition>: <value>
 ```
 
-`<condition>` can be `os`, `configuration`, `platform`, `test_category` or the name of environment variable.
+`<condition>` can be `os`, `image`, `configuration`, `platform`, `test_category` or the name of environment variable.
 
 For example, to allow job failing on Node.js 0.11 (TBD - add link to Node.js instructions):
 
