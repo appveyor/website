@@ -23,7 +23,7 @@ deployment.
 * [NuGet hosting](#nuget)
 * [Build matrix](#build-matrix)
 * [Parallel testing](#parallel-testing)
-* [Deployment to multiple environments](#deploying)
+* [Deployment to multiple environments](#deployment)
 * [Build configuration in YAML](#yaml)
 * [Responsive UI](#ui)
 
@@ -79,7 +79,7 @@ Large projects can contain hundreds and thousands of tests that could run for ho
 <div class="clear-both"></div>
 
 
-## Deploying
+## Deployment
 
 <img class="right" src="/assets/img/posts/2014-02-18/deploy.png" alt="Deploy">
 
