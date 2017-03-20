@@ -222,28 +222,36 @@ iex "& $cmd"
 
 ## PostgreSQL
 
-PostgreSQL 9.3 and 9.4 x64 database services are available on AppVeyor build workers.
+PostgreSQL database services are available on AppVeyor build workers.
 
 * Path:
     * `C:\Program Files\PostgreSQL\9.3`
     * `C:\Program Files\PostgreSQL\9.4`
     * `C:\Program Files\PostgreSQL\9.5`
+    * `C:\Program Files\PostgreSQL\9.6`
 * Server name: `127.0.0.1` or `localhost`
 * Server port: `5432`
 * `postgres` account password: `Password12!`
+
+To start PostgreSQL 9.6 in `appveyor.yml`:
+
+```yaml
+services:
+  - postgresql  # or postgresql96
+```
 
 To start PostgreSQL 9.5 in `appveyor.yml`:
 
 ```yaml
 services:
-  - postgresql  # or postgresql95
+  - postgresql95
 ```
 
 To start PostgreSQL 9.4 in `appveyor.yml`:
 
 ```yaml
 services:
-  - postgresql  # or postgresql94
+  - postgresql94
 ```
 
 To start PostgreSQL 9.3 in `appveyor.yml`:
@@ -258,13 +266,13 @@ This is an example how to supply PG credentials to work with command-line tools:
 ```bat
 SET PGUSER=postgres
 SET PGPASSWORD=Password12!
-PATH=C:\Program Files\PostgreSQL\9.4\bin\;%PATH%
+PATH=C:\Program Files\PostgreSQL\9.6\bin\;%PATH%
 createdb YourDatabase
 ```
 
 ## MongoDB
 
-MongoDB 3.0.4 database service is pre-installed on build workers.
+MongoDB database service is pre-installed on build workers.
 
 * Install directory: `C:\mongodb`
 * Config: `C:\mongodb\mongod.cfg`

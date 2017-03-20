@@ -145,6 +145,7 @@ URL parameters:
 * `tag` - if not specified the most recent successful build of *any tag* is fetched.
 * `job` - the name of the job. If a build contains multiple jobs then this parameter is mandatory. Value must be URL-encoded, for example `Configuration%3DRelease`.
 * `all` - lookup for artifact in not only successful builds, but in `successful`, `failed` and `cancelled` ones. Default is `false`.
+* `pr` - include PR builds in the search results. `true` - take artifact from PR builds only, `false` - do not look for artifact in PR builds; otherwise look for artifact in both PR an non-PR builds.
 
 Examples:
 

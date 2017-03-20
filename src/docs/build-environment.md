@@ -4,7 +4,7 @@ title: Build Environment
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
-# Build Environment
+# Build environment
 {:.no_toc}
 
 * Comment to trigger ToC generation
@@ -221,16 +221,16 @@ You can use those images to unblock your builds while we are working together wi
         <th class="section" colspan="4"><h3 id="version-control-systems">Version control systems</h3></th>
     </tr>
     <tr>
-        <td>Git 2.11.0 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.12.0 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage 1.5.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage 2.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Mercurial 4.0.1 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Mercurial 4.1.1 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Subversion 1.8.11 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Subversion 1.8.17 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Visual Studio 2008 -->
     <tr>
@@ -280,7 +280,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>WDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 16.5 (14.0.61021.0) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Azure Service Fabric and Tools 5.3.301.9590 for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure Service Fabric SDK 2.4.164 with Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft .NET Portable Library Reference Assemblies 4.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -288,7 +288,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2017 -->
     <tr>
-        <th class="section" colspan="4"><h3 id="visual-studio-2017">Visual Studio 2017</h3></th>
+        <th class="section" colspan="4"><h3 id="visual-studio-2017">Visual Studio 2017 (15.0.26228.9)</h3></th>
     </tr>
     <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -530,21 +530,21 @@ You can use those images to unblock your builds while we are working together wi
         <th class="section" colspan="4"><h3 id="erlang">Erlang</h3></th>
     </tr>
     <tr>
-        <td>Erlang OTP runtime 17.4 x64 installed into <code>C:\Program Files\erl6.3</code></td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td>
-    </tr>
-    <tr>
-        <td>Erlang OTP runtime 19.2 x64 installed into <code>C:\Program Files\erl8.2</code></td>
-        <td class="no"></td><td class="no"></td><td class="yes"></td>
+        <td>Erlang OTP runtime 19.3 x64 installed into <code>C:\Program Files\erl8.3</code></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- LLVM -->
     <tr>
         <th class="section" colspan="4"><h3 id="llvm">LLVM</h3></th>
     </tr>
     <tr>
-        <td>LLVM 3.9.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</code></td>
+        <td>LLVM 4.0.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
         <td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
+    <tr>
+        <td>LLVM 4.0.0 Compiler Infrastructure libraries (<code>C:\Libraries\llvm-4.0.0</code>)</td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+    </tr>    
     <!-- MinGW, MSYS, Cygwin -->
     <tr>
         <th class="section" colspan="4"><h3 id="mingw-msys-cygwin">MinGW, MSYS, Cygwin</h3></th>
@@ -571,7 +571,8 @@ You can use those images to unblock your builds while we are working together wi
                     MinGW-w64
                     <ul>
                         <li>5.3.0: <code>C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0</code></li>
-                        <li>6.3.0: <code>C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1</code></li>
+                        <li>6.3.0 i686: <code>C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1</code></li>
+                        <li>6.3.0 x86_64: <code>C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1</code></li>
                     </ul>
                 </li>
             </ul>
@@ -677,7 +678,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>OpenSSL 1.0.2j (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>NSIS 3.01 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Coverity Scan 8.7.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Yarn 0.20.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Yarn 0.21.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Test runners -->
     <tr>
         <th class="section" colspan="4"><h3 id="test-runners">Test runners</h3></th>
@@ -692,15 +693,15 @@ You can use those images to unblock your builds while we are working together wi
         <th class="section" colspan="4"><h3 id="web-browsers">Web browsers</h3></th>
     </tr>
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Firefox 51.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 56.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 52.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 57.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
         <th class="section" colspan="4"><h3 id="selenium-testing">Selenium testing</h3></th>
     </tr>
-    <tr><td>Chrome Web Driver 2.27</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Internet Explorer Web Driver 3.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Firefox Web Driver (geckodriver) 0.14.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome Web Driver 2.28</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Internet Explorer Web Driver 3.3.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox Web Driver (geckodriver) 0.15.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th class="section" colspan="4"><h3 id="databases">Databases</h3></th>
@@ -712,6 +713,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>PostgreSQL 9.3 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>PostgreSQL 9.4 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>PostgreSQL 9.5 x64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 9.6 x64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
