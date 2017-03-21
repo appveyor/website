@@ -356,8 +356,18 @@ You can use those images to unblock your builds while we are working together wi
     </tr>
     <tr><td>.NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Framework 4.6.0, 4.6.1, 4.6.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 1.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 1.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 1.0.0 runtime</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core 1.0.1 runtime</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core 1.0.3 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 1.0.4 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 1.1.0 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 1.1.1 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.0.0-preview2-003121</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 1.0.0-preview2-003131</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 1.0.0-preview2-003156</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.0.0-preview2-1-003177</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 1.0.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.0.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th class="section" colspan="4"><h3 id="silverlight">Silverlight</h3></th>
@@ -544,7 +554,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>LLVM 4.0.0 Compiler Infrastructure libraries (<code>C:\Libraries\llvm-4.0.0</code>)</td>
         <td class="yes"></td><td class="yes"></td><td class="no"></td>
-    </tr>    
+    </tr>
     <!-- MinGW, MSYS, Cygwin -->
     <tr>
         <th class="section" colspan="4"><h3 id="mingw-msys-cygwin">MinGW, MSYS, Cygwin</h3></th>
