@@ -87,6 +87,7 @@ In order for Deployment Agent to deploy that artifact as IIS web site **Provider
 ![Artifacts](/assets/img/docs/agent-provider-settings.png)
 
 ## Global settings
+
 There are few settings which have format `<setting_name>` instead of `<artifact_name>.<setting_name>`. Those settings are global and apply to each artifact deployment.
 
 `agents_expected` - Number of remote agents expected to start deployment. Deployment marked as failed if number of agents started deployment is less than expected. Default is 1. Set to 0 to disable this check.
