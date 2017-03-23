@@ -168,3 +168,7 @@ Downloading artifact for last successful build of `1.1` tag:
 Downloading artifact from any successful/failed/cancelled build of any branch:
 
     https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?all=true
+
+Downloading artifact from last successful non-PR build of any branch:
+
+    https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?pr=false
