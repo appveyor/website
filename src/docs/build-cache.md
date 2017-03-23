@@ -170,6 +170,7 @@ Use CURL, Postman, Fiddler, PowerShell or your favorite web debugging tool to ru
 ### REST API
 
 You can skip cache restore or save stages with the following tweak environment variables:
+
 * `APPVEYOR_CACHE_SKIP_RESTORE` - set to `true` to disable cache restore
 * `APPVEYOR_CACHE_SKIP_SAVE` - set to `true` to disable cache update
 
