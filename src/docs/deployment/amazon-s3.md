@@ -15,6 +15,10 @@ Amazon S3 deployment provider copies all or selected artifacts to Amazon S3 stor
 * **Region** (`region`) - AWS region where the bucket is located.
 * **Folder** (`folder`) - name of folder to copy to.
 * **Artifact** (`artifact`) - name of artifact to copy.
+* **Enable public access to published S3 objects** (`set_public`) - Default is `false`.
+* **Enable server-side encryption (AES-256)** (`encrypt`) - Default is `false`.
+* **Use Reduced Redundancy Storage** (`reduced_redundancy`) - Default is `false`.
+* **Retry attempts** (`max_error_retry`) - Number of times provider will retry after a failure. Default is `0`.
 
 Configuring in `appveyor.yml`:
 
