@@ -50,4 +50,4 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_CACHE_ENTRY_UPLOAD_DOWNLOAD_TIMEOUT` - timeout in seconds to download or upload each cache entry. Default is 300 (5 minutes)
 * `APPVEYOR_CACHE_SKIP_RESTORE` - set to `true` to disable cache restore
 * `APPVEYOR_CACHE_SKIP_SAVE` - set to `true` to disable cache update
-* `APPVEYOR_WAP_ARTIFACT_NAME` - custom name for WAP artifact (default is is the same as project name)
+* `APPVEYOR_WAP_ARTIFACT_NAME` - custom name for WAP artifact (default is the same as project name)
