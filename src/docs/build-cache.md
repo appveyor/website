@@ -167,7 +167,7 @@ Use CURL, Postman, Fiddler, PowerShell or your favorite web debugging tool to ru
 
     DELETE https://ci.appveyor.com/api/projects/{accountName}/{projectSlug}/buildcache
 
-### REST API
+### Skipping cache operations for specific build
 
 You can skip cache restore or save stages with the following tweak environment variables:
 
