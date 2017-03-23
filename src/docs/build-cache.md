@@ -166,3 +166,17 @@ Use CURL, Postman, Fiddler, PowerShell or your favorite web debugging tool to ru
 (with [Authorization header](/docs/api/#authentication) of course):
 
     DELETE https://ci.appveyor.com/api/projects/{accountName}/{projectSlug}/buildcache
+
+### REST API
+
+You can skip cache restore or save stages with the following tweak environment variables:
+
+* `APPVEYOR_CACHE_SKIP_RESTORE` - set to `true` to disable cache restore
+* `APPVEYOR_CACHE_SKIP_SAVE` - set to `true` to disable cache update
+
+It can be done conditionally, for example:
+
+```yaml
+init:
+- ps: IF ($env:APPVEYOR_REPO_BRANCH -eq "develop") {$env:APPVEYOR_CACHE_SKIP_SAVE = "true"}
+```
