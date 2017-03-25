@@ -206,8 +206,8 @@ You can use those images to unblock your builds while we are working together wi
             <li>
                 Docker for Windows Containers with base images:
                 <ul>
-                    <li>microsoft/windowsservercore (4d83c32ad497)</li>
-                    <li>microsoft/nanoserver (d9bccb9d4cac)</li>
+                    <li>microsoft/windowsservercore (b4713e4d8bab)</li>
+                    <li>microsoft/nanoserver (18a0d32a4b98)</li>
                 </ul>
             </li>
         </ul>
@@ -221,7 +221,7 @@ You can use those images to unblock your builds while we are working together wi
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.12.0 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.12.1 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Git Large File Storage 2.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -280,7 +280,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>WDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 16.5 (14.0.61021.0) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Azure Service Fabric SDK 2.4.164 with Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure Service Fabric SDK 2.5.216 with Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft .NET Portable Library Reference Assemblies 4.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -340,16 +340,16 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Azure SDK 2.7.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Azure SDK 2.8.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Azure SDK 2.9.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft Azure Storage Emulator 4.6</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Microsoft Azure Storage Emulator 5.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Azure SDK 2.9.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure SDK 3.0</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Azure Storage Emulator</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure PowerShell</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure CLI 0.9.10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Xamarin -->
     <tr>
         <th id="xamarin" class="section" colspan="4">Xamarin</th>
     </tr>
-    <tr><td>Xamarin v4.2.2.11</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Xamarin v4.3.0.784</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Xamarin v4.3.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- .NET Framework -->
     <tr>
         <th id="net-framework" class="section" colspan="4">.NET Framework</th>
@@ -397,9 +397,9 @@ You can use those images to unblock your builds while we are working together wi
         <td>
             <p><code>4.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 7.0.0 - 7.7.1 - use <code>Stable</code> alias for latest <code>7.x</code> release</li>
-                <li>Node.js 6.0.0 - 6.10.0 (x86 and x64) - use <code>LTS</code> alias for latest <code>6.x</code> release</li>
-                <li>Node.js 4.0.0 - 4.8.0 (x86 and x64)</li>
+                <li>Node.js 7.0.0 - 7.7.4 - use <code>Stable</code> alias for latest <code>7.x</code> release</li>
+                <li>Node.js 6.0.0 - 6.10.1 (x86 and x64) - use <code>LTS</code> alias for latest <code>6.x</code> release</li>
+                <li>Node.js 4.0.0 - 4.8.1 (x86 and x64)</li>
                 <li>Node.js 5.0.0 - 5.12.0 (x86 and x64)</li>
                 <li>Node.js 0.10.26 - 0.10.48 (x86 and x64)</li>
                 <li>Node.js 0.11.12 - 0.11.16 (x86 and x64)</li>
@@ -676,6 +676,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <th id="tools" class="section" colspan="4">Tools</th>
     </tr>
+    <tr><td>curl 7.53.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 16.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.7.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
