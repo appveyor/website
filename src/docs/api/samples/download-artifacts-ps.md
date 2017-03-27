@@ -38,5 +38,5 @@ $localArtifactPath = "$downloadLocation\$artifactFileName"
 # -OutFile - is local file name where artifact will be downloaded into
 # the Headers in this call should only contain the bearer token, and no Content-type, otherwise it will fail!
 Invoke-RestMethod -Method Get -Uri "$apiUrl/buildjobs/$jobId/artifacts/$artifactFileName" `
--OutFile $localArtifactPath -Headers @{ "Authorization" = "Bearer $token" }
+-OutFile $localArtifactPath
 ```
