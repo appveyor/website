@@ -188,6 +188,25 @@ This configuration will produce a build with 4 jobs for all combinations of node
 
 You can use Web Deploy to [deploy your Node.js website](/docs/deployment/web-deploy#using-web-deploy-with-a-nodejs-website) to Azure.
 
+## Authenticating NPM for publishing packages
+
+For publishing packages to NPM registry during the build `npm` client should be authenticated.
+On your development machine you run `npm adduser` command to set npm credentials.
+
+On AppVeyor build worker you don't need to run `npm adduser`, but you can just move npm `authToken` from your local machine to a build VM. This is what you have to do:
+
+1. Do `npm adduser` on your local dev machine.
+2. Copy `authToken` value from `%userprofile%\.npmrc` on your local machine.
+3. In AppVeyor, on Environment tab of project settings add a new environment variable with name `npm_auth_token` and the valued copied on step 2. Click "lock" icon to mark the variable as "secure" (so it won't be available for PR builds).
+4. Add to your `appveyor.yml`:
+
+```yaml
+install:
+- ps: '"//registry.npmjs.org/:_authToken=$env:npm_auth_token`n" | out-file "$env:userprofile\.npmrc" -Encoding ASCII'
+- npm whoami
+```
+
+`npm whoami` should display your username.
 
 ## Known issues
 
