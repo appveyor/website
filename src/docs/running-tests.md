@@ -47,7 +47,7 @@ To match all assemblies ending with `.tests.dll`:
 
     **\*.tests.dll
 
-Configuring tests in `appveyor.yml`:
+Configuring tests in `appveyor.yml`(or use **Only assemblies below** and **Only categories below** in UI):
 
 ```yaml
 test:
@@ -64,7 +64,7 @@ test:
       - B
 ```
 
-To run tests from all assemblies and/or categories *except* specified ones:
+To run tests from all assemblies and/or categories *except* specified ones (or use **All except assemblies below** and **All except categories below** in UI):
 
 ```yaml
 test:
@@ -98,7 +98,7 @@ test:
 
 Before and after test scripts:
 
-```
+```yaml
 # run custom scripts before tests
 before_test:
   - script 1
