@@ -51,13 +51,13 @@ Configuring tests in `appveyor.yml`(or use **Only assemblies below** and **Only 
 
 ```yaml
 test:
-  # assemblies to test - optional
+  # only assemblies to test
   assemblies:
     only:
       - test-assembly-A.dll
       - '**\*.tests.dll'
 
-  # categories to test - optional
+  # only categories to test
   categories:
     only:
       - A
@@ -68,13 +68,13 @@ To run tests from all assemblies and/or categories *except* specified ones (or u
 
 ```yaml
 test:
-  # assemblies to test - optional
+  # all except assemblies to test
   assemblies:
     except:
       - test-assembly-A.dll
       - '**\*.tests.dll'
 
-  # categories to test - optional
+  # all except categories to test
   categories:
     except:
       - A
@@ -85,12 +85,12 @@ This syntax will work too and will be treated as *only* (backward compatibility 
 
 ```yaml
 test:
-  # assemblies to test - optional
+  # only assemblies to test
   assemblies:
     - test-assembly-A.dll
     - '**\*.tests.dll'
 
-  # categories to test - optional
+  # only categories to test
   categories:
     - A
     - B
