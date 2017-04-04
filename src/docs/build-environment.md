@@ -221,10 +221,10 @@ You can use those images to unblock your builds while we are working together wi
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.12.1 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.12.2 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage 2.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage 2.0.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Mercurial 4.1.1 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -288,7 +288,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2017 -->
     <tr>
-        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 (15.0.26228.9)</th>
+        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 (15.0.26228.12)</th>
     </tr>
     <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -314,8 +314,8 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <th id="misc-sdks" class="section" colspan="4">Misc SDKs</th>
     </tr>
-    <tr><td>AWS SDK .NET v3.7.606.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>AWS CLI 1.7.25</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>AWS SDK for .NET with AWS Tools for Windows 3.3.69</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.11.68</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>WiX Toolset 3.10.3.3007</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>WiX Toolset 3.11 RC</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- TypeScript -->
@@ -373,8 +373,8 @@ You can use those images to unblock your builds while we are working together wi
         <th id="silverlight" class="section" colspan="4">Silverlight</th>
     </tr>
     <tr><td>Silverlight 5 x64 Developer Runtime</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Microsoft SilverLight 5 SDK</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Microsoft SilverLight 4 SDK</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft SilverLight 5 SDK</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft SilverLight 4 SDK</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Boost -->
     <tr>
         <th id="boost" class="section" colspan="4">Boost</th>
@@ -397,7 +397,7 @@ You can use those images to unblock your builds while we are working together wi
         <td>
             <p><code>4.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 7.0.0 - 7.7.4 - use <code>Stable</code> alias for latest <code>7.x</code> release</li>
+                <li>Node.js 7.0.0 - 7.8.0 - use <code>Stable</code> alias for latest <code>7.x</code> release</li>
                 <li>Node.js 6.0.0 - 6.10.1 (x86 and x64) - use <code>LTS</code> alias for latest <code>6.x</code> release</li>
                 <li>Node.js 4.0.0 - 4.8.1 (x86 and x64)</li>
                 <li>Node.js 5.0.0 - 5.12.0 (x86 and x64)</li>
@@ -719,7 +719,7 @@ You can use those images to unblock your builds while we are working together wi
     </tr>
     <tr><td>SQL Server 2008 R2 SP2 Express Edition with Advanced Services (x64)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server 2012 SP1 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>SQL Server 2014 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server 2014 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>SQL Server 2016 Developer with SP1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 9.3 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>PostgreSQL 9.4 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
