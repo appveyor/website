@@ -83,11 +83,11 @@ test:
 See [appveyor.yml reference](/docs/appveyor-yml/) for complete syntax.
 
 
-## Selecting categories to test
+## Selecting categories and assemblies to test
 
 By default, AppVeyor runs all tests from found assemblies.
 
-You can include or exclude certain test categories from tests run on **Tests** tab of project settings on in `appveyor.yml`.
+You can include or exclude certain test categories and/or assemblies from tests run on **Tests** tab of project settings on in `appveyor.yml`.
 
 To run tests from *only* specified categories:
 
@@ -97,6 +97,16 @@ test:
     only:
       - A
       - B
+```
+
+To run tests from *only* specified assemblies:
+
+```yaml
+test:
+  assemblies:
+    only:
+      - NUnitTestProject.dll
+      - XUnit20TestProject.dll
 ```
 
 To run tests from all categories *except* specified ones:
@@ -109,6 +119,15 @@ test:
       - B
 ```
 
+To run tests from all assemblies *except* specified ones:
+
+```yaml
+test:
+  assemblies:
+    except:
+      - NUnitTestProject.dll
+      - XUnit20TestProject.dll
+```
 
 ### Visual Studio unit tests (C#)
 
