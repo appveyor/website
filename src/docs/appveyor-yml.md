@@ -131,7 +131,7 @@ matrix:
   exclude:
     - platform: x86
       configuration: Debug
-      
+
 # build cache to preserve files/folders between builds
 cache:
   - packages -> **\packages.config  # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
