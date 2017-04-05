@@ -404,6 +404,31 @@ The matrix is already optimized for fast failing. The logic is as follows:
 
 See [complete appveyor.yml reference](/docs/appveyor-yml/) for full syntax.
 
+### Exclude configuration from the matrix
+
+It is possible to exclude configuration from the matrix. Syntax is the same as for `allow_failures` (this feature is also YAML-only and not available in UI currently).
+
+Please consider the following example:
+
+```yaml
+configuration:
+- Debug
+- Release
+
+matrix:
+  - MY_VAR: A
+  - MY_VAR: B
+
+matrix:
+  exclude:
+    - configuration: Debug
+      MY_VAR: B
+```
+
+Here we have 2 matrix dimensions: configurations and variables and each has 2 values. Therefore by default it should be 2X2=4 build jobs. But if combination of `configuration: Debug` and `MY_VAR: B` is not needed, we can exclude it. In comparison with `allow_failures` build will not be even started for this combination.
+
+We still recommend use `allow_failures` for "unstable" cases which should be built but should not affect build results, and use `exclude` for cases where build should be completely skipped.
+
 ## Rolling builds
 
 "Rolling builds" are great for very active OSS projects with lengthy queue. Whenever you do a new commit to the same branch *OR* pull request all current queued/running builds for that branch or PR are cancelled and the new one is queued. Other words, rolling builds make sure that only the most recent commit is built.
