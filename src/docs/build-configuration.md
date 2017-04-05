@@ -406,7 +406,7 @@ See [complete appveyor.yml reference](/docs/appveyor-yml/) for full syntax.
 
 ### Exclude configuration from the matrix
 
-It is possible to exclude configuration from the matrix. Syntax is the same as for `allow_failures` and this is also not available in UI currently.
+It is possible to exclude configuration from the matrix. Syntax is the same as for `allow_failures` (this feature is also YAML-only and not available in UI currently).
 
 Please consider the following example:
 
@@ -425,9 +425,9 @@ matrix:
       MY_VAR: B
 ```
 
-We have 2 matrix dimensions: configuration and variables and each has 2 value. Therefore by default it should be 2X2=4 build jobs. But if combination of `configuration: Debug` and `MY_VAR: B` is not needed, we can exclude it. In comparison with `allow_failures` build will not be even started for this combination.
+Here we have 2 matrix dimensions: configurations and variables and each has 2 values. Therefore by default it should be 2X2=4 build jobs. But if combination of `configuration: Debug` and `MY_VAR: B` is not needed, we can exclude it. In comparison with `allow_failures` build will not be even started for this combination.
 
-We still recommend use `allow_failures` for "unstable" cases which should be built but should not affect build results and use `exclude` for cases where build should be completely skipped.
+We still recommend use `allow_failures` for "unstable" cases which should be built but should not affect build results, and use `exclude` for cases where build should be completely skipped.
 
 ## Rolling builds
 
