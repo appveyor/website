@@ -47,7 +47,7 @@ To match all assemblies ending with `.tests.dll`:
 
     **\*.tests.dll
 
-Configuring tests in `appveyor.yml`(or use **Only assemblies below** and **Only categories below** in UI):
+Configuring *only* specified test assemblies and/or categories in `appveyor.yml`(or use **Only assemblies below** and **Only categories below** in UI):
 
 ```yaml
 test:
