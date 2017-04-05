@@ -226,14 +226,29 @@ build_script:
 #       tests configuration       #
 #---------------------------------#
 
+# to run tests again only selected assemblies and/or categories
 test:
   assemblies:
-    - asm1.dll
-    - asm2.dll
+    only:
+      - asm1.dll
+      - asm2.dll
 
   categories:
-    - UI
-    - E2E
+    only:
+      - UI
+      - E2E
+
+# to run tests again all except selected assemblies and/or categories
+#test:
+#  assemblies:
+#    except:
+#      - asm1.dll
+#      - asm2.dll
+#
+#  categories:
+#    except:
+#      - UI
+#      - E2E
 
 # to run tests from different categories as separate jobs in parallel
 #test:
