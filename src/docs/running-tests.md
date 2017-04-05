@@ -23,11 +23,11 @@ This does not, however, mean you can't run your own favourite testing frameworks
 In most cases you are good to go with the default **Auto** testing mode. This mode tells AppVeyor to recursively search the build folder for test assemblies referencing known frameworks, run tests with corresponding test runners, and push results back to the build console.
 
 
-## Selecting assemblies to test
+## Selecting assemblies and/or categories to test
 
 By default, **Auto** mode scans the entire build folder. For large projects this could be a time-consuming operation.
 
-In the **Test assemblies** box you can specify one of the following:
+In the **Test assemblies** box you can specify one of the following (as **Only assemblies below** or **All except assemblies below**):
 
 1. *Exact* path to an assembly relative to build root folder, for example `myproject\bin\debug\myassembly.dll`.
 2. Assembly file name without a path - this case AppVeyor will perform recursive search of all assemblies with the given name.
@@ -47,20 +47,58 @@ To match all assemblies ending with `.tests.dll`:
 
     **\*.tests.dll
 
-Configuring tests in `appveyor.yml`:
+Configuring *only* specified test assemblies and/or categories in `appveyor.yml`(or use **Only assemblies below** and **Only categories below** in UI):
 
 ```yaml
 test:
-  # assemblies to test - optional
+  # only assemblies to test
+  assemblies:
+    only:
+      - test-assembly-A.dll
+      - '**\*.tests.dll'
+
+  # only categories to test
+  categories:
+    only:
+      - A
+      - B
+```
+
+To run tests from all assemblies and/or categories *except* specified ones (or use **All except assemblies below** and **All except categories below** in UI):
+
+```yaml
+test:
+  # all except assemblies to test
+  assemblies:
+    except:
+      - test-assembly-A.dll
+      - '**\*.tests.dll'
+
+  # all except categories to test
+  categories:
+    except:
+      - A
+      - B
+```
+
+This syntax will work too and will be treated as *only* (backward compatibility with configuration made before *except* functionality was introduced):
+
+```yaml
+test:
+  # only assemblies to test
   assemblies:
     - test-assembly-A.dll
     - '**\*.tests.dll'
 
-  # categories to test - optional
+  # only categories to test
   categories:
     - A
     - B
+```
 
+Before and after test scripts:
+
+```yaml
 # run custom scripts before tests
 before_test:
   - script 1
@@ -83,32 +121,7 @@ test:
 See [appveyor.yml reference](/docs/appveyor-yml/) for complete syntax.
 
 
-## Selecting categories to test
-
-By default, AppVeyor runs all tests from found assemblies.
-
-You can include or exclude certain test categories from tests run on **Tests** tab of project settings on in `appveyor.yml`.
-
-To run tests from *only* specified categories:
-
-```yaml
-test:
-  categories:
-    only:
-      - A
-      - B
-```
-
-To run tests from all categories *except* specified ones:
-
-```yaml
-test:
-  categories:
-    except:
-      - A
-      - B
-```
-
+## Applying category in different test frameworks
 
 ### Visual Studio unit tests (C#)
 
