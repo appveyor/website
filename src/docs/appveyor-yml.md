@@ -126,6 +126,12 @@ matrix:
     - platform: x64
       configuration: Release
 
+# exclude configuration from the matrix. Works similarly to 'allow_failures' but build not even being started for excluded combination.
+matrix:
+  exclude:
+    - platform: x86
+      configuration: Debug
+      
 # build cache to preserve files/folders between builds
 cache:
   - packages -> **\packages.config  # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
