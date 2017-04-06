@@ -15,6 +15,7 @@ Amazon S3 deployment provider copies all or selected artifacts to Amazon S3 stor
 * **Region** (`region`) - AWS region where the bucket is located.
 * **Folder** (`folder`) - name of folder to copy to.
 * **Artifact** (`artifact`) - name of artifact to copy.
+* **Unzip artifacts before uploading to Amazon S3 Storage** (`unzip`) - Default is `false`.
 * **Enable public access to published S3 objects** (`set_public`) - Default is `false`.
 * **Enable server-side encryption (AES-256)** (`encrypt`) - Default is `false`.
 * **Use Reduced Redundancy Storage** (`reduced_redundancy`) - Default is `false`.
@@ -29,6 +30,7 @@ deploy:
   secret_access_key:
   bucket:
   region: eu-west-1
+  unzip: true|false (disabled by default)
   set_public: true|false (disabled by default)
   folder:
   artifact:
