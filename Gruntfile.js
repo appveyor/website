@@ -282,8 +282,7 @@ module.exports = function(grunt) {
         htmllint: {
             options: {
                 ignore: [
-                    'Consider using the "h1" element as a top-level heading only (all "h1" elements are treated as top-level headings by many screen readers and other tools).',
-                    'Attribute "color" not allowed on element "link" at this point.'
+                    'Consider using the "h1" element as a top-level heading only (all "h1" elements are treated as top-level headings by many screen readers and other tools).'
                 ]
             },
             src: [
