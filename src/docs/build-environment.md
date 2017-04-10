@@ -204,7 +204,7 @@ You can use those images to unblock your builds while we are working together wi
         <td>
         <ul>
             <li>
-                Docker for Windows Containers with base images:
+                Docker 17.03.1-ee for Windows Containers with base images:
                 <ul>
                     <li>microsoft/windowsservercore (b4713e4d8bab)</li>
                     <li>microsoft/nanoserver (18a0d32a4b98)</li>
@@ -277,10 +277,9 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Python Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Node.js Tools 1.2 for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Visual F# Tools 4.0 RTM</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft .NET Core 1.0.1 VS 2015 Tooling Preview 2 (14.1.20907.0)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>WDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 16.5 (14.0.61021.0) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Azure Service Fabric SDK 2.5.216 with Tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure Service Fabric SDK 2.5.216</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft .NET Portable Library Reference Assemblies 4.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -288,7 +287,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2017 -->
     <tr>
-        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 (15.0.26228.12)</th>
+        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.1 (26403.00)</th>
     </tr>
     <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -368,6 +367,8 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>.NET Core SDK 1.0.0-preview2-1-003177</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 1.0.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.0.2</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 1.0.4 &amp; 1.1.1 - Windows Server Hosting</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="4">Silverlight</th>
@@ -533,7 +534,7 @@ You can use those images to unblock your builds while we are working together wi
     </tr>
     <tr>
         <td>Perl 5.20.1.2000 x86 (<code>C:\Perl</code> in <code>PATH</code>)</td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Erlang -->
     <tr>
