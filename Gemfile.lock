@@ -23,7 +23,7 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (2.2.0)
       jekyll (~> 3.3)
-    jekyll-sitemap (1.0.0)
+    jekyll-sitemap (1.1.1)
       jekyll (~> 3.3)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
@@ -54,7 +54,7 @@ DEPENDENCIES
   jekyll (~> 3.4.0)
   jekyll-feed (~> 0.9.1)
   jekyll-seo-tag (~> 2.2.0)
-  jekyll-sitemap (~> 1.0.0)
+  jekyll-sitemap (~> 1.1.0)
   octopress-paginate (~> 1.2.0)
 
 BUNDLED WITH
