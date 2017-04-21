@@ -36,9 +36,10 @@ Currently custom build environment feature is not generally available. It is bei
 ### Download and install AppVeyor build agent on agent machine
 
 * [Download location](http://www.appveyor.com/downloads/build-agent/latest/AppveyorBuildAgent.msi)
-    * Accept all default settings during installation    
+    * Accept all default settings during installation
 
 ### Download and install additional software required by build process
+
 * [Setup master VM](/docs/enterprise/setup-master-vm/) documentation is good reference. This documentation was created for cloud environments, and not everything is needed for local agent build process, so feel free to install only what is needed for your specific build scenario. However [Basic configuration](/docs/enterprise/setup-master-vm/#basic-configuration) and [Essential 3rd-party software](/docs/enterprise/setup-master-vm/#essential-3rd-party-software) are required for most of scenarios.
     * Steps named [AppVeyor Build Agent](/docs/enterprise/setup-master-vm/#appveyor-build-agent) and [Tuning for Interactive mode](/docs/enterprise/setup-master-vm/#tuning-for-interactive-mode) are not relevant for local agent scenario.
 
@@ -51,10 +52,10 @@ Currently custom build environment feature is not generally available. It is bei
 
 **Complete the following settings**:
 
-* **Name**: Name for your local process environment. Make it meaningful and short to be able to use in YAML configuration
-* **Host authorization token**: generate host authorization token or enter it manually
-* **Workers capacity**: In local process context this means number of AppVeyor build agents could be spin up in parallel. 
-    * Note that every build agent consumes about at least 15 Mb of memory, with additional overhead which depends on build tool is being used. 
+* **Name**: Name for your local process environment. Make it meaningful and short to be able to use in YAML configuration.
+* **Host authorization token**: generate host authorization token or enter it manually.
+* **Workers capacity**: In local process context this means number of AppVeyor build agents could be spin up in parallel.
+    * Note that every build agent consumes about at least 15 Mb of memory, with additional overhead which depends on build tool is being used.
     * CPU consumption is also can vary depending on specific build tool/scenario
     * Number of parallel build cannot be greater than what is allowed in AppVeyor plan regardless of **Workers capacity** setting.
 * **Project builds directory**: Set folder to be used to clone and run builds on agent machine
