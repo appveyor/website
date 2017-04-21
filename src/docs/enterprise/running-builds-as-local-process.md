@@ -31,7 +31,7 @@ Currently custom build environment feature is not generally available. It is bei
 
 * [Download location](https://www.appveyor.com/downloads/host-agent/latest/AppveyorHostAgent.msi)
 * Installation settings
-    * **Host authorization token**: token generated or manually entered during [Setting up custom cloud and images in AppVeyor](/docs/enterprise/running-builds-on-hyper-v/#setting-up-custom-cloud-and-images-in-appveyor) step
+    * **Host authorization token**: token generated or manually entered during [Setting up custom cloud and images in AppVeyor](/docs/enterprise/running-builds-as-local-process/#setting-up-custom-cloud-and-images-in-appveyor) step
 
 ### Download and install AppVeyor build agent on agent machine
 
