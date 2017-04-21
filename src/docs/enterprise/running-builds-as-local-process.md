@@ -27,19 +27,20 @@ Currently custom build environment feature is not generally available. It is bei
 
 ## Setup agent machine software
 
-* Follow [those steps](/docs/enterprise/setup-master-vm/) to setup software required for build process. It is tested PowerShell scripts which can be simple copy-pasted to PowerShell window (started in privileged mode). Some notes:
-    * We strongly recommend to run everything from [Basic configuration](/docs/enterprise/setup-master-vm/#basic-configuration) and [Essential 3rd-party software](/docs/enterprise/setup-master-vm/#essential-3rd-party-software)
-    * You can skip one of msbuild and VS version or both if you don't need them in [Build framework](/docs/enterprise/setup-master-vm/#build-framework) step
-    * You can skip test framework you do not need in [Test framework](/docs/enterprise/setup-master-vm/#test-framework) step
-    * Steps [AppVeyor Build Agent](/docs/enterprise/setup-master-vm/#appveyor-build-agent) and [Tuning for Interactive mode](/docs/enterprise/setup-master-vm/#tuning-for-interactive-mode) are mandatory
-
-* Install additional software if needed
-
-## Download and install AppVeyor Host agent on agent machine
+### Download and install AppVeyor Host agent on agent machine
 
 * [Download location](https://www.appveyor.com/downloads/host-agent/latest/AppveyorHostAgent.msi)
 * Installation settings
     * **Host authorization token**: token generated or manually entered during [Setting up custom cloud and images in AppVeyor](/docs/enterprise/running-builds-on-hyper-v/#setting-up-custom-cloud-and-images-in-appveyor) step
+
+### Download and install AppVeyor build agent on agent machine
+
+* [Download location](http://www.appveyor.com/downloads/build-agent/latest/AppveyorBuildAgent.msi)
+    * Accept all default settings duing installation    
+
+### Download and install additional software required by build proccess
+* [Setup master VM](/docs/enterprise/setup-master-vm/) documentation is good reference. This documentation was created for cloud environments probably and not everything is needed for local agent build process. Please install what is needed for your scenarious. However [Basic configuration](/docs/enterprise/setup-master-vm/#basic-configuration) and [Essential 3rd-party software](/docs/enterprise/setup-master-vm/#essential-3rd-party-software) required in most of scenarios.
+* Steps named [AppVeyor Build Agent](/docs/enterprise/setup-master-vm/#appveyor-build-agent) and [Tuning for Interactive mode](/docs/enterprise/setup-master-vm/#tuning-for-interactive-mode) are not relevant for local agent scenario.
 
 
 ## Setting up custom cloud and images in AppVeyor
