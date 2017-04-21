@@ -21,7 +21,7 @@ Currently custom build environment feature is not generally available. It is bei
 
 * Windows Server 2012 R2 (Windows 8.1) or higher
 * .NET Framework 4.5.2
-* TODO: mamory and disk space
+* TODO: memory and disk space
 * Internet connectivity
     * Currently we require outbound Internet connectivity at TCP (not HTTP) level (behind router or NAT). We are working on proxy support, please watch [this](https://github.com/appveyor/ci/issues/1303) issue
 
