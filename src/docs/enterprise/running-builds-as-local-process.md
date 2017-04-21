@@ -39,7 +39,7 @@ Currently custom build environment feature is not generally available. It is bei
     * Accept all default settings duing installation    
 
 ### Download and install additional software required by build proccess
-* [Setup master VM](/docs/enterprise/setup-master-vm/) documentation is good reference. This documentation was created for cloud environments probably and not everything is needed for local agent build process. Please install what is needed for your scenarious. However [Basic configuration](/docs/enterprise/setup-master-vm/#basic-configuration) and [Essential 3rd-party software](/docs/enterprise/setup-master-vm/#essential-3rd-party-software) required in most of scenarios.
+* [Setup master VM](/docs/enterprise/setup-master-vm/) documentation is good reference. This documentation was created for cloud environments, and not everything is needed for local agent build process. Please install what is needed for your build scenario. However [Basic configuration](/docs/enterprise/setup-master-vm/#basic-configuration) and [Essential 3rd-party software](/docs/enterprise/setup-master-vm/#essential-3rd-party-software) are required in most of scenarios.
 * Steps named [AppVeyor Build Agent](/docs/enterprise/setup-master-vm/#appveyor-build-agent) and [Tuning for Interactive mode](/docs/enterprise/setup-master-vm/#tuning-for-interactive-mode) are not relevant for local agent scenario.
 
 
