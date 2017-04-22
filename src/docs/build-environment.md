@@ -106,6 +106,31 @@ You can select a different image on AppVeyor UI ("Environment" tab of project se
 > Please note that `appveyor.yml` has [precedance over UI settings](/docs/build-configuration/#appveyoryml-and-ui-coexistence),
 > so when `appveyor.yml` exists the image should be specified in YAML, not on UI.
 
+## Using multiple images for the same build
+
+`image` is first class dimension for [build matrix](docs/build-configuration/#build-matrix), therefore the following YAML configuration will work:
+
+```yaml
+image:
+- Visual Studio 2015
+- Visual Studio 2017
+environment:
+  matrix:
+    - MY_VAR: value1
+    - MY_VAR: value2
+```
+
+Also for mor some combinations it makes sense to use `APPVEYOR_BUILD_WORKER_IMAGE` "tweak" environment variable, so this configuration will also work:
+
+```yaml
+environment:
+  matrix:    
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      MY_VAR: value1
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      MY_VAR: value2
+```
+
 ## Image updates
 
 AppVeyor team regularly (once in 2-3 weeks) updates build worker images by installing new or updating existing software.
