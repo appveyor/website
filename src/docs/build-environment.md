@@ -108,7 +108,7 @@ You can select a different image on AppVeyor UI ("Environment" tab of project se
 
 ## Using multiple images for the same build
 
-`image` is first class dimension for [build matrix](docs/build-configuration/#build-matrix), therefore the following YAML configuration will work (and will create 4 build jobs):
+`image` is first class dimension for [build matrix](/docs/build-configuration/#build-matrix), therefore the following YAML configuration will work (and will create 4 build jobs):
 
 ```yaml
 image:
