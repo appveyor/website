@@ -18,7 +18,7 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_BUILD_ID` - AppVeyor unique build ID
 * `APPVEYOR_BUILD_NUMBER` - build number
 * `APPVEYOR_BUILD_VERSION` - build version
-* `APPVEYOR_BUILD_WORKER_IMAGE` - current build worker image the build is running on, e.g. `Visual Studio 2015`
+* `APPVEYOR_BUILD_WORKER_IMAGE` - current build worker image the build is running on, e.g. `Visual Studio 2015` (also can be used as "tweak" environment variable to set build worker image)
 * `APPVEYOR_PULL_REQUEST_NUMBER` - GitHub Pull Request number
 * `APPVEYOR_PULL_REQUEST_TITLE` - GitHub Pull Request title
 * `APPVEYOR_JOB_ID` - AppVeyor unique job ID
@@ -51,3 +51,4 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_CACHE_SKIP_RESTORE` - set to `true` to disable cache restore
 * `APPVEYOR_CACHE_SKIP_SAVE` - set to `true` to disable cache update
 * `APPVEYOR_WAP_ARTIFACT_NAME` - custom name for WAP artifact (default is the same as project name)
+* `APPVEYOR_BUILD_WORKER_IMAGE` - set build worker image for build to run on. Can be done only at build configuration level, not at build time
