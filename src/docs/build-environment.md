@@ -108,7 +108,7 @@ You can select a different image on AppVeyor UI ("Environment" tab of project se
 
 ## Using multiple images for the same build
 
-`image` is first class dimension for [build matrix](docs/build-configuration/#build-matrix), therefore the following YAML configuration will work:
+`image` is first class dimension for [build matrix](docs/build-configuration/#build-matrix), therefore the following YAML configuration will work (and will create 4 build jobs):
 
 ```yaml
 image:
@@ -120,11 +120,11 @@ environment:
     - MY_VAR: value2
 ```
 
-Also for mor some combinations it makes sense to use `APPVEYOR_BUILD_WORKER_IMAGE` "tweak" environment variable, so this configuration will also work:
+Also for some combinations it makes sense to use `APPVEYOR_BUILD_WORKER_IMAGE` "tweak" environment variable, so this configuration will also work (and will create 2 build jobs):
 
 ```yaml
 environment:
-  matrix:    
+  matrix:
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       MY_VAR: value1
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
