@@ -51,4 +51,4 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_CACHE_SKIP_RESTORE` - set to `true` to disable cache restore
 * `APPVEYOR_CACHE_SKIP_SAVE` - set to `true` to disable cache update
 * `APPVEYOR_WAP_ARTIFACT_NAME` - custom name for WAP artifact (default is the same as project name)
-* `APPVEYOR_BUILD_WORKER_IMAGE` - set build worker image for build to run on. Can be done only at build configuration level not at build time
+* `APPVEYOR_BUILD_WORKER_IMAGE` - set build worker image for build to run on. Can be done only at build configuration level, not at build time
