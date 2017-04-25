@@ -231,8 +231,8 @@ You can use those images to unblock your builds while we are working together wi
             <li>
                 Docker 17.03.1-ee for Windows Containers with base images:
                 <ul>
-                    <li>microsoft/windowsservercore (b4713e4d8bab)</li>
-                    <li>microsoft/nanoserver (18a0d32a4b98)</li>
+                    <li>microsoft/windowsservercore (590c0c2590e4)</li>
+                    <li>microsoft/nanoserver (a943c29f0046)</li>
                 </ul>
             </li>
         </ul>
@@ -246,7 +246,7 @@ You can use those images to unblock your builds while we are working together wi
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.12.2 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.12.2(2) (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Git Large File Storage 2.0.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -393,6 +393,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>.NET Core SDK 1.0.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 1.0.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 1.0.2</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.0.3</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 1.0.4 &amp; 1.1.1 - Windows Server Hosting</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
@@ -423,9 +424,9 @@ You can use those images to unblock your builds while we are working together wi
         <td>
             <p><code>4.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 7.0.0 - 7.8.0 - use <code>Stable</code> alias for latest <code>7.x</code> release</li>
-                <li>Node.js 6.0.0 - 6.10.1 (x86 and x64) - use <code>LTS</code> alias for latest <code>6.x</code> release</li>
-                <li>Node.js 4.0.0 - 4.8.1 (x86 and x64)</li>
+                <li>Node.js 7.0.0 - 7.9.0 - use <code>Stable</code> alias for latest <code>7.x</code> release</li>
+                <li>Node.js 6.0.0 - 6.10.2 (x86 and x64) - use <code>LTS</code> alias for latest <code>6.x</code> release</li>
+                <li>Node.js 4.0.0 - 4.8.2 (x86 and x64)</li>
                 <li>Node.js 5.0.0 - 5.12.0 (x86 and x64)</li>
                 <li>Node.js 0.10.26 - 0.10.48 (x86 and x64)</li>
                 <li>Node.js 0.11.12 - 0.11.16 (x86 and x64)</li>
@@ -527,8 +528,8 @@ You can use those images to unblock your builds while we are working together wi
                 <li>Python 3.4.4 x64 (<code>C:\Python34-x64</code>)</li>
                 <li>Python 3.5.3 x86 (<code>C:\Python35</code>)</li>
                 <li>Python 3.5.3 x64 (<code>C:\Python35-x64</code>)</li>
-                <li>Python 3.6.0 x86 (<code>C:\Python36</code>)</li>
-                <li>Python 3.6.0 x64 (<code>C:\Python36-x64</code>)</li>
+                <li>Python 3.6.1 x86 (<code>C:\Python36</code>)</li>
+                <li>Python 3.6.1 x64 (<code>C:\Python36-x64</code>)</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -705,15 +706,17 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>curl 7.53.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 16.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.7.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.8.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>NuGet 3.5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>NuGet 3.5.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>NuGet 4.0.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Chocolatey v0.10.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GitVersion 3.6.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.0.2j (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.0.2j (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>NSIS 3.01 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>NSIS 3.01 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>InnoSetup 5.5.9 (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Coverity Scan 8.7.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Yarn 0.21.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Test runners -->
