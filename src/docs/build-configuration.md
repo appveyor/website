@@ -50,6 +50,10 @@ Every build goes through the following steps:
 15. **Finalize** both successful and failed builds:
     * Call `on_finish` scripts
 
+Note that you can forcibly terminate build (with **success**) from script witn `appveyor exit` `cmd` command or `Exit-AppVeyorBuild` `PS` command. This can be done from any script **except Finalize** ones (`on_success`, `on_failure` and `on_finish`).
+
+If you need to can forcibly terminate build with **failure** you can run any command with non-zero exit code, for example `exit 1` `cmd` command or `throw` `PS` command.
+
 ### Time limitations
 
 All plans have 60 minutes quota per build job.
