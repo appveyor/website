@@ -19,7 +19,7 @@ API URL is stored in `APPVEYOR_API_URL` environment variable and it is `localhos
 * [Push artifact](#push-artifact)
 * [Update build details](#update-build-details)
 * [Start new build](#start-new-build)
-
+* [Forcibly terminate current build with success](#forcibly-terminate-current-build-with-success)
 
 ## Add message
 
@@ -452,7 +452,7 @@ Options are similar to PowerShell cmdlet parameters. The only exception is `-Env
 ## Forcibly terminate current build with success
 
 * Do not actually use build Worker API, but use the same command line and PowerShell snap-in.
-* Can be called from any script **except Finalize** ones (`on_success`, `on_failure` and `on_finish`).
+* Can be called from any script *except* **Finalize** scripts (`on_success`, `on_failure` and `on_finish`).
 
 ### PowerShell
 
@@ -462,4 +462,4 @@ Options are similar to PowerShell cmdlet parameters. The only exception is `-Env
 
     appveyor exit
 
-Note that by default **Finalize** steps (`on_success`, `on_finish` scripts and build cache save) are being called even if build is forcibly terminated with commands above. To skip **Finalize** steps after build was forcible terminated, set "tweak" environment variable `APPVEYOR_SKIP_FINALIZE_ON_EXIT` to true.
+Note that by default successfull **Finalize** steps (`on_success`, `on_finish` scripts and build cache save) are being called even if build is forcibly terminated with commands above. To skip **Finalize** steps after build was forcible terminated, set "tweak" environment variable `APPVEYOR_SKIP_FINALIZE_ON_EXIT` to true.
