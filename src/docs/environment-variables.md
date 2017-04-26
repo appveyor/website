@@ -52,3 +52,5 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_CACHE_SKIP_SAVE` - set to `true` to disable cache update
 * `APPVEYOR_WAP_ARTIFACT_NAME` - custom name for WAP artifact (default is the same as project name)
 * `APPVEYOR_BUILD_WORKER_IMAGE` - set build worker image for build to run on. Can be done only at build configuration level, not at build time
+* `APPVEYOR_SKIP_FINALIZE_ON_EXIT` - if `appveyor exit` or `Exit-AppVeyor` build was called, exit build even without **Finalize** steps (`on_success`, `on_finish` scripts and build cache save)
+* `APPVEYOR_SAVE_CACHE_ON_ERROR` - save build cache on build failure. By default build cache is being saved only during successful build **Finalize** steps
