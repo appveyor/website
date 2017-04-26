@@ -92,7 +92,7 @@ There are few settings which have format `<setting_name>` instead of `<artifact_
 
 `agents_expected` - Number of remote agents expected to start deployment. Deployment marked as failed if number of agents started deployment is less than expected. Default is 1. Set to 0 to disable this check.
 
-`agents_timeout` - Time in seconds to wait for remote agents to start deployment. Default (and minimum) is 10 seconds. Maximum is 60 seconds. Increase in case default value of 10 seconds appears to be not enough.
+`agents_timeout` - Time in seconds to wait for remote agents to start deployment. Default is 10 seconds. Minimum is 5 seconds. Maximum is 60 seconds. Increase in case default value of 10 seconds appears to be not enough. Decrease if observe agents always pick up job much faster.
 
 ## Overriding settings while deploying from build
 
