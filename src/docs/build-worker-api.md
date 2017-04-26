@@ -462,4 +462,4 @@ Options are similar to PowerShell cmdlet parameters. The only exception is `-Env
 
     appveyor exit
 
-Note that by default successfull **Finalize** steps (`on_success`, `on_finish` scripts and build cache save) are being called even if build is forcibly terminated with commands above. To skip **Finalize** steps after build was forcible terminated, set "tweak" environment variable `APPVEYOR_SKIP_FINALIZE_ON_EXIT` to true.
+Note that by default successful **Finalize** steps (`on_success`, `on_finish` scripts and build cache save) are being called even if build is forcibly terminated with commands above. To skip **Finalize** steps after build was forcibly terminated, set "tweak" environment variable `APPVEYOR_SKIP_FINALIZE_ON_EXIT` to true.
