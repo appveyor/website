@@ -448,3 +448,16 @@ We recommend placing `ApiKey` value to environment variable (either General tab 
 Options are similar to PowerShell cmdlet parameters. The only exception is `-EnvironmentVariables` that should have the following format:
 
     var1=value1,var2=value2, ...
+
+## Forcibly terminate current build with success
+
+* Do not actually use build Worker API, but use the same command line and PowerShell snap-in.
+* Can be called from any script **except Finalize** ones (`on_success`, `on_failure` and `on_finish`).
+
+### PowerShell
+
+    Exit-AppveyorBuild
+
+### Command line
+
+    appveyor exit
