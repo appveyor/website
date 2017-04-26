@@ -19,33 +19,40 @@ Every build goes through the following steps:
 2. **Clone** repository into clone folder
     * Checkout build commit
     * `cd` to clone folder
-3. Run `install` scripts
-4. Patch `AssemblyInfo` files
-5. Modify `hosts` files
-6. Start services
-7. **Build**
+3. Restore build cache
+4. Run `install` scripts
+5. Patch `AssemblyInfo` files
+6. Modify `hosts` files
+7. Start services
+8. **Build**
     * Run `before_build` scripts
     * Run msbuild
     * Run `after_build` scripts
-8. **Test**
+9. **Test**
     * Run `before_test` scripts
     * Discover and run tests
     * Run `after_test` scripts
-9. Call `build_success` webhooks
-10. **Package** artifacts
-11. **Deployment**
+10. Call `build_success` webhooks
+11. **Package** artifacts
+12. **Deployment**
     * Run `before_deploy` scripts
     * Run all configured deployments
     * Run `after_deploy` scripts
-12. For successful builds:
+13. **Finalize** successful builds:
     * Call `deployment_success` webhooks
     * Run `on_success` scripts
-13. For failed builds:
+    * Save build cache
+14. **Finalize** failed builds:
     * Call `build_failure` webhooks
+    * Optionally save build cache
     * Call `deployment_failure` webhooks
     * Run `on_failure` scripts
-14. For both successful and failed builds:
+15. **Finalize** both successful and failed builds:
     * Call `on_finish` scripts
+
+Note that you can forcibly terminate build with **success** from script witn `appveyor exit` `cmd` command or `Exit-AppVeyorBuild` `PS` command. This can be done from any script **except Finalize** ones (`on_success`, `on_failure` and `on_finish`).
+
+If you need to can forcibly terminate build with **failure** you can run any command with non-zero exit code, for example `exit 1` `cmd` command or `throw` `PS` command.
 
 ### Time limitations
 

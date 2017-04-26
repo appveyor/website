@@ -180,3 +180,7 @@ It can be done conditionally, for example:
 init:
 - ps: IF ($env:APPVEYOR_REPO_BRANCH -eq "develop") {$env:APPVEYOR_CACHE_SKIP_SAVE = "true"}
 ```
+
+### Saving cache for failed build
+
+By default build cache is being saved only for successsful build. If it should be saved for failed builds too, set `APPVEYOR_SAVE_CACHE_ON_ERROR` to `true`.
