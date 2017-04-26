@@ -44,7 +44,7 @@ some find [examples](https://github.com/atifaziz/NCrontabwiki/CrontabExamples), 
 ## Provider settings
 
 * **Azure website name** (`website`) - Azure website name without `.azurewebsite.net`, e.g. `mywebsite`.
-* **App Service Environment** (`appservice_environment`) - Azure website is deployed to Azure AppService environment.
+* **App Service Environment** (`appservice_environment`) - Optional. Azure website is deployed to Azure AppService environment.
 * **App Service Environment Name** (`appservice_environment_name`) - Available if **App Service Environment** is checked. AppService environment website default URL part, located before `p.azurewebsites.net`.
 * **Web Deploy username** (`username`) - Web Deploy username.
 * **Web Deploy password** (`password`) - Web Deploy password.
