@@ -96,7 +96,7 @@ Example:
 
 ## Curl
 
-[Curl](https://curl.haxx.se) (`curl.exe`) comes bundled with [Git](https://git-scm.com) and is therefore also available on the build workers.  Users on Unix-like operating systems may be more familiar with this command.
+[Curl](https://curl.haxx.se) (`curl.exe`) has already been added to `PATH` on build workers. Users on Unix-like operating systems may be more familiar with this command.
 
 Command syntax:
 
