@@ -68,10 +68,6 @@ Issue submission guidelines:
 
 You can use `appveyor` tag to [submit your question on StackOverflow](https://stackoverflow.com/tags/appveyor/info).
 
-## Skype
-
-[Contact us](mailto:team@appveyor.com) to arrange a chat via Skype.
-
 ## FAQ
 
 ### What are support hours?
@@ -84,4 +80,3 @@ We aim to respond on any email inquiry or forum post in 24 hours, but, usually, 
 * Faster response time. With priority support you get initial response within few hours or even minutes (during working hours - Mon-Fri 9am-5pm PST).
 * Priority in fixing bugs or implementing new features - requests from Premium customers are always first in line.
 * Help with setting up your projects in AppVeyor. We’ll work together with your team to help establishing CI process for your projects.
-* Chat/Skype support.
