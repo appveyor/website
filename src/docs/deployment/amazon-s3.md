@@ -14,7 +14,7 @@ Amazon S3 deployment provider copies all or selected artifacts to Amazon S3 stor
 * **Bucket name** (`bucket`) - the name of bucket to copy artifacts to.
 * **Region** (`region`) - AWS region where the bucket is located.
 * **Folder** (`folder`) - name of folder to copy to.
-* **Artifact** (`artifact`) - name of artifact to copy.
+* **Artifact** (`artifact`) - name of artifact(s) to copy. If more than one, separate with commas (,).
 * **Unzip artifacts before uploading to Amazon S3 Storage** (`unzip`) - Default is `false`.
 * **Enable public access to published S3 objects** (`set_public`) - Default is `false`.
 * **Enable server-side encryption (AES-256)** (`encrypt`) - Default is `false`.
