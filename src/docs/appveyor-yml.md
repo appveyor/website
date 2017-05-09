@@ -137,7 +137,8 @@ cache:
   - packages -> **\packages.config  # preserve "packages" directory in the root of build folder but will reset it if packages.config is modified
   - projectA\libs
   - node_modules                    # local npm modules
-  - '%LocalAppData%\NuGet\Cache'
+  - '%LocalAppData%\NuGet\Cache'    # NuGet < v3
+  - '%LocalAppData%\NuGet\v3-cache  # NuGet v3
 
 # enable service required for build/tests
 services:
