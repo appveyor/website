@@ -15,26 +15,34 @@ title: Running builds on Google Cloud Engine
 
 Currently custom build environment feature is not generally available. It is being enabled for specific accounts per request. Please send an email to [team@appveyor.com](mailto:team@appveyor.com) if you decide to try this feature.
 
-## Prepare host machine
+## Set up credentials
 
-### Minimum requirements:
+### Create account and download certificate
 
-* Windows Server 2012 R2 (Windows 8.1) or higher
-* .NET Framework 4.5.2
-* Hyper-V role installed
-* Enough free memory and disk space to run guest VMs
-* Internet connectivity
-    * Currently we require outbound Internet connectivity at TCP (not HTTP) level (behind router or NAT). We are working on proxy support, please watch [this](https://github.com/appveyor/ci/issues/1303) issue
+* Open Google Cloud COnsole and navigate to **IAM & Admin**
+* Select **Service accounts** and press **Create service account**
+    * Set descriptive **Service account name**, for example **Appveyor CI**
+        * **Service account ID** will be automatically regenerated, leave it as is
+    * Select **Project > Editor** in **Role** menu
+    * Check **Furnish a new private key**
+        * Select **P12**
+    * Press **CREATE**
+    * Close **Service account created** window.
+    * Certificate in P12 format should be saved to local computer
+        * Remember it's location and optionally re-save certificate in some secure place
 
-### Create Virtual Switch
+### Step 2
 
-If Hyper-V host already has **Virtual Switch** of type **External**, which uses Hyper-V Server NIC with access to the Internet, and it is OK to use it for build VMs, please go to [Create Master VM](/docs/enterprise/running-builds-on-hyper-v/#create-master-vm) step
+    * Convert certificate downloaded in previous step to Base64 string with the folloing PowerShell commands:
+    
+    ```
+    $bytes = [System.IO.File]::ReadAllBytes("<path-to-P12-file>")
+    $base64Str = [System.Convert]::ToBase64String($bytes)
+    [System.IO.File]::WriteAllText("<path-to-result-TXT-file>", $base64Str)
 
-* In **Hyper-V manager** navigate to **Virtual Switch Manager** on right top panel
-* In **Virtual Switch Manager** select **External** and press **Create Virtual Switch**
-* In **External network** drop-down select NIC which has Internet access
-* Enter custom name in the **Name** field
-
+    ```
+    * Remember location of result TXT file. 
+    
 ## Create Master VM
 
 * Create new VM in Hyper-V
