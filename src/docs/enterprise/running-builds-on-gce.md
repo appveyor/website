@@ -19,7 +19,7 @@ Currently custom build environment feature is not generally available. It is bei
 
 ### Create account and download certificate
 
-* Open Google Cloud COnsole and navigate to **IAM & Admin**
+* Open Google Cloud Console and navigate to **IAM & Admin**
 * Select **Service accounts** and press **Create service account**
     * Set descriptive **Service account name**, for example **Appveyor CI**
         * **Service account ID** will be automatically regenerated, leave it as is
@@ -27,21 +27,21 @@ Currently custom build environment feature is not generally available. It is bei
     * Check **Furnish a new private key**
         * Select **P12**
     * Press **CREATE**
-    * Close **Service account created** window.
+    * Close **Service account created** window. 
     * Certificate in P12 format should be saved to local computer
         * Remember it's location and optionally re-save certificate in some secure place
 
-### Step 2
+### Convert certificate to Base64 string
 
-    * Convert certificate downloaded in previous step to Base64 string with the folloing PowerShell commands:
+* Rune folloing PowerShell commands:
     
-    ```
-    $bytes = [System.IO.File]::ReadAllBytes("<path-to-P12-file>")
-    $base64Str = [System.Convert]::ToBase64String($bytes)
-    [System.IO.File]::WriteAllText("<path-to-result-TXT-file>", $base64Str)
+```
+$bytes = [System.IO.File]::ReadAllBytes("<path-to-P12-file>")
+$base64Str = [System.Convert]::ToBase64String($bytes)
+[System.IO.File]::WriteAllText("<path-to-result-TXT-file>", $base64Str)
+```
 
-    ```
-    * Remember location of result TXT file. 
+* Remember location of the result TXT file. 
     
 ## Create Master VM
 
