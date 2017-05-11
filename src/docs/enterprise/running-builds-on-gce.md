@@ -73,9 +73,12 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
 
 ## Prepare master VHD
 
+* Optionally restart Master VM to ensure AppVeyor build agent is started on automatically iteractively
 * Shutdown Master VM
-* Open **Virtual Hard Disks** folder (it can be found in Hyper-V settings, usually `C:\Users\Public\Documents\Hyper-V\Virtual Hard Disks`) and copy it to the folder AppVeyor will read it from, for example `C:\VHDs`
-    * Alternatively original `.vhdx` file of Master VM can be used by AppVeyor. This is OK if Master VM is stopped and only one Hyper-V server if used. In case of many Hyper-V servers, Master VM `.vhdx` should be copied across all Hyper-V servers
+* In **Compute engine** menu select **Snapshots** and press **Create snapshot**
+    * Set descriptive **Name**, for example **build-vm-2017-05-09**. It is handy to include date to manage build images versions
+    * Select Master VM created before as a **Source disk**
+    * Press **CREATE** 
 
 ## Setting up custom cloud and images in AppVeyor
 
