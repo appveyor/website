@@ -1,10 +1,10 @@
 ---
 layout: docs
-title: Running builds on Google Cloud Engine
+title: Running builds on Google Compute Engine
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
-# Running builds on Google Cloud Engine
+# Running builds on Google Compute Engine
 {:.no_toc}
 
 * Comment to trigger ToC generation
@@ -14,6 +14,10 @@ title: Running builds on Google Cloud Engine
 ## Enable custom build environment
 
 Currently custom build environment feature is not generally available. It is being enabled for specific accounts per request. Please send an email to [team@appveyor.com](mailto:team@appveyor.com) if you decide to try this feature.
+
+## Select or create Google Cloud Platform project
+
+* Open Google Cloud Platform menu and select existing or create new project to use for AppVeyor build environment
 
 ## Set up credentials
 
@@ -92,15 +96,15 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
 * **Name**: Name for your private build cloud. Make it meaningful and short to be able to use in YAML configuration
 * **Google account**
     * **Service account email**: email address associalted with your Google Cloud account
-    * **Service account certificate (Base64)**: content of the file created in [Convert certificate to Base64 string](/docs/enterprise/gce-private-cloud-doc/#appveyor-build-agen) step
-    * **CPU cores**: 
+    * **Service account certificate (Base64)**: content of the file created in [Convert certificate to Base64 string](/docs/enterprise/running-builds-on-gce#convert-certificate-to-base64-string) step
+    * **Project name**: ID of Google Cloud Platform project selected or created in the beginning
 * Virtual machine configuration
-    * **CPU cores**: number of virtual CPU cores per VM. We do not have specific requirements, but do not advice overcommit too much. For example, if host machine has 4 logical CPU cores and you will run 2 builds in parallel, it makes sense to assign 2 cores per machine.
-    * **RAM, MB**: amount of Virtual machine RAM. Please use amount of free memory on Hyper-V Server and number of parallel builds to calculate.
-    * **Virtual machines location**: folder where virtual machines will be created
+    * **Zone name**: 
+    * **Machine type (size)**: 
+<!---    * **Tags**:
 * Networking
-    * **Virtual switch name**: Name of virtual switch created during [Create Virtual Switch](/docs/enterprise/running-builds-on-hyper-v/#create-virtual-switch) step (or existing virtual switch)
-    * **Use DHCP** checkbox. If subnet connected with Virtual Network switch NIC has DHCP server in it (most common case), leave this checkbox as is. Otherwise uncheck it and set how IP addresses will be assigned
+    * **Network name**:
+        * Select **Assign external IP address** if VMs need to be accessible from outside--->
 * Images
     * **IMAGE NAME**: Image name as you want to see it in AppVeyor UI and YAML, for example **VS2013 with WMF3**
     * **VHD PATH**: Path to master VHD on Hyper-V server selected in step [Prepare master VHD](/docs/enterprise/running-builds-on-hyper-v/#prepare-master-vhd)
