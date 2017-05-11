@@ -26,7 +26,7 @@ Currently custom build environment feature is not generally available. It is bei
 * Open Google Cloud Platform menu navigate to **IAM & Admin**
 * Select **Service accounts** and press **Create service account**
     * Set descriptive **Service account name**, for example **Appveyor CI**
-        * **Service account ID** will be automatically regenerated, leave it as is
+        * **Service account ID** will be automatically regenerated, write it down to use later in AppVeyor settings
     * Select **Project > Editor** in **Role** menu
     * Check **Furnish a new private key**
         * Select **P12**
