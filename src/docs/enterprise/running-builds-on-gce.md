@@ -68,7 +68,7 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
     * You can skip one of msbuild and VS version or both if you don't need them in [Build framework](/docs/enterprise/setup-master-vm/#build-framework) step
     * You can skip test framework you do not need in [Test framework](/docs/enterprise/setup-master-vm/#test-framework) step
     * Steps [AppVeyor Build Agent](/docs/enterprise/setup-master-vm/#appveyor-build-agent) and [Tuning for Interactive mode](/docs/enterprise/setup-master-vm/#tuning-for-interactive-mode) are mandatory
-    * **Important note: ** in Build Agent installation script set `APPVEYOR_MODE` to `GCE`. Alternatively set `HKEY_LOCAL_MACHINE\SOFTWARE\AppVeyor\Build Agent\Mode` to `GCE` in registry. 
+    * **Important note:** in Build Agent installation script set `APPVEYOR_MODE` to `GCE`. Alternatively set `HKEY_LOCAL_MACHINE\SOFTWARE\AppVeyor\Build Agent\Mode` to `GCE` in registry. 
 * Install additional software if needed
 
 ## Prepare master VHD
