@@ -40,7 +40,7 @@ Currently custom build environment feature is not generally available. It is bei
 
 * Run the following PowerShell commands:
 
-```
+```posh
 $bytes = [System.IO.File]::ReadAllBytes("<path-to-P12-file>")
 $base64Str = [System.Convert]::ToBase64String($bytes)
 [System.IO.File]::WriteAllText("<path-to-result-TXT-file>", $base64Str)
@@ -82,7 +82,7 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
 * In **Compute engine** menu select **Snapshots** and press **Create snapshot**
     * Set descriptive **Name**, for example **build-vm-2017-05-09**. It is handy to include date to manage build images versions
     * Select Master VM created before as a **Source disk**
-    * Press **CREATE** 
+    * Press **CREATE**
 
 ## Setting up custom cloud and images in AppVeyor
 
@@ -101,10 +101,12 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
 * Virtual machine configuration
     * **Zone name**: select the same as used for Master VM
     * **Machine type (size)**: select depending on performance you need
+    
 <!---    * **Tags**:
 * Networking
     * **Network name**:
         * Select **Assign external IP address** if VMs need to be accessible from outside--->
+        
 * Images
     * **IMAGE NAME**: Image name as you want to see it in AppVeyor UI and YAML, for example **VS2017 on GCE**
     * **SNAPSHOT OR IMAGE NAME**: Image name as it was set in [Prepare Master VM snapshot](docs/enterprise/running-builds-on-gce#prepare-master-vm-snapshot) step
