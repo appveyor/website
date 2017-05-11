@@ -107,9 +107,10 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
         * Select **Assign external IP address** if VMs need to be accessible from outside--->
 * Images
     * **IMAGE NAME**: Image name as you want to see it in AppVeyor UI and YAML, for example **VS2017 on GCE**
-    * **SNAPSHOT OR IMAGE NAME**: Image name as it was set in [Prepare Master VM snapshot]()
+    * **SNAPSHOT OR IMAGE NAME**: Image name as it was set in [Prepare Master VM snapshot](docs/enterprise/running-builds-on-gce#prepare-master-vm-snapshot) step
+    * **SIZE, GB**: ????
 * Open **Failure strategy** and set the following:
-    * **Job start timeout, seconds**: 180 is good enough for modern Hyper-V server. However, if VM creation and build start takes longer for you, please adjust accordingly
+    * **Job start timeout, seconds**: 360 is good enough for GCE. However, if VM creation and build start takes longer for you, please adjust accordingly
     * **Provisioning attempts**: 2 is good for start. Later you may need to change it according to your observations
 
 ## Make build worker image available for configuration
@@ -117,12 +118,6 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
 * Navigate to **Build environment** > **Build worker images**
 * Press **Add image**
 * Enter what you set as **IMAGE NAME** in previous step
-
-## Download and install AppVeyor Host agent on Host machine
-
-* [Download location](https://www.appveyor.com/downloads/host-agent/latest/AppveyorHostAgent.msi)
-* Installation settings
-    * **Host authorization token**: token generated or manually entered during [Setting up custom cloud and images in AppVeyor](/docs/enterprise/running-builds-on-hyper-v/#setting-up-custom-cloud-and-images-in-appveyor) step
 
 ## How to route build to your own cloud
 
