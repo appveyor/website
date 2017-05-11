@@ -53,7 +53,7 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
 * Go back to Google Cloud Platform menu and select **Compute engine**
 * Navigate to **VM instances** and press **Create**
     * Set descriptive **Name**, for example **master-vm**
-    * Optionally change **Zone**
+    * Optionally change **Zone**, to be the same as buiuld VMs, closer to other GCE or non-GCE resources
     * Optionally increase number of CPUs or memory
     * Press **Change** in **Boot disk**
         * Select **Windows Server 2012 R2**
@@ -75,7 +75,7 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
     * **Important note:** in Build Agent installation script set `APPVEYOR_MODE` to `GCE`. Alternatively update registry with [Set Build Agent mode to **GCE**](https://github.com/appveyor/ci/blob/master/scripts/enterprise/set_gce_build_agent_mode.ps1)
 * Install additional software if needed
 
-## Prepare master VM snapshot
+## Prepare Master VM snapshot
 
 * Optionally restart Master VM to ensure AppVeyor build agent is started on automatically iteractively
 * Shutdown Master VM
@@ -99,15 +99,15 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
     * **Service account certificate (Base64)**: content of the file created in [Convert certificate to Base64 string](/docs/enterprise/running-builds-on-gce#convert-certificate-to-base64-string) step
     * **Project name**: ID of Google Cloud Platform project selected or created in the beginning
 * Virtual machine configuration
-    * **Zone name**: 
-    * **Machine type (size)**: 
+    * **Zone name**: select the same as used for Master VM
+    * **Machine type (size)**: select depending on performance you need
 <!---    * **Tags**:
 * Networking
     * **Network name**:
         * Select **Assign external IP address** if VMs need to be accessible from outside--->
 * Images
-    * **IMAGE NAME**: Image name as you want to see it in AppVeyor UI and YAML, for example **VS2013 with WMF3**
-    * **VHD PATH**: Path to master VHD on Hyper-V server selected in step [Prepare master VHD](/docs/enterprise/running-builds-on-hyper-v/#prepare-master-vhd)
+    * **IMAGE NAME**: Image name as you want to see it in AppVeyor UI and YAML, for example **VS2017 on GCE**
+    * **SNAPSHOT OR IMAGE NAME**: Image name as it was set in [Prepare Master VM snapshot]()
 * Open **Failure strategy** and set the following:
     * **Job start timeout, seconds**: 180 is good enough for modern Hyper-V server. However, if VM creation and build start takes longer for you, please adjust accordingly
     * **Provisioning attempts**: 2 is good for start. Later you may need to change it according to your observations
