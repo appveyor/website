@@ -38,22 +38,22 @@ Currently custom build environment feature is not generally available. It is bei
 
 ### Convert certificate to Base64 string
 
-* Rune folloing PowerShell commands:
-    
+* Run the following PowerShell commands:
+
 ```
 $bytes = [System.IO.File]::ReadAllBytes("<path-to-P12-file>")
 $base64Str = [System.Convert]::ToBase64String($bytes)
 [System.IO.File]::WriteAllText("<path-to-result-TXT-file>", $base64Str)
 ```
 
-* Remember location of the result TXT file. 
-    
+* Remember location of the result TXT file
+
 ## Create Master VM
 
 * Go back to Google Cloud Platform menu and select **Compute engine**
 * Navigate to **VM instances** and press **Create**
     * Set descriptive **Name**, for example **master-vm**
-    * Optionally change **Zone**, to be the same as buiuld VMs, closer to other GCE or non-GCE resources
+    * Optionally change **Zone**, to be the same as build VMs, closer to other GCE or non-GCE resources needed during build, test or deployment
     * Optionally increase number of CPUs or memory
     * Press **Change** in **Boot disk**
         * Select **Windows Server 2012 R2**
@@ -77,7 +77,7 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
 
 ## Prepare Master VM snapshot
 
-* Optionally restart Master VM to ensure AppVeyor build agent is started on automatically iteractively
+* Optionally restart Master VM to ensure AppVeyor build agent is started on automatically interactively
 * Shutdown Master VM
 * In **Compute engine** menu select **Snapshots** and press **Create snapshot**
     * Set descriptive **Name**, for example **build-vm-2017-05-09**. It is handy to include date to manage build images versions
@@ -95,7 +95,7 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
 
 * **Name**: Name for your private build cloud. Make it meaningful and short to be able to use in YAML configuration
 * **Google account**
-    * **Service account email**: email address associalted with your Google Cloud account
+    * **Service account email**: email address associated with your Google Cloud account
     * **Service account certificate (Base64)**: content of the file created in [Convert certificate to Base64 string](/docs/enterprise/running-builds-on-gce#convert-certificate-to-base64-string) step
     * **Project name**: ID of Google Cloud Platform project selected or created in the beginning
 * Virtual machine configuration
