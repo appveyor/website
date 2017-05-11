@@ -19,7 +19,7 @@ Currently custom build environment feature is not generally available. It is bei
 
 ### Create account and download certificate
 
-* Open Google Cloud Console and navigate to **IAM & Admin**
+* Open Google Cloud Platform menu navigate to **IAM & Admin**
 * Select **Service accounts** and press **Create service account**
     * Set descriptive **Service account name**, for example **Appveyor CI**
         * **Service account ID** will be automatically regenerated, leave it as is
@@ -27,7 +27,8 @@ Currently custom build environment feature is not generally available. It is bei
     * Check **Furnish a new private key**
         * Select **P12**
     * Press **CREATE**
-    * Close **Service account created** window. 
+    * Close **Service account created** window
+        * Leave default password unchanged
     * Certificate in P12 format should be saved to local computer
         * Remember it's location and optionally re-save certificate in some secure place
 
@@ -45,10 +46,20 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
     
 ## Create Master VM
 
-* Create new VM in Hyper-V
-    * There are no special requirements to VMs disk and memory size. It mostly depends on what your build process requires
-    * Ensure Virtual NIC is connected to existing **Virtual Switch** with outbound Internet access or to switch created in [Create Virtual Switch](/docs/enterprise/running-builds-on-hyper-v/#create-virtual-switch) step
-    * Operating system should be Windows Server 2012 R2 or higher. It can be freshly installed OS, or existing VHD with pre-installed software
+* Go back to Google Cloud Platform menu and select **Compute engine**
+* Navigate to **VM instances** and press **Create**
+    * Set descriptive **Name**, for example **master-vm**
+    * Optionally change **Zone**
+    * Optionally increase number of CPUs or memory
+    * Press **Change** in **Boot disk**
+        * Select **Windows Server 2012 R2**
+        * Select **SSD persistent disk**
+    * Press **Select** and then **Create**
+    * In drop-down menu near **RDP** select **Create or reset Windows password**
+        * Set user name to `appveyor` and press **Set**
+        * Save auto-generated password for future use
+    * In drop-down menu near **RDP** select **Download RDP file**
+        * Click RDP file and in RDP window change username to `appveyor` and use password saved before
 
 ## Setup Master VM
 
@@ -57,7 +68,7 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
     * You can skip one of msbuild and VS version or both if you don't need them in [Build framework](/docs/enterprise/setup-master-vm/#build-framework) step
     * You can skip test framework you do not need in [Test framework](/docs/enterprise/setup-master-vm/#test-framework) step
     * Steps [AppVeyor Build Agent](/docs/enterprise/setup-master-vm/#appveyor-build-agent) and [Tuning for Interactive mode](/docs/enterprise/setup-master-vm/#tuning-for-interactive-mode) are mandatory
-
+    * **Important note: ** in Build Agent installation script set `APPVEYOR_MODE` to `GCE`. Alternatively set `HKEY_LOCAL_MACHINE\SOFTWARE\AppVeyor\Build Agent\Mode` to `GCE` in registry. 
 * Install additional software if needed
 
 ## Prepare master VHD
