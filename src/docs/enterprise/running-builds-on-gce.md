@@ -71,7 +71,7 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
     * **Important note:** in Build Agent installation script set `APPVEYOR_MODE` to `GCE`. Alternatively update registry with [Set Build Agent mode to **GCE**](https://github.com/appveyor/ci/blob/master/scripts/enterprise/set_gce_build_agent_mode.ps1)
 * Install additional software if needed
 
-## Prepare master VHD
+## Prepare master VM snapshot
 
 * Optionally restart Master VM to ensure AppVeyor build agent is started on automatically iteractively
 * Shutdown Master VM
@@ -85,12 +85,15 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
 * Login to AppVeyor portal
 * Navigate to your account name on the top right and select **Build environment** option from drop-down menu
     * If **Build environment** option is not available, please contact [team@appveyor.com](mailto:team@appveyor.com) and ask to enable **Private build clouds** feature
-* Press **Add cloud**, select cloud type **Hyper-V**
+* Press **Add cloud**, select cloud type **Google Compute Engine**
 
 **Complete the following settings**:
 
 * **Name**: Name for your private build cloud. Make it meaningful and short to be able to use in YAML configuration
-* **Host authorization token**: generate host authorization token or enter it manually
+* **Google account**
+    * **Service account email**: email address associalted with your Google Cloud account
+    * **Service account certificate (Base64)**: content of the file created in [Convert certificate to Base64 string](/docs/enterprise/gce-private-cloud-doc/#appveyor-build-agen) step
+    * **CPU cores**: 
 * Virtual machine configuration
     * **CPU cores**: number of virtual CPU cores per VM. We do not have specific requirements, but do not advice overcommit too much. For example, if host machine has 4 logical CPU cores and you will run 2 builds in parallel, it makes sense to assign 2 cores per machine.
     * **RAM, MB**: amount of Virtual machine RAM. Please use amount of free memory on Hyper-V Server and number of parallel builds to calculate.
