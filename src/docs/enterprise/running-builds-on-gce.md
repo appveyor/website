@@ -95,7 +95,7 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
 
 * **Name**: Name for your private build cloud. Make it meaningful and short to be able to use in YAML configuration
 * **Google account**
-    * **Service account email**: email address associated with your Google Cloud account
+    * **Service account email**: **Service account ID** from [Create account and download certificate](/docs/enterprise/running-builds-on-gce#create-account-and-download-certificate) step
     * **Service account certificate (Base64)**: content of the file created in [Convert certificate to Base64 string](/docs/enterprise/running-builds-on-gce#convert-certificate-to-base64-string) step
     * **Project name**: ID of Google Cloud Platform project selected or created in the beginning
 * Virtual machine configuration
