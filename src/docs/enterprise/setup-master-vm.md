@@ -73,6 +73,8 @@ At this moment you have to decide if AppVeyor build agent will run in **interact
 
 * **Hyper-V only**: [Set Build Agent mode to **Hyper-V**](https://github.com/appveyor/ci/blob/master/scripts/enterprise/set_hyperv_build_agent_mode.ps1)
 
+* **GCE only**: [Set Build Agent mode to **GCE**](https://github.com/appveyor/ci/blob/master/scripts/enterprise/set_gce_build_agent_mode.ps1)
+
 #### Tuning for Interactive mode
 
 * [Enable auto-logon](https://github.com/appveyor/ci/blob/master/scripts/enterprise/enable_auto_logon.ps1)
