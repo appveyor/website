@@ -101,16 +101,14 @@ $base64Str = [System.Convert]::ToBase64String($bytes)
 * Virtual machine configuration
     * **Zone name**: select the same as used for Master VM
     * **Machine type (size)**: select depending on performance you need
-
-<!---    * **Tags**:--->
-<!---* Networking--->
-<!---    * **Network name**:--->
-<!---        * Select **Assign external IP address** if VMs need to be accessible from outside--->
-
+    * **Tags**: Optionally add tags
+* Networking
+    * **Network name**: Optionally set custom VPC network
+        * Select **Assign external IP address** if VMs need to be accessible from outside
 * Images
     * **IMAGE NAME**: Image name as you want to see it in AppVeyor UI and YAML, for example **VS2017 on GCE**
     * **SNAPSHOT OR IMAGE NAME**: Image name as it was set in [Prepare Master VM snapshot](docs/enterprise/running-builds-on-gce#prepare-master-vm-snapshot) step
-    * **SIZE, GB**: ????
+    * **SIZE, GB**: VM disk size in Gb
 * Open **Failure strategy** and set the following:
     * **Job start timeout, seconds**: 360 is good enough for GCE. However, if VM creation and build start takes longer for you, please adjust accordingly
     * **Provisioning attempts**: 2 is good for start. Later you may need to change it according to your observations
