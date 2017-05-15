@@ -26,7 +26,7 @@ Just add this line to `install` section of your `appveyor.yml` to remove the cur
 
 ```yaml
 install:
-  - choco install firefox -version 46.0.1
+  - choco install firefox --version 46.0.1
 ```
 
 In your tests you create `FirefoxDriver` as simply:
