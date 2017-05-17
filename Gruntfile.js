@@ -147,11 +147,11 @@ module.exports = function(grunt) {
 
         uglify: {
             options: {
-                compress: {
-                    warnings: false
-                },
+                compress: true,
                 mangle: true,
-                preserveComments: false
+                output: {
+                    comments: false
+                }
             },
             minify: {
                 files: {
@@ -296,8 +296,8 @@ module.exports = function(grunt) {
             options: {
                 callback: function (crawler) {
                     crawler.addFetchCondition(function (url) {
-                        return url.path !== '/assets/js/j.src' &&
-                               url.path !== '/assets/js/+g+' &&
+                        return url.path !== '/assets/js/l.src' &&
+                               url.path !== '/assets/js/+a+' &&
                                url.path !== '/feed.xml' &&
                                url.port !== '9023';
                     });
