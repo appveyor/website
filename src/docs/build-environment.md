@@ -231,8 +231,8 @@ You can use those images to unblock your builds while we are working together wi
             <li>
                 Docker 17.03.1-ee for Windows Containers with base images:
                 <ul>
-                    <li>microsoft/windowsservercore (id: 590c0c2590e4, tag: 10.0.14393.1066, manifest: sha256:9b736c12978e3475cec83e93a12c8b3be2ba445eb733902827e1ccb9f499bc18)</li>
-                    <li>microsoft/nanoserver (id: a943c29f0046, tag: 10.0.14393.1066, manifest: sha256:ded482e81f381c94458a1d12d995506ac331d6d3180ed6da24ba809b0849a46c)</li>
+                    <li>microsoft/windowsservercore (id: 4f222178c921, tag: 10.0.14393.1198)</li>
+                    <li>microsoft/nanoserver (id: 6c367cf4cb98, tag: 10.0.14393.1198)</li>
                 </ul>
             </li>
         </ul>
@@ -246,10 +246,10 @@ You can use those images to unblock your builds while we are working together wi
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.12.2(2) (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.13.0(2) (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage 2.0.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage (LFS) 2.1.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Mercurial 4.1.1 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -303,7 +303,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Node.js Tools 1.2 for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Visual F# Tools 4.0 RTM</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>WDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>SQL Server Data Tools (SSDT) 16.5 (14.0.61021.0) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server Data Tools (SSDT) 17.0 (14.0.61704.140) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Azure Service Fabric SDK 2.5.216</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft .NET Portable Library Reference Assemblies 4.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -312,7 +312,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2017 -->
     <tr>
-        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.1 (26403.07)</th>
+        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.2 (26430.06)</th>
     </tr>
     <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -340,8 +340,7 @@ You can use those images to unblock your builds while we are working together wi
     </tr>
     <tr><td>AWS SDK for .NET with AWS Tools for Windows 3.3.69</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>AWS CLI 1.11.68</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>WiX Toolset 3.10.3.3007</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>WiX Toolset 3.11 RC</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>WiX Toolset 3.11.0.1701</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- TypeScript -->
     <tr>
         <th id="typescript" class="section" colspan="4">TypeScript</th>
@@ -369,6 +368,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Microsoft Azure Storage Emulator</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure PowerShell</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure CLI 0.9.10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>DocumentDB Emulator 1.13.58.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Xamarin -->
     <tr>
         <th id="xamarin" class="section" colspan="4">Xamarin</th>
@@ -380,12 +380,14 @@ You can use those images to unblock your builds while we are working together wi
     </tr>
     <tr><td>.NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Framework 4.6.0, 4.6.1, 4.6.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Framework 4.7.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 1.0.0 runtime</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core 1.0.1 runtime</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core 1.0.3 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 1.0.4 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 1.1.0 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 1.1.1 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 1.1.2 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003121</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003131</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003156</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -394,6 +396,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>.NET Core SDK 1.0.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 1.0.2</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 1.0.3</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.0.4</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 1.0.4 &amp; 1.1.1 - Windows Server Hosting</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
@@ -408,6 +411,7 @@ You can use those images to unblock your builds while we are working together wi
     </tr>
     <tr><td>
     <ul>
+        <li>Boost 1.64.0 (<code>C:\Libraries\boost_1_64_0</code> - Visual Studio 2017 image only)</li>
         <li>Boost 1.63.0 (<code>C:\Libraries\boost_1_63_0</code>)</li>
         <li>Boost 1.62.0 (<code>C:\Libraries\boost_1_62_0</code>)</li>
         <li>Boost 1.60.0 (<code>C:\Libraries\boost_1_60_0</code>)</li>
@@ -703,10 +707,10 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <th id="tools" class="section" colspan="4">Tools</th>
     </tr>
-    <tr><td>curl 7.53.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>curl 7.54.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 16.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.8.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.8.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 3.5.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>NuGet 4.0.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
