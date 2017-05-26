@@ -115,7 +115,7 @@ version: '1.0.{build}'
 
 ## AssemblyInfo patching
 
-AppVeyor has a built-in task for `AssemblyInfo` patching. Patching is disabled by default for newly added projects.
+AppVeyor has a built-in task for setting values in `AssemblyInfo` files during the build. This "patching" process is disabled by default for newly added projects.
 
 You can enable patching on the **General** tab of project settings or in `appveyor.yml`:
 
