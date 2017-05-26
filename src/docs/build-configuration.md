@@ -339,6 +339,7 @@ Build matrix supports the following dimensions:
 * **Platform**, e.g. x86, x64, Any CPU
 * **Configuration**, e.g. Build, Debug
 * **Test categories**
+* **Build cloud**
 
 For example, selecting **x86, Any CPU** for Platform and **Debug, Release** for Configuration yields the build with the following jobs:
 
