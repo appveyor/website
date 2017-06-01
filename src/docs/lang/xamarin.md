@@ -21,7 +21,7 @@ Building `.ipa` application packages requires Mac computer and is not currently 
 ## Restoring Xamarin components
 
 To restore Xamarin components on build worker you use `xamarin-component.exe` tool.
-The tool is available at the following location: [https://components.xamarin.com/submit/xpkg](https://components.xamarin.com/submit/xpkg)
+The tool is available at the following location: [https://xampubdl.blob.core.windows.net/xamarin-download/xamarin-components/xamarin-component.zip](https://xampubdl.blob.core.windows.net/xamarin-download/xamarin-components/xamarin-component.zip)
 
 Rename the downloaded file to `xpkg.zip` and unzip to extract the tool.
 
@@ -46,7 +46,7 @@ To download and configure packaging restore tool add these PowerShell commands t
 
 ```powershell
 $zipPath = "$($env:APPVEYOR_BUILD_FOLDER)\xpkg.zip"
-(New-Object Net.WebClient).DownloadFile('https://components.xamarin.com/submit/xpkg', $zipPath)
+(New-Object Net.WebClient).DownloadFile('https://xampubdl.blob.core.windows.net/xamarin-download/xamarin-components/xamarin-component.zip', $zipPath)
 7z x $zipPath | Out-Null
 Set-Content -path "$env:USERPROFILE\.xamarin-credentials" -value "xamarin.com,$env:XAMARIN_COOKIE"
 ```
