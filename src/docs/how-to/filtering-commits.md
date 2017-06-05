@@ -18,6 +18,8 @@ This article explains how to make AppVeyor starting new builds based on the cont
 
 Currently, commits filtering functionality is available in `appveyor.yml` configuration only.
 
+Commits filtering does not apply to builds started with UI, API or scheduled build.
+
 ## Commit message
 
 ### Skip commits
