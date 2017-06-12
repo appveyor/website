@@ -13,20 +13,20 @@ title: Deployment
 
 ## Overview
 
-The fact AppVeyor deployment requires build artifacts on input makes deployment
+The fact that AppVeyor deployment requires build artifacts on input makes the deployment
 process predictable and repeatable.
 
 AppVeyor allows you to deploy using multiple providers **as part of the build process**
 (inline deployment) as well as **promote builds to existing environments** (environment deployment).
 
 **Inline deployment** runs as the last phase in the [build pipeline](/docs/build-configuration#build-pipeline)
-and allows configuring multiple deployments running synchronously one-by-one with results in build console.
+and allows the configuration of multiple deployments running synchronously one-by-one with results in the build console.
 
-**Environment deployment** is triggered manually or through API to deploy "green" build to existing environment.
-A new deployment is registered within a project/environment with results in deployment console.
+**Environment deployment** is triggered manually or through the API to deploy a "green" build to an existing environment.
+A new deployment is registered within a project/environment with results in the deployment console.
 If you don't have any existing environments, you can create one at <https://ci.appveyor.com/environments>.
 
-The table below summarizes key differences between two modes with lists of deployment
+The table below summarizes the key differences between the two modes with lists of deployment
 providers available in each mode:
 
 <table class="centered">
@@ -112,20 +112,20 @@ providers available in each mode:
 ## Environment variables in provider settings
 
 You can use standard and custom environment variables in provider settings, for example
-you can set remote FTP folder as `$(appveyor_build_version)\artifacts` where `$(appveyor_build_version)`
-will be replaced with current build version.
+you can set a remote FTP folder as `$(appveyor_build_version)\artifacts` where `$(appveyor_build_version)`
+will be replaced with the current build version.
 
 
 ## Conditional deployment
 
-When you deploy as part of the build process you can control under which conditions
+When you deploy as part of the build process you can control the conditions under which a
 deployment should be run.
 
 By default, AppVeyor deploys from all branches, but you can include only specific branches.
 Also, you can use any environment variables to have more complex conditions.
 
-For example, to deploy from "master" branch and only artifacts built for "x86" platform
-(`platform` is the name of environment variable):
+For example, to deploy from the "master" branch and only artifacts built for the "x86" platform
+(`platform` is the name of an environment variable):
 
 ```yaml
 - provider: Environment
@@ -137,12 +137,12 @@ For example, to deploy from "master" branch and only artifacts built for "x86" p
 
 ## Deploy on tag (GitHub and GitLab only)
 
-By default AppVeyor starts a new build on any push to GitHub whether it's regular commit or a new tag.
-Repository tagging frequently used to trigger deployment.
+By default AppVeyor starts a new build on any push to GitHub, whether it's a regular commit or a new tag.
+Repository tagging is frequently used to trigger deployment.
 
-AppVeyor sets `APPVEYOR_REPO_TAG` environment variable to distinguish regular commits from tags - the value is `true` if tag was pushed; otherwise it's `false`. When it's `true` the name of tag is stored in `APPVEYOR_REPO_TAG_NAME`.
+AppVeyor sets the `APPVEYOR_REPO_TAG` environment variable to distinguish regular commits from tags - the value is `true` if the tag was pushed; otherwise it's `false`. When it's `true` the name of the tag is stored in `APPVEYOR_REPO_TAG_NAME`.
 
-You can use `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for example:
+You can use the `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for example:
 
 ```yaml
 - provider: Environment
@@ -151,7 +151,7 @@ You can use `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for 
     appveyor_repo_tag: true
 ```
 
-However please note that `branch` and `appveyor_repo_tag` are mutually exclusive. This is because in case of tag, it replaces branch in webhook content and there are no practically reliable way to recognize from what branch tag was created. Therefore with this setting deployment will happen only for master branch:
+However, please note that `branch` and `appveyor_repo_tag` are mutually exclusive. This is because, in the case of tag, it replaces the branch in the webhook content and there is no practical reliable way to recognize from what branch the tag was created. Therefore with this setting deployment will happen only for the master branch:
 
 ```yaml
 - provider: Environment
@@ -176,7 +176,7 @@ deploy:
       appveyor_repo_tag: true
 ```
 
-You can disable builds on new tags through UI (General tab of project settings) or in `appveyor.yml`:
+You can disable builds on new tags through the UI (General tab of project settings) or in `appveyor.yml`:
 
 ```yaml
 skip_tags: true
