@@ -650,7 +650,7 @@ You can use those images to unblock your builds while we are working together wi
                 <li>msvc2013 64-bit: <code>C:\Qt\5.9\msvc2013_64</code></li>
                 <li>msvc2013 32-bit: <code>C:\Qt\5.9\msvc2013</code></li>
                 </ul>
-            </li>            
+            </li>
             <li>Qt 5.8.0: <code>C:\Qt\5.8</code>
                 <ul>
                 <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.8\mingw53_32</code></li>
