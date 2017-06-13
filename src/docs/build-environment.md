@@ -429,7 +429,7 @@ You can use those images to unblock your builds while we are working together wi
             <p><code>4.x</code> is default Node.js installed on build workers.</p>
             <ul>
                 <li>Node.js 8.0.0 - 8.1.0 (x86 and x64) - use <code>Stable</code> alias for latest <code>8.x</code> release</li>
-                <li>Node.js 7.0.0 - 7.10.0 (x86 and x64)
+                <li>Node.js 7.0.0 - 7.10.0 (x86 and x64)</li>
                 <li>Node.js 6.0.0 - 6.11.0 (x86 and x64) - use <code>LTS</code> alias for latest <code>6.x</code> release</li>
                 <li>Node.js 4.0.0 - 4.8.3 (x86 and x64) - default on build workers</li>
                 <li>Node.js 5.0.0 - 5.12.0 (x86 and x64)</li>
