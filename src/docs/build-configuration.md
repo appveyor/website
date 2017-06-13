@@ -73,10 +73,11 @@ Each method has pros and cons. Via the User interface one can control every aspe
 It's worth noticing that both `appveyor.yml` and UI configuration are mutually exclusive.
 It's always either YAML or UI - the settings from each are not merged. If you have `appveyor.yml`
 in your repo it will override all settings made on the UI unless explicitly disabled
-by **Ignore appveyor.yml**. The only exceptions are:
+by **Ignore appveyor.yml**. There are few exceptions, which are:
 
 * Environment variables. Variables defined on UI are getting merged with those ones defined in `appveyor.yml`. Variable values with the same names are getting overridden with values from UI.
-* Notification settings
+* Notification settings defined on UI are getting merged with those ones defined in `appveyor.yml`.
+* Build version format is taken from UI if it is not set in `appveyor.yml`.
 
 ### YAML file alternative naming
 
