@@ -98,7 +98,7 @@ With the introduction of the new cache we are also changing the way it's metered
 
 The total size of build cache is limited per account and depends on the plan.
 
-Total cache size per account consist of all caches from all projects. If projects contain more than one job in matrix or in parallel testing, each job has its own separate cache, which cannot be shared with other jobs or projects.
+Total cache size per account consist of all caches from all projects. If projects contain more than one job in [build matrix](/docs/build-configuration/#build-matrix) or in parallel testing, each job has its own separate cache, which cannot be shared with other jobs or projects.
 
 <table class="centered">
 <tr>
