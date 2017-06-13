@@ -304,7 +304,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Visual F# Tools 4.0 RTM</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>WDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 17.0 (14.0.61704.140) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Azure Service Fabric SDK 2.5.216</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure Service Fabric SDK 2.6</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft .NET Portable Library Reference Assemblies 4.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -312,7 +312,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2017 -->
     <tr>
-        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.2 (26430.06)</th>
+        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.2 (26430.13)</th>
     </tr>
     <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -366,7 +366,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Azure SDK 2.9.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Azure SDK 3.0</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Azure Storage Emulator</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Microsoft Azure PowerShell</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Azure PowerShell 4.1.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure CLI 0.9.10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>DocumentDB Emulator 1.13.58.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Xamarin -->
@@ -428,9 +428,10 @@ You can use those images to unblock your builds while we are working together wi
         <td>
             <p><code>4.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 7.0.0 - 7.9.0 - use <code>Stable</code> alias for latest <code>7.x</code> release</li>
-                <li>Node.js 6.0.0 - 6.10.2 (x86 and x64) - use <code>LTS</code> alias for latest <code>6.x</code> release</li>
-                <li>Node.js 4.0.0 - 4.8.2 (x86 and x64)</li>
+                <li>Node.js 8.0.0 - 8.1.0 (x86 and x64) - use <code>Stable</code> alias for latest <code>8.x</code> release</li>
+                <li>Node.js 7.0.0 - 7.10.0 (x86 and x64)
+                <li>Node.js 6.0.0 - 6.11.0 (x86 and x64) - use <code>LTS</code> alias for latest <code>6.x</code> release</li>
+                <li>Node.js 4.0.0 - 4.8.3 (x86 and x64) - default on build workers</li>
                 <li>Node.js 5.0.0 - 5.12.0 (x86 and x64)</li>
                 <li>Node.js 0.10.26 - 0.10.48 (x86 and x64)</li>
                 <li>Node.js 0.11.12 - 0.11.16 (x86 and x64)</li>
@@ -511,6 +512,8 @@ You can use those images to unblock your builds while we are working together wi
                 <li>Ruby 2.2.6 x64 (<code>C:\Ruby22-x64\bin</code>)</li>
                 <li>Ruby 2.3.3 x86 (<code>C:\Ruby23\bin</code>)</li>
                 <li>Ruby 2.3.3 x64 (<code>C:\Ruby23-x64\bin</code>)</li>
+                <li>Ruby 2.4.1-1 x86 (<code>C:\Ruby24\bin</code>)</li>
+                <li>Ruby 2.4.1-1 x64 (<code>C:\Ruby24-x64\bin</code>)</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -622,11 +625,11 @@ You can use those images to unblock your builds while we are working together wi
     </tr>
     <tr>
         <td>Cygwin (<code>C:\cygwin</code>)</td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Cygwin 64 (<code>C:\cygwin64</code>)</td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>MSYS2 (<code>C:\msys64</code>)</td>
@@ -639,6 +642,15 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
+            <li>Qt 5.9.0: <code>C:\Qt\5.9</code>
+                <ul>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9\mingw53_32</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.9\msvc2015_64</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.9\msvc2015</code></li>
+                <li>msvc2013 64-bit: <code>C:\Qt\5.9\msvc2013_64</code></li>
+                <li>msvc2013 32-bit: <code>C:\Qt\5.9\msvc2013</code></li>
+                </ul>
+            </li>            
             <li>Qt 5.8.0: <code>C:\Qt\5.8</code>
                 <ul>
                 <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.8\mingw53_32</code></li>
@@ -697,7 +709,7 @@ You can use those images to unblock your builds while we are working together wi
             </li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Qt Installer Framework 2.0.1</td>
@@ -710,11 +722,10 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>curl 7.54.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 16.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.8.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.8.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>NuGet 3.5.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>NuGet 4.0.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Chocolatey v0.10.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>NuGet 4.1.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chocolatey v0.10.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GitVersion 3.6.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.0.2j (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -722,7 +733,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>NSIS 3.01 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>InnoSetup 5.5.9 (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Coverity Scan 8.7.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Yarn 0.21.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Yarn 0.24.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Test runners -->
     <tr>
         <th id="test-runners" class="section" colspan="4">Test runners</th>
@@ -737,15 +748,15 @@ You can use those images to unblock your builds while we are working together wi
         <th id="web-browsers" class="section" colspan="4">Web browsers</th>
     </tr>
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Firefox 52.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 57.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 53.0.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 59.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
         <th id="selenium-testing" class="section" colspan="4">Selenium testing</th>
     </tr>
-    <tr><td>Chrome Web Driver 2.28</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome Web Driver 2.30</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.3.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Firefox Web Driver (geckodriver) 0.15.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox Web Driver (geckodriver) 0.17.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="4">Databases</th>
