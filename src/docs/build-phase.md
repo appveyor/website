@@ -33,6 +33,8 @@ This command performs compilation and publishing of WAP into a Web Deploy packag
 
 By default, Web application project artifact deployment name is the same as project name. However, in some cases it can be useful to customize deployment name. This especially makes sense when multiple Web application projects use the same [Agent deployment](/docs/deployment/agent/#deploying-artifact-package-as-iis-web-site) Environment. For Agent deployment, artifact deployment name is a key setting and it would be convenient to have the same deployment name for all projects using certain Agent deployment Environment. To achieve this, provide custom value for `APPVEYOR_WAP_ARTIFACT_NAME` environment variable.
 
+When creating the package, you can declare that ACLs will not be updated during package deployment. For that set `APPVEYOR_WAP_SKIP_ACLS` environment variable to `true` (this will create `<IncludeSetACLProviderOnDestination>False</IncludeSetACLProviderOnDestination>` record in temporary publishing profile AppVeyor creates on the fly.
+
 
 ### Packaging NuGet libraries
 
