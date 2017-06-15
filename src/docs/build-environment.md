@@ -645,10 +645,10 @@ You can use those images to unblock your builds while we are working together wi
             <li>Qt 5.9.0: <code>C:\Qt\5.9</code>
                 <ul>
                 <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9\mingw53_32</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.9\msvc2017_64</code> (VS 2017 image only)</li>
                 <li>msvc2015 64-bit: <code>C:\Qt\5.9\msvc2015_64</code></li>
                 <li>msvc2015 32-bit: <code>C:\Qt\5.9\msvc2015</code></li>
                 <li>msvc2013 64-bit: <code>C:\Qt\5.9\msvc2013_64</code></li>
-                <li>msvc2013 32-bit: <code>C:\Qt\5.9\msvc2013</code></li>
                 </ul>
             </li>
             <li>Qt 5.8.0: <code>C:\Qt\5.8</code>
