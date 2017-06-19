@@ -4,7 +4,7 @@ clone_depth: 10
 
 environment:
   matrix:
-    - ruby_folder_version: "23"
+    - ruby_folder_version: "24"
       platform: "x86"
 
 init:
