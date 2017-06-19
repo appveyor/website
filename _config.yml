@@ -8,7 +8,7 @@ kramdown:
     input: GFM
 highlighter:        rouge
 
-gems:
+plugins:
     - jekyll-feed
     - jekyll-seo-tag
     - jekyll-sitemap
@@ -74,8 +74,8 @@ feed:
 logo:               https://www.appveyor.com/assets/img/appveyor-logo-256.png
 
 twitter:
-  username:         appveyor
+    username:       appveyor
 
 social:
-  name:             AppVeyor
-  links:            ["https://twitter.com/appveyor"]
+    name:           AppVeyor
+    links:          ["https://twitter.com/appveyor"]
