@@ -305,6 +305,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Visual F# Tools 4.0 RTM</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>WDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 17.0 (14.0.61704.140) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Data-Tier Application Framework (17.1 DacFx)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Azure Service Fabric SDK 2.6</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft .NET Portable Library Reference Assemblies 4.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -313,7 +314,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2017 -->
     <tr>
-        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.2 (26430.13)</th>
+        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.2 (26430.15)</th>
     </tr>
     <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -351,7 +352,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>TypeScript 1.6 for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>TypeScript 1.7 for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>TypeScript 1.8 for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>TypeScript 2.2 for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>TypeScript 2.4.1 for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>TypeScript 2.1.5 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Azure SDKs -->
     <tr>
@@ -381,7 +382,7 @@ You can use those images to unblock your builds while we are working together wi
     </tr>
     <tr><td>.NET Framework 2.0, 3.0, 3.5, 4.0, 4.5.1, 4.5.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Framework 4.6.0, 4.6.1, 4.6.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Framework 4.7.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Framework 4.7.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 1.0.0 runtime</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core 1.0.1 runtime</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core 1.0.3 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -429,10 +430,10 @@ You can use those images to unblock your builds while we are working together wi
         <td>
             <p><code>4.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 8.0.0 - 8.1.0 (x86 and x64) - use <code>Stable</code> alias for latest <code>8.x</code> release</li>
-                <li>Node.js 7.0.0 - 7.10.0 (x86 and x64)</li>
-                <li>Node.js 6.0.0 - 6.11.0 (x86 and x64) - use <code>LTS</code> alias for latest <code>6.x</code> release</li>
-                <li>Node.js 4.0.0 - 4.8.3 (x86 and x64) - default on build workers</li>
+                <li>Node.js 8.0.0 - 8.1.4 (x86 and x64) - use <code>Stable</code> alias for latest <code>8.x</code> release</li>
+                <li>Node.js 7.0.0 - 7.10.1 (x86 and x64)</li>
+                <li>Node.js 6.0.0 - 6.11.1 (x86 and x64) - use <code>LTS</code> alias for latest <code>6.x</code> release</li>
+                <li>Node.js 4.0.0 - 4.8.4 (x86 and x64) - default on build workers</li>
                 <li>Node.js 5.0.0 - 5.12.0 (x86 and x64)</li>
                 <li>Node.js 0.10.26 - 0.10.48 (x86 and x64)</li>
                 <li>Node.js 0.11.12 - 0.11.16 (x86 and x64)</li>
@@ -643,13 +644,13 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.0: <code>C:\Qt\5.9</code>
+            <li>Qt 5.9.1: <code>C:\Qt\5.9.1</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.1</code> for backward compatibility)
                 <ul>
-                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9\mingw53_32</code></li>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.9\msvc2017_64</code> (VS 2017 image only)</li>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.9\msvc2015_64</code></li>
-                <li>msvc2015 32-bit: <code>C:\Qt\5.9\msvc2015</code></li>
-                <li>msvc2013 64-bit: <code>C:\Qt\5.9\msvc2013_64</code></li>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.1\mingw53_32</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.9.1\msvc2017_64</code> (VS 2017 image only)</li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.9.1\msvc2015_64</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.9.1\msvc2015</code></li>
+                <li>msvc2013 64-bit: <code>C:\Qt\5.9.1\msvc2013_64</code></li>
                 </ul>
             </li>
             <li>Qt 5.8.0: <code>C:\Qt\5.8</code>
@@ -729,11 +730,11 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Chocolatey v0.10.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GitVersion 3.6.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>OpenSSL 1.0.2j (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>OpenSSL 1.0.2j (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>OpenSSL 1.1.0f (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.1.0f (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.01 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>InnoSetup 5.5.9 (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Coverity Scan 8.7.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Yarn 0.24.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Test runners -->
     <tr>
