@@ -314,7 +314,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2017 -->
     <tr>
-        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.2 (26430.15)</th>
+        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.2 (26430.16)</th>
     </tr>
     <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -730,8 +730,8 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Chocolatey v0.10.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GitVersion 3.6.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>OpenSSL 1.1.0f (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 1.1.0f (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.0.2L (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.0.2L (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.01 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>InnoSetup 5.5.9 (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
