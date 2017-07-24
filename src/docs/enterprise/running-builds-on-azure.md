@@ -182,6 +182,8 @@ Please note that in this document we use **Windows Server 2012 R2 Datacenter** V
 * Navigate to **Build environment** > **Build worker images**
 * Press **Add image**
 * Enter what you set as **IMAGE NAME** in previous step
+* Select your **OS Type**
+* In **Build cloud** enter what you set as **Name** in previous step
 
 ## How to route build to your own cloud
 
