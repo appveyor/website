@@ -72,7 +72,7 @@ using(var client = new HttpClient())
 
 ### curl
 
-The following command uses `curl` to get the list of roles from authenticated account: 
+The following command uses `curl` to get the list of roles from authenticated account:
 
 ```bash
 export APPVEYOR_TOKEN="<your-api-token>"
