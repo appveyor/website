@@ -69,3 +69,12 @@ using(var client = new HttpClient())
     }
 }
 ```
+
+### curl
+
+The following command uses `curl` to get the list of roles from authenticated account: 
+
+```bash
+export APPVEYOR_TOKEN="<your-api-token>"
+curl -H "Authorization: Bearer $APPVEYOR_TOKEN" -H "Content-Type: application/json" https://ci.appveyor.com/api/roles
+```
