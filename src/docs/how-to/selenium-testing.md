@@ -51,6 +51,7 @@ driverService.HideCommandPromptWindow = true;
 driverService.SuppressInitialDiagnosticInformation = true;
 driver = new FirefoxDriver(driverService, new FirefoxOptions(), TimeSpan.FromSeconds(60));
 ```
+
 Please do not forget to **close the browser and dispose the driver** by `driver.Quit();` in test finalize steps. Otherwise build process can hung.
 
 ## Additional resources
