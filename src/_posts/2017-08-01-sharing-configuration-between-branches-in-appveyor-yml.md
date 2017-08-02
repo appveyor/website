@@ -95,7 +95,7 @@ for:
 
   deploy:
     provider: Local
-    ...    
+    ...
 ```
 
 In the example above we define `environment`, `init` and `install` sections for all branches as well as stating that default `configuration` is `Debug`.
@@ -104,11 +104,11 @@ For `dev-*` branches we define a second environment variable `MY_VAR2` and enabl
 
 Configuration merging rules:
 
-- Scalar values such as `image`, `version`, `configuration`, `platform`, etc. defined on branch level override default ones;
-- Script sections such `init`, `install`, `before_build`, `test_script`, etc. defined on branch level override default ones;
-- Environment variables defined in `environment` sections are merged (new) and overridden (existing);
-- Build matrix defined on branch level overrides default one;
-- `deploy`, `artifacts`, `notifications` section can be either overridden or extended.
+* Scalar values such as `image`, `version`, `configuration`, `platform`, etc. defined on branch level override default ones;
+* Script sections such `init`, `install`, `before_build`, `test_script`, etc. defined on branch level override default ones;
+* Environment variables defined in `environment` sections are merged (new) and overridden (existing);
+* Build matrix defined on branch level overrides default one;
+* `deploy`, `artifacts`, `notifications` section can be either overridden or extended.
 
 For example, consider the following configuration:
 
@@ -128,7 +128,7 @@ for:
   branches:
     only:
       - master
-  
+
   artifacts:
   - path: docs
 
@@ -141,9 +141,9 @@ for:
 
 In the example above we do the following:
 
-- For `master` branch we *adding* `docs` folder to artifacts definition, so both `bin` and `docs` folders collected. Both default and branch-specific collections were merged.
-- For `master` branch we *disable* any deployment. `off` or `none` on branch-level clears default collection.
-- For `master` branch we *replace* all notifications on default level with a single `Slack` notification.
+* For `master` branch we *adding* `docs` folder to artifacts definition, so both `bin` and `docs` folders collected. Both default and branch-specific collections were merged.
+* For `master` branch we *disable* any deployment. `off` or `none` on branch-level clears default collection.
+* For `master` branch we *replace* all notifications on default level with a single `Slack` notification.
 
 Best regards,<br>
 AppVeyor team
