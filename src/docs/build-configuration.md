@@ -129,12 +129,35 @@ assembly_info:
   assembly_informational_version: '{version}-rc1'
 ```
 
+**Note** that specific attribute like `AssemblyInformationalVersion` should exist in `AssemblyInfo` file to be patched.
+
 You can use environment variables substitution in file name and version formats, for example:
 
 ```yaml
 assembly_version: $(appveyor_build_version)
 ```
 
+## .NET Core `.csproj` files patching
+
+Like with [AssemblyInfo patching](#assemblyinfo-patching), AppVeyor can patch .NET Core `.csproj` files. This also applies to .NET Standard and ASP.NET Core `.csproj` files, which has the same new structure, different from classic .NET `.csproj` files. Main practical reason to patch those files is to set version to be used by **nuget packaging** of .NET Core and .NET Standard libraries (created in Visual Studo 2017, and probably later versios).
+
+You can enable patching on the **General** tab of project settings or in `appveyor.yml`:
+
+```yaml
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+```
+
+**Note** that specific attribute like `PackageVersion` should exist in `.csproj` file to be patched.
+
+You can use environment variables substitution in file name and version formats, for example:
+
+```yaml
+package_version: $(appveyor_build_version)
+```
 
 ## Clone directory
 
