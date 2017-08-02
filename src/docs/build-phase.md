@@ -52,7 +52,7 @@ AppVeyor will call:
 
 To generate a `.nuspec` file for your project use the `nuget spec` command.
 
-**Note** that this feature works will with [AssemblyInfo patching](/docs/build-configuration/#assemblyinfo-patching) 
+**Note** that this feature works will with [AssemblyInfo patching](/docs/build-configuration/#assemblyinfo-patching)
 
 ### Packaging .NET Core NuGet libraries
 
@@ -79,8 +79,8 @@ If  .NET Core (or .NET Standard) project’s `.scproj` file contains any of the 
 (and `publish_nuget: true` (YAML) / `Package NuGet projects` (UI) is set) AppVeyor will try to package the project as a NuGet library by calling the following command:
 
     dotnet pack <project_file> --output <temp_path>
-    
-**Note** that this feature works will with [.NET Core `.csproj` files patching](/docs/build-configuration/#net-core-csproj-files-patching) 
+
+**Note** that this feature works will with [.NET Core `.csproj` files patching](/docs/build-configuration/#net-core-csproj-files-patching)
 
 ### Packaging Azure Cloud Service projects
 
