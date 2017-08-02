@@ -137,3 +137,99 @@ You can disable builds on new tags through UI (General tab of project settings) 
 ```yaml
 skip_tags: true
 ```
+
+## Sharing common configuration between branches
+
+AppVeyor allows sharing common configuration between branches in a single `appveyor.yml`.
+
+There is `for` node with a list of branch-specific configurations **overriding** common configuration defined on the top most level, for example:
+
+```yml
+
+# common configuration for ALL branches
+environment:
+  MY_VAR1: value-A
+
+init:
+- do_something_on_init.cmd
+
+install:
+- do_something_on_install.cmd
+
+configuration: Debug
+
+# here we are going to override common configuration
+for:
+
+# override settings for `master` branch
+-
+  branches:
+    only:
+      - master
+
+  configuration: Release
+
+  deploy:
+    provider: FTP
+    ...
+
+# override settings for `dev-*` branches
+-
+  branches:
+    only:
+      - /dev-.*/
+
+  environment:
+    MY_VAR2: value-B
+
+  deploy:
+    provider: Local
+    ...    
+```
+
+In the example above we define `environment`, `init` and `install` sections for all branches as well as stating that default `configuration` is `Debug`.
+Then, for `master` branch we override default settings by changing `configuration` to `Release` and adding deployment with `FTP` provider.
+For `dev-*` branches we define a second environment variable `MY_VAR2` and enable deployment to `Local` environment.
+
+Configuration merging rules:
+
+- Scalar values such as `image`, `version`, `configuration`, `platform`, etc. defined on branch level override default ones;
+- Script sections such `init`, `install`, `before_build`, `test_script`, etc. defined on branch level override default ones;
+- Environment variables defined in `environment` sections are merged (new) and overridden (existing);
+- Build matrix defined on branch level overrides default one;
+- `deploy`, `artifacts`, `notifications` section can be either overridden or extended.
+
+For example, consider the following configuration:
+
+```yaml
+artifacts:
+- path: bin
+
+deploy:
+- provider: Local
+  ...
+
+notifications:
+- provider: Email
+  ...
+
+for:
+  branches:
+    only:
+      - master
+  
+  artifacts:
+  - path: docs
+
+  deploy: off
+
+  notifications:
+    provider: Slack
+    ...
+```
+
+In the example above we do the following:
+
+- For `master` branch we *adding* `docs` folder to artifacts definition, so both `bin` and `docs` folders collected. Both default and branch-specific collections were merged.
+- For `master` branch we *disable* any deployment. `off` or `none` on branch-level clears default collection.
+- For `master` branch we *replace* all notifications on default level with a single `Slack` notification.
