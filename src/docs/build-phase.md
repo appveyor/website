@@ -56,7 +56,7 @@ To generate a `.nuspec` file for your project use the `nuget spec` command.
 
 ### Packaging .NET Core NuGet libraries
 
-If  .NET Core (or .NET Standard) project’s `.scproj` file contains any of the following attributes
+If .NET Core (or .NET Standard) project’s `.csproj` file contains any of the following attributes
 
     AssemblyName
     PackageVersion
