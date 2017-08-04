@@ -50,7 +50,7 @@ Visual Studio project select a toolchain based on the `<PlatformToolset />` elem
 
 The `PlatformToolset` value should be set after `Microsoft.Cpp.Default.props` properties are imported. An example is shown below.
 
-```
+```xml
 <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
 <PropertyGroup Label="PlatformToolset">
   <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
@@ -59,7 +59,7 @@ The `PlatformToolset` value should be set after `Microsoft.Cpp.Default.props` pr
 
 If you are building with custom rules which may cause `DefaultPlatformToolset` to be undefined, then you can use the following to ensure `PlatformToolset` has a minumum value.
 
-```
+```xml
 <!-- Use DefaultPlatformToolset after Microsoft.Cpp.Default.props -->
 <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
 
