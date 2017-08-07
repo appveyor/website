@@ -127,7 +127,6 @@ matrix:
       configuration: Release
 
 # exclude configuration from the matrix. Works similarly to 'allow_failures' but build not even being started for excluded combination.
-matrix:
   exclude:
     - platform: x86
       configuration: Debug
@@ -138,7 +137,7 @@ cache:
   - projectA\libs
   - node_modules                    # local npm modules
   - '%LocalAppData%\NuGet\Cache'    # NuGet < v3
-  - '%LocalAppData%\NuGet\v3-cache  # NuGet v3
+  - '%LocalAppData%\NuGet\v3-cache' # NuGet v3
 
 # enable service required for build/tests
 services:
