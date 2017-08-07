@@ -599,7 +599,7 @@ You can use those images to unblock your builds while we are working together wi
         <td>
             <ul>
                 <li>
-                    MinGW 32-bit 5.3.0 (core components and compilers - <code>C:\MinGW)</code>
+                    MinGW 32-bit 5.3.0 (core components and compilers - <code>C:\MinGW</code>)
                     <ul>
                         <li>MinGW root directory: <code>C:\MinGW</code></li>
                         <li>MinGW bin directory: <code>C:\MinGW\bin</code></li>
