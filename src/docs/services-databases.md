@@ -108,7 +108,7 @@ services:
 
 ## SQL Server 2016
 
-The latest version of **SQL Server 2016 Express** is available on AppVeyor build servers.
+The latest version of **SQL Server 2016 Developer Edition** is available on AppVeyor build servers.
 
 Instance name: `SQL2016`
 
@@ -118,7 +118,7 @@ Sample connection string:
 
     Server=(local)\SQL2016;Database=master;User ID=sa;Password=Password12!
 
-To start SQL Server 2016 Express in `appveyor.yml`:
+To start SQL Server 2016 Developer in `appveyor.yml`:
 
 ```yaml
 services:
