@@ -80,7 +80,7 @@ If .NET Core (or .NET Standard) project’s `.csproj` file contains any of the f
 
     dotnet pack <project_file> --output <temp_path>
 
-**Note** that this feature works will with [.NET Core `.csproj` files patching](/docs/build-configuration/#net-core-csproj-files-patching)
+**Note** that this feature works well with [.NET Core `.csproj` files patching](/docs/build-configuration/#net-core-csproj-files-patching)
 
 ### Packaging Azure Cloud Service projects
 
