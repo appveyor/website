@@ -27,6 +27,7 @@ Every step is represented by separate PowerShell script to make this task simple
 * [Disable WER](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_wer.ps1)
 * [Disable IE ESC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_ie_esc.ps1)
 * [Allow connecting to any host via WinRM](https://github.com/appveyor/ci/blob/master/scripts/enterprise/update_winrm_allow_hosts.ps1)
+* [Add-Path helper cmdlets](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_path_utils.ps1) (please do not skip, other software installation scripts depend on it)
  <!--
  Disable unnecessary Windows services and Scheduler tasks
  Disable Windows automatic maintenance
@@ -35,7 +36,6 @@ Every step is represented by separate PowerShell script to make this task simple
 
 ### Essential 3rd-party software
 
-* [Add-Path helper cmdlets](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_path_utils.ps1)
 * [7-Zip](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_7zip.ps1)
 * [Chocolatey](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_chocolatey.ps1)
 * [Web Platform Installer](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_webpi.ps1)
