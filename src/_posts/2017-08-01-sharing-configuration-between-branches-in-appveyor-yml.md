@@ -107,7 +107,7 @@ Configuration merging rules:
 * Scalar values such as `image`, `version`, `configuration`, `platform`, etc. defined on branch level override default ones;
 * Script sections such `init`, `install`, `before_build`, `test_script`, etc. defined on branch level override default ones;
 * Environment variables defined in `environment` sections are merged (new) and overridden (existing);
-* Build matrix defined on branch level overrides default one;
+* Build matrix defined on branch level merges with default one;
 * `deploy`, `artifacts`, `notifications` section can be either overridden or extended.
 
 For example, consider the following configuration:
