@@ -867,7 +867,9 @@ Request:
 Request body (`application/json`):
 
 ```text
-{ nextBuildNumber: 35 }
+{ 
+   "nextBuildNumber": 35 
+}
 ```
 
 Response: 204
