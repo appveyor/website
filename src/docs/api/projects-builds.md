@@ -948,10 +948,10 @@ Request body:
 
 ```text
 {
-    accountName: 'your-account-name',
-    projectSlug: 'project-slug-from-url',
-    branch: 'develop',
-    commitId: '3e9d9468'
+    "accountName": "your-account-name",
+    "projectSlug": "project-slug-from-url",
+    "branch": "develop",
+    "commitId": "3e9d9468"
 }
 ```
 
