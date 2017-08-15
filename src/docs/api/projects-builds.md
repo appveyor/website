@@ -904,12 +904,12 @@ Request body:
 
 ```text
 {
-    accountName: 'your-account-name',
-    projectSlug: 'project-slug-from-url',
-    branch: 'master',
-    environmentVariables: {
-       my_var: 'value',
-       another_var: 'another value'
+    "accountName": "your-account-name",
+    "projectSlug": "project-slug-from-url",
+    "branch": "master",
+    "environmentVariables": {
+       "my_var": "value",
+       "another_var": "another value"
     }
 }
 ```
