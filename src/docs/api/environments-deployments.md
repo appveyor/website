@@ -509,14 +509,14 @@ Request body:
 
 ```text
 {
-    environmentName: 'environment-to-deploy',
-    accountName: 'your-account-name',
-    projectSlug: 'project-slug-from-url',
-    buildVersion: '1.2.0',                      # build to deploy
-    buildJobId: 'sfke9239ydzf',                 # optional job id with artifacts if build contains multiple jobs
-    environmentVariables: {
-       server: 'myserver.com',
-       another_var: 'another value'
+    "environmentName": "environment-to-deploy",
+    "accountName": "your-account-name",
+    "projectSlug": "project-slug-from-url",
+    "buildVersion": "1.2.0",                      # build to deploy
+    "buildJobId": "sfke9239ydzf",                 # optional job id with artifacts if build contains multiple jobs
+    "environmentVariables": {
+       "server": "myserver.com",
+       "another_var": "another value"
     }
 }
 ```
