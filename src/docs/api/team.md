@@ -84,6 +84,9 @@ Response:
       "roleName":"User",
       "successfulBuildNotification":"all",
       "failedBuildNotification":"all",
+      "notifyWhenBuildStatusChangedOnly": true,
+      "successfulDeploymentNotification": "all",
+      "failedDeploymentNotification": "all",
       "notifyWhenBuildStatusChangedOnly":true,
       "created":"2014-02-12T19:21:15.0618564+00:00",
       "updated":"2014-03-06T22:47:44.9706252+00:00"
@@ -145,6 +148,9 @@ Request body:
    "roleId":4,
    "successfulBuildNotification":"all",
    "failedBuildNotification":"all",
+   "notifyWhenBuildStatusChangedOnly": true,
+   "successfulDeploymentNotification":"all",
+   "failedDeploymentNotification":"all",
    "notifyWhenBuildStatusChangedOnly":true
 }
 ```
