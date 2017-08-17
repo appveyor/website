@@ -47,7 +47,7 @@ Write-Host "IIS installed" -ForegroundColor Green
 ```
 
 * Run `Get-WindowsFeature` and make sure ASP.NET 4.5 and WebSockets are enabled
-* Make sure [http://localhost](#) is opening
+* Make sure [http://localhost](/) is opening
 
 ## Install Redis
 
