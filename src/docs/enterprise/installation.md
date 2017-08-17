@@ -23,16 +23,16 @@ title: AppVeyor Enterprise Installation Guide
 
 ## Install SQL Server 2016 Express
 
-Download link for SQL Server 2016 SP1 Express Edition: https://www.microsoft.com/en-us/download/details.aspx?id=54284
+Download SQL Server 2016 SP1 Express Edition: [download link](https://www.microsoft.com/en-us/download/details.aspx?id=54284)
 
 * Select "Custom" installation type
 * On "Feature selection" step select these features only:
-  - Database Engine Services
-  - Client Tools Connvectivity
+  * Database Engine Services
+  * Client Tools Connvectivity
 * On "Database engine configuration" step:
-  - Select Mixed mode
-  - Add local "Administrators" group to "Specify SQL Server administrators"
-* Install SSMS 17.1: https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms
+  * Select Mixed mode
+  * Add local "Administrators" group to "Specify SQL Server administrators"
+* Install SSMS 17.1: [download link](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
 * Delete `C:\SQLServer2016Media` directory.
 
 ## Install IIS
@@ -47,7 +47,7 @@ Write-Host "IIS installed" -ForegroundColor Green
 ```
 
 * Run `Get-WindowsFeature` and make sure ASP.NET 4.5 and WebSockets are enabled
-* Check http://localhost is opening
+* Make sure [http://localhost](http://localhost) is opening
 
 ## Install Redis
 
