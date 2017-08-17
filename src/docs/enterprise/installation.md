@@ -27,11 +27,11 @@ Download SQL Server 2016 SP1 Express Edition: [download link](https://www.micros
 
 * Select "Custom" installation type
 * On "Feature selection" step select these features only:
-  * Database Engine Services
-  * Client Tools Connvectivity
+    * Database Engine Services
+    * Client Tools Connvectivity
 * On "Database engine configuration" step:
-  * Select Mixed mode
-  * Add local "Administrators" group to "Specify SQL Server administrators"
+    * Select Mixed mode
+    * Add local "Administrators" group to "Specify SQL Server administrators"
 * Install SSMS 17.1: [download link](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
 * Delete `C:\SQLServer2016Media` directory.
 
