@@ -635,7 +635,7 @@ You can use those images to unblock your builds while we are working together wi
     </tr>
     <tr>
         <td>MSYS2 (<code>C:\msys64</code>)</td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Qt -->
     <tr>
