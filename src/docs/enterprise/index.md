@@ -19,6 +19,8 @@ You may choose AppVeyor Enterprise over hosted AppVeyor if:
 
 AppVeyor Enterprise deployment process consists of the following steps:
 
+1. [Planning](/docs/enterprise/planning/)
+2. [Installing AppVeyor Enterprise server](/docs/enterprise/installation/)
 3. Configuring build workers cloud
 4. Creating "master" image for build worker VMs
 5. Configuring AppVeyor
