@@ -1,9 +1,3 @@
-/**
- * AnchorJS - v3.2.2 - 2016-10-05
- * https://github.com/bryanbraun/anchorjs
- * Copyright (c) 2016 Bryan Braun; Licensed MIT
- */
-
 /* eslint-env amd, node */
 
 // https://github.com/umdjs/umd/blob/master/templates/returnExports.js
@@ -88,13 +82,13 @@
 
       // Provide a sensible default selector, if none is given.
       if (!selector) {
-        selector = 'h1, h2, h3, h4, h5, h6';
+        selector = 'h2, h3, h4, h5, h6';
       }
 
       elements = _getElements(selector);
 
       if (elements.length === 0) {
-        return false;
+        return this;
       }
 
       _addBaselineStyles();
@@ -113,6 +107,8 @@
 
         if (elements[i].hasAttribute('id')) {
           elementID = elements[i].getAttribute('id');
+        } else if (elements[i].hasAttribute('data-anchor-id')) {
+          elementID = elements[i].getAttribute('data-anchor-id');
         } else {
           tidyText = this.urlify(elements[i].textContent);
 
@@ -223,8 +219,8 @@
      * @return {String}      - hyphen-delimited text for use in IDs and URLs.
      */
     this.urlify = function(text) {
-      // Regex for finding the nonsafe URL characters (many need escaping): & +$,:;=?@"#{}|^~[`%!']./()*\
-      var nonsafeChars = /[& +$,:;=?@"#{}|^~[`%!'\]\.\/\(\)\*\\]/g,
+      // Regex for finding the nonsafe URL characters (many need escaping): & +$,:;=?@"#{}|^~[`%!'<>]./()*\
+      var nonsafeChars = /[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\]/g,
           urlText;
 
       // The reason we include this _applyRemainingDefaultOptions is so urlify can be called independently,
