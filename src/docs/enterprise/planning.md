@@ -16,9 +16,9 @@ title: AppVeyor Enterprise Planning Guide
 TLDR; of what you need for running your builds with AppVeyor Enterprise:
 
 * The server for running AppVeyor Enterprise:
-   * 2 CPU cores, 4 GB of RAM and SSD disk storage
-   * Windows Server 2012 R2 or Windows Server 2016
-   * Dedicated IP for SSL and (sub-)domain mapping
+    * 2 CPU cores, 4 GB of RAM and SSD disk storage
+    * Windows Server 2012 R2 or Windows Server 2016
+    * Dedicated IP for SSL and (sub-)domain mapping
 * For provisioning builds worker VMs in a cloud: Azure, GCE or AWS account/subscription
 * For running builds on your premises: Windows server with Hyper-V or Docker
 * SSL certificate in the form that can be imported in Windows
