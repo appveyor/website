@@ -36,6 +36,7 @@ module.exports = function(grunt) {
                     minifyJS: true,
                     minifyURLs: false,
                     processConditionalComments: true,
+                    processScripts: ['application/ld+json'],
                     removeAttributeQuotes: true,
                     removeComments: true,
                     removeOptionalAttributes: true,
