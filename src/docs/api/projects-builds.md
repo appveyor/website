@@ -867,7 +867,9 @@ Request:
 Request body (`application/json`):
 
 ```text
-{ nextBuildNumber: 35 }
+{
+   "nextBuildNumber": 35
+}
 ```
 
 Response: 204
@@ -902,12 +904,12 @@ Request body:
 
 ```text
 {
-    accountName: 'your-account-name',
-    projectSlug: 'project-slug-from-url',
-    branch: 'master',
-    environmentVariables: {
-       my_var: 'value',
-       another_var: 'another value'
+    "accountName": "your-account-name",
+    "projectSlug": "project-slug-from-url",
+    "branch": "master",
+    "environmentVariables": {
+       "my_var": "value",
+       "another_var": "another value"
     }
 }
 ```
@@ -948,10 +950,10 @@ Request body:
 
 ```text
 {
-    accountName: 'your-account-name',
-    projectSlug: 'project-slug-from-url',
-    branch: 'develop',
-    commitId: '3e9d9468'
+    "accountName": "your-account-name",
+    "projectSlug": "project-slug-from-url",
+    "branch": "develop",
+    "commitId": "3e9d9468"
 }
 ```
 
