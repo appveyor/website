@@ -1,13 +1,18 @@
+---
+layout: docs
+title: Creating Build Server on Azure VM
+---
+
 # Creating Build Server on Azure VM
 
 In Azure you can create build server on an Virtual Machine, hosted at your own domain, secured with an SSL certificate.
 
 There is a little networking to setup, and it can all be done in the Azure Portal.
 
-You are going to create a new VM, install the bare essentials, configure your SSL certificate, and then setup networking. 
-Then you will be ready to install AppVeyor Enterprise software. 
+You are going to create a new VM, install the bare essentials, configure your SSL certificate, and then setup networking.
+Then you will be ready to install AppVeyor Enterprise software.
 
-These instructions assume you want to host your CI server at your own custom domain: `https://ci.mycompany.com`. 
+These instructions assume you want to host your CI server at your own custom domain: `https://ci.mycompany.com`.
 Of course, you can customize these instructions for your own preferences.
 
 ## Prerequisites
@@ -16,10 +21,11 @@ Of course, you can customize these instructions for your own preferences.
 * An SSL certificate provider
 
 ## Create Azure Virtual Machine
+
 In the Azure Portal:
 
 * Create a new 'Compute' resource
-*Select 'Windows Server 2012 R2 DataCenter' template
+* Select 'Windows Server 2012 R2 DataCenter' template
 
 Fill out the form:
 
@@ -28,7 +34,7 @@ Fill out the form:
 * Username: ci-username
 * Password: generate a password and make a note of it
 * Resource Group: ci-mycompany (or similar, or in an existing resource group)
-* Location: <YourAzureRegion>
+* Location: `<YourAzureRegion>`
 * Size: (e.g D2_V2 with at least 2-cores, this is not critical at this stage, and can be changed later)
 * use all other defaults
 
@@ -80,11 +86,13 @@ Edit the 'Network security group' resource that was created for the VM above, fo
 You should see the TCP/3389 is already configured for RDP access to your VM.
 
 Add a new rule:
+
 * Name: http
 * Port range: 80
 * Action: Allow
 
 Add another rule:
+
 * Name: https
 * Port range: 443
 * Action: Allow
@@ -92,6 +100,7 @@ Add another rule:
 Now, you can point your browser to, the public IP of your VM, from before:  `http://<yourstaticipaddress>`
 
 ## Setup Domain Name
+
 At the website of our domain name provider (e.g. go daddy etc)
 
 Add an 'A Record' for your static IP address from above, and map it to: ci.yourcompany.com (for example)
@@ -102,8 +111,8 @@ When it does, you should be able to point your borwser to: `http://ci.yourcompan
 ## Setup SSL Certificate
 
 If you already have an SSL certificate that will work for your custom domain (i.e. ci.mycompany.com) you can skip this step.
-If you dont have a SSL cert yet, you will need to create one. You will first need to create a Certificate Signing Request (CSR). 
-There are many tools available on the internet to do that, but your VM has an easy way to create one for you too. 
+If you dont have a SSL cert yet, you will need to create one. You will first need to create a Certificate Signing Request (CSR).
+There are many tools available on the internet to do that, but your VM has an easy way to create one for you too.
 
 RDP into your VM again.
 In the VM, open the IIS Manager (hit the Windows Start button, and type IIS Manager)
@@ -116,12 +125,13 @@ In IIS Manager
 * click that link, and fill out the form.
 
 For example:
+
 * Common Name: ci.mycompany.com (or whatever your custom domain is)
-* Organization: <Your Company Name>
-* Organizational Unit: <Your Unit>
-* City/locality: <Your City>
-* State/province: <Your State>
-* Country/region: <Your Country>
+* Organization: `<Your Company Name>`
+* Organizational Unit: `<Your Unit>`
+* City/locality: `<Your City>`
+* State/province: `<Your State>`
+* Country/region: `<Your Country>`
 
 Leave the other defaults.
 
@@ -145,8 +155,9 @@ In IIS Manager
 * click that link, and complete the form.
 
 For example:
-* File name: <your *.cer or *.crt file>
-* Friendly name: <e.g. mycompany.com>
+
+* File name: `<your *.cer or *.crt file>`
+* Friendly name: `<e.g. mycompany.com>`
 * Certificate Store: Personal
 
 Then select the 'Default Web Site' site in the left pane of IIS Manager.
@@ -158,7 +169,7 @@ Then select the 'Default Web Site' site in the left pane of IIS Manager.
 * Type: https
 * IP address: All Unassigned
 * Port 443
-* SSL certificate: <Your Newly installed Cert>
+* SSL certificate: `<Your Newly installed Cert>`
 
 Close IIS Manager, and exit your RDP session.
 
