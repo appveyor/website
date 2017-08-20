@@ -18,7 +18,7 @@ TLDR; of what you need for running your builds with AppVeyor Enterprise:
 * The server for running AppVeyor Enterprise:
     * 2 CPU cores, 4 GB of RAM and SSD disk storage
     * Windows Server 2012 R2 or Windows Server 2016
-    * Dedicated IP for SSL and (sub-)domain mapping (e.g. an SSL cert for https://ci.mycompany.com)
+    * Dedicated IP for SSL and (sub-)domain mapping (e.g. an SSL cert for `https://ci.mycompany.com`)
 * For provisioning builds worker VMs in a cloud: Azure, GCE or AWS account/subscription
 * For running builds on your premises: Windows server with Hyper-V or Docker
 * SSL certificate in the form that can be imported in Windows
@@ -34,7 +34,7 @@ The machine will run IIS, SQL Server Express 2016, Microsoft Service Bus, Redis 
 Server operating system must be Windows Server 2012 R2 or Windows Server 2016.
 Builds will be run on VMs in Azure, GCE or Amazon.
 
-If you are planning to secure AppVeyor web with SSL the server should have dedicated IP assigned and (sub-)domain mapped in DNS to that IP. This is standard stuff for having a custom domain, and assigning DNS records to its IP address. 
+If you are planning to secure AppVeyor web with SSL the server should have dedicated IP assigned and (sub-)domain mapped in DNS to that IP. This is standard stuff for having a custom domain, and assigning DNS records to its IP address.
 
 ## Where to run builds
 
