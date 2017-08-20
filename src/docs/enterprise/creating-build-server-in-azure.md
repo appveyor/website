@@ -4,19 +4,20 @@ In Azure you can create build server on an Virtual Machine, hosted at your own d
 
 There is a little networking to setup, and it can all be done in the Azure Portal.
 
-You are going to create a new VM, install the bare essentials, configure your SSL certificate, and then setup networking. 
-Then you will be ready to install AppVeyor Enterprise software. 
+You are going to create a new VM, install the bare essentials, configure your SSL certificate, and then setup networking.
+Then you will be ready to install AppVeyor Enterprise software.
 
-These instructions assume you want to host your CI server at your own custom domain: `https://ci.mycompany.com`. 
+These instructions assume you want to host your CI server at your own custom domain: `https://ci.mycompany.com`.
 Of course, you can customize these instructions for your own preferences.
 
 ## Prerequisites
 
 * An Azure subscription
-* A custom domain (e.g. mycompany.com), and access to create 'A records' 
+* A custom domain (e.g. mycompany.com), and access to create 'A records'
 * An SSL certificate provider, and access to create a new SSL certificate, or access to a SSL certificate file (\*.pfx) containing the private key.
 
 ## Create Azure Virtual Machine
+
 In the Azure Portal:
 
 * Create a new 'Compute' resource
@@ -81,11 +82,13 @@ Edit the 'Network security group' resource that was created for the VM above, fo
 You should see the TCP/3389 is already configured for RDP access to your VM.
 
 Add a new rule:
+
 * Name: http
 * Port range: 80
 * Action: Allow
 
 Add another rule:
+
 * Name: https
 * Port range: 443
 * Action: Allow
@@ -93,6 +96,7 @@ Add another rule:
 Now, you can point your browser to, the public IP of your VM, from before:  `http://<yourstaticipaddress>`
 
 ## Setup Domain Name
+
 At the website of our domain name provider (e.g. go daddy etc)
 
 Add an 'A Record' for your static IP address from above, and map it to: 'ci.yourcompany.com' (in this example)
@@ -123,6 +127,7 @@ In IIS Manager
 * click that link, and fill out the form.
 
 For example:
+
 * Common Name: ci.mycompany.com (or whatever your custom domain is)
 * Organization: <Your Company Name>
 * Organizational Unit: <Your Unit>
@@ -155,6 +160,7 @@ In IIS Manager
 * click that link, and complete the form.
 
 For example:
+
 * File name: <your *.cer or *.crt file>
 * Friendly name: <e.g. mycompany.com>
 * Certificate Store: Personal
