@@ -99,7 +99,7 @@ Now, you can point your browser to, the public IP of your VM, from before:  `htt
 
 At the website of our domain name provider (e.g. go daddy etc)
 
-Add an 'A Record' for your static IP address from above, and map it to: 'ci.yourcompany.com' (in this example)
+Add an 'A Record' for your static IP address from above, and map it to: `ci.yourcompany.com` (in this example)
 
 It may take minutes or hours for DNS records to replicate around the globe before you will see the changes.
 When it does, you should be able to point your browser to: `http://ci.yourcompany.com`, and you will see the familar start page of IIS Server on your CI Server!
@@ -140,7 +140,7 @@ Click Next.
 Cryptographic Service Provider: Microsoft RSA SChannel Cryptographic Provider
 Bit length: 2048
 
-Save to a file on your desktop. (e.g. MyCSR.txt)
+Save to a file on your desktop. (e.g. `MyCSR.txt`)
 
 Now you can open the CSR file in notepad, and copy the contents to the clipboard.
 
@@ -186,17 +186,17 @@ Your Azure VM and network are now all set to install AppVeyor Enterprise.
 
 If you already have an SSL certificate for your custom domain, you are ready to install it into your CI Server.
 
-You are going to need a certificate in the file format *.pfx, that includes the private key. If you dont have that file, you can generate it using tools like OpenSSL, but you will need the private key in another format. There are plenty of articles on the internet to show you how to do that.
+You are going to need a certificate in the file format \*.pfx, that includes the private key. If you don't have that file, you can generate it using tools like OpenSSL, but you will need the private key in another format. There are plenty of articles on the internet to show you how to do that.
 
 RDP into your CI Server
 
-Copy the *.pfx file onto your server. (There are several ways you can do this, including Sharing your C drive with your host macchine in the RDP settings. Or even using a service like dropbox). (As a general security practice, a \*.pfx file is not somethign you want to  leave lying around the place for attackers to obtain)
+Copy the \*.pfx file onto your server. (There are several ways you can do this, including Sharing your C drive with your host macchine in the RDP settings. Or even using a service like dropbox). (As a general security practice, a \*.pfx file is not somethign you want to  leave lying around the place for attackers to obtain)
 
 Open Windows Explorer, and double click on the \*.pfx file.
 
 Store Location: Local Machine
 File name: <location of your \*.pfx file>
-Password: <the password that was used to create your pfx file>
+Password: <the password that was used to create your \*.pfx file>
 Certificate Store: Automatically select the certificate store based on the type of certificate
 
 The certificate will now be installed on the machine.
