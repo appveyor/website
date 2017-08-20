@@ -13,13 +13,14 @@ Of course, you can customize these instructions for your own preferences.
 ## Prerequisites
 
 * An Azure subscription
-* An SSL certificate provider
+* A custom domain (e.g. mycompany.com), and access to create 'A records' 
+* An SSL certificate provider, and access to create a new SSL certificate, or access to a SSL certificate file (\*.pfx) containing the private key.
 
 ## Create Azure Virtual Machine
 In the Azure Portal:
 
 * Create a new 'Compute' resource
-*Select 'Windows Server 2012 R2 DataCenter' template
+* Select the 'Windows Server 2012 R2 DataCenter' template
 
 Fill out the form:
 
@@ -27,20 +28,20 @@ Fill out the form:
 * Disk: SSD
 * Username: ci-username
 * Password: generate a password and make a note of it
-* Resource Group: ci-mycompany (or similar, or in an existing resource group)
+* Resource Group: ci-mycompany (or similar, or select an existing resource group)
 * Location: <YourAzureRegion>
-* Size: (e.g D2_V2 with at least 2-cores, this is not critical at this stage, and can be changed later)
+* Size: (e.g D2_V2 with at least 2-cores, size is not critical at this stage, and can be changed later)
 * use all other defaults
 
-The new VM machine, and associated netoerk resources will be created in the resource group you named above.
+The new VM machine will be created, along with a bunch of other networking resources, all contained in the resource group you named above.
 
 ## Setup a Public Static IP Address
 
 By default, when you create your VM, it will assigned a dynamic Public IP address.
 
-This is helpful for getting started quickly, but if you ever shut down your CI server VM, the chances are it will start up with a different public IP address each time, forcing you to change your DNS recrods for your SSL certificate.
+This is helpful for getting started quickly, but if you ever shut down your CI server VM, the chances are it will start up with a different public IP address each time, forcing you to change your DNS records for your custom domain (coming later).
 
-Here we are going to associate a static IP address to your CI server, so you have a fixed IP address to bind your SSL certificate to.
+Next, we are going to associate a static IP address to your CI server so that you have a fixed IP address to bind your custom domain to.
 
 In the Azure Portal
 
@@ -52,11 +53,11 @@ Edit the 'Public IP Address' resource created for the VM above, found in the sam
 * In Configuration blade, change from 'Dynamic' to 'Static'
 * In the Overview blade, 'Associate' the IP address again.
 
-This will assign you a new static IP address. Make a note of it e.g. `51.255.53.185` (your will be different)
+This will assign you a new static IP address. Make a note of it e.g. `51.255.53.185` (yours will be different)
 
 ## Install IIS on VM:
 
-Now that you have a running VM, and pulic IP address for it, you can setup SSL for your CI Server.
+Now that you have a running VM, and public IP address for it, you can setup SSL for your CI Server.
 
 In the Azure Portal
 
@@ -94,16 +95,22 @@ Now, you can point your browser to, the public IP of your VM, from before:  `htt
 ## Setup Domain Name
 At the website of our domain name provider (e.g. go daddy etc)
 
-Add an 'A Record' for your static IP address from above, and map it to: ci.yourcompany.com (for example)
+Add an 'A Record' for your static IP address from above, and map it to: 'ci.yourcompany.com' (in this example)
 
 It may take minutes or hours for DNS records to replicate around the globe before you will see the changes.
-When it does, you should be able to point your borwser to: `http://ci.yourcompany.com`, and you will see the familar start page of IIS Server on your CI Server!
+When it does, you should be able to point your browser to: `http://ci.yourcompany.com`, and you will see the familar start page of IIS Server on your CI Server!
 
 ## Setup SSL Certificate
 
-If you already have an SSL certificate that will work for your custom domain (i.e. ci.mycompany.com) you can skip this step.
-If you dont have a SSL cert yet, you will need to create one. You will first need to create a Certificate Signing Request (CSR). 
-There are many tools available on the internet to do that, but your VM has an easy way to create one for you too. 
+If you already have an SSL certificate that will work for your custom domain (i.e. ci.mycompany.com) you can skip the next step that creates the SSL certificate, and go straight to the step after to install your SSL certificate.
+
+If you don't have a SSL cert yet, you will need to create one. You will first need to create a special 'Certificate Signing Request' (CSR), which is a process that creates a private key and generates a bit of text that describes your certificate.
+
+There are many tools available on the internet that can do that for, but your VM has an easy way to create one for you too, that avoids you worrying about the private key.
+
+This process is outlined in detail below.
+
+### Creating SSL Certificate
 
 RDP into your VM again.
 In the VM, open the IIS Manager (hit the Windows Start button, and type IIS Manager)
@@ -123,19 +130,22 @@ For example:
 * State/province: <Your State>
 * Country/region: <Your Country>
 
-Leave the other defaults.
+Click Next.
 
-Save to a file on your desktop.
+Cryptographic Service Provider: Microsoft RSA SChannel Cryptographic Provider
+Bit length: 2048
+
+Save to a file on your desktop. (e.g. MyCSR.txt)
 
 Now you can open the CSR file in notepad, and copy the contents to the clipboard.
 
-Now you need to go and obtain an SSL certificate from one of the many providers on the internet.
-Many SSL certificate sites where you will obtain your SSL cert will expect you to provide either the CSR file or the paste the contents into their site.
-In the process you will generate a private key, that you **must save**, and they will issue you an SSL certificate in one form or another.
+Next, you will need to go exit the VM, and obtain an SSL certificate from your SSL certificate provider. There are many providers on the internet.
 
-The format you want from them is a *.cer or *.crt file. (IIS may support others)
+Many SSL certificate sites where you will obtain your SSL certificate will expect you to either provide the CSR file or the paste the contents into their site. DO NOT generate a new CSR, use the one you just created.
 
-Once you have that, then RDP back into your CI Server and complete the certificate completion process.
+Once your certificate provider has created you an SSL certificate, you need to download the certificate in the \*.cer or \*.crt format. (IIS may support others too)
+
+Once you have that file, then RDP back into your CI Server and complete the certificate completion process.
 
 In IIS Manager
 
@@ -150,6 +160,46 @@ For example:
 * Certificate Store: Personal
 
 Then select the 'Default Web Site' site in the left pane of IIS Manager.
+
+* Click the 'Bindings' link.
+* Click 'Add'
+
+
+* Type: https
+* IP address: All Unassigned
+* Port 443
+* SSL certificate: <Your Newly installed Cert>
+
+Close IIS Manager, and exit your RDP session.
+
+Now you can point your browser to: `https://ci.yourcompany.com` and see the familiar start page of IIS Server on your CI Server!
+
+Your Azure VM and network are now all set to install AppVeyor Enterprise.
+
+### Installing existing SSL Certificate
+
+If you already have an SSL certificate for your custom domain, you are ready to install it into your CI Server.
+
+You are going to need a certificate in the file format *.pfx, that includes the private key. If you dont have that file, you can generate it using tools like OpenSSL, but you will need the private key in another format. There are plenty of articles on the internet to show you how to do that.
+
+RDP into your CI Server
+
+Copy the *.pfx file onto your server. (There are several ways you can do this, including Sharing your C drive with your host macchine in the RDP settings. Or even using a service like dropbox). (As a general security practice, a \*.pfx file is not somethign you want to  leave lying around the place for attackers to obtain)
+
+Open Windows Explorer, and double click on the \*.pfx file.
+
+Store Location: Local Machine
+File name: <location of your \*.pfx file>
+Password: <the password that was used to create your pfx file>
+Certificate Store: Automatically select the certificate store based on the type of certificate
+
+The certificate will now be installed on the machine.
+
+Open the IIS Manager (hit the Windows Start button, and type IIS Manager)
+
+In IIS Manager
+
+Select the 'Default Web Site' site in the left pane of IIS Manager.
 
 * Click the 'Bindings' link.
 * Click 'Add'
