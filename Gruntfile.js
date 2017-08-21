@@ -365,7 +365,7 @@ module.exports = function(grunt) {
         'eslint',
         'markdownlint',
         'htmllint',
-        'accessibility',
+        //'accessibility',
         'connect:linkChecker',
         'linkChecker'
     ]);
