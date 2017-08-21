@@ -219,7 +219,7 @@ Select the 'Default Web Site' site in the left pane of IIS Manager.
 * Type: https
 * IP address: All Unassigned
 * Port 443
-* SSL certificate: <Your Newly installed Cert>
+* SSL certificate: `<Your Newly installed Cert>`
 
 Close IIS Manager, and exit your RDP session.
 
