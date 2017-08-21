@@ -1799,7 +1799,7 @@ meta.foundation-mq-topbar {
         line-height: 33px;
         padding: 0 2.5rem 0 0.9375rem;
         position: relative; }
-        .top-bar .toggle-topbar.menu-icon a span::after {
+        .top-bar .toggle-topbar.menu-icon a span:not(.show-for-sr)::after {
           content: "";
           display: block;
           height: 0;

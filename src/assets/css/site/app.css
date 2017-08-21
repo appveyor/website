@@ -96,3 +96,15 @@ div.title h2 {
         padding-bottom: 4px;
     }
 }
+
+.top-bar .toggle-topbar.menu-icon a span:not(.show-for-sr)::after {
+    content: "";
+    display: block;
+    height: 0;
+    position: absolute;
+    margin-top: -8px;
+    top: 50%;
+    right: 0.9375rem;
+    box-shadow: 0 0 0 1px #FFFFFF, 0 7px 0 1px #FFFFFF, 0 14px 0 1px #FFFFFF;
+    width: 16px;
+}
