@@ -16,6 +16,10 @@ title: AppVeyor Enterprise Installation Guide
 * WWindows Server 2012 R2 (Windows 8.1 (x64)) or higher
 * .NET Framework 4.5.2
 
+## Creating AppVeyor server
+
+* [Creating AppVeyor build server in Azure](/docs/enterprise/creating-build-server-in-azure)
+
 ## Setting up the server
 
 * [Set PowerShell execution policy to unrestricted](https://github.com/appveyor/ci/blob/master/scripts/enterprise/enable_powershell_unrestricted.ps1)
