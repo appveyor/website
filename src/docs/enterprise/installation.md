@@ -13,7 +13,7 @@ title: AppVeyor Enterprise Installation Guide
 
 ## Prerequisites
 
-* WWindows Server 2012 R2 (Windows 8.1 (x64)) or higher
+* WWindows Server 2012 R2 or Windows Server 2016
 * .NET Framework 4.5.2
 
 ## Creating AppVeyor server
@@ -22,6 +22,7 @@ title: AppVeyor Enterprise Installation Guide
 
 ## Setting up the server
 
+* Login via RDP into AppVeyor server 
 * [Set PowerShell execution policy to unrestricted](https://github.com/appveyor/ci/blob/master/scripts/enterprise/enable_powershell_unrestricted.ps1)
 * [Disable IE ESC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_ie_esc.ps1)
 
@@ -36,7 +37,7 @@ Download SQL Server 2016 SP1 Express Edition: [download link](https://www.micros
 * On "Database engine configuration" step:
     * Select Mixed mode
     * Add local "Administrators" group to "Specify SQL Server administrators"
-* Install SSMS 17.1: [download link](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
+* Install SSMS 17.x (optional): [download link](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
 * Delete `C:\SQLServer2016Media` directory.
 
 ## Install IIS
@@ -54,8 +55,12 @@ dism /Online /Enable-Feature /FeatureName:IIS-ASPNET45 /All
 
 ## Install AppVeyor
 
-* Login to `https://ci.appveyor.com` and click "Enterprise".
+* Login to `https://ci.appveyor.com` and click **Enterprise** in top menu. On that page you can see 
+  AppVeyor Enterprise license that is required during installation.
 * Grab `Installation URL` and run it in PowerShell console on AppVeyor server.
+* You will be walked through the installation wizard.
+* Exit your RDP session, open browser and navigate to `http://<server-ip-address>` to complete AppVeyor
+  installation.
 
 ## Setup Domain Name
 
@@ -180,4 +185,7 @@ Select the 'Default Web Site' site in the left pane of IIS Manager.
 
 Close IIS Manager, and exit your RDP session.
 
-Now you can point your browser to: `https://ci.yourcompany.com` and see the familiar start page of IIS Server on your CI Server!
+Now you can point your browser to `https://ci.yourcompany.com` and see AppVeyor CI login page!
+
+Login to AppVeyor and go to **Account menu &rarr; Settings &rarr; General**.
+Change **Application public URL** to `https://ci.yourcompany.com` adn enable **Enfoce secure HTTPS connections**.

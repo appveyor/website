@@ -30,11 +30,35 @@ Update-AppVeyor
 
 ## Backup
 
-[TBD]
+At the moment AppVeyor does not offer an automatic backups, so you should either do the backup manually
+or setup your own backup script/solution.
 
-* Registry settings
-* Databases
+For AppVeyor backup you should care about the following things:
+
+* Settings
+* SQL database
 * Artifacts
+
+### Settings
+
+AppVeyor application settings are stored in Registry under the following key:
+
+    HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\Server
+
+Make sure you have exported this key and put into safe place once AppVeyor is installed or before doing any maintenance of AppVeyor server.
+
+### SQL database
+
+You should periodically backup `AppveyorCI` SQL Server database with AppVeyor data.
+
+There are three more databases: `SbGatewayDatabase`, `SbManagementDB` and `SbMessageContainer01` used by Microsoft Service Bus (queueing service), but they hold transitional data mostly and can be restored on a
+new server by installing Service Bus.
+
+### Artifacts
+
+If you have configured external storage (Azure, AWS or Google) for build artifacts then you are good.
+
+If you have configured local file system for storing build artifacts you should think about periodic copying the contents of that folder to a safe location.
 
 # Troubleshooting and support
 
@@ -44,8 +68,8 @@ During installation AppVeyor uses randomly-generated values for security keys, a
 
 When something goes wrong:
 
-* If build real-time log stops working there might be a transient issue with SignalR. Do F5 in browser to restart SignalR connection.
-* Restart IIS and/or `Appveyor.Worker` and/or `Appveyor.BuildAgent` services.
-* Nothing helps - [report the issue](/support/) to AppVeyor team. While reporting the issue look into these places for possible errors/warning:
-    * Web browser's "Developer tools" - for any JavaScript-related errors.
+* If build real-time log stops working there might be a transient issue with SignalR. Try doing `CTRL+F5` in browser to restart SignalR connection.
+* Restart IIS and/or `Appveyor.Worker` services.
+* If nothing helped - [report the issue](/support/) to AppVeyor team. While reporting the issue look into these places for possible errors/warning:
+    * Web browser's "Developer tools" console - for any JavaScript-related errors.
     * `AppVeyor` event log in Event Viewer under `Applications and Services Logs\AppVeyor`. Web, Worker and Build Agent roles write logs there.
