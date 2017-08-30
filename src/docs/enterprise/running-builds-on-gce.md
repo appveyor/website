@@ -11,10 +11,6 @@ title: Running builds on Google Compute Engine
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
-## Enable custom build environment
-
-Currently custom build environment feature is not generally available. It is being enabled for specific accounts per request. Please send an email to [team@appveyor.com](mailto:team@appveyor.com) if you decide to try this feature.
-
 ## Create Google Cloud Platform service account
 
 * Open Google Cloud Platform menu and select existing or create new project to use for AppVeyor build environment

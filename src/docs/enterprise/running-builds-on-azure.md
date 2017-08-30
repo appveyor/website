@@ -11,10 +11,6 @@ title: Running builds on Azure cloud
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
-## Enable custom build environment
-
-Currently custom build environment feature is not generally available. It is being enabled for specific accounts per request. Please send an email to team@appveyor.com if you decide to try this feature.
-
 ## Create AD Service Principal
 
 ### Create Azure Active directory application
