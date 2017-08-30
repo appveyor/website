@@ -22,15 +22,15 @@ title: AppVeyor Enterprise Installation Guide
 
 ## Setting up the server
 
-* Login via RDP into AppVeyor server
-* [Set PowerShell execution policy to unrestricted](https://github.com/appveyor/ci/blob/master/scripts/enterprise/enable_powershell_unrestricted.ps1)
-* [Disable IE ESC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_ie_esc.ps1)
+* Login via RDP into AppVeyor server.
+* [Set PowerShell execution policy to unrestricted](https://github.com/appveyor/ci/blob/master/scripts/enterprise/enable_powershell_unrestricted.ps1).
+* [Disable IE ESC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_ie_esc.ps1).
 
 ## Install SQL Server 2016 Express
 
 Download SQL Server 2016 SP1 Express Edition: [download link](https://www.microsoft.com/en-us/download/details.aspx?id=54284)
 
-* Select "Custom" installation type
+* Select "Custom" installation type.
 * On "Feature selection" step select these features only:
     * Database Engine Services
     * Client Tools Connvectivity
@@ -50,8 +50,8 @@ dism /Online /Enable-Feature /FeatureName:IIS-ASPNET45 /All
 ```
 
 
-* Run `Get-WindowsFeature` and make sure ASP.NET 4.5 and WebSockets are enabled
-* Make sure `localhost` is opening
+* Run `Get-WindowsFeature` and make sure ASP.NET 4.5 and WebSockets are enabled.
+* Make sure `localhost` is opening.
 
 ## Install AppVeyor
 
@@ -64,9 +64,9 @@ dism /Online /Enable-Feature /FeatureName:IIS-ASPNET45 /All
 
 ## Setup Domain Name
 
-At the website of our domain name provider (e.g. go daddy etc)
+At the website of our domain name provider (e.g. go daddy etc):
 
-Add an 'A Record' for your static IP address from above, and map it to: `ci.yourcompany.com` (in this example)
+* Add an 'A Record' for your static IP address from above, and map it to: `ci.yourcompany.com` (in this example).
 
 It may take minutes or hours for DNS records to replicate around the globe before you will see the changes.
 When it does, you should be able to point your browser to: `http://ci.yourcompany.com`, and you will see the familar start page of IIS Server on your CI Server!
@@ -88,10 +88,10 @@ In the VM, open the IIS Manager (hit the Windows Start button, and type IIS Mana
 
 In IIS Manager:
 
-* select the server node in the left pane
-* in the  right pane, open the tile **Server Certificates**
-* on the far right pane, you now see a link to **Create Certificate Request**
-* click that link, and fill out the form.
+* Select the server node in the left pane.
+* In the  right pane, open the tile **Server Certificates**.
+* On the far right pane, you now see a link to **Create Certificate Request**.
+* Click that link, and fill out the form.
 
 For example:
 
@@ -107,7 +107,7 @@ Click **Next**.
 Cryptographic Service Provider: `Microsoft RSA SChannel Cryptographic Provider`
 Bit length: `2048`
 
-Save to a file on your desktop. (e.g. `MyCSR.txt`).
+Save to a file on your desktop (e.g. `MyCSR.txt`).
 
 Now you can open the CSR file in notepad, and copy the contents to the clipboard.
 
@@ -115,16 +115,16 @@ Next, you will need to go exit the VM, and obtain an SSL certificate from your S
 
 Many SSL certificate sites where you will obtain your SSL certificate will expect you to either provide the CSR file or the paste the contents into their site. DO NOT generate a new CSR, use the one you just created.
 
-Once your certificate provider has created you an SSL certificate, you need to download the certificate in the `*.cer` or `*.crt` format. (IIS may support others too)
+Once your certificate provider has created you an SSL certificate, you need to download the certificate in the `*.cer` or `*.crt` format (IIS may support others too).
 
 Once you have that file, then RDP back into your CI Server and complete the certificate completion process.
 
 In IIS Manager:
 
-* select the server node in the left pane
-* in right pane, open the tile **Server Certificates**.
-* on the far right pane, you now see a link to **Complete Certificate Request**
-* click that link, and complete the form.
+* Select the server node in the left pane.
+* In right pane, open the tile **Server Certificates**.
+* On the far right pane, you now see a link to **Complete Certificate Request**.
+* Click that link, and complete the form.
 
 For example:
 
@@ -134,8 +134,8 @@ For example:
 
 Then select the 'Default Web Site' site in the left pane of IIS Manager.
 
-* Click **Bindings** link
-* Click **Add**
+* Click **Bindings** link.
+* Click **Add**.
 
 
 * Type: `https`
@@ -155,9 +155,9 @@ If you already have an SSL certificate for your custom domain, you are ready to 
 
 You are going to need a certificate in the file format \*.pfx, that includes the private key. If you don't have that file, you can generate it using tools like OpenSSL, but you will need the private key in another format. There are plenty of articles on the internet to show you how to do that.
 
-RDP into your CI Server
+RDP into your CI Server.
 
-Copy the `*.pfx` file onto your server. (There are several ways you can do this, including Sharing your C drive with your host macchine in the RDP settings. Or even using a service like dropbox). (As a general security practice, a `*.pfx` file is not somethign you want to  leave lying around the place for attackers to obtain)
+Copy the `*.pfx` file onto your server. There are several ways you can do this, including sharing your C drive with your host machine in the RDP settings. Or even using a service like Dropbox. As a general security practice, a `*.pfx` file is not something you want to leave lying around the place for attackers to obtain.
 
 Open Windows Explorer, and double click on the `*.pfx` file.
 
@@ -168,7 +168,7 @@ Open Windows Explorer, and double click on the `*.pfx` file.
 
 The certificate will now be installed on the machine.
 
-Open the IIS Manager (hit the Windows Start button, and type IIS Manager)
+Open the IIS Manager (hit the Windows Start button, and type IIS Manager).
 
 In IIS Manager:
 
