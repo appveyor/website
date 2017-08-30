@@ -68,7 +68,7 @@ Add `Modify` permission for `IIS_IUSRS` group on artifacts folder.
 
 * Azure Blob Storage
 * Google Storage
-* Amazon S3 
+* Amazon S3
 
 ## Build cloud
 
