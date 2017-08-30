@@ -13,7 +13,20 @@ title: AppVeyor Enterprise Maintenance Guide
 
 ## Updating AppVeyor installation
 
-[TBD]
+RDP into AppVeyor server and open PowerShell console.
+
+To update AppVeyor Installation PowerShell module (AppVeyor Installer) run the following command:
+
+```posh
+iex ((New-Object Net.WebClient).DownloadString('https://www.appveyor.com/downloads/enterprise/install.ps1'))
+```
+
+To update AppVeyor installation (Web and Worker roles) to the latest available version run:
+
+```posh
+Update-AppVeyor
+```
+
 
 ## Backup
 
@@ -36,7 +49,3 @@ When something goes wrong:
 * Nothing helps - [report the issue](/support/) to AppVeyor team. While reporting the issue look into these places for possible errors/warning:
     * Web browser's "Developer tools" - for any JavaScript-related errors.
     * `AppVeyor` event log in Event Viewer under `Applications and Services Logs\AppVeyor`. Web, Worker and Build Agent roles write logs there.
-
-# Additional information
-
-* [How AppVeyor works](/docs/enterprise/how-appveyor-works/)
