@@ -13,7 +13,7 @@ title: AppVeyor Enterprise Configuration Guide
 
 ## Email notifications
 
-Configuring email notifications is a mandatory step.
+**Configuring email notifications is a mandatory step.**
 
 The following providers are supported for sending email notifications from AppVeyor:
 
@@ -21,7 +21,7 @@ The following providers are supported for sending email notifications from AppVe
 * [SendGrid](https://sendgrid.com/)
 * [Mailgun](https://www.mailgun.com/)
 
-To configure email notification settings login as System Administrator and go to **Settings &rarr; Email** page.
+To configure email notification settings login as System Administrator and go to **Account menu &rarr; Settings &rarr; Email** page.
 
 Specify **Notifications email address** and **Notifications sender name** to send *all* email messages from. These settings are mandatory.
 
@@ -58,21 +58,86 @@ Copy API key to **API key** field on email settings in AppVeyor.
 You need **Active API Key** ("Secret API key" on [dashboard home page](https://app.mailgun.com/app/dashboard) or "Active API Key" on [USers & API Keys](https://app.mailgun.com/app/account/security) page) to integrate AppVeyor with Mailgun.
 
 
+## Artifact storage
 
+**Configuring artifact storage is mandatory step.**
 
-## Artifacts storage
+Artifact storage is used to store build logs and artifact files uploaded during the build. At least one "system" artifact storage must be configured before running your first build on AppVeyor.
 
-* Local File System
+The following types of artifact storage are supported:
 
-Add `Modify` permission for `IIS_IUSRS` group on artifacts folder.
-
-* Azure Blob Storage
-* Google Storage
+* File system
+* Azure storage
+* Google storage
 * Amazon S3
 
+To configure artifact storage login to AppVeyor as System Administrator and go to **Account menu &rarr; Settings &rarr; Build environment &rarr; Artifacts storages** page.
+
+Click **Add storage** button and select storage type.
+
+### File system
+
+"File system" storage allows storing build artifacts on either local disk or networking share.
+
+During AppVeyor installation `%LocalAppData%\AppVeyor\Artifacts` directory is automatically created and correct ICALs for AppVeyor Web role's app pool identity configured.
+
+When adding "File system" storage **Path** should not contain environment variables. You can expand environment variables with the following command:
+
+    echo %LocalAppData%\AppVeyor\Artifacts
+
+If you are going to use a custom directory or UNC share for artifact storage then `Modify` permission for `IIS_IUSRS` group should be added for that directory.
+
+Click **Add** button to save the settings and add a new storage.
+
+Go to **Account menu &rarr; Settings &rarr; Build environment** page and type added storage name in **System artifact storage**. Click **Save** button.
+
+
+
+### Azure storage
+
+Login to [Azure Portal](https://portal.azure.com) and navigate to **Storage accounts** page.
+
+Click storage details and then **Access keys** under "Settings" section. Copy **Storage account name**
+and **Primary key** to AppVeyor storage settings.
+
+Click **Add** button to save the settings and add a new storage.
+
+Go to **Account menu &rarr; Settings &rarr; Build environment** page and type added storage name in **System artifact storage**. Click **Save** button.
+
+
+
+### Google storage
+
+* Open Google Cloud Platform menu and select existing or create new project to use for AppVeyor build environment
+* [Create Google Cloud Platform service account and obtain certificate](/docs/enterprise/creating-gcp-service-account/)
+
+In the main console menu navigate to **Storage &rarr; Browser** and create a new bucket.
+
+Get back to AppVeyor storage setting screen and type **Service account email**, paste the contents of
+.txt file with Base64-encoded certificate in **Service account certificate in Base64 format** field and
+type **Bucket name**.
+
+Click **Add** button to save the settings and add a new storage.
+
+Go to **Account menu &rarr; Settings &rarr; Build environment** page and type added storage name in **System artifact storage**. Click **Save** button.
+
+
+
+### Amazon S3
+
+[TBD]
+
+
 ## Build cloud
+
+AppVeyor can be configured to run builds in any of the following clouds:
 
 * [Microsoft Azure](/docs/enterprise/running-builds-on-azure/)
 * [Google Compute Cloud](/docs/enterprise/running-builds-on-gce/)
 * [Hyper-V](/docs/enterprise/running-builds-on-hyper-v/)
 * [Local process](/docs/enterprise/running-builds-as-local-process/)
+
+
+## Build job settings
+
+[TBD]
