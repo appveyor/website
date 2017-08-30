@@ -1,10 +1,10 @@
 ---
 layout: docs
-title: Maintaining AppVeyor Enterprise
+title: AppVeyor Enterprise Maintenance Guide
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
-# Maintaining AppVeyor Enterprise
+# AppVeyor Enterprise Maintenance Guide
 {:.no_toc}
 
 * Comment to trigger ToC generation

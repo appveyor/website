@@ -11,6 +11,8 @@ title: How AppVeyor works
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
+## Introduction
+
 AppVeyor is a distributed application consisting of several roles that can be installed on a single or multiple servers across the network.
 
 ![AppVeyor General Diagram](/assets/img/docs/enterprise/appveyor-architecture-general.png)
