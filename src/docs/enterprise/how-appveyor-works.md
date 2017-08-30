@@ -3,7 +3,13 @@ layout: docs
 title: How AppVeyor works
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # How AppVeyor works
+{:.no_toc}
+
+* Comment to trigger ToC generation
+{:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 AppVeyor is a distributed application consisting of several roles that can be installed on a single or multiple servers across the network.
 

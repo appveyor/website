@@ -23,3 +23,4 @@ AppVeyor Enterprise deployment process consists of the following steps:
 1. [Planning](/docs/enterprise/planning/)
 2. [Installation](/docs/enterprise/installation/)
 3. [Configuration](/docs/enterprise/configuration/)
+4. [Maintenance](/docs/enterprise/maintenance/)

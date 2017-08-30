@@ -3,7 +3,13 @@ layout: docs
 title: Creating Google Cloud Platform service account
 ---
 
+<!-- markdownlint-disable MD022 MD032 -->
 # Creating Google Cloud Platform service account
+{:.no_toc}
+
+* Comment to trigger ToC generation
+{:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## Create service account and download certificate
 
