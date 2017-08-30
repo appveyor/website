@@ -22,7 +22,7 @@ title: AppVeyor Enterprise Installation Guide
 
 ## Setting up the server
 
-* Login via RDP into AppVeyor server 
+* Login via RDP into AppVeyor server
 * [Set PowerShell execution policy to unrestricted](https://github.com/appveyor/ci/blob/master/scripts/enterprise/enable_powershell_unrestricted.ps1)
 * [Disable IE ESC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_ie_esc.ps1)
 
@@ -55,7 +55,7 @@ dism /Online /Enable-Feature /FeatureName:IIS-ASPNET45 /All
 
 ## Install AppVeyor
 
-* Login to `https://ci.appveyor.com` and click **Enterprise** in top menu. On that page you can see 
+* Login to `https://ci.appveyor.com` and click **Enterprise** in top menu. On that page you can see
   AppVeyor Enterprise license that is required during installation.
 * Grab `Installation URL` and run it in PowerShell console on AppVeyor server.
 * You will be walked through the installation wizard.
