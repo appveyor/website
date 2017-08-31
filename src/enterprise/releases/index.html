@@ -1,0 +1,32 @@
+---
+layout: one-column
+title: AppVeyor Enterprise Release Notes
+description: AppVeyor Enterprise Release Notes
+paginate:
+    collection:   releases
+    permalink:    /page/:num/   # pagination path (relative to template page)
+    reversed:     true
+---
+
+{% for post in paginator.releases %}
+    <h1 class="blog-post-title">
+        <a href="{{ post.url }}">{{ post.version }}</a>
+    </h1>
+
+    <div class="post-index-content">
+        {{ post.content }}
+    </div>
+{% endfor %}
+
+<div class="row">
+    <div class="columns small-6">
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}">&larr; Older</a>
+        {% endif %}
+    </div>
+    <div class="columns small-6 text-right">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}">Newer &rarr;</a>
+        {% endif %}
+    </div>
+</div>
