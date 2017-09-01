@@ -12,7 +12,7 @@ paginate:
 
 {% for post in paginator.releases %}
     <h2 class="blog-post-title">
-        <a href="{{ post.url }}">{{ post.version }}</a> {{ post.date | date: "%B %d, %Y" }}
+        <a href="{{ post.url }}">{{ post.version }}</a> <small>{{ post.date | date: "%B %d, %Y" }}</small>
     </h2>
 {% endfor %}
 
