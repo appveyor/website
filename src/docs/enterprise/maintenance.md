@@ -41,7 +41,7 @@ We recommend doing backups before updating AppVeyor installation or doing server
 
 Copy backups from the server to an external location.
 
-**Artifact backups**
+### Artifact backups
 
 If you have configured external storage (Azure, AWS or Google) for build artifacts then you are good.
 
