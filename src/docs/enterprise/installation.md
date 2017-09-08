@@ -73,15 +73,49 @@ When it does, you should be able to point your browser to: `http://ci.yourcompan
 
 ## Setup SSL Certificate
 
-If you already have an SSL certificate that will work for your custom domain (i.e. ci.mycompany.com) you can skip the next step that creates the SSL certificate, and go straight to the step after to install your SSL certificate.
+If you already have an SSL certificate that will work for your custom domain (i.e. ci.mycompany.com) you can go to "Installing existing SSL Certificate" section for
+for certificate importing instructions.
 
-If you don't have a SSL cert yet, you will need to create one. You will first need to create a special 'Certificate Signing Request' (CSR), which is a process that creates a private key and generates a bit of text that describes your certificate.
+If you don't have a SSL cert yet, you will need to create one. There are few options available: 
+
+1. You can create a self-signed certificate - it will do the job by encrypting the traffic between AppVeyor VM and your browser, but it won't be trusted
+   and you'll be seeing a security warning in the browser all the time. We are not going to review this method here.
+2. Getting free [Let's Encrypt](https://letsencrypt.org/) certificate.
+3. Purchasing SSL certificate from commercial CA.
+
+### Getting free Let’s Encrypt SSL Certificate
+
+[Let's Encrypt](https://letsencrypt.org/) is a **free**, **automated**, and **open** Certificate Authority.
+
+You can get a free certificate from "Let's Encrypt" Certificate Authority (CA) - it's absolutely functional certificate and trusted by all major browser.
+The only "gotcha" is that it's issued for 60 days only and after that it must be renewed. Fortunately, there is a tool that automates all the steps from
+requesting and installing a new certificate to IIS website to its automatic renewal upon expiration.
+
+[letsencrypt-win-simple](https://github.com/Lone-Coder/letsencrypt-win-simple) is an open-source tool written in .NET and working with Let's Encrypt API (so called ACME client).
+The tool automates provisioning of SSL certificates to IIS web sites.
+
+**IMPORTANT NOTE:** The tools requires that website you are going to install certificate to should have a binding with **host header** set to your domain name configured in the previous step. By default, "Default Web Site" in IIS has "all IPs" on port 80 binding without a host header.
+
+To add a binding with host header open **IIS Manager** and expand server node, then **Sites**.
+
+Select **Default Web Site** and click **Bindings...** on the right action pane. Click **Add...** and enter:
+
+* Type: `http`
+* IP address: `All unassigned`
+* Port: `80`
+* Host name: `ci.yourcompany.com`
+
+Now the site is ready for SSL certificate installation with **letsencrypt-win-simple** tool.
+
+Just [follow simple usage instructions for letsencrypt-win-simple tool](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki/Basic-Usage#steps) and enjoy the results by opening `https://ci.yourcompany.com` in your browser and seeing IIS start page! 
+
+### Purchasing SSL Certificate
+
+To purchase certificate from a certificate authority (CA) you will first need to create a special 'Certificate Signing Request' (CSR), which is a process that creates a private key and generates a bit of text that describes your certificate.
 
 There are many tools available on the internet that can do that for, but your VM has an easy way to create one for you too, that avoids you worrying about the private key.
 
 This process is outlined in detail below.
-
-### Creating SSL Certificate
 
 RDP into your VM again.
 In the VM, open the IIS Manager (hit the Windows Start button, and type IIS Manager)
