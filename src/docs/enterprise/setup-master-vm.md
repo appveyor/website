@@ -26,6 +26,7 @@ Every step is represented by separate PowerShell script to make this task simple
 * [Disable UAC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_uac.ps1)
 * [Disable WER](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_wer.ps1)
 * [Disable IE ESC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_ie_esc.ps1)
+* [Disable new network location wizard](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_new_network_location_wizard.ps1)
 * [Allow connecting to any host via WinRM](https://github.com/appveyor/ci/blob/master/scripts/enterprise/update_winrm_allow_hosts.ps1)
 * [Add-Path helper cmdlets](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_path_utils.ps1) (please do not skip, other software installation scripts depend on it)
  <!--
