@@ -76,7 +76,7 @@ When it does, you should be able to point your browser to: `http://ci.yourcompan
 If you already have an SSL certificate that will work for your custom domain (i.e. ci.mycompany.com) you can go to "Installing existing SSL Certificate" section for
 for certificate importing instructions.
 
-If you don't have a SSL cert yet, you will need to create one. There are few options available: 
+If you don't have a SSL cert yet, you will need to create one. There are few options available:
 
 1. You can create a self-signed certificate - it will do the job by encrypting the traffic between AppVeyor VM and your browser, but it won't be trusted
    and you'll be seeing a security warning in the browser all the time. We are not going to review this method here.
@@ -107,7 +107,7 @@ Select **Default Web Site** and click **Bindings...** on the right action pane. 
 
 Now the site is ready for SSL certificate installation with **letsencrypt-win-simple** tool.
 
-Just [follow simple usage instructions for letsencrypt-win-simple tool](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki/Basic-Usage#steps) and enjoy the results by opening `https://ci.yourcompany.com` in your browser and seeing IIS start page! 
+Just [follow simple usage instructions for letsencrypt-win-simple tool](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki/Basic-Usage#steps) and enjoy the results by opening `https://ci.yourcompany.com` in your browser and seeing IIS start page!
 
 ### Purchasing SSL Certificate
 
