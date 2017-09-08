@@ -94,7 +94,7 @@ requesting and installing a new certificate to IIS website to its automatic rene
 [letsencrypt-win-simple](https://github.com/Lone-Coder/letsencrypt-win-simple) is an open-source tool written in .NET and working with Let's Encrypt API (so called ACME client).
 The tool automates provisioning of SSL certificates to IIS web sites.
 
-**IMPORTANT NOTE:** The tools requires that website you are going to install certificate to should have a binding with **host header** set to your domain name configured in the previous step. By default, "Default Web Site" in IIS has "all IPs" on port 80 binding without a host header.
+**IMPORTANT NOTE:** The tool requires that website you are going to install certificate to should have a binding with **host header** set to your domain name configured in the previous step. By default, "Default Web Site" in IIS has "all IPs" on port 80 binding without a host header.
 
 To add a binding with host header open **IIS Manager** and expand server node, then **Sites**.
 
