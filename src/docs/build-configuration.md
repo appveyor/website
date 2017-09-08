@@ -483,9 +483,10 @@ configuration:
 - Debug
 - Release
 
-matrix:
-  - MY_VAR: A
-  - MY_VAR: B
+environment:
+  matrix:
+    - MY_VAR: A
+    - MY_VAR: B
 
 matrix:
   exclude:
