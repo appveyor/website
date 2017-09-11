@@ -46,7 +46,7 @@ deploy:
     do_not_use_checksum: false
     skip_dirs: '\\Downloads;\\App_Data'
     on:
-      non_master: true
+      branch: staging
 
   - provider: WebDeploy
     server: https://appveyor.scm.azurewebsites.net:443/MsDeploy.axd?site=appveyor
