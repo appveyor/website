@@ -590,11 +590,11 @@ You can use those images to unblock your builds while we are working together wi
     </tr>
     <tr>
         <td>LLVM 4.0.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>LLVM 4.0.0 Compiler Infrastructure libraries (<code>C:\Libraries\llvm-4.0.0</code>)</td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- MinGW, MSYS, Cygwin -->
     <tr>
