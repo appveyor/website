@@ -719,7 +719,7 @@ You can use those images to unblock your builds while we are working together wi
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Qt Installer Framework 2.0.1</td>
+        <td>Qt Installer Framework 2.0.3</td>
         <td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <!-- Tools -->
