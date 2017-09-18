@@ -141,3 +141,46 @@ AppVeyor can be configured to run builds in any of the following clouds:
 ## Build job settings
 
 [TBD]
+
+## Builds retention policy
+
+Builds retention policy automatically deletes old builds and their artifacts to reclaim artfiact storage.
+
+Builds retention policy can be enabled on account level and applied to all projects or it can be enabled (or overridden) on individual project level.
+
+To enable builds retention policy on account level go to **Account menu &rarr; Retention policy**.
+
+Specify the miniumum "age" of builds that should be deleted. The cut-off date is compared with build creation date.
+
+You can also specify multiple conditions for builds to exclude, for example you can skip tagged builds or builds with `[RELEASE]` word in commit message.
+
+Save retention policy.
+
+Now, to execute retention policy you should additionally configure two scheduled tasks:
+
+* Execute retention policy (`ExecuteRetentionPolicy`)
+* Purge deleted builds (`PurgeDeletedBuilds`)
+
+`ExecuteRetentionPolicy` should run first. It goes through project builds and those satisfying the criteria are marked for deletion.
+
+`PurgeDeletedBuilds` completely deletes builds marked for deletion. All build artifacts such as logs, uploaded artifacts, test results and NuGet packages are also deleted.
+
+To add scheduled tasks go **Account menu &rarr; Scheduled tasks**.
+
+Add new schedule with the following details:
+
+* Name: `ExecuteRetentionPolicy`
+* Crontab expression: `0 11 * * *` (run every day at 11:00 am UTC)
+* Job type: `ExecuteRetentionPolicy`
+* Job parameters (JSON): `{}`
+* Is active: checked
+
+Add second schedule with the following details:
+
+* Name: `PurgeDeletedBuilds`
+* Crontab expression: `15 11 * * *` (run every day at 11:15 am UTC)
+* Job type: `PurgeDeletedBuilds`
+* Job parameters (JSON): `{}`
+* Is active: checked
+
+You may want to play with `ExecuteRetentionPolicy` first by scheduling it on nearest time possible and make sure you are OK with the results (right builds were deleted), then enable `PurgeDeletedBuilds` to finally deleted builds as this operation is irreversible.
