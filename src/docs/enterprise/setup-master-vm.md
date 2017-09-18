@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Setup Master VM
+title: Setting up Master VM
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
@@ -11,30 +11,29 @@ title: Setup Master VM
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
-## Setup Master VM
-
 Login to Master VM via RDP.
+
 Please note that your builds will be run under the user you are currently logged in with, so if you want to run builds under different username please create a new user and re-login before contunue to the next steps.
 
-### Basic configuration
+## Basic configuration
 
 Steps below are result of our experience of making Windows Server VMs work in AppVeyor build environment.
 Every step is represented by separate PowerShell script to make this task simple, but still leave you easy way to select what script to run.
 
-* [Disable Server Manager auto-start](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_servermanager.ps1)
-* [Set PowerShell execution policy to unrestricted](https://github.com/appveyor/ci/blob/master/scripts/enterprise/enable_powershell_unrestricted.ps1)
-* [Disable UAC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_uac.ps1)
-* [Disable WER](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_wer.ps1)
-* [Disable IE ESC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_ie_esc.ps1)
-* [Allow connecting to any host via WinRM](https://github.com/appveyor/ci/blob/master/scripts/enterprise/update_winrm_allow_hosts.ps1)
-* [Add-Path helper cmdlets](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_path_utils.ps1) (please do not skip, other software installation scripts depend on it)
+* [Set PowerShell execution policy to unrestricted](https://github.com/appveyor/ci/blob/master/scripts/enterprise/enable_powershell_unrestricted.ps1) ([raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/enable_powershell_unrestricted.ps1))
+* [Disable Server Manager auto-start](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_servermanager.ps1) ([raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/disable_servermanager.ps1))
+* [Disable UAC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_uac.ps1) ([raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/disable_uac.ps1))
+* [Disable WER](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_wer.ps1) ([raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/disable_wer.ps1))
+* [Disable IE ESC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_ie_esc.ps1) ([raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/disable_ie_esc.ps1))
+* [Allow connecting to any host via WinRM](https://github.com/appveyor/ci/blob/master/scripts/enterprise/update_winrm_allow_hosts.ps1) ([raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/update_winrm_allow_hosts.ps1))
+* [Add-Path helper cmdlets](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_path_utils.ps1) ([raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/install_path_utils.ps1)) - do not skip this step as other software installation scripts depend on it
  <!--
  Disable unnecessary Windows services and Scheduler tasks
  Disable Windows automatic maintenance
  Disable Windows Updates
  -->
 
-### Essential 3rd-party software
+## Essential 3rd-party software
 
 * [7-Zip](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_7zip.ps1)
 * [Chocolatey](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_chocolatey.ps1)
@@ -43,7 +42,7 @@ Every step is represented by separate PowerShell script to make this task simple
 * [Git](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_git.ps1)
 * [Git LFS](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_git_lfs.ps1)
 
-### Build framework
+## Build framework
 
 If you are using .NET stack you probably need some version of MSBuild and/or Visual Studio. Please use scripts below to install what you need. Please follow order in which scripts are listed (Visual Studio after MSBuild of the same generation an newer products after older ones) to be on the safe side.
 
@@ -54,7 +53,7 @@ If you are using .NET stack you probably need some version of MSBuild and/or Vis
 
 Install other build framework of your choice.
 
-### Test framework
+## Test framework
 
 Run one or more of below scripts to install and/or enable test framework of your choice
 
@@ -65,7 +64,7 @@ Run one or more of below scripts to install and/or enable test framework of your
 * [xUnit 2.x](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_xunit_20.ps1)
 * [MSpec](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_mspec.ps1)
 
-### AppVeyor Build Agent
+## AppVeyor Build Agent
 
 * [Download and install AppVeyor Build Agent](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_appveyor_build_agent.ps1)
 
@@ -75,16 +74,16 @@ At this moment you have to decide if AppVeyor build agent will run in **interact
 
 * **GCE only**: [Set Build Agent mode to **GCE**](https://github.com/appveyor/ci/blob/master/scripts/enterprise/set_gce_build_agent_mode.ps1)
 
-#### Tuning for Interactive mode
+### Tuning for Interactive mode
 
 * [Enable auto-logon](https://github.com/appveyor/ci/blob/master/scripts/enterprise/enable_auto_logon.ps1)
 * [Add Appveyor Build Agent to auto-run](https://github.com/appveyor/ci/blob/master/scripts/enterprise/add_appveyor_build_agent_to_auto_run.ps1)
 * Restart VM to ensure that changes auto-logon/run works as expected. Next time you log on, you should not see usual profile loading screen and AppVeyor build Agent should be already started (you will see it on the task bar).
 
-#### Tuning for Headless mode
+### Tuning for Headless mode
 
 [TBD]
 
-#### Troubleshooting Build Agent
+### Troubleshooting Build Agent
 
 If you hit any issues with AppVeyor Build Agent start, first place to look is AppVeyor event log, which is located at **Applications and Services Logs** > **AppVeyor**.

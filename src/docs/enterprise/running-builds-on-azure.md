@@ -11,11 +11,9 @@ title: Running builds on Azure cloud
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
-## Create AD Service Principal
+## Introduction
 
-### Create Azure Active directory application
-
-During this step you will be needed to collect number of configuration and authentication setting for later use with AppVeyor. To avoid confusion we recommend to prepare some deployment notes (it can be just notepad file in **secure** location or password manager section), with the following fields:
+During the following steps you will need to collect a number of configuration and authentication settings to configure Azure builds in AppVeyor. To avoid confusion we recommend doing some deployment notes (it can be just a notepad file in **secure** location or password manager section) with the following fields:
 
 * AAD application name
 * Client ID
@@ -27,79 +25,105 @@ During this step you will be needed to collect number of configuration and authe
 * Disk storage account name
 * Security group name
 
-Now let us start with creating AAD application.
 
-* Open [old Azure portal](https://manage.windowsazure.com/), select **Active Directory** in the left pane
-* Select **Default directory**, which you should be already created by default for you in Azure
-* Select **APPLICATIONS** tab
-* Select **Add** in the bottom. **Add application** wizard will pop up
-    * Choose **Add an application that my organization is developing**
-    * Name it descriptively (for example **Appveyor build**) copy it and save in your deployment notes as a **AAD application name**
-    * Select **WEB APPLICATION AND/OR WEB API** type
-    * **SIGN-ON URL** and **APP ID URI** are not going to be used in our scenario, so add anything which is well-recognize-able like [http://appveyor-build](http://appveyor-build)
-* Select **CONFIGURE** tab
-    * Navigate to **CLIENT ID**, copy it and save in your deployment notes as a **Client ID**
-    * Navigate to **keys**, select duration, and press **SAVE** icon on the bottom of the screen
-    * Secure key will be displayed, copy it and save in your deployment notes as a **Client Secret**
-* Next save Tenant ID for future use. For that you need to copy GUID from browser address bar
-    * You can see two GUIDs there if you are still in **CONFIGURE** page. You need first which is following `Directory/`
-    * Save it in your deployment notes as a **Tenant ID**
-* Finally save Subscription ID to complete deployment notes
-    * Navigate to **Subscriptions** in the top right, choose **Manage subscription/directory**, select, copy and save your **Subscription ID** in deployment notes.
+## Configuring AD service accont
 
-## Create new Resource Group in new Portal
+### Create Azure Active Directory application
 
-* Open [new Azure Portal](https://portal.azure.com)
-    * You can open it from old portal directly by selecting **Check out the new portal**
-* Select **Resource groups**
-    * You may need to go to **More services** in the bottom of the left menu and type **Resource groups** in Filter
-* Press **Add** to create new resource groups
-    * Name it consistently with what was chosen for AAD application, for example **appveyor-build-rg**
-    * Complete resource group creation by pressing **Create**
-    * Save resource group name in your deployment notes as **VMs resource group**
-* Do not close Azure Portal
+Now, let's start from creating AAD application.
+
+In [Azure Portal](https://portal.azure.com) navigate to **Azure Active Directory** blade.
+
+Select **App registrations**.
+
+Click **New application registration**.
+
+Specify application details:
+
+* Name: `appveyor-ci-enterprise` (this is **AAD application name** in your notes)
+* Application type: `Web app/API`
+* Sign-on URL: `http://appveyor-ci-enterprise`
+
+On application details page copy **Application ID** and save it as **Client ID** in your notes.
+
+Open **Keys** page and add a new key:
+
+* Description: `appveyor-ci-enterprise`
+* Expires: `Never expires` (or whatever is suggested by your company policy)
+
+Save and copy generated key value - this is **Client secret** in your notes.
+
+To find your **Tenant ID** navigate back to **Azure Active Directory** blade.
+
+Select **Properties**.
+
+Copy **Directory ID** and save it as **Tenant ID** in your notes.
+
+Finally, to get **Subscription ID** navigate to **Subscription** blade.
+
+After this step you should have the following values:
+
+* AAD application name
+* Client ID
+* Client secret
+* Tenant ID
+* Subscription ID
+
+Related materials:
+
+* [Create an Azure Active Directory application](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#create-an-azure-active-directory-application)
+
+## Create new Resource Group
+
+Login to [Azure Portal](https://portal.azure.com)
+
+Select **Resource groups**. You may need to go to **More services** in the bottom of the left menu and type **Resource groups** in Filter.
+
+Press **Add** to create new resource groups. Name it consistently with what was chosen for AAD application, for example **appveyor-build-rg**.
+
+Save resource group name in your deployment notes as **VMs resource group**.
 
 ### Assign principal (AAD application) to resource group as a Contributor
 
-* Select Resource group created before and navigate to **Access control (IAM)**
-* New Azure portal's *blade* will open on the right, press **Add** on top of it
-* In rightmost *blade* select **Contributor**
-* Yet another blade named **Add users** will open
-    * By default, it displays only Microsoft (Live Id) accounts
-    * Use search to find **AAD application name** from your deployment notes
-* Press **Select** and **OK** to confirm your selection
-* Do not close Azure Portal
+On resource group details blade select **Access control (IAM)**.
 
-#### Useful links
+Click **Add** button to add new permissions:
 
-* [http://blog.davidebbo.com/2014/12/azure-service-principal.html](http://blog.davidebbo.com/2014/12/azure-service-principal.html)
-* [http://www.videoqe.com/videogallery/configure-azure-active-directory-application](http://www.videoqe.com/videogallery/configure-azure-active-directory-application)
+* Role: `Contributor`
+* Select: `appveyor-ci-enterprise` (this is AAD application name)
 
-**Now your Azure Active directory application (which will be used by AppVeyor as identity) has Contributor permissions in resource group which will contain resources managed by AppVeyor!**
+Make sure the application was found. Click **Save**.
+
+**Now your Azure Active Directory application (which will be used by AppVeyor as identity) has Contributor permissions in resource group which will contain resources managed by AppVeyor!**
+
 
 ## Create new storage account
 
-* In Azure Portal select **Storage accounts**
-    * You may need to go to **More services** in the bottom of the left menu and type **Storage accounts** in Filter
-    * Ensure that you selected **Storage accounts** and not **Storage accounts (classic)**
-* Press **Add**
-* In **Create storage account** *blade* enter/select the following (only important settings described, please feel free to leave default value for others):
-    * Descriptive name, which still satisfies storage account naming restrictions (**appveyorbuildsa** for our example).
-    * Deployment model: Resource manager
-    * Performance: premium (not mandatory, but recommended, however it will require **DS** series or better VMs)
-    * Replication: Locally-redundant storage (LRS) is good enough for our purpose
-    * Resource group: Use existing and select resource group created before (**appveyor-build-rg** in our example)
-    * Location: Choose what is closer to services your build might depend on. Appveyor servers are located in West US, but it will work well with AppVeyor in any Azure region
-* Save Location in your deployment notes as **Location**
-* Save storage account name in your deployment notes as **Disk storage account name**
-* Do not close Azure Portal
+Azure storage account will be used for storing master and build worker VM disks and, optionally, build artifacts.
+
+Login to Azure Portal and select **Storage accounts** (you may need to go to **More services** in the bottom of the left menu and type **Storage accounts** in Filter).
+
+Click **Add** to open **Create storage account** blade. Enter the following details (only important settings described, please feel free to leave default value for others):
+
+* Name: `<yourcompany>appveyorci` - the name must be unique across Azure. Save this name as **Disk storage account name** in your notes.
+* Deployment model: `Resource manager`.
+* Performance: `Premium` - recommended if you are going to use **DS** VM series to run your builds.
+* Replication: `Locally-redundant storage (LRS)`
+* Secure transfer required: `Disabled`
+* Resource group: Use existing - `appveyor-build-rg`
+* Location: Choose whatever is closer to services your builds might depend on. AppVeyor servers are located in West US, but it will work well with AppVeyor in any Azure region. Save selected location as **Location** in your notes.
+
 
 ## Create Master VM
 
-Please note that in this document we use **Windows Server 2012 R2 Datacenter** VM as most popular and most tested with AppVeyor. However, the whole point of AppVeyor's **Private cloud** feature is to give customers more freedom in build worker VM software. For AppVeyor to work we OS should be at least Windows Server 2012 (R2 preferable) with .NET framework 4.5 installed.
+*Master* VM is used as a template for creating new build worker VMs. On that VM you install all software required by AppVeyor and any additional software required by your builds. You do a snapshot (copy) of VM's OS disk and then us it as a template (*image* in AppVeyor terms) to provision new build worker VMs.
 
-* In Azure Portal select **Virtual machines**
-    * Ensure that you selected **Virtual machines** and not **Virtual machines (classic)**
+Please note, that in this document we use **Windows Server 2012 R2 Datacenter** OS as the most popular and most tested with AppVeyor. However, AppVeyor supports both **Windows Server 2012 R2** with .NET framework 4.5 installed and **Windows Server 2016**.
+
+Login to Azure Portal and select **Virtual machines**.
+
+
+* Ensure that you selected **Virtual machines** and not **Virtual machines (classic)**
 * Press **Add**
 * In **Compute** *blade* select **Windows Server**
 * In **Windows Server** *blade* select **Windows Server 2012 R2 Datacenter**
@@ -121,13 +145,20 @@ Please note that in this document we use **Windows Server 2012 R2 Datacenter** V
 
 ## Setup Master VM
 
-* Follow [those steps](/docs/enterprise/setup-master-vm/) to setup software required for build process. It is tested PowerShell scripts which can be simple copy-pasted to PowerShell window (started in privileged mode). Some notes:
-    * We strongly recommend to run everything from [Basic configuration](/docs/enterprise/setup-master-vm/#basic-configuration) and [Essential 3rd-party software](/docs/enterprise/setup-master-vm/#essential-3rd-party-software)
-    * You can skip one of msbuild and VS version or both if you dont need them in [Build framework](/docs/enterprise/setup-master-vm/#build-framework) step
-    * You can skip test framework you do not need in [Test framework](/docs/enterprise/setup-master-vm/#test-framework) step
-    * Steps [AppVeyor Build Agent](/docs/enterprise/setup-master-vm/#appveyor-build-agent) and [Tuning for Interactive mode](/docs/enterprise/setup-master-vm/#tuning-for-interactive-mode) are mandatory
+Login into master VM via RDP.
 
-* Install additional software needed
+Follow [these steps](/docs/enterprise/setup-master-vm/) to configure VM and install software required for your build process. It is tested PowerShell scripts which can be simply copy-pasted to PowerShell window (started in privileged mode). Specifically:
+
+* [Basic configuration](/docs/enterprise/setup-master-vm/#basic-configuration) and [Essential 3rd-party software](/docs/enterprise/setup-master-vm/#essential-3rd-party-software) - we strongly recommend to install everything from those sections. 
+* [Build framework](/docs/enterprise/setup-master-vm/#build-framework) - you can skip one of MSBuild and Visual Studio versions or both if you don't need them.
+* [Test framework](/docs/enterprise/setup-master-vm/#test-framework) - you can skip that step if you are running your own custom test script/framework.
+* [AppVeyor Build Agent](/docs/enterprise/setup-master-vm/#appveyor-build-agent) and [Tuning for Interactive mode](/docs/enterprise/setup-master-vm/#tuning-for-interactive-mode) - these steps are mandatory.
+
+Install any additional software required for your builds.
+
+Do not sysprep master VM!
+
+**Stop** VM from Azure Portal to fully deallocate its resources and avoiding excessive charges.
 
 ## Prepare master VHD
 
