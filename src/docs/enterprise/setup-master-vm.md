@@ -53,7 +53,7 @@ If you are using .NET stack you probably need some version of MSBuild and/or Vis
 * [Build Tools for Visual Studio 2015](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_msbuild_tools_2015.ps1) [[raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/install_msbuild_tools_2015.ps1)]
 * [Visual Studio Community 2015](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_vs2015.ps1) [[raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/install_vs2015.ps1)]
 * [Build Tools for Visual Studio 2017](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_msbuild_tools_2017.ps1) [[raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/install_msbuild_tools_2017.ps1)]
-* [Visual Studio Community 2017](https://www.visualstudio.com/downloads/]
+* [Visual Studio Community 2017](https://www.visualstudio.com/downloads/)
 
 Install other build framework of your choice.
 
