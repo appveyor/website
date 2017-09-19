@@ -188,7 +188,6 @@ Do not sysprep master VM!
 Shutdown VM from either RDP session or **Stop** it from Azure Portal (this will fully deallocate its resources and avoiding excessive charges).
 
 
-
 ## Create an image from Master VHD
 
 In Azure Portal open VM details blade and select **Disks**.
@@ -260,6 +259,12 @@ Update the following settings:
 
 Click **Save**.
 
+
+## Creating Master VM from existing VHD
+
+To update Master VHD and create a new image for AppVeyor you should create a new Azure VM from existing VHD.
+
+On your computer run [PowerShell script to create Azure VM from existing VHD](https://github.com/appveyor/ci/blob/master/scripts/enterprise/create_master_vm_from_vhd.ps1) ([raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/create_master_vm_from_vhd.ps1)). This script depends on [Azure PowerShell cmdlets](https://docs.microsoft.com/en-us/powershell/azure/install-azurerm-ps?view=azurermps-4.3.1). You can copy all the data this script requires from Azure cloud details in AppVeyor.
 
 
 ## Routing build to your own cloud
