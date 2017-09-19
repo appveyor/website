@@ -89,3 +89,26 @@ If you are building with custom rules which may cause `DefaultPlatformToolset` t
     <PlatformToolset>$(DefaultPlatformToolset)</PlatformToolset>
 </PropertyGroup>
 ```
+
+### VC++ Packaging Tool
+
+Vcpkg is a package manager that helps to acquire, build and install C/C++ open source dependencies for C/C++ projects built with Visual Studio 2017 or Visual Studio 2015 Update 3.
+
+AppVeyor comes with [VC++ Packaging Tool](https://github.com/Microsoft/vcpkg) pre-installed in `C:\tools\vcpkg` folder.
+
+For example, if a project built with CMake requires SQLite 3 library as a dependency:
+
+* Install required package for both target platforms
+
+```bat
+vcpkg install sqlite3:x86-windows
+vcpkg install sqlite3:x64-windows
+```
+
+* Integrate Vcpkg packages with CMake:
+
+```bat
+cmake -DCMAKE_TOOLCHAIN_FILE=c:/tools/vcpkg/scripts/buildsystems/vcpkg.cmake ...
+```
+
+Read more about using Vcpkg in its [documentation](https://vcpkg.readthedocs.io).
