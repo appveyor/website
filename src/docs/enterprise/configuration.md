@@ -95,6 +95,8 @@ Go to **Account menu &rarr; Settings &rarr; Build environment** page and type ad
 
 ### Azure storage
 
+> IMPORTANT NOTE: "Premium" storage accounts cannot be used as artifact storage as they can hold page blobs only used for VM disks. [More information about Premium storage accounts](https://docs.microsoft.com/en-us/azure/storage/common/storage-premium-storage).
+
 Login to [Azure Portal](https://portal.azure.com) and navigate to **Storage accounts** page.
 
 Click storage details and then **Access keys** under "Settings" section. Copy **Storage account name**
