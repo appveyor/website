@@ -13,7 +13,7 @@ title: Running builds on Azure cloud
 
 ## Introduction
 
-During the following steps you will need to collect a number of configuration and authentication settings to configure Azure builds in AppVeyor. To avoid confusion we recommend doing some deployment notes (it can be just a notepad file in **secure** location or password manager section) with the following fields:
+During the following steps you will need to collect a number of configuration and authentication settings to configure Azure builds in AppVeyor. For better productivity we recommend making some deployment notes (it can be just a notepad file in **secure** location or password manager section) with the following fields:
 
 * AAD application name
 * Client ID
@@ -24,7 +24,7 @@ During the following steps you will need to collect a number of configuration an
 * Location
 * Disk storage account name
 * Security group name
-
+* Virtual network name
 
 ## Create Azure Active Directory (AAD) service accont
 
@@ -77,22 +77,22 @@ Login to [Azure Portal](https://portal.azure.com)
 
 Select **Resource groups**. You may need to go to **More services** in the bottom of the left menu and type **Resource groups** in Filter.
 
-Click **Add** to create new resource groups. Name it consistently with what was chosen for AAD application, for example **appveyor-enterprise**.
+Click **Add** to create new resource groups. Name it consistently with what was chosen for AAD application, for example `appveyor-enterprise`.
 
 Save resource group name in your deployment notes as **VMs resource group**.
 
-### Assign principal (AAD application) to resource group as a Contributor
-
-On resource group details blade select **Access control (IAM)**.
+To assign AAD application created above to the resource group as a Contributor open resource group details blade and select **Access control (IAM)**.
 
 Click **Add** button to add new permissions:
 
 * Role: `Contributor`
 * Select: `appveyor-enterprise` (this is AAD application name)
 
-Make sure the application was found. Click **Save**.
+Make sure the application was found.
 
-**Now your Azure Active Directory application (which will be used by AppVeyor as identity) has Contributor permissions in resource group which will contain resources managed by AppVeyor!**
+Click **Save**.
+
+Now AppVeyor application will be able to create/modify/delete Azure resources in `appveyor-enterprise` resource group only.
 
 
 ## Create Storage Account
@@ -109,7 +109,7 @@ Click **Add** to open **Create storage account** blade. Enter the following deta
 * Replication: `Locally-redundant storage (LRS)`
 * Secure transfer required: `Disabled`
 * Resource group: Use existing - `appveyor-enterprise`
-* Location: Choose whatever is closer to services your builds might depend on. AppVeyor servers are located in West US, but it will work well with AppVeyor in any Azure region. Save selected location as **Location** in your notes.
+* Location: Choose whatever is closer to services your builds might depend on. Save selected location as **Location** in your notes.
 
 
 ## Create Master VM
@@ -118,28 +118,57 @@ Click **Add** to open **Create storage account** blade. Enter the following deta
 
 Please note, that in this document we use **Windows Server 2012 R2 Datacenter** OS as the most popular and most tested with AppVeyor. However, AppVeyor supports both **Windows Server 2012 R2** with .NET framework 4.5 installed and **Windows Server 2016**.
 
-Login to Azure Portal and select **Virtual machines**.
+Login to Azure Portal and navigate to **Virtual machines** blade.
+
+Click **Add** and on **Compute** blade select **Windows Server**.
+
+Click **Windows Server 2012 R2 Datacenter**:
+
+* Select a deployment model: `Resource Manager`
+* Click **Create** button.
+
+On **Basics** step:
+
+* Name: `appveyor-master`
+* VM disk type: `SSD`
+* User name: `appveyor`
+* Password: `<your password>`
+* Subscription: `<your subscription>`
+* Resource group: Use existing - `appveyor-enterprise`
+* Location: `<the same location as for storage account>`
+
+Click **OK**.
+
+On **Size** step:
+
+* We recommend at least `DS2_V2`, but you are free to select any size working for your workloads.
+* Click **Select**.
+
+On **Settings** step:
+
+* Availability set: `None`
+* Storage:
+    * Use managed disks: `No`
+    * Storage account: `<storage account name from created above>`
+* Network:
+    * Virtual network: `appveyor-enterprise-vnet` (save in your notes as **Virtual network name**)
+    * Subnet: `default (10.0.0.0/24)`
+    * Public IP address: leave default
+    * Network security group: Create new - `appveyor-enterprise-nsg` (save in your notes as **Security group name**)
+* Extensions: `No extensions`
+* Auto-shutdown: `Off`
+* Monitoring:
+    * Boot diagnostics: `Enabled`
+    * Guest OS diagnostics: `Disabled`
+* Diagnostics storage account: leave default
+
+On **Purchase** step:
+
+* Validate VM details and click **Purchase** button.
+
+Wait unti VM is deployed and click **Connect** button to download RDP file. Verify that you can connect via RDP with **User Name** and **Password** created earlier in this section.
 
 
-* Ensure that you selected **Virtual machines** and not **Virtual machines (classic)**
-* Press **Add**
-* In **Compute** *blade* select **Windows Server**
-* In **Windows Server** *blade* select **Windows Server 2012 R2 Datacenter**
-* In **Windows Server 2012 R2 Datacenter** *blade* ensure that deployment model is **Resource Manager**, and press **Create**
-* Enter Name consistent with selected naming, which still satisfies VM naming restrictions (like **appveyor-build** for our example)
-    * We strongly recommend to leave **SSD** VM disk type
-    * Enter **User Name** and **Password**
-    * Resource group: Use existing and select resource group created before (**appveyor-build-rg** in our example)
-    * Location: the same as selected for Storage Account in previous section
-* Press **OK**
-* In **Choose a size** *blade* select VM size. We recommend **DS** series or better.
-* In **Settings** *blade*
-    * Select storage account created earlier (**appveyorbuildsa** in our example)
-    * Save Network security group (should look like **appveyor-build-nsg** in our example) in your deployment notes as **Security group name**
-    * Leave other settings as they set by default and press **OK**
-* After validation passed, press **OK** and wait while VM deployed
-* After VM deployed, press **Connect** to download RDP file and ensure that you can connect over RDP with **User Name** and **Password** created earlier in this section
-* Now you can close Azure Portal, it will not be needed for next couple of steps
 
 ## Setup Master VM
 
@@ -157,6 +186,8 @@ Install any additional software required for your builds.
 Do not sysprep master VM!
 
 Shutdown VM from either RDP session or **Stop** it from Azure Portal (this will fully deallocate its resources and avoiding excessive charges).
+
+
 
 ## Create an image from Master VHD
 
@@ -224,8 +255,8 @@ Navigate to **Account menu &rarr; Settings &rarr; Build environment**.
 
 Update the following settings:
 
-* Default build cloud: `<cloud name from previous step>`
-* Default build worker image: `<image name from previous step>`
+* Default build cloud: `<cloud name from steps above>`
+* Default build worker image: `<image name from steps above>`
 
 Click **Save**.
 
