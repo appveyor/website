@@ -236,7 +236,7 @@ environment:
 Other than that they are just regular environment variables in a build session that could be easily
 displayed in a build log by simple `Get-ChildItem env:`.
 
-However, secure variables are *not* decoded during Pull Request builds which prevents someone
+However, **secure variables are *not* decoded during Pull Request** builds which prevents someone
 from submitting PR with malicious build script displaying those variables. In more controlled
 environment through with a trusted team and private GitHub repositories there is an option on
 General tab of project settings to allow secure variables for PRs.
