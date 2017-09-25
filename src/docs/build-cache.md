@@ -43,8 +43,7 @@ For every cache item AppVeyor calculates checksum and if checksum does not match
 
 AppVeyor uses fastest compression level to minimize I/O and effectively deal with large number of small files. Build cache storage is physically located in the same datacenter as build workers.
 
-**Note**: Saving cache is disabled in Pull Request builds.
-
+**Note**: By default, saving cache is disabled in Pull Request builds. Use `Save build cache in Pull Requests` checkbox on the **General** tab of project settings if you need to save cache during PR builds. This setting is not exposed in YAML to prevent unauthorized cache modifications.
 
 ### Cache dependencies
 

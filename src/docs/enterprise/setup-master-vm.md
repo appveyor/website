@@ -27,7 +27,9 @@ You are welcome to check scripts contents before running them on your VM. Contri
 * [Disable WER](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_wer.ps1) [[raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/disable_wer.ps1)]
 * [Disable IE ESC](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_ie_esc.ps1) [[raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/disable_ie_esc.ps1)]
 * [Allow connecting to any host via WinRM](https://github.com/appveyor/ci/blob/master/scripts/enterprise/update_winrm_allow_hosts.ps1) [[raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/update_winrm_allow_hosts.ps1)]
+* [Disable new network location wizard](https://github.com/appveyor/ci/blob/master/scripts/enterprise/disable_new_network_location_wizard.ps1) [[raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/disable_new_network_location_wizard.ps1)]
 * [Add-Path helper cmdlets](https://github.com/appveyor/ci/blob/master/scripts/enterprise/install_path_utils.ps1) [[raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/install_path_utils.ps1)] - do not skip this step as other software installation scripts depend on it
+
  <!--
  Disable unnecessary Windows services and Scheduler tasks
  Disable Windows automatic maintenance
