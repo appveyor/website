@@ -64,6 +64,9 @@ collections:
     updates:
         permalink: /:collection/:year/:month/:day/
         output: true
+    releases:
+        permalink: /enterprise/releases/:title/
+        output: true
 
 feed:
     description:    Latest information about AppVeyor.

@@ -1,0 +1,26 @@
+---
+layout: one-column
+---
+
+<h1>Release notes</h1>
+
+<h3>AppVeyor Enterprise {{ page.version }}</h3>
+
+<p>Released on: {{ page.date | date: "%B %d, %Y" }}</p>
+
+<div class="post-content">
+    {{ content }}
+</div>
+
+<div class="row">
+    <div class="columns small-6">
+        {% if page.previous %}
+        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous release</a>
+        {% endif %}
+    </div>
+    <div class="columns small-6 text-right">
+        {% if page.next %}
+        <a href="/enterprise/releases/">All releases</a>
+        {% endif %}
+    </div>
+</div>
