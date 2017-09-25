@@ -554,6 +554,8 @@ Message template is a [Mustache template](http://mustache.github.io/mustache.5.h
 {% endraw %}
 ```
 
+Please note that for **Deployment environment** notifications, you have to prefix variables with `build`, e.g. `{{build.commitAuthor}}`.
+
 ## Adding custom value to notification
 
 Sometimes `eventdata` from webhook JSON payload is not enough and you need to pass some custom value into notification. One possible trick to do this is to alter build job message.

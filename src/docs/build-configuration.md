@@ -184,6 +184,22 @@ environment:
   variable2: value
 ```
 
+### Interpreters and Scripts
+
+AppVeyor allows you to choose between Command scripting and PowerShell scripting. If you are using the Command interpreter and batch files then prefix your script with `cmd:` as shown below. Do not use `command:`.
+
+```yaml
+test_script:
+  - cmd: ECHO this is batch
+```
+
+If you are using the PowerShell then prefix your script with `ps:` as shown below. Do not use `powershell:`.
+
+```yaml
+test_script:
+  - ps: Write-Host "This is PowerShell"
+```
+
 ### Setting environment variables in build script
 
 CMD:
@@ -192,11 +208,15 @@ CMD:
 set MY_VARIABLE=value
 ```
 
+Once a variable is set for a batch file you access it by `%MY_VARIABLE%`.
+
 PowerShell:
 
 ```powershell
 $env:MY_VARIABLE="value"
 ```
+
+Once a PowerShell variable is set you access it by `$env:MY_VARIABLE`. Do not use PowerShell syntax of `$MY_VARIABLE`.
 
 ### Secure variables
 
@@ -216,7 +236,7 @@ environment:
 Other than that they are just regular environment variables in a build session that could be easily
 displayed in a build log by simple `Get-ChildItem env:`.
 
-However, secure variables are *not* decoded during Pull Request builds which prevents someone
+However, **secure variables are *not* decoded during Pull Request** builds which prevents someone
 from submitting PR with malicious build script displaying those variables. In more controlled
 environment through with a trusted team and private GitHub repositories there is an option on
 General tab of project settings to allow secure variables for PRs.
@@ -463,9 +483,10 @@ configuration:
 - Debug
 - Release
 
-matrix:
-  - MY_VAR: A
-  - MY_VAR: B
+environment:
+  matrix:
+    - MY_VAR: A
+    - MY_VAR: B
 
 matrix:
   exclude:
