@@ -26,9 +26,9 @@ Configuring in `appveyor.yml`:
 ```yaml
 deploy:
   provider: S3
-  access_key_id:
-  secret_access_key:
-  bucket:
+  access_key_id:access 
+  secret_access_key:
+ bucket:
   region: eu-west-1
   unzip: true|false (disabled by default)
   set_public: true|false (disabled by default)
