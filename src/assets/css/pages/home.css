@@ -1,38 +1,40 @@
 /* banner */
 .home-banner {
     text-align: center;
-    background-color: #0b99d6;
+    background-color: #666361;
 }
 
 .home-banner h1 {
-    font: 600 2.3rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 300 2.7rem/1.4 "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
     margin: 1.5rem 0 0;
 }
 
 .home-banner h2 {
-    font: normal 1.1rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 1.1rem/1.4 "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
 }
 
 .home-banner .buttons {
-    margin: 1.5rem 0 0 0;
+    margin: 1.5rem 0 1.2rem 0;
 }
 
 .home-banner .buttons .big-button {
     margin-bottom: 0.4rem;
-    background-color: #18c718;
+    background-color: #5FC953;
+    color: #003333;
+    font-weight: 600;
 }
 
 .home-banner .buttons .big-button:hover,
 .home-banner .buttons .big-button:active {
-    background-color: #1ed11e;
+    background-color: #68E85A;
 }
 
-.home-banner .disclosure {
-    font-size: 0.75rem;
+.home-banner .highlights {
     color: #e0e0e0;
-    margin: 0;
+    margin: 0 0 0 6rem;
+    text-align: left;
 }
 
 .home-banner img {
