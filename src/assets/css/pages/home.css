@@ -11,8 +11,10 @@
 }
 
 .home-banner h2 {
-    font: normal 1.1rem/1.4 "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: normal 1.1rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
 
 .home-banner .buttons {
