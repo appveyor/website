@@ -1,14 +1,14 @@
 a.big-button {
     display: inline-block;
-    color: #fff;
+    color: #003333;
     padding-left: 20px;
     padding-right: 20px;
     line-height: 42px;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 0.85rem;
-    background-color: #00b500;
+    background-color: #5FC953;
     margin: 0 5px 1rem 0;
     border-radius: 4px;
     transition: background-color 0.3s;
@@ -16,8 +16,8 @@ a.big-button {
 
 a.big-button:hover,
 a.big-button:active {
-    background-color: #00d600;
-    color: #fff;
+    background-color: #68E85A;
+    color: #003333;    
 }
 
 .action-buttons,
