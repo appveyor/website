@@ -22,7 +22,7 @@ a.big-button:active {
 
 .action-buttons,
 .bottom-action-buttons {
-    margin: 30px 0 0 0;
+    margin: 1rem 0 1rem 0;
     text-align: center;
 }
 
