@@ -1,28 +1,35 @@
 ---
 layout: one-column
-title: About us
-description: About AppVeyor, why we built AppVeyor
+title: About
+description: About AppVeyor company
 ---
 
-<div class="title">
-    <h1>About us</h1>
-    <h2>AppVeyor aims to give powerful Continuous Integration and Deployment tools to every .NET developer without the hassle of setting up and maintaining their own build server.</h2>
-</div>
+# About
 
-## Why are we building AppVeyor?
+## Company
 
-Current CI tools for .NET developers are somewhat frustrating. They were built to work with all languages and stacks,
-leaving you with tons of settings, and they are lacking Continuous Deployment functionality. That leaves you with the difficulty
-of setting up a build server, configuring complex software and figuring out deployment strategy on your own.
+AppVeyor is a privately-held Canadian corporation founded in 2011.
 
-Everything is moving to the cloud today. We prefer to keep our sources in a cloud and host our apps in a cloud
-because it’s easier to set up and maintain, and costs scale with the business. Why can’t we have another tool living
-in a cloud to integrate our code and deliver apps to the customer?
+We provide continuous integration tools for Windows developers. The service is offered for free to open-source projects, we offer subscriptions for private projects and AppVeyor Enterprise installations on customer premises.
 
-Enter AppVeyor - the fastest way between your code and a hosting environment of your choice.
+AppVeyor is used by over 50,000 developers and run more than 10 million builds so far. AppVeyor is trusted by such companies as Microsoft, Google, Facebook, Mozilla, Slack, GitHub and many others.
 
-We want to build a Continuous Integration tool with an awesome user experience, so intelligent, so tailored to .NET applications
-that it takes minutes to connect to your repository and push green builds to your environment - it just works!
+AppVeyor is a profitable self-funded company.
+
+## We are hiring
+
+Right now we have an open remote Support Engineer position:
+
+* Working with AppVeyor customers on pre-sale technical questions and ongoing support.
+* Using different support channels: email, forums, Slack, Skype.
+* Fixing bugs and working on minor features.
+* Extending and improving product documentation.
+* Strong knowledge of Windows Server platform, PowerShell, .NET, distributed systems, Azure, AWS, GCP.
+* Stress resistance and easy context switching.
+* Positive attitude towards customers.
+* Experience with Linux is a plus.
+
+Please send your resume to [jobs@appveyor.com](mailto:jobs@appveyor.com).
 
 ## Contact us
 
