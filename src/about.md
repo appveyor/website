@@ -8,7 +8,7 @@ description: About AppVeyor, why we built AppVeyor
 
 ## Company
 
-AppVeyor is a privately-held Canadian corporation founded in 2011. 
+AppVeyor is a privately-held Canadian corporation founded in 2011.
 
 We provide continuous integration tools for Windows developers. The service is offered for free to open-source projects, we offer subscriptions for private projects and AppVeyor Enterprise installations on customer premises.
 
