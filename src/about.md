@@ -1,7 +1,7 @@
 ---
 layout: one-column
-title: About us
-description: About AppVeyor, why we built AppVeyor
+title: About
+description: About AppVeyor company
 ---
 
 # About

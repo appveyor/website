@@ -85,3 +85,9 @@
     border-color: #68E85A;
     color: #003333;
 }
+
+.faq h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+}
