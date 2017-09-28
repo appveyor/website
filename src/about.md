@@ -29,6 +29,8 @@ Please send your resume to [jobs@appveyor.com](mailto:jobs@appveyor.com).
 * Fixing bugs and working on minor features.
 * Extending and improving product documentation.
 * Strong knowledge of Windows Server platform, PowerShell, .NET, distributed systems, Azure, AWS, GCP.
+* Stress resistance and easy context switching.
+* Positive attitude towards customers.
 * Experience with Linux is a plus.
 
 ### Software developer
