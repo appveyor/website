@@ -87,21 +87,6 @@
     }
 }
 
-/* Small screens only*/
-@media only screen and (max-width: 40em) {
-    .home-banner h1 {
-        font-size: 1.8rem;
-    }
-
-    .home-banner h2 {
-        font-size: 1.1rem;
-    }
-
-    .features-container h2 {
-        font-size: 1.4rem;
-    }
-}
-
 /* Customers block */
 .customers-container {
     margin-bottom: 1rem;
@@ -220,9 +205,40 @@ only screen and (min-device-pixel-ratio: 2) {
     background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAA8UlEQVR4Ae3YCQrDIBBGYW+VExmapXfPCWKFdtiFFx4QSwR+dmc+EMYllVK6zIA9DJbSVJN1w5TmmgnBIOqoOWsWgVp/NQ6Co6jyTeAuo/aaM+oQHEdBHEAhHEI1cOt1FMdhVAO3UxTHtWE5ClKcQEWNTLdyuYoTqAVspcPVvC0qQmcPauRQHBa4jTZ0KA7zODEDxfSWKA7zODqQPczjArXF+ofButxKjuK4fsYFx3mUx/3rkeQP8RdYIw9x08Dj6EWRFxa4WVytEYrjwNWa4jiK4wJ1x/MtcBylH7wC10bZLwKBC1RXnyo5UON/bMDuzgdywHfVD58EpgAAAABJRU5ErkJggg==") no-repeat left 50% / 19px 19px;
 }
 
-
 /* Testimonials */
 .testimonials {
     margin-top: 16px;
     text-align: center;
+}
+
+/* Small screens only*/
+@media only screen and (max-width: 40em) {
+    .home-banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-banner h2 {
+        font-size: 1.1rem;
+    }
+
+    .home-banner .highlights {
+        margin: 0 0 0 2rem;
+    }
+
+    .features-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .benefits-table .yes {
+        background-position: left 5px;
+    }
+
+    .benefits-table .benefit {
+        margin-bottom: 1rem;
+    }
+
+    .benefits-table .columns {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }    
 }
