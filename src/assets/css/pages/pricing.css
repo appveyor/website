@@ -23,11 +23,6 @@
     border-radius: 2px;
 }
 
-.pricing-table.popular {
-    /* margin-top: -10px;
-    border: solid 1px #eee; */
-}
-
 .pricing-table .price {
     font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2.3rem;
@@ -60,12 +55,7 @@
     line-height: 2rem;
 }
 
-.pricing-table.popular .title {
-    /* font-size: 1.2rem; */
-    background-color: #0098DA;
-}
-
-.pricing-table.premium .title {
+.pricing-table.enterprise .title {
     background-color: #666;
 }
 
