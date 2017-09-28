@@ -18,7 +18,7 @@ AppVeyor is a profitable self-funded company.
 
 ## We are hiring
 
-Right now we have an open remote position for Support Engineer:
+Right now we have an open remote Support Engineer position:
 
 * Working with AppVeyor customers on pre-sale technical questions and ongoing support.
 * Using different support channels: email, forums, Slack, Skype.
