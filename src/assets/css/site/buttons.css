@@ -6,6 +6,7 @@ a.big-button {
     line-height: 42px;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
     font-size: 0.85rem;
     background-color: #5FC953;
