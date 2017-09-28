@@ -17,6 +17,11 @@
     text-transform: uppercase;
 }
 
+.home-banner .or-divider {
+    background: url('/assets/img/home/or-divider.png') no-repeat right center;
+    background-size:16px 180px;
+}
+
 .home-banner .buttons {
     margin: 1.5rem 0 1.2rem 0;
 }
@@ -219,6 +224,10 @@ only screen and (min-device-pixel-ratio: 2) {
 
     .home-banner h2 {
         font-size: 1.1rem;
+    }
+
+    .home-banner .or-divider {
+        background: none;
     }
 
     .home-banner .highlights {
