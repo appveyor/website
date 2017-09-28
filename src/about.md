@@ -18,11 +18,7 @@ AppVeyor is a profitable self-funded company.
 
 ## We are hiring
 
-Right now we have two remote positions open: support engineer and software developer.
-
-Please send your resume to [jobs@appveyor.com](mailto:jobs@appveyor.com).
-
-### Support engineer
+Right now we have an open remote position for Support Engineer:
 
 * Working with AppVeyor customers on pre-sale technical questions and ongoing support.
 * Using different support channels: email, forums, Slack, Skype.
@@ -33,12 +29,7 @@ Please send your resume to [jobs@appveyor.com](mailto:jobs@appveyor.com).
 * Positive attitude towards customers.
 * Experience with Linux is a plus.
 
-### Software developer
-
-* Core developer working on major AppVeyor features.
-* Strong knowledge of Microsoft stack: .NET, SQL Server, IIS, Azure Redis, Azure Serice Bus, PowerShell.
-* Frontend development skills: HTML/CSS/Javascript, SPA, Angular. Knowledge of React is a plus.
-* Experience with Linux is a plus.
+Please send your resume to [jobs@appveyor.com](mailto:jobs@appveyor.com).
 
 ## Contact us
 
