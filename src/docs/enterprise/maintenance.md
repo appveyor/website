@@ -13,7 +13,7 @@ title: AppVeyor Enterprise Maintenance Guide
 
 ## Updating AppVeyor Installer
 
-AppVeyor Installer is a PowerShell module which is downloaded and added to your PowerShell profile on each run of `install.ps1` bootstrap script.
+AppVeyor Installer is a PowerShell module which is downloaded and added to your PowerShell profile on each run of the `install.ps1` bootstrap script.
 
 To update AppVeyor Installer module login via RDP into AppVeyor server, open PowerShell console and run the following command:
 
@@ -45,7 +45,7 @@ Copy backups from the server to an external location.
 
 If you have configured external storage (Azure, AWS or Google) for build artifacts then you are good.
 
-If you have configured local file system for storing build artifacts you should think about periodic copying the contents of that folder to a safe location.
+If you have configured local file system for storing build artifacts you should think about periodically copying the contents of that folder to a safe location.
 
 
 ## Updating AppVeyor
@@ -62,7 +62,7 @@ To update AppVeyor installation (Web and Worker roles) to the latest available v
 Update-AppVeyor
 ```
 
-To update AppVeyor roles into specific version:
+To update AppVeyor roles into a specific version:
 
 ```posh
 Update-AppVeyor -Version <version>
@@ -81,6 +81,6 @@ When something goes wrong:
 
 * If build real-time log stops working there might be a transient issue with SignalR. Try doing `CTRL+F5` in browser to restart SignalR connection.
 * Restart IIS and/or `Appveyor.Worker` services.
-* If nothing helped - [report the issue](/support/) to AppVeyor team. While reporting the issue look into these places for possible errors/warning:
+* If nothing helped - [report the issue](/support/) to the AppVeyor team. While reporting the issue look into these places for possible errors/warning:
     * Web browser's "Developer tools" console - for any JavaScript-related errors.
     * `AppVeyor` event log in Event Viewer under `Applications and Services Logs\AppVeyor`. Web, Worker and Build Agent roles write logs there.

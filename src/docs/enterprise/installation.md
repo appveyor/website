@@ -73,10 +73,10 @@ When it does, you should be able to point your browser to: `http://ci.yourcompan
 
 ## Setup SSL Certificate
 
-If you already have an SSL certificate that will work for your custom domain (i.e. ci.mycompany.com) you can go to "Installing existing SSL Certificate" section for
+If you already have an SSL certificate that will work for your custom domain (i.e. ci.mycompany.com) you can go to the "Installing existing SSL Certificate" section
 for certificate importing instructions.
 
-If you don't have a SSL cert yet, you will need to create one. There are few options available:
+If you don't have a SSL cert yet, you will need to create one. There are a few options available:
 
 1. You can create a self-signed certificate - it will do the job by encrypting the traffic between AppVeyor VM and your browser, but it won't be trusted
    and you'll be seeing a security warning in the browser all the time. We are not going to review this method here.
@@ -87,14 +87,14 @@ If you don't have a SSL cert yet, you will need to create one. There are few opt
 
 [Let's Encrypt](https://letsencrypt.org/) is a **free**, **automated**, and **open** Certificate Authority.
 
-You can get a free certificate from "Let's Encrypt" Certificate Authority (CA) - it's absolutely functional certificate and trusted by all major browser.
+You can get a free certificate from "Let's Encrypt" Certificate Authority (CA) - it's an absolutely functional certificate and trusted by all major browser.
 The only "gotcha" is that it's issued for 60 days only and after that it must be renewed. Fortunately, there is a tool that automates all the steps from
-requesting and installing a new certificate to IIS website to its automatic renewal upon expiration.
+requesting and installing a new certificate on an IIS website to its automatic renewal upon expiration.
 
 [letsencrypt-win-simple](https://github.com/Lone-Coder/letsencrypt-win-simple) is an open-source tool written in .NET and working with Let's Encrypt API (so called ACME client).
 The tool automates provisioning of SSL certificates to IIS web sites.
 
-**IMPORTANT NOTE:** The tool requires that website you are going to install certificate to should have a binding with **host header** set to your domain name configured in the previous step. By default, "Default Web Site" in IIS has "all IPs" on port 80 binding without a host header.
+**IMPORTANT NOTE:** The tool requires that the website you are going to install certificate on should have a binding with **host header** set to your domain name configured in the previous step. By default, "Default Web Site" in IIS has "all IPs" on port 80 binding without a host header.
 
 To add a binding with host header open **IIS Manager** and expand server node, then **Sites**.
 
@@ -105,15 +105,15 @@ Select **Default Web Site** and click **Bindings...** on the right action pane. 
 * Port: `80`
 * Host name: `ci.yourcompany.com`
 
-Now the site is ready for SSL certificate installation with **letsencrypt-win-simple** tool.
+Now the site is ready for SSL certificate installation with the **letsencrypt-win-simple** tool.
 
-Just [follow simple usage instructions for letsencrypt-win-simple tool](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki/Basic-Usage#steps) and enjoy the results by opening `https://ci.yourcompany.com` in your browser and seeing IIS start page!
+Just [follow the simple usage instructions for letsencrypt-win-simple tool](https://github.com/Lone-Coder/letsencrypt-win-simple/wiki/Basic-Usage#steps) and enjoy the results by opening `https://ci.yourcompany.com` in your browser and seeing IIS start page!
 
 ### Purchasing SSL Certificate
 
 To purchase certificate from a certificate authority (CA) you will first need to create a special 'Certificate Signing Request' (CSR), which is a process that creates a private key and generates a bit of text that describes your certificate.
 
-There are many tools available on the internet that can do that for, but your VM has an easy way to create one for you too, that avoids you worrying about the private key.
+There are many tools available on the internet that can do that for you, but your VM has an easy way to create one for you too which releives you from having to worry about the private key.
 
 This process is outlined in detail below.
 
@@ -145,11 +145,11 @@ Save to a file on your desktop (e.g. `MyCSR.txt`).
 
 Now you can open the CSR file in notepad, and copy the contents to the clipboard.
 
-Next, you will need to go exit the VM, and obtain an SSL certificate from your SSL certificate provider. There are many providers on the internet.
+Next, you will need to exit the VM, and obtain an SSL certificate from your SSL certificate provider. There are many providers on the internet.
 
-Many SSL certificate sites where you will obtain your SSL certificate will expect you to either provide the CSR file or the paste the contents into their site. DO NOT generate a new CSR, use the one you just created.
+Many SSL certificate sites where you will obtain your SSL certificate will expect you to either provide the CSR file or paste the contents into their site. DO NOT generate a new CSR, use the one you just created.
 
-Once your certificate provider has created you an SSL certificate, you need to download the certificate in the `*.cer` or `*.crt` format (IIS may support others too).
+Once your certificate provider has created an SSL certificate for you, you will need to download the certificate in the `*.cer` or `*.crt` format (IIS may support others too).
 
 Once you have that file, then RDP back into your CI Server and complete the certificate completion process.
 
@@ -191,7 +191,7 @@ You are going to need a certificate in the file format \*.pfx, that includes the
 
 RDP into your CI Server.
 
-Copy the `*.pfx` file onto your server. There are several ways you can do this, including sharing your C drive with your host machine in the RDP settings. Or even using a service like Dropbox. As a general security practice, a `*.pfx` file is not something you want to leave lying around the place for attackers to obtain.
+Copy the `*.pfx` file onto your server. There are several ways you can do this, including sharing your C drive with your host machine in the RDP settings. Or even using a service like Dropbox. As a general security practice, a `*.pfx` file is not something you want to leave lying around for attackers to obtain.
 
 Open Windows Explorer, and double click on the `*.pfx` file.
 
@@ -219,7 +219,7 @@ Select the 'Default Web Site' site in the left pane of IIS Manager.
 
 Close IIS Manager, and exit your RDP session.
 
-Now you can point your browser to `https://ci.yourcompany.com` and see AppVeyor CI login page!
+Now you can point your browser to `https://ci.yourcompany.com` and see the AppVeyor CI login page!
 
 Login to AppVeyor and go to **Account menu &rarr; Settings &rarr; General**.
 Change **Application public URL** to `https://ci.yourcompany.com` adn enable **Enfoce secure HTTPS connections**.
