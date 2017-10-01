@@ -232,8 +232,12 @@ You can use those images to unblock your builds while we are working together wi
             <li>
                 Docker 17.06.1-ee-2 for Windows Containers with base images:
                 <ul>
-                    <li>microsoft/windowsservercore (id: be84290c2315)</li>
-                    <li>microsoft/nanoserver (id: 28dad12ef0bc)</li>
+                    <li>microsoft/windowsservercore (image id: be84290c2315)<ul>
+                        <li>tag: microsoft/windowsservercore:10.0.14393.1593</li>
+                        <li>digest: microsoft/windowsservercore@sha256:c281f2c09c9446f1896806933013a350f19db8f5a009e633ebd9701c470de35b</li></ul></li>
+                    <li>microsoft/nanoserver (id: 28dad12ef0bc)<ul>
+                        <li>tag: microsoft/nanoserver:10.0.14393.1593</li>
+                        <li>digest: microsoft/nanoserver@sha256:0ac4b5bb8e23c5145fdae8b6a19e8b2456816d7b23b208a45e2471468cbae743</li></ul></li>
                 </ul>
             </li>
         </ul>
