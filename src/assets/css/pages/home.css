@@ -1,11 +1,11 @@
 /* banner */
 .home-banner {
     text-align: center;
-    background-color: #0b99d6;
+    background-color: #666361;
 }
 
 .home-banner h1 {
-    font: 600 2.3rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 300 2.7rem/1.4 "Segoe UI", "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
     color: #fff;
     margin: 1.5rem 0 0;
 }
@@ -13,33 +13,40 @@
 .home-banner h2 {
     font: normal 1.1rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.home-banner .or-divider {
+    background: url('/assets/img/home/or-divider.png') no-repeat right center;
+    background-size:16px 180px;
 }
 
 .home-banner .buttons {
-    margin: 1.5rem 0 0 0;
+    margin: 1.5rem 0 1.2rem 0;
 }
 
 .home-banner .buttons .big-button {
     margin-bottom: 0.4rem;
-    background-color: #18c718;
+    background-color: #5FC953;
+    font-weight: 600;
 }
 
 .home-banner .buttons .big-button:hover,
 .home-banner .buttons .big-button:active {
-    background-color: #1ed11e;
+    background-color: #68E85A;
 }
 
-.home-banner .disclosure {
-    font-size: 0.75rem;
+.home-banner .highlights {
     color: #e0e0e0;
-    margin: 0;
+    margin: 0 0 0 6rem;
+    text-align: left;
 }
 
 .home-banner img {
     margin-top: 1.2rem;
-    margin-bottom: 1px;
+    margin-bottom: 1px;    
 }
-
 
 /* Features and benefits */
 .features-container {
@@ -49,7 +56,7 @@
 .features-container h2 {
     margin: 0.7rem 0;
     text-align: center;
-    font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.7rem;
     color: #fff;
 }
@@ -60,46 +67,20 @@
 
 .feature h3 {
     text-align: center;
-    font-family: "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.2rem;
+    font-family: "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
     color: #fff;
     margin: 0.7rem 0 0.5rem 0;
 }
 
 .feature p {
-    font-family: "Open Sans", "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.9rem;
     font-weight: 300;
     text-align: center;
     color: #e0e0e0;
     margin: 0.5rem 0 2rem 0;
     line-height: 1.3rem;
-}
-
-.home-sprite {
-    background-image: url("../img/home/home-sprite.png");
-    background-size: 234px 78px;
-    background-repeat: no-repeat;
-    display: block;
-    margin: 0 auto;
-}
-
-/*.home-sprite*/.no-setup {
-    background-position: 0 0;
-    width: 78px;
-    height: 78px;
-}
-
-/*.home-sprite*/.secure {
-    background-position: -78px 0;
-    width: 78px;
-    height: 78px;
-}
-
-/*.home-sprite*/.delivery {
-    background-position: -156px 0;
-    width: 78px;
-    height: 78px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min--moz-device-pixel-ratio: 2.0), only screen and (-o-min-device-pixel-ratio: 200/100), only screen and (min-device-pixel-ratio: 2.0) {
@@ -109,6 +90,130 @@
         -moz-background-size: 234px 78px;
         background-size: 234px 78px;
     }
+}
+
+/* Customers block */
+.customers-container {
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: #f9f8f7;
+}
+
+.customers-container h2 {
+    margin: 0.7rem 0;
+    font-family: "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+    color: #444;
+}
+
+.customer-logo {
+    background: url("/assets/img/home/customer-logos-sprite.png") no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0.7rem 1rem;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-device-pixel-ratio: 2) {
+    .customer-logo {
+        background: url("/assets/img/home/customer-logos-sprite@2x.png") no-repeat;
+        background-size: 815px 150px;
+    }
+}
+
+.microsoft {
+    background-position: 0 0;
+    width: 230px;
+    height: 58px;
+}
+
+.google {
+    background-position: -290px -5px;
+    width: 150px;
+    height: 50px;
+}
+
+.netflix {
+    background-position: -495px -10px;
+    width: 135px;
+    height: 37px;
+}
+
+.slack {
+    background-position: -680px -7px;
+    width: 134px;
+    height: 40px;
+}
+
+.github {
+    background-position: -32px -103px;
+    width: 48px;
+    height: 46px;
+}
+
+.atlassian {
+    background-position: -102px -110px;
+    width: 220px;
+    height: 30px;
+}
+
+.mozilla {
+    background-position: -383px -107px;
+    width: 132px;
+    height: 38px;
+}
+
+.facebook {
+    background-position: -585px -106px;
+    width: 40px;
+    height: 40px;
+}
+
+.nasa {
+    background-position: -692px -105px;
+    width: 56px;
+    height: 44px;
+}
+
+/* Benefits block */
+.benefits-container {
+    border-top: none;
+}
+
+.benefits-container h2 {
+    margin: 0.7rem 0;
+    text-align: center;
+    font-family: "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.7rem;
+    color: #444;
+}
+
+.benefits-table {
+    margin: 1rem 0;
+}
+
+.benefits-table .columns {
+    line-height: 2.7rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.benefits-table .benefit {
+    padding-left: 2rem;
+}
+
+.benefits-table .yes {
+    background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAeCAYAAABAFGxuAAABl0lEQVR4AcXXM4MdcRRA8Wli27Zt26xemtjuki7p8llSx2li2zbWNu+ebnUf7l1M8atG52H+CEQkNMGl4BTOqsdCjDoGgeB0+GEgZD8qITWcDDWMgB2ogNRRiYOhhPHgCMohOoIJ94f5oragDBJHOSLNFbUOJZAEnW+OqBUoMkRdRMtoN5uJyY0QtRD5hqjraK3+xwKCkIkUjBV/1GzkGqJuoq36VnJgHNIgEPzHCEfUNGQZou6hvTqOcWAUkpSLfmOIIWoi0g1RT9FZHfk5MAR/IBp8x4AEosYgxRD1Ct3Ue3FgAL5D4viMPjGiRuCfIeo9eka9HwdvGW72Fj2UqMH4DVEYPyTg+fpfoGuNqH74BlG4/xbeP+xjdEJvfITo/C9SQ1/xt5BYvEOPY1B0cAzW2tu1CAWQRpLhmd4cE69JNmbYogDDUsUsD3PtUYBhcWdSgMW+KMC/HI6uCCv9UYB/A6ErwXpbhM635dKVYasjQmVdZx2HKMqxzRehc23rlS3XLn+EzrtsPqNtUkMJU+LO4aThGpMqN0XAINsxTDIAAAAASUVORK5CYII=") no-repeat left 50% / 19px 15px;
+}
+
+.benefits-table .no {
+    background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAA8UlEQVR4Ae3YCQrDIBBGYW+VExmapXfPCWKFdtiFFx4QSwR+dmc+EMYllVK6zIA9DJbSVJN1w5TmmgnBIOqoOWsWgVp/NQ6Co6jyTeAuo/aaM+oQHEdBHEAhHEI1cOt1FMdhVAO3UxTHtWE5ClKcQEWNTLdyuYoTqAVspcPVvC0qQmcPauRQHBa4jTZ0KA7zODEDxfSWKA7zODqQPczjArXF+ofButxKjuK4fsYFx3mUx/3rkeQP8RdYIw9x08Dj6EWRFxa4WVytEYrjwNWa4jiK4wJ1x/MtcBylH7wC10bZLwKBC1RXnyo5UON/bMDuzgdywHfVD58EpgAAAABJRU5ErkJggg==") no-repeat left 50% / 19px 19px;
+}
+
+/* Testimonials */
+.testimonials {
+    margin-top: 16px;
+    text-align: center;
 }
 
 /* Small screens only*/
@@ -121,154 +226,28 @@
         font-size: 1.1rem;
     }
 
+    .home-banner .or-divider {
+        background: none;
+    }
+
+    .home-banner .highlights {
+        margin: 0 0 0 2rem;
+    }
+
     .features-container h2 {
         font-size: 1.4rem;
     }
-}
 
-/* Customers block */
-.customers-container {
-    margin-bottom: 1rem;
-    text-align: center;
-}
+    .benefits-table .yes {
+        background-position: left 5px;
+    }
 
-.customers-container h2 {
-    margin: 0.7rem 0;
-    font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.7rem;
-}
+    .benefits-table .benefit {
+        margin-bottom: 1rem;
+    }
 
-.customer-logo {
-    background: url("/assets/img/home/new-sprite-flattened.png") no-repeat;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0.7rem 1rem;
-}
-
-.microsoft {
-    background-position: 0 -26px;
-    width: 150px;
-    height: 32px;
-}
-
-.facebook {
-    background-position: -172px -7px;
-    width: 50px;
-    height: 50px;
-}
-
-.google {
-    background-position: -244px -10px;
-    width: 49px;
-    height: 50px;
-}
-
-.github {
-    background-position: -310px -5px;
-    width: 58px;
-    height: 58px;
-}
-
-.rackspace {
-    background-position: -383px -23px;
-    width: 139px;
-    height: 37px;
-}
-
-.telenor {
-    background-position: -25px -76px;
-    width: 108px;
-    height: 40px;
-}
-
-.nasa {
-    background-position: -149px -73px;
-    width: 69px;
-    height: 57px;
-}
-
-.zendesk {
-    background-position:-227px -80px;
-    width: 151px;
-    height: 35px;
-}
-
-.pivotal {
-    background-position: -393px -86px;
-    width: 115px;
-    height: 27px;
-}
-
-.umbraco {
-    background-position: -42px -135px;
-    width: 148px;
-    height: 45px;
-}
-
-.rightscale {
-    background-position: -212px -142px;
-    width: 198px;
-    height: 25px;
-}
-
-.chef {
-    background-position: -433px -127px;
-    width: 60px;
-    height: 64px;
-}
-
-.mozilla {
-    background-position: -33px -189px;
-    width: 178px;
-    height: 48px;
-}
-
-.puppet {
-    background-position: -229px -193px;
-    width: 120px;
-    height: 43px;
-}
-
-.stanford {
-    background-position: -373px -200px;
-    width: 142px;
-    height: 30px;
-}
-
-/* Benefits block */
-.benefits-container {
-    border-top: solid 1px #e6e6e6;
-}
-
-.benefits-container h2 {
-    margin: 0.7rem 0;
-    text-align: center;
-    font-family: "Segoe UI Light", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.7rem;
-}
-
-.benefits-table .row:first-child .columns {
-    border-top: 1px solid #e6e3e0;
-}
-
-.benefits-table .columns {
-    line-height: 2.7rem;
-    border-bottom: 1px solid #e6e3e0;
-    border-top: none;
-    font-size: 1.0rem;
-}
-
-.benefits-table .yes {
-    background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAeCAYAAABAFGxuAAABl0lEQVR4AcXXM4MdcRRA8Wli27Zt26xemtjuki7p8llSx2li2zbWNu+ebnUf7l1M8atG52H+CEQkNMGl4BTOqsdCjDoGgeB0+GEgZD8qITWcDDWMgB2ogNRRiYOhhPHgCMohOoIJ94f5oragDBJHOSLNFbUOJZAEnW+OqBUoMkRdRMtoN5uJyY0QtRD5hqjraK3+xwKCkIkUjBV/1GzkGqJuoq36VnJgHNIgEPzHCEfUNGQZou6hvTqOcWAUkpSLfmOIIWoi0g1RT9FZHfk5MAR/IBp8x4AEosYgxRD1Ct3Ue3FgAL5D4viMPjGiRuCfIeo9eka9HwdvGW72Fj2UqMH4DVEYPyTg+fpfoGuNqH74BlG4/xbeP+xjdEJvfITo/C9SQ1/xt5BYvEOPY1B0cAzW2tu1CAWQRpLhmd4cE69JNmbYogDDUsUsD3PtUYBhcWdSgMW+KMC/HI6uCCv9UYB/A6ErwXpbhM635dKVYasjQmVdZx2HKMqxzRehc23rlS3XLn+EzrtsPqNtUkMJU+LO4aThGpMqN0XAINsxTDIAAAAASUVORK5CYII=") no-repeat right 50% / 19px 15px;
-}
-
-.benefits-table .no {
-    background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAA8UlEQVR4Ae3YCQrDIBBGYW+VExmapXfPCWKFdtiFFx4QSwR+dmc+EMYllVK6zIA9DJbSVJN1w5TmmgnBIOqoOWsWgVp/NQ6Co6jyTeAuo/aaM+oQHEdBHEAhHEI1cOt1FMdhVAO3UxTHtWE5ClKcQEWNTLdyuYoTqAVspcPVvC0qQmcPauRQHBa4jTZ0KA7zODEDxfSWKA7zODqQPczjArXF+ofButxKjuK4fsYFx3mUx/3rkeQP8RdYIw9x08Dj6EWRFxa4WVytEYrjwNWa4jiK4wJ1x/MtcBylH7wC10bZLwKBC1RXnyo5UON/bMDuzgdywHfVD58EpgAAAABJRU5ErkJggg==") no-repeat right 50% / 19px 19px;
-}
-
-
-/* Testimonials */
-.testimonials {
-    margin-top: 16px;
-    text-align: center;
+    .benefits-table .columns {
+        line-height: 1.5rem;
+        font-size: 1rem;
+    }    
 }

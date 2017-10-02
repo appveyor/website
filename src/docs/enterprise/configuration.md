@@ -31,7 +31,7 @@ Select mailing provider in **Send with** dropdown.
 
 ### SMTP
 
-SMTP provider settings are straightforward. The only note there is that **SMTP host** setting allows specifying port, for example `smtp.gmail.com:587`.
+SMTP provider settings are straightforward but note that there is an **SMTP host** setting for specifying port, for example `smtp.gmail.com:587`.
 
 Example settings for using GMail for sending email notifications:
 
@@ -45,7 +45,7 @@ Example settings for using GMail for sending email notifications:
 
 [SendGrid](https://www.sendgrid.com) is *a cloud-based [SMTP provider](http://en.wikipedia.org/wiki/SMTP) that allows you to send email without having to maintain email servers. SendGrid manages all of the technical details, from scaling the infrastructure to ISP outreach and reputation monitoring to whitelist services and real time analytics.*
 
-SendGrid is a quick option for testing AppVeyor mailouts as it doesn't require configuring/validating a real mail domain, however without real domain messages sent by AppVeyor via SendGrid would be trapping in your spam folder. SendGrid doesn't have a free plan, but free 14-day trial only.
+SendGrid is a quick option for testing AppVeyor mailouts as it doesn't require configuring/validating a real mail domain, however without a real domain, messages sent by AppVeyor via SendGrid would be trapped in your spam folder. SendGrid doesn't have a free plan, but a free 14-day trial only.
 
 AppVeyor uses [SendGrid API v3](https://sendgrid.com/docs/API_Reference/Web_API_v3/index.html). To create new API token login to your SendGrid account and go to `https://app.sendgrid.com/settings/api_keys` page. Click **Create API Key** button select **Restricted Access** and set "Full Access" for **Mail Send** action.
 
@@ -53,14 +53,14 @@ Copy API key to **API key** field on email settings in AppVeyor.
 
 ### Mailgun
 
-[Mailgun](https://www.mailgun.com) is *Transactional Email API Service For Developers*. It has functionality similar to SendGrid. Mailgun has free tier (up to 10,000 messages per month), but for production use you should [add a real domain and verify it](https://help.mailgun.com/hc/en-us/articles/202052074-How-do-I-verify-my-domain-) - without domain verification you can send to [authorized recipients](https://help.mailgun.com/hc/en-us/articles/217531258-Authorized-Recipients) only.
+[Mailgun](https://www.mailgun.com) is a *Transactional Email API Service For Developers*. It has functionality similar to SendGrid. Mailgun has free tier (up to 10,000 messages per month), but for production use you should [add a real domain and verify it](https://help.mailgun.com/hc/en-us/articles/202052074-How-do-I-verify-my-domain-) - without domain verification you can send to [authorized recipients](https://help.mailgun.com/hc/en-us/articles/217531258-Authorized-Recipients) only.
 
 You need **Active API Key** ("Secret API key" on [dashboard home page](https://app.mailgun.com/app/dashboard) or "Active API Key" on [USers & API Keys](https://app.mailgun.com/app/account/security) page) to integrate AppVeyor with Mailgun.
 
 
 ## Artifact storage
 
-**Configuring artifact storage is mandatory step.**
+**Configuring artifact storage is a mandatory step.**
 
 Artifact storage is used to store build logs and artifact files uploaded during the build. At least one "system" artifact storage must be configured before running your first build on AppVeyor.
 
@@ -148,13 +148,13 @@ AppVeyor can be configured to run builds in any of the following clouds:
 
 Builds retention policy automatically deletes old builds and their artifacts to reclaim artfiact storage.
 
-Builds retention policy can be enabled on account level and applied to all projects or it can be enabled (or overridden) on individual project level.
+Builds retention policy can be enabled on account level and applied to all projects or it can be enabled (or overridden) on the individual project level.
 
 To enable builds retention policy on account level go to **Account menu &rarr; Retention policy**.
 
-Specify the miniumum "age" of builds that should be deleted. The cut-off date is compared with build creation date.
+Specify the miniumum "age" of builds that should be deleted. The cut-off date is compared with the build creation date.
 
-You can also specify multiple conditions for builds to exclude, for example you can skip tagged builds or builds with `[RELEASE]` word in commit message.
+You can also specify multiple conditions for builds to determine exclusion, for example you can skip tagged builds or builds with `[RELEASE]` word in commit message.
 
 Save retention policy.
 
@@ -185,4 +185,4 @@ Add second schedule with the following details:
 * Job parameters (JSON): `{}`
 * Is active: checked
 
-You may want to play with `ExecuteRetentionPolicy` first by scheduling it on nearest time possible and make sure you are OK with the results (right builds were deleted), then enable `PurgeDeletedBuilds` to finally deleted builds as this operation is irreversible.
+You may want to play with `ExecuteRetentionPolicy` first by scheduling it for the nearest time possible and make sure you are OK with the results (right builds were deleted), then enable `PurgeDeletedBuilds` to finally deleted builds as this operation is irreversible.

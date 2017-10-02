@@ -1,5 +1,5 @@
 .pricing-banner {
-    background-color: #0b99d6;
+    background-color: #666361;
     padding-bottom: 1rem;
 }
 
@@ -8,27 +8,19 @@
     color: #fff;
 }
 
-.pricing-banner .big-button {
-    background-color: #18c718;
-}
-
-.pricing-banner .big-button:hover,
-.pricing-banner .big-button:active {
-    background-color: #1ed11e;
-}
-
-.plans {
-    margin-top: 2rem;
+.plans-group h2 {
+    text-align: center;
+    background-color: #706E6A;
+    text-transform: uppercase;
+    color: #aaa;
+    line-height: 2.2rem;
+    font-size: 0.9rem;
+    border-radius: 2px;
 }
 
 .pricing-table {
     border: solid 1px #eee;
     border-radius: 2px;
-}
-
-.pricing-table.popular {
-    margin-top: -10px;
-    border: solid 1px #eee;
 }
 
 .pricing-table .price {
@@ -63,12 +55,7 @@
     line-height: 2rem;
 }
 
-.pricing-table.popular .title {
-    font-size: 1.2rem;
-    background-color: #3eb33e;
-}
-
-.pricing-table.premium .title {
+.pricing-table.enterprise .title {
     background-color: #666;
 }
 
@@ -83,26 +70,24 @@
 
 .pricing-table .cta-button .button {
     margin: 0;
-    background-color: #00b500;
-    border-color: #00b500;
+    background-color: #5FC953;
+    border-color: #5FC953;
     text-transform: uppercase;
     padding: 0.7rem 1rem;
+    color: #003333;
+    font-family: "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;    
 }
 
 .pricing-table .cta-button .button:hover,
 .pricing-table .cta-button .button:active {
-    background-color: #00d600;
-    border-color: #00d600;
-    color: #fff;
+    background-color: #68E85A;
+    border-color: #68E85A;
+    color: #003333;
 }
 
-.pricing-table.popular .title span {
-    font-size: 0.7rem;
-    position: absolute;
-    top: -5px;
-    right: 25px;
-}
-
-.pricing-table.popular .cta-button {
-    padding: 1.5rem 0;
+.faq h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
 }
