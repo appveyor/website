@@ -623,6 +623,34 @@ Response:
 ```
 
 
+## Get project environment variables
+
+Request:
+
+    GET /api/projects/{accountName}/{projectSlug}/settings/environment-variables
+
+Response:
+
+```text
+[  
+   {  
+      "name":"api_key",
+      "value":{  
+         "isEncrypted":true,
+         "value":"very-secret-key-in-clear-text"
+      }
+   },
+   {  
+      "name":"var1",
+      "value":{  
+         "isEncrypted":false,
+         "value":"current-value"
+      }
+   }
+]
+```
+
+
 ## Get project settings in YAML
 
 Request:
@@ -857,6 +885,37 @@ build:
 ```
 
 Response: 204
+
+
+## Update project environment variables
+
+Request:
+
+    PUT /api/projects/{accountName}/{projectSlug}/settings/environment-variables
+
+Request body (`application/json`):
+
+```text
+[  
+   {  
+      "name":"api_key",
+      "value":{  
+         "isEncrypted":true,
+         "value":"very-secret-key-in-clear-text"
+      }
+   },
+   {  
+      "name":"var1",
+      "value":{  
+         "isEncrypted":false,
+         "value":"new-value"
+      }
+   }
+]
+```
+
+Response: 204
+
 
 ## Update project build number
 
