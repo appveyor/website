@@ -13,9 +13,11 @@ title: Projects and builds API
 * [Get project deployments](#get-project-deployments)
 * [Get project settings](#get-project-settings)
 * [Get project settings in YAML](#get-project-settings-in-yaml)
+* [Get project environment variables](#get-project-environment-variables)
 * [Add project](#add-project)
 * [Update project](#update-project)
 * [Update project settings in YAML](#update-project-settings-in-yaml)
+* [Update project environment variables](#update-project-environment-variables)
 * [Update project build number](#update-project-build-number)
 * [Delete project build cache](#delete-project-build-cache)
 * [Delete project](#delete-project)
@@ -623,6 +625,24 @@ Response:
 ```
 
 
+## Get project settings in YAML
+
+Request:
+
+    GET /api/projects/{accountName}/{projectSlug}/settings/yaml
+
+Response (`plain/text`):
+
+```text
+version: 1.0.{build}
+build:
+  project: MySolution.sln
+  verbosity: minimal
+  publish_wap: true
+  ...
+```
+
+
 ## Get project environment variables
 
 Request:
@@ -648,24 +668,6 @@ Response:
       }
    }
 ]
-```
-
-
-## Get project settings in YAML
-
-Request:
-
-    GET /api/projects/{accountName}/{projectSlug}/settings/yaml
-
-Response (`plain/text`):
-
-```text
-version: 1.0.{build}
-build:
-  project: MySolution.sln
-  verbosity: minimal
-  publish_wap: true
-  ...
 ```
 
 
