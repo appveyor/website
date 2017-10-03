@@ -13,9 +13,11 @@ title: Projects and builds API
 * [Get project deployments](#get-project-deployments)
 * [Get project settings](#get-project-settings)
 * [Get project settings in YAML](#get-project-settings-in-yaml)
+* [Get project environment variables](#get-project-environment-variables)
 * [Add project](#add-project)
 * [Update project](#update-project)
 * [Update project settings in YAML](#update-project-settings-in-yaml)
+* [Update project environment variables](#update-project-environment-variables)
 * [Update project build number](#update-project-build-number)
 * [Delete project build cache](#delete-project-build-cache)
 * [Delete project](#delete-project)
@@ -641,6 +643,34 @@ build:
 ```
 
 
+## Get project environment variables
+
+Request:
+
+    GET /api/projects/{accountName}/{projectSlug}/settings/environment-variables
+
+Response:
+
+```text
+[
+   {
+      "name":"api_key",
+      "value":{
+         "isEncrypted":true,
+         "value":"very-secret-key-in-clear-text"
+      }
+   },
+   {
+      "name":"var1",
+      "value":{
+         "isEncrypted":false,
+         "value":"current-value"
+      }
+   }
+]
+```
+
+
 ## Add project
 
 Request:
@@ -857,6 +887,37 @@ build:
 ```
 
 Response: 204
+
+
+## Update project environment variables
+
+Request:
+
+    PUT /api/projects/{accountName}/{projectSlug}/settings/environment-variables
+
+Request body (`application/json`):
+
+```text
+[
+   {
+      "name":"api_key",
+      "value":{
+         "isEncrypted":true,
+         "value":"very-secret-key-in-clear-text"
+      }
+   },
+   {
+      "name":"var1",
+      "value":{
+         "isEncrypted":false,
+         "value":"new-value"
+      }
+   }
+]
+```
+
+Response: 204
+
 
 ## Update project build number
 
