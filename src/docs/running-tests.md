@@ -228,6 +228,15 @@ To run unit tests which target .NET 4.0 and later, use command:
 
     xunit.console.clr4 <assembly> /appveyor
 
+### xUnit 2.x
+
+To run xUnit 2.x tests with real-time reporting use command:
+
+    %xunit20%\xunit.console <assembly> -appveyor [options]
+
+or for x86 assemblies:
+
+    %xunit20%\xunit.console.x86.exe <assembly> -appveyor [options]
 
 ### Machine.Specifications
 
