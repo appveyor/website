@@ -652,17 +652,17 @@ Request:
 Response:
 
 ```text
-[  
-   {  
+[
+   {
       "name":"api_key",
-      "value":{  
+      "value":{
          "isEncrypted":true,
          "value":"very-secret-key-in-clear-text"
       }
    },
-   {  
+   {
       "name":"var1",
-      "value":{  
+      "value":{
          "isEncrypted":false,
          "value":"current-value"
       }
@@ -898,17 +898,17 @@ Request:
 Request body (`application/json`):
 
 ```text
-[  
-   {  
+[
+   {
       "name":"api_key",
-      "value":{  
+      "value":{
          "isEncrypted":true,
          "value":"very-secret-key-in-clear-text"
       }
    },
-   {  
+   {
       "name":"var1",
-      "value":{  
+      "value":{
          "isEncrypted":false,
          "value":"new-value"
       }
