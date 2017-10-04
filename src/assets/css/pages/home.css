@@ -45,7 +45,7 @@
 
 .home-banner img {
     margin-top: 1.2rem;
-    margin-bottom: 1px;    
+    margin-bottom: 1px;
 }
 
 /* Features and benefits */
@@ -113,7 +113,7 @@
     margin: 0.7rem 1rem;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
     .customer-logo {
         background: url("/assets/img/home/customer-logos-sprite@2x.png") no-repeat;
@@ -249,5 +249,5 @@ only screen and (min-device-pixel-ratio: 2) {
     .benefits-table .columns {
         line-height: 1.5rem;
         font-size: 1rem;
-    }    
+    }
 }
