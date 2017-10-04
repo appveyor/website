@@ -45,7 +45,7 @@
 
 .home-banner img {
     margin-top: 1.2rem;
-    margin-bottom: 1px;    
+    margin-bottom: 1px;
 }
 
 /* Features and benefits */
@@ -113,7 +113,7 @@
     margin: 0.7rem 1rem;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
     .customer-logo {
         background: url("/assets/img/home/customer-logos-sprite@2x.png") no-repeat;
@@ -210,12 +210,6 @@ only screen and (min-device-pixel-ratio: 2) {
     background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAA8UlEQVR4Ae3YCQrDIBBGYW+VExmapXfPCWKFdtiFFx4QSwR+dmc+EMYllVK6zIA9DJbSVJN1w5TmmgnBIOqoOWsWgVp/NQ6Co6jyTeAuo/aaM+oQHEdBHEAhHEI1cOt1FMdhVAO3UxTHtWE5ClKcQEWNTLdyuYoTqAVspcPVvC0qQmcPauRQHBa4jTZ0KA7zODEDxfSWKA7zODqQPczjArXF+ofButxKjuK4fsYFx3mUx/3rkeQP8RdYIw9x08Dj6EWRFxa4WVytEYrjwNWa4jiK4wJ1x/MtcBylH7wC10bZLwKBC1RXnyo5UON/bMDuzgdywHfVD58EpgAAAABJRU5ErkJggg==") no-repeat left 50% / 19px 19px;
 }
 
-/* Testimonials */
-.testimonials {
-    margin-top: 16px;
-    text-align: center;
-}
-
 /* Small screens only*/
 @media only screen and (max-width: 40em) {
     .home-banner h1 {
@@ -249,5 +243,5 @@ only screen and (min-device-pixel-ratio: 2) {
     .benefits-table .columns {
         line-height: 1.5rem;
         font-size: 1rem;
-    }    
+    }
 }
