@@ -34,7 +34,7 @@ matrix:
   fast_finish: true
 
 cache:
-  - 'node_modules -> appveyor.yml,package-lock.json,package.json'
+  - 'node_modules -> appveyor.yml,package.json,package-lock.json'
   - 'vendor -> appveyor.yml,Gemfile,Gemfile.lock'
 
 deploy:
