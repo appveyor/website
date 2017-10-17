@@ -28,7 +28,7 @@ title: Running builds as local process
 * [Download location](https://www.appveyor.com/downloads/host-agent/latest/AppveyorHostAgent.msi)
 * Installation settings
     * **Host authorization token**: token generated or manually entered during [Setting up custom cloud and images in AppVeyor](/docs/enterprise/running-builds-as-local-process/#setting-up-custom-cloud-and-images-in-appveyor) step
-    
+
 ### Optionally configure Host agent to run in "Interactive" mode
 
 This setting can be useful if you need to run UI tests.
