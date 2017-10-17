@@ -28,6 +28,15 @@ title: Running builds as local process
 * [Download location](https://www.appveyor.com/downloads/host-agent/latest/AppveyorHostAgent.msi)
 * Installation settings
     * **Host authorization token**: token generated or manually entered during [Setting up custom cloud and images in AppVeyor](/docs/enterprise/running-builds-as-local-process/#setting-up-custom-cloud-and-images-in-appveyor) step
+    
+### Optionally configure Host agent to run in "Interactive" mode
+
+This setting can be useful if you need to run UI tests.
+
+* [Enable auto-logon](https://github.com/appveyor/ci/blob/master/scripts/enterprise/enable_auto_logon.ps1) [[raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/enable_auto_logon.ps1)]
+* [Add Appveyor Host Agent to auto-run](https://github.com/appveyor/ci/blob/master/scripts/enterprise/add_appveyor_host_agent_to_auto_run.ps1) [[raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/add_appveyor_host_agent_to_auto_run.ps1)]
+
+Restart computer to ensure that changes auto-logon/run works as expected.
 
 ### Download and install AppVeyor build agent on agent machine
 
