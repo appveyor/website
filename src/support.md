@@ -24,7 +24,7 @@ for any ongoing issues happening to AppVeyor:
 AppVeyor support forums is a great source of solutions to various problems provided
 by AppVeyor team and community.
 
-<http://help.appveyor.com>
+<https://help.appveyor.com>
 
 * Use forums if you want to report the issue, make a suggestion or have a general discussion.
 * Forums are hosted by [Tender](https://tenderapp.com/). Tender does not support HTTPS on custom domains, so if you need accessing AppVeyor support forums via **HTTPS** please use this URL: [https://appveyor.tenderapp.com](https://appveyor.tenderapp.com)
