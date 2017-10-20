@@ -151,7 +151,7 @@ Other settings:
     When `remove_files` is set to `true` Agent performs full content synchronization, i.e. deletes files at destination that don't exist in the package.
 
 * `skip_dirs` - semicolon list of regular expressions specifying the list of directories to skip while synchronizing web site contents, for example `\\App_data;\\uploads`.
-* `skip_files` - semicolon list of regular expressions specifying the list of files to skip while synchronizing web site contents, for example `web.config` (all web.configs) or only the root config for MVC apps `^((?!Views).)*web\.config$` (thanks to [this blog post](http://www.keza.net/2011/11/15/skipping-mvc-web-config-files-with-msdeploy/)).
+* `skip_files` - semicolon list of regular expressions specifying the list of files to skip while synchronizing web site contents, for example `web.config` (all web.configs) or only the root config for MVC apps `^((?!Views).)*web\.config$` (thanks to [this blog post](http://keza.net/2011/11/15/skipping-mvc-web-config-files-with-msdeploy/)).
 * `app_offline` - places app_offline.htm page into the root of web application before sync to take app offline and then remove the page when deployment has finished.
 * `group` - Deployment group.
 * `deploy_order` - Optional. Allows changing the deployment order of artifacts. Artifacts are deployed in ascending order. Deployment order is set to `0` if not specified.
@@ -229,7 +229,7 @@ For example, given `.dacpac` artifact's deployment name is `MyDatabase`:
 
 ## Installing MSI package artifact on remote machine
 
-With AppVeyor Deployment Agent you can run the installation of MSI artifact (with `.msi` extension) on the remote machine. Agent uses `msiexec` command-line utility to install the package. MSI package should support silent mode (`/quiet` switch). We recommend using [WiX](http://wixtoolset.org) for building application installation packages.
+With AppVeyor Deployment Agent you can run the installation of MSI artifact (with `.msi` extension) on the remote machine. Agent uses `msiexec` command-line utility to install the package. MSI package should support silent mode (`/quiet` switch). We recommend using [WiX](http://wixtoolset.org/) for building application installation packages.
 
     <artifact_name>.deploy_msi: true
 

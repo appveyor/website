@@ -30,7 +30,7 @@ Our worker is a Cloud Service hosted on Azure. Once the build is completed, it i
 
 ### JavaScript applications
 
-All of our client applications are single page apps built on top of Backbone.js. We use [webpack](http://webpack.github.io/) to bundle our application. We have a [gulp](http://gulpjs.com/) task that does all the job, bundling the numerous JavaScript files into a single file and uglifying the output. AppVeyor also allows us to run this gulp task inside our build process, which is pretty amazing. It doesn't only allow to build .NET applications: you can use npm, gem, and any NodeJS modules.
+All of our client applications are single page apps built on top of Backbone.js. We use [webpack](https://webpack.github.io/) to bundle our application. We have a [gulp](https://gulpjs.com/) task that does all the job, bundling the numerous JavaScript files into a single file and uglifying the output. AppVeyor also allows us to run this gulp task inside our build process, which is pretty amazing. It doesn't only allow to build .NET applications: you can use npm, gem, and any NodeJS modules.
 
 We also have unit tests for these two applications; we run those in AppVeyor as well, using a gulp task.
 

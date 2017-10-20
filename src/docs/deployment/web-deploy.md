@@ -96,7 +96,7 @@ Web deploy provider settings are specified on Deployment tab of project settings
 * **NTLM authentication** (`ntlm`) - NTLM authentication is primarily used by Remote Agent Service. Usually, IIS 7 and up web servers use Web Deploy Handler approach with Basic authentication.
 * **Remove additional files at destination** (`remove_files`) - when set selected provider performs full content synchronization, i.e. deletes files at destination that don't exist in the package.
 * **Skip directories** (`skip_dirs`) - semicolon list of regular expressions specifying the list of directories to skip while synchronizing web site contents, for example `\\App_data;\\uploads`.
-* **Skip files** (`skip_files`) - semicolon list of regular expressions specifying the list of files to skip while synchronizing web site contents, for example `web.config` (all web.configs) or only the root config for MVC apps `^((?!Views).)*web\.config$` (thanks to [this blog post](http://www.keza.net/2011/11/15/skipping-mvc-web-config-files-with-msdeploy/)).
+* **Skip files** (`skip_files`) - semicolon list of regular expressions specifying the list of files to skip while synchronizing web site contents, for example `web.config` (all web.configs) or only the root config for MVC apps `^((?!Views).)*web\.config$` (thanks to [this blog post](http://keza.net/2011/11/15/skipping-mvc-web-config-files-with-msdeploy/)).
 * **Take ASP.NET application offline during deployment** (`app_offline`) - places app_offline.htm page into the root of web application before sync to take app offline and then remove the page when deployment has finished.
 * **Artifact to deploy** (`artifact`) - artifact name containing application package to deploy.
 
@@ -198,7 +198,7 @@ Parameter element describes the name, default value and the places where and how
 </parameters>
 ```
 
-**Please note that for SQL connection string, both parameter name and environment variable should be named** `DefaultConnection-Web.config Connection String`. More details are in [this forum post](http://help.appveyor.com/discussions/problems/1759-webconfig-using-web-deploy) and specifically in [this comment](http://help.appveyor.com/discussions/problems/1759-webconfig-using-web-deploy#comment_36262253).
+**Please note that for SQL connection string, both parameter name and environment variable should be named** `DefaultConnection-Web.config Connection String`. More details are in [this forum post](https://help.appveyor.com/discussions/problems/1759-webconfig-using-web-deploy) and specifically in [this comment](https://help.appveyor.com/discussions/problems/1759-webconfig-using-web-deploy#comment_36262253).
 
 When Web Deploy package is built you can open it in the explorer and see `parameters.xml` in the root:
 
