@@ -55,13 +55,13 @@ See what's planned for development or what has just been delivered. AppVeyor mai
 Issue submission guidelines:
 
 * Do not submit duplicate issues. Search first and if similar request/bug found leave your comment there to upvote.
-* Be specific - avoid including few requests/bugs into a single issue. Sometimes, before submitting a new issue it makes sense to discuss it on [support forums](http://help.appveyor.com).
+* Be specific - avoid including few requests/bugs into a single issue. Sometimes, before submitting a new issue it makes sense to discuss it on [support forums](https://help.appveyor.com).
 
 ## Twitter
 
 <a href="https://twitter.com/appveyor" target="_blank" rel="noopener">@appveyor</a>
 
-* You are welcome to ask a quick question on Twitter, but if 140 symbols is not enough to clearly formulate the problem or we are going to have multiple replies in conversation - please respect other AppVeyor subscribers and switch to either PM or [support forums](http://help.appveyor.com).
+* You are welcome to ask a quick question on Twitter, but if 140 symbols is not enough to clearly formulate the problem or we are going to have multiple replies in conversation - please respect other AppVeyor subscribers and switch to either PM or [support forums](https://help.appveyor.com).
 
 ## StackOverflow
 

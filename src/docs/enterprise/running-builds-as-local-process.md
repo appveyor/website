@@ -40,7 +40,7 @@ Restart computer to ensure that changes auto-logon/run works as expected.
 
 ### Download and install AppVeyor build agent on agent machine
 
-* [Download location](http://www.appveyor.com/downloads/build-agent/latest/AppveyorBuildAgent.msi)
+* [Download location](https://www.appveyor.com/downloads/build-agent/latest/AppveyorBuildAgent.msi)
     * Accept all default settings during installation
 
 ### Download and install additional software required by build process

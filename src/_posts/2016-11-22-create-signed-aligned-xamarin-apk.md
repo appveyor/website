@@ -24,9 +24,9 @@ In my version of Visual Studio (Community 2015), this is done by clicking *"File
 
 Select the **YourAppName.Droid** project and run it. This should show the bare bones app in an emulator.
 
-If you have Hyper-V enabled (maybe you use Docker), then you might get an Deployment Error when doing this. [Disable Hyper-V and restart your machine to fix this](http://stackoverflow.com/questions/31613607/visual-studio-2015-emulator-for-android-not-working-xde-exe-exit-code-3).
+If you have Hyper-V enabled (maybe you use Docker), then you might get an Deployment Error when doing this. [Disable Hyper-V and restart your machine to fix this](https://stackoverflow.com/questions/31613607/visual-studio-2015-emulator-for-android-not-working-xde-exe-exit-code-3).
 
-You might also run in to compile errors due to [ridiculous dependency weirdness](http://stackoverflow.com/questions/40081826/system-missingmethodexception-method-android-support-v4-widget-drawerlayout-ad).
+You might also run in to compile errors due to [ridiculous dependency weirdness](https://stackoverflow.com/questions/40081826/system-missingmethodexception-method-android-support-v4-widget-drawerlayout-ad).
 
 ## Create APK file manually
 
