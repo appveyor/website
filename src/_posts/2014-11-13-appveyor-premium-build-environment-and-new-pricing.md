@@ -114,7 +114,7 @@ We'll be publishing more information and roadmap for on-premise in the coming we
 
 AppVeyor has gathered many great open-source projects, such as Mono, Julia, Grunt, Redis, nodegit,
 Chocolatey, JSON.net just to mention a few.
-People contribute their priceless knowledge and experience on [AppVeyor forums](http://help.appveyor.com/discussions).
+People contribute their priceless knowledge and experience on [AppVeyor forums](https://help.appveyor.com/discussions).
 
 To more actively engage the community in shaping AppVeyor we decided to host our entire website
 with documentation on GitHub where everyone could contribute by sending a pull request.

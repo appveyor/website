@@ -104,7 +104,7 @@ You can select a different image on AppVeyor UI ("Environment" tab of project se
 
     image: Visual Studio 2017
 
-> Please note that `appveyor.yml` has [precedance over UI settings](/docs/build-configuration/#appveyoryml-and-ui-coexistence),
+> Please note that `appveyor.yml` has [precedence over UI settings](/docs/build-configuration/#appveyoryml-and-ui-coexistence),
 > so when `appveyor.yml` exists the image should be specified in YAML, not on UI.
 
 ## Using multiple images for the same build

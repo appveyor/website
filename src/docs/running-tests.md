@@ -14,7 +14,7 @@ title: Running tests
 AppVeyor has tight integration with the following testing frameworks:
 
 * [Visual Studio Unit Testing framework (MSTest)](https://msdn.microsoft.com/en-us/library/dd264975.aspx)
-* [NUnit](http://www.nunit.org/)
+* [NUnit](http://nunit.org/)
 * [xUnit.net](https://github.com/xunit/xunit)
 * [Machine.Specifications (MSpec)](https://github.com/machine/machine.specifications)
 

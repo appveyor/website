@@ -34,9 +34,6 @@ $destination = "c:\application\data\newdata.xml"
 Invoke-WebRequest $source -OutFile $destination -Credential ftpUser
 ```
 
-Examples taken from [this blog post](http://www.powershellatoms.com/basic/download-file-website-powershell/).
-
-
 ## WebClient class
 
 You can use the following PowerShell code to download file using `System.Net.WebClient` class which is part of .NET Framework:

@@ -27,7 +27,6 @@ by AppVeyor team and community.
 <https://help.appveyor.com>
 
 * Use forums if you want to report the issue, make a suggestion or have a general discussion.
-* Forums are hosted by [Tender](https://tenderapp.com/). Tender does not support HTTPS on custom domains, so if you need accessing AppVeyor support forums via **HTTPS** please use this URL: [https://appveyor.tenderapp.com](https://appveyor.tenderapp.com)
 * By default all discussions are public and searchable, but you can start a private discussion by choosing `This is a private discussion, don't let the public see it` option. Alternatively, once discussion is already posted as public its visibility can be changed by either you or AppVeyor team using **Make private** toggle button on the right side bar.
 * When the private ticket is solved with solution provided and conversation doesn't contain any sensitive data (logs, IPs, passwords, etc.) we encourage you **making it public** so the solution could be easily discovered by AppVeyor users.
 
@@ -56,13 +55,13 @@ See what's planned for development or what has just been delivered. AppVeyor mai
 Issue submission guidelines:
 
 * Do not submit duplicate issues. Search first and if similar request/bug found leave your comment there to upvote.
-* Be specific - avoid including few requests/bugs into a single issue. Sometimes, before submitting a new issue it makes sense to discuss it on [support forums](http://help.appveyor.com).
+* Be specific - avoid including few requests/bugs into a single issue. Sometimes, before submitting a new issue it makes sense to discuss it on [support forums](https://help.appveyor.com).
 
 ## Twitter
 
 <a href="https://twitter.com/appveyor" target="_blank" rel="noopener">@appveyor</a>
 
-* You are welcome to ask a quick question on Twitter, but if 140 symbols is not enough to clearly formulate the problem or we are going to have multiple replies in conversation - please respect other AppVeyor subscribers and switch to either PM or [support forums](http://help.appveyor.com).
+* You are welcome to ask a quick question on Twitter, but if 140 symbols is not enough to clearly formulate the problem or we are going to have multiple replies in conversation - please respect other AppVeyor subscribers and switch to either PM or [support forums](https://help.appveyor.com).
 
 ## StackOverflow
 

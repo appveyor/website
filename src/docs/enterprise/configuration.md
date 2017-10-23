@@ -43,7 +43,7 @@ Example settings for using GMail for sending email notifications:
 
 ### SendGrid
 
-[SendGrid](https://www.sendgrid.com) is *a cloud-based [SMTP provider](http://en.wikipedia.org/wiki/SMTP) that allows you to send email without having to maintain email servers. SendGrid manages all of the technical details, from scaling the infrastructure to ISP outreach and reputation monitoring to whitelist services and real time analytics.*
+[SendGrid](https://www.sendgrid.com) is *a cloud-based [SMTP provider](https://en.wikipedia.org/wiki/SMTP) that allows you to send email without having to maintain email servers. SendGrid manages all of the technical details, from scaling the infrastructure to ISP outreach and reputation monitoring to whitelist services and real time analytics.*
 
 SendGrid is a quick option for testing AppVeyor mailouts as it doesn't require configuring/validating a real mail domain, however without a real domain, messages sent by AppVeyor via SendGrid would be trapped in your spam folder. SendGrid doesn't have a free plan, but a free 14-day trial only.
 
