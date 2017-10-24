@@ -149,6 +149,18 @@ dotnet_csproj:
   file: '**\*.csproj'
   version: '{version}'
   package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
+```
+
+This section can also be used to patch `*.props`, `.fsproj` and `.xml` files side-by-side with `.csproj`:
+
+```yaml
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj;**\*.props;**\*.fsproj;**\*.xml'
+  ...
 ```
 
 **Note** that specific attribute like `PackageVersion` should exist in `.csproj` file to be patched.
