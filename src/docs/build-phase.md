@@ -82,6 +82,28 @@ If .NET Core (or .NET Standard) project’s `.csproj` file contains any of the f
 
 **Note** that this feature works well with [.NET Core `.csproj` files patching](/docs/build-configuration/#net-core-csproj-files-patching)
 
+#### Excluding .NET Core projects from NuGet packaging
+
+.NET Core nuget packaging is skipped if `IsPackable` set to `false` in `.csproj` file. It is set by default to `false` for .NET Core test projects created with Visual Studio template or with `dotnet new` command. So by default .NET Core test projects are excluded from NuGet packaging.
+
+If .NET Core test project should be packaged, please set `IsPackable=true`:
+
+```xml
+  <PropertyGroup>
+    ...
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+```
+
+Or if some If .NET Core project should be excluded from NuGet packaging, please set `IsPackable=false`:
+
+```xml
+  <PropertyGroup>
+    ...
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+```
+
 ### Packaging Azure Cloud Service projects
 
 If Azure Cloud Service project (`.ccproj`) is found with the solution AppVeyor will create Azure Cloud Service package (`.cspkg`) using the following command:
