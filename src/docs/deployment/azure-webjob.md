@@ -46,12 +46,15 @@ some find [examples](https://github.com/atifaziz/NCrontabwiki/CrontabExamples), 
 * **Azure website name** (`website`) - Azure website name without `.azurewebsite.net`, e.g. `mywebsite`.
 * **App Service Environment** (`appservice_environment`) - Optional. Azure website is deployed to Azure AppService environment.
 * **App Service Environment Name** (`appservice_environment_name`) - Available if **App Service Environment** is checked. AppService environment website default URL part, located before `p.azurewebsites.net`.
-* **Web Deploy username** (`username`) - Web Deploy username.
-* **Web Deploy password** (`password`) - Web Deploy password.
+* **Deployment slot name** (`slot`) - Optional. If not specified job will be deployed to default (production) slot. Please note that you have to use Deployment (aka User-level) and not publishing profile (aka Site-level) credentials to transparently deploy to different slots.
+* **Deployment credentials username** (`username`) - Username from deployment credentials you can set in Azure Portal. Optionally you can use username and password from downloaded website publishing profile XML, but this will not work transparently with deployment slots.
+* **Deployment credentials password** (`password`) - Password from deployment credentials you can set in Azure Portal. As said earlier you can use credentials from downloaded website publishing profile XML, but this will not work transparently with deployment slots.
 * **WebJob name** (`job_name`) - Optional. Job name - can contain alphanumerics and dashes, for example `myjob-1`.
 * **WebJob schedule in crontab format** (`job_schedule`) - Optional. Job run schedule in **crontab** format. If schedule is not specified and job is not set as **Manually triggered**, job is published as *continuous* job; otherwise *triggered*.
 * **Manually triggered WebJob (no schedule)** (`manually_triggered`) - Optional. If set schedule is ignored.
 * **Artifact(s) to deploy** (`artifact`) - Optional. Artifact "deployment name" or filename to push. If not specified all `.zip` artifacts from selected build will be published as WebJobs. If you are publishing multiple jobs in a single deployment then omit `job_name` setting - this case job name will be extrapolated from artifact file name.
+* **Retry attempts** (`retry_attempts`) - Optional. Specifies the number of times the provider will retry after a failure. The default number of retries is 0.
+* **Retry interval** (`retry_interval`) - Optional. Specifies, in milliseconds, the interval between provider retry attempts. The default is 1000 (one second).
 
 Configuring in `appveyor.yml`:
 
