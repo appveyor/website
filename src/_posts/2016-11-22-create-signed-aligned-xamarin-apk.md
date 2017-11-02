@@ -4,7 +4,7 @@ title: Creating a Signed and ZipAligned APK (for Google Play) from Xamarin
 
 ## Introduction
 
-This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software Developer Lead at [RES](http://resgroup.github.io/).
+This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software Developer Lead at [RES](https://medium.com/res-software-team).
 
 This post is written from the point of view of someone (me) who is already proficient in C#, but was new to Xamarin, Mobile phone development, and AppVeyor.
 
