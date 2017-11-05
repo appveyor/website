@@ -2,7 +2,7 @@
 title: SonarQube Analysis
 ---
 
-This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software Developer Lead at [RES](http://resgroup.github.io/).
+This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software Developer Lead at [RES](https://medium.com/res-software-team).
 
 SonarQube / SonarSource analyzes code, highlights quality issues and calculates metrics such as technical debt. More information is available on [SonarSource.com](https://www.sonarsource.com/).
 
