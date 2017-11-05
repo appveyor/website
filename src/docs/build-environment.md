@@ -659,13 +659,45 @@ You can use those images to unblock your builds while we are working together wi
             <ul>
             <li>Qt 5.9.1: <code>C:\Qt\5.9.1</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.1</code> for backward compatibility)
                 <ul>
-                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.1\mingw53_32</code></li>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.9.1\msvc2017_64</code> (VS 2017 image only)</li>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.9.1\msvc2015_64</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.9.1\msvc2017_64</code></li>
+                <li>WinRT ARM v7: <code>C:\Qt\5.9.1\winrt_armv7_msvc2017</code></li>
+                <li>WinRT 32-bit: <code>C:\Qt\5.9.1\winrt_x86_msvc2017</code></li>
+                <li>WinRT 64-bit: <code>C:\Qt\5.9.1\winrt_x64_msvc2017</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.9.1: <code>C:\Qt\5.9.1</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.1</code> for backward compatibility)
+                <ul>
                 <li>msvc2015 32-bit: <code>C:\Qt\5.9.1\msvc2015</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.9.1: <code>C:\Qt\5.9.1</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.1</code> for backward compatibility)
+                <ul>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.1\mingw53_32</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.9.1\msvc2015_64</code></li>
                 <li>msvc2013 64-bit: <code>C:\Qt\5.9.1\msvc2013_64</code></li>
                 </ul>
             </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
             <li>Qt 5.8.0: <code>C:\Qt\5.8</code>
                 <ul>
                 <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.8\mingw53_32</code></li>
@@ -724,7 +756,7 @@ You can use those images to unblock your builds while we are working together wi
             </li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
         <td>Qt Installer Framework 3.0.1</td>
