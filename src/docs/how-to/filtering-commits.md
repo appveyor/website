@@ -24,7 +24,7 @@ Commits filtering does not apply to builds started with UI, API or scheduled bui
 
 ### Skip commits
 
-`skip_commits.message` setting allows skipping commits with a message matching regular expression.
+`skip_commits.message` setting allows skipping commits with a message title matching regular expression.
 
 For example, the following configuration won't start new builds on commits with `[chore]` in their message:
 
@@ -33,18 +33,20 @@ skip_commits:
   message: /\[chore\]/
 ```
 
-NOTE: AppVeyor searches for skip commit string in the commit message text before first empty line only. This is done to prevent confusion when squashed commits are not being built when older commit (in the squashed commits list) has skip commit string.
+NOTE: AppVeyor searches for skip commit string in the commit message title only (text before first empty line) only. This is done to prevent confusion when squashed commits are not being built in case older commit (in the squashed commits list) has skip commit string.
+
+AppVeyor searches for [skip ci] / [ci skip] / [skip appveyor] in the commit message title only. This avoids confusion when squashing commits, in particular with the GitHub squash-and-merge feature.
 
 ### Skip directive in commit message
 
 AppVeyor supports "standard" directives to skip a build of particular commit.
 
-Add `[skip ci]` or `[ci skip]` to commit message and build won't be triggered by AppVeyor for that commit.
+Add `[skip ci]` or `[ci skip]` to commit message title and build won't be triggered by AppVeyor for that commit.
 Or explicitly skip AppVeyor only with `[skip appveyor]` and still allow any other CI to build the commit (eg. Travis CI).
 
 NOTE: The `[` and `]` brackets in `[skip ci]`, etc are required! Not just the text inside the brackets.
 
-NOTE: Similarly to custom skip commit message, AppVeyor searches for `[skip ci] / [ci skip] / [skip appveyor]` in the commit message text before first empty line to prevent squashed commits filtering confusion.
+NOTE: Similarly to custom skip commit message, AppVeyor searches for [skip ci] / [ci skip] / [skip appveyor] in the commit message title only. This avoids confusion when squashing commits, in particular with the GitHub squash-and-merge feature.
 
 ### Include commits
 
