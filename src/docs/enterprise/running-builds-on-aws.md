@@ -13,7 +13,7 @@ title: Running builds on Amazon Web Services
 
 ## Create Master VM
 
-* Signin to AWS Management Console and select **EC2** under **Compute**
+* Signin to **AWS Management Console** and select **EC2** under **Compute**
 * Navigate to **Instances** and press **Lunch instance**
     * Choose an Amazon Machine Image (AMI). The following AMIs are tested at the moment:
         * Microsoft Windows Server 2016 Base
@@ -21,12 +21,16 @@ title: Running builds on Amazon Web Services
     * Choose an Instance Type
         * SSD storage is recommended
         * m3.medium type minimum recommended
-    * Press **Next: Configure Instance Details** button (not **Review and Launch**!)
+    * Press **Next: Configure Instance Details** button (not **Review and Launch**)
     * Configure Instance Details. Non-default settings:
         * Subnet: select any specific subnet
         * Auto-assign Public IP: Enable
-    * Press **Next: Add Storage** button (not **Review and Launch**!)
-    
+    * Press **Next: Add Storage** button (not **Review and Launch**). Non-default settings (provided instance type with SSD storage was selected):
+        * Set size at least 50Gb        
+    * Press **Next: Add Storage** button (not **Review and Launch**). Add the following tag:
+        * Key: name, value: MasterVm
+    * Press **Review and Launch** and then **Lunch**
+    * Select existing key pair or create a new key pair in next dialog window and press **Lunch instances**
     
     
     * Optionally increase number of CPUs or memory
