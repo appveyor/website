@@ -30,19 +30,14 @@ title: Running builds on Amazon Web Services
     * Press **Next: Add Storage** button (not **Review and Launch**). Add the following tag:
         * Key: name, value: MasterVm
     * Press **Review and Launch** and then **Lunch**
-    * Select existing key pair or create a new key pair in next dialog window and press **Lunch instances**
-    
-    
-    * Optionally increase number of CPUs or memory
-    * Press **Change** in **Boot disk**
-        * Select **Windows Server 2012 R2**
-        * Select **SSD persistent disk**
-    * Press **Select** and then **Create**
-    * In drop-down menu near **RDP** select **Create or reset Windows password**
-        * Set user name to `appveyor` and press **Set**
-        * Save auto-generated password for future use
-    * In drop-down menu near **RDP** select **Download RDP file**
-        * Click RDP file and in RDP window change username to `appveyor` and use password saved before
+    * Select existing key pair or create a new key pair in next dialog window
+        * Save key pair file (`*pem` file) in secure location
+        * Press **Lunch instances**
+    * Press **Lunch instances** and wait until instance state for *Master VM* instance is *running*
+    * Press **Connect** 
+        * Press **Get password** and use key pair file saved earlier to retrieve a password
+        * Press **Back** and then **Download Remote Desktop file**
+        * User RDP file and password to connect to the VM
 
 ## Setup Master VM
 
