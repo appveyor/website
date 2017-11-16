@@ -11,17 +11,24 @@ title: Running builds on Amazon Web Services
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
-## Create Google Cloud Platform service account
-
-* Open Google Cloud Platform menu and select existing or create new project to use for AppVeyor build environment
-* [Create Google Cloud Platform service account and obtain certificate](/docs/enterprise/creating-gcp-service-account/)
-
 ## Create Master VM
 
-* Go back to Google Cloud Platform menu and select **Compute engine**
-* Navigate to **VM instances** and press **Create**
-    * Set descriptive **Name**, for example **master-vm**
-    * Optionally change **Zone**, to be the same as build VMs, closer to other GCE or non-GCE resources needed during build, test or deployment
+* Signin to AWS Management Console and select **EC2** under **Compute**
+* Navigate to **Instances** and press **Lunch instance**
+    * Choose an Amazon Machine Image (AMI). The following AMIs are tested at the moment:
+        * Microsoft Windows Server 2016 Base
+        * Microsoft Windows Server 2012 R2 Base        
+    * Choose an Instance Type
+        * SSD storage is recommended
+        * m3.medium type minimum recommended
+    * Press **Next: Configure Instance Details** button (not **Review and Launch**!)
+    * Configure Instance Details. Non-default settings:
+        * Subnet: select any specific subnet
+        * Auto-assign Public IP: Enable
+    * Press **Next: Add Storage** button (not **Review and Launch**!)
+    
+    
+    
     * Optionally increase number of CPUs or memory
     * Press **Change** in **Boot disk**
         * Select **Windows Server 2012 R2**
