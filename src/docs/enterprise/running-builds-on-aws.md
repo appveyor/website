@@ -38,6 +38,13 @@ title: Running builds on Amazon Web Services
         * Press **Get password** and use key pair file saved earlier to retrieve a password
         * Press **Back** and then **Download Remote Desktop file**
         * User RDP file and password to connect to the VM
+    * Press **Start** button, type `Computer management` and navigate to **Local users and groups** / **Users**
+    * Create a new user:
+        * Username: `appveyor`
+        * Password: `<your password>`
+        * Uncheck *User must change password at next logon*
+        * Check *Password never expires*
+    
 
 ## Setup Master VM
 
