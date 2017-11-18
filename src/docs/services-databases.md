@@ -16,6 +16,7 @@ AppVeyor has most popular services and database engines pre-installed on all bui
 * [SQL Server 2012](#sql-server-2012)
 * [SQL Server 2014](#sql-server-2014)
 * [SQL Server 2016](#sql-server-2016)
+* [SQL Server 2017](#sql-server-2017)
 * [MySQL](#mysql)
 * [PostgreSQL](#postgresql)
 * [MongoDB](#mongodb)
@@ -125,6 +126,25 @@ services:
   - mssql2016
 ```
 
+## SQL Server 2017
+
+The latest version of **SQL Server 2017 Developer Edition** is available on AppVeyor build servers.
+
+Instance name: `SQL2017`
+
+`sa` password: `Password12!`
+
+Sample connection string:
+
+    Server=(local)\SQL2017;Database=master;User ID=sa;Password=Password12!
+
+To start SQL Server 2017 Developer in `appveyor.yml`:
+
+```yaml
+services:
+  - mssql2017
+```
+
 ### Importing your existing database
 
 You can use the following PowerShell script to attach your own SQL Server database in `.MDF` format:
@@ -229,9 +249,17 @@ PostgreSQL database services are available on AppVeyor build workers.
     * `C:\Program Files\PostgreSQL\9.4`
     * `C:\Program Files\PostgreSQL\9.5`
     * `C:\Program Files\PostgreSQL\9.6`
+    * `C:\Program Files\PostgreSQL\10`
 * Server name: `127.0.0.1` or `localhost`
 * Server port: `5432`
 * `postgres` account password: `Password12!`
+
+To start PostgreSQL 10 in `appveyor.yml`:
+
+```yaml
+services:
+  - postgresql10
+```
 
 To start PostgreSQL 9.6 in `appveyor.yml`:
 
