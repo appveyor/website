@@ -668,7 +668,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.2: <code>C:\Qt\5.9.1</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.1</code> for backward compatibility)
+            <li>Qt 5.9.2: <code>C:\Qt\5.9.2</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.2</code> for backward compatibility)
                 <ul>
                 <li>msvc2017 64-bit: <code>C:\Qt\5.9.2\msvc2017_64</code></li>
                 <li>WinRT ARM v7: <code>C:\Qt\5.9.2\winrt_armv7_msvc2017</code></li>
