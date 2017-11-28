@@ -91,11 +91,12 @@ Variable should be in format `<role_name>.<setting_name>`. For example if your .
 ```xml
 <Role name="FrontEnd">
   <Instances count="3" />
-  <ConfigurationSettings>    
-    <Setting name="ConnectionString" value="" />    
+  <ConfigurationSettings>
+    <Setting name="ConnectionString" value="" />
   </ConfigurationSettings>
 </Role>
 ```
+
 Environment variable name should be `FrontEnd.ConnectionString`.
 
 When promoting specific build from Environment page you set variables on environment settings page:
