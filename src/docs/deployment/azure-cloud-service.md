@@ -80,11 +80,23 @@ and then grab both values from downloaded `<subscription>.publishsettings` XML f
 
 ## Cloud Service Deploy Parametrization
 
-When deploying Cloud Services to different environments you don't want to re-build application package every time with different configurations, but you want to deploy the same package (artifact) with some environment-specific settings configured during deployment. When using Cloud Service Deploy the problem can be easily solved by Web Deploy parametrization.
+When deploying Cloud Services to different environments you don't want to re-build application package every time with different configurations, but you want to deploy the same package (artifact) with some environment-specific settings configured during deployment. When using Cloud Service Deploy the problem can be easily solved by Cloud Service Deploy parametrization.
 
 ### Setting parameters during deployment
 
 Cloud Service Deploy provider analyzes the deployment package and looks into environment variables to set parameter values with matching names.
+
+Variable should be in format `<role_name>.<setting_name>`. For example if your .cscfg contains the folloing:
+
+```xml
+<Role name="FrontEnd">
+  <Instances count="3" />
+  <ConfigurationSettings>    
+    <Setting name="ConnectionString" value="" />    
+  </ConfigurationSettings>
+</Role>
+```
+Environment variable name should be `FrontEnd.ConnectionString`.
 
 When promoting specific build from Environment page you set variables on environment settings page:
 
