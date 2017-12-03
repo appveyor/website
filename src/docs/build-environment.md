@@ -571,7 +571,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-                <li>Miniconda2 4.3.27 (Python 2.7.13) - <code>C:\Miniconda</code></li>
+                <li>Miniconda2 4.3.27 (Python 2.7.13): <code>C:\Miniconda</code></li>
                 <li>Miniconda2 4.3.27 x64 (Python 2.7.13): <code>C:\Miniconda-x64</code></li>
                 <li>Miniconda3 3.16.0 (Python 3.4.3): <code>C:\Miniconda34</code></li>
                 <li>Miniconda3 3.16.0 x64 (Python 3.4.3): <code>C:\Miniconda34-x64</code></li>
