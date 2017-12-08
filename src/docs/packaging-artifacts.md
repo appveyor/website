@@ -135,7 +135,7 @@ foreach ($artifactName in $artifacts.keys) {
 
 ## Permalink to the last successful build artifact
 
-URL for fetching "last successful" artifact:
+Artifacts may be fetched by URL, bear in mind authentication is required, see [AppVeyor REST API](/docs/api/#authentication) for more info. The URL for fetching "last successful" artifact:
 
     https://ci.appveyor.com/api/projects/<account>/<project>/artifacts/<artifact_file_path>
 
