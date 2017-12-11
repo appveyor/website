@@ -41,7 +41,7 @@ except:
 
 `gh-pages` branch is always excluded unless explicitly added in "only" list.
 
-**Regular expressions** should be surrounded by `/`, otherise Appveyor will do simple case insensitive string comparison.
+**Regular expressions** should be surrounded by `/`, otherwise Appveyor will do simple case insensitive string comparison.
 
 ## Conditional build configuration
 
