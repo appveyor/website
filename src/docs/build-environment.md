@@ -320,7 +320,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2017 -->
     <tr>
-        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.4.4</th>
+        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.5.1</th>
     </tr>
     <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -446,11 +446,11 @@ You can use those images to unblock your builds while we are working together wi
         <td>
             <p><code>4.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 9.0.0 - 9.2.0 (x86 and x64) - use <code>Current</code> alias for latest <code>9.x</code> release</li>
-                <li>Node.js 8.0.0 - 8.9.1 (x86 and x64) - use <code>LTS</code> alias for latest <code>8.x</code> release</li>
+                <li>Node.js 9.0.0 - 9.3.0 (x86 and x64) - use <code>Current</code> alias for latest <code>9.x</code> release</li>
+                <li>Node.js 8.0.0 - 8.9.3 (x86 and x64) - use <code>LTS</code> alias for latest <code>8.x</code> release</li>
                 <li>Node.js 7.0.0 - 7.10.1 (x86 and x64)</li>
-                <li>Node.js 6.0.0 - 6.12.0 (x86 and x64)</li>
-                <li>Node.js 4.0.0 - 4.8.6 (x86 and x64) - default on build workers</li>
+                <li>Node.js 6.0.0 - 6.12.2 (x86 and x64)</li>
+                <li>Node.js 4.0.0 - 4.8.7 (x86 and x64) - default on build workers</li>
                 <li>Node.js 5.0.0 - 5.12.0 (x86 and x64)</li>
                 <li>Node.js 0.10.26 - 0.10.48 (x86 and x64)</li>
                 <li>Node.js 0.11.12 - 0.11.16 (x86 and x64)</li>
@@ -685,6 +685,7 @@ You can use those images to unblock your builds while we are working together wi
             <ul>
             <li>Qt 5.9.2: <code>C:\Qt\5.9.2</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.1</code> for backward compatibility)
                 <ul>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.2\mingw53_32</code></li>
                 <li>msvc2015 32-bit: <code>C:\Qt\5.9.2\msvc2015</code></li>
                 </ul>
             </li>
@@ -697,7 +698,6 @@ You can use those images to unblock your builds while we are working together wi
             <ul>
             <li>Qt 5.9.2: <code>C:\Qt\5.9.2</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.2</code> for backward compatibility)
                 <ul>
-                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.2\mingw53_32</code></li>
                 <li>msvc2015 64-bit: <code>C:\Qt\5.9.2\msvc2015_64</code></li>
                 <li>msvc2013 64-bit: <code>C:\Qt\5.9.2\msvc2013_64</code></li>
                 </ul>
