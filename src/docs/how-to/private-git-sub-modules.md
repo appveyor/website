@@ -10,7 +10,7 @@ could be applied to other Git hosting platforms as well.
 
 ## How AppVeyor is cloning private repos
 
-AppVeyor uses SSH to clone private Git repositories. When you add a project in AppVeyor a new RSA key-pair is generated which consists of private and public keys. Public key is deployed to a remote Git repository using GitHub (or Bitbucket) API and private key is pushed to build worker during the build. For SSH protocol to work on Windows private key should be located in `%USERPROFILE%\.ssh\id_rsa` file.
+AppVeyor uses SSH to clone private Git repositories. When you add a project in AppVeyor a new RSA key-pair is generated which consists of private and public keys. Public key is deployed to a remote Git repository using GitHub (or Bitbucket) API and private key is pushed to build worker during the build. For SSH protocol to work on Windows the private key should be located in the file `%USERPROFILE%\.ssh\id_rsa` (command prompt) or `$env:userprofile\.ssh\id_rsa` (powershell).
 
 ## The problem with private sub-modules
 
@@ -102,7 +102,7 @@ install:
   - ps: $fileContent = "-----BEGIN RSA PRIVATE KEY-----`n"
   - ps: $fileContent += $env:priv_key.Replace(' ', "`n")
   - ps: $fileContent += "`n-----END RSA PRIVATE KEY-----`n"
-  - ps: Set-Content c:\users\appveyor\.ssh\id_rsa $fileContent
+  - ps: Set-Content $env:userprofile\.ssh\id_rsa $fileContent
   - git submodule update --init --recursive
 ```
 
