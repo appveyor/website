@@ -426,18 +426,14 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <th id="boost" class="section" colspan="4">Boost</th>
     </tr>
-    <tr><td>
-    <ul>
-        <li>Boost 1.65.1 (<code>C:\Libraries\boost_1_65_1</code> - Visual Studio 2017 image only)</li>
-        <li>Boost 1.64.0 (<code>C:\Libraries\boost_1_64_0</code> - Visual Studio 2017 image only)</li>
-        <li>Boost 1.63.0 (<code>C:\Libraries\boost_1_63_0</code>)</li>
-        <li>Boost 1.62.0 (<code>C:\Libraries\boost_1_62_0</code>)</li>
-        <li>Boost 1.60.0 (<code>C:\Libraries\boost_1_60_0</code>)</li>
-        <li>Boost 1.59.0 (<code>C:\Libraries\boost_1_59_0</code>)</li>
-        <li>Boost 1.58.0 (<code>C:\Libraries\boost_1_58_0</code>)</li>
-        <li>Boost 1.56.0 (<code>C:\Libraries\boost</code>)</li>
-    </ul>
-    </td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Boost 1.65.1 (<code>C:\Libraries\boost_1_65_1</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Boost 1.64.0 (<code>C:\Libraries\boost_1_64_0</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Boost 1.63.0 (<code>C:\Libraries\boost_1_63_0</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Boost 1.62.0 (<code>C:\Libraries\boost_1_62_0</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Boost 1.60.0 (<code>C:\Libraries\boost_1_60_0</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Boost 1.59.0 (<code>C:\Libraries\boost_1_59_0</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Boost 1.58.0 (<code>C:\Libraries\boost_1_58_0</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Boost 1.56.0 (<code>C:\Libraries\boost</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Node.js -->
     <tr>
         <th id="node-js" class="section" colspan="4">Node.js</th>
