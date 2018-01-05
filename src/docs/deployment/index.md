@@ -151,14 +151,14 @@ You can use the `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, 
     appveyor_repo_tag: true
 ```
 
-However, please note that `branch` and `appveyor_repo_tag` are mutually exclusive. This is because, in the case of tag, it replaces the branch in the webhook content and there is no practical reliable way to recognize from what branch the tag was created. Therefore with this setting deployment will happen only for the master branch:
+However, please note that in case of **annotated** tag, `branch` and `appveyor_repo_tag` are mutually exclusive. This is because, for webhook created as a result of **annotated** tag, there is no practical reliable way to recognize what branch the tag was created from. Therefore with this setting deployment will happen only for the master branch:
 
 ```yaml
 - provider: Environment
   name: production
   on:
     branch: master # only this will work
-    appveyor_repo_tag: true # condition will never be evaluated
+    appveyor_repo_tag: true # condition will never be evaluated for annotated tag
 ```
 
 So if you need to deploy on both branch and tag, please create two `provider` sections under `deploy` like this:
