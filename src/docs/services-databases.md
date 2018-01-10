@@ -254,11 +254,11 @@ PostgreSQL database services are available on AppVeyor build workers.
 * Server port: `5432`
 * `postgres` account password: `Password12!`
 
-To start PostgreSQL 10 in `appveyor.yml`:
+To start PostgreSQL 10.1 in `appveyor.yml`:
 
 ```yaml
 services:
-  - postgresql10
+  - postgresql101
 ```
 
 To start PostgreSQL 9.6 in `appveyor.yml`:
