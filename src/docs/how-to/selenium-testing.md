@@ -15,9 +15,9 @@ title: Selenium testing
 
 ### Firefox
 
-AppVeyor build worker images are used to have the latest version of Firefox browser installed which at the time of writing was `47.0.1`.
+AppVeyor build worker images have the latest version of Firefox browser installed, at the time of writing this was `47.0.1`.
 
-You use `FirefoxDriver` class from [`Selenium WebDriver` library](https://www.nuget.org/packages/Selenium.WebDriver/) to run tests on Firefox.
+Use `FirefoxDriver` class from [`Selenium WebDriver` library](https://www.nuget.org/packages/Selenium.WebDriver/) to run tests on Firefox.
 
 #### Firefox 46 and below
 
@@ -29,7 +29,7 @@ install:
   - choco install firefox --version 46.0.1
 ```
 
-In your tests you create `FirefoxDriver` as simply:
+In your tests create `FirefoxDriver` as simply:
 
 ```javascript
 var driver = new FirefoxDriver();
@@ -40,7 +40,7 @@ var driver = new FirefoxDriver();
 Starting from Firefox 47.x the way WebDriver works has changed.
 
 First, it requires an additional executable called [geckodriver](https://github.com/mozilla/geckodriver/releases) which must be available on `PATH`.
-All AppVeyor build workers already have this executable in `C:\Tools\WebDriver` directory (`geckodriver.exe` and `wires.exe` files), so you don't need to worry about that.
+All AppVeyor build workers already have this executable in `C:\Tools\WebDriver` directory (`geckodriver.exe` and `wires.exe` files).
 
 Second, `FirefoxDriver` should be created like in the following example to notify WebDriver that geckodriver should be used:
 
@@ -52,7 +52,7 @@ driverService.SuppressInitialDiagnosticInformation = true;
 driver = new FirefoxDriver(driverService, new FirefoxOptions(), TimeSpan.FromSeconds(60));
 ```
 
-Please do not forget to **close the browser and dispose the driver** by `driver.Quit();` in test finalize steps. Otherwise build process can hung.
+Please do not forget to **close the browser and dispose the driver** with `driver.Quit();` in test finalize steps. Otherwise the build process can hang.
 
 ## Additional resources
 
