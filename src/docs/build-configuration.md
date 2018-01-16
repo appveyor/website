@@ -164,6 +164,7 @@ dotnet_csproj:
 ```
 
 **Note** that specific attribute like `PackageVersion` should exist in `.csproj` file to be patched.
+**Note** that the xmlns must not be defined or else the file won't be processed.
 
 You can use environment variables substitution in file name and version formats, for example:
 
