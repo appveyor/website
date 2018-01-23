@@ -34,6 +34,8 @@ port:               4000
 url:                https://www.appveyor.com
 encoding:           UTF-8
 
+future: true
+
 # custom variables
 github_repo_root:    https://github.com/appveyor/website/tree/master/src
 
