@@ -58,3 +58,4 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_BUILD_WORKER_IMAGE` - set build worker image for build to run on. Can be done only at build configuration level, not at build time
 * `APPVEYOR_SKIP_FINALIZE_ON_EXIT` - if `appveyor exit` or `Exit-AppVeyor` build was called, exit build even without **Finalize** steps (`on_success`, `on_finish` scripts and build cache save)
 * `APPVEYOR_SAVE_CACHE_ON_ERROR` - save build cache on build failure. By default build cache is being saved only during successful build **Finalize** steps
+* `APPVEYOR_ACS_DEPLOYMENT_UPGRADE_MODE`. Exposes [DeploymentUpgradeMode Enumeration](https://msdn.microsoft.com/en-us/library/microsoft.windowsazure.management.compute.models.deploymentupgrademode.aspx) when deploying Azure Cloud Service. Default value is `Auto`. Set it to `Manual` or `Simultaneous` if different behavior is required.
