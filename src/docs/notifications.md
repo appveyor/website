@@ -489,6 +489,7 @@ When webhook notification triggers AppVeyor makes POST request to the webhook UR
             ],
             "artifacts":[
                {
+                  "permalink": "https://ci.appveyor.com/api/buildjobs/es941edratul5jm3/artifacts/MyWebApp.zip",
                   "fileName":"MyWebApp.zip",
                   "name":"MyWebApp",
                   "type":"WebDeployPackage",
