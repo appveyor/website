@@ -108,3 +108,7 @@ When deploying during the build session environment variables are used instead. 
 ![project-environment-variables](/assets/img/docs/deployment/web-deploy/project-environment-variables.png)
 
 Variables defined during the build override those ones defined on Environment level.
+
+### Deployment Upgrade Mode
+
+AppVeyor exposes [DeploymentUpgradeMode Enumeration](https://msdn.microsoft.com/en-us/library/microsoft.windowsazure.management.compute.models.deploymentupgrademode.aspx) with "tweak" environment variable called `APPVEYOR_ACS_DEPLOYMENT_UPGRADE_MODE`. Default value is `Auto`. Set it to `Manual` or `Simultaneous` if different behavior is required.
