@@ -14,7 +14,7 @@ For other kind of application, simple add folder with all site assets (for examp
 
 ## Publishing credentials
 
-Please use Username from deployment credentials you can set in Azure Portal. Optionally you can use username and password from downloaded website publishing profile XML, but this will not work transparently with deployment slots.
+Please use deployment credentials you can set in Azure Portal. Optionally you can use username and password from downloaded website publishing profile XML, but this will not work transparently with deployment slots.
 
 ## Provider settings
 
