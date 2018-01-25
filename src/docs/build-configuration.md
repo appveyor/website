@@ -267,9 +267,11 @@ When you set **Cmd** script on the UI its body will be split into lines and exec
 
 If exit code of the first command (`gem update --system`) is different from a 0 script execution will be terminated and entire build will return as failed.
 
-When **PowerShell** is selected the entire body is treated as a single script, so you can use control flow logic inside it. For example:
+When **PS** (*PowerShell*) or **PS CORE** (*PowerShell Core*) is selected the entire body is treated as a single (*PowerShell* or *PowerShell Core*) script, so you can use control flow logic inside it. For example:
 
 ![build script ps](/assets/img/docs/build-script-ps.png)
+
+![build script ps](/assets/img/docs/build-script-ps-core.png)
 
 PowerShell script is considered successful if it finishes without exception.
 
@@ -300,6 +302,7 @@ By default, script line is treated as batch command, but you can specify script 
 before_build:
   - cmd: ECHO this is batch
   - ps: Write-Host "This is PowerShell"
+  - pwsh: Write-Host "This is PowerShell Core"
 ```
 
 To add multi-line PowerShell script covering an entire event:
