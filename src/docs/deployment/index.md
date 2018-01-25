@@ -75,8 +75,8 @@ providers available in each mode:
     <td><a href="/docs/deployment/azure-webjob/">Azure WebJob</a></td>
 </tr>
 <tr>
-    <td><a href="/docs/deployment/azure-app-service-zip-push-deploy/">Azure App Service Zip Push Deploy</a></td>
-    <td><a href="/docs/deployment/azure-app-service-zip-push-deploy/">Azure App Service Zip Push Deploy</a></td>
+    <td><a href="/docs/deployment/azure-app-service-zip-push-deploy/">Azure App Service Zip Push</a></td>
+    <td><a href="/docs/deployment/azure-app-service-zip-push-deploy/">Azure App Service Zip Push</a></td>
 </tr>
 <tr>
     <td><a href="/docs/deployment/azure-blob/">Azure Blob</a></td>
