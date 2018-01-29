@@ -555,7 +555,7 @@ Message template is a [Mustache template](http://mustache.github.io/mustache.5.h
 {% endraw %}
 ```
 
-Please note that for **Deployment environment** notifications, you have to prefix variables with `build`, e.g. `{{build.commitAuthor}}`.
+Please note that for **Deployment environment** notifications, you have to prefix variables with `build`, e.g. `build.commitAuthor`.
 
 ## Adding custom value to notification
 
