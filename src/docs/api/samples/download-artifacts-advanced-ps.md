@@ -73,7 +73,7 @@ function Get-AppVeyorArtifacts
         $artifactUrl = "$apiUrl/buildjobs/$jobId/artifacts/$($_.fileName)"
         Write-Verbose "Downloading $artifactUrl to $localArtifactPath"
 
-        Invoke-RestMethod -Method Get -Uri $artifactUrl -OutFile $localArtifactPath @proxyArgs
+        Invoke-RestMethod -Method Get -Uri $artifactUrl -OutFile $localArtifactPath -Headers $headers @proxyArgs
 
         New-Object PSObject -Property @{
             'Source' = $artifactUrl
