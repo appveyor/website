@@ -28,6 +28,7 @@ title: Projects and builds API
 * [Start build of specific branch commit](#start-build-of-specific-branch-commit)
 * [Start build of Pull Request (GitHub only)](#start-build-of-pull-request-github-only)
 * [Cancel build](#cancel-build)
+* [Delete build](#delete-build)
 
 # Build Jobs
 
@@ -1064,6 +1065,14 @@ Response body:
 Request:
 
     DELETE /api/builds/{accountName}/{projectSlug}/{buildVersion}
+
+Response: 204
+
+### Delete build
+
+Request:
+
+    DELETE /api/builds/{buildId}
 
 Response: 204
 
