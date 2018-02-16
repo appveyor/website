@@ -21,7 +21,7 @@ Every build goes through the following steps:
     * `cd` to clone folder
 3. Restore build cache
 4. Run `install` scripts
-5. Patch `AssemblyInfo` files
+5. Patch `AssemblyInfo` and `.csproj` files
 6. Modify `hosts` files
 7. Start services
 8. **Build**
