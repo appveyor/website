@@ -36,7 +36,7 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_REPO_COMMIT` - commit ID (SHA)
 * `APPVEYOR_REPO_COMMIT_AUTHOR` - commit author's name
 * `APPVEYOR_REPO_COMMIT_AUTHOR_EMAIL` - commit author's email address
-* `APPVEYOR_REPO_COMMIT_TIMESTAMP` - commit date/time
+* `APPVEYOR_REPO_COMMIT_TIMESTAMP` - commit date/time in ISO 8601 format
 * `APPVEYOR_REPO_COMMIT_MESSAGE` - commit message
 * `APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED` - the rest of commit message after line break (if exists)
 * `APPVEYOR_SCHEDULED_BUILD` - `True` if the build runs by scheduler
