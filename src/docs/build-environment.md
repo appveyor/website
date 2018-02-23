@@ -127,7 +127,7 @@ Also for some combinations it makes sense to use `APPVEYOR_BUILD_WORKER_IMAGE` "
 ```yaml
 environment:
   matrix:
-    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
       MY_VAR: value1
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       MY_VAR: value2
