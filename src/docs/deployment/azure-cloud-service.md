@@ -101,11 +101,11 @@ Environment variable name should be `FrontEnd.ConnectionString`.
 
 When promoting specific build from Environment page you set variables on environment settings page:
 
-![environment-variables](/assets/img/docs/deployment/web-deploy/environment-variables.png)
+![environment-variables](/assets/img/docs/deployment/cloud-service/environment-variables.png)
 
 When deploying during the build session environment variables are used instead. You can set build environment variables on Environment tab of project settings, `appveyor.yml` or programmatically during the build.
 
-![project-environment-variables](/assets/img/docs/deployment/web-deploy/project-environment-variables.png)
+![project-environment-variables](/assets/img/docs/deployment/cloud-service/project-environment-variables.png)
 
 Variables defined during the build override those ones defined on Environment level.
 
