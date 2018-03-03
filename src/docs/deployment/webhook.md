@@ -10,7 +10,7 @@ Webhook is called using `POST` method.
 
 Webhook payload body will have the following format:
 
-```
+```json
 {
    "accountName": "YourAccountName",
    "projectId": 35,
