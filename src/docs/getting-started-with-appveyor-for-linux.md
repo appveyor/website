@@ -24,15 +24,16 @@ Some benefits of running Linux builds on AppVeyor:
     * VSTS (both Git and TFVC repositories)
     * Kiln
     * Any other Git, Mercurial or Subversion repository
+* Configure CI for your projects via UI or in dot-file.
 * Full `sudo` access to VM running build
-* Official .NET Core support (automatic build, test and packaging of .NET Core projects)
-* SQL Server 2017 for Linux
-* Bash and PowerShell Core for build flow control
-* Side-by-side configuration for both Windows and Linux builds
-* Pre-installed Docker service
-* Built-in NuGet server
-* Promoted deployments with "Deployment Environments"
-* The same [Build Worker API](https://www.appveyor.com/docs/build-worker-api/) as on Windows (messages, test results).
+* Promoted deployments - build once and deploy the same packages to multiple environments.
+* Official out-of-the-box .NET Core support - automatic build, test and packaging of .NET Core projects.
+* SQL Server 2017 for Linux.
+* Bash and PowerShell Core for build flow control.
+* Side-by-side configuration for both Windows and Linux builds.
+* Pre-installed Docker service.
+* Built-in NuGet server.
+* Single cross-platform [Build Worker API](https://www.appveyor.com/docs/build-worker-api/) as on Windows (messages, test results).
 
 ## Running your build on Linux
 
