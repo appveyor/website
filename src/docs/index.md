@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: Getting started
+title: Welcome to AppVeyor
 ---
 
-# Getting started
+# Welcome to AppVeyor
 
 <div class="flex-video widescreen">
     <iframe width="640" height="360" src="//www.youtube.com/embed/e1rVM4_nzWw?rel=0&amp;color=white" allowfullscreen title="Getting started video"></iframe>
