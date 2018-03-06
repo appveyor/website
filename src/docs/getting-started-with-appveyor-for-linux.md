@@ -79,10 +79,10 @@ Below is a minimal `appveyor.yml` to test Node.js project:
 image: ubuntu
 
 install:
-  * npm install
+- npm install
 
 test_script:
-  * npm test
+- npm test
 
 build: off
 ```
@@ -97,33 +97,33 @@ To run Bash command either put it with `sh:` prefix or without it, for example t
 
 ```yaml
 install:
-  * ls -al
-  * sh: sudo apt-get update
+- ls -al
+- sh: sudo apt-get update
 ```
 
 To run command in PowerShell session use `ps:` or `pwsh:` prefixes, for example:
 
 ```yaml
 test_script:
-  * ps: Write-Host "Hello, world!"
+- ps: Write-Host "Hello, world!"
 ```
 
 AppVeyor keeps the same Bash and PowerShell shells for the duration of the build and all commands run in the same context. That means, for example, that local variable defined on `install` stage is available on later stages:
 
 ```yaml
 init:
-  * ps: $my_variable = 'Test value'
+- ps: $my_variable = 'Test value'
 
 test_script:
-  * ps: Write-Host "This is $my_variable"
+- ps: Write-Host "This is $my_variable"
 ```
 
 AppVeyor exchanges **environment variables** and **current directory** between Bash and PowerShell shells. Environment variable defined in Bash command is immediately available in PowerShell command next to it and vice versa:
 
 ```yaml
 install:
-  * MY_VAR=test
-  * ps: $env:MY_VAR
+- MY_VAR=test
+- ps: $env:MY_VAR
 ```
 
 > Environment variable names are cass-sensitive on Linux platform.
@@ -158,11 +158,11 @@ stack: node 9, mysql
 
 The following languages can be configured in `stack`:
 
-* `node <version>`   * select Node.js
-* `go <version>`   * Golang
-* `ruby <version>`   * Ruby
-* `jdk <version>`   * Java
-* `python <version>`   * Python
+* `node <version>` - select Node.js
+* `go <version>` - Golang
+* `ruby <version>` - Ruby
+* `jdk <version>` - Java
+* `python <version>` - Python
 
 The following services can be configured in `stack`:
 
@@ -182,7 +182,7 @@ For your own scripts use `build_script` section, for example:
 
 ```yaml
 build_script:
-  * mvn install
+- mvn install
 ```
 
 For automated building .NET Core projects please see ".NET Core support" section below.
@@ -201,7 +201,7 @@ For your own scripts use `test_script` section, for example:
 
 ```yaml
 test_script:
-  * npm test
+- npm test
 ```
 
 For automated testing of .NET Core projects please see ".NET Core support" section below.
@@ -220,22 +220,22 @@ First, start from adding a matrix of build images. For example, to run build on 
 
 ```yaml
 image:
-  * Visual Studio 2015
-  * Ubuntu
+- Visual Studio 2015
+- Ubuntu
 ```
 
 Prefix command with `cmd:` to run it on Windows image only:
 
-      * cmd: echo Hey, I'm displayed on Windows only!
+    - cmd: echo Hey, I'm displayed on Windows only!
 
 Prefix command with `sh:` to run it on Linux image only:
 
-      * sh: printf "I'll be shown on Linux!"
+    - sh: printf "I'll be shown on Linux!"
 
 Do not prefix command to run it on both Windows and Linux. You have to make sure the command is good for both Windows batch files and Bash:
 
-      * dir
-      * echo I'm running on both Windows and Linux!
+    - dir
+    - echo I'm running on both Windows and Linux!
 
 PowerShell commands prefixed with `ps:` and `pwsh:` (on Linux they both run as PowerShell Core) run on both Windows and Linux, however you can distinguish between platforms by using the following PowerShell variables:
 
@@ -245,7 +245,7 @@ PowerShell commands prefixed with `ps:` and `pwsh:` (on Linux they both run as P
 For example, the following command will print different message for the same build running on Windows and Linux:
 
 ```yaml
-  * ps: |
+- ps: |
     if ($isLinux) {
       Write-Host "This is Linux!"
     } else {
@@ -267,8 +267,8 @@ environment:
   APPVEYOR_YML_DISABLE_PS_LINUX: true
 
 install:
-  * ps: Write-Host "This command won't be run on Linux"
-  * sh: printf "This command will be run on Linux only"
+- ps: Write-Host "This command won't be run on Linux"
+- sh: printf "This command will be run on Linux only"
 ```
 
 ## Docker
@@ -279,14 +279,14 @@ To enable Docker add this line to `appveyor.yml`:
 
 ```yaml
 services:
-  * docker
+- docker
 ```
 
 Then you can use Docker in your build, for example:
 
 ```yaml
 test_script:
-  * docker run hello-world
+- docker run hello-world
 ```
 
 ## .NET Core support
@@ -332,7 +332,7 @@ dotnet_csproj:
   informational_version: '{version}'
 ```
 
-> Note that `<Version>` and other version-related elements should exist already in `.csproj` file   * AppVeyor won't add them for you.
+> Note that `<Version>` and other version-related elements should exist already in `.csproj` file - AppVeyor won't add them for you.
 
 AppVeyor provides automatic packaging for the following types of .NET Core projects:
 
@@ -365,7 +365,7 @@ To start SQL Server 2017 for Linux service add this to your `appveyor.yml`:
 
 ```yaml
 services:
-  * mssql
+- mssql
 ```
 
 SQL Server 2017 instance details:
@@ -377,7 +377,7 @@ SQL Server 2017 instance details:
 
 ```yaml
 init:
-  * sqlcmd -S localhost -U SA -P Password12! -Q 'select @@VERSION'
+- sqlcmd -S localhost -U SA -P Password12! -Q 'select @@VERSION'
 ```
 
 ## Cache
