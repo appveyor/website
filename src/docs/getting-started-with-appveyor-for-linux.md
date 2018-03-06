@@ -13,8 +13,6 @@ title: Getting started with AppVeyor for Linux
 
 ## Introduction
 
-[TBD]
-
 Some benefits of running Linux builds on AppVeyor:
 
 * Multiple source control systems supported:
