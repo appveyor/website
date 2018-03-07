@@ -249,7 +249,7 @@ For example, the following command will print different message for the same bui
     if ($isLinux) {
       Write-Host "This is Linux!"
     } else {
-      Weite-Host "This is NOT a Linux!"
+      Write-Host "This is NOT a Linux!"
     }
 ```
 
