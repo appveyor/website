@@ -31,7 +31,7 @@ To push all `*.nupkg` files in the build folder recursively:
 
     **\*.nupkg
 
-To push all `*.nupkg` files in sub-directory recursively:
+To push all `*.nupkg` files in the sub-directory recursively:
 
     subdir\**\*.nupkg
 
@@ -47,7 +47,7 @@ artifacts:
     type: zip
 ```
 
-IMPORTANT! If the artifact path starts with `*` surround the value with single quotes, for example:
+IMPORTANT! If the artifact path starts with `*`, you need to surround the value with single quotes, for example:
 
 ```yaml
 - path: '*.nupkg'
@@ -149,26 +149,26 @@ URL parameters:
 
 Examples:
 
-Downloading artifact from last successful build of any branch:
+Downloading an artifact from the last successful build of any branch:
 
     https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip
 
-Downloading artifact for last successful build of `master` branch:
+Downloading an artifact for the last successful build of the `master` branch:
 
     https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?branch=master
 
-Downloading artifact from last successful build of `master` branch and "Release" job:
+Downloading an artifact from the last successful build of the `master` branch and the "Release" job:
 
     https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?branch=master&job=Configuration%3A+Release
 
-Downloading artifact for last successful build of `1.1` tag:
+Downloading an artifact for the last successful build of `1.1` tag:
 
     https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?tag=1.1
 
-Downloading artifact from any successful/failed/cancelled build of any branch:
+Downloading an artifact from any successful/failed/cancelled build of any branch:
 
     https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?all=true
 
-Downloading artifact from last successful non-PR build of any branch:
+Downloading an artifact from the last successful non-PR build of any branch:
 
     https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?pr=false
