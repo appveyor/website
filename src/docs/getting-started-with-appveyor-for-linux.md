@@ -411,8 +411,8 @@ The following software is pre-installed on `Ubuntu` image:
 * Operating system
     * Ubuntu Server 16.04.4 LTS
 * Source control systems
-    * git 2.15.1
-    * git LFS 2.3.4
+    * git 2.16.2
+    * git LFS 2.4.0
     * mercurial 4.4.1
     * subversion 1.9.3
 * Node.js
@@ -484,3 +484,5 @@ The following software is pre-installed on `Ubuntu` image:
     * tcl 8.6.0+9
     * wget 1.17.1
     * curl 7.47.0
+    * awscli 1.14.54
+    * localstack 0.8.5
