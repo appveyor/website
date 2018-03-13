@@ -270,10 +270,10 @@ You can use those images to unblock your builds while we are working together wi
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.14.1 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.16.2 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage (LFS) 2.2.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage (LFS) 2.4.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Mercurial 4.1.1 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -312,7 +312,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Node.js Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>WDK 8</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Visual F# 3.1.2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Office Developer Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -329,7 +329,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>WDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 17.0 (14.0.61704.140) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Data-Tier Application Framework (17.1 DacFx)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Azure Service Fabric SDK 2.8</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure Service Fabric SDK 3.0 (Runtime 6.1)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft .NET Portable Library Reference Assemblies 4.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -337,9 +337,9 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Code Contracts for .NET 1.9.10714.2</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2017 -->
     <tr>
-        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017 version 15.5.4</th>
+        <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017</th>
     </tr>
-    <tr><td>Visual Studio Community 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.6.1</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 15.5.1 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -381,6 +381,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>TypeScript 2.1.5 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>TypeScript 2.5.2 for Visual Studio 2015/2017</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>TypeScript 2.6 for Visual Studio 2015/2017</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>TypeScript 2.7 for Visual Studio 2015/2017</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Azure SDKs -->
     <tr>
         <th id="azure" class="section" colspan="4">Azure</th>
@@ -394,10 +395,11 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Azure SDK 2.9.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Azure SDK 2.9.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Azure SDK 3.0</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Microsoft Azure Storage Emulator 5.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Azure Storage Emulator 5.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure PowerShell 4.1.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure CLI 0.9.10</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>DocumentDB Emulator 1.13.58.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CosmoDB Emulator 1.20.91.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Xamarin -->
     <tr>
         <th id="xamarin" class="section" colspan="4">Xamarin</th>
@@ -446,7 +448,8 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <th id="boost" class="section" colspan="4">Boost</th>
     </tr>
-    <tr><td>Boost 1.65.1 (<code>C:\Libraries\boost_1_65_1</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Boost 1.66.0 (<code>C:\Libraries\boost_1_66_0</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Boost 1.65.1 (<code>C:\Libraries\boost_1_65_1</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Boost 1.64.0 (<code>C:\Libraries\boost_1_64_0</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Boost 1.63.0 (<code>C:\Libraries\boost_1_63_0</code>)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Boost 1.62.0 (<code>C:\Libraries\boost_1_62_0</code>)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -462,10 +465,10 @@ You can use those images to unblock your builds while we are working together wi
         <td>
             <p><code>4.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 9.0.0 - 9.4.0 (x86 and x64) - use <code>Current</code> alias for latest <code>9.x</code> release</li>
-                <li>Node.js 8.0.0 - 8.9.4 (x86 and x64) - use <code>LTS</code> alias for latest <code>8.x</code> release</li>
+                <li>Node.js 9.0.0 - 9.8.0 (x86 and x64) - use <code>Current</code> alias for latest <code>9.x</code> release</li>
+                <li>Node.js 8.0.0 - 8.10.0 (x86 and x64) - use <code>LTS</code> alias for latest <code>8.x</code> release</li>
                 <li>Node.js 7.0.0 - 7.10.1 (x86 and x64)</li>
-                <li>Node.js 6.0.0 - 6.12.3 (x86 and x64)</li>
+                <li>Node.js 6.0.0 - 6.13.1 (x86 and x64)</li>
                 <li>Node.js 4.0.0 - 4.8.7 (x86 and x64) - default on build workers</li>
                 <li>Node.js 5.0.0 - 5.12.0 (x86 and x64)</li>
                 <li>Node.js 0.10.26 - 0.10.48 (x86 and x64)</li>
@@ -492,13 +495,14 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-
-                <li>Go 1.9.2 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.9.2 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.9.2 x64 (<code>C:\go19</code>)</li>
-                <li>Go 1.9.2 x86 (<code>C:\go19-x86</code>)</li>
-                <li>Go 1.8.5 x64 (<code>C:\go18</code>)</li>
-                <li>Go 1.8.5 x86 (<code>C:\go18-x86</code>)</li>
+                <li>Go 1.10.0 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.10.0 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.10.0 x64 (<code>C:\go110</code>)</li>
+                <li>Go 1.10.0 x86 (<code>C:\go110-x86</code>)</li>
+                <li>Go 1.9.4 x64 (<code>C:\go19</code>)</li>
+                <li>Go 1.9.4 x86 (<code>C:\go19-x86</code>)</li>
+                <li>Go 1.8.7 x64 (<code>C:\go18</code>)</li>
+                <li>Go 1.8.7 x86 (<code>C:\go18-x86</code>)</li>
                 <li>Go 1.7.6 x64 (<code>C:\go17</code>)</li>
                 <li>Go 1.7.6 x86 (<code>C:\go17-x86</code>)</li>
                 <li>Go 1.6.4 x64 (<code>C:\go16</code>)</li>
@@ -522,8 +526,8 @@ You can use those images to unblock your builds while we are working together wi
                 <li>JDK 1.6 Update 45 (x86) (<code>C:\Program Files (x86)\Java\jdk1.6.0\bin</code>)</li>
                 <li>JDK 1.7 Update 79 (x64) (<code>C:\Program Files\Java\jdk1.7.0\bin</code> - default in <code>PATH</code>)</li>
                 <li>JDK 1.7 Update 79 (x86) (<code>C:\Program Files (x86)\Java\jdk1.7.0\bin</code>)</li>
-                <li>JDK 1.8 Update 152 (x64) (<code>C:\Program Files\Java\jdk1.8.0</code>)</li>
-                <li>JDK 1.8 Update 152 (x86) (<code>C:\Program Files (x86)\Java\jdk1.8.0</code>)</li>
+                <li>JDK 1.8 Update 162 (x64) (<code>C:\Program Files\Java\jdk1.8.0</code>)</li>
+                <li>JDK 1.8 Update 162 (x86) (<code>C:\Program Files (x86)\Java\jdk1.8.0</code>)</li>
                 <li>JDK 9.0.4 (x64) (<code>C:\Program Files\Java\jdk9</code>)</li>
                 <li>JDK 9.0.4 (x86) (<code>C:\Program Files (x86)\Java\jdk9</code>)</li>
             </ul>
@@ -591,14 +595,14 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-                <li>Miniconda2 4.3.31 (Python 2.7.14): <code>C:\Miniconda</code></li>
-                <li>Miniconda2 4.3.31 x64 (Python 2.7.14): <code>C:\Miniconda-x64</code></li>
+                <li>Miniconda2 4.4.10 (Python 2.7.14): <code>C:\Miniconda</code></li>
+                <li>Miniconda2 4.4.10 x64 (Python 2.7.14): <code>C:\Miniconda-x64</code></li>
                 <li>Miniconda3 3.16.0 (Python 3.4.3): <code>C:\Miniconda34</code></li>
                 <li>Miniconda3 3.16.0 x64 (Python 3.4.3): <code>C:\Miniconda34-x64</code></li>
                 <li>Miniconda3 4.2.12 (Python 3.5.2): <code>C:\Miniconda35</code></li>
                 <li>Miniconda3 4.2.12 x64 (Python 3.5.2): <code>C:\Miniconda35-x64</code></li>
-                <li>Miniconda3 4.3.31 (Python 3.6.3): <code>C:\Miniconda36</code> or <code>C:\Miniconda3</code></li>
-                <li>Miniconda3 4.3.31 x64 (Python 3.6.3): <code>C:\Miniconda36-x64</code> or <code>C:\Miniconda3-x64</code></li>
+                <li>Miniconda3 4.4.10 (Python 3.6.4): <code>C:\Miniconda36</code> or <code>C:\Miniconda3</code></li>
+                <li>Miniconda3 4.4.10 x64 (Python 3.6.4): <code>C:\Miniconda36-x64</code> or <code>C:\Miniconda3-x64</code></li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -683,11 +687,11 @@ You can use those images to unblock your builds while we are working together wi
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Cygwin (<code>C:\cygwin</code>)</td>
+        <td>Cygwin 2.10.0 (<code>C:\cygwin</code>)</td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Cygwin 64 (<code>C:\cygwin64</code>)</td>
+        <td>Cygwin 2.10.0 x64 (<code>C:\cygwin64</code>)</td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
@@ -701,12 +705,12 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.10.0: <code>C:\Qt\5.10.0</code>
+            <li>Qt 5.10.1: <code>C:\Qt\5.10.1</code>
                 <ul>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.10.0\msvc2017_64</code></li>
-                <li>WinRT ARM v7: <code>C:\Qt\5.10.0\winrt_armv7_msvc2017</code></li>
-                <li>WinRT 32-bit: <code>C:\Qt\5.10.0\winrt_x86_msvc2017</code></li>
-                <li>WinRT 64-bit: <code>C:\Qt\5.10.0\winrt_x64_msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.10.1\msvc2017_64</code></li>
+                <li>WinRT ARM v7: <code>C:\Qt\5.10.1\winrt_armv7_msvc2017</code></li>
+                <li>WinRT 32-bit: <code>C:\Qt\5.10.1\winrt_x86_msvc2017</code></li>
+                <li>WinRT 64-bit: <code>C:\Qt\5.10.1\winrt_x64_msvc2017</code></li>
                 </ul>
             </li>
             </ul>
@@ -716,10 +720,10 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.10.0: <code>C:\Qt\5.10.0</code>
+            <li>Qt 5.10.1: <code>C:\Qt\5.10.1</code>
                 <ul>
-                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.10.0\mingw53_32</code></li>
-                <li>msvc2015 32-bit: <code>C:\Qt\5.10.0\msvc2015</code></li>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.10.1\mingw53_32</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.10.1\msvc2015</code></li>
                 </ul>
             </li>
             </ul>
@@ -729,10 +733,10 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.10.0: <code>C:\Qt\5.10.0</code>
+            <li>Qt 5.10.1: <code>C:\Qt\5.10.1</code>
                 <ul>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.10.0\msvc2015_64</code></li>
-                <li>msvc2013 64-bit: <code>C:\Qt\5.10.0\msvc2013_64</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.10.1\msvc2015_64</code></li>
+                <li>msvc2013 64-bit: <code>C:\Qt\5.10.1\msvc2013_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -742,12 +746,12 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.3: <code>C:\Qt\5.9.3</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.3</code> for backward compatibility)
+            <li>Qt 5.9.4: <code>C:\Qt\5.9.4</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.4</code> for backward compatibility)
                 <ul>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.9.3\msvc2017_64</code></li>
-                <li>WinRT ARM v7: <code>C:\Qt\5.9.3\winrt_armv7_msvc2017</code></li>
-                <li>WinRT 32-bit: <code>C:\Qt\5.9.3\winrt_x86_msvc2017</code></li>
-                <li>WinRT 64-bit: <code>C:\Qt\5.9.3\winrt_x64_msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.9.4\msvc2017_64</code></li>
+                <li>WinRT ARM v7: <code>C:\Qt\5.9.4\winrt_armv7_msvc2017</code></li>
+                <li>WinRT 32-bit: <code>C:\Qt\5.9.4\winrt_x86_msvc2017</code></li>
+                <li>WinRT 64-bit: <code>C:\Qt\5.9.4\winrt_x64_msvc2017</code></li>
                 </ul>
             </li>
             </ul>
@@ -757,10 +761,10 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.3: <code>C:\Qt\5.9.3</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.3</code> for backward compatibility)
+            <li>Qt 5.9.4: <code>C:\Qt\5.9.4</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.4</code> for backward compatibility)
                 <ul>
-                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.3\mingw53_32</code></li>
-                <li>msvc2015 32-bit: <code>C:\Qt\5.9.3\msvc2015</code></li>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.4\mingw53_32</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.9.4\msvc2015</code></li>
                 </ul>
             </li>
             </ul>
@@ -770,10 +774,10 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.3: <code>C:\Qt\5.9.3</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.3</code> for backward compatibility)
+            <li>Qt 5.9.4: <code>C:\Qt\5.9.4</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.4</code> for backward compatibility)
                 <ul>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.9.3\msvc2015_64</code></li>
-                <li>msvc2013 64-bit: <code>C:\Qt\5.9.3\msvc2013_64</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.9.4\msvc2015_64</code></li>
+                <li>msvc2013 64-bit: <code>C:\Qt\5.9.4\msvc2013_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -862,11 +866,12 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.0.2L (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.0.2L (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>NSIS 3.02.1 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>NSIS 3.03 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>InnoSetup 5.5.9 (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Yarn 1.3.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>vcpkg 0.0.101</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Yarn 1.5.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>vcpkg 0.0.105</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Octo 4.31.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Test runners -->
     <tr>
         <th id="test-runners" class="section" colspan="4">Test runners</th>
