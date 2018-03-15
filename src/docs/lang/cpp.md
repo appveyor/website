@@ -94,7 +94,7 @@ If you are building with custom rules which may cause `DefaultPlatformToolset` t
 
 Vcpkg is a package manager that helps to acquire, build and install C/C++ open source dependencies for C/C++ projects built with Visual Studio 2017 or Visual Studio 2015 Update 3.
 
-AppVeyor comes with [VC++ Packaging Tool](https://github.com/Microsoft/vcpkg) pre-installed in `C:\tools\vcpkg` folder.
+AppVeyor comes with [VC++ Packaging Tool](https://github.com/Microsoft/vcpkg) pre-installed in `C:\tools\vcpkg` folder (without integration installed by default).
 
 For example, if a project built with CMake requires SQLite 3 library as a dependency:
 
@@ -105,7 +105,14 @@ vcpkg install sqlite3:x86-windows
 vcpkg install sqlite3:x64-windows
 ```
 
-* Integrate Vcpkg packages with CMake:
+* Enable user-wide integration for Visual Studio/MSBuild projects:
+
+```bat
+cd c:\tools\vcpkg
+vcpkg integrate install
+```
+
+* Enable integration for CMake (toolchain file):
 
 ```bat
 cmake -DCMAKE_TOOLCHAIN_FILE=c:/tools/vcpkg/scripts/buildsystems/vcpkg.cmake ...
