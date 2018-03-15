@@ -454,6 +454,7 @@ When webhook notification triggers AppVeyor makes POST request to the webhook UR
       "commitAuthorEmail":"john@smith.com",
       "commitDate":"2014-04-14 1:54 AM",
       "commitMessage":"Some changes to appveyor.yml",
+      "commitMessageExtended":"The rest of the commit message after the first line",
       "committerName":"John Smith",
       "committerEmail":"john@smith.com",
       "isPullRequest":true,
