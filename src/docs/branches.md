@@ -34,9 +34,10 @@ branches:
 To specify the list of branches that must be ignored:
 
 ```yaml
-except:
-  - /dev.*/     # You can use Regular expression to match multiple branch name(s)
-  - playground
+branches:
+  except:
+    - /dev.*/     # You can use Regular expression to match multiple branch name(s)
+    - playground
 ```
 
 `gh-pages` branch is always excluded unless explicitly added in "only" list.
