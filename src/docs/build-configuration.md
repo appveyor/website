@@ -520,6 +520,8 @@ We still recommend use `allow_failures` for "unstable" cases which should be bui
 
 For example, you do commit `A` to `master` branch - it's being queued and then run. Then you do `B` commit to `master` branch while `A` is running - build of `A` will be cancelled immediately and `B` is queued. If you do another `C` commit while `B` is queued it will be cancelled and `C` queued.
 
+(Note that "Rolling builds" can only be enabled in the settings UI of a project and not via `appveyor.yml` and that the presence of `appveyor.yml` does not disable this UI setting.)
+
 ## Scheduled builds
 
 AppVeyor uses [NCrontab library](https://github.com/atifaziz/NCrontab) to calculate a build schedule.
