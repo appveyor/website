@@ -81,6 +81,7 @@ To append that line to `.git-credentials` we use the following PowerShell comman
 ```yaml
 ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
 ```
+
 **Note:** *$HOME* is an automatic variable available in powershell on Windows and Linux and is therefore cross-platform. If you currently use `cmd:` you can use *%USERPROFILE%* instead.
 
 `.git-credentials` is very "sensitive" to a new line that must be `\n`.
