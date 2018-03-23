@@ -425,7 +425,7 @@ The following software is pre-installed on `Ubuntu` image:
     * Nodejs v9.5.0
     * NVM
 * PowerShell
-    * PowerShell Core 6.0.1
+    * PowerShell Core 6.0.2
 * .NET Core
     * .NET Core Runtime 2.0.0
     * .NET Core Runtime 2.0.3
