@@ -79,8 +79,10 @@ When authenticating with access token `x-oauth-basic` is used as a stub password
 To append that line to `.git-credentials` we use the following PowerShell command:
 
 ```yaml
-ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
 ```
+
+**Note:** *$HOME* is an automatic variable available in powershell on Windows and Linux and is therefore cross-platform. If you currently use `cmd:` you can use *%USERPROFILE%* instead.
 
 `.git-credentials` is very "sensitive" to a new line that must be `\n`.
 If you try appending a line with something more "natural" like
@@ -109,7 +111,7 @@ environment:
 
 on_success:
   - git config --global credential.helper store
-  - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+  - ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
   - git config --global user.email "Your email"
   - git config --global user.name "Your Name"
   - git commit ...
