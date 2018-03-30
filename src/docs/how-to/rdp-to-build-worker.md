@@ -11,6 +11,8 @@ Set RDP password in `APPVEYOR_RDP_PASSWORD` environment variable. You can config
 
 ![appveyor-rdp-psw-env-var](/assets/img/docs/how-to/appveyor-rdp-psw-env-var.png)
 
+Note that while YAML generally takes over the UI, this is not true with variables.
+
 To get RDP details for the current build worker add this line to `init` phase of your build:
 
 ```yaml
