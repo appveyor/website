@@ -96,8 +96,9 @@ Do not sysprep master VM!
     * **Security group ID**: select or create new security group in **Network & Security** > **Security Groups** view.
     * **Key pair name**: key pair created or selected when VM was created. You can find it in **Network & Security** > **Key Pairs** view.
     * **Subnet ID**: subnet created or selected when VM was created. You can find it in **Network & Security** > **Network Interfaces** view.
-    
-
+    * **Images**
+        * **IMAGE NAME**: Name of image created earlier (AMI name). You can find it in **Images** > **AMIs** view.
+        * **IMAGE ID**: Id of image created earlier (AMI ID). You can find it in **Images** > **AMIs** view.
 
 ## Make build worker image available for configuration
 
