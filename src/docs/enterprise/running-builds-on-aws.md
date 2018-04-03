@@ -13,37 +13,37 @@ title: Running builds on Amazon Web Services
 
 ## Create Master VM
 
-* Login to **AWS Management Console** and select **EC2** under **Compute**
-* Navigate to **Instances** and press **Lunch instance**
+* Login to **AWS Management Console** and select **EC2** under **Compute**.
+* Navigate to **Instances** and press **Lunch instance**.
     * Choose an Amazon Machine Image (AMI). The following AMIs are tested at the moment:
-        * Microsoft Windows Server 2016 Base
-        * Microsoft Windows Server 2012 R2 Base
-    * Choose an Instance Type
-        * SSD storage is recommended
-        * m3.medium type minimum recommended
-    * Press **Next: Configure Instance Details** button (not **Review and Launch**)
+        * Microsoft Windows Server 2016 Base.
+        * Microsoft Windows Server 2012 R2 Base.
+    * Choose an Instance Type.
+        * **SSD** storage is strondly recommended.
+        * **m3.medium** instance type is minimum recommended.
+    * Press **Next: Configure Instance Details** button (not **Review and Launch**).
     * Configure Instance Details. Non-default settings:
-        * Subnet: select any specific subnet
-        * Auto-assign Public IP: Enable
-    * Press **Next: Add Storage** button (not **Review and Launch**). Non-default settings (provided instance type with SSD storage was selected):
-        * Set size at least 50Gb
+        * Subnet: select any specific subnet.
+        * Auto-assign Public IP: Enable.
+    * Press **Next: Add Storage** button (not **Review and Launch**).
+        * Set size at least 50Gb.
     * Press **Next: Add Tags** button (not **Review and Launch**). Add the following tag:
-        * Key: name, value: MasterVm
-    * Press **Review and Launch** and then **Lunch**
-    * Select existing key pair or create a new key pair in next dialog window
-        * Save key pair file (`*pem` file) in secure location
-        * Press **Lunch instances**
-    * Press **Lunch instances** and wait until instance state for **Master VM** instance is **running**
-    * Press **Connect**
-        * Press **Get password** and use key pair file saved earlier to retrieve a password
-        * Press **Back** and then **Download Remote Desktop file**
-        * User RDP file and password to connect to the VM
-    * Press **Start** button, type `Computer management` and navigate to **Local users and groups** / **Users**
+        * Key: name, value: MasterVm.
+    * Press **Review and Launch** and then **Lunch**.
+    * Select existing key pair or create a new key pair in next dialog.
+        * Save key pair file (`*pem` file) in secure location.
+        * Press **Lunch instances**.
+    * Press **Lunch instances** and wait until instance state for **MasterVM** instance is **running**.
+    * Press **Connect**.
+        * Press **Get password** and use key pair file saved earlier to retrieve a password.
+        * Press **Back** and then **Download Remote Desktop file**.
+        * User RDP file and password to connect to the VM.
+    * Press **Start** button, type `Computer management` and navigate to **Local users and groups** / **Users**.
     * Create a new user:
         * Username: `appveyor`. You can use custom user name too. Just ensure that all subsequent VM configuration steps performed while being logged as this user.
-        * Password: `<your password>`
-        * Uncheck *User must change password at next logon*
-        * Check *Password never expires*
+        * Password: `<your password>`.
+        * Uncheck *User must change password at next logon*.
+        * Check *Password never expires*.
 
 ## Setup Master VM
 
@@ -58,21 +58,21 @@ Follow [these steps](/docs/enterprise/setup-master-vm/) to configure VM and inst
 
 Install any additional software required for your builds.
 
-Do not sysprep master VM!
+**Do not sysprep master VM!**
 
 ## Prepare Master VM image
 
-* Optionally restart Master VM to ensure AppVeyor build agent is started automatically interactively
-* Navigate to **Instances**, right-click **Master VM**, select **Instance state** and then **Stop**.
-* Wait till **Master VM** state is **stopped**.
-* Right-click **Master VM**, select **Image** and press **Create image**.
+* Optionally restart Master VM to ensure AppVeyor build agent is started automatically interactively.
+* Navigate to **Instances**, right-click **MasterVM**, select **Instance state** and then **Stop**.
+* Wait till **MasterVM** state is **stopped**.
+* Right-click **MasterVM**, select **Image** and press **Create image**.
 * Provide descriptive name for the image, for example **Master-image-1**.
 * Press **Create**.
 * Ensure image created by checking **Instances** > **AMIs** view.
 
 ## Setting up custom cloud and images in AppVeyor
 
-* Login to AppVeyor portal
+* Login to AppVeyor portal.
 * Navigate to your account name on the top right and select **Build environment** option from drop-down menu
     * If **Build environment** option is not available, please contact [team@appveyor.com](mailto:team@appveyor.com) and ask to enable **Private build clouds** feature.
 * Press **Add cloud**, select cloud type **Amazon EC2**.
@@ -84,8 +84,8 @@ Do not sysprep master VM!
     * **Access Key ID**: Get it **My Security Credentials** > **Access keys (access key ID and secret access key)** menu in **AWS Management Console**.
     * **Secret access key**: Get it **My Security Credentials** > **Access keys (access key ID and secret access key)** menu in **AWS Management Console**.
 * **Virtual machine configuration**
-    * **Region**: AWS region **Master VM** and its snapshot created in.
-    * **Machine size**: AMI instance type you selected when created  **Master VM**.
+    * **Region**: AWS region Master VM and image created in. It can be found in the top right corner of the AWS Console UI.
+    * **Machine size**: AMI instance type you selected when created Master VM.
     * **Security group ID**: select or create new security group in **Network & Security** > **Security Groups** view.
     * **Key pair name**: key pair created or selected when VM was created. You can find it in **Network & Security** > **Key Pairs** view.
 * **Networking settings**
