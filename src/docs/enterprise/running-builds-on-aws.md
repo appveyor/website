@@ -64,11 +64,12 @@ Do not sysprep master VM!
 ## Prepare Master VM snapshot
 
 * Optionally restart Master VM to ensure AppVeyor build agent is started on automatically interactively
-* Shutdown Master VM
-* In **Compute engine** menu select **Snapshots** and press **Create snapshot**
-    * Set descriptive **Name**, for example **build-vm-2017-05-09**. It is handy to include date to manage build images versions
-    * Select Master VM created before as a **Source disk**
-    * Press **CREATE**
+* Shutdown Master VM.
+    * Navigate to **Instances**, right-click **Master VM**, select **Instance state** and then **Stop**.
+    * Wait till **Master VM** state is **stopped**. 
+* Create a scnapshot.
+    * In **Elastic block store** menu select **Volumes**, right-click **Master VM** and press **Create snapshot**.
+    * Provide description for snapshot and press  **Create snapshot** button.    
 
 ## Setting up custom cloud and images in AppVeyor
 
