@@ -27,7 +27,7 @@ title: Running builds on Amazon Web Services
         * Auto-assign Public IP: Enable
     * Press **Next: Add Storage** button (not **Review and Launch**). Non-default settings (provided instance type with SSD storage was selected):
         * Set size at least 50Gb        
-    * Press **Next: Add Storage** button (not **Review and Launch**). Add the following tag:
+    * Press **Next: Add Tags** button (not **Review and Launch**). Add the following tag:
         * Key: name, value: MasterVm
     * Press **Review and Launch** and then **Lunch**
     * Select existing key pair or create a new key pair in next dialog window
