@@ -13,7 +13,7 @@ title: Running builds on Amazon Web Services
 
 ## Create Master VM
 
-* Signin to **AWS Management Console** and select **EC2** under **Compute**
+* Login to **AWS Management Console** and select **EC2** under **Compute**
 * Navigate to **Instances** and press **Lunch instance**
     * Choose an Amazon Machine Image (AMI). The following AMIs are tested at the moment:
         * Microsoft Windows Server 2016 Base
@@ -77,21 +77,22 @@ Do not sysprep master VM!
     * If **Build environment** option is not available, please contact [team@appveyor.com](mailto:team@appveyor.com) and ask to enable **Private build clouds** feature.
 * Press **Add cloud**, select cloud type **Amazon EC2**.
 
-**Complete the following settings**:
+**Complete the following mandatory settings**:
 
-* **Name**: Name for your private build cloud. Make it meaningful and short to be able to use in YAML configuration/
+* **Name**: Name for your private build cloud. Make it meaningful and short to be able to use in YAML configuration or AppVeyor UI.
 * **AWS account**
     * **Access Key ID**: Get it **My Security Credentials** > **Access keys (access key ID and secret access key)** menu in **AWS Management Console**.
     * **Secret access key**: Get it **My Security Credentials** > **Access keys (access key ID and secret access key)** menu in **AWS Management Console**.
-    * **Region**: AWS region **Master VM** and its snapshot created in.
 * **Virtual machine configuration**
+    * **Region**: AWS region **Master VM** and its snapshot created in.
     * **Machine size**: AMI instance type you selected when created  **Master VM**.
     * **Security group ID**: select or create new security group in **Network & Security** > **Security Groups** view.
     * **Key pair name**: key pair created or selected when VM was created. You can find it in **Network & Security** > **Key Pairs** view.
+* **Networking settings**
     * **Subnet ID**: subnet created or selected when VM was created. You can find it in **Network & Security** > **Network Interfaces** view.
-    * **Images**
-        * **IMAGE NAME**: Image name as you want to see it in AppVeyor UI and YAML, for example **Windows Server 2016 on EC2**
-        * **IMAGE ID**: Id of image created earlier (AMI ID). You can find it in **Images** > **AMIs** view.
+* **Images**
+    * **IMAGE NAME**: Image name as you want to see it in AppVeyor UI and YAML, for example **Windows Server 2016 on EC2**
+    * **IMAGE ID**: Id of image created earlier (AMI ID). You can find it in **Images** > **AMIs** view.
 * Open **Failure strategy** and set the following:
     * **Job start timeout, seconds**: 360 is good enough for EC2. However, if VM creation and build start takes longer for you, please adjust accordingly
     * **Provisioning attempts**: 2 is good for start. Later you may need to change it according to your observations
