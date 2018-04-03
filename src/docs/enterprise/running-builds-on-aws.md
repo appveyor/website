@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Running builds on AWS
+title: Running builds on Amazon Web Services
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
