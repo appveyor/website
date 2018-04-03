@@ -76,17 +76,19 @@ Do not sysprep master VM!
 * Login to AppVeyor portal
 * Navigate to your account name on the top right and select **Build environment** option from drop-down menu
     * If **Build environment** option is not available, please contact [team@appveyor.com](mailto:team@appveyor.com) and ask to enable **Private build clouds** feature
-* Press **Add cloud**, select cloud type **Google Compute Engine**
+* Press **Add cloud**, select cloud type **Amazon EC2**
 
 **Complete the following settings**:
 
 * **Name**: Name for your private build cloud. Make it meaningful and short to be able to use in YAML configuration
-* **Google account**
-    * **Service account email**: **Service account ID** from [Create Google Cloud Platform service account](/docs/enterprise/running-builds-on-gce#create-google-cloud-platform-service-account) step
-    * **Service account certificate (Base64)**: content of the file created in [Create Google Cloud Platform service account](/docs/enterprise/running-builds-on-gce#create-google-cloud-platform-service-account) step
-    * **Project name**: ID of Google Cloud Platform project selected or created in the beginning
+* **AWS account**
+    * **Access Key ID**: Get it **My Security Credentials** > **Access keys (access key ID and secret access key)** menu in **AWS Management Console**.
+    * **Secret access key**: Get it **My Security Credentials** > **Access keys (access key ID and secret access key)** menu in **AWS Management Console**.
+    * **Region**: AWS region **Master VM** and its snapshot created in.
 * Virtual machine configuration
-    * **Zone name**: select the same as used for Master VM
+    * **Machine size**: AMI instance type you selected when created  **Master VM**.
+    
+    
     * **Machine type (size)**: select depending on performance you need
     * **Tags**: Optionally add tags
 * Networking
