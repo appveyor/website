@@ -47,7 +47,7 @@ title: Running builds on Amazon Web Services
 
 ## Setup Master VM
 
-Login into master VM via RDP (as user created before).
+Login into Master VM via RDP (as user created before).
 
 Follow [these steps](/docs/enterprise/setup-master-vm/) to configure VM and install software required for your build process. It is tested PowerShell scripts which can be simply copy-pasted to PowerShell window (started in privileged mode). Specifically:
 
@@ -58,7 +58,7 @@ Follow [these steps](/docs/enterprise/setup-master-vm/) to configure VM and inst
 
 Install any additional software required for your builds.
 
-**Do not sysprep master VM!**
+**Do not sysprep Master VM!**
 
 ## Prepare Master VM image
 
