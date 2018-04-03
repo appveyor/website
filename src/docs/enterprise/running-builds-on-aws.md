@@ -61,15 +61,21 @@ Install any additional software required for your builds.
 
 Do not sysprep master VM!
 
-## Prepare Master VM snapshot
+## Prepare Master VM snapshot and image
 
-* Optionally restart Master VM to ensure AppVeyor build agent is started on automatically interactively
+* Optionally restart Master VM to ensure AppVeyor build agent is started automatically interactively
 * Shutdown Master VM.
     * Navigate to **Instances**, right-click **Master VM**, select **Instance state** and then **Stop**.
     * Wait till **Master VM** state is **stopped**. 
-* Create a scnapshot.
+* Create a snapshot.
     * In **Elastic block store** menu select **Volumes**, right-click **Master VM** and press **Create snapshot**.
-    * Provide description for snapshot and press  **Create snapshot** button.    
+    * Provide description for snapshot and press  **Create snapshot** button.
+    * Wait till snapshot is created.
+* Create an image.
+    * In **Elastic block store** menu select **Snapshots**, right-click snapshot created earlier and press **Create image**.
+    * Provide descriptive name for the image, for example **Master-image-1**.
+    * Press **Create**.
+    * Ensure image created by checking **Instances** > **AMIs** view.
 
 ## Setting up custom cloud and images in AppVeyor
 
@@ -87,20 +93,11 @@ Do not sysprep master VM!
     * **Region**: AWS region **Master VM** and its snapshot created in.
 * Virtual machine configuration
     * **Machine size**: AMI instance type you selected when created  **Master VM**.
+    * **Security group ID**: select or create new security group in **Network & Security** > **Security Groups** view.
+    * **Key pair name**: key pair created or selected when VM was created. You can find it in **Network & Security** > **Key Pairs** view.
+    * **Subnet ID**: subnet created or selected when VM was created. You can find it in **Network & Security** > **Network Interfaces** view.
     
-    
-    * **Machine type (size)**: select depending on performance you need
-    * **Tags**: Optionally add tags
-* Networking
-    * **Network name**: Optionally set custom VPC network
-        * Select **Assign external IP address** if VMs need to be accessible from outside
-* Images
-    * **IMAGE NAME**: Image name as you want to see it in AppVeyor UI and YAML, for example **VS2017 on GCE**
-    * **SNAPSHOT OR IMAGE NAME**: Image name as it was set in [Prepare Master VM snapshot](/docs/enterprise/running-builds-on-gce#prepare-master-vm-snapshot) step
-    * **SIZE, GB**: VM disk size in Gb
-* Open **Failure strategy** and set the following:
-    * **Job start timeout, seconds**: 360 is good enough for GCE. However, if VM creation and build start takes longer for you, please adjust accordingly
-    * **Provisioning attempts**: 2 is good for start. Later you may need to change it according to your observations
+
 
 ## Make build worker image available for configuration
 
