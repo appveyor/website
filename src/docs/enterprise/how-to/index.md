@@ -16,4 +16,5 @@ title: AppVeyor Enterprise How-Tos
 * [Running builds on Azure](/docs/enterprise/running-builds-on-azure/)
 * [Running builds on Hyper&#8209;V](/docs/enterprise/running-builds-on-hyper-v/)
 * [Running builds on GCE](/docs/enterprise/running-builds-on-gce/)
+* [Running builds on AWS](/docs/enterprise/running-builds-on-aws/)
 * [Setup Master VM](/docs/enterprise/setup-master-vm/)
