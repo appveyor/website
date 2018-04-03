@@ -60,21 +60,15 @@ Install any additional software required for your builds.
 
 Do not sysprep master VM!
 
-## Prepare Master VM snapshot and image
+## Prepare Master VM image
 
 * Optionally restart Master VM to ensure AppVeyor build agent is started automatically interactively
-* Shutdown Master VM.
-    * Navigate to **Instances**, right-click **Master VM**, select **Instance state** and then **Stop**.
-    * Wait till **Master VM** state is **stopped**.
-* Create a snapshot.
-    * In **Elastic block store** menu select **Volumes**, right-click **Master VM** and press **Create snapshot**.
-    * Provide description for snapshot and press  **Create snapshot** button.
-    * Wait till snapshot is created.
-* Create an image.
-    * In **Elastic block store** menu select **Snapshots**, right-click snapshot created earlier and press **Create image**.
-    * Provide descriptive name for the image, for example **Master-image-1**.
-    * Press **Create**.
-    * Ensure image created by checking **Instances** > **AMIs** view.
+* Navigate to **Instances**, right-click **Master VM**, select **Instance state** and then **Stop**.
+* Wait till **Master VM** state is **stopped**.
+* Right-click **Master VM**, select **Image** and press **Create image**.
+* Provide descriptive name for the image, for example **Master-image-1**.
+* Press **Create**.
+* Ensure image created by checking **Instances** > **AMIs** view.
 
 ## Setting up custom cloud and images in AppVeyor
 
