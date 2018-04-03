@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: Accessing build worker via Remote Desktop (RDP)
+title: Accessing Windows build worker via Remote Desktop (RDP)
 ---
 
-# Accessing build worker via Remote Desktop
+# Accessing Windows build worker via Remote Desktop
 
 AppVeyor starts every build on clean dedicated build worker VM. Sometimes the best way to troubleshoot broken build is looking into build VM via Remote Desktop. During the build you have full "administrator" access to that VM and can access it via Remote Desktop (RDP).
 

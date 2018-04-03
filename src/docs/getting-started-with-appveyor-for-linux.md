@@ -380,6 +380,10 @@ init:
 - sqlcmd -S localhost -U SA -P Password12! -Q 'select @@VERSION'
 ```
 
+## Accessing build VM via SSH
+
+There is an article about how to [access Linux build worker via SSH](/docs/how-to/ssh-to-build-worker/).
+
 ## Cache
 
 [Build cache](https://www.appveyor.com/docs/build-cache/) works the same as for Windows build workers.
