@@ -93,7 +93,7 @@ Do not sysprep master VM!
 * **Images**
     * **IMAGE NAME**: Image name as you want to see it in AppVeyor UI and YAML, for example **Windows Server 2016 on EC2**
     * **IMAGE ID**: Id of image created earlier (AMI ID). You can find it in **Images** > **AMIs** view.
-* Open **Failure strategy** and set the following:
+* **Failure strategy**:
     * **Job start timeout, seconds**: 360 is good enough for EC2. However, if VM creation and build start takes longer for you, please adjust accordingly
     * **Provisioning attempts**: 2 is good for start. Later you may need to change it according to your observations
 
