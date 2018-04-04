@@ -860,7 +860,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>curl 7.55.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 16.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.10.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.11.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 4.3.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Chocolatey v0.10.8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
