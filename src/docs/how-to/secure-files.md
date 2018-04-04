@@ -16,16 +16,28 @@ High-level scenario of using this utility in the [AppVeyor CI](https://www.appve
 * Place the "secret" into a project environment variable.
 * Decrypt the file during the build.
 
+System requirements:
+
+* Windows or Linux
+* .NET Core Runtime 2.0
 
 ## Encrypting file on development machine
 
-From the command line download the [`secure-file` NuGet package](https://www.nuget.org/packages/secure-file/):
+Download `secure-file` utility by running the following PowerShell command on Windows machine:
 
-    nuget install secure-file -ExcludeVersion
+    iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
 
-File encryption:
+To install on Linux:
 
-    secure-file\tools\secure-file -encrypt C:\path-to\filename-to-encrypt.ext -secret MYSECRET1234
+    curl -sflL 'https://raw.githubusercontent.com/appveyor/secure-file/master/install.sh' | bash -e -
+
+To encrypt a file on Windows:
+
+    appveyor-tools\secure-file -encrypt C:\path-to\filename-to-encrypt.ext -secret MYSECRET1234
+
+To encrypt on Linux:
+
+    ./appveyor-tools/secure-file -encrypt /path-to/filename-to-encrypt.ext -secret MYSECRET1234
 
 Encrypted file will be saved in the same directory as the input file, but with the `.enc` extension added. You can optionally specify output file name with the `-out` parameter.
 
@@ -46,8 +58,11 @@ To decrypt the file, add these lines to the `install` section of your project co
 
 ```yaml
 install:
-  - nuget install secure-file -ExcludeVersion
-  - secure-file\tools\secure-file -decrypt path-to\encrypted-filename.ext.enc -secret %my_secret%
+  - ps: iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
+  - cmd: appveyor-tools\secure-file -decrypt path-to\encrypted-filename.ext.enc -secret %my_secret%
+  - sh: ./appveyor-tools/secure-file -decrypt path-to/encrypted-filename.ext.enc -secret $my_secret
 ```
 
-Note that file won't be decrypted on Pull Request builds as secure variables are not set during PR build.
+The line starting with `cmd:` will run on Windows-based images only and the line starting with `sh:` on Linux.
+
+> Note that file won't be decrypted on Pull Request builds as secure variables are not set during PR build.
