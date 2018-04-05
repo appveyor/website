@@ -562,7 +562,7 @@ for:
   - echo matrix except script
 ```
 
-YAML syntax to describe specific matrix job is the same as `allow_failures` and `exclude`, but it should be placed under the `for` construct, similar to [sharing common configuration between branches](/docs/branches.md#sharing-common-configuration-between-branches).
+YAML syntax to describe specific matrix job is the same as `allow_failures` and `exclude`, but it should be placed under the `for` construct, similar to [sharing common configuration between branches](/docs/branches#sharing-common-configuration-between-branches).
 
 #### Settings to be ignored
 
