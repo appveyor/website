@@ -79,6 +79,21 @@ by **Ignore appveyor.yml**. There are few exceptions, which are:
 * Notification settings defined on UI are getting merged with those ones defined in `appveyor.yml`.
 * Build version format is taken from UI if it is not set in `appveyor.yml`.
 
+Some build configuration settings can be configured **only with UI**. They are not exposed with `appveyor.yml` for security reasons. It is possible to have both `appveyor.yml` and any of those UI setting. Those settings are in projects settings **General** tab. They are:
+
+* Next build number
+* Default branch
+* Build priority
+* Build timeout for private build cloud, minutes
+* Custom commit status `context`
+* Build schedule
+* Ignore `appveyor.yml`
+* Rolling builds *(and its sub-settings)*
+* Enable secure variables in Pull Requests from the same repository only
+* Enable deployments in Pull Requests *(available for private repos)*
+* Save build cache in Pull Requests
+* Always build closed Pull Request
+
 ### YAML file alternative naming
 
 AppVeyor supports dot-file-style YAML named `.appveyor.yml` as is. Another custom name like `experimental.yml` is also possible, and can be specified in **Custom configuration .yml file name** setting.
