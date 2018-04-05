@@ -514,6 +514,94 @@ Here we have 2 matrix dimensions: configurations and variables and each has 2 va
 
 We still recommend use `allow_failures` for "unstable" cases which should be built but should not affect build results, and use `exclude` for cases where build should be completely skipped.
 
+### Specializing matrix job configuration
+
+By default all build matrix jobs share the same configuration. However there are cases when build scenario should be different for different matrix jobs. This become especially demanding issue with introduction on Linux builds. For example, build should run in `MSBuild` mode for all build worker images, but run a build script for `Ubuntu` one. This can be done with the following YAML configuration:
+
+```yaml
+image:
+- Visual Studio 2017
+- Ubuntu
+build:
+  project: src
+  publish_wap: true
+  verbosity: minimal
+
+for:
+-
+  matrix:
+    only:
+      - image: Ubuntu
+
+  build_script:
+  - echo Ubuntu build script
+```
+
+Also `except` syntax is supported:
+
+```yaml
+﻿configuration:
+  - Debug
+  - Release
+
+platform:
+  - x86
+  - Any CPU
+
+test_script:
+  - echo common script
+
+for:
+-
+  matrix:
+    except:
+      - configuration: Debug
+        platform: x86
+
+  test_script:
+  - echo matrix except script
+```
+
+YAMl syntax to describe specific matrix job is the same as `allow_failures` and `exclude`, but it should be placed under the `for` construct, similar to [sharing common configuration between branches](/docs/branches.md#sharing-common-configuration-between-branches).
+
+#### Settings to be ignored
+
+Here is a list of settings which **will be ignored** if placed under for.matrix.only/.except construct:
+
+    * `version`
+    * any matrix dimensions
+    * any other matrix settings like `allow_failures`, `exclude` and `fast_finish`
+    * another `for` construct
+    * `pull_requests.do_not_increment_build_number`
+    * all [commit filtering settings](/docs/how-to/filtering-commits)
+    * `nuget.account_feed/.project_feed/.disable_publish_on_pr`
+
+Therefore this YAML will be executed, but **no special configuration** for any matrix job will be formed:
+
+```yaml
+﻿configuration:
+  - Debug
+  - Release
+
+for:
+-
+  version: 22.33.{build}
+  matrix:
+    only:
+      - configuration: Debug
+    fast_finish: true
+    allow_failures:
+      - nodejs_version: 0.11
+    pull_requests:
+      do_not_increment_build_number: true
+```
+
+#### Settings to be merged
+
+    * environment variables from matrix job configuration will be merged with environment variables from common configuration. Variables with the same name will be overwritten with value from matrix job configuration.
+    * Notifications will merged.
+    * All other setting will be overwritten with value from matrix job configuration.
+
 ## Rolling builds
 
 "Rolling builds" are great for very active OSS projects with lengthy queue. Whenever you do a new commit to the same branch *OR* pull request all current queued/running builds for that branch or PR are cancelled and the new one is queued. Other words, rolling builds make sure that only the most recent commit is built.
