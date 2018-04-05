@@ -562,19 +562,19 @@ for:
   - echo matrix except script
 ```
 
-YAMl syntax to describe specific matrix job is the same as `allow_failures` and `exclude`, but it should be placed under the `for` construct, similar to [sharing common configuration between branches](/docs/branches.md#sharing-common-configuration-between-branches).
+YAML syntax to describe specific matrix job is the same as `allow_failures` and `exclude`, but it should be placed under the `for` construct, similar to [sharing common configuration between branches](/docs/branches.md#sharing-common-configuration-between-branches).
 
 #### Settings to be ignored
 
 Here is a list of settings which **will be ignored** if placed under `for.matrix.only/.except` construct:
 
-    * `version`
-    * any matrix dimensions
-    * any other matrix settings like `allow_failures`, `exclude` and `fast_finish`
-    * another `for` construct
-    * `pull_requests.do_not_increment_build_number`
-    * all [commit filtering settings](/docs/how-to/filtering-commits)
-    * `nuget.account_feed/.project_feed/.disable_publish_on_pr`
+* `version`
+* any matrix dimensions
+* any other matrix settings like `allow_failures`, `exclude` and `fast_finish`
+* another `for` construct
+* `pull_requests.do_not_increment_build_number`
+* all [commit filtering settings](/docs/how-to/filtering-commits)
+* `nuget.account_feed/.project_feed/.disable_publish_on_pr`
 
 Therefore this YAML will be executed, but **no special configuration** for any matrix job will be formed:
 
@@ -599,8 +599,8 @@ for:
 #### Settings to be merged
 
     * environment variables from matrix job configuration will be merged with environment variables from common configuration. Variables with the same name will be overwritten with value from matrix job configuration.
-    * Notifications will merged.
-    * All other setting will be overwritten with value from matrix job configuration.
+    * Notifications will be merged.
+    * All other settings will be overwritten with value from matrix job configuration.
 
 ## Rolling builds
 
