@@ -26,10 +26,10 @@ $(function() {
         var container = ul.parent();
         var tabIndex = ul.children('li').index(this);
 
-		ul.find('li').removeClass('current');
-		container.children('div').removeClass('current');
+        ul.find('li').removeClass('current');
+        container.children('div').removeClass('current');
 
         $(this).addClass('current');
-		$(container.children('div').get(tabIndex)).addClass('current');
-	});
+        $(container.children('div').get(tabIndex)).addClass('current');
+    });
 });
