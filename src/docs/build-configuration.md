@@ -598,9 +598,9 @@ for:
 
 #### Settings to be merged
 
-    * environment variables from matrix job configuration will be merged with environment variables from common configuration. Variables with the same name will be overwritten with value from matrix job configuration.
-    * Notifications will be merged.
-    * All other settings will be overwritten with value from matrix job configuration.
+* environment variables from matrix job configuration will be merged with environment variables from common configuration. Variables with the same name will be overwritten with value from matrix job configuration
+* Notifications will be merged
+* All other settings will be overwritten with value from matrix job configuration
 
 ## Rolling builds
 
