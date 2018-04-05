@@ -564,7 +564,7 @@ for:
 
 YAML syntax to describe specific matrix job is the same as `allow_failures` and `exclude`, but it should be placed under the `for` construct, similar to [sharing common configuration between branches](/docs/branches#sharing-common-configuration-between-branches).
 
-#### Settings to be ignored
+**Settings to be ignored:**
 
 Here is a list of settings which **will be ignored** if placed under `for.matrix.only/.except` construct:
 
@@ -596,7 +596,7 @@ for:
       do_not_increment_build_number: true
 ```
 
-#### Settings to be merged
+**Settings to be merged:**
 
 * environment variables from matrix job configuration will be merged with environment variables from common configuration. Variables with the same name will be overwritten with value from matrix job configuration
 * Notifications will be merged
