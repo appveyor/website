@@ -1,0 +1,29 @@
+.code-tabs ul {
+    margin: 0 0 2px 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.code-tabs ul li {
+    color: #222;
+    display: inline-block;
+    padding: 3px 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    background: #fafafa;
+    border-radius: 2px;
+    margin-right: 2px;
+}
+
+.code-tabs ul li.current {
+    background: #e4e2e0;
+    color: #000;
+}
+
+.code-tabs > div {
+    display: none;
+}
+
+.code-tabs > div.current {
+    display: block;
+}

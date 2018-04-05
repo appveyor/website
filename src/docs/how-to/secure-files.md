@@ -23,21 +23,41 @@ System requirements:
 
 ## Encrypting file on development machine
 
-Download `secure-file` utility by running the following PowerShell command on Windows machine:
+Download `secure-file` utility by running the following command on development machine:
 
-    iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
+<div class="code-tabs">
+<ul>
+    <li class="current">Windows</li><li>Linux</li>
+</ul>
+<div markdown="1" class="current">
+```posh
+iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
+```
+</div>
+<div markdown="1">
+```bash
+curl -sflL 'https://raw.githubusercontent.com/appveyor/secure-file/master/install.sh' | bash -e -
+```
+</div>
+</div>
 
-To install on Linux:
+To encrypt a file:
 
-    curl -sflL 'https://raw.githubusercontent.com/appveyor/secure-file/master/install.sh' | bash -e -
-
-To encrypt a file on Windows:
-
-    appveyor-tools\secure-file -encrypt C:\path-to\filename-to-encrypt.ext -secret MYSECRET1234
-
-To encrypt on Linux:
-
-    ./appveyor-tools/secure-file -encrypt /path-to/filename-to-encrypt.ext -secret MYSECRET1234
+<div class="code-tabs">
+<ul>
+    <li class="current">Windows</li><li>Linux</li>
+</ul>
+<div markdown="1" class="current">
+```posh
+appveyor-tools\secure-file -encrypt C:\path-to\filename-to-encrypt.ext -secret MYSECRET1234
+```
+</div>
+<div markdown="1">
+```bash
+./appveyor-tools/secure-file -encrypt /path-to/filename-to-encrypt.ext -secret MYSECRET1234
+```
+</div>
+</div>
 
 Encrypted file will be saved in the same directory as the input file, but with the `.enc` extension added. You can optionally specify output file name with the `-out` parameter.
 
