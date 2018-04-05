@@ -566,7 +566,7 @@ YAMl syntax to describe specific matrix job is the same as `allow_failures` and 
 
 #### Settings to be ignored
 
-Here is a list of settings which **will be ignored** if placed under for.matrix.only/.except construct:
+Here is a list of settings which **will be ignored** if placed under `for.matrix.only/.except` construct:
 
     * `version`
     * any matrix dimensions
