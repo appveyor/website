@@ -30,14 +30,18 @@ Download `secure-file` utility by running the following command on development m
     <li class="current">Windows</li><li>Linux</li>
 </ul>
 <div markdown="1" class="current">
+
 ```posh
 iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
 ```
+
 </div>
 <div markdown="1">
+
 ```bash
 curl -sflL 'https://raw.githubusercontent.com/appveyor/secure-file/master/install.sh' | bash -e -
 ```
+
 </div>
 </div>
 
@@ -48,14 +52,18 @@ To encrypt a file:
     <li class="current">Windows</li><li>Linux</li>
 </ul>
 <div markdown="1" class="current">
+
 ```posh
 appveyor-tools\secure-file -encrypt C:\path-to\filename-to-encrypt.ext -secret MYSECRET1234
 ```
+
 </div>
 <div markdown="1">
+
 ```bash
 ./appveyor-tools/secure-file -encrypt /path-to/filename-to-encrypt.ext -secret MYSECRET1234
 ```
+
 </div>
 </div>
 
