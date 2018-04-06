@@ -91,6 +91,10 @@ providers available in each mode:
     <td><a href="/docs/deployment/amazon-s3/">Amazon S3</a></td>
 </tr>
 <tr>
+    <td><a href="/docs/deployment/amazon-elastic-beanstalk/">Amazon Elastic Beanstalk</a></td>
+    <td><a href="/docs/deployment/amazon-elastic-beanstalk/">Amazon Elastic Beanstalk</a></td>
+</tr>
+<tr>
     <td><a href="/docs/deployment/nuget/">NuGet</a></td>
     <td><a href="/docs/deployment/nuget/">NuGet</a></td>
 </tr>
