@@ -25,9 +25,9 @@ Configuring in `appveyor.yml`:
 ```yaml
 deploy:
 - provider: ElasticBeanstalk
-  access_key_id: 
+  access_key_id:
   secret_access_key:
-    secure: 
+    secure:
   application_name: myEbApp
   environment_name: myEbAbb-env
   region: us-east-1
