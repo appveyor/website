@@ -37,4 +37,4 @@ deploy:
     branch: main # deploy from master branch only
 ```
 
-*Note*: Unlike the AWS Toolkit for Visual Studio which can be used to create an application and environment from within the IDE, this deployment relies on a pre-existing Elastic Beanstalk application and environment. 
+*Note*: Unlike the AWS Toolkit for Visual Studio which can be used to create an application and environment from within the IDE, this deployment relies on a pre-existing Elastic Beanstalk application and environment.
