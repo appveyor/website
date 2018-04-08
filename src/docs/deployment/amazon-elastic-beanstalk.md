@@ -5,7 +5,23 @@ title: Deploying to Amazon Elastic Beanstalk
 
 # Deploying to Amazon Elastic Beanstalk
 
-Amazon Elastic Beanstalk deployment provider deploys selected artifact to the Elastic Beanstalk application specified.
+Amazon Elastic Beanstalk deployment provider deploys single artifact to the Elastic Beanstalk application specified.
+
+## Artifact Packaging
+
+The packaging of the artifact to deploy depends on the type of project being built:
+
+* For projects with an "MSBuild" phase a `publish_wap_beanstalk` variable should be set to true in appveyor.yml or the appropriate option selected in the UI, as below.
+
+![package-ebs-option](/assets/img/docs/deployment/amazon-ebs/package-ebs-option.png)
+  
+* For other projects a zip artifact (which can be as simple as a multi argument cmd invocation of 7z to a complicated webpack or gulp toolchain) of `Elastic Beanstalk package` type is added in the UI under artifacts section or as below for yaml configuration
+  
+```yaml
+artifacts:
+- path: <path to artifact>
+  type: ElasticBeanstalkPackage
+```
 
 ## Provider settings
 
@@ -14,9 +30,9 @@ Amazon Elastic Beanstalk deployment provider deploys selected artifact to the El
 * **Application name** (`application_name`) - Name of application (which should already exist) to update.
 * **Environment name** (`environment_name`) - Name of the environment which is part of the above application.
 * **Region** (`region`) - AWS region where the application is located.
-* **Artifact** (`artifact`) - Name of artifact(s) to use for update.
-* **Health Check Url** (`healthcheck`) - Optional (default is '/healthcheck'). Lets you set path to which ELB sends an HTTP GET request to determine instance health.
-* **Retry attempts** (`max_error_retry`) - Optional (defualt is 0). Number of times provider will retry after a failure. Default is `0`.
+* **Artifact** (`artifact`) - Optional. Name of artifact(s) to use for update.
+* **Health Check Url** (`healthcheck`) - Optional. Lets you set path to which ELB sends an HTTP GET request to determine instance health. Default is '/healthcheck'
+* **Retry attempts** (`max_error_retry`) - Optional. Number of times provider will retry after a failure. Default is `0`.
 
 Branch and other deployment conditions can be added as in other deployment providers
 
