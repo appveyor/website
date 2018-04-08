@@ -14,9 +14,9 @@ The packaging of the artifact to deploy depends on the type of project being bui
 * For projects with an "MSBuild" phase a `publish_wap_beanstalk` variable should be set to true in appveyor.yml or the appropriate option selected in the UI, as below.
 
 ![package-ebs-option](/assets/img/docs/deployment/amazon-ebs/package-ebs-option.png)
-  
+
 * For other projects a zip artifact (which can be as simple as a multi argument cmd invocation of 7z to a complicated webpack or gulp toolchain) of `Elastic Beanstalk package` type is added in the UI under artifacts section or as below for yaml configuration
-  
+
 ```yaml
 artifacts:
 - path: <path to artifact>
