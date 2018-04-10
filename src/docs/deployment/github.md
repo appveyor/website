@@ -47,6 +47,9 @@ To promote selected "tag" build to GitHub release:
 1. Go to project "Deployments" tab and deploy to GitHub environment.
 2. AppVeyor creates a new release and pushes selected build artifacts into it.
 
+**NOTE:** If the current build is based on a regular commit then a new tag is created (either explicitly or automatically named in `tag` field of deployment settings as described below) along with the release. This means that, unless you have `skip_tags` set to true, the creation of the tag will also send a webhook to Appveyor, and the deployment process will begin again, and so on.
+
+To avoid this possible cycle, you can set `skip_tags` to true. However, you may be using `on:` key to conditionally build and deploy only on tags you create manually. In this case, you can specify `tag: $(APPVEYOR_REPO_TAG_NAME)` in deployment settings without skipping tags, and the manually created tag will be updated instead of a new one being created.
 
 ## Provider settings
 
