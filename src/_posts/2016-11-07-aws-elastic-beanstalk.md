@@ -2,7 +2,7 @@
 title: AWS Elastic Beanstalk
 ---
 
-**UPDATE**: Elastic Beanstalk deployment 1st class support is now added. Please check [documentation](https://www.appveyor.com/docs/deployment/amazon-elastic-beanstalk/). Scripted deployment described in this article will still work, but we encourage to use our new Elastic Beanstalk deployment provider.
+**UPDATE (April 16, 2018):** Elastic Beanstalk deployment 1st class support is now added. Please check [documentation](/docs/deployment/amazon-elastic-beanstalk/). Scripted deployment described in this article will still work, but we encourage to use our new Elastic Beanstalk deployment provider.
 
 Appveyor does not support AWS Elastic Beanstalk deployment out of the box right now.
 However it can be automated in Appveyor with help of some scripting.
