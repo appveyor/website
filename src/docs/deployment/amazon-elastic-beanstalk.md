@@ -11,7 +11,7 @@ Amazon Elastic Beanstalk deployment provider deploys single artifact to the Elas
 
 The packaging of the artifact to deploy depends on the type of project being built:
 
-* For projects with an "MSBuild" phase a `publish_wap_beanstalk` variable should be set to true in appveyor.yml or the appropriate option selected in the UI, as below.
+* For ASP.NET Web Application projects set `publish_wap_beanstalk: true` under `build` in YAML or check `Package Web Applications for AWS Elastic Beanstalk deployment` checkbox under `MSBuild` tab in the UI, as below.
 
 ![package-ebs-option](/assets/img/docs/deployment/amazon-ebs/package-ebs-option.png)
 
@@ -22,6 +22,8 @@ artifacts:
 - path: <path to artifact>
   type: ElasticBeanstalkPackage
 ```
+
+*Note*: Unlike the AWS Toolkit for Visual Studio which can be used to create an application and environment from within the IDE, AppVeyor Elastic Beanstalk deployment relies on a pre-existing Elastic Beanstalk application and environment.
 
 ## Provider settings
 
@@ -52,5 +54,3 @@ deploy:
   on:
     branch: main # deploy from master branch only
 ```
-
-*Note*: Unlike the AWS Toolkit for Visual Studio which can be used to create an application and environment from within the IDE, this deployment relies on a pre-existing Elastic Beanstalk application and environment.
