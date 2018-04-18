@@ -224,6 +224,8 @@ image:
 - Ubuntu
 ```
 
+With matrix you can [specialize configuration for different jobs](/docs/build-configuration/#specializing-matrix-job-configuration) or keep flat configuration using approaches described below.
+
 Prefix command with `cmd:` to run it on Windows image only:
 
     - cmd: echo Hey, I'm displayed on Windows only!
