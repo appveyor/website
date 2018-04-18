@@ -147,7 +147,6 @@ THe following services can be configured as [Build cache](/docs/build-cache/) st
 * Azure Storage
 * Google Storage
 * Amazon S3
-* Rackspace Cloud Files
 * AppVeyor storage
 
 ### AppVeyor storage
