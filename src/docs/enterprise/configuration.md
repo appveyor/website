@@ -140,6 +140,66 @@ AppVeyor can be configured to run builds in any of the following clouds:
 * [Local process](/docs/enterprise/running-builds-as-local-process/)
 
 
+## Build cache
+
+THe following services can be configured as [Build cache](/docs/build-cache/) storage:
+
+* Azure Storage
+* Google Storage
+* Amazon S3
+* Rackspace Cloud Files
+* AppVeyor storage
+
+### AppVeyor storage
+
+AppVeyor storage is a web service that stores/serves files to/from a local disk storage.
+It can be used in the situations when cache data should not leave boundaries of your company firewall.
+
+To host AppVeyor storage you will need IIS 7.5 or higher and .NET Framework 4.6.
+The website running AppVeyor storage should be accessible from both AppVeyor machine (`External Storage Server URL` in cache settings) and build VMs (`Internal Storage Server URL`). If everything is on the same network "external" and "internal" addresses will be the same. Deploying SSL certificate is recommended; self-signed certificate will be fine.
+
+To install AppVeyor storage web app:
+
+* Add "Web Server" role on the machine where app will be installed. Alternatively, you can deploy it on AppVeyor VM.
+* Create a local directory where cache files will be stored, for example `C:\cache-data`.
+* Create new web site for AppVeyor storage. We recommend creating a new user for AppVeyor storage's dedicated app pool. This user should have "Modify" access to the local directory where cache files (blobs) will be stored.
+* Modify website bindings to work with your environment; configure SSL binding.
+* Download [AppVeyor storage installation package](https://www.appveyor.com/downloads/appveyor-blob-storage/1.0.0/appveyor-blob-storage.zip) and unpack it to website root directory.
+* Generate private and public keys for AppVeyor storage authentication using the following PowerShell script:
+
+```posh
+$rsa = New-Object System.Security.Cryptography.RSACryptoServiceProvider -ArgumentList 2048
+$privKeyXml = $rsa.ToXmlString($true)
+$pubKeyXml = $rsa.ToXmlString($false)
+
+Write-Host "=== Private Key ==="
+[System.Convert]::ToBase64String([system.Text.Encoding]::UTF8.GetBytes($privKeyXml))
+
+Write-Host "`n=== Public Key ==="
+[System.Convert]::ToBase64String([system.Text.Encoding]::UTF8.GetBytes($pubKeyXml))
+```
+
+Copy-paste *Public key* to `SignaturePublicKey` app setting in `web.config` and you will have to specify *Private key* on cache settings UI in AppVeyor.
+
+* In `web.config` update `StorageDirectory` to local cache directory path.
+* Create new Windows event log and the source by running the following PowerShell command:
+
+```posh
+New-EventLog -Source "AppVeyor Blob Storage" -LogName "AppVeyor"
+```
+
+Open AppVeyor web interface and go to **Account menu** -> **Build environment** -> **Build caches**.
+
+Add new cache of **AppVeyor storage** type.
+
+External and internal storage server URLs should have the format `https://<storage-website-ip>` (or `http://`).
+
+Insert **private key** generated with PowerShell script above.
+
+Click **Add** button to save cache settings.
+
+Open **Build clouds** page and then click details of the build cloud for which cache should be configured. Specify cache name in **Build cache name** field under **Storage and cache overrides** section.
+
 ## Build job settings
 
 [TBD]
