@@ -477,7 +477,7 @@ matrix:
 
 `<condition>` can be `os`, `image`, `configuration`, `platform`, `test_category` or the name of environment variable.
 
-For example, to allow job failing on Node.js 0.11 (TBD - add link to Node.js instructions):
+For example, to allow job failing on Node.js 0.11 ([see Node.js instructions](/docs/lang/nodejs-iojs/)):
 
 ```yaml
 matrix:
