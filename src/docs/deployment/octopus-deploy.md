@@ -39,7 +39,7 @@ Optionally, use `-DeploymentName` switch, which is handy when you refer artifact
 
 Or, if you can simple set the whole folder to be packged and an artifact and it will be zipped and pushed by AppVeyor:
 
-![project-settings](/assets/img/docs/deployment/octopus-deploy/package-folder.png)
+![package-folder](/assets/img/docs/deployment/octopus-deploy/package-folder.png)
 
 YAML:
 
