@@ -79,3 +79,11 @@ Octopus deploy provider settings are specified on Deployment tab of project sett
     * **Artifact(s)** (`artifact`) - Optional. Artifact(s) to push. If omitted, all build artifacts of compatible type (`OctopusPackage`, `NuGetPackage` or `Zip`) will be pushed.
     * **Push packages advanced** (`push_packages_advanced`) - Optional. Additional options passed to `octo.exe push`.
 * **Create release** (`create_release`) - when selected in UI or set to `true` in YAML, AppVeyor will execute `octo.exe create-release`.
+    * **Project** (`project`) - Optional. Name of the project. Default is AppVeyor project name.
+    * **Channel** (`release_channel`) - Optional. Channel to use for the new release. If omitted, Octopus Deploy will select the best channel.
+    * **Create release advanced** (`create_release_advanced`) - Optional. Additional options passed to `octo.exe create-release`.
+* **Deploy release** (`deploy_release`) - when selected in UI or set to `true` in YAML, AppVeyor will execute `octo.exe deploy-release`. As said earlier, this require **Create release** (`create_release`).
+    * **Environment(s)** (`environment`) - Environment to deploy to.
+    * **Tenant(s)** (`deploy_tenants`) - Optional. Create a deployment for specific tenant(s). For multiple tenants it can be comma or semicolon or space separated list.
+    * **Wait for completion** (`deploy_wait`) - Optional. When selected in UI or set to `true` in YAML, `octo.exe` will not exit until deployment completed.
+    
