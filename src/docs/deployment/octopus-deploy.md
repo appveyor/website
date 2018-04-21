@@ -43,7 +43,7 @@ Or, if you can simple set the whole folder to be packaged as an artifact and it 
 
 YAML:
 
-```
+```yaml
 artifacts:
 - path: dist
   name: MyApp
@@ -55,6 +55,7 @@ More details at [packaging artifacts](/docs/packaging-artifacts/).
 ### Understanding scenarios
 
 There are 3 Octopus Deploy scenarios exposed in AppVeyor right now:
+
 * [Pushing packages](https://octopus.com/docs/api-and-integration/octo.exe-command-line/pushing-packages) (`push_packages`)
 * [Creating releases](https://octopus.com/docs/api-and-integration/octo.exe-command-line/creating-releases) (`create_release`)
 * [Deploying releases](https://octopus.com/docs/api-and-integration/octo.exe-command-line/deploying-releases) (`deploy_release`)
