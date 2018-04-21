@@ -87,4 +87,3 @@ Octopus deploy provider settings are specified on Deployment tab of project sett
     * **Environment(s)** (`environment`) - Environment to deploy to.
     * **Tenant(s)** (`deploy_tenants`) - Optional. Create a deployment for specific tenant(s). For multiple tenants it can be comma or semicolon or space separated list.
     * **Wait for completion** (`deploy_wait`) - Optional. When selected in UI or set to `true` in YAML, `octo.exe` will not exit until deployment completed.
-    
