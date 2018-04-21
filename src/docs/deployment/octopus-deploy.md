@@ -52,7 +52,7 @@ artifacts:
 
 More details at [packaging artifacts](/docs/packaging-artifacts/).
 
-### Understanding scenarios
+## Understanding scenarios
 
 There are 3 Octopus Deploy scenarios exposed in AppVeyor right now:
 
