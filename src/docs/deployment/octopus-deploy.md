@@ -21,7 +21,7 @@ During “MSBuild” phase AppVeyor can automatically detect ASP.NET Web Applica
 
 ![project-settings](/assets/img/docs/deployment/octopus-deploy/project-settings.png)
 
-The folloing tweak environment variables can be used to customize automatic packaging process:
+The following tweak environment variables can be used to customize automatic packaging process:
 
 * `OCTOPUS_PACKAGE_NUGET` - set to `true` to package in Nuget format, default is `Zip`.
 * `OCTOPUS_PACKAGE_VERSION` - customize package version. default is AppVeyor build version. Environment variable can be used here.
@@ -37,7 +37,7 @@ Packaging itself can be done with `octo.exe` or `7z.exe`, both are installed on 
 
 Optionally, use `-DeploymentName` switch, which is handy when you refer artifact in deployment settings.
 
-Or, if you can simple set the whole folder to be packged as an artifact and it will be zipped and pushed by AppVeyor:
+Or, if you can simple set the whole folder to be packaged as an artifact and it will be zipped and pushed by AppVeyor:
 
 ![package-folder](/assets/img/docs/deployment/octopus-deploy/package-folder.png)
 
@@ -52,9 +52,9 @@ artifacts:
 
 More details at [packaging artifacts](/docs/packaging-artifacts/).
 
-### Understanding scenarious
+### Understanding scenarios
 
-There are 3 Octopus Deploy scenarious explosed in AppVeyor right now:
+There are 3 Octopus Deploy scenarios exposed in AppVeyor right now:
 * [Pushing packages](https://octopus.com/docs/api-and-integration/octo.exe-command-line/pushing-packages) (`push_packages`)
 * [Creating releases](https://octopus.com/docs/api-and-integration/octo.exe-command-line/creating-releases) (`create_release`)
 * [Deploying releases](https://octopus.com/docs/api-and-integration/octo.exe-command-line/deploying-releases) (`deploy_release`)
@@ -72,13 +72,10 @@ AppVeyor UI enforces those rules. In case you use YAML and, for example, set `de
 
 Octopus deploy provider settings are specified on Deployment tab of project settings or in `appveyor.yml`.
 
-* **Server** (`server`) - server name with remote agent service installed or URL of Web Deploy handler.
-* **Website name** (`website`) - web site name to deploy to, e.g. Default Web Site or myserver.com
-* **Username** (`username`)
-* **Password** (`password`)
-* **NTLM authentication** (`ntlm`) - NTLM authentication is primarily used by Remote Agent Service. Usually, IIS 7 and up web servers use Web Deploy Handler approach with Basic authentication.
-* **Remove additional files at destination** (`remove_files`) - when set selected provider performs full content synchronization, i.e. deletes files at destination that don't exist in the package.
-* **Skip directories** (`skip_dirs`) - semicolon list of regular expressions specifying the list of directories to skip while synchronizing web site contents, for example `\\App_data;\\uploads`.
-* **Skip files** (`skip_files`) - semicolon list of regular expressions specifying the list of files to skip while synchronizing web site contents, for example `web.config` (all web.configs) or only the root config for MVC apps `^((?!Views).)*web\.config$` (thanks to [this blog post](http://keza.net/2011/11/15/skipping-mvc-web-config-files-with-msdeploy/)).
-* **Take ASP.NET application offline during deployment** (`app_offline`) - places app_offline.htm page into the root of web application before sync to take app offline and then remove the page when deployment has finished.
-* **Artifact to deploy** (`artifact`) - artifact name containing application package to deploy.
+* **Server URL** (`server`) - Octopus server URL.
+* **API key** (`api_key`) - [API key](https://octopus.com/docs/api-and-integration/api/how-to-create-an-api-key). In UI, just copy-paste key in clear text. In YAML set it as [secure variable](https://www.appveyor.com/docs/build-configuration/#secure-variables) or simple use **Export YAML** menu to export Octopus Deploy settings with encrypted API key.
+* **Octo execution timeout** (`octo_timeout`) - Optional. Time, in minutes, AppVeyor waits for `octo.exe` to complete operation. Default is 20 minutes.
+* **Push packages** (`push_packages`) - when selected in UI or set to `true` in YAML, AppVeyor will execute `octo.exe push`.
+    * **Artifact(s)** (`artifact`) - Optional. Artifact(s) to push. If omitted, all build artifacts of compatible type (`OctopusPackage`, `NuGetPackage` or `Zip`) will be pushed.
+    * **Push packages advanced** (`push_packages_advanced`) - Optional. Additional options passed to `octo.exe push`.
+* **Create release** (`create_release`) - when selected in UI or set to `true` in YAML, AppVeyor will execute `octo.exe create-release`.
