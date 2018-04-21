@@ -37,7 +37,7 @@ Packaging itself can be done with `octo.exe` or `7z.exe`, both are installed on 
 
 Optionally, use `-DeploymentName` switch, which is handy when you refer artifact in deployment settings.
 
-Or, if you can simple set the whole folder to be packged and an artifact and it will be zipped and pushed by AppVeyor:
+Or, if you can simple set the whole folder to be packged as an artifact and it will be zipped and pushed by AppVeyor:
 
 ![package-folder](/assets/img/docs/deployment/octopus-deploy/package-folder.png)
 
@@ -50,9 +50,27 @@ artifacts:
   type: OctopusPackage
 ```
 
+More details at [packaging artifacts](/docs/packaging-artifacts/).
+
+### Understanding scenarious
+
+There are 3 Octopus Deploy scenarious explosed in AppVeyor right now:
+* [Pushing packages](https://octopus.com/docs/api-and-integration/octo.exe-command-line/pushing-packages) (`push_packages`)
+* [Creating releases](https://octopus.com/docs/api-and-integration/octo.exe-command-line/creating-releases) (`create_release`)
+* [Deploying releases](https://octopus.com/docs/api-and-integration/octo.exe-command-line/deploying-releases) (`deploy_release`)
+
+The following rules apply:
+
+* you can **Push packages** as long as you packaged artifact of compatible artifact type (`OctopusPackage`, `NuGetPackage` or `Zip`).
+* you can **Create release** after you **Push packages**.
+* you can **Create release** without **Push packages**. This assumes that you set up Octopus to use [AppVeyor Nuget feeds](/docs/nuget/)
+* You can **Deploy release** only if you **Create release**.
+
+AppVeyor UI enforces those rules. In case you use YAML and, for example, set `deploy_release` without `create_release`, `deploy_release` step will be ignored.
+
 ## Octopus deployment settings
 
-Web deploy provider settings are specified on Deployment tab of project settings, `appveyor.yml` or on environment settings page.
+Octopus deploy provider settings are specified on Deployment tab of project settings or in `appveyor.yml`.
 
 * **Server** (`server`) - server name with remote agent service installed or URL of Web Deploy handler.
 * **Website name** (`website`) - web site name to deploy to, e.g. Default Web Site or myserver.com
