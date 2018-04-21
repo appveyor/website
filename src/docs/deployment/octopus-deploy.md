@@ -29,7 +29,7 @@ The folloing tweak environment variables can be used to customize automatic pack
 
 ### Custom packaging
 
-If you build your app using a script or your app is not ASP.NET Web Application, you can package it with a script sometime after build and before deploy (`after_build` and `before_deploy` stages in the [build pipeline](/docs/build-configuration/#build-pipeline).
+If you build your app using a script or your app is not ASP.NET Web Application, you can package it with a script sometime after build and before deploy (`after_build` and `before_deploy` stages in the [build pipeline](/docs/build-configuration/#build-pipeline)).
 
 Packaging itself can be done with `octo.exe` or `7z.exe`, both are installed on the build workers. Then you need to push created package as an artifact:
 
