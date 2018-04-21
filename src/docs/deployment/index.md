@@ -111,6 +111,10 @@ providers available in each mode:
     <td><a href="/docs/deployment/webhook/">Webhook</a></td>
 </tr>
 <tr>
+    <td><a href="/docs/deployment/octopus-deploy/">Octopus Deploy</a></td>
+    <td>-</td>
+</tr>
+<tr>
     <td>Script</td>
     <td>-</td>
 </tr>
