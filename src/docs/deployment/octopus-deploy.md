@@ -29,15 +29,15 @@ The following tweak environment variables can be used to customize automatic pac
 
 ### Custom packaging
 
-If you build your app using a script or your app is not ASP.NET Web Application, you can package it with a script sometime after build and before deploy (`after_build` and `before_deploy` stages in the [build pipeline](/docs/build-configuration/#build-pipeline)).
+If you build your app using a script or your app is not an ASP.NET Web Application, you can package it with a script sometime after the build and before deployment (`after_build` and `before_deploy` stages in the [build pipeline](/docs/build-configuration/#build-pipeline)).
 
-Packaging itself can be done with `octo.exe` or `7z.exe`, both are installed on the build workers. Then you need to push created package as an artifact:
+Packaging itself can be done with `octo.exe` or `7z.exe` as both are installed on the build workers. Then you need to push the created package as an artifact:
 
     appveyor PushArtifact <path-to-package.zip> -Type OctopusPackage
 
-Optionally, use `-DeploymentName` switch, which is handy when you refer artifact in deployment settings.
+Optionally, use `-DeploymentName` switch, which is handy when you refer to the artifact in deployment settings.
 
-Or, if you can simple set the whole folder to be packaged as an artifact and it will be zipped and pushed by AppVeyor:
+Or, you can simply set the whole folder to be packaged as an artifact and it will be zipped and pushed by AppVeyor:
 
 ![package-folder](/assets/img/docs/deployment/octopus-deploy/package-folder.png)
 
@@ -62,12 +62,12 @@ There are 3 Octopus Deploy scenarios exposed in AppVeyor right now:
 
 The following rules apply:
 
-* you can **Push packages** as long as you packaged artifact of compatible artifact type (`OctopusPackage`, `NuGetPackage` or `Zip`).
+* you can **Push packages** as long as you packaged an artifact of compatible artifact type (`OctopusPackage`, `NuGetPackage` or `Zip`).
 * you can **Create release** after you **Push packages**.
 * you can **Create release** without **Push packages**. This assumes that you set up Octopus to use [AppVeyor Nuget feeds](/docs/nuget/)
 * You can **Deploy release** only if you **Create release**.
 
-AppVeyor UI enforces those rules. In case you use YAML and, for example, set `deploy_release` without `create_release`, `deploy_release` step will be ignored.
+AppVeyor UI enforces those rules. In case you use YAML and, for example, set `deploy_release` without setting `create_release`, the `deploy_release` step will be ignored.
 
 ## Octopus deployment settings
 
