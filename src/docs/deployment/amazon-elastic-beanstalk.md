@@ -54,3 +54,5 @@ deploy:
   on:
     branch: main # deploy from master branch only
 ```
+
+**Note**: Do not publish an appveyor.yml with AWS credentials in a public repository.
