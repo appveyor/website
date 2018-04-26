@@ -1,11 +1,11 @@
 ---
-title: Advanced build matrix configuration in Appveyor
+title: Advanced build matrix configuration in AppVeyor
 ---
 
-## Appveyor config evolution
+## AppVeyor config evolution
 
-Appveyor configuration has grown incrementally more sophisiticated in order to accomodate not only a wide range of build requirements,
-but also Appveyor's feature set, and most pertinently to this post, the addition of linux build machines. This welcome addition to the Appveyor platform means that users
+AppVeyor configuration has grown incrementally more sophisiticated in order to accomodate not only a wide range of build requirements,
+but also AppVeyor's feature set, and most pertinently to this post, the addition of linux build machines. This welcome addition to the AppVeyor platform means that users
 may want to build a cross-platform repository but may not want to manage separate configuration files. This is no longer a problem if we make use of
 the `for:` node in our appveyor configuration. This key was added previously to allow users to share common configuration between all branches while overriding
 parts of that configuration in specific branches. But along with the added features comes increased possibility of confusion regarding expected results of configuration.
@@ -163,5 +163,5 @@ for:
 
 ```
 
-Appveyor's new configuration capabilities give the user fine grained control allowing for virtually any imaginable configuration. But use these capabilities
+AppVeyor's new configuration capabilities give the user fine grained control allowing for virtually any imaginable configuration. But use these capabilities
 wisely and take a step back to make sure your build matrix is well formed and sensible.
