@@ -6,7 +6,7 @@ title: Advanced build matrix configuration in Appveyor
 
 Appveyor configuration has grown incrementally more sophisiticated in order to accomodate not only a wide range of build requirements,
 but also Appveyor's feature set, and most pertinently to this post, the addition of linux build machines. This welcome addition to the Appveyor platform means that users
-may want to build a cross-platform repository but may not want to manage seperate configuration files. This is no longer a problem if we make use of
+may want to build a cross-platform repository but may not want to manage separate configuration files. This is no longer a problem if we make use of
 the `for:` node in our appveyor configuration. This key was added previously to allow users to share common configuration between all branches while overriding
 parts of that configuration in specific branches. But along with the added features comes increased possibility of confusion regarding expected results of configuration.
 
@@ -109,7 +109,7 @@ for:
 
 ```
 
-Here we are able to create the desired matrix which consits of 8 jobs (2-image \* 2-configuration \* 2-environment variable groups), then in the `for:` node, specify
+Here we are able to create the desired matrix which consits of 8 jobs (2-image / 2-configuration / 2-environment variable groups), then in the `for:` node, specify
 special conditions for each job.
 Another important thing to note is the three matrix configuration keys within the `for:` node that are ignored. This makes sense intuitively, since these are meant to be, in a
 sense, 'global' configuration of the job matrix behaviour. A list of settings that are ignored can be found [here](https://www.appveyor.com/docs/build-configuration/#specializing-matrix-job-configuration)
@@ -165,4 +165,3 @@ for:
 
 Appveyor's new configuration capabilities give the user fine grained control allowing for virtually any imaginable configuration. But use these capabilities
 wisely and take a step back to make sure your build matrix is well formed and sensible.
-
