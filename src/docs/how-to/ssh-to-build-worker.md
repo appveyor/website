@@ -9,7 +9,7 @@ AppVeyor starts every build on clean dedicated build worker VM. If you need to t
 
 To enable SSH access during the build you should configure two environment variables (either in `appveyor.yml` or on **Environment** tab of project settings):
 
-* `APPVEYOR_SSH_KEY` - public portion of your SSH key, for example `ssh-rsa AAAAB3NzaC1yc2EAAAABJQ...6TMCNw== rsa-key-20180328`. This is mandatory variable.
+* `APPVEYOR_SSH_KEY` - public portion of your SSH key, for example `ssh-rsa AAAAB3NzaC1yc2EAAAABJQ...6TMCNw==`. This is mandatory variable.
 * `APPVEYOR_SSH_BLOCK` - if set to `true` SSH connection details will be displayed and the build will be blocked until `~/build.lock` is deleted; otherwise SSH details will be displayed and the build will continue. This variable is optional with default value `false`.
 
 > Despite the fact `appveyor.yml` settings takes over the UI environment variables are handled differently, i.e. environment variables defined on UI are getting merged with those one defined in `appveyor.yml`.
