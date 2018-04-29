@@ -55,11 +55,11 @@ Permissions can be defined on entity (project or deployment environment) level a
 
 By default, all entity permissions for "Administrator" role are "Allow" and for "User" are "Inherit".
 
-### 'Deny all' approach
+### Deny all approach
 
-Default “Inherit” permission is handy when new entity (project or deployment environment) added and users with certain role automatically have required access to this new entity. However, in some cases (like having vendors or interns with AppVeyor access) access to all entities should be denies to the specific role, unless explicitly allowed on specific entity level.
+Default “Inherit” permission is handy when new entity (project or deployment environment) added and users with certain role automatically have required access to this new entity. However, in some cases (like having vendors or interns with AppVeyor access) access to all entities should be denied to the specific role, unless explicitly allowed on specific entity level.
 
-To solve this problem, select `Deny all projects and environments, unless explicitly allowed` in role permissions. Add assign this role to users that need to be restricted. Then navigate to specific entity and explicitly allow specific permissions for this role.
+To solve this problem, select `Deny all projects and environments, unless explicitly allowed` in role permissions. Assign this role to users that need to be restricted. Then navigate to specific entity permissions setting, and explicitly `Allow` specific permission(s) for this role.
 
 ## Switching between accounts
 
