@@ -51,9 +51,15 @@ When existing user is assigned to another account it becomes *collaborator* in t
 
 *Permissions* in AppVeyor can be account-wide and entity-specific. Account-wide permissions are defined on role level and limit user access to certain AppVeyor functionality or allow certain actions.
 
-Permissions can be defined on project level and limit user access to that particular project. Project-level permission has three states: `Allow`, `Deny` and `Inherit`. "Inherit" means applying permissions defined on role level. Both "Allow" and "Deny" overrides permissions defined on role level.
+Permissions can be defined on entity (project or deployment environment) level and limit user access to that particular entity. Entity-level permission has three states: `Allow`, `Deny` and `Inherit`. "Inherit" means applying permissions defined on role level. Both "Allow" and "Deny" overrides permissions defined on role level.
 
-By default, all project permissions for "Administrator" role are "Allow" and for "User" are "Inherit".
+By default, all entity permissions for "Administrator" role are "Allow" and for "User" are "Inherit".
+
+### Deny all approach
+
+Default “Inherit” permission is handy when new entity (project or deployment environment) added and users with certain role automatically have required access to this new entity. However, in some cases (like having vendors or interns with AppVeyor access) access to all entities should be denied to the specific role, unless explicitly allowed on specific entity level.
+
+To solve this problem, select `Deny all projects and environments, unless explicitly allowed` in role permissions. Assign this role to users that need to be restricted. Then navigate to specific entity permissions setting, and explicitly `Allow` specific permission(s) for this role.
 
 ## Switching between accounts
 
