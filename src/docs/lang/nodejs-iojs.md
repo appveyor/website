@@ -257,3 +257,23 @@ Solution - install npm 2.0:
     set PATH=%APPDATA%\npm;%PATH%
 
 More info about [npm troubleshooting on Windows](https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows).
+
+
+### Unexpected error messages with a successful run
+
+Sometimes `npm` commands/tasks will show errors in the build log, but the build will succeed as if there weren't any. This can happen with `npm ci` where all packages are resolved and installed, but an error pointing back to the build script may show.
+
+This is because you're calling the script from PowerShell:
+
+```yaml
+- ps: ./build.ps1
+```
+
+To fix this run it in "shell" mode:
+
+```yaml
+- powershell ./build.ps1
+- cmd: powershell ./build.ps1
+```
+
+**Note** that this can happen even when calling `npm` from other build tools such as [Cake](https://cakebuild.net) and the [Cake.Npm](https://github.com/cake-contrib/Cake.Npm) addin.
