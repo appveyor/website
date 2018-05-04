@@ -215,6 +215,7 @@ notifications:
   ...
 
 for:
+-
   branches:
     only:
       - master
