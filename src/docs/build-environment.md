@@ -100,7 +100,7 @@ Below you can find the list of [pre-installed software](#pre-installed-software)
 
 ### Visual Studio Preview images
 
-AppVeyor also provides a build image which contains, in place of the Visual Studio 2017 version on the current image, the VS2017 preview relative to that version. 
+AppVeyor also provides a build image which contains, in place of the Visual Studio 2017 version on the current image, the VS2017 preview relative to that version.
 
 * `Visual Studio 2017 Preview`
 
