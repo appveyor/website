@@ -98,6 +98,14 @@ AppVeyor provides these "standard" build worker images:
 
 Below you can find the list of [pre-installed software](#pre-installed-software) for each image.
 
+### Visual Studio Preview images
+
+AppVeyor also provides a build image which contains, in place of the Visual Studio 2017 version on the current image, the VS2017 preview relative to that version. 
+
+* `Visual Studio 2017 Preview`
+
+The aim is to stay in sync with the [release rhythm](https://docs.microsoft.com/en-us/visualstudio/productinfo/vs2017-release-rhythm#previews) of VS2017.
+
 ## Choosing image for your builds
 
 If the build configuration does not specify build worker image then `Visual Studio 2015` image is used.
