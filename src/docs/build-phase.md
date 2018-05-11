@@ -100,7 +100,7 @@ Or if some If .NET Core project should be excluded from NuGet packaging, please 
 ```xml
   <PropertyGroup>
     ...
-    <IsPackable>true</IsPackable>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 ```
 
