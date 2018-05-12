@@ -421,14 +421,22 @@ The following software is pre-installed on `Ubuntu` image:
     * git LFS 2.4.0
     * mercurial 4.4.1
     * subversion 1.9.3
+* Build tools
+    * ant 1.9.6
+    * gcc 4:5.3.1
+    * gfortran 5.3.1
+    * gradle 2.10-1
+    * make 4.1-6
+    * maven 3.3.9-3
+    * cmake 3.11.0-rc3
 * Node.js
-    * Node.JS (system) 6.13.0
+    * Node.JS (system) 6.14.2
     * Nodejs v4.9.1
     * Nodejs v5.12.0
-    * Nodejs v6.14.1
+    * Nodejs v6.14.2
     * Nodejs v7.10.1
     * Nodejs v8.11.1
-    * Nodejs v9.10.1
+    * Nodejs v9.11.1
     * NVM
 * PowerShell
     * PowerShell Core 6.0.2
@@ -444,9 +452,12 @@ The following software is pre-installed on `Ubuntu` image:
     * .NET Core 2.1.3 SDK
     * .NET Core 2.1.4 SDK
 * Mono
-    * Mono 5.10
+    * Mono 5.12
+    * Visual C# compiler csc 2.6.0
+    * Mono C# compiler 5.12.0.226
+    * Mono ASP.NET Web Server xsp4 0.4.0.0
 * Ruby
-    * Ruby 2.0
+    * Ruby 2.0.0-p648
     * Ruby 2.1.10
     * Ruby 2.2.7
     * Ruby 2.3.4
@@ -455,17 +466,17 @@ The following software is pre-installed on `Ubuntu` image:
     * Ruby HEAD 2.6.0dev
     * RVM 1.29.3
 * Docker
-    * Docker 18.03.0
+    * Docker 18.03.1
 * Python
     * Python 2.7.12-1 (system)
-    * Python 3.5.1-2 (system)
+    * Python 3.5.1-3 (system)
     * Python 2.7.14
     * Python 3.4.8
     * Python 3.5.5
     * Python 3.6.4
     * Python 3.7.0
     * virtualenv 15.0.1
-    * pip 10.0.0b1
+    * pip 10.0.0
 * Java
     * openJDK 7 1.7.0_95
     * openJDK 8 1.8.0_151
@@ -479,27 +490,22 @@ The following software is pre-installed on `Ubuntu` image:
     * Go 1.10
     * Go Version Manager v1.0.22
 * Databases and Services
-    * MySQL 5.7.21
+    * MySQL 5.7.22
     * PostgreSQL 10+190
-    * SQL Server 2017 14.0.3023.8-5
-    * MongoDB 3.2.19
+    * SQL Server 2017 14.0.3025.34-3
+    * MongoDB 3.2.20
     * Redis 4.0.8
     * RabbitMQ 3.6.15-1
 * Erlang
     * Erlang
 * Tools
-    * yarn 1.5.1
+    * yarn 1.6.0
     * p7zip 16.02
-    * ant 1.9.6
-    * gcc 4:5.3.1
-    * gfortran 5.4.0
-    * gradle 2.10-1
-    * make 4.1-6
-    * maven 3.3.9-3
     * tcl 8.6.0+9
     * wget 1.17.1
     * curl 7.47.0
-    * awscli 1.14.68
-    * azure-cli 2.0.30
-    * cmake 3.11.0-rc3
+    * awscli 1.15.16
+    * localstack 0.8.6
+    * azure-cli 2.0.32
+    * packer 1.2.2
 
