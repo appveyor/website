@@ -38,8 +38,9 @@
 
 .home-banner .highlights {
     color: #e0e0e0;
-    margin: 0 0 0 6rem;
+    margin: 1rem 0 0 6rem;
     text-align: left;
+    font-size: 1.06rem;
 }
 
 .home-banner img {
