@@ -10,6 +10,8 @@ Thank you for your active participation! We managed to find and fix some issues,
 
 Starting today `Ubuntu` image will be available to all accounts, free and paid alike. The current working image users will see is based on Ubuntu 16.04 (Xenial Xerus) and a new one based on Ubuntu 18.04 (Bionic Beaver) will be added soon. We are committed to providing you the best and the latest Linux experience on our platform.
 
+There is the Getting started with AppVeyor for Linux guide (https://www.appveyor.com/docs/getting-started-with-appveyor-for-linux/) where you can also find a list of supported features and software pre-installed on the image.
+
 Now AppVeyor is officially a multi platform CI service!
 
 Enjoy your build!
