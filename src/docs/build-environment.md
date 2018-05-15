@@ -725,7 +725,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.10.1: <code>C:\Qt\5.10.1</code>
+            <li>Qt 5.10.1: <code>C:\Qt\5.10.1</code> (<code>C:\Qt\5.10</code> mapped to <code>C:\Qt\5.10.1</code> for backward compatibility)
                 <ul>
                 <li>msvc2017 64-bit: <code>C:\Qt\5.10.1\msvc2017_64</code></li>
                 <li>WinRT ARM v7: <code>C:\Qt\5.10.1\winrt_armv7_msvc2017</code></li>
@@ -740,7 +740,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.10.1: <code>C:\Qt\5.10.1</code>
+            <li>Qt 5.10.1: <code>C:\Qt\5.10.1</code> (<code>C:\Qt\5.10</code> mapped to <code>C:\Qt\5.10.1</code> for backward compatibility)
                 <ul>
                 <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.10.1\mingw53_32</code></li>
                 <li>msvc2015 32-bit: <code>C:\Qt\5.10.1\msvc2015</code></li>
@@ -753,7 +753,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.10.1: <code>C:\Qt\5.10.1</code>
+            <li>Qt 5.10.1: <code>C:\Qt\5.10.1</code> (<code>C:\Qt\5.10</code> mapped to <code>C:\Qt\5.10.1</code> for backward compatibility)
                 <ul>
                 <li>msvc2015 64-bit: <code>C:\Qt\5.10.1\msvc2015_64</code></li>
                 <li>msvc2013 64-bit: <code>C:\Qt\5.10.1\msvc2013_64</code></li>
@@ -807,68 +807,58 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-            <li>Qt 5.8.0: <code>C:\Qt\5.8</code>
+            <li>Qt 5.6.3: <code>C:\Qt\5.6.3</code> (<code>C:\Qt\5.6</code> mapped to <code>C:\Qt\5.6.3</code> for backward compatibility)
                 <ul>
-                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.8\mingw53_32</code></li>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.8\msvc2015_64</code></li>
-                <li>msvc2015 32-bit: <code>C:\Qt\5.8\msvc2015</code></li>
-                <li>msvc2013 64-bit: <code>C:\Qt\5.8\msvc2013_64</code></li>
-                <li>msvc2013 32-bit: <code>C:\Qt\5.8\msvc2013</code></li>
+                <li>MinGW 4.9.0 32 bit: <code>C:\Qt\5.6.3\mingw49_32</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.6.3\msvc2015_64</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.6.3\msvc2015</code></li>
                 </ul>
             </li>
-            <li>Qt 5.7.1: <code>C:\Qt\5.7</code>
+            </ul>
+        </td>
+        <td class="no"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.6.3: <code>C:\Qt\5.6.3</code> (<code>C:\Qt\5.6</code> mapped to <code>C:\Qt\5.6.3</code> for backward compatibility)
                 <ul>
-                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.7\mingw53_32</code></li>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.7\msvc2015_64</code></li>
-                <li>msvc2015 32-bit: <code>C:\Qt\5.7\msvc2015</code></li>
-                <li>msvc2013 64-bit: <code>C:\Qt\5.7\msvc2013_64</code></li>
-                <li>msvc2013 32-bit: <code>C:\Qt\5.7\msvc2013</code></li>
+                <li>msvc2013 64-bit: <code>C:\Qt\5.6.3\msvc2013_64</code></li>
+                <li>msvc2013 32-bit: <code>C:\Qt\5.6.3\msvc2013</code></li>
                 </ul>
             </li>
-            <li>Qt 5.6.2: <code>C:\Qt\5.6</code>
-                <ul>
-                <li>MinGW 4.9.2 32 bit: <code>C:\Qt\5.6\mingw49_32</code></li>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.6\msvc2015_64</code></li>
-                <li>msvc2015 32-bit: <code>C:\Qt\5.6\msvc2015</code></li>
-                <li>msvc2013 64-bit: <code>C:\Qt\5.6\msvc2013_64</code></li>
-                <li>msvc2013 32-bit: <code>C:\Qt\5.6\msvc2013</code></li>
-                </ul>
-            </li>
-            <li>Qt 5.5: <code>C:\Qt\5.5</code>
-                <ul>
-                <li>MinGW 4.9.2 32 bit: <code>C:\Qt\5.5\mingw492_32</code></li>
-                <li>msvc2013 64-bit: <code>C:\Qt\5.5\msvc2013_64</code></li>
-                <li>msvc2013 32-bit: <code>C:\Qt\5.5\msvc2013</code></li>
-                </ul>
-            </li>
-            <li>Qt 5.4: <code>C:\Qt\5.4</code>
-                <ul>
-                <li>MinGW 4.9.1 (32 bit) OpenGL: <code>C:\Qt\5.4\mingw491_32</code></li>
-                <li>msvc2013 64-bit OpenGL: <code>C:\Qt\5.4\msvc2013_64_opengl</code></li>
-                <li>msvc2013 32-bit OpenGL: <code>C:\Qt\5.4\msvc2013_opengl</code></li>
-                </ul>
-            </li>
-            <li>Qt 5.3: <code>C:\Qt\5.3</code>
-                <ul>
-                <li>MinGW 4.8.2 (32 bit): <code>C:\Qt\5.3\mingw482_32</code></li>
-                <li>msvc2013 64-bit OpenGL: <code>C:\Qt\5.3\msvc2013_64_opengl</code></li>
-                <li>msvc2013 32-bit OpenGL: <code>C:\Qt\5.3\msvc2013_opengl</code></li>
-                </ul>
-            </li>
-            <li>Tools
+            </ul>
+        </td>
+        <td class="no"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.8.0: <code>C:\Qt\5.8</code></li>
+            <li>Qt 5.7.1: <code>C:\Qt\5.7</code></li>
+            <li>Qt 5.6.2: <code>C:\Qt\5.6</code></li>
+            <li>Qt 5.5: <code>C:\Qt\5.5</code></li>
+            <li>Qt 5.4: <code>C:\Qt\5.4</code></li>
+            <li>Qt 5.3: <code>C:\Qt\5.3</code></li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="no"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>Qt Installer Framework 3.0.1</td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt tools:
                 <ul>
                 <li>MinGW 5.3.0: <code>C:\Qt\Tools\mingw530_32</code></li>
-                <li>MinGW 4.8.2: <code>C:\Qt\Tools\mingw482_32</code></li>
-                <li>MinGW 4.9.1: <code>C:\Qt\Tools\mingw491_32</code></li>
                 <li>MinGW 4.9.2: <code>C:\Qt\Tools\mingw492_32</code></li>
                 </ul>
             </li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td>
-    </tr>
-    <tr>
-        <td>Qt Installer Framework 3.0.1</td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Tools -->
