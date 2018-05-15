@@ -42,6 +42,7 @@ Restart computer to ensure that changes auto-logon/run works as expected.
 
 * [Download location](https://www.appveyor.com/downloads/build-agent/latest/AppveyorBuildAgent.msi)
     * Accept all default settings during installation
+    * [Set Build Agent mode to Local process](https://github.com/appveyor/ci/blob/master/scripts/enterprise/set_local_process_build_agent_mode.ps1) [[raw](https://raw.githubusercontent.com/appveyor/ci/master/scripts/enterprise/set_local_process_build_agent_mode.ps1)]
 
 ### Download and install additional software required by build process
 
