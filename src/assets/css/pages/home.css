@@ -5,7 +5,7 @@
 }
 
 .home-banner h1 {
-    font: 300 2.7rem/1.4 "Segoe UI", "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
+    font: 300 2.2rem/1.4 "Segoe UI", "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
     color: #fff;
     margin: 1.5rem 0 0;
 }
@@ -14,7 +14,6 @@
     font: normal 1.1rem/1.4 "Open Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
     font-size: 1.1rem;
-    text-transform: uppercase;
 }
 
 .home-banner .or-divider {
@@ -39,8 +38,9 @@
 
 .home-banner .highlights {
     color: #e0e0e0;
-    margin: 0 0 0 6rem;
+    margin: 1rem 0 0 6rem;
     text-align: left;
+    font-size: 1.06rem;
 }
 
 .home-banner img {
@@ -50,7 +50,7 @@
 
 /* Features and benefits */
 .features-container {
-    background-color: #3b3333;
+    background-color: #e6e4e2;
 }
 
 .features-container h2 {
@@ -69,16 +69,15 @@
     text-align: center;
     font-family: "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
-    color: #fff;
+    color: #292828;
     margin: 0.7rem 0 0.5rem 0;
 }
 
 .feature p {
     font-family: "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.9rem;
-    font-weight: 300;
     text-align: center;
-    color: #e0e0e0;
+    color: #292828;
     margin: 0.5rem 0 2rem 0;
     line-height: 1.3rem;
 }
@@ -94,9 +93,9 @@
 
 /* Customers block */
 .customers-container {
-    margin-bottom: 1rem;
     text-align: center;
     background-color: #f9f8f7;
+    padding: 1rem 0 2rem 0;
 }
 
 .customers-container h2 {
