@@ -5,28 +5,41 @@ title: Accessing Windows build worker via Remote Desktop (RDP)
 
 # Accessing Windows build worker via Remote Desktop
 
-AppVeyor starts every build on clean dedicated build worker VM. Sometimes the best way to troubleshoot broken build is looking into build VM via Remote Desktop. During the build you have full "administrator" access to that VM and can access it via Remote Desktop (RDP).
+AppVeyor starts every build on clean dedicated build worker VM.
+Sometimes the best way to troubleshoot a broken build is looking into Windows VM via Remote Desktop (RDP).
+During the build, you have full "administrator" access to that VM.
 
-Set RDP password in `APPVEYOR_RDP_PASSWORD` environment variable. You can configure that in `environment` section of `appveyor.yml` or on project settings UI (preferred way):
+Set RDP password in `APPVEYOR_RDP_PASSWORD` environment variable. This variable is optional, with default value generated for the current build worker.
+You can configure that in `environment` section of `appveyor.yml` or on project settings UI (preferred way):
 
 ![appveyor-rdp-psw-env-var](/assets/img/docs/how-to/appveyor-rdp-psw-env-var.png)
 
-Note that while YAML generally takes over the UI, this is not true with variables.
+> Despite the fact `appveyor.yml` settings take over the UI, environment variables are handled differently, i.e. environment variables defined on UI are merged with those defined in `appveyor.yml`.
 
-To get RDP details for the current build worker add this line to `init` phase of your build:
+Add the following PowerShell command at the place where RDP access should be enabled:
+
+```cmd
+iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+```
+
+For example, to enable RDP access at the very beginning of the build, during `init` phase:
 
 ```yaml
+environment:
+  APPVEYOR_RDP_PASSWORD: <your password>
+
 init:
   - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 ```
 
-Remote Desktop connection details will be displayed and build will continue. Displaying RDP connection during `init` phase helps troubleshooting stuck builds.
+RDP connection details for the current build worker will be displayed and build will continue.
+Displaying RDP connection details during `init` phase helps troubleshooting stuck builds.
 
-If you need to investigate worker on build finish add `$blockRdp = $true;` to display Remote Desktop connection details and pause the build until a special "lock" file on VM desktop is deleted:
+If you need to investigate worker on build finish, add `$blockRdp = $true;` to display RDP connection details and pause the build until a special "lock" file on VM desktop is deleted:
 
 ```yaml
 on_finish:
   - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 ```
 
-Your RDP session is limited by overall build time (60 min).
+RDP session is limited by overall build time (60 min).
