@@ -870,7 +870,8 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.11.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>NuGet 4.3.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>NuGet 4.3.0</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>NuGet 4.6.2</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Chocolatey v0.10.8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GitVersion 3.6.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
