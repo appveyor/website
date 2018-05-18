@@ -35,12 +35,6 @@ Some benefits of running Linux builds on AppVeyor:
 
 ## Running your build on Linux
 
-> AppVeyor for Linux is currently in private beta. Both paid and free AppVeyor accounts are entitled to participate in the beta. Please [contact us by email](mailto:team@appveyor.com) or [post a message on forums](https://help.appveyor.com) to enable Linux image for your account.
-
-During the beta we provide a single build image called `ubuntu` with **Ubuntu Server 16.04.4 LTS** installed. In the section below you can find a full list of software pre-installed on the image.
-
-> Once AppVeyor for Linux is generally available the configuration of build worker VMs can change.
-
 To run your build on `ubuntu` image either add the following line to your `appveyor.yml`:
 
     image: ubuntu
@@ -48,8 +42,6 @@ To run your build on `ubuntu` image either add the following line to your `appve
 or if you don't use `appveyor.yml` select `ubuntu` image on **Environment** tab of AppVeyor project settings.
 
 > You can also put project configuration in `.appveyor.yml` dot-file in the root of your repo. AppVeyor searches repo for `appveyor.yml` first and then for `.appveyor.yml`.
-
-When a new build is enqueued for `ubuntu` image it will take around 2-3 minutes to provision and boot a fresh VM for your build as during the beta `ubuntu` builds are running on Google Compute Cloud with no pre-heated instances. Please check [Build environment](https://www.appveyor.com/docs/build-environment/#build-clouds) article for more information about build clouds and their characteristics.
 
 ## Build configuration basics
 
