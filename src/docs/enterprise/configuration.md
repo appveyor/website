@@ -136,6 +136,7 @@ AppVeyor can be configured to run builds in any of the following clouds:
 
 * [Microsoft Azure](/docs/enterprise/running-builds-on-azure/)
 * [Google Compute Cloud](/docs/enterprise/running-builds-on-gce/)
+* [AWS](/docs/enterprise/running-builds-on-aws/)
 * [Hyper-V](/docs/enterprise/running-builds-on-hyper-v/)
 * [Local process](/docs/enterprise/running-builds-as-local-process/)
 
