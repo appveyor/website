@@ -187,7 +187,7 @@ build: off
 
 ### "test" phase
 
-Test phase could be either your own scrips, be enabled to discover and test .NET COre project(s) or be turned off.
+Test phase could be either your own scripts, be enabled to discover and test .NET COre project(s) or be turned off.
 
 For your own scripts use `test_script` section, for example:
 
