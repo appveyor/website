@@ -96,7 +96,7 @@ for:
   -
     matrix:
       only:
-        - platform: Ubuntu
+        - image: Ubuntu
           my_var4: value4
       pull_requests:
         do_not_increment_build_number: true # this setting is ignored
