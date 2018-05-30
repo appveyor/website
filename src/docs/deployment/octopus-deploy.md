@@ -25,7 +25,7 @@ The following tweak environment variables can be used to customize automatic pac
 
 * `OCTOPUS_PACKAGE_NUGET` - set to `true` to package in Nuget format, default is `Zip`.
 * `OCTOPUS_PACKAGE_VERSION` - customize package version. default is AppVeyor build version. Environment variable can be used here.
-* `OCTOPUS_PACKAGE_ADVANCED` - pass additional options to `octo.exe push`.
+* `OCTOPUS_PACKAGE_ADVANCED` - pass additional options to `octo.exe pack`.
 
 ### Custom packaging
 
