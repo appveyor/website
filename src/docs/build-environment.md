@@ -279,10 +279,10 @@ You can use those images to unblock your builds while we are working together wi
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.16.2 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.17.1 (2) (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage (LFS) 2.4.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage (Git LFS) 2.4.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Mercurial 4.1.1 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -348,7 +348,8 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017</th>
     </tr>
-    <tr><td>Visual Studio Community 2017 version 15.7.1</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.7.3</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.8 Preview 2 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 15.5.2 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -405,7 +406,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>Azure SDK 2.9.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Azure SDK 2.9.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Azure SDK 3.0</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Microsoft Azure Storage Emulator 5.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Azure Storage Emulator 5.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure PowerShell 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure CLI 2.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>DocumentDB Emulator 1.13.58.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -414,7 +415,19 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <th id="xamarin" class="section" colspan="4">Xamarin</th>
     </tr>
-    <tr><td>Xamarin 4.8.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Xamarin 4.8</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Xamarin 4.10</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 4.4 (KitKat) API level 19</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 5.0 (Lollipop) API level 21</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 5.1 (Lollipop) API level 22</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 6.0 (Marshmallow) API level 23</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 7.0 (Nougat) API level 24</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 7.1 (Nougat) API level 25</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 8.0.0 (Oreo) API level 26</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 8.1.0 (Oreo) API level 27</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Android NDK r10e (<code>C:\ProgramData\Microsoft\AndroidNDK64\android-ndk-r10e</code>)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Android NDK r11c (<code>C:\ProgramData\Microsoft\AndroidNDK64\android-ndk-r11c</code>)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Android NDK r17 (<code>C:\ProgramData\Microsoft\AndroidNDK64\android-ndk-r17</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- .NET Framework -->
     <tr>
         <th id="net-framework" class="section" colspan="4">.NET Framework</th>
@@ -435,6 +448,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>.NET Core 2.0.3 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.0.5 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.0.6 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.1.0 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003121</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003131</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003156</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -453,6 +467,8 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>.NET Core SDK 2.1.104</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.105</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.200</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.201</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.300</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 1.0.4 &amp; 1.1.1 - Windows Server Hosting</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
@@ -483,9 +499,9 @@ You can use those images to unblock your builds while we are working together wi
         <td>
             <p><code>8.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 10.0.0 - 10.1.0 (x86 and x64) - use <code>Current</code> alias for latest <code>10.x</code> release</li>
+                <li>Node.js 10.0.0 - 10.3.0 (x86 and x64) - use <code>Current</code> alias for latest <code>10.x</code> release</li>
                 <li>Node.js 9.0.0 - 9.11.1 (x86 and x64)</li>
-                <li>Node.js 8.0.0 - 8.11.1 (x86 and x64) - default on build workers; use <code>LTS</code> alias for latest <code>8.x</code> release</li>
+                <li>Node.js 8.0.0 - 8.11.2 (x86 and x64) - default on build workers; use <code>LTS</code> alias for latest <code>8.x</code> release</li>
                 <li>Node.js 7.0.0 - 7.10.1 (x86 and x64)</li>
                 <li>Node.js 6.0.0 - 6.14.2 (x86 and x64)</li>
                 <li>Node.js 4.0.0 - 4.9.1 (x86 and x64)</li>
@@ -725,6 +741,46 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
+            <li>Qt 5.11.0: <code>C:\Qt\5.11.0</code> (<code>C:\Qt\5.11</code> mapped to <code>C:\Qt\5.11.0</code> for backward compatibility)
+                <ul>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.11.0\msvc2017_64</code></li>
+                <li>WinRT ARM v7: <code>C:\Qt\5.11.0\winrt_armv7_msvc2017</code></li>
+                <li>WinRT 32-bit: <code>C:\Qt\5.11.0\winrt_x86_msvc2017</code></li>
+                <li>WinRT 64-bit: <code>C:\Qt\5.11.0\winrt_x64_msvc2017</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.11.0: <code>C:\Qt\5.11.0</code> (<code>C:\Qt\5.11</code> mapped to <code>C:\Qt\5.11.0</code> for backward compatibility)
+                <ul>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.11.0\mingw53_32</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.11.0\msvc2015</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.11.0: <code>C:\Qt\5.11.0</code> (<code>C:\Qt\5.11</code> mapped to <code>C:\Qt\5.11.0</code> for backward compatibility)
+                <ul>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.11.0\msvc2015_64</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
             <li>Qt 5.10.1: <code>C:\Qt\5.10.1</code> (<code>C:\Qt\5.10</code> mapped to <code>C:\Qt\5.10.1</code> for backward compatibility)
                 <ul>
                 <li>msvc2017 64-bit: <code>C:\Qt\5.10.1\msvc2017_64</code></li>
@@ -868,7 +924,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>curl 7.55.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 16.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.11.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.11.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 4.3.0</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>NuGet 4.6.2</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -881,7 +937,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>InnoSetup 5.5.9 (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Yarn 1.5.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>vcpkg 0.0.110</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>vcpkg 0.0.113</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Octo 4.31.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Test runners -->
     <tr>
