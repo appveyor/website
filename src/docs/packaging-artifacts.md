@@ -200,16 +200,41 @@ deploy:
   secret_access_key:
     secure: <encrypted-access-key-secret>
   bucket: <your-bucket>
-  folder: /$(APPVEYOR_PROJECT_SLUG)/$(APPVEYOR_BUILD_VERSION)
+  folder: $(APPVEYOR_PROJECT_SLUG)/$(APPVEYOR_BUILD_VERSION)
 ```
 
 Sensitive deployment parameters can be encrypted with [Encrypt data tool](https://ci.appveyor.com/tools/encrypt).
 
+> Note how variables are used in `folder` parameter - this allows reusing YAML snippet across mulitple projects while making sure project artifacts are copied to separate folders.
+
 ### Copying artifacts of the finished builds to an external storage
 
-[TBD]
+You can use [Environments](https://ci.appveyor.com/environments) deployment to export (deploy) existing artifacts.
 
+In the example below we will setup Azure Blob Storage account to copy artifact to.
+
+Go to [Environments](https://ci.appveyor.com/environments) page and click **New environment** button.
+
+Select **Azure Blob Storage** provider and fill the settings:
+
+* Environment name: `Artifacts archive`
+* Storage account name: `<azure-storage-account-name>`
+* Storage access key: `<azure-storage-access-key>`
+* Container name: `my-artifacts`
+* Folder: `$(APPVEYOR_PROJECT_SLUG)/latest`
+
+Click **Add environment** button to save the changes.
+
+Now go to the project build details which artifacts you'd like to export and click **Deploy** button.
+
+Select **Artifacts archive** environment and click **Deploy**.
+
+Repeat deployment for other projects/builds.
 
 ### Re-build last successful commit
 
-[TBD]
+If the artifact was already expired and removed by AppVeyor you can re-run previous build and produce the artifact again.
+
+To re-build certain commit open project history page and go to the build details of required build.
+
+Click **Re-build commit** button.
