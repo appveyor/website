@@ -588,6 +588,7 @@ Here is a list of settings which **will be ignored** if placed under `for.matrix
 * any other matrix settings like `allow_failures`, `exclude` and `fast_finish`
 * another `for` construct
 * `pull_requests.do_not_increment_build_number`
+* `max_jobs`
 * all [commit filtering settings](/docs/how-to/filtering-commits)
 * `nuget.account_feed/.project_feed/.disable_publish_on_pr`
 
