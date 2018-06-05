@@ -172,3 +172,69 @@ Downloading an artifact from any successful/failed/cancelled build of any branch
 Downloading an artifact from the last successful non-PR build of any branch:
 
     https://ci.appveyor.com/api/projects/johnsmith/myproject/artifacts/bin/debug.zip?pr=false
+
+
+## Artifacts retention policy
+
+Artifacts storage within AppVeyor is more properly regarded as an intermediary step in the deployment process, rather than an archival storage solution.
+
+AppVeyor implements an artifacts retention policy for both private and public projects:
+
+* Artifacts older than 6 months are permanently removed from AppVeyor artifact storage.
+* NuGet packages on both project and accounts feeds are not affected by the policy.
+
+> It's the responsibility of project maintainers to copy critical artifacts that may be useful after 6 months to external storage.
+
+### Copying artifacts to external storage during the build
+
+You can configure [inline](/docs/deployment/#overview) (run during the build) deployment to copy artifacts
+to your own [FTP](/docs/deployment/ftp/), [Azure](/docs/deployment/azure-blob/), [S3](/docs/deployment/amazon-s3/), [Bintray](/docs/deployment/bintray/) or [GitHub Releases](/docs/deployment/github/) storage.
+
+For example, to copy *all artifacts* from the running build to Amazon S3 storage, add the following to your `appveyor.yml`:
+
+```yaml
+deploy:
+  provider: S3
+  access_key_id:
+    secure: <encrypted-access-key-id>
+  secret_access_key:
+    secure: <encrypted-access-key-secret>
+  bucket: <your-bucket>
+  folder: $(APPVEYOR_PROJECT_SLUG)/$(APPVEYOR_BUILD_VERSION)
+```
+
+Sensitive deployment parameters can be encrypted with [Encrypt data tool](https://ci.appveyor.com/tools/encrypt).
+
+> Note how variables are used in `folder` parameter - this allows for reusing YAML snippet across mulitple projects while making sure project artifacts are copied to separate folders.
+
+### Copying artifacts of the finished builds to external storage
+
+You can use [Environments](https://ci.appveyor.com/environments) deployment to export (deploy) existing artifacts.
+
+In the example below we will set up an Azure Blob Storage account to copy artifact to.
+
+Go to [Environments](https://ci.appveyor.com/environments) page and click **New environment** button.
+
+Select **Azure Blob Storage** provider and fill the settings:
+
+* Environment name: `Artifacts archive`
+* Storage account name: `<azure-storage-account-name>`
+* Storage access key: `<azure-storage-access-key>`
+* Container name: `my-artifacts`
+* Folder: `$(APPVEYOR_PROJECT_SLUG)/latest`
+
+Click **Add environment** button to save the changes.
+
+Now go to the project build page for the build whose artifacts you'd like to export and click **Deploy** button.
+
+Select **Artifacts archive** environment and click **Deploy**.
+
+Repeat deployment for other projects/builds.
+
+### Re-build last successful commit
+
+If the artifact was already expired and removed by AppVeyor you can re-run previous build and produce the artifact again.
+
+To re-build certain commit open the project history page and go to the build details of required build.
+
+Click **Re-build commit** button.
