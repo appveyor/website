@@ -176,6 +176,8 @@ Downloading an artifact from the last successful non-PR build of any branch:
 
 ## Artifacts retention policy
 
+> Artifacts retention policy is effective as of June 17th, 2018.
+
 Artifacts storage within AppVeyor is more properly regarded as an intermediary step in the deployment process, rather than an archival storage solution.
 
 AppVeyor implements an artifacts retention policy for both private and public projects:
