@@ -164,10 +164,8 @@ You can use the `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, 
 - provider: Environment
   name: production
   on:
-    APPVEYOR_REPO_TAG: true # keep casing as in this sample for Linux builds (Linux environment variables are case-sensitive)
+    APPVEYOR_REPO_TAG: true # keep casing this way for Linux builds where variables are case-sensitive
 ```
-
-Note that 
 
 However, please note that in case of **annotated** tag, `branch` and `appveyor_repo_tag` are mutually exclusive. This is because, for webhook created as a result of **annotated** tag, there is no practical reliable way to recognize what branch the tag was created from. Therefore with this setting deployment will happen only for the master branch:
 
