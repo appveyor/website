@@ -437,12 +437,22 @@ The following software is pre-installed on `Ubuntu` image:
     * .NET Core Runtime 2.0.3
     * .NET Core Runtime 2.0.4
     * .NET Core Runtime 2.0.5
+    * .NET Core Runtime 2.0.6
+    * .NET Core Runtime 2.0.7
+    * .NET Core Runtime 2.1
     * .NET Core 2.0.0 SDK
     * .NET Core 2.0.2 SDK
     * .NET Core 2.0.3 SDK
     * .NET Core 2.1.2 SDK
     * .NET Core 2.1.3 SDK
     * .NET Core 2.1.4 SDK
+    * .NET Core 2.1.101 SDK
+    * .NET Core 2.1.103 SDK
+    * .NET Core 2.1.104 SDK
+    * .NET Core 2.1.105 SDK
+    * .NET Core 2.1.200 SDK
+    * .NET Core 2.1.201 SDK
+    * .NET Core 2.1 SDK
 * Mono
     * Mono 5.12
     * Visual C# compiler csc 2.6.0
@@ -472,8 +482,9 @@ The following software is pre-installed on `Ubuntu` image:
 * Java
     * openJDK 7 1.7.0_95
     * openJDK 8 1.8.0_151
-    * openJDK 9 9-internal
+    * openJDK 9 9.0.4
     * openJDK 10 (2018-03-20)
+    * openJDK 11-ea+16
 * Go (Golang)
     * Go 1.4
     * Go 1.7
