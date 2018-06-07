@@ -409,8 +409,8 @@ The following software is pre-installed on `Ubuntu` image:
 * Operating system
     * Ubuntu Server 16.04.4 LTS
 * Source control systems
-    * git 2.16.2
-    * git LFS 2.4.0
+    * git 2.17.1
+    * git LFS 2.4.2
     * mercurial 4.4.1
     * subversion 1.9.3
 * Build tools
@@ -420,7 +420,7 @@ The following software is pre-installed on `Ubuntu` image:
     * gradle 2.10-1
     * make 4.1-6
     * maven 3.3.9-3
-    * cmake 3.11.0-rc3
+    * cmake 3.11.3
 * Node.js
     * Node.JS (system) 6.14.2
     * Nodejs v4.9.1
@@ -484,20 +484,20 @@ The following software is pre-installed on `Ubuntu` image:
 * Databases and Services
     * MySQL 5.7.22
     * PostgreSQL 10+190
-    * SQL Server 2017 14.0.3025.34-3
+    * SQL Server 2017 14.0.3026.27-2
     * MongoDB 3.2.20
     * Redis 4.0.8
     * RabbitMQ 3.6.15-1
 * Erlang
     * Erlang
 * Tools
-    * yarn 1.6.0
+    * yarn 1.7.0
     * p7zip 16.02
     * tcl 8.6.0+9
     * wget 1.17.1
     * curl 7.47.0
-    * awscli 1.15.16
-    * localstack 0.8.6
-    * azure-cli 2.0.32
-    * packer 1.2.2
+    * awscli 1.15.33
+    * localstack 0.8.6.2
+    * azure-cli 2.0.34
+    * packer 1.2.3
 
