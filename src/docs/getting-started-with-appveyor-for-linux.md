@@ -409,8 +409,8 @@ The following software is pre-installed on `Ubuntu` image:
 * Operating system
     * Ubuntu Server 16.04.4 LTS
 * Source control systems
-    * git 2.16.2
-    * git LFS 2.4.0
+    * git 2.17.1
+    * git LFS 2.4.2
     * mercurial 4.4.1
     * subversion 1.9.3
 * Build tools
@@ -420,7 +420,7 @@ The following software is pre-installed on `Ubuntu` image:
     * gradle 2.10-1
     * make 4.1-6
     * maven 3.3.9-3
-    * cmake 3.11.0-rc3
+    * cmake 3.11.3
 * Node.js
     * Node.JS (system) 6.14.2
     * Nodejs v4.9.1
@@ -437,12 +437,22 @@ The following software is pre-installed on `Ubuntu` image:
     * .NET Core Runtime 2.0.3
     * .NET Core Runtime 2.0.4
     * .NET Core Runtime 2.0.5
+    * .NET Core Runtime 2.0.6
+    * .NET Core Runtime 2.0.7
+    * .NET Core Runtime 2.1
     * .NET Core 2.0.0 SDK
     * .NET Core 2.0.2 SDK
     * .NET Core 2.0.3 SDK
     * .NET Core 2.1.2 SDK
     * .NET Core 2.1.3 SDK
     * .NET Core 2.1.4 SDK
+    * .NET Core 2.1.101 SDK
+    * .NET Core 2.1.103 SDK
+    * .NET Core 2.1.104 SDK
+    * .NET Core 2.1.105 SDK
+    * .NET Core 2.1.200 SDK
+    * .NET Core 2.1.201 SDK
+    * .NET Core 2.1 SDK
 * Mono
     * Mono 5.12
     * Visual C# compiler csc 2.6.0
@@ -472,8 +482,9 @@ The following software is pre-installed on `Ubuntu` image:
 * Java
     * openJDK 7 1.7.0_95
     * openJDK 8 1.8.0_151
-    * openJDK 9 9-internal
+    * openJDK 9 9.0.4
     * openJDK 10 (2018-03-20)
+    * openJDK 11-ea+16
 * Go (Golang)
     * Go 1.4
     * Go 1.7
@@ -484,20 +495,20 @@ The following software is pre-installed on `Ubuntu` image:
 * Databases and Services
     * MySQL 5.7.22
     * PostgreSQL 10+190
-    * SQL Server 2017 14.0.3025.34-3
+    * SQL Server 2017 14.0.3026.27-2
     * MongoDB 3.2.20
     * Redis 4.0.8
     * RabbitMQ 3.6.15-1
 * Erlang
     * Erlang
 * Tools
-    * yarn 1.6.0
+    * yarn 1.7.0
     * p7zip 16.02
     * tcl 8.6.0+9
     * wget 1.17.1
     * curl 7.47.0
-    * awscli 1.15.16
-    * localstack 0.8.6
-    * azure-cli 2.0.32
-    * packer 1.2.2
+    * awscli 1.15.33
+    * localstack 0.8.6.2
+    * azure-cli 2.0.34
+    * packer 1.2.3
 
