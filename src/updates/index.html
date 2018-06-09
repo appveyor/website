@@ -10,7 +10,7 @@ paginate:
 
 {% for post in paginator.updates %}
     <h1 class="blog-post-title">
-        <a href="{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a>
+        <a href="{{ post.url }}">{{ post.title }}</a>
     </h1>
 
     <div class="post-index-content">
