@@ -156,6 +156,7 @@ Other settings:
 * `app_offline` - places app_offline.htm page into the root of web application before sync to take app offline and then remove the page when deployment has finished.
 * `group` - Deployment group.
 * `deploy_order` - Optional. Allows changing the deployment order of artifacts. Artifacts are deployed in ascending order. Deployment order is set to `0` if not specified.
+* `skip_acl` - Optional. If `true`, deployment agent skips step of setting ACLs on site folder for application pool account (can be time consuming for large sites).
 
 When deploying web app from Web Deploy package you can use
 [Web Deploy parametrization](/docs/deployment/web-deploy#web-deploy-parametrization)
