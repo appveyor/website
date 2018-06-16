@@ -27,7 +27,8 @@ The following is required on the server to run Deployment Agent:
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
 2. Download AppVeyor Deployment Agent (.msi)
-    * [**AppVeyor Deployment Agent - latest** (v5.3.0)]({{ site.url }}/downloads/deployment-agent/latest/AppveyorDeploymentAgent.msi)
+    * [**AppVeyor Deployment Agent - latest** (v5.5.0)]({{ site.url }}/downloads/deployment-agent/latest/AppveyorDeploymentAgent.msi)
+    * [AppVeyor Deployment Agent v5.5.0]({{ site.url }}/downloads/deployment-agent/5.5.0/AppveyorDeploymentAgent.msi)
     * [AppVeyor Deployment Agent v5.3.0]({{ site.url }}/downloads/deployment-agent/5.3.0/AppveyorDeploymentAgent.msi)
     * [AppVeyor Deployment Agent v5.0.8]({{ site.url }}/downloads/deployment-agent/5.0.8/AppveyorDeploymentAgent.msi)
     * [AppVeyor Deployment Agent v3.52.0]({{ site.url }}/downloads/deployment-agent/3.52.0/AppveyorDeploymentAgent.msi)
@@ -155,6 +156,7 @@ Other settings:
 * `app_offline` - places app_offline.htm page into the root of web application before sync to take app offline and then remove the page when deployment has finished.
 * `group` - Deployment group.
 * `deploy_order` - Optional. Allows changing the deployment order of artifacts. Artifacts are deployed in ascending order. Deployment order is set to `0` if not specified.
+* `skip_acl` - Optional. If `true`, deployment agent skips step of setting ACLs on site folder for application pool account (can be time consuming for large sites).
 
 When deploying web app from Web Deploy package you can use
 [Web Deploy parametrization](/docs/deployment/web-deploy#web-deploy-parametrization)
