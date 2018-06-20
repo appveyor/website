@@ -256,16 +256,14 @@ You can use those images to unblock your builds while we are working together wi
         <td>
         <ul>
             <li>
-                Docker 17.06.1-ee-2 for Windows Containers with base images:
+                Docker CE 18.05.0-ce for Windows and Linux with base images:
                 <ul>
-                    <li>microsoft/windowsservercore:10.0.14393.2007<ul>
-                        <li>digest: microsoft/windowsservercore@sha256:ebdf8f069e8941803a19bb3da4d70070c9d3b2f77c38476a9132022bab6e59a0</li></ul></li>
-                    <li>microsoft/windowsservercore:10.0.14393.1944<ul>
-                        <li>digest: microsoft/windowsservercore@sha256:f01583c072c043aa3588da03fb0aef1273342e56aee6ab07bc4693a7d93b2de1</li></ul></li>
-                    <li>microsoft/nanoserver:10.0.14393.2007<ul>
-                        <li>digest: microsoft/nanoserver@sha256:3d2948c5af9f4bece59b13f199f5bec59d6dc4930fb15aa9b6a223d2ea8d8471</li></ul></li>
-                    <li>microsoft/nanoserver:10.0.14393.1944<ul>
-                        <li>digest: microsoft/nanoserver@sha256:3331d7e40d93e8a3ea617450701a4f6550c699a673348b82fdc6fc01b9c44500</li></ul></li>
+                    <li>microsoft/windowsservercore@sha256:c06b4bfaf634215ea194e6005450740f3a230b27c510cf8facab1e9c678f3a99</li>
+                    <li>microsoft/nanoserver@sha256:8f78a4a7da4464973a5cd239732626141aec97e69ba3e4023357628630bc1ee2</li>
+                    <li>microsoft/aspnet@sha256:7cdafe834e1c08ed880cd54183ba33d4760c8b19e651ef1cbff0cf3118684e88</li>
+                    <li>microsoft/dotnet@sha256:7e6a3e8272ce3dee0c091bcb78d784b19e0925cf6e61b23b70dc17772580643f</li>
+                    <li>microsoft/aspnetcore@sha256:5f964756fae50873c496915ad952b0f15df8ef985e4ac031d00b7ac0786162d0</li>
+                    <li>microsoft/aspnetcore-build@sha256:1e4043c2484157e029d6b09a3149ebd01c5122f6b62f0a1b6c6f54b90500ea4b</li>
                 </ul>
             </li>
         </ul>
