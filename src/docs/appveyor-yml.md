@@ -232,7 +232,7 @@ build_script:
 #       tests configuration       #
 #---------------------------------#
 
-# to run tests again only selected assemblies and/or categories
+# to run tests against only selected assemblies and/or categories
 test:
   assemblies:
     only:
@@ -244,7 +244,7 @@ test:
       - UI
       - E2E
 
-# to run tests again all except selected assemblies and/or categories
+# to run tests against all except selected assemblies and/or categories
 #test:
 #  assemblies:
 #    except:
