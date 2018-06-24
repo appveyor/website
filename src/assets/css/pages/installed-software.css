@@ -24,14 +24,14 @@ table.software-list td.no {
 }
 
 table.software-list th.rotate {
-    height: 140px;
+    height: 145px;
     white-space: nowrap;
 }
 
 table.software-list th.rotate > span {
     display: block;
-    padding: 0 5px;
-    transform: translate(0, 51px) rotate(270deg);
+    padding: 5px 0 5px;
+    transform: translate(0, 52px) rotate(270deg);
     width: 30px;
 }
 
