@@ -30,7 +30,7 @@ table.software-list th.rotate {
 
 table.software-list th.rotate > span {
     display: block;
-    padding: 5px 0 5px;
+    padding: 5px 0 5px 5px;
     transform: translate(0, 52px) rotate(270deg);
     width: 30px;
 }
