@@ -207,7 +207,7 @@ deploy:
 
 Sensitive deployment parameters can be encrypted with [Encrypt data tool](https://ci.appveyor.com/tools/encrypt).
 
-> Note how variables are used in `folder` parameter - this allows for reusing YAML snippet across mulitple projects while making sure project artifacts are copied to separate folders.
+> Note how variables are used in `folder` parameter - this allows for reusing YAML snippet across multiple projects while making sure project artifacts are copied to separate folders.
 
 ### Copying artifacts of the finished builds to external storage
 
