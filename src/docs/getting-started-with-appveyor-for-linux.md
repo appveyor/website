@@ -422,13 +422,13 @@ The following software is pre-installed on `Ubuntu` image:
     * maven 3.3.9-3
     * cmake 3.11.3
 * Node.js
-    * Node.JS (system) 6.14.2
+    * Node.JS (system) 6.14.3
     * Nodejs v4.9.1
     * Nodejs v5.12.0
-    * Nodejs v6.14.2
+    * Nodejs v6.14.3
     * Nodejs v7.10.1
-    * Nodejs v8.11.1
-    * Nodejs v9.11.1
+    * Nodejs v8.11.3
+    * Nodejs v9.11.2
     * NVM
 * PowerShell
     * PowerShell Core 6.0.2
@@ -478,7 +478,7 @@ The following software is pre-installed on `Ubuntu` image:
     * Python 3.6.4
     * Python 3.7.0
     * virtualenv 15.0.1
-    * pip 10.0.0
+    * pip 10.0.1
 * Java
     * openJDK 7 1.7.0_95
     * openJDK 8 1.8.0_151
@@ -495,7 +495,7 @@ The following software is pre-installed on `Ubuntu` image:
 * Databases and Services
     * MySQL 5.7.22
     * PostgreSQL 10+190
-    * SQL Server 2017 14.0.3026.27-2
+    * SQL Server 2017 14.0.3029.16-1
     * MongoDB 3.2.20
     * Redis 4.0.8
     * RabbitMQ 3.6.15-1
@@ -507,8 +507,8 @@ The following software is pre-installed on `Ubuntu` image:
     * tcl 8.6.0+9
     * wget 1.17.1
     * curl 7.47.0
-    * awscli 1.15.33
-    * localstack 0.8.6.2
-    * azure-cli 2.0.34
+    * awscli 1.15.49
+    * localstack 0.8.7
+    * azure-cli 2.0.38
     * packer 1.2.3
 
