@@ -619,7 +619,7 @@ You can use those images to unblock your builds while we are working together wi
                 <li>Python 3.6.6 x86 (<code>C:\Python36</code>)</li>
                 <li>Python 3.6.6 x64 (<code>C:\Python36-x64</code>)</li>
                 <li>Python 3.7.0 x86 (<code>C:\Python37</code>)</li>
-                <li>Python 3.7.0 x64 (<code>C:\Python37-x64</code>)</li>                
+                <li>Python 3.7.0 x64 (<code>C:\Python37-x64</code>)</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
