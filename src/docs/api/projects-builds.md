@@ -904,7 +904,7 @@ Request body (`application/json`):
       "name":"api_key",
       "value":{
          "isEncrypted":true,
-         "value":"very-secret-key-in-clear-text"
+         "value":"very-secret-key-encrypted"
       }
    },
    {
