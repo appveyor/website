@@ -288,6 +288,14 @@ $wc.UploadFile("https://ci.appveyor.com/api/testresults/xunit/$($env:APPVEYOR_JO
 
 XML files must be uploaded as `multipart/form-data`.
 
+The following example illustrates how you can collect all JUnit test results and upload them using `bash`, `find` and `curl`:
+
+```yaml
+on_finish:
+  - sh: |
+      find "$APPVEYOR_BUILD_FOLDER" -type f -name 'TEST*.xml' -print0 | xargs -0 -I '{}' curl -F 'file=@{}' "https://ci.appveyor.com/api/testresults/junit/$APPVEYOR_JOB_ID"
+```
+
 See also:
 
 * [Parallel testing](/docs/parallel-testing/)
