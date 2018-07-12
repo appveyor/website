@@ -348,7 +348,7 @@ You can use those images to unblock your builds while we are working together wi
         <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017</th>
     </tr>
     <tr><td>Visual Studio Community 2017 version 15.7.5</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Visual Studio Community 2017 version 15.8 Preview 3 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.8 Preview 4 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 15.5.2 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
