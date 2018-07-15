@@ -10,7 +10,7 @@ AppVeyor Bintray deployment provider uploads all or selected artifacts to [Bintr
 ## Provider settings
 
 * **Bintray username** (`username`) - your Bintray account name.
-* **Bintray API key** (`api_key`) - AWS secret access key.
+* **Bintray API key** (`api_key`) - Bintray API key from your [profile page](https://bintray.com/profile/edit)
 * **Subject** (`subject`) - your Bintray account name.
 * **Repository** (`repo`) - name of repository to upload artifacts to. Only "Generic" repositories are supported at the moment.
 * **Package** (`package`) - name of package to upload artifacts to. Deployment will fail if specified package does not exists.
