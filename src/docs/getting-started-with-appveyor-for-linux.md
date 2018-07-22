@@ -461,12 +461,12 @@ The following software is pre-installed on `Ubuntu` image:
 * Ruby
     * Ruby 2.0.0-p648
     * Ruby 2.1.10
-    * Ruby 2.2.7
-    * Ruby 2.3.4
-    * Ruby 2.4.1
+    * Ruby 2.2.10
+    * Ruby 2.3.7
+    * Ruby 2.4.4
     * Ruby 2.5.0
     * Ruby HEAD 2.6.0dev
-    * RVM 1.29.3
+    * RVM 1.29.4
 * Docker
     * Docker 18.03.1
 * Python
@@ -507,8 +507,8 @@ The following software is pre-installed on `Ubuntu` image:
     * tcl 8.6.0+9
     * wget 1.17.1
     * curl 7.47.0
-    * awscli 1.15.49
+    * awscli 1.15.53
     * localstack 0.8.7
-    * azure-cli 2.0.38
+    * azure-cli 2.0.41
     * packer 1.2.3
 
