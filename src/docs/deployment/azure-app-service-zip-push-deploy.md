@@ -25,7 +25,7 @@ Please use deployment credentials you can set in Azure Portal. Optionally you ca
 * **Deployment credentials username** (`username`) - Username from deployment credentials you can set in Azure Portal. Optionally you can use username and password from downloaded website publishing profile XML, but this will not work transparently with deployment slots.
 * **Deployment credentials password** (`password`) - Password from deployment credentials you can set in Azure Portal. As said earlier you can use credentials from downloaded website publishing profile XML, but this will not work transparently with deployment slots.
 * **Artifact(s) to deploy** (`artifact`) - Optional. Artifact "deployment name" or filename to push.
-* **Async deployment** (`async_deploy`) - Optional. Deployment finished as soon as the file is uploaded. URL that can be queried for realtime deployment status will be returned.
+* **Async deployment** (`async_deploy`) - Optional. When selected in UI or set to `true` in YAML, deployment finished as soon as the file is uploaded. URL that can be queried for realtime deployment status will be returned.
 * **Retry attempts** (`retry_attempts`) - Optional. Specifies the number of times the provider will retry after a failure. The default number of retries is 0.
 * **Retry interval** (`retry_interval`) - Optional. Specifies, in milliseconds, the interval between provider retry attempts. The default is 1000 (one second).
 
