@@ -71,17 +71,18 @@ Private build clouds are available to customers with [Premium plan](/pricing/) a
 
 ## IP addresses
 
-IP addresses assigned to build workers:
+IP addresses assigned to build VMs in Google data center (`us-central1` region):
 
-    74.205.54.20
     104.197.110.30
     104.197.145.181
-    146.148.85.29
-    67.225.139.254
-    67.225.138.82
-    67.225.139.144
 
-IP address of AppVeyor workers (when deploying from "Environments"):
+IP addresses assigned to build VMs in LiquidWeb data center (Lansing, MI - [contact us](mailto:team@appveyor.com) for detailed list of IPs):
+
+    67.225.128.0/17
+    67.227.128.0/17
+    72.52.128.0/17
+
+IP address of AppVeyor Cloud in Azure data center (`West US` region) - when deploying with "Environments":
 
     138.91.141.243
 
