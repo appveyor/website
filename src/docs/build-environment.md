@@ -76,7 +76,7 @@ IP addresses assigned to build VMs in Google data center (`us-central1` region):
     104.197.110.30
     104.197.145.181
 
-IP addresses assigned to build VMs in LiquidWeb data center (Lansing, MI - [contact us](mailto:team@appveyor.com) for detailed list of IPs):
+IP addresses assigned to build VMs in LiquidWeb data center (Lansing, MI):
 
     67.225.138.82
     67.225.139.18
