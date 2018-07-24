@@ -22,7 +22,7 @@ AppVeyor runs builds on two build clouds:
 
 ### Hyper-V
 
-Hyper-V cloud is a primary build cloud hosted in RackSpace's San Antonio, TX data center.
+Hyper-V cloud is a primary build cloud hosted in LiquidWeb's Lansing, Michigan data center.
 It is a pool of pre-heated virtual machines, so, generally, builds start faster on Hyper-V cloud.
 
 ### Google Compute Engine
