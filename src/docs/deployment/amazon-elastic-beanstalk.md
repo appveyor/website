@@ -47,7 +47,7 @@ deploy:
   secret_access_key:
     secure:
   application_name: myEbApp
-  environment_name: myEbAbb-env
+  environment_name: myEbApp-env
   region: us-east-1
   healthcheck: /Home
   max_error_retry: 2
