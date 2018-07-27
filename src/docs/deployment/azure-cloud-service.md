@@ -88,7 +88,7 @@ To generate certificate on your developer machine you will need [OpenSSL](https:
 Open PowerShell and run the following commands:
 
 ```posh
-# generate new certificate and export in in both PFX and CER formats
+# generate new certificate and export it in both PFX and CER formats
 $cert = New-SelfSignedCertificate -DnsName management.azure.cloudapp.net -CertStoreLocation "cert:\LocalMachine\My" -KeyLength 2048 -KeySpec "KeyExchange"
 $password = ConvertTo-SecureString -String "Password12" -Force -AsPlainText
 Export-PfxCertificate -Cert $cert -FilePath ".\azure-manage-cert.pfx" -Password $password
