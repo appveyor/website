@@ -118,7 +118,7 @@ install:
 - ps: $env:MY_VAR
 ```
 
-> Environment variable names are cass-sensitive on Linux platform.
+> Environment variable names are case-sensitive on Linux platform.
 
 ### Premature termination of the build process
 
