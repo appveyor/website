@@ -70,7 +70,7 @@ The form requires 3 prerequisites:
 
 ## Subscription details
 
-[Download Azure account publishing profile](https://manage.windowsazure.com/publishsettings/Index?client=vs&amp;SchemaVersion=1.0) and open it in text editor. Copy subscription ID and Base64 encoded subscription certificate.
+[Download Azure account publishing profile](http://go.microsoft.com/fwlink/?LinkID=294709) and open it in text editor. Copy subscription ID and Base64 encoded subscription certificate.
 
 ![Certificate](/assets/img/posts/azure-cs-ci/certificate.png)
 
