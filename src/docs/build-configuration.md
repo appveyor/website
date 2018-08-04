@@ -26,11 +26,11 @@ Every build goes through the following steps:
 7. Start services
 8. **Build**
     * Run `before_build` scripts
-    * Run msbuild
+    * Run msbuild (or `build_script`)
     * Run `after_build` scripts
 9. **Test**
     * Run `before_test` scripts
-    * Discover and run tests
+    * Discover and run tests (or `test_script`)
     * Run `after_test` scripts
 10. Call `build_success` webhooks
 11. **Package** artifacts

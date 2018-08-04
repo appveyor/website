@@ -199,6 +199,8 @@ configuration: Release
 #  - Debug
 #  - Release
 
+# Build settings, not to be confused with "before_build" and "after_build".
+# "project" is relative to the original build directory and not influenced by directory changes in "before_build".
 build:
   parallel: true                  # enable MSBuild parallel builds
   project: MyTestAzureCS.sln      # path to Visual Studio solution or project
@@ -216,14 +218,14 @@ build:
 # scripts to run before build
 before_build:
 
-# scripts to run *after* solution is built and *before* automatic packaging occurs (web apps, NuGet packages, Azure Cloud Services)
-before_package:
-
-# scripts to run after build
-after_build:
-
 # to run your custom scripts instead of automatic MSBuild
 build_script:
+
+# scripts to run after build (working directory and environment changes are persisted from the previous steps)
+after_build:
+
+# scripts to run *after* solution is built and *before* automatic packaging occurs (web apps, NuGet packages, Azure Cloud Services)
+before_package:
 
 # to disable automatic builds
 #build: off
@@ -263,17 +265,17 @@ test:
 #    - [UI]         # 1st job
 #    - [DAL, BL]    # 2nd job
 
-# scripts to run before tests
+# scripts to run before tests (working directory and environment changes are persisted from the previous steps such as "before_build")
 before_test:
   - echo script1
   - ps: Write-Host "script1"
 
-# scripts to run after tests
-after_test:
-
 # to run your custom scripts instead of automatic tests
 test_script:
   - echo This is my custom test script
+
+# scripts to run after tests
+after_test:
 
 # to disable automatic tests
 #test: off
