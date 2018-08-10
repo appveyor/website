@@ -22,6 +22,8 @@ If you commit a file named msbuild.rsp, The contents of that file will be treate
 
 **Note** that this is a feature of msbuild iteself. While this file will not alter the behavior of Visual Studio triggered builds, it will alter the behavior of calls to msbuild outside of AppVeyor. This behavior can be altered by the `/noautoresponse` or `/noautorsp` switches.
 
+**Also Note** that rsp files are often in `.gitignore` for .NET solutions. Be sure that your response file actually gets commited if you add one locally.
+
 ```text
 #Appveyor msbuild response file
 
