@@ -22,7 +22,7 @@ If you commit a file named msbuild.rsp, The contents of that file will be treate
 
 **Note** that this is a feature of msbuild iteself. While this file will not alter the behavior of Visual Studio triggered builds, it will alter the behavior of calls to msbuild outside of AppVeyor. This behavior can be altered by the `/noautoresponse` or `/noautorsp` switches.
 
-```
+```text
 #Appveyor msbuild response file
 
 # No Banner
