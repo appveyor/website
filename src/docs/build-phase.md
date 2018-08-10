@@ -16,8 +16,26 @@ You may use this logger in your own build scripts.
 
 `<project>` is a Visual Studio project (`*.*proj`) or solution (`*.sln`) file. If project or solution file is not specified on project settings AppVeyor searches for the first occurence of `*.sln` or `*.*proj` file in the build clone directory recursively.
 
-You may configure your own custom build script ("Script" mode) instead of calling MSBuild or disable build phase altogether.
+## Adding additional paramaters to msbuild with a response file
 
+If you commit a file named msbuild.rsp, The contents of that file will be treated as if they were paramaters passed to the msbuild command line. Paramaters can be placed one per line, and the file supports comments.
+
+**Note** that this is a feature of msbuild iteself. While this file will not alter the behavior of Visual Studio triggered builds, it will alter the behavior of calls to msbuild outside of AppVeyor. This behavior can be altered by the `/noautoresponse` or `/noautorsp` switches.
+
+```
+#Appveyor msbuild response file
+
+# No Banner
+/nologo
+# We just want errors displayed
+/ConsoleLoggerParameters:NoSummary;Verbosity=quiet
+# Log to a file and set options
+/filelogger
+/fileloggerparameters:Verbosity=detailed
+/bl
+# uncomment below to also include paramaters from @additionalswitches.rsp
+# @additionalswitches.rsp
+```
 
 ## Automatic packaging of build artifacts
 
