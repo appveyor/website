@@ -409,18 +409,21 @@ The following software is pre-installed on `Ubuntu` image:
 * Operating system
     * Ubuntu Server 16.04.4 LTS
 * Source control systems
-    * git 2.17.1
-    * git LFS 2.4.2
+    * git 2.18.0
+    * git LFS 2.5.1
     * mercurial 4.4.1
     * subversion 1.9.3
 * Build tools
     * ant 1.9.6
     * gcc 4:5.3.1
+    * gcc-5 5.4.0
+    * gcc-7 7.3.0
+    * gcc-8 8.1.0
     * gfortran 5.3.1
     * gradle 2.10-1
     * make 4.1-6
     * maven 3.3.9-3
-    * cmake 3.11.3
+    * cmake 3.12.0
 * Node.js
     * Node.JS (system) 6.14.3
     * Nodejs v4.9.1
@@ -454,9 +457,9 @@ The following software is pre-installed on `Ubuntu` image:
     * .NET Core 2.1.201 SDK
     * .NET Core 2.1 SDK
 * Mono
-    * Mono 5.12
-    * Visual C# compiler csc 2.6.0
-    * Mono C# compiler 5.12.0.226
+    * Mono 5.14.0.177
+    * Visual C# compiler csc 2.7.0.62620
+    * Mono C# compiler 5.14.0.177
     * Mono ASP.NET Web Server xsp4 0.4.0.0
 * Ruby
     * Ruby 2.0.0-p648
@@ -468,14 +471,14 @@ The following software is pre-installed on `Ubuntu` image:
     * Ruby HEAD 2.6.0dev
     * RVM 1.29.4
 * Docker
-    * Docker 18.03.1
+    * Docker 18.06.0
 * Python
-    * Python 2.7.12-1 (system)
-    * Python 3.5.1-3 (system)
-    * Python 2.7.14
+    * Python 2.7.12 (system)
+    * Python 3.5.2 (system)
+    * Python 2.7.15
     * Python 3.4.8
     * Python 3.5.5
-    * Python 3.6.4
+    * Python 3.6.6
     * Python 3.7.0
     * virtualenv 15.0.1
     * pip 10.0.1
@@ -484,31 +487,32 @@ The following software is pre-installed on `Ubuntu` image:
     * openJDK 8 1.8.0_151
     * openJDK 9 9.0.4
     * openJDK 10 (2018-03-20)
-    * openJDK 11-ea+16
+    * openJDK 11-ea+24
 * Go (Golang)
     * Go 1.4
     * Go 1.7
     * Go 1.8
     * Go 1.9
     * Go 1.10
+    * Go 1.11 beta 2
     * Go Version Manager v1.0.22
 * Databases and Services
-    * MySQL 5.7.22
-    * PostgreSQL 10+190
-    * SQL Server 2017 14.0.3029.16-1
+    * MySQL 5.7.23
+    * PostgreSQL 10+192
+    * SQL Server 2017 14.0.3030.27-1
     * MongoDB 3.2.20
-    * Redis 4.0.8
+    * Redis 4.0.11
     * RabbitMQ 3.6.15-1
 * Erlang
     * Erlang
 * Tools
-    * yarn 1.7.0
+    * yarn 1.9.4
     * p7zip 16.02
     * tcl 8.6.0+9
     * wget 1.17.1
     * curl 7.47.0
-    * awscli 1.15.53
+    * awscli 1.15.76
     * localstack 0.8.7
-    * azure-cli 2.0.41
-    * packer 1.2.3
+    * azure-cli 2.0.43
+    * packer 1.2.5
 
