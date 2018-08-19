@@ -20,7 +20,7 @@ title: Running builds on Amazon Web Services
         * Microsoft Windows Server 2012 R2 Base.
     * Choose an Instance Type.
         * **SSD** storage is strondly recommended.
-        * **m3.medium** instance type is minimum recommended.
+        * **m4.large** instance type is minimum recommended.
     * Press **Next: Configure Instance Details** button (not **Review and Launch**).
     * Configure Instance Details. Non-default settings:
         * Subnet: select any specific subnet.
