@@ -2,7 +2,7 @@
 title: 'Update: Bitbucket Pull Requests'
 ---
 
-Pull Requests builds are useful in answering the question “What if this PR merged into target (base) branch”. Feature branch (other terms are `source` or `head` branch) build is not enough to answer this question, because while PR was developed some other commits could be made to the target (base) branch.
+Pull Requests builds are useful in answering the question “What if this PR merged into target (base) branch”. Feature branch (other terms are `source` or `head` branch) build is not enough to answer this question, because while PR was developed some other commits could be made to the `target` (or `base`) branch.
 
 During PR build AppVeyor merges PR with target (source` or `head`) branch safely in transient build environment and runs required build scenario. Scenario itself can be altered in many ways for Pull Requests builds with project settings (like `Pull Requests do not increment build number`) and specific PR-related environment variables (like `APPVEYOR_PULL_Requests_HEAD_REPO_BRANCH`).
 
