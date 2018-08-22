@@ -499,7 +499,7 @@ The following software is pre-installed on `Ubuntu` image:
 * Databases and Services
     * MySQL 5.7.23
     * PostgreSQL 10+192
-    * SQL Server 2017 14.0.3030.27-1
+    * SQL Server 2017 14.0.3035.2-1
     * MongoDB 3.2.20
     * Redis 4.0.11
     * RabbitMQ 3.6.15-1
@@ -511,8 +511,8 @@ The following software is pre-installed on `Ubuntu` image:
     * tcl 8.6.0+9
     * wget 1.17.1
     * curl 7.47.0
-    * awscli 1.15.76
+    * awscli 1.15.83
     * localstack 0.8.7
-    * azure-cli 2.0.43
+    * azure-cli 2.0.44
     * packer 1.2.5
 
