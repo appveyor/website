@@ -74,7 +74,7 @@ Install any additional software required for your builds.
 
 * Login to AppVeyor portal.
 * Navigate to your account name on the top right and select **Build environment** option from drop-down menu
-    * If **Build environment** option is not available, please contact [team@appveyor.com](mailto:team@appveyor.com) and ask to enable **Private build clouds** feature.
+    * If **Build environment** option is not available, please contact [support@appveyor.com](mailto:support@appveyor.com) and ask to enable **Private build clouds** feature.
 * Press **Add cloud**, select cloud type **Amazon EC2**.
 
 **Complete the following mandatory settings**:

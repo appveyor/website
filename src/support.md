@@ -34,7 +34,7 @@ by AppVeyor team and community.
 
 Whether it's a sales question or a support request you can always contact us by email:
 
-[team@appveyor.com](mailto:team@appveyor.com)
+[support@appveyor.com](mailto:support@appveyor.com)
 
 
 ## Technical updates
@@ -72,7 +72,7 @@ You can use `appveyor` tag to [submit your question on StackOverflow](https://st
 ### What are support hours?
 
 We aim to respond on any email inquiry or forum post in 24 hours, but, usually, we respond within 12 hours during our working hours: Monday - Friday 9am - 5pm PST (Vancouver, BC).
-[Contact us](mailto:team@appveyor.com) if you have any concerns or special support requirements.
+[Contact us](mailto:support@appveyor.com) if you have any concerns or special support requirements.
 
 ### What is "Priority technical support" offered with Pro and Premium plans?
 
