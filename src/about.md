@@ -33,7 +33,8 @@ Please send your resume to [jobs@appveyor.com](mailto:jobs@appveyor.com).
 
 ## Contact us
 
-Email: [team@appveyor.com](mailto:team@appveyor.com)<br/>
+Support requests: [support@appveyor.com](mailto:support@appveyor.com)<br/>
+General inquiries: [team@appveyor.com](mailto:team@appveyor.com)<br/>
 Twitter: [@appveyor](https://twitter.com/appveyor)
 
 Appveyor Systems Inc.<br/>
