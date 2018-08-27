@@ -36,10 +36,9 @@ The following PowerShell code uses standard `Invoke-RestMethod` cmdlet to return
 
 ```powershell
 $token = '<your-api-token>'
-$headers = @{
-  "Authorization" = "Bearer $token"
-  "Content-type" = "application/json"
-}
+$headers = @{}
+$headers['Authorization'] = "Bearer $token"
+$headers["Content-type"] = "application/json"
 Invoke-RestMethod -Uri 'https://ci.appveyor.com/api/roles' -Headers $headers -Method Get
 ```
 
