@@ -77,3 +77,5 @@ The following command uses `curl` to get the list of roles from authenticated ac
 export APPVEYOR_TOKEN="<your-api-token>"
 curl -H "Authorization: Bearer $APPVEYOR_TOKEN" -H "Content-Type: application/json" https://ci.appveyor.com/api/roles
 ```
+
+**Note.** If you plan to download artifacts with curl you should update curl up to 7.58.0. Otherwise curl wont be able to download artifacts due to CVE-2018-1000007.
