@@ -353,7 +353,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>WDK for Windows 10, version 1803 (10.0.17134.1)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 17.0 (14.0.61704.140) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Data-Tier Application Framework (17.1 DacFx)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Azure Service Fabric SDK 3.1 (Runtime 6.2)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure Service Fabric SDK 3.2 (Runtime 6.3)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft .NET Portable Library Reference Assemblies 4.6</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data tools for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -363,8 +363,8 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017</th>
     </tr>
-    <tr><td>Visual Studio Community 2017 version 15.7.5</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Visual Studio Community 2017 version 15.8 Preview 4 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.8.1</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.9 Preview 1 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 15.5.2 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -466,6 +466,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>.NET Core 2.1.0 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.1 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.2 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.1.3 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003121</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003131</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003156</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -488,6 +489,8 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>.NET Core SDK 2.1.300</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.301</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.302</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.400</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.401</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="4">Silverlight</th>
@@ -517,11 +520,11 @@ You can use those images to unblock your builds while we are working together wi
         <td>
             <p><code>8.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 10.0.0 - 10.6.0 (x86 and x64) - use <code>Current</code> alias for latest <code>10.x</code> release</li>
+                <li>Node.js 10.0.0 - 10.9.0 (x86 and x64) - use <code>Current</code> alias for latest <code>10.x</code> release</li>
                 <li>Node.js 9.0.0 - 9.11.2 (x86 and x64)</li>
-                <li>Node.js 8.0.0 - 8.11.3 (x86 and x64) - default on build workers; use <code>LTS</code> alias for latest <code>8.x</code> release</li>
+                <li>Node.js 8.0.0 - 8.11.4 (x86 and x64) - default on build workers; use <code>LTS</code> alias for latest <code>8.x</code> release</li>
                 <li>Node.js 7.0.0 - 7.10.1 (x86 and x64)</li>
-                <li>Node.js 6.0.0 - 6.14.3 (x86 and x64)</li>
+                <li>Node.js 6.0.0 - 6.14.4 (x86 and x64)</li>
                 <li>Node.js 4.0.0 - 4.9.1 (x86 and x64)</li>
                 <li>Node.js 5.0.0 - 5.12.0 (x86 and x64)</li>
                 <li>Node.js 0.10.26 - 0.10.48 (x86 and x64)</li>
@@ -548,12 +551,14 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <td>
             <ul>
-                <li>Go 1.10.0 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.10.0 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.10.0 x64 (<code>C:\go110</code>)</li>
-                <li>Go 1.10.0 x86 (<code>C:\go110-x86</code>)</li>
-                <li>Go 1.9.4 x64 (<code>C:\go19</code>)</li>
-                <li>Go 1.9.4 x86 (<code>C:\go19-x86</code>)</li>
+                <li>Go 1.11.0 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.11.0 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.11.0 x64 (<code>C:\go111</code>)</li>
+                <li>Go 1.11.0 x86 (<code>C:\go111-x86</code>)</li>
+                <li>Go 1.10.4 x64 (<code>C:\go110</code>)</li>
+                <li>Go 1.10.4 x86 (<code>C:\go110-x86</code>)</li>
+                <li>Go 1.9.7 x64 (<code>C:\go19</code>)</li>
+                <li>Go 1.9.7 x86 (<code>C:\go19-x86</code>)</li>
                 <li>Go 1.8.7 x64 (<code>C:\go18</code>)</li>
                 <li>Go 1.8.7 x86 (<code>C:\go18-x86</code>)</li>
                 <li>Go 1.7.6 x64 (<code>C:\go17</code>)</li>
@@ -683,7 +688,7 @@ You can use those images to unblock your builds while we are working together wi
         <th id="llvm" class="section" colspan="4">LLVM</th>
     </tr>
     <tr>
-        <td>LLVM 6.0.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
+        <td>LLVM 6.0.1 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
@@ -885,6 +890,7 @@ You can use those images to unblock your builds while we are working together wi
             <ul>
             <li>Qt 5.7.0: <code>C:\Qt\5.7.0</code>
                 <ul>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.7.0\mingw53_32</code></li>
                 <li>msvc2015 32-bit: <code>C:\Qt\5.7.0\msvc2015</code></li>
                 </ul>
             </li>
@@ -956,15 +962,17 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>curl 7.55.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 16.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.11.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.12.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 4.3.0</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>NuGet 4.6.2</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Chocolatey v0.10.8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GitVersion 3.6.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>OpenSSL 1.0.2L (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 1.0.2L (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.0.2p (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.0.2p (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.1.0i (32-bit) (<code>C:\OpenSSL-v11-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.1.0i (64-bit) (<code>C:\OpenSSL-v11-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.03 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -985,15 +993,15 @@ You can use those images to unblock your builds while we are working together wi
         <th id="web-browsers" class="section" colspan="4">Web browsers</th>
     </tr>
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Firefox 59.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 65.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 61.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 68.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
         <th id="selenium-testing" class="section" colspan="4">Selenium testing</th>
     </tr>
-    <tr><td>Chrome Web Driver 2.37</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Internet Explorer Web Driver 3.9</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Firefox Web Driver (geckodriver) 0.19.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome Web Driver 2.41</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Internet Explorer Web Driver 3.14</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox Web Driver (geckodriver) 0.21.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="4">Databases</th>
@@ -1011,7 +1019,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>PostgreSQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>MongoDB 3.2.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MongoDB 4.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Services -->
     <tr>
         <th id="services" class="section" colspan="4">Services</th>
