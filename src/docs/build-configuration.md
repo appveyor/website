@@ -190,7 +190,7 @@ package_version: $(appveyor_build_version)
 
 ## Clone directory
 
-The format of the default directory on the build machine for cloning repository is `c:\projects\<project-slug>`.
+The format of the default directory on the build machine for cloning a repository is `c:\projects\<project-slug>` on Windows and `/home/appveyor/projects/` on Ubuntu.
 
 If required by your project (say, if absolute paths are used to reference its parts) you can change the clone directory path on the **Environment** tab of project settings or in `appveyor.yml`:
 
