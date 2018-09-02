@@ -363,7 +363,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr>
         <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017</th>
     </tr>
-    <tr><td>Visual Studio Community 2017 version 15.8.1</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.8.2</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual Studio Community 2017 version 15.9 Preview 1 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 15.5.2 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -976,7 +976,7 @@ You can use those images to unblock your builds while we are working together wi
     <tr><td>NSIS 3.03 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Yarn 1.5.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Yarn 1.9.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>vcpkg 0.0.113</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Octo 4.31.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Test runners -->
