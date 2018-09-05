@@ -156,7 +156,7 @@ The following languages can be configured in `stack`:
 * `jdk <version>` - Java
 * `python <version>` - Python
 
-The following services can be configured in `stack`:
+The following services can be configured in `services`:
 
 * `docker`
 * `mongodb`
