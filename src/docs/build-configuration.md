@@ -229,6 +229,18 @@ test_script:
   - ps: Write-Host "This is PowerShell"
 ```
 
+**Important:** If you are using a PowerShell script file like so:
+
+```yaml
+  - ps: build.ps1
+```
+
+It is important to be aware that the default behaviour in PowerShell is to continue on non-terminating errors. An example of a non-terminating error is when an external command returns a non-zero exit code. For example, you could be calling `dotnet.exe` in your script. If `dotnet.exe` fails, the script will continue and the build will still be reported as successful. To ensure the build fails when the script produces non-terminating errors, add the following line at the top of your script:
+
+```PowerShell
+$ErrorActionPreference = "Stop";
+```
+
 ### Setting environment variables in build script
 
 CMD:
