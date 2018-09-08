@@ -602,7 +602,6 @@ Here is a list of settings which **will be ignored** if placed under `for.matrix
 * another `for` construct
 * `pull_requests.do_not_increment_build_number`
 * `max_jobs`
-* all [commit filtering settings](/docs/how-to/filtering-commits)
 * `nuget.account_feed/.project_feed/.disable_publish_on_pr`
 
 Therefore this YAML will be executed, but **no special configuration** for any matrix job will be formed:
@@ -630,6 +629,49 @@ for:
 * environment variables from matrix job configuration will be merged with environment variables from common configuration. Variables with the same name will be overwritten with value from matrix job configuration
 * Notifications will be merged
 * All other settings will be overwritten with value from matrix job configuration
+
+### Skip matrix jobs conditionally
+
+With [specializing matrix job configuration](/docs/build-configuration#specializing-matrix-job-configuration) you can also conditionally skip specific matrix jobs. It is possible because [branches white- and blacklisting](/docs/branches#white--and-blacklisting), tags filtering with `skip_tags: true` or `skip_non_tags: true`, and all [commit filtering settings](/docs/how-to/filtering-commits) are valid in `for.matrix.only/.except` construct. Examples:
+
+Skip build job with configuration `Config1` on commits to `master`:
+
+```yaml
+configuration:
+  - Config1
+  - Config2
+  - Config3
+  - Config4
+
+for:
+-
+  matrix:
+    only:
+      - configuration: Config1
+
+  branches:
+    only:
+    - abc
+    - cde
+```
+
+Skip  build job with image `Ubuntu` when all changes files are in `docs` folder:
+
+```yaml
+image:
+- Visual Studio 2017
+- Ubuntu
+
+for:
+-
+  matrix:
+    only:
+      - image: Ubuntu
+
+  skip_commits:
+    files:
+      - docs/*
+```
 
 ## Rolling builds
 
