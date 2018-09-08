@@ -280,7 +280,9 @@ Response:
 
 Request:
 
-    GET /api/projects/{accountName}/{projectSlug}/deployments
+    GET /api/projects/{accountName}/{projectSlug}/deployments[?recordsNumber={records-per-page}&startDeploymentId={deploymentId}]
+
+Note: maximum and default `recordsNumber` is 20.
 
 Response:
 
