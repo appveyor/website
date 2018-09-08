@@ -636,7 +636,7 @@ With [specializing matrix job configuration](/docs/build-configuration#specializ
 
 Skip build job with configuration `Config1` on commits to `master`:
 
-```
+```yaml
 configuration:
   - Config1
   - Config2
@@ -652,12 +652,12 @@ for:
   branches:
     only:
     - abc
-    - cde 
+    - cde
 ```
 
 Skip  build job with image `Ubuntu` when all changes files are in `docs` folder:
 
-```
+```yaml
 image:
 - Visual Studio 2017
 - Ubuntu
