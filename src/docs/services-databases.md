@@ -27,6 +27,12 @@ By default, their corresponding Windows services are stopped to reduce build mac
 
 Also please note that all MS SQL servers use the same default port 1433. Therefore please start and stop them sequentially to avoid port conflicts. To allow all SQL Server instances to be started simultaneously, please run [this script](https://gist.github.com/FeodorFitsner/a7eba7f44f9becacd3abddca27974e93) at `init` stage.
 
+Alternatively, run [this script](https://gist.github.com/fireflycons/58dfde9c2fab7de2f4e97668938baebe) which enumerates all currently installed instances, as the instances available on a build worker may change. It can be invoked in the init script thus
+```yaml
+init:
+  -ps: "[Net.ServicePointManager]::SecurityProtocol = 'tls12, tls11, tls, ssl3'; iex ((New-Object Net.WebClient).DownloadString('https://gist.github.com/fireflycons/58dfde9c2fab7de2f4e97668938baebe/raw'))"
+```
+
 ## SQL Server 2008
 
 The latest version of **SQL Server 2008 Express R2 SP2 with Advanced Services** is available on AppVeyor build servers. This is a full install with Database Engine, Replication, Full-Text Search, Reporting Services and Management Studio Express enabled.
