@@ -423,15 +423,16 @@ The following software is pre-installed on `Ubuntu` image:
     * gradle 2.10-1
     * make 4.1-6
     * maven 3.3.9-3
-    * cmake 3.12.0
+    * cmake 3.12.1
 * Node.js
     * Node.JS (system) 6.14.3
     * Nodejs v4.9.1
     * Nodejs v5.12.0
-    * Nodejs v6.14.3
+    * Nodejs v6.14.4
     * Nodejs v7.10.1
-    * Nodejs v8.11.3
+    * Nodejs v8.11.4
     * Nodejs v9.11.2
+    * Nodejs v10.9.0
     * NVM
 * PowerShell
     * PowerShell Core 6.0.2
@@ -467,7 +468,7 @@ The following software is pre-installed on `Ubuntu` image:
     * Ruby 2.2.10
     * Ruby 2.3.7
     * Ruby 2.4.4
-    * Ruby 2.5.0
+    * Ruby 2.5.1
     * Ruby HEAD 2.6.0dev
     * RVM 1.29.4
 * Docker
@@ -486,15 +487,16 @@ The following software is pre-installed on `Ubuntu` image:
     * openJDK 7 1.7.0_95
     * openJDK 8 1.8.0_151
     * openJDK 9 9.0.4
-    * openJDK 10 (2018-03-20)
-    * openJDK 11-ea+24
+    * openJDK 10.0.2
+    * openJDK 11 build 28
+    * openJDK 12 early access 9
 * Go (Golang)
     * Go 1.4
-    * Go 1.7
-    * Go 1.8
-    * Go 1.9
-    * Go 1.10
-    * Go 1.11 beta 2
+    * Go 1.7.6
+    * Go 1.8.7
+    * Go 1.9.7
+    * Go 1.10.4
+    * Go 1.11
     * Go Version Manager v1.0.22
 * Databases and Services
     * MySQL 5.7.23
@@ -505,14 +507,19 @@ The following software is pre-installed on `Ubuntu` image:
     * RabbitMQ 3.6.15-1
 * Erlang
     * Erlang
+* Browsers
+    * Mozilla Firefox 62.0
+    * Google Chrome 69.0.3497.81
 * Tools
     * yarn 1.9.4
     * p7zip 16.02
     * tcl 8.6.0+9
     * wget 1.17.1
     * curl 7.47.0
-    * awscli 1.15.83
+    * awscli 1.16.8
     * localstack 0.8.7
-    * azure-cli 2.0.44
+    * azure-cli 2.0.45
     * packer 1.2.5
+    * virtualbox 5.2.18
+
 
