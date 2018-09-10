@@ -641,7 +641,6 @@ configuration:
   - Config1
   - Config2
   - Config3
-  - Config4
 
 for:
 -
@@ -650,9 +649,8 @@ for:
       - configuration: Config1
 
   branches:
-    only:
-    - abc
-    - cde
+    except:
+    - master
 ```
 
 Skip  build job with image `Ubuntu` when all changes files are in `docs` folder:
