@@ -69,7 +69,29 @@ for:
   skip_tags: true
 ```
 
-Another good thing, which you might not noticed before, is that with commits filtering you are not blind. You do not need to open YAML and re-think why some build or build job has been skipped. Just open `EVENTS` tab on your project page (`https://ci.appveyor.com/project/{accountName}/{projectSlug}/events`) and check respective warning!
+**Scenario**: the same configuration set as in previous example. `ReleaseAzure` is skipped for all branches except `master`. All other configurations never skipped.
+
+**YAML**:
+
+```yaml
+configuration:
+  - ReleaseAzure
+  - DebugAzure
+  - ReleaseOnPrem
+  - DebugOnPrem
+
+for:
+-
+  matrix:
+    only:
+      - configuration: ReleaseAzure
+
+  branches:
+    only:
+    - master
+```
+
+Another good thing is that with commits filtering you are not blind. You do not need to open YAML and re-think why some build or build job has been skipped. Just open `EVENTS` tab on your project page (`https://ci.appveyor.com/project/{accountName}/{projectSlug}/events`) and check respective warning!
 
 Note that this feature is YAML only (not exposed in UI) now.
 
