@@ -2,7 +2,7 @@
 title: 'How to skip build matrix jobs (conditionally)'
 ---
 
-Most of our customers are already familiar with [build matrix]/docs/build-configuration/#build-matrix) and [commits filtering](/docs/how-to/filtering-commits/). Both concepts are pretty common in Continuous Integration world. Build matrix is being used to run multiple scenarios as part of the same build (and against the same commit). Commits filtering allows to define condition (for example commit message or file changed) when build should be skipped.
+Most of our customers are already familiar with [build matrix](/docs/build-configuration/#build-matrix) and [commits filtering](/docs/how-to/filtering-commits/). Both concepts are pretty common in Continuous Integration world. Build matrix is being used to run multiple scenarios as part of the same build (and against the same commit). Commits filtering allows to define condition (for example commit message or file changed) when build should be skipped.
 
 Now they come together (if needed). Please check some examples (both scenarios are real customers feature requests).
 
