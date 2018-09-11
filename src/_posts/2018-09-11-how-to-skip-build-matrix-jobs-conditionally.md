@@ -27,28 +27,6 @@ for:
       - docs/**/*
 ```
 
-**Scenario**: normally, build runs 4 test categories in [parallel](/docs/parallel-testing/) (which is also the case for build matrix). Developers need the option to run only `Smoke` tests for minor changes. They can add `[only smoke]` to commit message for that.
-
-**YAML**:
-
-```yaml
-test:
-  categories:
-  - - Smoke
-  - - DNS
-  - - SSL
-  - - Storage
-
-for:
--
-  matrix:
-    except:
-      - Tests: Smoke
-  skip_commits:
-    message: /[only smoke]/
-
-```
-
 **Scenario**: when a commit is tagged, only `ReleaseAzure` configuration should be built. Otherwise AppVeyor should start build for all 4 configurations.
 
 **YAML**:
