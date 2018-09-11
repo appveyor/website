@@ -41,7 +41,7 @@ for:
 -
   matrix:
     except:
-      - Tests: Storage
+      - Tests: Smoke
   skip_commits:
     message: /[only smoke]/
 
