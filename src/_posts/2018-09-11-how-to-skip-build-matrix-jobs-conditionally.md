@@ -6,7 +6,7 @@ Most of our customers are already familiar with [build matrix](/docs/build-confi
 
 Now they come together (if needed). Please check some examples (all scenarios are real customers feature requests). Unrelated build configuration parts are skipped for simplicity.
 
-**Scenario**: normally build should run on Windows with Visual Studio 2017 and Ubuntu. However, when files changed only in `docs` folder and its subfolders, only Visual Studio 2017 build should be executed.
+**Scenario**: normally build should run on `Visual Studio 2017` and `Ubuntu`. However, when files changed only in `docs` folder and its subfolders, only `Visual Studio 2017` build should be executed.
 
 **YAML**:
 
