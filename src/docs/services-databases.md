@@ -25,7 +25,24 @@ AppVeyor has most popular services and database engines pre-installed on all bui
 
 By default, their corresponding Windows services are stopped to reduce build machine boot time. On the **Environment** tab of project settings or in `appveyor.yml` you can configure which services must be started after the build machine has booted.
 
-Also please note that all MS SQL servers use the same default port 1433. Therefore please start and stop them sequentially to avoid port conflicts. To allow all SQL Server instances to be started simultaneously, please run [this script](https://gist.github.com/FeodorFitsner/a7eba7f44f9becacd3abddca27974e93) at `init` stage.
+Also please note that all MS SQL servers use the same default port 1433. Therefore please start and stop them sequentially to avoid port conflicts. To allow all SQL Server instances to be started simultaneously, please run the following script at `init` stage which will enumerate all currently available instances setting them to use dynamic ports, as the instances available on a build worker may change over time.
+
+```powershell
+<#
+    .SYNOPSIS
+        Set all installed instances of SQL server to dynamic ports
+#>
+Get-ChildItem -Path 'HKLM:\SOFTWARE\Microsoft\Microsoft SQL Server\' |
+    Where-Object {
+        $_.Name -imatch 'MSSQL[_\d]+\.SQL.*'
+    } |
+    ForEach-Object {
+
+        Write-Host "Setting $((Get-ItemProperty $_.PSPath).'(default)') to dynamic ports"
+        Set-ItemProperty (Join-Path $_.PSPath 'mssqlserver\supersocketnetlib\tcp\ipall') -Name TcpDynamicPorts -Value '0'
+        Set-ItemProperty (Join-Path $_.PSPath 'mssqlserver\supersocketnetlib\tcp\ipall') -Name TcpPort -Value ([string]::Empty)
+    }
+```
 
 ## SQL Server 2008
 
