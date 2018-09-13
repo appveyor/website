@@ -66,15 +66,14 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="3">PowerShell</th>
     </tr>
-    <tr>
-        <td>PowerShell Core 6.0.2</td><td class="yes"></td><td class="yes"></td>
-    </tr>
+    <tr><td>PowerShell Core 6.0.2</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>PowerShell Core 6.1.0 preview</td><td class="no"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
         <th id="docker" class="section" colspan="3">Docker</th>
     </tr>
     <tr>
-        <td>Docker 18.06.0</td><td class="yes"></td><td class="yes"></td>
+        <td>Docker 18.06.1</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Version control systems -->
     <tr>
@@ -86,36 +85,40 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>Git Large File Storage (Git LFS) 2.5.1</td><td class="yes"></td><td class="yes"></td>
     </tr>
-    <tr>
-        <td>Mercurial 4.4.1</td><td class="yes"></td><td class="yes"></td>
-    </tr>
-    <tr>
-        <td>Subversion 1.9.3</td><td class="yes"></td><td class="yes"></td>
-    </tr>
+    <tr><td>Mercurial 4.4.1</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Mercurial 4.5.3</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Subversion 1.9.3</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Subversion 1.9.7</td><td class="no"></td><td class="yes"></td>
     <!-- .NET Framework -->
     <tr>
         <th id="net-framework" class="section" colspan="3">.NET Framework</th>
     </tr>
-    <tr><td>.NET Core 2.0.0 runtime</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.0.3 runtime</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.0.4 runtime</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.0.5 runtime</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.0.6 runtime</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.0.0 runtime</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core 2.0.3 runtime</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core 2.0.4 runtime</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core 2.0.5 runtime</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core 2.0.6 runtime</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core 2.0.7 runtime</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.1.0 runtime</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.0.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.0.2</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.0.3</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.2</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.3</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.4</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.101</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.103</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.104</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.1.0-preview2 runtime</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.1.0-rc1 runtime</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.1.3 runtime</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core 2.1.4 runtime</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.0.0</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.0.2</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.0.3</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.1.401</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.1.402</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.2</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.1.3</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.1.4</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.1.101</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.1.103</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.1.104</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1.105</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.200</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.201</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.300-rc1</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.300-preview2</td><td class="no"></td><td class="yes"></td></tr>
     <!-- Node.js -->
     <tr>
         <th id="node-js" class="section" colspan="3">Node.js</th>
