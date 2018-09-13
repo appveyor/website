@@ -13,8 +13,11 @@ title: Testing with Go
 
 ## Install
 
-Several Go versions are already preinstalled
-(see [details](/docs/build-environment/#golang)).
+Several Go versions are already preinstalled:
+
+* [Windows images](/docs/windows-images-software/#ruby)
+* [Ubuntu images](/docs/linux-images-software/#ruby)
+
 We only need to add GOPATH and clone our project in
 the right directory.
 

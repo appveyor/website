@@ -1,0 +1,16 @@
+---
+title: 'New image: Ubuntu 18.04 (Bionic Beaver)'
+---
+
+[TBD]
+
+people are asking and we are listening ...
+we continue to extend our portfolio ...
+
+Currently `ubuntu` image is pointing to ...
+In the future it will be replaced with 18.04 ...
+
+You can specifically choose to build on Ubuntu 16.04 by ...
+
+Best regards,<br>
+AppVeyor team
