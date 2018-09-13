@@ -126,19 +126,21 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <p><code>6.x</code> is default Node.js installed on Linux build workers.</p>
-            <ul>
-                <li>Node.js 10.9.0</li>
-                <li>Node.js 9.11.2</li>
-                <li>Node.js 8.11.4</li>
-                <li>Node.js 7.10.1</li>
-                <li>Node.js 6.14.4</li>
-                <li>Node.js 5.12.0</li>
-                <li>Node.js 4.9.1</li>
-                <li>NVM</li>
-            </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
     </tr>
+    <tr><td>Node.js 10.10.0</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 10.9.0</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Node.js 9.11.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.12.0</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.11.4</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Node.js 8.10.0 (installed in system)</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 7.10.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 6.14.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 6.14.4 (installed in system)</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Node.js 5.12.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 4.9.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node Version Manager (NVM) 4.9.1</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Go -->
     <tr>
         <th id="golang" class="section" colspan="3">Go (Golang)</th>
@@ -146,7 +148,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Go Version Manager v1.0.22</li>
+                <li>Go Version Manager (GVM) v1.0.22</li>
                 <li>Go 1.11</li>
                 <li>Go 1.10.4</li>
                 <li>Go 1.9.7</li>
@@ -165,7 +167,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>openJDK 7 1.7.0_95</li>
-                <li>openJDK 8 1.8.0_151</li>
+                <li>openJDK 8 1.8.0_181</li>
                 <li>openJDK 9 9.0.4</li>
                 <li>openJDK 10.0.2</li>
                 <li>openJDK 11 build 28</li>
@@ -196,7 +198,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>Ruby 2.4.4</li>
                 <li>Ruby 2.5.1</li>
                 <li>Ruby HEAD 2.6.0dev</li>
-                <li>RVM 1.29.4</li>
+                <li>Ruby Version Manager (RVM) 1.29.4</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -205,18 +207,18 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="python" class="section" colspan="3">Python</th>
     </tr>
+    <tr><td>Python 2 (installed in system)</td><td>2.7.12</td><td>2.7.15</td></tr>
+    <tr><td>Python 3 (installed in system)</td><td>3.5.2</td><td>3.6.5</td></tr>
     <tr>
         <td>
             <ul>
-                <li>Python 2.7.12 (system)</li>
-                <li>Python 3.5.2 (system)</li>
                 <li>Python 2.7.15</li>
                 <li>Python 3.4.8</li>
                 <li>Python 3.5.5</li>
                 <li>Python 3.6.6</li>
                 <li>Python 3.7.0</li>
                 <li>virtualenv 15.0.1</li>
-                <li>pip 10.0.1</li>
+                <li>pip 18.0</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -225,9 +227,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="erlang" class="section" colspan="3">Erlang</th>
     </tr>
-    <tr>
-        <td>Erlang</td><td class="yes"></td><td class="yes"></td>
-    </tr>
+    <tr><td>Erlang/OTP 18.3</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Erlang/OTP 20.2</td><td class="no"></td><td class="yes"></td></tr>
     <!-- Tools -->
     <tr>
         <th id="tools" class="section" colspan="3">Tools</th>
@@ -235,9 +236,12 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>Yarn 1.9.4</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>p7zip 16.02 (<code>7za</code> utility is in PATH)</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>tcl 8.6.0+9</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>wget 1.17.1</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>curl 7.47.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>AWS CLI 1.16.8</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>wget 1.17.1</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>wget 1.19.4</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>curl 7.47.0</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>curl 7.58.0</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.16.8</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>AWS CLI 1.16.12</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>localstack 0.8.7</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Azure CLI-cli 2.0.45</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Packer 1.2.5</td><td class="yes"></td><td class="yes"></td></tr>
@@ -252,10 +256,12 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="databases" class="section" colspan="3">Databases</th>
     </tr>
-    <tr><td>SQL Server 2017 14.0.3035.2-1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server 2017 14.0.3037</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server 2017 14.0.3030</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 10+192</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL 5.7.23</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>MongoDB 3.2.20</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MongoDB 3.2.21</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>MongoDB 3.6.3</td><td class="no"></td><td class="yes"></td></tr>
     <!-- Services -->
     <tr>
         <th id="services" class="section" colspan="3">Services</th>
