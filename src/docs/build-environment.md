@@ -56,16 +56,25 @@ Private build clouds are available to customers with [Premium plan](/pricing/) a
     <th>Build cloud / configuration</th>
     <th>CPU</th>
     <th>Memory</th>
+    <th>Nested virtualization</th>
   </tr>
   <tr>
     <td>Hyper-V</td>
     <td>2 cores</td>
     <td>4 GB</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>Hyper-V "4-cores"</td>
+    <td>4 cores</td>
+    <td>7 GB</td>
+    <td>Enabled</td>
   </tr>
   <tr>
     <td>GCE</td>
     <td>2 cores</td>
     <td>7.5 GB</td>
+    <td>-</td>
   </tr>
 </table>
 
@@ -108,11 +117,17 @@ and can be a master VHD for Hyper-V and Azure, snapshot or image for GCE or AWS.
 
 AppVeyor provides these "standard" build worker images:
 
-* `Visual Studio 2013`
-* `Visual Studio 2015`
-* `Visual Studio 2017`
+* Windows images:
+  * `Visual Studio 2013`
+  * `Visual Studio 2015`
+  * `Visual Studio 2017`
 
-Below you can find the list of [pre-installed software](#pre-installed-software) for each image.
+
+* Linux images:
+  * `Ubuntu` or `Ubuntu1604` - Ubuntu 16.04
+  * `Ubuntu1804` - Ubuntu 18.04
+
+Below you can find the list of [pre-installed software](#pre-installed-software) for all images.
 
 ### Visual Studio Preview images
 
@@ -120,7 +135,7 @@ AppVeyor also provides a build image which contains, in place of the Visual Stud
 
 * `Visual Studio 2017 Preview`
 
-The aim is to stay in sync with the [release rhythm](https://docs.microsoft.com/en-us/visualstudio/productinfo/vs2017-release-rhythm#previews) of VS2017.
+The aim is to stay in sync with the [release rhythm](https://docs.microsoft.com/en-us/visualstudio/productinfo/vs2017-release-rhythm#previews) of Visual Studio 2017.
 
 ## Choosing image for your builds
 
@@ -129,6 +144,10 @@ If the build configuration does not specify build worker image then `Visual Stud
 You can select a different image on AppVeyor UI ("Environment" tab of project settings) or in `appveyor.yml`:
 
     image: Visual Studio 2017
+
+or to build on Linux:
+
+    image: ubuntu
 
 > Please note that `appveyor.yml` has [precedence over UI settings](/docs/build-configuration/#appveyoryml-and-ui-coexistence),
 > so when `appveyor.yml` exists the image should be specified in YAML, not on UI.
@@ -141,6 +160,7 @@ You can select a different image on AppVeyor UI ("Environment" tab of project se
 image:
 - Visual Studio 2015
 - Visual Studio 2017
+- Ubuntu
 environment:
   matrix:
     - MY_VAR: value1
@@ -156,6 +176,8 @@ environment:
       MY_VAR: value1
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       MY_VAR: value2
+    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
+      MY_VAR: value3
 ```
 
 ## Image updates
@@ -168,9 +190,15 @@ Before rolling out an image update we perform its extensive testing. However, no
 sometimes even a smallest change in the image can break someone's build. If that happened - no worries - you're covered!
 We provide an access to "last good" versions of build worker images from previous update:
 
-* `Previous Visual Studio 2013`
-* `Previous Visual Studio 2015`
-* `Previous Visual Studio 2017`
+* Windows "previous" images:
+  * `Previous Visual Studio 2013`
+  * `Previous Visual Studio 2015`
+  * `Previous Visual Studio 2017`
+
+
+* Linux "previous" images:
+  * `Previous Ubuntu`
+  * `Previous Ubuntu1804`
 
 You can use those images to unblock your builds while we are working together with you to understand the root cause and do a fix by the next image update.
 

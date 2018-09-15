@@ -23,8 +23,8 @@
 }
 
 .sidebar ul li h4 {
-    text-transform: uppercase;
     font-size: 1rem;
+    font-weight: 500;
 }
 
 .sidebar ul li h4,
@@ -39,17 +39,17 @@
 
 .sidebar ul ul li a {
     display: block;
-    padding: 0.2rem;
-    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
 }
 
 /* 3rd level */
 .sidebar ul ul ul {
-    margin: 0 0 0.5rem 1rem;
+    margin: 0 0 0 1rem;
 }
 
 .sidebar ul ul ul li a {
     display: block;
-    padding: 0.2rem;
+    line-height: 1.5rem;
     font-size: 0.8rem;
 }
