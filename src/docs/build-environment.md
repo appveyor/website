@@ -118,14 +118,14 @@ and can be a master VHD for Hyper-V and Azure, snapshot or image for GCE or AWS.
 AppVeyor provides these "standard" build worker images:
 
 * Windows images:
-  * `Visual Studio 2013`
-  * `Visual Studio 2015`
-  * `Visual Studio 2017`
+    * `Visual Studio 2013`
+    * `Visual Studio 2015`
+    * `Visual Studio 2017`
 
 
 * Linux images:
-  * `Ubuntu` or `Ubuntu1604` - Ubuntu 16.04
-  * `Ubuntu1804` - Ubuntu 18.04
+    * `Ubuntu` or `Ubuntu1604` - Ubuntu 16.04
+    * `Ubuntu1804` - Ubuntu 18.04
 
 Below you can find the list of [pre-installed software](#pre-installed-software) for all images.
 
@@ -191,14 +191,14 @@ sometimes even a smallest change in the image can break someone's build. If that
 We provide an access to "last good" versions of build worker images from previous update:
 
 * Windows "previous" images:
-  * `Previous Visual Studio 2013`
-  * `Previous Visual Studio 2015`
-  * `Previous Visual Studio 2017`
+    * `Previous Visual Studio 2013`
+    * `Previous Visual Studio 2015`
+    * `Previous Visual Studio 2017`
 
 
 * Linux "previous" images:
-  * `Previous Ubuntu`
-  * `Previous Ubuntu1804`
+    * `Previous Ubuntu`
+    * `Previous Ubuntu1804`
 
 You can use those images to unblock your builds while we are working together with you to understand the root cause and do a fix by the next image update.
 

@@ -88,7 +88,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>Mercurial 4.4.1</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Mercurial 4.5.3</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Subversion 1.9.3</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Subversion 1.9.7</td><td class="no"></td><td class="yes"></td>
+    <tr><td>Subversion 1.9.7</td><td class="no"></td><td class="yes"></td></tr>
     <!-- .NET Framework -->
     <tr>
         <th id="net-framework" class="section" colspan="3">.NET Framework</th>
