@@ -259,7 +259,7 @@ You can use those images to unblock your builds while we are working together wi
         <td class="yes"></td>
     </tr>
     <tr>
-        <td>PowerShell Core 6.0.2</td>
+        <td>PowerShell Core 6.1.0</td>
         <td class="no"></td>
         <td class="yes"></td>
         <td class="yes"></td>
