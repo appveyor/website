@@ -49,8 +49,7 @@
 /* Top menu items */
 .top-bar-section ul li > a {
     font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 0.70rem;
-    text-transform: uppercase;
+    font-size: 0.8rem;
     color: #e2dddd;
 }
 
