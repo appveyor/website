@@ -94,7 +94,7 @@ title: Software pre-installed on Windows build VMs
         <td class="yes"></td>
     </tr>
     <tr>
-        <td>PowerShell Core 6.0.2</td>
+        <td>PowerShell Core 6.1</td>
         <td class="no"></td>
         <td class="yes"></td>
         <td class="yes"></td>
@@ -198,8 +198,8 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017</th>
     </tr>
-    <tr><td>Visual Studio Community 2017 version 15.8.2</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Visual Studio Community 2017 version 15.9 Preview 1 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.8.4</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.9 Preview 2 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 15.5.2 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -243,6 +243,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>TypeScript 2.6 for Visual Studio 2015/2017</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>TypeScript 2.7.2 for Visual Studio 2015/2017</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>TypeScript 2.8.3 for Visual Studio 2015/2017</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>TypeScript 3.0.1 for Visual Studio 2015/2017</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Azure SDKs -->
     <tr>
         <th id="azure" class="section" colspan="4">Azure</th>
@@ -265,8 +266,8 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="xamarin" class="section" colspan="4">Xamarin</th>
     </tr>
-    <tr><td>Xamarin 4.8</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Xamarin 4.10</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Xamarin 4.9</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Xamarin 4.11</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 4.4 (KitKat) API level 19</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 5.0 (Lollipop) API level 21</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 5.1 (Lollipop) API level 22</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -275,6 +276,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Android SDK 7.1 (Nougat) API level 25</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 8.0.0 (Oreo) API level 26</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 8.1.0 (Oreo) API level 27</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 9.0 (Pie) API level 28</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Android NDK r10e (<code>C:\ProgramData\Microsoft\AndroidNDK64\android-ndk-r10e</code>)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Android NDK r11c (<code>C:\ProgramData\Microsoft\AndroidNDK64\android-ndk-r11c</code>)</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Android NDK r17 (<code>C:\ProgramData\Microsoft\AndroidNDK64\android-ndk-r17</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -302,6 +304,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core 2.1.1 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.2 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.3 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.1.4 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003121</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003131</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003156</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -326,6 +329,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.1.302</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.400</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.401</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.402</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="4">Silverlight</th>
@@ -355,9 +359,9 @@ title: Software pre-installed on Windows build VMs
         <td>
             <p><code>8.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 10.0.0 - 10.9.0 (x86 and x64) - use <code>Current</code> alias for latest <code>10.x</code> release</li>
+                <li>Node.js 10.0.0 - 10.10.0 (x86 and x64) - use <code>Current</code> alias for latest <code>10.x</code> release</li>
                 <li>Node.js 9.0.0 - 9.11.2 (x86 and x64)</li>
-                <li>Node.js 8.0.0 - 8.11.4 (x86 and x64) - default on build workers; use <code>LTS</code> alias for latest <code>8.x</code> release</li>
+                <li>Node.js 8.0.0 - 8.12.0 (x86 and x64) - default on build workers; use <code>LTS</code> alias for latest <code>8.x</code> release</li>
                 <li>Node.js 7.0.0 - 7.10.1 (x86 and x64)</li>
                 <li>Node.js 6.0.0 - 6.14.4 (x86 and x64)</li>
                 <li>Node.js 4.0.0 - 4.9.1 (x86 and x64)</li>
@@ -472,8 +476,8 @@ title: Software pre-installed on Windows build VMs
                 <li>Python 3.3.5 x64 (<code>C:\Python33-x64</code>)</li>
                 <li>Python 3.4.4 x86 (<code>C:\Python34</code>)</li>
                 <li>Python 3.4.4 x64 (<code>C:\Python34-x64</code>)</li>
-                <li>Python 3.5.3 x86 (<code>C:\Python35</code>)</li>
-                <li>Python 3.5.3 x64 (<code>C:\Python35-x64</code>)</li>
+                <li>Python 3.5.4 x86 (<code>C:\Python35</code>)</li>
+                <li>Python 3.5.4 x64 (<code>C:\Python35-x64</code>)</li>
                 <li>Python 3.6.6 x86 (<code>C:\Python36</code>)</li>
                 <li>Python 3.6.6 x64 (<code>C:\Python36-x64</code>)</li>
                 <li>Python 3.7.0 x86 (<code>C:\Python37</code>)</li>
@@ -490,14 +494,14 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-                <li>Miniconda2 4.5.1 (Python 2.7.14): <code>C:\Miniconda</code></li>
-                <li>Miniconda2 4.5.1 x64 (Python 2.7.14): <code>C:\Miniconda-x64</code></li>
+                <li>Miniconda2 4.5.11 (Python 2.7.15): <code>C:\Miniconda</code></li>
+                <li>Miniconda2 4.5.11 x64 (Python 2.7.15): <code>C:\Miniconda-x64</code></li>
                 <li>Miniconda3 3.16.0 (Python 3.4.3): <code>C:\Miniconda34</code></li>
                 <li>Miniconda3 3.16.0 x64 (Python 3.4.3): <code>C:\Miniconda34-x64</code></li>
                 <li>Miniconda3 4.2.12 (Python 3.5.2): <code>C:\Miniconda35</code></li>
                 <li>Miniconda3 4.2.12 x64 (Python 3.5.2): <code>C:\Miniconda35-x64</code></li>
-                <li>Miniconda3 4.5.1 (Python 3.6.5): <code>C:\Miniconda36</code> or <code>C:\Miniconda3</code></li>
-                <li>Miniconda3 4.5.1 x64 (Python 3.6.5): <code>C:\Miniconda36-x64</code> or <code>C:\Miniconda3-x64</code></li>
+                <li>Miniconda3 4.5.11 (Python 3.7.0): <code>C:\Miniconda36</code> or <code>C:\Miniconda3</code></li>
+                <li>Miniconda3 4.5.11 x64 (Python 3.7.0): <code>C:\Miniconda36-x64</code> or <code>C:\Miniconda3-x64</code></li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -799,8 +803,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.12.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>NuGet 4.3.0</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>NuGet 4.6.2</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>NuGet 4.7.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Chocolatey v0.10.8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GitVersion 3.6.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -828,8 +831,8 @@ title: Software pre-installed on Windows build VMs
         <th id="web-browsers" class="section" colspan="4">Web browsers</th>
     </tr>
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Firefox 61.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 68.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 62.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 69.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
         <th id="selenium-testing" class="section" colspan="4">Selenium testing</th>
