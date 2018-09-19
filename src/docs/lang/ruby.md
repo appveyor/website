@@ -13,8 +13,11 @@ title: Testing with Ruby
 
 ## Installation
 
-Several Ruby versions are already preinstalled
-(see [details](/docs/build-environment/#ruby)).
+Several Ruby versions are already preinstalled:
+
+* [Windows images](/docs/windows-images-software/#ruby)
+* [Ubuntu images](/docs/linux-images-software/#ruby)
+
 We only need to add one of it to a PATH.
 
 ```yaml
