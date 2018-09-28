@@ -30,6 +30,8 @@ Bitbucket pull requests
 
 Template in commit statuses
 
+.NET 4.6.2
+
 Enjoy!
 
 Best regards,<br>
