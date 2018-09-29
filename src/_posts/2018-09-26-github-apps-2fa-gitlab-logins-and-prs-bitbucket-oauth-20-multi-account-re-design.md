@@ -32,7 +32,7 @@ Template in commit statuses
 
 .NET 4.6.2
 
-Enjoy!
+Enjoy!!!
 
 Best regards,<br>
 AppVeyor team
