@@ -15,8 +15,8 @@ title: Testing with Go
 
 Several Go versions are already preinstalled:
 
-* [Windows images](/docs/windows-images-software/#ruby)
-* [Ubuntu images](/docs/linux-images-software/#ruby)
+* [Windows images](/docs/windows-images-software/#golang)
+* [Ubuntu images](/docs/linux-images-software/#golang)
 
 We only need to add GOPATH and clone our project in
 the right directory.
