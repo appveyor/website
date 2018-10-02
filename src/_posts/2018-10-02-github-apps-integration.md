@@ -6,7 +6,7 @@ We've just deployed a huge AppVeyor update with lots of awesome new features and
 
 * GitHub Apps (this post)
 * Bitbucket OAuth 2.0 and pull requests
-* GitLab Enterprise, GitLab login button and pull requests
+* GitLab Enterprise, GitLab login button and merge requests
 * Multi-account UI improvements
 * Two-factor authentication and other security enhancements
 
@@ -46,7 +46,7 @@ Expand **GitHub** section and click **Revoke access** button.
 
 Click **Install AppVeyor App** button and install AppVeyor App for the selected GitHub user/org and repositories. If you are installing the App to the organization you must be the owner of it.
 
-If you need to enable AppVeyor for more than one org/repo click **Update installations** button and enable the App for other orgs.
+If you need to enable AppVeyor for more than one org/repo click **Update installations** button and enable the App for other orgs/repos.
 
 If you have multiple AppVeyor accounts you can import existing AppVeyor installations into it.
 
@@ -72,7 +72,7 @@ If a customer purchases through OAuth app they are getting automatically logged 
 
 [GitHub Checks](https://developer.github.com/changes/2018-05-07-new-checks-api-public-beta/) is a successor to Commit Status API and depends on GitHub Apps. With finished support of GitHub Apps we paved the way to GitHub Checks integration which is coming in the following weeks.
 
-Stay tuned!
+Stay tuned! More details on other improvements will be published in the coming days!
 
 Best regards,<br>
 AppVeyor team
