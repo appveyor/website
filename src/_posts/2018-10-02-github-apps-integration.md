@@ -14,16 +14,16 @@ Today we are thrilled to introduce the integration with GitHub Apps!
 
 ## Benefits of GitHub Apps
 
-GitHub Apps enable 3rd-paty integrations to work with GitHub API in more harmonized and secure way.
-From user perspective GitHub Apps have the following key advantages over the current OAuth authentication (aka OAuth Apps):
+GitHub Apps enable 3rd-paty integrations to work with GitHub API in a more secure and harmonized way.
+From the user's perspective, GitHub Apps have the following key advantages over the current OAuth authentication (aka OAuth Apps):
 
 ### Acts on its own behalf
 
-GitHub App acts on its own behalf and not as GitHub user authorizing the App. Your personal GitHub identity is not exposed to AppVeyor and other AppVeyor account members and [API rate limits](https://developer.github.com/apps/building-github-apps/understanding-rate-limits-for-github-apps/) are counted towards App "installation" (read "instance").
+GitHub App acts on its own behalf and not as a GitHub user authorizing the App. Your personal GitHub identity is not exposed to AppVeyor and other AppVeyor account members and [API rate limits](https://developer.github.com/apps/building-github-apps/understanding-rate-limits-for-github-apps/) are counted towards App "installation" (read "instance").
 
 ### Has access to only selected repositories
 
-You grant AppVeyor GitHub App access to specific organizations/repositories only with narrow permissions. No need to maintain a "bot" account as a separate GitHub user. An ability to cherry-pick specific repositories visible to AppVeyor App installation is the number one requirement for GitHub users with an access to both personal and corporate repositories.
+You grant AppVeyor GitHub App access to specific organizations/repositories only with narrow permissions. No need to maintain a "bot" account as a separate GitHub user. The ability to cherry-pick specific repositories visible to an AppVeyor App installation is the number one requirement for GitHub users with access to both personal and corporate repositories.
 
 ### Requires fewer permissions
 
@@ -33,8 +33,8 @@ GitHub App requires fewer permissions than OAuth App:
 * **Read** access to members, metadata, and pull requests
 * **Read** and **write** access to checks and commit statuses
 
-With GitHub App repository webhooks and deploy (SSH) keys stay untouched. Instead of adding a deploy (SSH) key to the repo the App uses "installation" token for cloning the repo via HTTPS. Installation token is rotating each hour.
-For starting new builds on push and pull requests AppVeyor App uses centralized webhook handler which is called all app-enabled repos.
+With GitHub App repository webhooks and deploy (SSH) keys stay untouched. Instead of adding a deploy (SSH) key to the repo the App uses an "installation" token for cloning the repo via HTTPS. That installation token is rotated hourly.
+To start new builds on push and pull requests, AppVeyor App uses a centralized webhook handler which is called by all app-enabled repos.
 
 You can read more [about GitHub Apps](https://developer.github.com/apps/about-apps/) and [their differences from OAuth Apps](https://developer.github.com/apps/differences-between-apps/).
 
@@ -44,7 +44,7 @@ Migration to GitHub Apps for the existing AppVeyor account is a straightforward 
 
 Expand **GitHub** section and click **Revoke access** button.
 
-Click **Install AppVeyor App** button and install AppVeyor App for the selected GitHub user/org and repositories. If you are installing the App to the organization you must be the owner of it.
+Click **Install AppVeyor App** button and install AppVeyor App for the selected GitHub user/org and repositories. If you are installing the App for the organization you must be the owner of it.
 
 If you need to enable AppVeyor for more than one org/repo click **Update installations** button and enable the App for other orgs/repos.
 
@@ -52,7 +52,7 @@ If you have multiple AppVeyor accounts you can import existing AppVeyor installa
 
 ### Webhooks and deploy keys
 
-Once GitHub App authorization is enabled for your account repository-specific webhooks and deploy keys are no longer needed and can be removed from respective repositories.
+Once GitHub App authorization is enabled for your account, repository-specific webhooks and deploy keys are no longer needed and can be removed from respective repositories.
 
 However, if you still need to disable either "Push" or "Pull request" events for the selected project you can do so with corresponding checkboxes on "General" tab of AppVeyor project settings.
 
@@ -61,12 +61,12 @@ However, if you still need to disable either "Push" or "Pull request" events for
 ### Can I still use OAuth authorization?
 
 Yes, of course. All existing GitHub OAuth authorizations stay intact and both GitHub App and OAuth App integrations are available.
-Though GitHub App is the recommended integration method you can always switch back to OAuth and have access to all orgs/repos authorizing GitHub user has access to.
+Though GitHub App is the recommended integration method you can always switch back to OAuth and have access to all the orgs/repos that the authorizing GitHub user has access to.
 
 ### Can I install AppVeyor App through GitHub Marketplace?
 
-We are going to maintain AppVeyor OAuth App in Marketplace for now as it provides more streamlined purchasing flow.
-If a customer purchases through OAuth app they are getting automatically logged in into AppVeyor where they could authorize access to their repositores with either GitHub App or OAuth.
+We are going to maintain AppVeyor OAuth App in Marketplace for now as it provides a more streamlined purchasing flow.
+If a customer purchases through OAuth app they would be automatically logged in to AppVeyor where they could authorize access to their repositores with either GitHub App or OAuth.
 
 ### Are GitHub Checks supported?
 
