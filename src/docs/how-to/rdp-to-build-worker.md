@@ -16,6 +16,18 @@ You can configure that in `environment` section of `appveyor.yml` or on project 
 
 > Despite the fact `appveyor.yml` settings take over the UI, environment variables are handled differently, i.e. environment variables defined on UI are merged with those defined in `appveyor.yml`.
 
+> If you manually set `APPVEYOR_RDP_PASSWORD`, you must ensure that the password meets the Windows Server requirements.
+> Otherwise the RDP connection will not be opened.
+> The requirements are as follows:
+>
+> * Not contain the user's account name or parts of the user's full name that exceed two consecutive characters
+> * Be at least six characters in length
+> * Contain characters from three of the following four categories:
+>     * English uppercase characters (A through Z)
+>     * English lowercase characters (a through z)
+>     * Base 10 digits (0 through 9)
+>     * Non-alphabetic characters (for example, !, $, #, %)
+
 Add the following PowerShell command at the place where RDP access should be enabled:
 
 ```cmd
