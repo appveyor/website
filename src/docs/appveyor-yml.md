@@ -5,7 +5,7 @@ title: appveyor.yml Reference
 
 # appveyor.yml reference
 
-You can use the [validation tool](https://ci.appveyor.com/tools/validate-yaml) to check the syntax and validate your `appveyor.yml` file.
+You can use YAML validation tool (**Settings** &rarr; **Validate YAML**) to check the syntax and validate your `appveyor.yml` file.
 
 ```yaml
 {% raw %}
