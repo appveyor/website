@@ -99,7 +99,7 @@ hosts:
 environment:
   my_var1: value1
   my_var2: value2
-  # this is how to set encrypted variable. Go to "Encrypt data" page in account menu to encrypt data.
+  # this is how to set encrypted variable. Go to "Settings" -> "Encrypt YAML" page in account menu to encrypt data.
   my_secure_var1:
     secure: FW3tJ3fMncxvs58/ifSP7w==
 
