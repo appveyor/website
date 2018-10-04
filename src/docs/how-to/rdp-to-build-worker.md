@@ -15,7 +15,7 @@ You can configure that in `environment` section of `appveyor.yml` or on project 
 ![appveyor-rdp-psw-env-var](/assets/img/docs/how-to/appveyor-rdp-psw-env-var.png)
 
 > Despite the fact `appveyor.yml` settings take over the UI, environment variables are handled differently, i.e. environment variables defined on UI are merged with those defined in `appveyor.yml`.
-
+>
 > If you manually set `APPVEYOR_RDP_PASSWORD`, you must ensure that the password meets the Windows Server requirements.
 > Otherwise the RDP connection will not be opened.
 > The requirements are as follows:
