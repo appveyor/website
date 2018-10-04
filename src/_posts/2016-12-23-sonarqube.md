@@ -115,7 +115,7 @@ Go to your profile and click *"Edit Profile"*. Click on *"Personal access tokens
 
 Anyone with access to this token can alter your data, contact information and billing data, so we don't want that.
 
-On [AppVeyor](https://ci.appveyor.com), click your user name in the top right hand corner and then click *"Encrypt data"* from the drop down menu. Enter **GitHubAuthToken** in to *"Value to encrypt"* and click *"Encrypt"*. AppVeyor will then display a token which you can use in place of the real value (**EncryptedGitHubAuthToken** from now on).
+On [AppVeyor](https://ci.appveyor.com), click **Settings** &rarr; **Encrypt YAML** from the drop down menu. Enter **GitHubAuthToken** in to *"Value to encrypt"* and click *"Encrypt"*. AppVeyor will then display a token which you can use in place of the real value (**EncryptedGitHubAuthToken** from now on).
 
 ### Allowing Secure Variables in Pull Requests
 

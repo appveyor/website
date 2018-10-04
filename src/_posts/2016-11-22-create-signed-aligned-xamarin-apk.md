@@ -101,7 +101,7 @@ MSBuild needs to access your KeyStore file in order to sign the apk, so copy **Y
 
 When we created the apk from the command line, we entered in some passwords, and we obviously can't save these passwords to a public Git repository. Happily AppVeyor have thought of this, and you can convert passwords in to tokens that can be exposed publically.
 
-To do this, click your user name in the top right hand corner and then click *"Encrypt data"* from the drop down menu. Enter **YourKeyStorePassword** in to *"Value to encrypt"* and click *"Encrypt"*. AppVeyor will then display a token which you can use in place of the real value.
+To do this click **Settings** &rarr; **Encrypt YAML** from the drop down menu. Enter **YourKeyStorePassword** in to *"Value to encrypt"* and click *"Encrypt"*. AppVeyor will then display a token which you can use in place of the real value.
 
 Now that we have everything we need, add an *appveyor.yml* file to the root of your repository as below. Note that **YourLocalKeyStoreFilename** is relative to the csproj file being built (the **YourAppName.Droid** folder below).
 

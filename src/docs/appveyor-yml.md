@@ -5,7 +5,7 @@ title: appveyor.yml Reference
 
 # appveyor.yml reference
 
-You can use the [validation tool](https://ci.appveyor.com/tools/validate-yaml) to check the syntax and validate your `appveyor.yml` file.
+You can use YAML validation tool (**Settings** &rarr; **Validate YAML**) to check the syntax and validate your `appveyor.yml` file.
 
 ```yaml
 {% raw %}
@@ -99,7 +99,7 @@ hosts:
 environment:
   my_var1: value1
   my_var2: value2
-  # this is how to set encrypted variable. Go to "Encrypt data" page in account menu to encrypt data.
+  # this is how to set encrypted variable. Go to "Settings" -> "Encrypt YAML" page in account menu to encrypt data.
   my_secure_var1:
     secure: FW3tJ3fMncxvs58/ifSP7w==
 

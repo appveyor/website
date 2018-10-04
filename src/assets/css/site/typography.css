@@ -1,12 +1,16 @@
 p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin: 1rem 0;
 }
 
 ul,
 ol,
 dl {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+}
+
+li ul li {
+    font-size: 0.8rem;
 }
 
 a {
@@ -21,7 +25,7 @@ a:focus {
 }
 
 strong, b {
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -105,10 +109,6 @@ pre > code {
 
 .no-wrap {
     white-space: nowrap;
-}
-
-li ul li {
-    font-size: 0.8rem;
 }
 
 .new-feature,

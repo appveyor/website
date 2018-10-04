@@ -89,7 +89,7 @@ git submodule -q update --init --recursive
 
 ### appveyor.yml
 
-Copy the contents of private key to clipboard as shown above and open [Encrypt data](https://ci.appveyor.com/tools/encrypt) tool in AppVeyor. Encrypt the value of clipboard using that page.
+Copy the contents of private key to clipboard as shown above and open "Encrypt configuration data" page in AppVeyor (**Settings** &rarr; **Encrypt YAML**). Encrypt the value of clipboard using that page.
 
 Add this to your `appveyor.yml`:
 
