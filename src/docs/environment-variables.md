@@ -19,11 +19,11 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_BUILD_NUMBER` - build number
 * `APPVEYOR_BUILD_VERSION` - build version
 * `APPVEYOR_BUILD_WORKER_IMAGE` - current build worker image the build is running on, e.g. `Visual Studio 2015` (also can be used as "tweak" environment variable to set build worker image)
-* `APPVEYOR_PULL_REQUEST_NUMBER` - GitHub Pull Request number
-* `APPVEYOR_PULL_REQUEST_TITLE` - GitHub Pull Request title
-* `APPVEYOR_PULL_REQUEST_HEAD_REPO_NAME` - PR source repo (GitHub only)
-* `APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH` - PR source branch (GitHub only)
-* `APPVEYOR_PULL_REQUEST_HEAD_COMMIT` - PR source commit ID (SHA) (GitHub only)
+* `APPVEYOR_PULL_REQUEST_NUMBER` - Pull (Merge) Request number
+* `APPVEYOR_PULL_REQUEST_TITLE` - Pull (Merge) Request title
+* `APPVEYOR_PULL_REQUEST_HEAD_REPO_NAME` - Pull (Merge) Request source repo
+* `APPVEYOR_PULL_REQUEST_HEAD_REPO_BRANCH` - Pull (Merge) Request source branch
+* `APPVEYOR_PULL_REQUEST_HEAD_COMMIT` - Pull (Merge) Request source commit ID (SHA)
 * `APPVEYOR_JOB_ID` - AppVeyor unique job ID
 * `APPVEYOR_JOB_NAME` - job name
 * `APPVEYOR_JOB_NUMBER` - job number, i.g. 1, 2, etc.
