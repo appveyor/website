@@ -56,6 +56,12 @@ cache:
 
 This will mean invalidate `C:\ProgramData\chocolatey\lib` whenever `appveyor.yml` is changed. Dependency check is performed on build start and cache item won't be restored if dependency changed. At the end of successful build cache item will be updated.
 
+If there are multiple dependencies for a cache item they can be specified as a comma separated list:
+
+```yaml
+cache:
+  - c:\tools\vcpkg\installed\ -> restore.ps, build.ps
+```
 
 ## Configuring cache items
 
