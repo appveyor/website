@@ -60,7 +60,7 @@ If there are multiple dependencies for a cache item they can be specified as a c
 
 ```yaml
 cache:
-  - c:\tools\vcpkg\installed\ -> restore.ps, build.ps
+  - c:\tools\vcpkg\installed\ -> restore.ps1, build.ps1
 ```
 
 ## Configuring cache items
