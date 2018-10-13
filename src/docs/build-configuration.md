@@ -697,15 +697,12 @@ Sometimes you may wonder why your build is not being run immediately or remains 
 
 This is how builds scheduling works.
 
-First, the maximum number of builds running simultaneously is defined by account plan. For Free and Professional it's 1 concurrent job, for Premium it's 2. This is per account.
+First, the maximum number of build jobs running simultaneously is defined by account plan. For example, for Free, Basic and Pro it's 1 concurrent job, for Premium it's 2. Also, there are a lot of additional plans with greater number of concurrent build jobs available on billing page.
 
-If there are no running builds under your account then there might be other reasons why the build is still in Queued state. First, VM assigned to a build is still being provisioned. We maintain some "cache" of pre-heated VMs, and if a build is assigned to pre-provisioned machine it should start almost instantly. If there are no machines in there then VM is creating from scratch. Usually, it should take no longer than 3-4 minutes.
+It is important to understand that concurrent build jobs limit is account level setting. So, if some project consumes all concurrent build jobs defined in plan, builds for other projects in the same account wait in queue. To prevent specific project from consuming number of jobs higher than specific number, please use **Max jobs** (UI) or `max_jobs` (YAML) setting.
 
-However, sometimes (in rare occasions) due to Azure conditions provisioning could take longer, up to 10 minutes, but AppVeyor waits 5 minutes for machine being online and if it's not the build is rescheduled to another machine. Sometimes, machine is failed to report "online" state to AppVeyor and it's also getting replaced with a new one. Another reason could be Service Bus queue which is lagging some times.
+If there are no running builds under your account, then there might be other reasons why the build is still in Queued state. It can happen that VM assigned to a build is still being provisioned. We maintain our own Hyper-V based infrastructure with pre-heated VMs, and if a build is assigned to pre-provisioned machine it should start almost instantly. However, if own infrastructure is under heavy load or we do some servicing work, then new builds starts on backup cloud which we run on Google Cloud Engine. In this case VM is creating from scratch. Usually, it should take no longer than 3-4 minutes.
 
-We are constantly working on monitoring, understanding and mitigating those Azure-related issues to make AV architecture more robust and resilient.
-
-However, technically there are no limitations on how many VMs can be run at the same time and we are not enforcing the maximum number of concurrent builds across all accounts.
 
 ### Builds prioritization
 
@@ -726,3 +723,9 @@ Build queue will look as below:
     B (priority 2)  - 1 - queued
     B (priority 2)  - 2 - queued
     C (no priority) - 2 - queued
+
+
+### Build timeout
+
+Default timeout for build job is 60 minutes. If you need to decrease it, you can set **Build timeout, minutes** to the smaller value. Note that decrease to less than 5 minutes will not apply.
+If you run your builds on [private build cloud](/docs/build-environment/#private-build-cloud), you can increase build timeout, otherwise increase will not apply.
