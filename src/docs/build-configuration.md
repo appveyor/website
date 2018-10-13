@@ -699,7 +699,7 @@ This is how builds scheduling works.
 
 First, the maximum number of build jobs running simultaneously is defined by account plan. For example, for Free, Basic and Pro it's 1 concurrent job, for Premium it's 2. Also, there are a lot of additional plans with greater number of concurrent build jobs available on billing page.
 
-It is important to understand that concurrent build jobs limit is account level setting. So, if some project consumes all concurrent build jobs defined in plan, builds for other projects in the same account waits in queue. To prevent specific project from consuming number of jobs higher than specific number, please use **Max jobs** (UI) or `max_jobs` (YAML) setting.
+It is important to understand that concurrent build jobs limit is account level setting. So, if some project consumes all concurrent build jobs defined in plan, builds for other projects in the same account wait in queue. To prevent specific project from consuming number of jobs higher than specific number, please use **Max jobs** (UI) or `max_jobs` (YAML) setting.
 
 If there are no running builds under your account, then there might be other reasons why the build is still in Queued state. It can happen that VM assigned to a build is still being provisioned. We maintain our own Hyper-V based infrastructure with pre-heated VMs, and if a build is assigned to pre-provisioned machine it should start almost instantly. However, if own infrastructure is under heavy load or we do some servicing work, then new builds starts on backup cloud which we run on Google Cloud Engine. In this case VM is creating from scratch. Usually, it should take no longer than 3-4 minutes.
 
