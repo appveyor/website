@@ -268,4 +268,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
     </tr>
     <tr><td>Redis 4.0.11</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>RabbitMQ 3.6.15-1</td><td class="yes"></td><td class="yes"></td></tr>
+    <!-- Configuration -->
+    <tr>
+        <th id="configuration" class="section" colspan="3">Configuration</th>
+    </tr>
+    <tr><td>Default Locale: LANG</td><td>en_US.UTF-8</td><td>C.UTF-8</td></tr>
 </table>
