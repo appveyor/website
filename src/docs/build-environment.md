@@ -155,7 +155,7 @@ or to build on Linux:
 
 ## Using multiple images for the same build
 
-`image` is first class dimension for [build matrix](/docs/build-configuration/#build-matrix), therefore the following YAML configuration will work (and will create 4 build jobs):
+`image` is first class dimension for [build matrix](/docs/build-configuration/#build-matrix), therefore the following YAML configuration will work (and will create 6 build jobs):
 
 ```yaml
 image:
@@ -168,7 +168,7 @@ environment:
     - MY_VAR: value2
 ```
 
-Also for some combinations it makes sense to use `APPVEYOR_BUILD_WORKER_IMAGE` "tweak" environment variable, so this configuration will also work (and will create 2 build jobs):
+Also for some combinations it makes sense to use `APPVEYOR_BUILD_WORKER_IMAGE` "tweak" environment variable, so this configuration will also work (and will create 3 build jobs):
 
 ```yaml
 environment:
