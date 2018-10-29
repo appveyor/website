@@ -47,7 +47,7 @@ AppVeyor allows running builds on your own cloud:
 * Google Compute Engine (GCE)
 
 In this scenario AppVeyor service provides UI, orchestration, artifacts storage and NuGet feeds while AppVeyor build agents run on your virtual machines.
-Private build clouds are available to customers with [Premium plan](/pricing/) and can be enabled upon request. Please [let us know](mailto:team@appveyor.com) if you are interested.
+Private build clouds can be enabled upon request. Please [let us know](mailto:team@appveyor.com) if you are interested.
 
 ## Build VM configurations
 
