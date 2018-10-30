@@ -69,7 +69,50 @@ for:
     - master
 ```
 
-Another good thing is that with commits filtering you are not blind. You do not need to open YAML and re-think why some build or build job has been skipped. Just open `EVENTS` tab on your project page (`https://ci.appveyor.com/project/{accountName}/{projectSlug}/events`) and check respective warning!
+**Scenario**: `.csproj` patching should happen only for tagged builds. For both tagged and non-tagged scenarios two build jobs should run: one `ubuntu1804` and one `Visual Studio 2017`.
+
+**YAML**:
+
+```yaml
+environment:
+  matrix:
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      TAG_SCENARIO: false    
+    - APPVEYOR_BUILD_WORKER_IMAGE: ubuntu1804
+      TAG_SCENARIO: false     
+            
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+      TAG_SCENARIO: true      
+    - APPVEYOR_BUILD_WORKER_IMAGE: ubuntu1804
+      TAG_SCENARIO: true
+
+build_script:
+  - echo common build script
+  
+for:
+-
+  # non-tagged scenario
+  matrix:
+    only:
+      - TAG_SCENARIO: false
+      
+  skip_tags: true
+  
+-
+  # tagged scenario
+  matrix:
+    only:
+      - TAG_SCENARIO: true
+
+  skip_non_tags: true
+
+  dotnet_csproj:
+    patch: true
+    file: '**\*.csproj'
+    version: '{version}'
+```
+
+Another good thing is that with commits filtering you are not blind. You do not need to open YAML and re-think why some build or build job has been skipped. Just open `Events` tab on your project page (`https://ci.appveyor.com/project/{accountName}/{projectSlug}/events`) and check respective warning!
 
 Note that this feature is YAML only (not exposed in UI) now.
 
