@@ -77,27 +77,27 @@ for:
 environment:
   matrix:
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      TAG_SCENARIO: false    
+      TAG_SCENARIO: false
     - APPVEYOR_BUILD_WORKER_IMAGE: ubuntu1804
-      TAG_SCENARIO: false     
-            
+      TAG_SCENARIO: false
+
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      TAG_SCENARIO: true      
+      TAG_SCENARIO: true
     - APPVEYOR_BUILD_WORKER_IMAGE: ubuntu1804
       TAG_SCENARIO: true
 
 build_script:
   - echo common build script
-  
+
 for:
 -
   # non-tagged scenario
   matrix:
     only:
       - TAG_SCENARIO: false
-      
+
   skip_tags: true
-  
+
 -
   # tagged scenario
   matrix:
