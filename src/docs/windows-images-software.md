@@ -359,7 +359,8 @@ title: Software pre-installed on Windows build VMs
         <td>
             <p><code>8.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 10.0.0 - 10.11.0 (x86 and x64) - use <code>Current</code> alias for latest <code>10.x</code> release</li>
+                <li>Node.js 11.0.0 (x86 and x64) - use <code>Current</code> alias for latest <code>11.x</code> release</li>
+                <li>Node.js 10.0.0 - 10.11.0 (x86 and x64)</li>
                 <li>Node.js 9.0.0 - 9.11.2 (x86 and x64)</li>
                 <li>Node.js 8.0.0 - 8.12.0 (x86 and x64) - default on build workers; use <code>LTS</code> alias for latest <code>8.x</code> release</li>
                 <li>Node.js 7.0.0 - 7.10.1 (x86 and x64)</li>
