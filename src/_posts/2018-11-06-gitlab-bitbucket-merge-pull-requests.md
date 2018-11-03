@@ -5,13 +5,13 @@ title: 'GitLab and Bitbucket Merge/Pull Requests'
 AppVeyor team works hard to provide first class support for growing number of GitLab and Bitbucket customers. Most important part of this work is enabling proper Pull/Merge requests builds.
 Pull request support for Bitbucket was [implemented recently](/blog/2018/08/22/bitbucket-pull-requests/). Now we are happy provide you with GitLab Merge request builds support.
 
-## Importance of Pull/Merge request builds can be described with the following example:
+#### Importance of Pull/Merge request builds can be described with the following example:
 
 Base (target) branch:
 `master`:
 
-```
-class Customer 
+```csharp
+class Customer
 {
    string Name { get; set; }
    string Address { get; set; }
@@ -21,13 +21,12 @@ class Customer
 Head (source) branch created from Base (target) branch and the following class added:
 `feature-A`:
 
-```
-class Order 
+```csharp
+class Order
 {
     Customer Customer { get; set; }
     DateTime Date { get; set; }
 }
-
 var order = new Order {
     Customer = new Customer { Name = "John", Address = "123 Street" }
 }
@@ -35,8 +34,8 @@ var order = new Order {
 
 Then before `feature-A` merged to `master`, the following change happens to `master` (property `Address` renamed to ` AddressLine`):
 
-```
-class Customer 
+```csharp
+class Customer
 {
    string Name { get; set; }
    string AddressLine { get; set; }
