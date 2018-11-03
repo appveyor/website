@@ -89,7 +89,5 @@ To achieve this, you need to add "SSH public key" from AppVeyor project setting 
 * Copy `SSH public key` which can be found on `General` tab of AppVeyor project settings
 * In private fork repo open `Settings`, navigate to `Access Keys` and add AppVeyor SSH key
 
-Feel free to contact us with over [email](support@appveyor.com) or [forum](https://help.appveyor.com) with any questions
-
 Best regards,<br>
 AppVeyor team
