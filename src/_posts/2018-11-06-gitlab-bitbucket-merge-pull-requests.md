@@ -44,7 +44,15 @@ class Customer
 
 `master` build can be “green”, and `feature-A` build can be “green”, but after `feature-A` merged to `master` it will fail.
 
-**PR/MR build helps to detect this kind of issues, before actual merge**
+PR/MR build helps to detect this kind of issues, before actual merge
+
+## Enabling Pull/Merge Request builds
+
+For new GitLab and Bibucket projects Pull/Merge request builds works out of the box.
+
+To enable Merge request build for GitLab projects created before October 2018, on GitLab project page open `Settings`, select `Integrations`, find AppVeyor Webhook and press `Edit`. Check `Merge request events` and press `Save changes`.
+
+To enable Merge request build for GitLab projects created before August 2018, follow instructions from [this post](/blog/2018/08/22/bitbucket-pull-requests/).
 
 TBD
 
