@@ -67,6 +67,13 @@ Add user AppVeyor authorized with GitLab to the Members of private fork projects
 * To find this user name open `https://ci.appveyor.com/account/<account>/authorizations` and select `GitLab`
 * User’s role permission in the source repository should be at least `Reporter` role permission
 
+#### Bitbucket
+
+Add user AppVeyor authorized with Bitbucket to the Members of private fork projects.
+
+*  To find this user name open https://ci.appveyor.com/account/<account>/authorizations and select Bitbucket
+*  User’s role permission in the source repository should be at least `Read`
+
 TBD
 
 Best regards,<br>
