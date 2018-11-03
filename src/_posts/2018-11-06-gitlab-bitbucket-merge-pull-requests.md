@@ -58,23 +58,38 @@ To enable Pull request build for Bitbucket projects created before August 2018, 
 
 If Pull/Merge requests created in private fork, it requires some additional configuration to build successfully. You do not need this information If your pull requests are being created in the same repository or in public forks.
 
-### AppVeyor needs permissions read source commit details from the source repository
+#### AppVeyor needs permissions read source commit details from the source repository
 
-#### GitLab
+##### GitLab
 
 Add user AppVeyor authorized with GitLab to the Members of private fork projects.
 
 * To find this user name open `https://ci.appveyor.com/account/<account>/authorizations` and select `GitLab`
 * User’s role permission in the source repository should be at least `Reporter` role permission
 
-#### Bitbucket
+##### Bitbucket
 
 Add user AppVeyor authorized with Bitbucket to the Members of private fork projects.
 
 *  To find this user name open https://ci.appveyor.com/account/<account>/authorizations and select Bitbucket
 *  User’s role permission in the source repository should be at least `Read`
 
-TBD
+#### AppVeyor build needs to fetch source branch from the private fork
+
+To achieve this, you need to add "SSH public key" from AppVeyor project setting to the source repository
+
+##### GitLab
+
+* Open `https://gitlab.com/<user>/<project>/settings/repository` for private fork and expand `Deploy Keys`
+* Navigate to `Privately accessible deploy keys` and find `AppVeyor project <project_name>` key
+* Press `Enable`
+
+##### Bitbucket
+
+* Copy `SSH public key` which can be found on `General` tab of AppVeyor project settings
+* In private fork repo open `Settings`, navigate to `Access Keys` and add AppVeyor SSH key
+
+Feel free to contact us with over [email](support@appveyor.com) or [forum](https://help.appveyor.com) with any questions
 
 Best regards,<br>
 AppVeyor team
