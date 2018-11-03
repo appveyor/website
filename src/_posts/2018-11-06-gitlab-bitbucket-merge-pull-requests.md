@@ -94,10 +94,17 @@ To achieve this, you need to add "SSH public key" from AppVeyor project setting 
 * Navigate to `Privately accessible deploy keys` and find `AppVeyor project <project_name>` key
 * Press `Enable`
 
+![GitLab deploy keys](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/gitlab-deploy-keys.png)
+
 ##### Bitbucket
 
 * Copy `SSH public key` which can be found on `General` tab of AppVeyor project settings
+
+![AppVeyor SSH key](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/appveyor-ssh-key.png)
+
 * In private fork repo open `Settings`, navigate to `Access Keys` and add AppVeyor SSH key
+
+![Bitbucket Access keys](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/bitbucket-access-keys.png)
 
 Best regards,<br>
 AppVeyor team
