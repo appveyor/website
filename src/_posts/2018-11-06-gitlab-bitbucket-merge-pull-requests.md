@@ -7,8 +7,7 @@ Pull request support for Bitbucket was [implemented recently](/blog/2018/08/22/b
 
 #### Importance of Pull/Merge request builds can be described with the following example:
 
-Base (target) branch:
-`master`:
+`master`, base (target) branch:
 
 ```csharp
 class Customer
@@ -18,8 +17,7 @@ class Customer
 }
 ```
 
-Head (source) branch created from Base (target) branch and the following class added:
-`feature-A`:
+`feature-A`, head (source) branch (created from `master`). The following class added to `feature-A`:
 
 ```csharp
 class Order
@@ -32,7 +30,7 @@ var order = new Order {
 }
 ```
 
-Then before `feature-A` merged to `master`, the following change happens to `master` (property `Address` renamed to ` AddressLine`):
+before `feature-A` merged to `master`, the following change commited to `master` (property `Address` renamed to ` AddressLine`):
 
 ```csharp
 class Customer
@@ -42,7 +40,9 @@ class Customer
 }
 ```
 
-`master` build can be “green”, and `feature-A` build can be “green”, but after `feature-A` merged to `master` it will fail. PR/MR build helps to detect this kind of issues, before actual merge.
+`master` build can be “green”, and `feature-A` build can be “green”, but after `feature-A` merged to `master` it will fail. 
+
+PR/MR build helps to detect this kind of issues, before actual merge.
 
 TBD
 
