@@ -56,7 +56,7 @@ To enable Pull request build for Bitbucket projects created before August 2018, 
 
 ### Private fork Pull/Merge requests
 
-If Pull/Merge requests created in private fork, it requires some additional configuration to build successfully. **Skip this**if your Pull/Merge requests are being created in the **same repository or in public forks**
+If Pull/Merge requests created in private fork, it requires some additional configuration to build successfully. **Skip this** if your Pull/Merge requests are being created in the **same repository or in public forks**
 
 #### AppVeyor needs permissions read source commit details from the source repository
 
