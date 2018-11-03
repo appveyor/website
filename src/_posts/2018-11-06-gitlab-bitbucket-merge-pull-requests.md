@@ -66,7 +66,6 @@ Add user AppVeyor authorized with GitLab to the Members of private fork projects
 
 * To find this user name open `https://ci.appveyor.com/account/<account>/authorizations` and select `GitLab`
 ![GitLab OAuth user](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/gitlab-oauth-user.png)
-
 * User’s role permission in the source repository should be at least `Reporter` role permission
 ![GitLab add member](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/gitlab-add-member.png)
 
