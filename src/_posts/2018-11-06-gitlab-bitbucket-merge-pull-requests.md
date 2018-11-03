@@ -56,7 +56,7 @@ To enable Pull request build for Bitbucket projects created before August 2018, 
 
 ### Private fork Pull/Merge requests
 
-If Pull/Merge requests created in private fork, it requires some additional configuration to build successfully. You do not need this information If your pull requests are being created in the same repository or in public forks.
+If Pull/Merge requests created in private fork, it requires some additional configuration to build successfully. **Skip this**if your Pull/Merge requests are being created in the **same repository or in public forks**
 
 #### AppVeyor needs permissions read source commit details from the source repository
 
@@ -71,8 +71,8 @@ Add user AppVeyor authorized with GitLab to the Members of private fork projects
 
 Add user AppVeyor authorized with Bitbucket to the Members of private fork projects.
 
-*  To find this user name open https://ci.appveyor.com/account/<account>/authorizations and select Bitbucket
-*  User’s role permission in the source repository should be at least `Read`
+* To find this user name open `https://ci.appveyor.com/account/<account>/authorizations` and select Bitbucket
+* User’s role permission in the source repository should be at least `Read`
 
 #### AppVeyor build needs to fetch source branch from the private fork
 
