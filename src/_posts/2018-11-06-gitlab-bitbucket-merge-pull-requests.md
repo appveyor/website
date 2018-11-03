@@ -77,7 +77,12 @@ Add user AppVeyor authorized with GitLab to the Members of private fork projects
 Add user AppVeyor authorized with Bitbucket to the Members of private fork projects.
 
 * To find this user name open `https://ci.appveyor.com/account/<account>/authorizations` and select Bitbucket
+
+![Bitbucket OAuth user](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/bitbucket-oauth-user.png)
+
 * User’s role permission in the source repository should be at least `Read`
+
+![Bitbucket add user](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/bitbucket-add-user.png)
 
 #### AppVeyor build needs to fetch source branch from the private fork
 
