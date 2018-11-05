@@ -44,7 +44,7 @@ class Customer
 
 `master` build can be “green”, and `feature-A` build can be “green”, but after `feature-A` is merged to `master` it will fail.
 
-PR/MR build helps to detect this kind of issue, before an actual merge
+Problem in this example happens at build stage, but more complicated issues can be exposed at unit or only even at end-to-end tests stages. Pull/Merge request builds help to detect this kind of issues, before the actual merge of head (source) branch to the base (target) one.
 
 ### Enabling Pull/Merge Request builds
 
