@@ -2,8 +2,8 @@
 title: 'GitLab and Bitbucket Merge/Pull Requests'
 ---
 
-AppVeyor team works hard to provide first class support for growing number of GitLab and Bitbucket customers. Most important part of this work is enabling proper Pull/Merge requests builds.
-Pull request support for Bitbucket was [implemented recently](/blog/2018/08/22/bitbucket-pull-requests/). Now we are happy provide you with GitLab Merge request builds support.
+The AppVeyor team works hard to provide first class support for a growing number of GitLab and Bitbucket customers. The most important part of this work is enabling proper Pull/Merge requests builds.
+Pull request support for Bitbucket was [implemented recently](/blog/2018/08/22/bitbucket-pull-requests/). Now we are happy to provide you with GitLab Merge request builds support as well.
 
 ### Importance of Pull/Merge request builds
 
@@ -32,7 +32,7 @@ var order = new Order {
 }
 ```
 
-before `feature-A` merged to `master`, the following change commited to `master` (property `Address` renamed to `AddressLine`):
+before `feature-A` is merged to `master`, the following change is commited to `master` (property `Address` renamed to `AddressLine`):
 
 ```csharp
 class Customer
@@ -42,13 +42,13 @@ class Customer
 }
 ```
 
-`master` build can be “green”, and `feature-A` build can be “green”, but after `feature-A` merged to `master` it will fail.
+`master` build can be “green”, and `feature-A` build can be “green”, but after `feature-A` is merged to `master` it will fail.
 
-PR/MR build helps to detect this kind of issues, before actual merge
+PR/MR build helps to detect this kind of issue, before an actual merge
 
 ### Enabling Pull/Merge Request builds
 
-For new GitLab and Bibucket projects Pull/Merge request builds works out of the box.
+For new GitLab and Bibucket projects, Pull/Merge request builds works out of the box.
 
 To enable Merge request build for GitLab projects created before October 2018, on GitLab project page open `Settings`, select `Integrations`, find AppVeyor Webhook and press `Edit`. Check `Merge request events` and press `Save changes`.
 
@@ -56,13 +56,13 @@ To enable Pull request build for Bitbucket projects created before August 2018, 
 
 ### Private fork Pull/Merge requests
 
-If Pull/Merge requests created in private fork, it requires some additional configuration to build successfully. **Skip this** if your Pull/Merge requests are being created in the **same repository or in public forks**
+If Pull/Merge requests are created in a private fork, some additional configuration is required to build successfully. **Skip this** if your Pull/Merge requests are being created in the **same repository or in public forks**
 
-#### AppVeyor needs permissions read source commit details from the source repository
+#### AppVeyor needs permissions to read source commit details from the source repository
 
 ##### GitLab
 
-Add user AppVeyor authorized with GitLab to the Members of private fork projects.
+Add the user that AppVeyor authorized with GitLab to the Members of private fork projects.
 
 * To find this user name open `https://ci.appveyor.com/account/<account>/authorizations` and select `GitLab`
 
@@ -74,7 +74,7 @@ Add user AppVeyor authorized with GitLab to the Members of private fork projects
 
 ##### Bitbucket
 
-Add user AppVeyor authorized with Bitbucket to the Members of private fork projects.
+Add the user that AppVeyor authorized with Bitbucket to the Members of private fork projects.
 
 * To find this user name open `https://ci.appveyor.com/account/<account>/authorizations` and select Bitbucket
 
