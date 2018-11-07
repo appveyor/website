@@ -3,13 +3,13 @@ title: 'GitLab and Bitbucket Merge/Pull Requests'
 ---
 
 The AppVeyor team works hard to provide first class support for a growing number of GitLab and Bitbucket customers. The most important part of this work is enabling proper Pull/Merge requests builds.
-Pull request support for Bitbucket was [implemented recently](/blog/2018/08/22/bitbucket-pull-requests/). Now we are happy to provide you with GitLab Merge request builds support as well.
+Pull request support for Bitbucket was [implemented recently](/blog/2018/08/22/bitbucket-pull-requests/). Now we are happy to provide you with GitLab Merge request builds support as well!
 
-### Importance of Pull/Merge request builds
+## The importance of Pull/Merge request builds
 
-Consider the folowing example:
+Consider the following example:
 
-`master`, base (target) branch:
+In `master`, base (target) branch:
 
 ```csharp
 class Customer
@@ -19,7 +19,7 @@ class Customer
 }
 ```
 
-`feature-A`, head (source) branch (created from `master`). The following class added to `feature-A`:
+In `feature-A`, head (source) branch (created from `master`). The following class was added to `feature-A`:
 
 ```csharp
 class Order
@@ -27,12 +27,13 @@ class Order
     Customer Customer { get; set; }
     DateTime Date { get; set; }
 }
+
 var order = new Order {
     Customer = new Customer { Name = "John", Address = "123 Street" }
 }
 ```
 
-before `feature-A` is merged to `master`, the following change is commited to `master` (property `Address` renamed to `AddressLine`):
+Before `feature-A` is merged into `master`, the following change was committed into `master` (property `Address` renamed to `AddressLine`):
 
 ```csharp
 class Customer
@@ -42,53 +43,53 @@ class Customer
 }
 ```
 
-`master` build can be “green”, and `feature-A` build can be “green”, but after `feature-A` is merged to `master` it will fail.
+If we separately test `master` and `feature-A` branches they will be both “green”, but once `feature-A` is merged into `master` the build of `master` branch will fail.
 
-Problem in this example happens at build stage, but more complicated issues can be exposed at unit or only even at end-to-end tests stages. Pull/Merge request builds help to detect this kind of issues, before the actual merge of head (source) branch to the base (target) one.
+The problem in the example above happens at build stage, but more complicated issues can be exposed at unit or only even at end-to-end tests stages. Pull/Merge request builds help to detect this kind of issues, before the actual merge of head (source) branch into the base (target) one.
 
-### Enabling Pull/Merge Request builds
+## Enabling Pull/Merge Request builds
 
 For new GitLab and Bibucket projects, Pull/Merge request builds works out of the box.
 
-To enable Merge request build for GitLab projects created before October 2018, on GitLab project page open `Settings`, select `Integrations`, find AppVeyor Webhook and press `Edit`. Check `Merge request events` and press `Save changes`.
+To enable Merge request builds for GitLab projects created before October 2018, on GitLab project page open `Settings`, select `Integrations`, find AppVeyor Webhook and press `Edit`. Check `Merge request events` and press `Save changes`.
 
-To enable Pull request build for Bitbucket projects created before August 2018, follow instructions from [this post](/blog/2018/08/22/bitbucket-pull-requests/).
+To enable Pull request builds for Bitbucket projects created before August 2018, follow instructions from [this post](/blog/2018/08/22/bitbucket-pull-requests/).
 
-### Private fork Pull/Merge requests
+## Private fork Pull/Merge requests
 
-If Pull/Merge requests are created in a private fork, some additional configuration is required to build successfully. **Skip this** if your Pull/Merge requests are being created in the **same repository or in public forks**
+If Pull/Merge request is originating from a private fork, some additional configuration is required to build successfully. **Skip the following section** if your Pull/Merge requests are being created in the **same repository or in public forks**.
 
-#### AppVeyor needs permissions to read source commit details from the source repository
+### Enabling AppVeyor to read commit details from the head repository
 
-##### GitLab
+#### GitLab
 
-Add the user that AppVeyor authorized with GitLab to the Members of private fork projects.
+Add GitLab user AppVeyor authorized with to the Members of private fork projects.
 
-* To find this user name open `https://ci.appveyor.com/account/<account>/authorizations` and select `GitLab`
+* To find this user name open `https://ci.appveyor.com/account/<account>/authorizations` and select `GitLab`:
 
 ![GitLab OAuth user](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/gitlab-oauth-user.png)
 
-* User’s role permission in the source repository should be at least `Reporter` role permission
+* User’s role permission in the source repository should be at least `Reporter` role permission:
 
 ![GitLab add member](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/gitlab-add-member.png)
 
-##### Bitbucket
+#### Bitbucket
 
-Add the user that AppVeyor authorized with Bitbucket to the Members of private fork projects.
+Add Bitbucket user AppVeyor authorized with to the Members of private fork projects.
 
-* To find this user name open `https://ci.appveyor.com/account/<account>/authorizations` and select Bitbucket
+* To find this user name open `https://ci.appveyor.com/account/<account>/authorizations` and select `Bitbucket`:
 
 ![Bitbucket OAuth user](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/bitbucket-oauth-user.png)
 
-* User’s role permission in the source repository should be at least `Read`
+* User’s role permission in the source repository should be at least `Read`:
 
 ![Bitbucket add user](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/bitbucket-add-user.png)
 
-#### AppVeyor build needs to fetch source branch from the private fork
+### Enabling AppVeyor to fetch head branch from the private fork
 
-To achieve this, you need to add "SSH public key" from AppVeyor project setting to the source repository
+To achieve this you need to add "SSH public key" from AppVeyor project setting to the source repository.
 
-##### GitLab
+#### GitLab
 
 * Open `https://gitlab.com/<user>/<project>/settings/repository` for private fork and expand `Deploy Keys`
 * Navigate to `Privately accessible deploy keys` and find `AppVeyor project <project_name>` key
@@ -96,13 +97,13 @@ To achieve this, you need to add "SSH public key" from AppVeyor project setting 
 
 ![GitLab deploy keys](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/gitlab-deploy-keys.png)
 
-##### Bitbucket
+#### Bitbucket
 
-* Copy `SSH public key` which can be found on `General` tab of AppVeyor project settings
+* Copy `SSH public key` which can be found on `General` tab of AppVeyor project settings:
 
 ![AppVeyor SSH key](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/appveyor-ssh-key.png)
 
-* In private fork repo open `Settings`, navigate to `Access Keys` and add AppVeyor SSH key
+* In private fork repo open `Settings`, navigate to `Access Keys` and add AppVeyor SSH key:
 
 ![Bitbucket Access keys](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/bitbucket-access-keys.png)
 
