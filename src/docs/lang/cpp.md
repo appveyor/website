@@ -96,6 +96,16 @@ Vcpkg is a package manager that helps to acquire, build and install C/C++ open s
 
 AppVeyor comes with [VC++ Packaging Tool](https://github.com/Microsoft/vcpkg) pre-installed in `C:\tools\vcpkg` folder (without integration installed by default).
 
+In case newer (than current AppVeyor build worker image contains) **VC++ Packaging Tool** required, it can be installed on-the-fly during `install` stage. For that add the following to the YAML (or similar to UI **Environment** tab if you do not use YAML):
+
+```yaml
+install:
+- cd C:\Tools\vcpkg
+- git pull
+- .\bootstrap-vcpkg.bat
+- cd %APPVEYOR_BUILD_FOLDER%
+```
+
 For example, if a project built with CMake requires SQLite 3 library as a dependency:
 
 * Install required package for both target platforms
