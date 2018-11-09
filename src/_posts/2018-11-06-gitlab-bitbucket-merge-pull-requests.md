@@ -55,13 +55,15 @@ To enable Merge request builds for GitLab projects created before October 2018, 
 
 To enable Pull request builds for Bitbucket projects created before August 2018, follow instructions from [this post](/blog/2018/08/22/bitbucket-pull-requests/).
 
-## Private fork Pull/Merge requests
+## Pull/Merge requests from a fork
 
-If Pull/Merge request is originating from a private fork, some additional configuration is required to build successfully. **Skip the following section** if your Pull/Merge requests are being created in the **same repository or in public forks**.
+If Pull/Merge request is originating from a private fork, some additional configuration is required to build successfully.
 
-### Enabling AppVeyor to read commit details from the head repository
+### Enabling AppVeyor to read commit details ans from the head repository (and optionally set commit statuses)
 
-#### GitLab
+#### GitLab (private and public forks)
+
+Note: you can slip this section for public forks in case you do not need for AppVeyor to set up Merge request status.
 
 Add GitLab user AppVeyor authorized with to the Members of private fork projects.
 
@@ -69,11 +71,11 @@ Add GitLab user AppVeyor authorized with to the Members of private fork projects
 
 ![GitLab OAuth user](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/gitlab-oauth-user.png)
 
-* User’s role permission in the source repository should be at least `Reporter` role permission:
+* User’s role permission in the source repository should be at least `Reporter` role permission. To allow AppVeyr to to set up Merge request status, asign this user at least `Developer` role permission:
 
 ![GitLab add member](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/gitlab-add-member.png)
 
-#### Bitbucket
+#### Bitbucket (private forks only)
 
 Add Bitbucket user AppVeyor authorized with to the Members of private fork projects.
 
@@ -89,7 +91,7 @@ Add Bitbucket user AppVeyor authorized with to the Members of private fork proje
 
 To achieve this you need to add "SSH public key" from AppVeyor project setting to the source repository.
 
-#### GitLab
+#### GitLab (private forks only)
 
 * Open `https://gitlab.com/<user>/<project>/settings/repository` for private fork and expand `Deploy Keys`
 * Navigate to `Privately accessible deploy keys` and find `AppVeyor project <project_name>` key
@@ -97,7 +99,7 @@ To achieve this you need to add "SSH public key" from AppVeyor project setting t
 
 ![GitLab deploy keys](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/gitlab-deploy-keys.png)
 
-#### Bitbucket
+#### Bitbucket (private forks only)
 
 * Copy `SSH public key` which can be found on `General` tab of AppVeyor project settings:
 
