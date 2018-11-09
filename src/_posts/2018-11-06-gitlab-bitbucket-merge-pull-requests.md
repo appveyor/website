@@ -59,7 +59,9 @@ To enable Pull request builds for Bitbucket projects created before August 2018,
 
 If Pull/Merge request is originating from a private fork, some additional configuration is required to build successfully.
 
-### Enabling AppVeyor to read commit details ans from the head repository (and optionally set commit statuses)
+### Enabling AppVeyor to read commit details from the head repository
+
+(and optionally set commit statuses)
 
 #### GitLab (private and public forks)
 
