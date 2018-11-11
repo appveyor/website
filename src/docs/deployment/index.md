@@ -131,6 +131,9 @@ You can use standard and custom environment variables in provider settings, for 
 you can set a remote FTP folder as `$(appveyor_build_version)\artifacts` where `$(appveyor_build_version)`
 will be replaced with the current build version.
 
+## Pull Requests
+
+Deployments, `before_deploy` and `after_deploy` scripts are disabled by default on Pull Requests. Deployments on Pull Requests are only available for private repositories.
 
 ## Conditional deployment
 
