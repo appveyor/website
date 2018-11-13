@@ -133,7 +133,7 @@ will be replaced with the current build version.
 
 ## Pull Requests
 
-Deployments, `before_deploy` and `after_deploy` scripts are disabled by default on Pull Requests. Deployments on Pull Requests are only available for private repositories.
+Deployments, `before_deploy` and `after_deploy` scripts are disabled by default on Pull Requests. Deployments on Pull Requests can be enabled with `Enable deployments in Pull Requests` UI-only checkbox in the **General** project settings tab.
 
 ## Conditional deployment
 
