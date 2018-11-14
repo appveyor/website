@@ -111,6 +111,11 @@ IP address of AppVeyor Cloud in Azure data center (`West US` region) - when depl
 
     138.91.141.243
 
+IP addresses assigned to build VMs in AWS data center (`US West (Oregon)` region):
+
+    34.209.164.53
+    54.200.227.141
+
 ## Build worker images
 
 *Build worker image* is a template used to provision a virtual machine for your build. Physical implementation of the template depends on the build cloud platform
