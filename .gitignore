@@ -5,3 +5,4 @@
 /vendor/
 /npm-debug.log
 /src/.jekyll-metadata
+.DS_Store
