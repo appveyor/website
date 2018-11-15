@@ -198,8 +198,8 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017</th>
     </tr>
-    <tr><td>Visual Studio Community 2017 version 15.8.5</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Visual Studio Community 2017 version 15.9 Preview 2 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.8.9</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.9 Preview 4 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 15.5.2 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -261,7 +261,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Microsoft Azure PowerShell 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure CLI 2.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>DocumentDB Emulator 1.13.58.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CosmoDB Emulator 1.20.91.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Cosmos DB Emulator 2.1.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Xamarin -->
     <tr>
         <th id="xamarin" class="section" colspan="4">Xamarin</th>
@@ -305,6 +305,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core 2.1.2 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.3 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.4 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.1.5 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003121</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003131</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003156</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -330,6 +331,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.1.400</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.401</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.402</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.403</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="4">Silverlight</th>
@@ -359,8 +361,8 @@ title: Software pre-installed on Windows build VMs
         <td>
             <p><code>8.x</code> is default Node.js installed on build workers.</p>
             <ul>
-                <li>Node.js 11.0.0 (x86 and x64) - use <code>Current</code> alias for latest <code>11.x</code> release</li>
-                <li>Node.js 10.0.0 - 10.11.0 (x86 and x64)</li>
+                <li>Node.js 11.0.0 - 11.1.0 (x86 and x64) - use <code>Current</code> alias for latest <code>11.x</code> release</li>
+                <li>Node.js 10.0.0 - 10.13.0 (x86 and x64)</li>
                 <li>Node.js 9.0.0 - 9.11.2 (x86 and x64)</li>
                 <li>Node.js 8.0.0 - 8.12.0 (x86 and x64) - default on build workers; use <code>LTS</code> alias for latest <code>8.x</code> release</li>
                 <li>Node.js 7.0.0 - 7.10.1 (x86 and x64)</li>
@@ -428,11 +430,12 @@ title: Software pre-installed on Windows build VMs
                 <li>JDK 1.8 Update 162 (x86) (<code>C:\Program Files (x86)\Java\jdk1.8.0</code>)</li>
                 <li>JDK 9.0.4 (x64) (<code>C:\Program Files\Java\jdk9</code>)</li>
                 <li>JDK 10.0.1 (x64) (<code>C:\Program Files\Java\jdk10</code>)</li>
+                <li>JDK 11 (x64) (<code>C:\Program Files\Java\jdk11</code>)</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
-    <tr><td>Maven 3.3.9</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Maven 3.5.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Mono -->
     <tr>
         <th id="mono" class="section" colspan="4">Mono</th>
@@ -454,10 +457,10 @@ title: Software pre-installed on Windows build VMs
                 <li>Ruby 2.2.6 x64 (<code>C:\Ruby22-x64\bin</code>)</li>
                 <li>Ruby 2.3.3 x86 (<code>C:\Ruby23\bin</code>)</li>
                 <li>Ruby 2.3.3 x64 (<code>C:\Ruby23-x64\bin</code>)</li>
-                <li>Ruby 2.4.4-2 x86 (<code>C:\Ruby24\bin</code>)</li>
-                <li>Ruby 2.4.4-2 x64 (<code>C:\Ruby24-x64\bin</code>)</li>
-                <li>Ruby 2.5.1-2 x86 (<code>C:\Ruby25\bin</code>)</li>
-                <li>Ruby 2.5.1-2 x64 (<code>C:\Ruby25-x64\bin</code>)</li>
+                <li>Ruby 2.4.5-1 x86 (<code>C:\Ruby24\bin</code>)</li>
+                <li>Ruby 2.4.5-1 x64 (<code>C:\Ruby24-x64\bin</code>)</li>
+                <li>Ruby 2.5.3-1 x86 (<code>C:\Ruby25\bin</code>)</li>
+                <li>Ruby 2.5.3-1 x64 (<code>C:\Ruby25-x64\bin</code>)</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -608,12 +611,12 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.11.1: <code>C:\Qt\5.11.1</code> (<code>C:\Qt\5.11</code> mapped to <code>C:\Qt\5.11.1</code> for backward compatibility)
+            <li>Qt 5.11.2: <code>C:\Qt\5.11.2</code> (<code>C:\Qt\5.11</code> mapped to <code>C:\Qt\5.11.2</code> for backward compatibility)
                 <ul>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.11.1\msvc2017_64</code></li>
-                <li>WinRT ARM v7: <code>C:\Qt\5.11.1\winrt_armv7_msvc2017</code></li>
-                <li>WinRT 32-bit: <code>C:\Qt\5.11.1\winrt_x86_msvc2017</code></li>
-                <li>WinRT 64-bit: <code>C:\Qt\5.11.1\winrt_x64_msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.11.2\msvc2017_64</code></li>
+                <li>WinRT ARM v7: <code>C:\Qt\5.11.2\winrt_armv7_msvc2017</code></li>
+                <li>WinRT 32-bit: <code>C:\Qt\5.11.2\winrt_x86_msvc2017</code></li>
+                <li>WinRT 64-bit: <code>C:\Qt\5.11.2\winrt_x64_msvc2017</code></li>
                 </ul>
             </li>
             </ul>
@@ -623,10 +626,10 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.11.1: <code>C:\Qt\5.11.1</code> (<code>C:\Qt\5.11</code> mapped to <code>C:\Qt\5.11.1</code> for backward compatibility)
+            <li>Qt 5.11.2: <code>C:\Qt\5.11.2</code> (<code>C:\Qt\5.11</code> mapped to <code>C:\Qt\5.11.2</code> for backward compatibility)
                 <ul>
-                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.11.1\mingw53_32</code></li>
-                <li>msvc2015 32-bit: <code>C:\Qt\5.11.1\msvc2015</code></li>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.11.2\mingw53_32</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.11.2\msvc2015</code></li>
                 </ul>
             </li>
             </ul>
@@ -636,9 +639,9 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.11.1: <code>C:\Qt\5.11.1</code> (<code>C:\Qt\5.11</code> mapped to <code>C:\Qt\5.11.1</code> for backward compatibility)
+            <li>Qt 5.11.2: <code>C:\Qt\5.11.2</code> (<code>C:\Qt\5.11</code> mapped to <code>C:\Qt\5.11.2</code> for backward compatibility)
                 <ul>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.11.1\msvc2015_64</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.11.2\msvc2015_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -689,12 +692,12 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.5: <code>C:\Qt\5.9.5</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.5</code> for backward compatibility)
+            <li>Qt 5.9.7: <code>C:\Qt\5.9.7</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.7</code> for backward compatibility)
                 <ul>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.9.5\msvc2017_64</code></li>
-                <li>WinRT ARM v7: <code>C:\Qt\5.9.5\winrt_armv7_msvc2017</code></li>
-                <li>WinRT 32-bit: <code>C:\Qt\5.9.5\winrt_x86_msvc2017</code></li>
-                <li>WinRT 64-bit: <code>C:\Qt\5.9.5\winrt_x64_msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.9.7\msvc2017_64</code></li>
+                <li>WinRT ARM v7: <code>C:\Qt\5.9.7\winrt_armv7_msvc2017</code></li>
+                <li>WinRT 32-bit: <code>C:\Qt\5.9.7\winrt_x86_msvc2017</code></li>
+                <li>WinRT 64-bit: <code>C:\Qt\5.9.7\winrt_x64_msvc2017</code></li>
                 </ul>
             </li>
             </ul>
@@ -704,10 +707,10 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.5: <code>C:\Qt\5.9.5</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.5</code> for backward compatibility)
+            <li>Qt 5.9.7: <code>C:\Qt\5.9.7</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.7</code> for backward compatibility)
                 <ul>
-                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.5\mingw53_32</code></li>
-                <li>msvc2015 32-bit: <code>C:\Qt\5.9.5\msvc2015</code></li>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.7\mingw53_32</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.9.7\msvc2015</code></li>
                 </ul>
             </li>
             </ul>
@@ -717,10 +720,10 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.5: <code>C:\Qt\5.9.5</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.5</code> for backward compatibility)
+            <li>Qt 5.9.7: <code>C:\Qt\5.9.7</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.7</code> for backward compatibility)
                 <ul>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.9.5\msvc2015_64</code></li>
-                <li>msvc2013 64-bit: <code>C:\Qt\5.9.5\msvc2013_64</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.9.7\msvc2015_64</code></li>
+                <li>msvc2013 64-bit: <code>C:\Qt\5.9.7\msvc2013_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -802,18 +805,20 @@ title: Software pre-installed on Windows build VMs
         <th id="tools" class="section" colspan="4">Tools</th>
     </tr>
     <tr><td>curl 7.55.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>7-Zip 16.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>7-Zip 18.05</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.12.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 4.7.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Chocolatey v0.10.8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>GitVersion 3.6.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>GitVersion 4.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.0.2p (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.0.2p (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.1.0i (32-bit) (<code>C:\OpenSSL-v11-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.1.0i (64-bit) (<code>C:\OpenSSL-v11-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.1.1 (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.1.1 (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.03 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
