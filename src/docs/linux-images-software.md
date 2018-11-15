@@ -66,24 +66,23 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="3">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 6.0.2</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>PowerShell Core 6.1.0 preview</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 6.1.1</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
         <th id="docker" class="section" colspan="3">Docker</th>
     </tr>
     <tr>
-        <td>Docker 18.06.1</td><td class="yes"></td><td class="yes"></td>
+        <td>Docker 18.09.1</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Version control systems -->
     <tr>
         <th id="version-control-systems" class="section" colspan="3">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.18.0</td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.19.1</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage (Git LFS) 2.5.1</td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage (Git LFS) 2.6.0</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr><td>Mercurial 4.4.1</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Mercurial 4.5.3</td><td class="no"></td><td class="yes"></td></tr>
@@ -99,15 +98,13 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core 2.0.5 runtime</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core 2.0.6 runtime</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core 2.0.7 runtime</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.1.0-preview2 runtime</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.0.9 runtime</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core 2.1.0-rc1 runtime</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.3 runtime</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core 2.1.4 runtime</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.1.4 runtime</td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.0.0</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.0.2</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.0.3</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1.401</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1.402</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.2</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1.3</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1.4</td><td class="yes"></td><td class="no"></td></tr>
@@ -117,8 +114,10 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 2.1.105</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.200</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.201</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.300-rc1</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.300-preview2</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.202</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.1.300-rc1</td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.1.300-preview2</td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.1 version 2.1.500</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Node.js -->
     <tr>
         <th id="node-js" class="section" colspan="3">Node.js</th>
@@ -129,11 +128,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
         </td>
         <td class="yes"></td><td class="yes"></td>
     </tr>
-    <tr><td>Node.js 10.10.0</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 10.9.0</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Node.js 10.13.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 9.11.2</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 8.12.0</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 8.11.4</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Node.js 8.12.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 8.10.0 (installed in system)</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Node.js 7.10.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 6.14.4</td><td class="yes"></td><td class="yes"></td></tr>
@@ -170,8 +167,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>openJDK 8 1.8.0_181</li>
                 <li>openJDK 9 9.0.4</li>
                 <li>openJDK 10.0.2</li>
-                <li>openJDK 11 build 28</li>
-                <li>openJDK 12 early access 9</li>
+                <li>openJDK 11.0.1</li>
+                <li>openJDK 12 early access 17</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -180,9 +177,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="mono" class="section" colspan="3">Mono</th>
     </tr>
-    <tr><td>Mono 5.14.0.177</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual C# compiler csc 2.7.0.62620</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Mono C# compiler 5.14.0.177</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mono 5.16.0.179</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual C# compiler csc 2.8.2.62916</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mono C# compiler 5.16.0.179</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Mono ASP.NET Web Server xsp4 0.4.0.0</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Ruby -->
     <tr>
@@ -208,7 +205,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <th id="python" class="section" colspan="3">Python</th>
     </tr>
     <tr><td>Python 2 (installed in system)</td><td>2.7.12</td><td>2.7.15</td></tr>
-    <tr><td>Python 3 (installed in system)</td><td>3.5.2</td><td>3.6.5</td></tr>
+    <tr><td>Python 3 (installed in system)</td><td>3.5.2</td><td>3.6.6</td></tr>
     <tr>
         <td>
             <ul>
@@ -218,7 +215,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>Python 3.6.6</li>
                 <li>Python 3.7.0</li>
                 <li>virtualenv 15.0.1</li>
-                <li>pip 18.0</li>
+                <li>pip 18.1</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -233,44 +230,43 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="tools" class="section" colspan="3">Tools</th>
     </tr>
-    <tr><td>Yarn 1.9.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Yarn 1.12.3</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>p7zip 16.02 (<code>7za</code> utility is in PATH)</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>tcl 8.6.0+9</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>wget 1.17.1</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>wget 1.19.4</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>curl 7.47.0</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>curl 7.58.0</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>AWS CLI 1.16.8</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>AWS CLI 1.16.12</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.16.54</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>localstack 0.8.7</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Azure CLI-cli 2.0.45</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Packer 1.2.5</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>VirtualBox 5.2.18</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure CLI-cli 2.0.50</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Packer 1.3.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>VirtualBox 5.2.22</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
     <tr>
         <th id="web-browsers" class="section" colspan="3">Web browsers</th>
     </tr>
-    <tr><td>Firefox 62.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 69.0.3497.81</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 63.0.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 70.0.3538.102</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="3">Databases</th>
     </tr>
-    <tr><td>SQL Server 2017 14.0.3037</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server 2017 14.0.3045</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server 2017 14.0.3030</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>PostgreSQL 10+192</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>MySQL 5.7.23</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 11+195</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MySQL 5.7.24</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MongoDB 3.2.21</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>MongoDB 3.6.3</td><td class="no"></td><td class="yes"></td></tr>
     <!-- Services -->
     <tr>
         <th id="services" class="section" colspan="3">Services</th>
     </tr>
-    <tr><td>Redis 4.0.11</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Redis 5.0.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>RabbitMQ 3.6.15-1</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Configuration -->
     <tr>
         <th id="configuration" class="section" colspan="3">Configuration</th>
     </tr>
-    <tr><td>Default Locale: LANG</td><td>en_US.UTF-8</td><td>C.UTF-8</td></tr>
+    <tr><td>Default Locale: LANG</td><td>C.UTF-8</td><td>C.UTF-8</td></tr>
 </table>
