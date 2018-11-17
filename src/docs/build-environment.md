@@ -203,7 +203,8 @@ We provide an access to "last good" versions of build worker images from previou
 
 
 * Linux "previous" images:
-    * `Previous Ubuntu`
+    * `Previous Ubuntu` which is the same `Previous Ubuntu1604`
+    * `Previous Ubuntu1604`
     * `Previous Ubuntu1804`
 
 You can use those images to unblock your builds while we are working together with you to understand the root cause and do a fix by the next image update.
