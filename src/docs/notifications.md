@@ -586,7 +586,7 @@ And add the following to notification template:
 
 ## Build status in tray - Catlight
 
-[Catlight](https://catlight.io) is a free application that runs on Windows and OS X. It shows current status of AppVeyor builds in tray (or menu bar on OS X). In addition, it will show a toaster notification when a build starts or completes.
+[Catlight](https://catlight.io) is an application that runs on Windows and OS X. It shows current status of AppVeyor builds in tray (or menu bar on OS X). In addition, it will show a toaster notification when a build starts or completes. Usage requires a monthly subscription, except for open source projects.
 
 ![catlight-build-started-notification](/assets/img/docs/notifications/catlight-build-started-notification.png)
 
