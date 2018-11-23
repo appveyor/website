@@ -1030,7 +1030,7 @@ Request:
 Request body:
 
 ```text
-{    
+{
     buildId: {buildId},
     reRunIncomplete: {True/False}
 }
