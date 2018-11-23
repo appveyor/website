@@ -1021,6 +1021,23 @@ Request body:
 }
 ```
 
+### Re-run build
+
+Request:
+
+    PUT /api/builds
+
+Request body:
+
+```text
+{
+    buildId: {buildId},
+    reRunIncomplete: {True/False}
+}
+```
+
+Set `reRunIncomplete` set to `False` (default value) for full buildre-run. Set it set to `True` to rerun only failed or cancelled jobs in multijob build.
+
 ### Start build of Pull Request (GitHub only)
 
 Request:
