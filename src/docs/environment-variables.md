@@ -42,6 +42,7 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_SCHEDULED_BUILD` - `True` if the build runs by scheduler
 * `APPVEYOR_FORCED_BUILD` (`True` or undefined) - builds started by "New build" button or from the same API
 * `APPVEYOR_RE_BUILD` (`True` or undefined) - build started by "Re-build commit/PR" button of from the same API
+* `APPVEYOR_RE_RUN_INCOMPLETE` (`True` or undefined) - build job started by "Re-run incomplete" button of from the same API
 * `PLATFORM` - platform name set on Build tab of project settings (or through `platform` parameter in `appveyor.yml`)
 * `CONFIGURATION` - configuration name set on Build tab of project settings (or through `configuration` parameter in `appveyor.yml`)
 
