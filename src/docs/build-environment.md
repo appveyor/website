@@ -93,6 +93,7 @@ IP addresses assigned to build VMs in LiquidWeb data center (Lansing, MI):
     67.225.139.196
     67.225.139.220
     67.225.139.254
+    67.225.165.66
     67.225.251.77
     67.225.251.78
     67.225.251.79
