@@ -183,7 +183,6 @@ Other properties:
 * `skip_dirs` - semicolon list of regular expressions specifying the list of directories to skip while synchronizing application folder contents, for example `\\Logs;\\files`.
 * `skip_files` - semicolon list of regular expressions specifying the list of files to skip while synchronizing application folder contents.
 * `deploy_order` - Optional. Allows changing the deployment order of artifacts. Artifacts are deployed in ascending order. Deployment order is set to `0` if not specified.
-* `do_not_start` - Optional. Set to `true` if Windows Service should not be started after installation.
 
 
 ## Deploying artifact package as a Windows service
@@ -203,6 +202,7 @@ Other properties:
 * `skip_dirs` - semicolon list of regular expressions specifying the list of directories to skip while synchronizing application folder contents, for example `\\Logs;\\files`.
 * `skip_files` - semicolon list of regular expressions specifying the list of files to skip while synchronizing application folder contents.
 * `deploy_order` - Optional. Allows changing the deployment order of artifacts. Artifacts are deployed in ascending order. Deployment order is set to `0` if not specified.
+* `do_not_start` - Optional. Set to `true` if Windows Service should not be started after installation.
 
 
 ## Publishing SSDT package artifact to SQL Server
