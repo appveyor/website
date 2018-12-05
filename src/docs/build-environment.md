@@ -110,7 +110,11 @@ IP addresses assigned to build VMs in LiquidWeb data center (Lansing, MI):
 
 IP addresses assigned to build VMs in AWS data center (`US West (Oregon)` region):
 
+    34.208.156.238
     34.209.164.53
+    34.216.199.18
+    52.43.29.82
+    52.89.56.249
     54.200.227.141
 
 IP address of AppVeyor Cloud in Azure data center (`West US` region) - when deploying with "Environments":
