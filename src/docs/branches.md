@@ -105,17 +105,17 @@ You can use `APPVEYOR_REPO_TAG` variable to trigger deployment on tag only, for 
 - provider: Environment
   name: production
   on:
-    appveyor_repo_tag: true
+    APPVEYOR_REPO_TAG: true
 ```
 
-However, please note that in case of **annotated** tag, `branch` and `appveyor_repo_tag` are mutually exclusive. This is because, for webhook created as a result of **annotated** tag, there is no practical reliable way to recognize what branch the tag was created from. Therefore with this setting deployment will happen only for master branch:
+However, please note that in case of **annotated** tag, `branch` and `APPVEYOR_REPO_TAG` are mutually exclusive. This is because, for webhook created as a result of **annotated** tag, there is no practical reliable way to recognize what branch the tag was created from. Therefore with this setting deployment will happen only for master branch:
 
 ```yaml
 - provider: Environment
   name: production
   on:
     branch: master # only this will work
-    appveyor_repo_tag: true # condition will never be evaluated
+    APPVEYOR_REPO_TAG: true # condition will never be evaluated
 ```
 
 So if you need to deploy on both branch and tag, please create two `provider` sections under `deploy` like this:
@@ -130,7 +130,7 @@ deploy:
   - provider: Environment
     name: production
     on:
-      appveyor_repo_tag: true
+      APPVEYOR_REPO_TAG: true
 ```
 
 You can disable builds on new tags through UI (General tab of project settings) or in `appveyor.yml`:
