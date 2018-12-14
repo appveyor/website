@@ -27,7 +27,8 @@ The following is required on the server to run Deployment Agent:
 
 1. Add new environment with **Agent** provider selected. Open environment settings and copy **Environment access key**.
 2. Download AppVeyor Deployment Agent (.msi)
-    * [**AppVeyor Deployment Agent - latest** (v5.5.0)]({{ site.url }}/downloads/deployment-agent/latest/AppveyorDeploymentAgent.msi)
+    * [**AppVeyor Deployment Agent - latest** (v6.1.0)]({{ site.url }}/downloads/deployment-agent/latest/AppveyorDeploymentAgent.msi)
+    * [AppVeyor Deployment Agent v6.1.0]({{ site.url }}/downloads/deployment-agent/6.1.0/AppveyorDeploymentAgent.msi)
     * [AppVeyor Deployment Agent v5.5.0]({{ site.url }}/downloads/deployment-agent/5.5.0/AppveyorDeploymentAgent.msi)
     * [AppVeyor Deployment Agent v5.3.0]({{ site.url }}/downloads/deployment-agent/5.3.0/AppveyorDeploymentAgent.msi)
     * [AppVeyor Deployment Agent v5.0.8]({{ site.url }}/downloads/deployment-agent/5.0.8/AppveyorDeploymentAgent.msi)
