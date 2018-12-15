@@ -309,7 +309,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core 2.1.5 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.6 runtime</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.2.0 runtime</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 3.0.0-preview-27122-01 runtime (<code>Visual Studio 2019 Preview</code></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>.NET Core 3.0.0-preview-27122-01 runtime (<code>Visual Studio 2019 Preview</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003121</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003131</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003156</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -338,7 +338,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.1.403</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.500</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.100</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.0.100-preview-009812 (<code>Visual Studio 2019 Preview</code></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 3.0.100-preview-009812 (<code>Visual Studio 2019 Preview</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="4">Silverlight</th>
