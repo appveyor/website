@@ -198,8 +198,9 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017</th>
     </tr>
-    <tr><td>Visual Studio Community 2017 version 15.8.9</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.9.4</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual Studio Community 2017 version 15.9 Preview 4 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Enterprise 2019 version 16.0.0 Preview 1.1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 15.5.2 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -306,6 +307,9 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core 2.1.3 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.4 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.5 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.1.6 runtime</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.2.0 runtime</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 3.0.0-preview-27122-01 runtime (<code>Visual Studio 2019 Preview</code></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003121</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003131</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003156</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -332,6 +336,9 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.1.401</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.402</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.403</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.500</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.2.100</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.0.100-preview-009812 (<code>Visual Studio 2019 Preview</code></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="4">Silverlight</th>
@@ -469,27 +476,24 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="python" class="section" colspan="4">Python</th>
     </tr>
-    <tr>
-        <td>
-            <ul>
-                <li>Python 2.6.6 x86 (<code>C:\Python26</code>)</li>
-                <li>Python 2.6.6 x64 (<code>C:\Python26-x64</code>)</li>
-                <li>Python 2.7.15 x86 (<code>C:\Python27</code> - default in <code>PATH</code>)</li>
-                <li>Python 2.7.15 x64 (<code>C:\Python27-x64</code>)</li>
-                <li>Python 3.3.5 x86 (<code>C:\Python33</code>)</li>
-                <li>Python 3.3.5 x64 (<code>C:\Python33-x64</code>)</li>
-                <li>Python 3.4.4 x86 (<code>C:\Python34</code>)</li>
-                <li>Python 3.4.4 x64 (<code>C:\Python34-x64</code>)</li>
-                <li>Python 3.5.4 x86 (<code>C:\Python35</code>)</li>
-                <li>Python 3.5.4 x64 (<code>C:\Python35-x64</code>)</li>
-                <li>Python 3.6.6 x86 (<code>C:\Python36</code>)</li>
-                <li>Python 3.6.6 x64 (<code>C:\Python36-x64</code>)</li>
-                <li>Python 3.7.0 x86 (<code>C:\Python37</code>)</li>
-                <li>Python 3.7.0 x64 (<code>C:\Python37-x64</code>)</li>
-            </ul>
-        </td>
-        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
-    </tr>
+    <tr><td>Python 2.6.6 x86 (<code>C:\Python26</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 2.6.6 x64 (<code>C:\Python26-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 2.7.15 x86 (<code>C:\Python27</code> - default in <code>PATH</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 2.7.15 x64 (<code>C:\Python27-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.3.5 x86 (<code>C:\Python33</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.3.5 x64 (<code>C:\Python33-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.4.4 x86 (<code>C:\Python34</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.4.4 x64 (<code>C:\Python34-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.5.4 x86 (<code>C:\Python35</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.5.4 x64 (<code>C:\Python35-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.6.6 x86 (<code>C:\Python36</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Python 3.6.6 x64 (<code>C:\Python36-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Python 3.6.7 x86 (<code>C:\Python36</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.6.7 x64 (<code>C:\Python36-x64</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.7.0 x86 (<code>C:\Python37</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Python 3.7.0 x64 (<code>C:\Python37-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Python 3.7.1 x86 (<code>C:\Python37</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.7.1 x64 (<code>C:\Python37-x64</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual C++ Compiler for Python 2.7</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Miniconda -->
     <tr>
@@ -813,12 +817,18 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Chocolatey v0.10.8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GitVersion 4.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>OpenSSL 1.0.2p (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 1.0.2p (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 1.1.0i (32-bit) (<code>C:\OpenSSL-v11-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 1.1.0i (64-bit) (<code>C:\OpenSSL-v11-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 1.1.1 (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 1.1.1 (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.0.2p (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>OpenSSL 1.0.2p (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>OpenSSL 1.1.0i (32-bit) (<code>C:\OpenSSL-v11-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>OpenSSL 1.1.0i (64-bit) (<code>C:\OpenSSL-v11-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>OpenSSL 1.1.1 (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>OpenSSL 1.1.1 (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>OpenSSL 1.0.2q (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.0.2q (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.1.0j (32-bit) (<code>C:\OpenSSL-v11-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.1.0j (64-bit) (<code>C:\OpenSSL-v11-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.1.1a (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.1.1a (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.03 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
