@@ -43,6 +43,8 @@ on_finish:
   - sh: curl -sflL 'https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-ssh.sh' | bash -e -
 ```
 
+Alternatively, you can add `sh: sleep 60m` to postpone finishing a script so that you have more time to investigate with `ssh`.
+
 SSH session is limited by overall build time (60 min).
 
 ## Generating SSH key
