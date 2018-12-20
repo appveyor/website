@@ -106,6 +106,21 @@ install:
   - git submodule update --init --recursive
 ```
 
+> Alternatively for `image: ubuntu`:
+
+```yaml
+image: ubuntu
+
+environment:
+  priv_key:
+    secure: <encryped-value>
+
+install:
+  - echo "-----BEGIN RSA PRIVATE KEY-----" > $HOME/.ssh/id_rsa
+  - echo "${priv_key}" | tr " " "\n" >> $HOME/.ssh/id_rsa
+  - echo "-----END RSA PRIVATE KEY-----" >> $HOME/.ssh/id_rsa
+  - git submodule update --init --recursive
+```
 
 ## Security considerations
 
