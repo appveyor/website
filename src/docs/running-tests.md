@@ -13,7 +13,7 @@ title: Running tests
 
 AppVeyor has tight integration with the following testing frameworks:
 
-* [Visual Studio Unit Testing framework (MSTest)](https://msdn.microsoft.com/en-us/library/dd264975.aspx)
+* [Visual Studio Unit Testing framework (MSTest)](https://docs.microsoft.com/visualstudio/test/unit-test-your-code)
 * [NUnit](http://nunit.org/)
 * [xUnit.net](https://github.com/xunit/xunit)
 * [Machine.Specifications (MSpec)](https://github.com/machine/machine.specifications)
@@ -197,7 +197,7 @@ To run unit tests for Visual Studio test framework with real-time reporting use 
 
     vstest.console /logger:Appveyor <assembly> [options]
 
-`[options]` are standard [vstest.console.exe command-line options](https://msdn.microsoft.com/en-us/library/jj155796.aspx).
+`[options]` are standard [VSTest.Console.exe command-line options](https://docs.microsoft.com/visualstudio/test/vstest-console-options).
 
 
 
