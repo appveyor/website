@@ -97,17 +97,7 @@ only_commits:
 
 ### Skip commits
 
-`skip_commits.files` allows skipping AppVeyor build if **all of the files** modified in push's **head commit** match **any** of the file matching rules:
-
-```yaml
-skip_commits:
-  files:
-    - dir/*
-    - dir/*.md
-    - full/path.txt
-    - another/dir/here/
-    - '**/*.html'
-```
+`skip_commits.files` allows skipping AppVeyor build if **all of the files** modified in push's **head commit** match **any** of the file matching rules.
 
 For example, if `appveyor.yml` contains the following rules:
 
@@ -118,9 +108,9 @@ skip_commits:
     - '**/*.html'
 ```
 
-and push commit modified two files: `docs/index.md` and `project-A/mysolution.sln` the build will be started as there is no rule matching `project-A/mysolution.sln`.
+and the pushed commit modified two files: `docs/index.md` and `project-A/mysolution.sln`, the build will be started. As there is no rule matching `project-A/mysolution.sln`.
 
-For the same set of rules commit modifying `docs/index.md` and `site/views/index.html` files won't start a build as both files match their respective rules.
+For the same set of rules a commit modifying `docs/index.md` and `site/views/index.html` won't start a build. As both files match their respective rules.
 
 ### Include commits
 
