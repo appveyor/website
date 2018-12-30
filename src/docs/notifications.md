@@ -125,24 +125,12 @@ notifications:
     to:
       - user1@email.com
       - user2@email.com
-    subject: 'Build {{status}}'                  # optional
+      - '{{commitAuthorEmail}}' # template variable, send email to the author of the commit
+    subject: 'Build {{status}}' # optional
     message: "{{template_variable_1}}, {{template_variable_2}}, ..."    # optional
     on_build_success: true|false
     on_build_failure: true|false
     on_build_status_changed: true|false
-{% endraw %}
-```
-
-Note that you can use template variables for message recipient. For example, this configuration will send email to failed commit author:
-
-```yaml
-{% raw %}
-notifications:
-  - provider: Email
-  to:
-  - '{{commitAuthorEmail}}'
-  ...
-  on_build_failure: true
 {% endraw %}
 ```
 
