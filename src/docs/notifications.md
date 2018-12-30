@@ -126,6 +126,7 @@ notifications:
       - user1@email.com
       - user2@email.com
       - '{{commitAuthorEmail}}' # template variable, send email to the author of the commit
+      - '{{committerEmail}}'    # template variable, send email to the commiter (can be different for merges)
     subject: 'Build {{status}}' # optional
     message: "{{template_variable_1}}, {{template_variable_2}}, ..."    # optional
     on_build_success: true|false
