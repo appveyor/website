@@ -27,7 +27,7 @@ title: Projects and builds API
 * [Start build of branch most recent commit](#start-build-of-branch-most-recent-commit)
 * [Start build of specific branch commit](#start-build-of-specific-branch-commit)
 * [Re-run build](#re-run-build)
-* [Start build of Pull Request (GitHub only)](#start-build-of-pull-request-github-only)
+* [Start build of Pull Request](#start-build-of-pull-request)
 * [Cancel build](#cancel-build)
 * [Delete build](#delete-build)
 
@@ -1039,7 +1039,7 @@ Request body:
 
 Set `reRunIncomplete` set to `False` (default value) for full buildre-run. Set it set to `True` to rerun only failed or cancelled jobs in multijob build.
 
-### Start build of Pull Request (GitHub only)
+### Start build of Pull Request
 
 Request:
 
