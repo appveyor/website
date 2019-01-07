@@ -54,7 +54,7 @@ More details at [packaging artifacts](/docs/packaging-artifacts/).
 
 ### Publishing .nupkg artifacts to to account/project feeds
 
-By default AppVeyor publishes all .nupkg artifacts to to account/project Nuget feeds ([more details](docs/nuget)). Therefore, any `.nupkg` artifact of type `OctopusPackage` is published account/project Nuget feeds. If this behavior is not , please set the following in YAML:
+By default AppVeyor publishes all .nupkg artifacts to to account/project Nuget feeds ([more details](/docs/nuget/)). Therefore, any `.nupkg` artifact of type `OctopusPackage` is published account/project Nuget feeds. If this behavior is not , please set the following in YAML:
 
 ```yaml
 nuget:
