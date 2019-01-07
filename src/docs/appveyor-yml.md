@@ -176,8 +176,8 @@ assembly_info:
 nuget:
   account_feed: true
   project_feed: true
-  disable_publish_on_pr: true     # disable publishing of .nupkg artifacts to
-                                  # account/project feeds for pull request builds
+  disable_publish_on_pr: true     # disable publishing of .nupkg artifacts to account/project feeds for pull request builds
+  publish_wap_octopus: true       # disable publishing of Octopus Deploy .nupkg artifacts to account/project feeds
 
 #---------------------------------#
 #       build configuration       #

@@ -52,6 +52,17 @@ artifacts:
 
 More details at [packaging artifacts](/docs/packaging-artifacts/).
 
+### Publishing .nupkg artifacts to to account/project feeds
+
+By default AppVeyor publishes all .nupkg artifacts to to account/project Nuget feeds ([more details](/docs/nuget/)). Therefore, any `.nupkg` artifact of type `OctopusPackage` is published account/project Nuget feeds. If this behavior is not , please set the following in YAML:
+
+```yaml
+nuget:
+  disable_publish_octopus: true
+```
+
+Or if you use UI, select `Do not publish Octopus Deploy .nupkg artifacts to account/project feeds` under **Nuget** settings.
+
 ## Understanding scenarios
 
 There are 3 Octopus Deploy scenarios exposed in AppVeyor right now:
