@@ -602,7 +602,8 @@ Here is a list of settings which **will be ignored** if placed under `for.matrix
 * another `for` construct
 * `pull_requests.do_not_increment_build_number`
 * `max_jobs`
-* `nuget.account_feed/.project_feed/.disable_publish_on_pr`
+* `nuget.account_feed.project_feed.disable_publish_on_pr`
+* `nuget.account_feed.project_feed.publish_wap_octopus`
 
 Therefore this YAML will be executed, but **no special configuration** for any matrix job will be formed:
 
