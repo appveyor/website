@@ -209,7 +209,7 @@ On storage details screen select **Access keys** and copy **key1** value.
 
 ## Add build cloud in AppVeyor
 
-Login to AppVeyor web console and navigate to **Account menu &rarr; Build environment** page.
+Login to AppVeyor web console and navigate to **Account Settings menu &rarr; Build environment** page.
 
 Click **Add cloud** and select cloud type **Azure**.
 
@@ -238,7 +238,7 @@ Fill the following mandatory settings:
 
 ## Add build worker image in AppVeyor
 
-In AppVeyor web console navigate to **Account menu &rarr; Build environment &rarr; Build worker images**.
+In AppVeyor web console navigate to **Account Settings menu &rarr; Build environment &rarr; Build worker images**.
 
 Click **Add image** and enter the following details:
 
@@ -250,7 +250,7 @@ Click **Add image** and enter the following details:
 
 ## Set default worker image and build cloud
 
-Navigate to **Account menu &rarr; Settings &rarr; Build environment**.
+Navigate to **Account Settings menu &rarr; Build environment**.
 
 Update the following settings:
 

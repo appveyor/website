@@ -58,7 +58,7 @@ Install any additional software required for your builds.
 ## Setting up custom cloud and images in AppVeyor
 
 * Login to AppVeyor portal
-* Navigate to your account name on the top right and select **Build environment** option from drop-down menu
+* Navigate to your account level **Settings** in the top manu and select **Build environment** option from the drop-down
     * If **Build environment** option is not available, please contact [support@appveyor.com](mailto:support@appveyor.com) and ask to enable **Private build clouds** feature
 * Press **Add cloud**, select cloud type **Process**
 
