@@ -14,16 +14,12 @@ In this section we'll describe two ways of running tests in parallel:
 
 ## Requirements
 
-Parallel testing works for [Premium and Enterprise plans](/pricing/) with 2 and 4 concurrent jobs respectively.
+Parallel testing works well for accounts which have multiple concurrent jobs in their plan. In some scenarios it is useful to split tests into jobs on the Free plan as well, but jobs will run in series as the Free plan allows 1 concurrent job per account.
 
-The number of concurrent jobs is defined **per account**, so, for example, if you run 2 builds with 4 jobs each (8 jobs in total) then 4 of those jobs will run at the same time. When a job from project A finishes then the first job of project B will start. This behaviour is illustrated below:
+The number of concurrent jobs is defined **per account**. For example, if you run 2 builds with 4 jobs each (8 jobs in total) when your plan allows 4 parallel jobs, then 4 of those jobs will run at the same time. When a job from project A finishes then the first job of project B will start. This behavior is illustrated below:
 
 * Project A: 2 jobs finished, 2 jobs running.
 * Project B: 2 jobs running, 2 jobs pending.
-
-It's possible to assign a custom plan to your account if you need more concurrent jobs. Please [contact us for a quote](mailto:team@appveyor.com).
-
-You can split tests into jobs on the Free plan, but jobs will run in series as the Free plan allows 1 concurrent job per account.
 
 ## Test categories
 
