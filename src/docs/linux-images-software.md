@@ -104,7 +104,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core 2.1.3 runtime</td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core 2.1.4 runtime</td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core 2.1 runtime version 2.1.6</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.2 runtime version 2.2.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.2 runtime version 2.2.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.0.0</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.0.2</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.0.3</td><td class="yes"></td><td class="no"></td></tr>
@@ -120,8 +120,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 2.1.202</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1.300-rc1</td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1.300-preview2</td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1 version 2.1.502</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.2 version 2.1.101</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1 version 2.1.503</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.2 version 2.1.102</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Node.js -->
     <tr>
         <th id="node-js" class="section" colspan="3">Node.js</th>
@@ -138,13 +138,13 @@ The history of Ubuntu image updates can be found [here](/updates/).
         </td>
         <td class="no"></td><td class="yes"></td>
     </tr>
-    <tr><td>Node.js 11.5.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 10.14.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 11.6.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 10.15.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 9.11.2</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 8.14.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.15.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 8.10.0 (installed in system)</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Node.js 7.10.1</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 6.15.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 6.16.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 6.14.4 (installed in system)</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Node.js 5.12.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 4.9.1</td><td class="yes"></td><td class="yes"></td></tr>
@@ -179,7 +179,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>openJDK 9 9.0.4</li>
                 <li>openJDK 10.0.2</li>
                 <li>openJDK 11.0.1</li>
-                <li>openJDK 12 early access 23</li>
+                <li>openJDK 12 early access 27</li>
+                <li>openJDK 13 early access 3</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -215,8 +216,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>Ruby 2.3.8</li>
                 <li>Ruby 2.4.5</li>
                 <li>Ruby 2.5.3</li>
+                <li>Ruby 2.6.0</li>
                 <li>Ruby HEAD 2.7.0dev</li>
-                <li>Ruby Version Manager (RVM) 1.29.4</li>
+                <li>Ruby Version Manager (RVM) 1.29.7</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -259,8 +261,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>wget 1.19.4</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>curl 7.47.0</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>curl 7.58.0</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>AWS CLI 1.16.77</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>localstack 0.8.8</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.16.87</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>localstack 0.8.10</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Azure CLI-cli 2.0.54</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Packer 1.3.3</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>VirtualBox 5.2.22</td><td class="yes"></td><td class="yes"></td></tr>
@@ -269,7 +271,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="web-browsers" class="section" colspan="3">Web browsers</th>
     </tr>
-    <tr><td>Firefox 64.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 64.0.2</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Chrome 71.0.3578</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
