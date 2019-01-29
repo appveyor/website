@@ -288,6 +288,8 @@ The build phase can operate in multiple modes. By default, AppVeyor works in `MS
 
 The alternative to `MSBuild` mode is `Script` mode. This mode lets you do the build by running arbitrary scripted actions instead of building a Visual Studio project. `Script` mode can be activated in `appveyor.yml` by adding a `build_script:` section instead of a `build:` section. Alternatively, you can set `build: off` to disable `MSBuild` mode without providing an alternate custom build script.
 
+If you are using AppVeyor UI (not YAML) configuration, all three options (`MSBuild`, `Script` and `Off`) are available in `Build` settings section.
+
 ## Script blocks in build configuration
 
 There are a lot of places in configuration where you can inject your custom logic like "install" scripts, "before build", "after tests", "deploy" scripts, etc.
