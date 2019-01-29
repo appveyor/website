@@ -282,6 +282,11 @@ from submitting PR with malicious build script displaying those variables. In mo
 environment through with a trusted team and private GitHub repositories there is an option on
 General tab of project settings to allow secure variables for PRs.
 
+## Build mode
+
+The build phase can operate in multiple modes. By default, AppVeyor works in `MSBuild` mode. This causes AppVeyor to look for a Visual Studio project or solution file in the root directory of your project, and use that to do the build. The behavior of an `MSBuild` mode build can be controlled by the `build:` entry in `appveyor.yml`.
+
+The alternative to `MSBuild` mode is `Script` mode. This mode lets you do the build by running arbitrary scripted actions instead of building a Visual Studio project. `Script` mode can be activated in `appveyor.yml` by adding a `build_script:` section instead of a `build:` section. Alternatively, you can set `build: off` to disable `MSBuild` mode without providing an alternate custom build script.
 
 ## Script blocks in build configuration
 
