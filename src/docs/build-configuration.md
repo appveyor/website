@@ -105,7 +105,7 @@ After that place URL to YAML file to **Custom configuration .yml file name** set
 
 ### Generic Git repositories and YAML
 
-Appveyor attempts to acquire appveyor.yml (or custom YAML name) from the repository before starting the build. This happens on central servers (not build workers) before any git clone happens. At that moment AppVeyor only needs the content of that one configuration file and so a full clone would be too expensive on central servers which are scheduling thousands of builds. Generic git does not have an option to check out an individual file, therefore we are using the APIs of source control providers who support this directly (like "Get contents" from Github).
+Appveyor attempts to acquire appveyor.yml (or custom YAML name) from the repository before starting the build. This happens on central servers (not build workers) before any git clone happens. At that moment AppVeyor only needs the content of that one configuration file and so a full clone would be too expensive on central servers which are scheduling thousands of builds. Generic git does not have an option to check out an individual file, therefore we are using the APIs of source control providers who support this directly (like "Get contents" from GitHub).
 At the moment those supported are: GitLab, VSTS, Kiln, Stash (BitBucket Server) and GitHub Enterprise. If you are using any other git source control provider, you will need to use [Alternative YAML file location](#alternative-yaml-file-location) described above.
 
 ### YAML format notes
