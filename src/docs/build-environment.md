@@ -111,7 +111,7 @@ IP addresses assigned to build VMs in AWS data center (`US West (Oregon)` region
 IP addresses assigned to build VMs in Azure data center (`West US` region):
 
     13.83.108.89
-    
+
 IP address of AppVeyor Cloud in Azure data center (`West US` region) - when deploying with "Environments":
 
     138.91.141.243
