@@ -617,17 +617,20 @@ title: Software pre-installed on Windows build VMs
             <li>Qt 5.12.1: <code>C:\Qt\5.12.1</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.1</code> for backward compatibility)
                 <ul>
                 <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.1\mingw73_64</code></li>
+                <li>msvc2017 32-bit: <code>C:\Qt\5.12.1\msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.12.1\msvc2017_64</code></li>
                 </ul>
             </li>
             </ul>
         </td>
-        <td class="no"></td><td class="yes"></td><td class="yes"></td>
+        <td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>
             <ul>
             <li>Qt 5.12.1: <code>C:\Qt\5.12.1</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.1</code> for backward compatibility)
                 <ul>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.1\mingw73_64</code></li>
                 <li>msvc2015 64-bit: <code>C:\Qt\5.12.1\msvc2015_64</code></li>
                 </ul>
             </li>
