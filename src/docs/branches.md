@@ -44,6 +44,16 @@ branches:
 
 **Regular expressions** should be surrounded by `/`, otherwise Appveyor will do simple case insensitive string comparison.
 
+Despite the option name, `only` and `except` is applied to tag names too, so the above example using `only` would cause tags not trigger the build. For example to enable builds for a tag version scheme like `v1.0.0` you would need:
+
+```yaml
+branches:
+  only:
+    - master
+    - production
+    - /v\d*\.\d*\.\d*/
+```
+
 ## Conditional build configuration
 
 If you use [git flow](http://nvie.com/posts/a-successful-git-branching-model/) you may want to have a different build configuration (e.g. deploying to a different environment) in a feature branch. Changing `appveyor.yml` in a feature branch becomes an issue when you merge it into master overriding `appveyor.yml` and breaking master builds.
