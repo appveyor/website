@@ -92,7 +92,7 @@ Do not sysprep master VM!
 
 ## Download and install AppVeyor Host agent on Host machine
 
-* [Download location](https://www.appveyor.com/downloads/host-agent/latest/AppveyorHostAgent.msi)
+* [Download location](https://www.appveyor.com/downloads/host-agent/windows/latest/AppveyorHostAgent.msi)
 * Installation settings
     * **Host authorization token**: token generated or manually entered during [Setting up custom cloud and images in AppVeyor](/docs/enterprise/running-builds-on-hyper-v/#setting-up-custom-cloud-and-images-in-appveyor) step
 

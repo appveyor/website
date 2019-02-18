@@ -25,7 +25,7 @@ title: Running builds as local process
 
 ### Download and install AppVeyor Host agent on agent machine
 
-* [Download location](https://www.appveyor.com/downloads/host-agent/latest/AppveyorHostAgent.msi)
+* [Download location](https://www.appveyor.com/downloads/host-agent/windows/latest/AppveyorHostAgent.msi)
 * Installation settings
     * **Host authorization token**: token generated or manually entered during [Setting up custom cloud and images in AppVeyor](/docs/enterprise/running-builds-as-local-process/#setting-up-custom-cloud-and-images-in-appveyor) step
 
