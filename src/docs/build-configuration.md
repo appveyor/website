@@ -93,6 +93,8 @@ Some build configuration settings can be configured **only with UI**. They are n
 * Enable deployments in Pull Requests *(available for private repos)*
 * Save build cache in Pull Requests
 * Always build closed Pull Request
+* Do not build on "Push" events
+* Do not build on "Pull request" events
 
 ### YAML file alternative naming
 
