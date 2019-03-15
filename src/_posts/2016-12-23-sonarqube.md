@@ -32,7 +32,7 @@ Log in to [AppVeyor.com](https://ci.appveyor.com), probably using your GitHub ac
 
 ## Sign up with SonarQube and generate an Authentication Token
 
-* Create an account on [SonarCloud.io](https://sonarcloud.io/sessions/new) 
+* Create an account on [SonarCloud.io](https://sonarcloud.io/sessions/new)
 * Make a note of your Organisation Key ([ceddlyburge-github for me](https://sonarcloud.io/organizations/ceddlyburge-github) (**YourSonarQubeOrganisationKey** from now on)
 * Navigate to the [Tokens page  (My Account and then Security)](https://sonarcloud.io/account/security/)
 * Enter a token name and click "Generate"
