@@ -8,7 +8,7 @@ SonarQube / SonarSource analyzes code, highlights quality issues and calculates 
 
 This post is written from the point of view of someone (me) who is already proficient in C#, and had used SonarQube, but was new to AppVeyor and integrating SonarQube with GitHub.
 
-It contains from scratch steps to run the SonarQube analysis on a sample project and to publish the results to [SonarCloud.io](SonarCloud.io). You can [look at the repo I created to test this post](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor) if you get stuck.
+It contains from scratch steps to run the SonarQube analysis on a sample project and to publish the results to [SonarCloud.io](https://SonarCloud.io). You can [look at the repo I created to test this post](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor) if you get stuck.
 
 ## Create a new GitHub repository
 
@@ -64,7 +64,7 @@ SonarScanner.MSBuild.exe end /d:"sonar.login=**YourSonarQubeToken**"
 
 **YourUniqueProjectName** can be anything you like, as long as it is unique.
 
-When finished, you will be able to see the results at [sonarcloud.io/](sonarcloud.io). If it isn't working, make sure you are using MSBuild 14 and [Java 1.8 or later](https://stackoverflow.com/questions/40249947/msbuild-sonarqube-runner-exe-cant-access-https-sonarqube-com). The SonarQube [Getting Started](https://about.sonarqube.com/get-started/) page is excellent if you need to troubleshoot.
+When finished, you will be able to see the results at [sonarcloud.io/](https://sonarcloud.io). If it isn't working, make sure you are using MSBuild 14 and [Java 1.8 or later](https://stackoverflow.com/questions/40249947/msbuild-sonarqube-runner-exe-cant-access-https-sonarqube-com). The SonarQube [Getting Started](https://about.sonarqube.com/get-started/) page is excellent if you need to troubleshoot.
 
 ## Run SonarQube Analysis on AppVeyor
 
