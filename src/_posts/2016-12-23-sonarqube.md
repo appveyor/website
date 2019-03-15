@@ -2,13 +2,13 @@
 title: SonarQube Analysis
 ---
 
-This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software Developer Lead at [RES](https://medium.com/res-software-team).
+This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software Developer Lead at [RES](https://medium.com/res-software-team). Last updated and verified working March 2019.
 
 SonarQube / SonarSource analyzes code, highlights quality issues and calculates metrics such as technical debt. More information is available on [SonarSource.com](https://www.sonarsource.com/).
 
-This post is written from the point of view of someone (me) who is already proficient in C#, and had even used SonarQube, but was new to AppVeyor and integrating SonarQube with GitHub.
+This post is written from the point of view of someone (me) who is already proficient in C#, and had used SonarQube, but was new to AppVeyor and integrating SonarQube with GitHub.
 
-It contains from scratch steps to run the SonarQube analysis on a sample project and to publish the results to the publicly available Nemo instance of SonarQube. You can [look at the repo I created to test this post](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor) if you get stuck.
+It contains from scratch steps to run the SonarQube analysis on a sample project and to publish the results to [SonarCloud.io](SonarCloud.io). You can [look at the repo I created to test this post](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor) if you get stuck.
 
 ## Create a new GitHub repository
 
@@ -16,25 +16,15 @@ If you are new to GitHub, see [this getting started guide](https://guides.github
 
 ## Create a new project
 
-In my version of Visual Studio (Community 2015), you can do this by clicking on *"File - New - Project"* on the main menu, then *"Class Library"* from *"Templates - Visual C#"*. Give it a interesting name, which I will assume to be **YourProjectName** for the rest of this post.
+In my version of Visual Studio (Community 2017), you can do this by clicking on *"File - New - Project"* on the main menu, then one of the Class Library options (.NET Framework for example) from the *"Visual C#"* section. Give it a interesting name, which I will assume to be **YourProjectName** for the rest of this post.
 
-Add some code that has some quality issues (e.g. a variable that is declared but never used). You can use the [the full list of SonarQube C# issues](http://dist.sonarsource.com/reports/coverage/rules/csharpsquid_rules_coverage.html) for inspiration. Alternatively you can copy and paste [some of mine](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor/blob/master/ExampleSonarQubeIssues.cs).
+Add some code that has some quality issues (e.g. a variable that is declared but never used). You can use the [the full list of SonarQube C# issues](https://rules.sonarsource.com/csharp) for inspiration. Alternatively you can copy and paste [some of mine](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor/blob/master/ExampleSonarQubeIssues.cs).
 
-Install the [SonarLint Visual Studio Plugin](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio). This highlights quality issues in your code as you type and gives you a chance to fix them before committing.
+Install the [Sonar Visual Studio Plugin](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017). This highlights quality issues in your code as you type and gives you a chance to fix them before committing.
 
-## Integrate with AppVeyor
+## Integrate GitHub with AppVeyor
 
-You will need to link an AppVeyor account to your GitHub one, so let's do that:
-
-* Navigate to your repo in GitHub
-* Click "Settings" on the repo
-* Click "Integrations and services"
-* Click "Browse Directory"
-* Click "AppVeyor"
-* Click "Configure"
-* Click "Grant Access"
-
-Now Log in to [AppVeyor.com](https://ci.appveyor.com), probably using your GitHub account
+Log in to [AppVeyor.com](https://ci.appveyor.com), probably using your GitHub account
 
 * Click "Projects"
 * Click "New Project"
@@ -42,8 +32,9 @@ Now Log in to [AppVeyor.com](https://ci.appveyor.com), probably using your GitHu
 
 ## Sign up with SonarQube and generate an Authentication Token
 
-* Create an account at [sonarqube.com/sessions/new](https://sonarqube.com/sessions/new)
-* Click on [sonarqube.com/account/security/](https://sonarqube.com/account/security/)
+* Create an account on [SonarCloud.io](https://sonarcloud.io/sessions/new) 
+* Make a note of your Organisation Key ([ceddlyburge-github for me](https://sonarcloud.io/organizations/ceddlyburge-github) (**YourSonarQubeOrganisationKey** from now on)
+* Navigate to the [Tokens page  (My Account and then Security)](https://sonarcloud.io/account/security/)
 * Enter a token name and click "Generate"
 * Make a note of the generated token (**YourSonarQubeToken** from now on)
 
@@ -61,17 +52,19 @@ Instead of committing SonarQube executables to the repo, we will download them d
 ### Install SonarQube MSBuild Runner
 
 * Open a new administrator command prompt / powershell.
-* `choco install "msbuild-sonarqube-runner" -y`
+* `choco install "sonarscanner-msbuild-net46" -y`
 
 ### Analyze and upload to SonarQube
 
 ```batch
-MSBuild.SonarQube.Runner.exe begin /k:"**YourUniqueProjectName**" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=**YourSonarQubeToken**"
+SonarScanner.MSBuild.exe begin /k:"**YourUniqueProjectName**" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=**YourSonarQubeToken**" /o:"**YourSonarQubeOrganisationKey**"
 "**YourPathToMSBuild**\MSBuild.exe" "**YourProjectName**.sln"
-MSBuild.SonarQube.Runner.exe end /d:"sonar.login=**YourSonarQubeToken**"
+SonarScanner.MSBuild.exe end /d:"sonar.login=**YourSonarQubeToken**"
 ```
 
-When finished, you will be able to see the results at [sonarqube.com/](https://sonarqube.com). If it isn't working, make sure you are using MSBuild 14 and [Java 1.8 or later](https://stackoverflow.com/questions/40249947/msbuild-sonarqube-runner-exe-cant-access-https-sonarqube-com). The SonarQube [Getting Started](https://about.sonarqube.com/get-started/) page is excellent if these instructions become out of date.
+**YourUniqueProjectName** can be anything you like, as long as it is unique.
+
+When finished, you will be able to see the results at [sonarcloud.io/](sonarcloud.io). If it isn't working, make sure you are using MSBuild 14 and [Java 1.8 or later](https://stackoverflow.com/questions/40249947/msbuild-sonarqube-runner-exe-cant-access-https-sonarqube-com). The SonarQube [Getting Started](https://about.sonarqube.com/get-started/) page is excellent if you need to troubleshoot.
 
 ## Run SonarQube Analysis on AppVeyor
 
@@ -81,69 +74,34 @@ Add and commit an **appveyor.yml** file to the root of the repository as follows
 
 ```yaml
 before_build:
-  - nuget restore
+ - nuget restore
 build_script:
-  - choco install "msbuild-sonarqube-runner" -y
-  - MSBuild.SonarQube.Runner.exe begin /k:"YourUniqueProjectName" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=YourSonarQubeToken"
-  - msbuild "YourProjectName.sln"
-  - MSBuild.SonarQube.Runner.exe end /d:"sonar.login=YourSonarQubeToken"
+ - choco install "sonarscanner-msbuild-net46" -y
+ - SonarScanner.MSBuild.exe begin /k:"**YourUniqueProjectName**" /d:"sonar.host.url=https://sonarcloud.io" /o:"**YourSonarQubeOrganisationKey**" /d:"sonar.login=**YourSonarQubeToken**"
+ - msbuild /verbosity:quiet "**YourProjectName**.sln"
+ - SonarScanner.MSBuild.exe end /d:"sonar.login=**YourSonarQubeToken**"
 ```
 
-Again, you can check the results at [sonarqube.com](https://sonarqube.com/).
+Again, you can check the results at [sonarcloud.io](https://sonarcloud.io/).
 
 ## Add a SonarQube badge to the repo
 
-There are are variety of [Quality Gate](https://github.com/QualInsight/qualinsight-plugins-sonarqube-badges/wiki/Quality-Gate-status-badges) and [Metrics](https://github.com/QualInsight/qualinsight-plugins-sonarqube-badges/wiki/Measure-badges) badges available.
+There are are variety of badges available. If you navigate to your project on SonarCloud there is a "Get Project Badges" button. It's a bit hard to find but is on the bottom right of the page at the time of writing.
 
-To add a standard [![Quality Gate](https://sonarqube.com/api/badges/gate?key=SonarQubeNemoOnAppveyor)](https://sonarqube.com/dashboard/index/SonarQubeNemoOnAppveyor) badge, add the following to readme.md.
+To add a standard [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SonarQubeNemoOnAppveyor&metric=alert_status)](https://sonarcloud.io/dashboard?id=SonarQubeNemoOnAppveyor) badge, add the following to readme.md.
 
 ```markdown
-[![Quality Gate](https://sonarqube.com/api/badges/gate?key=YourUniqueProjectName)](https://sonarqube.com/dashboard/index/YourUniqueProjectName)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=**YourUniqueProjectName**&metric=alert_status)](https://sonarcloud.io/dashboard?id=**YourUniqueProjectName**)
 ```
 
 ## Integrate SonarQube with Pull Requests
 
-SonarQube can analyze Pull Requests for quality issues, which you can see on [this pull request](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor/pull/3).
+SonarQube can analyze Pull Requests for quality issues, but sadly this feature is no longer in the free version. You can see more on the [Sonar Website](https://sonarcloud.io/documentation/analysis/pull-request/).
 
-This requires a GitHub authentication token, which must be secured, secure variables to be enabled in pull requests and a differential build for Pull Requests.
-
-### Get a GitHub Authentication token
-
-Go to your profile and click *"Edit Profile"*. Click on *"Personal access tokens"* in the *"Developer settings"* section. Give the token any name and tick on the *"public_repo"* scope. Make a note of the created token (**GitHubAuthToken** from now on)
-
-### Secure the GitHub Authentication token
-
-Anyone with access to this token can alter your data, contact information and billing data, so we don't want that.
-
-On [AppVeyor](https://ci.appveyor.com), click **Settings** &rarr; **Encrypt YAML** from the drop down menu. Enter **GitHubAuthToken** in to *"Value to encrypt"* and click *"Encrypt"*. AppVeyor will then display a token which you can use in place of the real value (**EncryptedGitHubAuthToken** from now on).
-
-### Allowing Secure Variables in Pull Requests
-
-Normally AppVeyor will not decrypt secure variables in Pull Requests, as in this case a Hacker could send you a PR and then read all of your secure data. However, for SonarQube to analyze Pull Requests, it is necessary. You need to decide whether you can live with this.
-
-If you can, go to [AppVeyor](https://ci.appveyor.com), click on your project, click *"Settings"*, tick *"Enable secure variables in Pull Requests from the same repository only"* and click *"Save"*.
-
-### Create a Pull Request Build
-
-Modify **AppVeyor.yml** to ask SonarQube to publish results on standard builds, and to integrate with pull request builds. To achieve this, extra parameters are given to the SonarQube runner when `if ($env:APPVEYOR_PULL_REQUEST_NUMBER)` detects a Pull Request build.
-
-```yaml
-environment:
-  github_auth_token:
-    secure: EncryptedGitHubAuthToken
-before_build:
-  - nuget restore
-build_script:
-  - choco install "msbuild-sonarqube-runner" -y
-  - ps: if ($env:APPVEYOR_PULL_REQUEST_NUMBER) { MSBuild.SonarQube.Runner.exe begin /k:"YourUniqueProjectName" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=YourSonarQubeToken" /d:"sonar.analysis.mode=preview" /d:"sonar.github.pullRequest=$env:APPVEYOR_PULL_REQUEST_NUMBER" /d:"sonar.github.repository=YourRepositoryUrl" /d:"sonar.github.oauth=$env:EncryptedGitHubAuthToken" }
-  - ps: if (-Not $env:APPVEYOR_PULL_REQUEST_NUMBER) { MSBuild.SonarQube.Runner.exe begin /k:"YourUniqueProjectName" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=YourSonarQubeToken" }
-  - msbuild "YourProjectName.sln"
-  - MSBuild.SonarQube.Runner.exe end /d:"sonar.login=YourSonarQubeToken"
-```
 
 ## Wrapping Up
 
-SonarQube is maturing fast and is becoming industry standard, and happily it is easy to integrate Open Source projects with the publicly available SonarQube server and AppVeyor. The [SonarLint Visual Studio Plugin](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio) is fantastic at spotting problems before you commit them, and the [GitHub integration](http://docs.sonarqube.org/display/PLUG/GitHub+Plugin) allows you to control the quality of contributions.
+SonarQube is maturing fast and is becoming industry standard, and happily it is easy to integrate Open Source projects with the publicly available SonarQube server and AppVeyor. The [Sonar Visual Studio Plugin](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017) is fantastic at spotting problems before you commit them, and the (paid for) [pull request integration](https://sonarcloud.io/documentation/analysis/pull-request/) allows you to control the quality of contributions.
 
 Best regards,<br>
 Cedd Burge
