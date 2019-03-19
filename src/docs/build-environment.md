@@ -61,7 +61,7 @@ Private build clouds can be enabled upon request. Please [let us know](mailto:te
   <tr>
     <td>Hyper-V</td>
     <td>2 cores</td>
-    <td>4 GB</td>
+    <td>6 GB</td>
     <td>-</td>
   </tr>
   <tr>
