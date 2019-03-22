@@ -9,8 +9,9 @@ AppVeyor allows publishing of `.zip` artifacts to Azure App Service with [Zip Pu
 
 ## Packaging artifact
 
-For ASP.NET Web application please set `publish_wap_xcopy: true` or select `Package Web Applications for XCopy deployment` under **Build** if you use UI.
-For other kind of application, simple add folder with all site assets (for example `\src\dist`) to `artifacts` section in YAML (or **Artifacts** tab in UI) and AppVeyor will zip it.
+* For ASP.NET Web application set `publish_wap_xcopy: true` in the `build` section in YAML, or select `Package Web Applications for XCopy deployment` under **Build** if you use UI.
+* For Azure WebJobs set `publish_azure_webjob: true` in the `build` section in YAML, or select `Package Azure WebJobs for Zip Push deployment` under **Build** if you use UI.
+* For other kind of application, simple add folder with all site assets (for example `\src\dist`) to `artifacts` section in YAML (or **Artifacts** tab in UI) and AppVeyor will zip it.
 
 ## Publishing credentials
 

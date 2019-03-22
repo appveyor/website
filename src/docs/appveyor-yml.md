@@ -206,7 +206,12 @@ build:
   project: MyTestAzureCS.sln      # path to Visual Studio solution or project
   publish_wap: true               # package Web Application Projects (WAP) for Web Deploy
   publish_wap_xcopy: true         # package Web Application Projects (WAP) for XCopy deployment
+  publish_wap_beanstalk: true     # Package Web Applications for AWS Elastic Beanstalk deployment
+  publish_wap_octopus: true       # Package Web Applications for Octopus deployment
+  publish_azure_webjob: true      # Package Azure WebJobs for Zip Push deployment
   publish_azure: true             # package Azure Cloud Service projects and push to artifacts
+  publish_aspnet_core: true       # Package ASP.NET Core projects
+  publish_core_console: true      # Package .NET Core console projects
   publish_nuget: true             # package projects with .nuspec files and push to artifacts
   publish_nuget_symbols: true     # generate and publish NuGet symbol packages
   include_nuget_references: true  # add -IncludeReferencedProjects option while packaging NuGet artifacts
