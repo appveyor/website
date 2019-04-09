@@ -703,7 +703,7 @@ External links:
 
 ## Build queue
 
-Sometimes you may wonder why your build is not being run immediately or remains in "queued" state longer than usual.
+Sometimes you may wonder why your build is not being run immediately or remains in `Queued` state longer than usual.
 
 This is how builds scheduling works.
 
@@ -711,7 +711,7 @@ First, the maximum number of build jobs running simultaneously is defined by acc
 
 It is important to understand that concurrent build jobs limit is account level setting. So, if some project consumes all concurrent build jobs defined in plan, builds for other projects in the same account wait in queue. To prevent specific project from consuming number of jobs higher than specific number, please use **Max jobs** (UI) or `max_jobs` (YAML) setting.
 
-If there are no running builds under your account, then there might be other reasons why the build is still in Queued state. It can happen that VM assigned to a build is still being provisioned. We maintain our own Hyper-V based infrastructure with pre-heated VMs, and if a build is assigned to pre-provisioned machine it should start almost instantly. However, if own infrastructure is under heavy load or we do some servicing work, then new builds start on backup cloud which we run on Google Cloud Engine. In this case VM is creating from scratch. Usually, it should take no longer than 3-4 minutes.
+If there are no running builds under your account, you might see the build is in `Starting` state for longer than usual time. It can happen that VM assigned to a build is still being provisioned. We maintain our own Hyper-V based infrastructure with pre-heated VMs, and if a build is assigned to pre-provisioned machine it should start almost instantly. However, if own infrastructure is under heavy load or we do some servicing work, then new builds start on backup cloud which we run on Google Cloud Engine. Also some specific build images as `Visual Studio 2013` and different `Ubuntu` images run mostly on Google Cloud Engine. In this case VM is being created from scratch. Usually, it should take no longer than 3-4 minutes.
 
 
 ### Builds prioritization
