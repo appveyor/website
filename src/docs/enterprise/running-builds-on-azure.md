@@ -26,7 +26,7 @@ During the following steps you will need to collect a number of configuration an
 * Security group name
 * Virtual network name
 
-## Create Azure Active Directory (AAD) service accont
+## Create Azure Active Directory (AAD) service account
 
 Now, let's start from creating AAD application.
 
