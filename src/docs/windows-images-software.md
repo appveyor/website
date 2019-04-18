@@ -198,7 +198,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017</th>
     </tr>
-    <tr><td>Visual Studio Community 2017 version 15.9.6</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.9.11</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual Studio Community 2017 version 15.9 Preview 4 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Visual Studio Enterprise 2019 version 16.0.0 Preview 2.1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -312,8 +312,10 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core 2.1.5 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.6 runtime</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1.7 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.1.10 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.2.0 runtime</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.2.1 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.2.4 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 3.0.0-preview-27122-01 runtime (<code>Visual Studio 2019 Preview</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003121</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003131</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -343,8 +345,10 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.1.403</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.500</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.503</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.603</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.100</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.103</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.2.203</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.100-preview-009812 (<code>Visual Studio 2019 Preview</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <!-- Silverlight -->
     <tr>
@@ -373,15 +377,15 @@ title: Software pre-installed on Windows build VMs
         <th id="node-js" class="section" colspan="4">Node.js</th>
     </tr>
     <tr><td colspan="4"><code>8.x</code> is default Node.js installed on build workers.</td></tr>
-    <tr><td>Node.js 11.0.0 - 11.9.0 (x86 and x64) - use <code>Current</code> alias for latest <code>11.x</code> release</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 11.0.0 - 11.13.0 (x86 and x64) - use <code>Current</code> alias for latest <code>11.x</code> release</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.0.0 - 11.1.0 (x86 and x64)</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Node.js 10.0.0 - 10.15.1 (x86 and x64)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 10.0.0 - 10.15.3 (x86 and x64)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 10.0.0 - 10.13.0 (x86 and x64)</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Node.js 9.0.0 - 9.11.2 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 8.0.0 - 8.15.0 (x86 and x64) - default on build workers; use <code>LTS</code> alias for latest <code>8.x</code> release</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.0.0 - 8.15.1 (x86 and x64) - default on build workers; use <code>LTS</code> alias for latest <code>8.x</code> release</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 8.0.0 - 8.12.0 (x86 and x64)</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Node.js 7.0.0 - 7.10.1 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 6.0.0 - 6.16.0 (x86 and x64)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 6.0.0 - 6.17.1 (x86 and x64)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 6.0.0 - 6.14.4 (x86 and x64)</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Node.js 4.0.0 - 4.9.1 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 5.0.0 - 5.12.0 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -399,12 +403,14 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-                <li>Go 1.11.0 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.11.0 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.11.0 x64 (<code>C:\go111</code>)</li>
-                <li>Go 1.11.0 x86 (<code>C:\go111-x86</code>)</li>
-                <li>Go 1.10.4 x64 (<code>C:\go110</code>)</li>
-                <li>Go 1.10.4 x86 (<code>C:\go110-x86</code>)</li>
+                <li>Go 1.12.3 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.12.3 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.12.3 x64 (<code>C:\go112</code>)</li>
+                <li>Go 1.12.3 x86 (<code>C:\go112-x86</code>)</li>
+                <li>Go 1.11.8 x64 (<code>C:\go111</code>)</li>
+                <li>Go 1.11.8 x86 (<code>C:\go111-x86</code>)</li>
+                <li>Go 1.10.8 x64 (<code>C:\go110</code>)</li>
+                <li>Go 1.10.8 x86 (<code>C:\go110-x86</code>)</li>
                 <li>Go 1.9.7 x64 (<code>C:\go19</code>)</li>
                 <li>Go 1.9.7 x86 (<code>C:\go19-x86</code>)</li>
                 <li>Go 1.8.7 x64 (<code>C:\go18</code>)</li>
@@ -436,7 +442,8 @@ title: Software pre-installed on Windows build VMs
                 <li>JDK 1.8 Update 162 (x86) (<code>C:\Program Files (x86)\Java\jdk1.8.0</code>)</li>
                 <li>JDK 9.0.4 (x64) (<code>C:\Program Files\Java\jdk9</code>)</li>
                 <li>JDK 10.0.1 (x64) (<code>C:\Program Files\Java\jdk10</code>)</li>
-                <li>JDK 11 (x64) (<code>C:\Program Files\Java\jdk11</code>)</li>
+                <li>JDK 11.0.2 (x64) (<code>C:\Program Files\Java\jdk11</code>)</li>
+                <li>JDK 12 (x64) (<code>C:\Program Files\Java\jdk12</code>)</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -479,8 +486,10 @@ title: Software pre-installed on Windows build VMs
     </tr>
     <tr><td>Python 2.6.6 x86 (<code>C:\Python26</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 2.6.6 x64 (<code>C:\Python26-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 2.7.15 x86 (<code>C:\Python27</code> - default in <code>PATH</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 2.7.15 x64 (<code>C:\Python27-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 2.7.15 x86 (<code>C:\Python27</code> - default in <code>PATH</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Python 2.7.15 x64 (<code>C:\Python27-x64</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Python 2.7.16 x86 (<code>C:\Python27</code> - default in <code>PATH</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 2.7.16 x64 (<code>C:\Python27-x64</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.3.5 x86 (<code>C:\Python33</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.3.5 x64 (<code>C:\Python33-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.4.4 x86 (<code>C:\Python34</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -493,8 +502,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Python 3.6.8 x64 (<code>C:\Python36-x64</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.7.0 x86 (<code>C:\Python37</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Python 3.7.0 x64 (<code>C:\Python37-x64</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Python 3.7.2 x86 (<code>C:\Python37</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.7.2 x64 (<code>C:\Python37-x64</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.7.3 x86 (<code>C:\Python37</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.7.3 x64 (<code>C:\Python37-x64</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Visual C++ Compiler for Python 2.7</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Miniconda -->
     <tr>
@@ -535,7 +544,7 @@ title: Software pre-installed on Windows build VMs
         <th id="llvm" class="section" colspan="4">LLVM</th>
     </tr>
     <tr>
-        <td>LLVM 7.0.1 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
+        <td>LLVM 8.0.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
@@ -614,11 +623,12 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.12.1: <code>C:\Qt\5.12.1</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.1</code> for backward compatibility)
+            <li>Qt 5.12.2: <code>C:\Qt\5.12.2</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.2</code> for backward compatibility)
                 <ul>
-                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.1\mingw73_64</code></li>
-                <li>msvc2017 32-bit: <code>C:\Qt\5.12.1\msvc2017</code></li>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.12.1\msvc2017_64</code></li>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.2\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.2\mingw73_32</code></li>
+                <li>msvc2017 32-bit: <code>C:\Qt\5.12.2\msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.12.2\msvc2017_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -628,10 +638,11 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.12.1: <code>C:\Qt\5.12.1</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.1</code> for backward compatibility)
+            <li>Qt 5.12.2: <code>C:\Qt\5.12.2</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.2</code> for backward compatibility)
                 <ul>
-                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.1\mingw73_64</code></li>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.12.1\msvc2015_64</code></li>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.2\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.2\mingw73_32</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.12.2\msvc2015_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -799,7 +810,7 @@ title: Software pre-installed on Windows build VMs
         <td class="yes"></td><td class="no"></td><td class="no"></td>
     </tr>
     <tr>
-        <td>Qt Installer Framework 3.0.1</td>
+        <td>Qt Installer Framework 3.0.6</td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
@@ -841,12 +852,12 @@ title: Software pre-installed on Windows build VMs
     <tr><td>OpenSSL 1.1.0j (64-bit) (<code>C:\OpenSSL-v11-Win64\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.1.1a (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.1.1a (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>NSIS 3.03 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>NSIS 3.04 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Yarn 1.9.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>vcpkg 2018.11.23-nohash</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Octo 4.31.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Octo 6.2.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Test runners -->
     <tr>
         <th id="test-runners" class="section" colspan="4">Test runners</th>
