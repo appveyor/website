@@ -149,11 +149,14 @@ assembly_info:
 
 **Note** that specific attribute like `AssemblyInformationalVersion` should exist in `AssemblyInfo` file to be patched.
 
-You can use environment variables substitution in file name and version formats, for example:
+Variables `{version}`, `{build}`, `{branch}` are shortcuts implemented specifically to use with patching. Use them exactly as described (in `{}` curly brackets).
+You can use all other environment variables substitution in file name and version formats using standard environment variable notation, for example:
 
 ```yaml
-assembly_version: $(appveyor_build_version)
+package_version: $(appveyor_build_version)
 ```
+
+Variables `{version}`, `{build}`, `{branch}` are shortcuts implemented specifically to use with patching. Use them exactly as described (in `{}` curly brackets).
 
 ## .NET Core `.csproj` files patching
 
@@ -184,7 +187,8 @@ dotnet_csproj:
 **Note** that specific attribute like `PackageVersion` should exist in `.csproj` file to be patched.
 **Note** that the xmlns must not be defined or else the file won't be processed.
 
-You can use environment variables substitution in file name and version formats, for example:
+Variables `{version}`, `{build}`, `{branch}` are shortcuts implemented specifically to use with patching. Use them exactly as described (in `{}` curly brackets).
+You can use all other environment variables substitution in file name and version formats using standard environment variable notation, for example:
 
 ```yaml
 package_version: $(appveyor_build_version)
