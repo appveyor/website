@@ -67,7 +67,7 @@ collections:
         permalink: /:collection/:year/:month/:day/
         output: true
     releases:
-        permalink: /enterprise/releases/:title/
+        permalink: /releases/:title/
         output: true
 
 feed:
