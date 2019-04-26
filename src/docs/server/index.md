@@ -119,7 +119,7 @@ A new Windows advanced firewall rule `AppVeyor Server` is configured by AppVeyor
 To run AppVeyor Server installer with custom parameters and create installation log use the following command:
 
     msiexec /i appveyor-server.msi /L*V appveyor-install.log PARAM_1=VAL_1 PARAM_2=VAL_2 ...
-    
+
 For example, to install AppVeyor with SQL Server database:
 
     msiexec /i appveyor-server.msi /L*V appveyor-install.log APPVEYOR_DATABASE_PROVIDER=SQLServer APPVEYOR_SQLSERVER_CONNECTION_STRING=<connection-string>
