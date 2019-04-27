@@ -17,6 +17,42 @@ title: Getting started with AppVeyor Server
 
 ## System requirements
 
+### Windows 10
+
+[TBD]
+
+What builds are supported, what recommended?
+
+Docker for Windows? Experimental mode vs MobyLinuxVM.
+
+Git
+
+### Windows Server
+
+Why 2019 is better (LCOW, lighter image sizes).
+
+Docker EE or CE? What's the difference?
+
+Which cloud provider is better?
+
+### Linux
+
+AppVeyor Server was tested on Ubuntu 16.04 and 18.04 only, but, potentially, can be installed on [any Linux distro supported by .NET Core](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x#supported-linux-versions).
+
+Works perfectly fine on $10 DigitalOcean droplet or Linux VM in any cloud.
+
+### Git
+
+Git is only required if you work  if you are going to run local builds. If you are going to run Docker builds AppVeyor images have Git/Hg/SVN pre-installed.
+
+### Docker
+
+Docker is not required, but recommended! AppVeyor has 1st-class support for **Docker EE** on Windows Server, **Docker Desktop for Windows** (aka Docker CE) on Windows 10 and **Docker CE** on Linux.
+
+* [Install Docker Engine - Enterprise on Windows Servers](https://docs.docker.com/install/windows/docker-ee/)
+* [Install Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install/)
+* [Get Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+
 ## Installation
 
 ### Windows
@@ -29,9 +65,19 @@ Once the installation complete AppVeyor Web interface will be opened in a new br
 
 ### Linux
 
+[Download AppVeyor Server DEB package (link required)](https://www.appveyor.com) and install `.deb` package:
+
+    sudo apt install ./appveyor-server-7.0.2000.deb
+
+Once the installation complete open web browser and navigate to `http://<server-ip>` or `http://<server-ip>:8050` (if port 80 is already taken by another app) to continue with AppVeyor configuration.
+
+## Running your first build
+
 [TBD]
 
-## Configuring AppVeyor
+What are process, Docker or VM isolation.
+
+## Running builds in Azure VMs
 
 * Default build clouds, images, storage, etc.
 
