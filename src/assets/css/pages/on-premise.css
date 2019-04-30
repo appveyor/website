@@ -1,0 +1,23 @@
+.on-premise a.big-button {
+    color: #e8e8e8;
+    background-color: #5445de;
+}
+
+.on-premise a.big-button:hover,
+.on-premise a.big-button:active {
+    background-color: #5445de;
+    color: #fff;
+}
+
+.on-premise .pricing-table .cta-button .button {
+    background-color: #5445de;
+    border-color: #5445de;
+    color: #e8e8e8;
+}
+
+.on-premise .pricing-table .cta-button .button:hover,
+.on-premise .pricing-table .cta-button .button:active {
+    background-color: #5445de;
+    border-color: #5445de;
+    color: #fff;
+}
