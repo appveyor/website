@@ -186,6 +186,11 @@ Full list of installer variables and their default values:
 
 ### Docker builds
 
+#### Known issues
+
+* `nanoserver`-based build images do not contain Mercurial (`hg.exe`) and Subversion (`svn.exe`). For Bitbucket Mercurial repositories you can set `shallow_clone: true`;
+* `ssh` utility is not working on `nanoserver`-based build image preventing cloning of private repositories via SSH - only cloning via HTTPS is working;
+
 Network "blips" with `net::ERR_NETWORK_CHANGED` error in Chrome. Disable Proxy "Automatic detect settings" - ADD SCREENSHOT.
 
 * [Windows 10 release history](https://docs.microsoft.com/en-us/windows/windows-10/release-information)
