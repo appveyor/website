@@ -13,8 +13,6 @@ This first release also has some unique features:
 * Deep integration with Docker for Windows. You can run Windows and Linux builds in parallel.
 * Job groups and dependencies to model complex workflows with fan-in/-out scenarios.
 
-With these two features combined you can ...
-
 AppVeyor Server comes in 3 editions:
 
 * Community Edition - one user; **FREE**.
