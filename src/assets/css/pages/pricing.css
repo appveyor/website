@@ -4,8 +4,13 @@
 }
 
 .pricing-banner h1,
-.pricing-banner .title h2 {
+.pricing-banner .title h2,
+.pricing-banner h2 a {
     color: #fff;
+}
+
+.pricing-banner h2 a {
+    text-decoration: underline;
 }
 
 .plans-group h2 {

@@ -21,3 +21,37 @@
     border-color: #5445de;
     color: #fff;
 }
+
+.downloads h1 {
+    margin-top: 0;
+}
+
+.downloads .platform {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.downloads .platform.windows {
+    background: transparent url("/assets/img/on-premise/windows-logo.png") no-repeat center 0 / 50px 50px;
+}
+
+.downloads .platform.linux {
+    background: transparent url("/assets/img/on-premise/linux-logo.png") no-repeat center 0 / 50px 58px;
+}
+
+.downloads .platform.mac {
+    background: transparent url("/assets/img/on-premise/mac-logo.png") no-repeat center 0 / 50px 61px;
+}
+
+.downloads .button {
+    background-color: #5445de;
+    border-color: #5445de;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.downloads ul {
+    list-style: none;
+    margin-left: 0;
+    font-size: 0.75rem;
+}
