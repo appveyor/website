@@ -893,7 +893,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>SQL Server 2008 R2 SP2 Express Edition with Advanced Services (x64)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server 2012 SP1 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server 2014 Express with Advanced Services</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>SQL Server 2016 Developer with SP1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server 2016 Developer with SP1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>SQL Server 2017 Developer</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 9.3 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>PostgreSQL 9.4 x64</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
