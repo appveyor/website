@@ -36,6 +36,17 @@
     background-color: #68E85A;
 }
 
+.home-banner .on-premise {
+    color: #fff;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.home-banner .on-premise a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 .home-banner .highlights {
     color: #e0e0e0;
     margin: 1rem 0 0 6rem;

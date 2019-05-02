@@ -1,0 +1,75 @@
+.on-premise a.big-button {
+    color: #e8e8e8;
+    background-color: #5445de;
+}
+
+.on-premise a.big-button:hover,
+.on-premise a.big-button:active {
+    background-color: #6758ef;
+    color: #fff;
+}
+
+.on-premise .pricing-table .cta-button .button {
+    background-color: #5445de;
+    border-color: #5445de;
+    color: #e8e8e8;
+}
+
+.on-premise .pricing-table .cta-button .button:hover,
+.on-premise .pricing-table .cta-button .button:active {
+    border-color: #6758ef;
+    background-color: #6758ef;
+    color: #fff;
+}
+
+.pricing-note {
+    font-size: 0.8rem;
+    color: #ddd;
+}
+
+.downloads .title {
+    margin: 1rem 0 2rem 0;
+}
+
+.downloads .platform {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.downloads .platform.windows {
+    background: transparent url("/assets/img/on-premise/windows-logo.png") no-repeat center 0 / 50px 50px;
+}
+
+.downloads .platform.linux {
+    background: transparent url("/assets/img/on-premise/linux-logo.png") no-repeat center 0 / 50px 58px;
+}
+
+.downloads .platform.mac {
+    background: transparent url("/assets/img/on-premise/mac-logo.png") no-repeat center 0 / 50px 61px;
+}
+
+.downloads .button {
+    border-color: #5445de;
+    color: #e8e8e8;
+    font-size: 1.1rem;
+    background: #5445de url("/assets/img/on-premise/download-arrow.png") no-repeat 1rem center / 9px 15px;
+    padding-left: 2.3rem;
+}
+
+.downloads .button:hover,
+.downloads .button:active {
+    border-color: #6758ef;
+    background-color: #6758ef;
+    color: #fff;
+}
+
+.downloads ul {
+    list-style: none;
+    margin-left: 0;
+    font-size: 0.75rem;
+}
+
+.downloads .getting-started {
+    text-align: center;
+    font-size: 1rem;
+}

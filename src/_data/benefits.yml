@@ -1,5 +1,5 @@
 -
-  text: Support for GitHub, GitHub Enterprise, Bitbucket, GitLab, VSTS, Kiln or custom repos
+  text: Support for GitHub, GitHub Enterprise, Bitbucket, GitLab, Azure Repos, Kiln or custom repos
   class: "yes"
 -
   text: Configure builds in versioned YAML or UI
@@ -14,7 +14,7 @@
   text: Branch and PR builds to support your development workflow
   class: "yes"
 -
-  text: Personal support and vibrant community
+  text: Professional support and vibrant community
   class: "yes"
 
 
