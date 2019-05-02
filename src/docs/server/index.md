@@ -72,11 +72,75 @@ Verify the installed version by running:
 Once the installation is complete, open a web browser and navigate to `http://<server_ip>` or `http://<server_ip>:8050` (if port 80 is already taken by another app) to continue with AppVeyor configuration.
 
 
-## Running your first build
+## Running builds
 
-[Work in progress. Stay tuned.]
+In AppVeyor you are starting from creating a **New project**. While adding a project you will be offered to connect AppVeyor to your source control system. There could be multiple *Projects* connected to the same repository - they all can have different configurations and versioning scheme. Every project adds a new webhook to the connected repository.
 
-## Running builds in Azure VMs
+**Build** is a run of specific project. "New build" button or a call to a project webhook triggers a new build. Build configuration could vary on commit's branch or tag.
+
+Builds are logical container for **jobs**. Every build has at least one job, but build matrix can produce builds with multiple jobs running in parallel or as workflow.
+
+Click **New build** or make a push to project repository to start a new build.
+
+Out-of-the-box AppVeyor is configured to run every build job as a new system process. The build flow in that process is controlled by *AppVeyor Build Agent* and starts with repository cloning. **Process** is the simplest form of builds isolation. It's the easiest way to get started with AppVeyor as it relies on the software/tools/libraries that most probably already installed on your Desktop or build server. However, "process" isolation does not follow "clean environment" principle which assumes the build does not have "harmful" steps (like disk formating or reboots) and finishes with clean-up code (like deleting test database or removing temp files).
+
+AppVeyor build job has a [pre-defined pipeline](/docs/build-configuration/#build-pipeline) like **Clone &rarr; Install &rarr; Build &rarr; Test &rarr; Deploy &rarr; Finalize**, but, of course, each step in that flow could be enabled/disabled, customized or completely replaced with your own script. A job is a minimal building block for complex CI/CI workflows modeled with build matrices where jobs could wait for other jobs, combined into groups and run in parallel.
+
+
+
+* Processes
+
+* Docker containers
+
+* Virtual machines
+
+Process cloud is the most simple one, but less practical...
+
+Local cloud, remote cloud.
+
+Build steps (link to exististing AppVeyor documentation)
+
+### Docker
+
+#### Routing builds to a Docker cloud
+
+* TODO
+
+#### Selecting Docker image
+
+* (LCOW, Linux containers mode)
+* AppVeyor-flavored image with Build Agent and tools (like PowerShell) (for Windows there are two types of it) or any Docker image from any repository
+* What's installed on every image?
+* On Windows: warning about the time required to pull images for the first time.
+* Supported build steps in agentless image.
+* Re-pulling image on every build.
+* Sources cloning on/off
+
+* Image with AppVeyor agent - you can have the "fat" image with all required software pre-installed.
+* Any image - you can split the job across specialized containers.
+
+
+#### Complex pipelines with multiple jobs
+
+* Use cases:
+    * Test in parallel on different versions/platforms
+    * Collect artifacts and then deploy
+* Switch to appveyor.yml
+* Service-like jobs, e.g. MySQL
+* Communication between containers in a single build.
+* Job groups, job dependencies, fan-in/-out workflows.
+* Shared "bin" folder across build jobs
+
+#### Customizing AppVeyor image
+
+Example of `Dockerfile`:
+
+```Dockerfile
+TODO
+```
+
+
+### Azure VMs
 
 [Work in progress. Stay tuned.]
 
