@@ -170,6 +170,6 @@ AppVeyor service logs are stored in journal and can be viewed with the following
 
 * If AppVeyor was installed *before* Docker `appveyor` user should be added to `docker` group:
 
-```
+```bash
 sudo usermod -aG docker appveyor
 ```
