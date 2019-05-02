@@ -15,9 +15,9 @@ title: AppVeyor Server Maintenance Guide
 
 ### Windows
 
-To check currently installer version of AppVeyor navigate to `http://<appveyor-url>/system/settings/license` page. Alternatively, installation version can be seen on Windows "Add or remove programs" screen.
+To check current installer version of AppVeyor, navigate to `http://<appveyor-url>/system/settings/license` page. Alternatively, installation version can be seen on Windows "Add or remove programs" screen.
 
-To upgrade AppVeyor download the latest [AppVeyor Server installer]({{ site.data.urls.latest_msi_location }}/{{ site.data.urls.latest_msi_filename }}) (`appveyor-server.msi`). Right-click it in Windows Explorer and check the version on dialog "Details" tab. Run the installer to upgrade AppVeyor. Once the service is started and web interface available navigate to "License" settings page to verify the version.
+To upgrade AppVeyor download the latest [AppVeyor Server installer]({{ site.data.urls.latest_msi_location }}/{{ site.data.urls.latest_msi_filename }}) (`appveyor-server.msi`). Right-click it in Windows Explorer and check the version on dialog "Details" tab. Run the installer to upgrade AppVeyor. Once the service is started and the web interface is available, navigate to "License" settings page to verify the version.
 
 ### Ubuntu/Debian
 
@@ -39,15 +39,15 @@ Verify the version by running:
 
 Default AppVeyor Server installation keeps all application data (database, artifacts and certificates) in `%PROGRAMDATA%\AppVeyor\Server` directory and all application settings under `HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\Server` registry key.
 
-To backup AppVeyor installation export `HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\Server` registry key and then copy both exported `.reg` file and entire data directory to a safe location.
+To backup an AppVeyor installation, export `HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\Server` registry key and then copy both the exported `.reg` file and the entire data directory to a safe location.
 
-To restore AppVeyor re-install it with the latest `.msi`, import backup `.reg` file by overwriting existing values and restore contents of data directory.
+To restore AppVeyor, re-install it with the latest `.msi`, import backup `.reg` file by overwriting existing values and restore contents of data directory.
 
 ### Linux
 
-On Linux all AppVeyor data (SQLite database, SSL certificate and artifacts) is stored in `/var/opt/appveyor/server` directory ("data") - backup it entirely.
+On Linux all AppVeyor data (SQLite database, SSL certificate and artifacts) is stored in `/var/opt/appveyor/server` directory ("data") - back it up entirely.
 
-AppVeyor settings with encryption keys are stored in `/etc/opt/appveyor/server` directory ("settings") - backup it as well. Remember, without correct encryption keys the database will be unusable and you won't be login to AppVeyor!
+AppVeyor settings with encryption keys are stored in `/etc/opt/appveyor/server` directory ("settings") - back it up as well. Remember, without correct encryption keys the database will be unusable and you won't be able to login to AppVeyor!
 
 To restore AppVeyor Server just re-install AppVeyor from scratch and then overwrite "data" and "settings" directories from backup.
 
@@ -57,11 +57,11 @@ To restore AppVeyor Server just re-install AppVeyor from scratch and then overwr
 
 #### Installation location
 
-AppVeyor Server is 64-bit application and can be run on 64-bit OS only.
+AppVeyor Server is a 64-bit application and can be run on a 64-bit OS only.
 
 AppVeyor Server is installed into `%PROGRAMFILES%\AppVeyor\Server` directory.
 
-The new `Appveyor.Server` Windows service is created pointing to `appveyor-server.exe` executable. Service runs under `appveyor` user account which is created by installer and added to local `Administrators` group. The name of service account can be customized with `APPVEYOR_USER_NAME` and `APPVEYOR_USER_PASSWORD` installer variables.
+The new `Appveyor.Server` Windows service is created pointing to `appveyor-server.exe` executable. The service runs under `appveyor` user account which is created by the installer and added to local `Administrators` group. The name of the service account can be customized with `APPVEYOR_USER_NAME` and `APPVEYOR_USER_PASSWORD` installer variables.
 
 #### Settings
 
@@ -73,16 +73,16 @@ AppVeyor database, SSL certificate (if configured), build artifacts and other da
 
 By default, AppVeyor stores data in SQLite database `%PROGRAMDATA%\AppVeyor\Server\appveyor-server.db`. All sensitive data in the database is encrypted with "master key". Master key and its salt are stored in `HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\Server\Security.MasterKey` and `HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\Server\Security.MasterKeySalt` registry values respectively. These values are automatically generated on the first AppVeyor install and preserved during updates, however they will be deleted on AppVeyor uninstall. Both keys can be customized during installation by `APPVEYOR_MASTER_KEY` and `APPVEYOR_MASTER_KEY_SALT` installer variables.
 
-> NOTE: If master key and its salt are lost AppVeyor database will be unusable!
+> NOTE: If master key and its salt are lost, AppVeyor database will be unusable!
 
 #### SQL Server database
 
-AppVeyor Server can be configured to store its data in SQL Server database. During the installation specify the following installer variables:
+AppVeyor Server can be configured to store its data in a SQL Server database. During the installation, specify the following installer variables:
 
 * `APPVEYOR_DATABASE_PROVIDER=SQLServer`
 * `APPVEYOR_SQLSERVER_CONNECTION_STRING=Server=<ip-or-host>;Database=<database>;User ID=<user>;Password=<password>`
 
-After installation provider and connection string can be changed in the registry values `Database.Provider` and `Database.SQLiteConnectionString` respectively.
+After installation, provider and connection string can be changed in the registry values `Database.Provider` and `Database.SQLiteConnectionString` respectively.
 
 #### PostgreSQL database
 
@@ -91,7 +91,7 @@ AppVeyor Server can be configured to store its data in PostgreSQL database. Duri
 * `APPVEYOR_DATABASE_PROVIDER=PostgreSQL`
 * `APPVEYOR_POSTGRESQL_CONNECTION_STRING=Host=<host-or-ip>;Port=5432;Database=<database>;Username=<user>;Password=<password>`
 
-After installation provider and connection string can be changed in the registry values `Database.Provider` and `Database.PostgreSqlConnectionString` respectively.
+After installation, provider and connection string can be changed in the registry values `Database.Provider` and `Database.PostgreSqlConnectionString` respectively.
 
 #### Logs
 
@@ -99,13 +99,13 @@ AppVeyor Server logs are written to Windows Event log. They can be viewed in Eve
 
 #### Web bindings
 
-By default, AppVeyor web app is trying to bind to `80` and `443` ports for `http` and `https` protocols respectively. If one of these ports is taken by another application AppVeyor will bind to `8050` and `8051` ports. Binding is created on all (`*`) interfaces, so AppVeyor web can be accessed with both loopback (e.g. `localhost`) and external (if configured) addresses. AppVeyor web interface ports can be customized with `APPVEYOR_HTTP_PORT` and `APPVEYOR_HTTPS_PORT` installer variables. After installation ports can be changed in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\Server` key.
+By default, AppVeyor web app tries to bind to `80` and `443` ports for `http` and `https` protocols respectively. If one of these ports is taken by another application, AppVeyor will bind to `8050` and `8051` ports. Binding is created on all (`*`) interfaces, so AppVeyor web can be accessed with both loopback (e.g. `localhost`) and external (if configured) addresses. AppVeyor web interface ports can be customized with `APPVEYOR_HTTP_PORT` and `APPVEYOR_HTTPS_PORT` installer variables. After installation, ports can be changed in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\Server` key.
 
-A new Windows advanced firewall rule `AppVeyor Server` is configured by AppVeyor installer which allows access to `%PROGRAMFILES%\AppVeyor\Server\appveyor-server.exe` application.
+A new Windows advanced firewall rule - `AppVeyor Server` - is configured by the AppVeyor installer. which allows access to `%PROGRAMFILES%\AppVeyor\Server\appveyor-server.exe` application.
 
 #### Custom installation
 
-To run AppVeyor Server installer with custom parameters and create installation log use the following command:
+To run AppVeyor Server installer with custom parameters and create an installation log use the following command:
 
     msiexec /i appveyor-server.msi /L*V appveyor-install.log PARAM_1=VAL_1 PARAM_2=VAL_2 ...
 
@@ -133,7 +133,7 @@ Full list of installer variables and their default values:
 
 AppVeyor Server is installed into `/opt/appveyor/server` directory.
 
-The new `appveyor-server` systemd service is created pointing to `/opt/appveyor/server/appveyor-server` executable. Service runs under `appveyor` user account which is created by installer and added to sudoers.
+The new `appveyor-server` systemd service is created pointing to `/opt/appveyor/server/appveyor-server` executable. The service runs under `appveyor` user account which is created by the installer and added to sudoers.
 
 #### Settings
 
@@ -145,7 +145,7 @@ AppVeyor database, SSL certificate (if configured), build artifacts and other da
 
 By default, AppVeyor stores data in SQLite database `/var/opt/appveyor/server/appveyor-server.db`. All sensitive data in the database is encrypted with "master key". Master key and its salt are stored in `/etc/opt/appveyor/server/appsettings.json`. These values are automatically generated on the first AppVeyor install and preserved during updates.
 
-> NOTE: If master key and its salt are lost AppVeyor database will be unusable!
+> NOTE: If the master key and its salt are lost, AppVeyor database will be unusable!
 
 #### Logs
 

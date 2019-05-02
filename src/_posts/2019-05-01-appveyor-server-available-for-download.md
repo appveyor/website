@@ -2,15 +2,15 @@
 title: AppVeyor Server is available for download
 ---
 
-Today we are excited to announce the release of AppVeyor Server - multi-platform downloadable version of AppVeyor CI service!
+Today we are excited to announce the release of AppVeyor Server - a multi-platform, downloadable version of AppVeyor CI service!
 
-We've come a long way refactoring the original codebase from .NET Framework to .NET Core to be able to install it on Windows, Linux and Mac. As a result you've got a light-weight dependency-free CI/CD server that can be scaled from a simple build server for a team to a high-availability deployment on Kubernetes covering all CI/CD needs of entire organization.
+We've come a long way refactoring the original codebase from .NET Framework to .NET Core such that it can now be installed on Windows, Linux and Mac. As a result you've got a light-weight dependency-free CI/CD server that can be scaled from a simple build server for a team to a high-availability deployment on Kubernetes that can cover the CI/CD needs of an entire organization.
 
-Despite such a drastic change in the heart (and on UI), it is still the same beloved AppVeyor supporting all the features that you enjoy in hosted CI: YAML configuration, build matrices, NuGet feeds, deployments and more.
+Despite such a drastic change to the heart (and the UI) of AppVeyor, it remains the same beloved app, supporting all the features that you can enjoy in hosted form: YAML configuration, build matrices, NuGet feeds, deployments and more.
 
 This first release also has some unique features:
 
-* Deep integration with Docker for Windows. You can run Windows and Linux builds in parallel.
+* Deep integration with Docker for Windows - Windows and Linux builds can be run in parallel.
 * Job groups and dependencies to model complex workflows with fan-in/-out scenarios.
 
 AppVeyor Server comes in 3 editions:
