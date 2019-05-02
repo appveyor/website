@@ -1,0 +1,7 @@
+# MSI package download URL
+latest_msi_location: https://www.appveyor.com/downloads/appveyor-server/latest/windows
+latest_msi_filename: appveyor-server.msi
+
+# Debian package download URL
+latest_deb_location: https://www.appveyor.com/downloads/appveyor-server/7.0/linux
+latest_deb_filename: appveyor-server_7.0.2083_amd64.deb

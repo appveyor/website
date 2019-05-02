@@ -133,7 +133,7 @@ description: AppVeyor CI on your own server
                     <div class="columns medium-4">
                         <div class="platform windows">
                             <div>
-                                <a class="button small radius" href="https://www.appveyor.com/downloads/appveyor-server/latest/windows/appveyor-server.msi">.msi</a>
+                                <a class="button small radius" href="{{ site.data.urls.latest_msi_location }}/{{ site.data.urls.latest_msi_filename }}">.msi</a>
                             </div>
                             <ul>
                                 <li>Windows 10</li>
@@ -145,7 +145,7 @@ description: AppVeyor CI on your own server
                     <div class="columns medium-4">
                         <div class="platform linux">
                             <div>
-                                <a class="button small radius" href="https://www.appveyor.com/downloads/appveyor-server/7.0/linux/appveyor-server_7.0.2069_amd64.deb">.deb</a>
+                                <a class="button small radius" href="{{ site.data.urls.latest_deb_location }}/{{ site.data.urls.latest_deb_filename }}">.deb</a>
                             </div>
                             <ul>
                                 <li>Debian</li>
@@ -165,6 +165,8 @@ description: AppVeyor CI on your own server
                         </div>
                     </div>                
                 </div>
+
+                <p class="getting-started">For installation instructions please follow <a href="/docs/server/">Getting Started with AppVeyor Server</a> guide.</p>
     
             </div>
         </div>
