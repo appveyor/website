@@ -84,7 +84,7 @@ Click **New build** or make a push to project repository to start a new build.
 
 Out-of-the-box AppVeyor is configured to run every build job as a new system process. The build flow in that process is controlled by *AppVeyor Build Agent* and starts with repository cloning. **Process** is the simplest form of builds isolation. It's the easiest way to get started with AppVeyor as it relies on the software/tools/libraries that most probably already installed on your Desktop or build server. However, "process" isolation does not follow "clean environment" principle which assumes the build does not have "harmful" steps (like disk formating or reboots) and finishes with clean-up code (like deleting test database or removing temp files).
 
-AppVeyor build job has a [pre-defined pipeline](/docs/build-configuration/#build-pipeline) like **Clone &rarr; Install &rarr; Build &rarr; Test &rarr; Deploy &rarr; Finalize**, but, of course, each step in that flow could be enabled/disabled, customized or completely replaced with your own script. A job is a minimal building block for complex CI/CI workflows modeled with build matrices where jobs could wait for other jobs, combined into groups and run in parallel.
+AppVeyor build job has a [pre-defined pipeline](/docs/build-configuration/#build-pipeline) like **Clone &rarr; Install &rarr; Build &rarr; Test &rarr; Package &rarr; Deploy &rarr; Finalize**, but, of course, each step in that flow could be enabled/disabled, customized or completely replaced with your own script. A job is a minimal building block for complex CI/CI workflows modeled with build matrices where jobs could wait for other jobs, combined into groups and run in parallel.
 
 ### Docker
 
@@ -111,17 +111,34 @@ Every build job will be run in a fresh container which is immediately disposed o
 
 #### Selecting Docker image
 
-* (LCOW, Linux containers mode)
-* AppVeyor-flavored image with Build Agent and tools (like PowerShell) (for Windows there are two types of it) or any Docker image from any repository
-* What's installed on every image?
-* On Windows: warning about the time required to pull images for the first time.
-* Supported build steps in agentless image.
-* Re-pulling image on every build.
-* Sources cloning on/off
+Docker builds can either be run with AppVeyor-provided images or any image from any repository. AppVeyor images have a "minimal" set of pre-installed tools (like Git to clone the repo and PowerShell Core), but more important they have AppVeyor Build Agent installed and set as an "entrypoint" to support [build job pipeline](/docs/build-configuration/#build-pipeline).
 
-* Image with AppVeyor agent - you can have the "fat" image with all required software pre-installed.
-* Any image - you can split the job across specialized containers.
+You can find the tags of all AppVeyor images on [Docker Hub](https://hub.docker.com/r/appveyor/build-image/tags).
 
+For Linux there is only one image based on [Ubuntu 18.04](https://github.com/appveyor/build-images/blob/master/docker/linux-build-image.Dockerfile) and for Windows there are "lightweight" [nanoserver images](https://github.com/appveyor/build-images/blob/master/docker/windows-nanoserver-build-image.Dockerfile) and more "heavy" and full-featured [windowsservercore images](https://github.com/appveyor/build-images/blob/master/docker/windows-servercore-build-image.Dockerfile).
+
+Upon installation of AppVeyor Server there are two "Windows" and "Linux" images are configured in Docker cloud settings on Windows and only "Linux" image on Linux.
+
+> Out-of-the-box Docker cloud in AppVeyor is configured to run Windows builds on nanoserver-based image (so, no .NET Framework or Chocolatey there) - it's pulled faster giving you smoother first-time experience. Though it could take some time depending on VM specs/network, so be patient :) You can update the image at any time to servercore-based or your own (more on this later).
+
+Now, to run a build in **any** image open project settings, navigate to **Environment** and add `docker_image` environment variable with full image name as a value, for example:
+
+    docker_image: node:10
+
+There is a difference between the build running with **agent-less** image versus build running with AppVeyor image. In agent-less container only the following parts of build configuration will be executed:
+
+* **Cloning** repository;
+* Script from **Build** tab;
+* Script from **Test** tab;
+* **On build success script** from General tab;
+* **On build error script** from General tab;
+* **On build finish script** from General tab;
+
+What if you need to **pull the lates version of image on every build run**? Add the following environment variable:
+
+    docker_pull: always
+
+Proceed to the next section to know how to build complex CI/CD workflows with services, parallel and sequential jobs.
 
 #### Complex pipelines with multiple jobs
 
@@ -130,6 +147,7 @@ Every build job will be run in a fresh container which is immediately disposed o
     * Collect artifacts and then deploy
 * Switch to appveyor.yml
 * Service-like jobs, e.g. MySQL
+* Sources cloning on/off
 * Communication between containers in a single build.
 * Job groups, job dependencies, fan-in/-out workflows.
 * Shared "bin" folder across build jobs
@@ -138,7 +156,9 @@ Every build job will be run in a fresh container which is immediately disposed o
 
 You can customize AppVeyor build agent image with your custom software/tools and then run Docker builds in it.
 
-The following `Dockerfile` sample takes `appveyor/build-image:minimal-windowsservercore-ltsc2019` as the base image with Chocolatey and AppVeyor Build Agent pre-installed and additionally installs [JDK 11](https://chocolatey.org/packages/jdk11) and [Maven](https://chocolatey.org/packages/maven):
+The following example takes `appveyor/build-image:minimal-windowsservercore-ltsc2019` as the base image with Chocolatey and AppVeyor Build Agent pre-installed and additionally installs [JDK 11](https://chocolatey.org/packages/jdk11) and [Maven](https://chocolatey.org/packages/maven).
+
+Create `Dockerfile` with the following contents:
 
 ```Dockerfile
 FROM appveyor/build-image:minimal-windowsservercore-ltsc2019
@@ -147,11 +167,11 @@ RUN choco install -y jdk11 && \
     choco install -y maven
 ```
 
-That's it! Now run `docker build` to build the image tagged as `my-company/my-custom-image`:
+That's it! Now from the same directory run `docker build` to build the image tagged as `my-company/my-custom-image`:
 
     docker build -t my-company/my-custom-image .
 
-Login to AppVeyor, navigate to **Account &rarr; Build environment**, open Docker cloud settings and update Windows "Docker image" to `my-company/my-custom-image`.
+Login to AppVeyor, navigate to **Account &rarr; Build environment**, open **Docker** cloud settings and update Windows "Docker image" to `my-company/my-custom-image`.
 
 ### Azure VMs
 
