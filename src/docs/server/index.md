@@ -142,11 +142,87 @@ Proceed to the next section to know how to build complex CI/CD workflows with se
 
 #### Complex pipelines with multiple jobs
 
-* Use cases:
-    * Test in parallel on different versions/platforms
-    * Collect artifacts and then deploy
-* Switch to appveyor.yml
-* Service-like jobs, e.g. MySQL
+Configuring the build on UI is good for the start and probably enough for most of the projects, but for more sophisitcated scenarios you should move build configuration to a YAML file.
+
+There could be multiple real-world scenarios solved:
+
+* Run containers in parallel testing against multiple versions of the language/framework or a platform.
+* Chaining jobs: run container A, then B, then C on-by-one.
+* Fan-out scenarios where one job does some sort of preparation (say, building solution) while other jobs wait for it and then start in parallel.
+* Fan-in scenarios where one job waits for other jobs running in parallel and then process their results, for example pushing artifacts.
+
+To get the taste of YAML configuration check-in `.appveyor.yml` file with the following contents to the root of project repository:
+
+```yaml
+build_cloud: docker
+
+environment:
+  matrix:
+
+  - job_name: Node.js 8 tests
+    docker_image: node:8
+    
+  - job_name: Node.js 12 tests
+    docker_image: node:12
+
+for:
+-
+  matrix:
+    only:
+      - job_name: Node.js 8 tests
+  test_script:
+  - node --version
+  - npm --version
+
+-
+  matrix:
+    only:
+      - job_name: Node.js 12 tests
+  test_script:
+  - node --version
+  - npm --version
+```
+
+Here we declared two jobs - one for running tests inside `node:8` container and another inside `node:12`. Both jobs will be run in parallel and display `node` and `npm` versions.
+
+Now, let's say our tests depend on Redis, so we have to add 3rd container running Redis:
+
+```yaml
+build_cloud: docker
+
+environment:
+  matrix:
+
+  - job_name: Node.js 8 tests
+    job_group: tests
+    docker_image: node:8
+    
+  - job_name: Node.js 12 tests
+    job_group: tests
+    docker_image: node:12
+
+  - job_name: redis
+    docker_image: redis
+    job_allow_cancellation: true
+
+for:
+-
+  matrix:
+    only:
+      - job_group: tests
+  test_script:
+  - node --version
+  - npm --version
+```
+
+Some new things here:
+
+* With `job_group` variable we grouped both tests into `tests` group and then defined a common test script below.
+* A job with Redis container is called `redis` - this is going to be a network alias that can be used to connect Redis service from other containers. All containers in a build get their network aliases assigned as a `job_name` value converted to a slug. For example, in the example above container with Node 8 tests will have network alias `node-js-8-tests`.
+* By adding `job_allow_cancellation: true` to `redis` job we are telling AppVeyor that it's OK to cancel that job when all other jobs are succeeded/failed. `job_allow_cancellation` attribute could be added to any job, not just service-like containers like Redis, MySQL, ElasticSearch. For example, it could be another Node.js container doing some polling in a loop during the entire build.
+
+More topics to cover:
+
 * Sources cloning on/off
 * Communication between containers in a single build.
 * Job groups, job dependencies, fan-in/-out workflows.
