@@ -74,11 +74,11 @@ Once the installation is complete, open a web browser and navigate to `http://<s
 
 ## Running builds
 
-In AppVeyor you are starting from creating a **New project**. While adding a project you will be offered to connect AppVeyor to your source control system. There could be multiple *Projects* connected to the same repository - they all can have different configurations and versioning scheme. Every project adds a new webhook to the connected repository.
+In AppVeyor you are starting from creating a **New project**. While adding a project you will be offered to connect AppVeyor to your source control system. Multiple *Projects* can be connected to the same repository - they all can have different configurations and versioning scheme. Every project adds a new webhook to the connected repository.
 
-**Build** is a run of specific project. "New build" button or a call to a project webhook triggers a new build. Build configuration could vary on commit's branch or tag.
+*Build* is a run of specific project. "New build" button or a call to a project webhook triggers a new build. Build configuration could vary on commit's branch or tag.
 
-Builds are logical container for **jobs**. Every build has at least one job, but build matrix can produce builds with multiple jobs running in parallel or as workflow.
+Builds are logical container for *build jobs*. Every build has at least one job, but build matrix can produce builds with multiple jobs running in parallel or as workflow.
 
 Click **New build** or make a push to project repository to start a new build.
 
@@ -86,25 +86,28 @@ Out-of-the-box AppVeyor is configured to run every build job as a new system pro
 
 AppVeyor build job has a [pre-defined pipeline](/docs/build-configuration/#build-pipeline) like **Clone &rarr; Install &rarr; Build &rarr; Test &rarr; Deploy &rarr; Finalize**, but, of course, each step in that flow could be enabled/disabled, customized or completely replaced with your own script. A job is a minimal building block for complex CI/CI workflows modeled with build matrices where jobs could wait for other jobs, combined into groups and run in parallel.
 
-
-
-* Processes
-
-* Docker containers
-
-* Virtual machines
-
-Process cloud is the most simple one, but less practical...
-
-Local cloud, remote cloud.
-
-Build steps (link to exististing AppVeyor documentation)
-
 ### Docker
+
+To run builds inside Docker containers Docker engine must be installed on AppVeyor Server or remote machine (TODO: give more information about AppVeyor Host Agent).
+
+On Linux you install Docker CE ([Docker installation guide for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)).
+
+On Windows you can choose between [Docker Enterprise Edition (Docker EE)](https://docs.docker.com/install/windows/docker-ee/) or [Docker Desktop for Windows](https://docs.docker.com/docker-for-windows/install/) (which includes Docker CE with tools). Docker EE is a typical approach for Windows Server and with Windows Server 2019 and Hyper-V enabled you can configure LCOW to run Windows and Linux containers in a single build (for example, .NET Fremework tests using Redis or MySQL). However, Docker Desktop for Windows which is usually installed on Windows 10 (but could also be installed on Windows Server) in addition to LCOW gives "Linux containers" mode where containers run inside "MobyLinux" Hyper-V VM. MobyLinux VM gives you "pure" Docker on Linux experience, but once switched to Linux containers you can't run Windows containers at the same time.
+
+AppVeyor instantly supports all Docker engines in all modes on any platform!
+
+You can use these handful scripts for unattended Docker installation:
+
+* Docker EE on Windows Server: [Enable Hyper-V, Containers and WSL](https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_docker_hyperv_wsl_features.ps1) and [Configure Docker and LCOW](https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_docker.ps1).
+* Docker CE on Linux: ["Install using the convenience script" section at the bottom](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
 
 #### Routing builds to a Docker cloud
 
-* TODO
+To run your build in Docker container open AppVeyor project settings and click **Environment** tab. Select **Docker** in **Build cloud** dropdown. Save project settings.
+
+Every build job will be run in a fresh container which is immediately disposed on job completion. Docker containers give you clean, isolated and safe environments to run your tests and do any experimenting.
+
+*Build cloud* in AppVeyor is an abstraction which allows to choose *where* and *how* the build job is executed. Build clouds implementations for Process, Docker and various clouds basically have two methods like "Provision worker" and "Decommission worker". By selecting the cloud in build configuration you route builds to a specific local or remote worker provisioner.
 
 #### Selecting Docker image
 
@@ -133,12 +136,22 @@ Build steps (link to exististing AppVeyor documentation)
 
 #### Customizing AppVeyor image
 
-Example of `Dockerfile`:
+You can customize AppVeyor build agent image with your custom software/tools and then run Docker builds in it.
+
+The following `Dockerfile` sample takes `appveyor/build-image:minimal-windowsservercore-ltsc2019` as the base image with Chocolatey and AppVeyor Build Agent pre-installed and additionally installs [JDK 11](https://chocolatey.org/packages/jdk11) and [Maven](https://chocolatey.org/packages/maven):
 
 ```Dockerfile
-TODO
+FROM appveyor/build-image:minimal-windowsservercore-ltsc2019
+
+RUN choco install -y jdk11 && \
+    choco install -y maven
 ```
 
+That's it! Now run `docker build` to build the image tagged as `my-company/my-custom-image`:
+
+    docker build -t my-company/my-custom-image .
+
+Login to AppVeyor, navigate to **Account &rarr; Build environment**, open Docker cloud settings and update Windows "Docker image" to `my-company/my-custom-image`.
 
 ### Azure VMs
 
