@@ -284,7 +284,42 @@ Login to AppVeyor, navigate to **Account &rarr; Build environment**, open **Dock
 
 ### Azure VMs
 
-[Work in progress. Stay tuned.]
+You can connect both hosted and on-premise AppVeyor to your own Azure subscription for AppVeyor to instantiate build VMs in it. It has a lot of benefits like having ability to customize your build image, select desired VM size, set custom build timeout and many others.
+
+To simplify setup process for you, we created script which provisions necessary Azure resources, runs Hashicorp Packer to create a basic build image (based on Windows Server 2019), and put all AppVeyor configuration together. After running this script, you should be able to start builds on Azure immediately (and optionally customize your Azure build environment later).
+
+### Install Packer and Azure PowerShell module
+
+Install Packer woth Chocolatey (skip if Packer already installed):
+
+    choco install packer
+
+*Ensure to restart your command line shell or run `refreshenv` so `packer` command is available.
+If you do not use Chocolatey, install directly from [Packer](https://www.packer.io/intro/getting-started/install.html) website. In this case ensure that path to `packer` command set correctly and it can be called from the command line shell.*
+
+Install Azure PowerShell module (skip if Azure PowerShell already installed):
+
+    Install-Module -Name Az -AllowClobber
+
+### Get necessary files
+
+Clone `appveyor/build-images` repository (we assume Git is installed):
+
+    git clone https://github.com/appveyor/build-images.git
+
+Switch to the cloned folder
+
+    cd .\build-images
+
+### Run script
+
+If you are in PowerShell, run:
+
+    .\connect-to-azure.ps1
+
+If you are in CMD, run:
+
+    powershell .\connect-to-azure.ps1
 
 ## Maintenance
 
