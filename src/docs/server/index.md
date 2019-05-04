@@ -244,9 +244,9 @@ environment:
 
   - job_name: Package
     job_depends_on: tests
-    
+
   - job_name: Deploy
-    job_depends_on: Package   
+    job_depends_on: Package
 
 # The rest is cut for brevity
 ...
