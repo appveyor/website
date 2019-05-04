@@ -98,9 +98,9 @@ Install Azure PowerShell module (skip if Azure PowerShell already installed):
 ### Get necessary files
 
 Clone `appveyor/build-images` repository (we assume Git is installed):
-    
+
     git clone https://github.com/appveyor/build-images.git
-    
+
 Switch to the cloned folder
 
     cd .\build-images
