@@ -161,7 +161,7 @@ environment:
 
   - job_name: Node.js 8 tests
     docker_image: node:8
-    
+
   - job_name: Node.js 12 tests
     docker_image: node:12
 
@@ -196,7 +196,7 @@ environment:
   - job_name: Node.js 8 tests
     job_group: tests
     docker_image: node:8
-    
+
   - job_name: Node.js 12 tests
     job_group: tests
     docker_image: node:12
@@ -220,6 +220,39 @@ Some new things here:
 * With `job_group` variable we grouped both tests into `tests` group and then defined a common test script below.
 * A job with Redis container is called `redis` - this is going to be a network alias that can be used to connect Redis service from other containers. All containers in a build get their network aliases assigned as a `job_name` value converted to a slug. For example, in the example above container with Node 8 tests will have network alias `node-js-8-tests`.
 * By adding `job_allow_cancellation: true` to `redis` job we are telling AppVeyor that it's OK to cancel that job when all other jobs are succeeded/failed. `job_allow_cancellation` attribute could be added to any job, not just service-like containers like Redis, MySQL, ElasticSearch. For example, it could be another Node.js container doing some polling in a loop during the entire build.
+
+Fan-in/-out and jobs chaining:
+
+```yaml
+build_cloud: docker
+
+environment:
+  matrix:
+
+  - job_name: Build
+    docker_image: alpine
+
+  - job_name: Tests A
+    job_group: tests
+    job_depends_on: Build
+    docker_image: node:12
+
+  - job_name: Tests B
+    job_group: tests
+    job_depends_on: Build
+    docker_image: node:12
+
+  - job_name: Package
+    job_depends_on: tests
+    
+  - job_name: Deploy
+    job_depends_on: Package   
+
+# The rest is cut for brevity
+...
+```
+
+The entire `.appveyor.yml` can be [downloaded here](https://gist.githubusercontent.com/FeodorFitsner/bd04fdcb7df10089a16aebb9af5658e6/raw/fa0e23a54fb05df38bc511c70b61ad5547d33a55/job-depends-on.yml).
 
 More topics to cover:
 
