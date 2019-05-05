@@ -89,6 +89,7 @@ Install Packer woth Chocolatey (skip if Packer already installed):
     choco install packer
 
 *Ensure to restart your command line shell or run `refreshenv` so `packer` command is available.*
+
 *If you do not use Chocolatey, install directly from [Packer](https://www.packer.io/intro/getting-started/install.html) website. In this case ensure that path to `packer` command set correctly and it can be called from the command line shell.*
 
 Install Azure PowerShell module (skip if Azure PowerShell already installed):
@@ -124,6 +125,7 @@ Script will ask to enter required information and make a few selections. It is t
     .\connect-to-azure.ps1 -appveyor_api_key <appveyor_account_api_key> -appveyor_url <appveyor_url> -azure_location <azure_location> -azure_vm_size <azure_vm_size> -skip_disclaimer -use_current_azure_login
 
 *Note that scipt expects short notation for both `-azure_location` and `-azure_vm_size` parameters, like `westus` and `Standard_D2s_v3` (not their display names).*
+
 For more advanced options call `get-help .\connect-to-azure.ps1 -detailed` or check its source code.
 
 ### Final steps
