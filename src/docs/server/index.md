@@ -123,11 +123,12 @@ Script will ask to enter required information and make a few selections. It is t
 
     .\connect-to-azure.ps1 -appveyor_api_key <appveyor_account_api_key> -appveyor_url <appveyor_url> -azure_location <azure_location> -azure_vm_size <azure_vm_size> -skip_disclaimer -use_current_azure_login
 
+*Note that scipt expects short notation for both `-azure_location` and `-azure_vm_size` parameters, like `westus` and `Standard_D2s_v3` (not their display names).*
 For more advanced options call `.\connect-to-azure.ps1 -?` or check its source code.
 
 ### Final steps
 
-Wait for script to complete. It should take about a hour, depending on VM size and optional software installation scripts addition. Per completion, script will print build worker image name (`Windows Server 2019 on Azure`, if you do not change it with the `-image_description` parameter). Just set `image: Windows Server 2019 on Azure` in `appveyor.yml` (or select `Windows Server 2019 on Azure` in the **Settings > Environment** tab, if you use UI), and you can start building on Azure!
+Wait for script to complete. It should take about a hour, depending on VM size and optional software installation scripts addition. Per completion, script will print build worker image name (which is `Windows Server 2019 on Azure`, if you do not change it with the `-image_description` parameter). Just set `image: Windows Server 2019 on Azure` in `appveyor.yml` (or select `Windows Server 2019 on Azure` in the **Settings > Environment** tab, if you use UI), and you can start building on Azure!
 
 ## Maintenance
 
