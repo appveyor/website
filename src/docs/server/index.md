@@ -309,8 +309,9 @@ Install Packer woth Chocolatey (skip if Packer already installed):
 
     choco install packer
 
-*Ensure to restart your command line shell or run `refreshenv` so `packer` command is available.
-If you do not use Chocolatey, install directly from [Packer](https://www.packer.io/intro/getting-started/install.html) website. In this case ensure that path to `packer` command set correctly and it can be called from the command line shell.*
+*Ensure to restart your command line shell or run `refreshenv` so `packer` command is available.*
+
+*If you do not use Chocolatey, install directly from [Packer](https://www.packer.io/intro/getting-started/install.html) website. In this case ensure that path to `packer` command set correctly and it can be called from the command line shell.*
 
 Install Azure PowerShell module (skip if Azure PowerShell already installed):
 
@@ -326,7 +327,11 @@ Switch to the cloned folder
 
     cd .\build-images
 
-### Run script
+### Optionally add custom software installaton scripts
+
+Default build worker image will be created with the most essential software installed. You can check it by exploring `minimal-windows-server-2019.json` file. If you need to run your own software installation scripts on top of it, simple copy them to `scripts\Windows\custom-scripts`. Note that it should be a PowerShell scripts.
+
+### Run provisioning script
 
 If you are in PowerShell, run:
 
@@ -335,6 +340,18 @@ If you are in PowerShell, run:
 If you are in CMD, run:
 
     powershell .\connect-to-azure.ps1
+
+Script will ask to enter required information and make a few selections. It is the recommended way of running this script for the first time. However if you prefer script to run without any interactions, you can pass all required parameters to it:
+
+    .\connect-to-azure.ps1 -appveyor_api_key <appveyor_account_api_key> -appveyor_url <appveyor_url> -azure_location <azure_location> -azure_vm_size <azure_vm_size> -skip_disclaimer -use_current_azure_login
+
+*Note that scipt expects short notation for both `-azure_location` and `-azure_vm_size` parameters, like `westus` and `Standard_D2s_v3` (not their display names).*
+
+For more advanced options call `get-help .\connect-to-azure.ps1 -detailed` or check its source code.
+
+### Final steps
+
+Wait for script to complete. It should take about a hour, depending on VM size and optional software installation scripts addition. Per completion, script will print build worker image name (which is `Windows Server 2019 on Azure`, if you do not change it with the `-image_description` parameter). Just set `image: Windows Server 2019 on Azure` in `appveyor.yml` (or select `Windows Server 2019 on Azure` in the **Settings > Environment** tab, if you use UI), and you can start building on Azure!
 
 ## Maintenance
 
