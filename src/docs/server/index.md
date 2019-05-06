@@ -260,7 +260,7 @@ There is a common "bin" directory available inside all containers of the same bu
 
 By default, all containers (except the ones with `docker_image` attribute and without `build_script` or `test_script` sections) will be checking out repository contents as a a first step. To disable repository cloning on job start add `clone: off` to job definition:
 
-```
+```yaml
 ...
 
 -
