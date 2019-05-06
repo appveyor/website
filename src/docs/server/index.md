@@ -303,7 +303,7 @@ You can connect both hosted and on-premise AppVeyor to your own Azure subscripti
 
 To simplify setup process we created a script which provisions necessary Azure resources, runs Hashicorp Packer to create a basic build image (based on Windows Server 2019), and puts all AppVeyor configuration together. After running that script you immediately will be able to start builds on Azure (and optionally customize your Azure build environment later).
 
-### Install Packer and Azure PowerShell module
+#### Install Packer and Azure PowerShell module
 
 Install Packer with Chocolatey (skip if Packer already installed):
 
@@ -317,7 +317,7 @@ Install Azure PowerShell module (skip if Azure PowerShell already installed):
 
     Install-Module -Name Az -AllowClobber
 
-### Get necessary files
+#### Get necessary files
 
 Clone `appveyor/build-images` repository (we assume Git is installed):
 
@@ -327,11 +327,11 @@ Switch to the cloned folder:
 
     cd .\build-images
 
-### Optionally add custom software installaton scripts
+#### Optionally add custom software installaton scripts
 
 Default build worker image will be created with the most essential software installed. You can check it by exploring `minimal-windows-server-2019.json` file. If you need to run your own software installation scripts on top of it, simple copy them to `scripts\Windows\custom-scripts`. Note that it should be a PowerShell scripts.
 
-### Run provisioning script
+#### Run provisioning script
 
 If you are in PowerShell session run:
 
@@ -349,7 +349,7 @@ Script will ask to enter required information and make a few selections. It is t
 
 For more advanced options call `get-help .\connect-to-azure.ps1 -detailed` or check script source code.
 
-### Final steps
+#### Final steps
 
 Wait for the script to complete. It should take about an hour depending on VM size and optional software installation scripts addition. Upon completion script will print build worker image name (which is `Windows Server 2019 on Azure` if you do not change it with the `-image_description` parameter). Just set `image: Windows Server 2019 on Azure` in `appveyor.yml` (or select `Windows Server 2019 on Azure` in the **Settings > Environment** tab if you use UI), and you can start building on Azure!
 
