@@ -254,12 +254,27 @@ environment:
 
 The entire `.appveyor.yml` can be [downloaded here](https://gist.githubusercontent.com/FeodorFitsner/bd04fdcb7df10089a16aebb9af5658e6/raw/fa0e23a54fb05df38bc511c70b61ad5547d33a55/job-depends-on.yml).
 
-More topics to cover:
+Here we can see a new job attribute `job_depends_on` that tells AppVeyor to start a job when preceding job  or a group are finished. You can provide a comma-separated list of job or group names in `job_depends_on` value.
 
-* Sources cloning on/off
-* Communication between containers in a single build.
-* Job groups, job dependencies, fan-in/-out workflows.
-* Shared "bin" folder across build jobs
+There is a common "bin" directory available inside all containers of the same build. It's mapped as `/appveyor/bin` in Linux containers and `C:\appveyor\bin` in Windows containers. The files copied to that folder are visible to all containers within the build. "Bin" directory can be used as a communication and synchronization tool in complex builds. For example, one job could build a solution and put compiled program into `bin` folder. Then other containers could start tests in binaries from "bin" folder and, finally, another job could take the binaries and upload them as artifacts.
+
+By default, all containers (except the ones with `docker_image` attribute and without `build_script` or `test_script` sections) will be checking out repository contents as a a first step. To disable repository cloning on job start add `clone: off` to job definition:
+
+```
+...
+
+-
+  matrix:
+    only:
+      - job_group: tests
+  clone: off
+  test_script:
+  - node --version
+  - npm --version
+
+...
+```
+
 
 #### Customizing AppVeyor image
 
