@@ -177,3 +177,9 @@ AppVeyor service logs are stored in journal and can be viewed with the following
 ```bash
 sudo usermod -aG docker appveyor
 ```
+
+Restart AppVeyor to take effect:
+
+```bash
+systemctl restart appveyor-server
+```
