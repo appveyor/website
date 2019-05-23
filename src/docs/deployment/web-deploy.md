@@ -128,7 +128,7 @@ Typically, Web Deployment Handler uses Basic authentication which is enabled by 
 See [Configuring Deployment Properties for a Target Environment](https://www.asp.net/web-forms/tutorials/deployment/configuring-server-environments-for-web-deployment/configuring-deployment-properties-for-a-target-environment) for more details.
 
 
-### Azure Web Sites
+### Azure App Service
 
 Open website dashboard in Azure Management Portal and download *publish profile*:
 
