@@ -303,6 +303,12 @@ You can connect both hosted and on-premise AppVeyor to your own Azure subscripti
 
 To simplify setup process we created a script which provisions necessary Azure resources, runs Hashicorp Packer to create a basic build image (based on Windows Server 2019), and puts all AppVeyor configuration together. After running that script you immediately will be able to start builds on Azure (and optionally customize your Azure build environment later).
 
+#### Ensure AppVeyor URL is available from the Internet
+
+Skip this step if you are connecting hosted AppVeyor to your Azure subscription, as its URL (`https://ci.appveyor.com`) is always available from the Internet.
+
+For AppVeyor Server you need to ensure that build worker VMs can establish a connection to AppVeyor server. Therefore, it's public URL should be resolvable with public DNS and listen on HTTPS port 443 (or HTTP port 80, though clear HTTP is not recommended nowadays). You can change the URL and set up SSL (AppVeyor Server has built-in free `Let's Encrypt` and custom certificates support) at `system/settings`.
+
 #### Install Packer and Azure PowerShell module
 
 Install Packer with Chocolatey (skip if Packer already installed):

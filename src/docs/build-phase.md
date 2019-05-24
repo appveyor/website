@@ -124,6 +124,11 @@ Or if some If .NET Core project should be excluded from NuGet packaging, please 
   </PropertyGroup>
 ```
 
+#### Packaging symbols
+
+* Use `publish_nuget_symbols: true` (YAML) / `Include NuGet symbol packages` (UI) to package symbols in classic `.symbols.nupkg` format.
+* Use `publish_nuget_symbols: true` **and** `use_snupkg_format: true` (YAML) / `Include NuGet symbol packages` **and** `Use .snupkg package format` (UI) to package symbols in new `.snupkg` format.
+
 ### Packaging Azure Cloud Service projects
 
 If Azure Cloud Service project (`.ccproj`) is found with the solution AppVeyor will create Azure Cloud Service package (`.cspkg`) using the following command:
