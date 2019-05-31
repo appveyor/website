@@ -67,7 +67,7 @@ commands = pytest
 ```
 
 For any Tox environment you want to run on AppVeyor you need to add a
-`TOXENX: ...` item to your environment matrix in `appveyor.yml`.
+`TOXENV: ...` item to your environment matrix in `appveyor.yml`.
 
 See [usage examples](https://tox.readthedocs.io/en/latest/example/basic.html)
 and [configuration specs](https://tox.readthedocs.io/en/latest/config.html)
