@@ -39,7 +39,7 @@ For every cache item AppVeyor checks if its archive exists in build cache and if
 
 ### Save/update cache before build finishes
 
-For every cache item AppVeyor calculates checksum and if checksum does not match to the one in build cache or archive not found AppVeyor compresses directory of file and pushes archive to a cloud storage.
+For every cache item AppVeyor calculates checksum and if checksum does not match to the one in build cache or archive not found AppVeyor compresses directory or file and pushes archive to a cloud storage.
 
 AppVeyor uses fastest compression level to minimize I/O and effectively deal with large number of small files. Build cache storage is physically located in the same datacenter as build workers.
 
