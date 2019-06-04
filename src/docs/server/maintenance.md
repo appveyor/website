@@ -51,6 +51,40 @@ AppVeyor settings with encryption keys are stored in `/etc/opt/appveyor/server` 
 
 To restore AppVeyor Server just re-install AppVeyor from scratch and then overwrite "data" and "settings" directories from backup.
 
+## Migrating database engine
+
+By default, AppVeyor Server stores data in SQLite database. Though SQLite database is going to be OK for the most installations there might be a point when your database outgrows SQLite and you need to migrate to a full-featured database engine such as SQL Server or PostgreSQL.
+
+AppVeyor Server installation includes database migration tool which can be found at:
+
+* Windows: `C:\Program Files\AppVeyor\Server\appveyor-db-migrator.exe`
+* Linux: `/opt/appveyor/server/appveyor-db-migrator`
+
+AppVeyor database migrator allows moving database data from/to the following database engines:
+
+* SQLite
+* SQL Server
+* PostgreSQL
+
+AppVeyor database migrator runs with the following command:
+
+    appveyor-db-migrator.exe|appveyor-db-migrator --src-provider=<provider> --src-connection-string=<provider-connection-string> \
+        --dest-provider=<provider> --dest-connection-string=<provider-connection-string>
+
+where `<provider>` must be one of the following: `SQLite`, `SqlServer` or `PostgreSQL`.
+
+Depending on database provider connection string must have the following format:
+
+* SQLite: `Data source=<path-to-file.db>`
+* SQL Server: `Server=<ip-or-host>;Database=<database>;User ID=<user>;Password=<password>`
+* PostgreSQL: `Host=<host-or-ip>;Port=5432;Database=<database>;Username=<user>;Password=<password>`
+
+Destination database must be pre-created and clean before running the migrator.
+
+For PostgreSQL database `citext` extension must be installed manually with the following command:
+
+    CREATE EXTENSION IF NOT EXISTS citext;
+
 ## Troubleshooting
 
 ### Windows
