@@ -5,7 +5,7 @@ title: Publishing to Azure App Service with Zip Push Deploy
 
 # Publishing to Azure App Service with Zip Push Deploy
 
-AppVeyor allows publishing of `.zip` artifacts to Azure App Service with [Zip Deploy](https://docs.microsoft.com/en-us/azure/app-service/deploy-zip/).
+AppVeyor allows publishing of `.zip` artifacts to Azure App Service with [Zip Push Deploy](https://blogs.msdn.microsoft.com/appserviceteam/2017/10/16/zip-push-deployment-for-web-apps-functions-and-webjobs/).
 
 ## Packaging artifact
 
