@@ -7,6 +7,8 @@ title: Build images
 
 ## Hosted
 
+*Hosted* images are provided by AppVeyor service hosted infrastructure to all OSS and paid accounts.
+
 ### Windows
 
 * [Visual Studio 2013](/docs/build-images/hosted/windows/visual-studio-2013/)
@@ -16,11 +18,13 @@ title: Build images
 
 ### Linux
 
-* [Ubuntu](/docs/build-images/hosted/linux/ubuntu/)
+* [Ubuntu](/docs/build-images/hosted/linux/ubuntu/) (Ubuntu 16.04)
 * [Ubuntu1804](/docs/build-images/hosted/linux/ubuntu-1804/)
 
 
 ## On-premise/Hybrid
+
+*On-premise* images describe the software being installed by Packer on VMs in your private build cloud.
 
 ### Windows
 
