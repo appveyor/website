@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: "Visual Studio 2015" build image
+title: Visual Studio 2015 build image
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->

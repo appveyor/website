@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: AppVeyor build images
+title: Build images
 ---
 
-# AppVeyor build images
+# Build images
 
 ## Hosted
 
@@ -20,8 +20,14 @@ title: AppVeyor build images
 * [Ubuntu1804](/docs/build-images/hosted/linux/ubuntu-1804/)
 
 
-## Hybrid/On-premise
+## On-premise/Hybrid
 
 ### Windows
 
+* [Windows Server minimal](/docs/build-images/on-premise/windows/windows-server-minimal/)
+* [Visual Studio 2019](/docs/build-images/on-premise/windows/visual-studio-2019/)
+
 ### Linux
+
+* [Ubuntu minimal](/docs/build-images/on-premise/linux/ubuntu-minimal/)
+* [Ubuntu](/docs/build-images/on-premise/linux/ubuntu/)

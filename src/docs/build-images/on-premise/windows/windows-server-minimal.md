@@ -1,13 +1,13 @@
 ---
 layout: docs
-title: Visual Studio 2013 build image
+title: Windows Server minimal build image
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
-# "Visual Studio 2013" build image
+# "Windows Server minimal" build image
 {:.no_toc}
 
-The following software is installed on `Visual Studio 2013` image:
+The following software is installed on "Windows Server minimal" image:
 
 * Comment to trigger ToC generation
 {:toc}
@@ -15,11 +15,12 @@ The following software is installed on `Visual Studio 2013` image:
 
 ## Operating system
 
-* Windows Server 2012 R2
+* Windows Server 2019 (2019 on AWS)
 
 ## PowerShell
 
 * Windows PowerShell 5.1
+* PowerShell Core 6.1
 
 ## Version control systems
 

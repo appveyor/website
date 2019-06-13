@@ -1,13 +1,13 @@
 ---
 layout: docs
-title: "Ubuntu1804" build image
+title: Ubuntu build image
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
 # "Ubuntu" build image
 {:.no_toc}
 
-The following software is installed on `Ubuntu1804` image:
+The following software is installed on `Ubuntu` image:
 
 * Comment to trigger ToC generation
 {:toc}
@@ -15,7 +15,7 @@ The following software is installed on `Ubuntu1804` image:
 
 ## Operating system
 
-* Ubuntu 18.04
+* Ubuntu 16.04
 
 ## PowerShell
 

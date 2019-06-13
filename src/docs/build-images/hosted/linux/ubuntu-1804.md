@@ -1,13 +1,13 @@
 ---
 layout: docs
-title: Visual Studio 2013 build image
+title: Ubuntu1804 build image
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
-# "Visual Studio 2013" build image
+# "Ubuntu" build image
 {:.no_toc}
 
-The following software is installed on `Visual Studio 2013` image:
+The following software is installed on `Ubuntu1804` image:
 
 * Comment to trigger ToC generation
 {:toc}
@@ -15,11 +15,11 @@ The following software is installed on `Visual Studio 2013` image:
 
 ## Operating system
 
-* Windows Server 2012 R2
+* Ubuntu 18.04
 
 ## PowerShell
 
-* Windows PowerShell 5.1
+* PowerShell Core 6.1
 
 ## Version control systems
 
