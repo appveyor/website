@@ -335,7 +335,7 @@ Switch to the cloned folder:
 
 #### Optionally add custom software installaton scripts
 
-Default build worker image will be created with the most essential software installed. You can check it by exploring `minimal-windows-server-2019.json` file. If you need to run your own software installation scripts on top of it, simple copy them to `scripts\Windows\custom-scripts`. Note that it should be a PowerShell scripts.
+Default build worker image will be created with the most essential software installed. You can check it by exploring `minimal-windows-server.json` file. If you need to run your own software installation scripts on top of it, simple copy them to `scripts\Windows\custom-scripts`. Note that it should be a PowerShell scripts.
 
 #### Run provisioning script
 
