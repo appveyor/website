@@ -12,7 +12,7 @@ Local deployment provider deploys artifacts containing web and Windows applicati
 Local deployment provider has exactly the same behavior and configuration settings as [Agent Deployment provider](/docs/deployment/agent/) with the only difference is that applications
 are being installed locally on the build server.
 
-## Installing self-signed SSL certificate to a website
+## Installing self-signed [SSL certificate](https://hosting.review/web-hosting-glossary/#12) to a website
 
 Add `InstallSelfSignedCert.ps1` PowerShell script into your repository:
 
