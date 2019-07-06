@@ -185,6 +185,7 @@ for:
     ...
 
 # override settings for `dev-*` branches
+for:
 -
   branches:
     only:
