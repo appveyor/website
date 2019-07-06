@@ -20,10 +20,18 @@ You can use YAML validation tool (**Settings** &rarr; **Validate YAML**) to chec
 #---------------------------------#
 
 # version format
-version: 1.0.{build}
+version: 1.0.{build}-CI
 
 # you can use {branch} name in version format too
 # version: 1.0.{build}-{branch}
+
+# here we are going to override common configuration
+for:
+# override settings for `master` branch
+- branches:
+    only:
+      - master
+  version: 1.0.{build}
 
 # branches to build
 branches:
