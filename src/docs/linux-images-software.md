@@ -118,7 +118,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 2.1.300-rc1</td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1.300-preview2</td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1 version 2.1.700</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.2 version 2.1.300</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.2 version 2.2.300</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Node.js -->
     <tr>
         <th id="node-js" class="section" colspan="3">Node.js</th>
