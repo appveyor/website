@@ -236,7 +236,7 @@ To run xUnit 2.x tests with real-time reporting use command:
 
 or for x86 assemblies:
 
-    %xunit20%\xunit.console.x86.exe <assembly> -appveyor [options] 
+    %xunit20%\xunit.console.x86.exe <assembly> -appveyor [options]
 
 ### Machine.Specifications
 
@@ -302,7 +302,7 @@ If using CTest you can still upload your xml test results by transforming them i
 
 ```powershell
 $XSLInputElement = New-Object System.Xml.Xsl.XslCompiledTransform
-# you can choose to check this file into your repository instead of downloading for every build. 
+# you can choose to check this file into your repository instead of downloading for every build.
 $XSLInputElement.Load("https://raw.githubusercontent.com/rpavlik/jenkins-ctest-plugin/master/ctest-to-junit.xsl")
 
 #transform test results from ctest to junit format
