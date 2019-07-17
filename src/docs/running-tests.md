@@ -236,7 +236,7 @@ To run xUnit 2.x tests with real-time reporting use command:
 
 or for x86 assemblies:
 
-    %xunit20%\xunit.console.x86.exe <assembly> -appveyor [options]
+    %xunit20%\xunit.console.x86.exe <assembly> -appveyor [options] 
 
 ### Machine.Specifications
 
@@ -294,6 +294,24 @@ The following example illustrates how you can collect all JUnit test results and
 on_finish:
   - sh: |
       find "$APPVEYOR_BUILD_FOLDER" -type f -name 'TEST*.xml' -print0 | xargs -0 -I '{}' curl -F 'file=@{}' "https://ci.appveyor.com/api/testresults/junit/$APPVEYOR_JOB_ID"
+```
+
+### Transform CTest results to JUnit
+
+If using CTest you can still upload your xml test results by transforming them into JUnit compatible results. See the example script below.
+
+```powershell
+$XSLInputElement = New-Object System.Xml.Xsl.XslCompiledTransform
+# you can choose to check this file into your repository instead of downloading for every build. 
+$XSLInputElement.Load("https://raw.githubusercontent.com/rpavlik/jenkins-ctest-plugin/master/ctest-to-junit.xsl")
+
+#transform test results from ctest to junit format
+$XSLInputElement.Transform((Resolve-Path .\<your_test_results_xml>), (Join-Path (Resolve-Path .) "ctest-to-junit-results.xml"))
+
+#upload results
+$wc = New-Object 'System.Net.WebClient'
+$wc.UploadFile("https://ci.appveyor.com/api/testresults/junit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\ctest-to-junit-results.xml))
+
 ```
 
 See also:
