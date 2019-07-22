@@ -298,7 +298,7 @@ on_finish:
 
 ### Transform CTest results to JUnit
 
-If using CTest you can still upload your xml test results by transforming them into JUnit compatible results. See the example script below.
+If using CTest you can still upload your xml test results by transforming them into JUnit compatible results with the help of [this](https://github.com/rpavlik/jenkins-ctest-plugin/blob/master/ctest-to-junit.xsl) open source template. See the example script below.
 
 ```powershell
 $XSLInputElement = New-Object System.Xml.Xsl.XslCompiledTransform
