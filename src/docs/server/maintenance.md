@@ -217,3 +217,11 @@ Restart AppVeyor to take effect:
 ```bash
 systemctl restart appveyor-server
 ```
+
+#### Running Docker commands (Linux only)
+
+If you need to run `docker` commands inside Docker builds you have to map Docker daemon socket and `docker` CLI executable into the build container.
+
+You should modify Docker cloud settings under **Account &rarr; Build** environment and put the following into Custom Docker command arguments:
+
+    -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker
