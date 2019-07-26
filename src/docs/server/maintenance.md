@@ -17,11 +17,11 @@ title: AppVeyor Server Maintenance Guide
 
 To check current installer version of AppVeyor, navigate to `http://<appveyor-url>/system/settings/license` page. Alternatively, installation version can be seen on Windows "Add or remove programs" screen.
 
-To upgrade AppVeyor download the latest [AppVeyor Server installer](/downloads/appveyor/appveyor-server.msi) (`appveyor-server.msi`). Right-click it in Windows Explorer and check the version on dialog "Details" tab. Run the installer to upgrade AppVeyor. Once the service is started and the web interface is available, navigate to "License" settings page to verify the version.
+To upgrade AppVeyor download the latest [AppVeyor Server installer]({{ site.url }}/downloads/appveyor/appveyor-server.msi) (`appveyor-server.msi`). Right-click it in Windows Explorer and check the version on dialog "Details" tab. Run the installer to upgrade AppVeyor. Once the service is started and the web interface is available, navigate to "License" settings page to verify the version.
 
 ### Ubuntu/Debian
 
-Download the latest [AppVeyor Server Debian package](/downloads/appveyor/appveyor-server.deb) using the following command:
+Download the latest [AppVeyor Server Debian package]({{ site.url }}/downloads/appveyor/appveyor-server.deb) using the following command:
 
     curl -L {{ site.url }}/downloads/appveyor/appveyor-server.deb -o appveyor-server_{{ site.data.appveyor.latest_version }}_amd64.deb
 
