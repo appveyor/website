@@ -73,7 +73,7 @@ Once the installation is complete, open a web browser and navigate to `http://<s
 
 ### macOS
 
-AppVeyor Server can be installed on macOS 10.13 "High Sierra" and later versions. 
+AppVeyor Server can be installed on macOS 10.13 "High Sierra" and later versions.
 
 Install [Homebrew package manager](https://brew.sh/) if not already installed.
 
