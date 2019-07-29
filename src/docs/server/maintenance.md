@@ -33,6 +33,17 @@ Verify the version by running:
 
     /opt/appveyor/server/appveyor version
 
+### macOS
+
+Stop AppVeyor Server service:
+
+    brew services stop appveyor-server
+
+Upgrade AppVeyor Server package and start the service:
+
+    brew upgrade appveyor-server
+    brew services start appveyor-server
+
 ## Backup/restore AppVeyor Server
 
 ### Windows
