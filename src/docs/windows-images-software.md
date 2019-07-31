@@ -198,7 +198,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2017" class="section" colspan="4">Visual Studio 2017</th>
     </tr>
-    <tr><td>Visual Studio Community 2017 version 15.9.11</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.9.14</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual Studio Community 2017 version 15.9 Preview 4 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Visual Studio Enterprise 2019 version 16.0.0 Preview 2.1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -472,12 +472,12 @@ title: Software pre-installed on Windows build VMs
                 <li>Ruby 2.2.6 x64 (<code>C:\Ruby22-x64\bin</code>)</li>
                 <li>Ruby 2.3.3 x86 (<code>C:\Ruby23\bin</code>)</li>
                 <li>Ruby 2.3.3 x64 (<code>C:\Ruby23-x64\bin</code>)</li>
-                <li>Ruby 2.4.5-1 x86 (<code>C:\Ruby24\bin</code>)</li>
-                <li>Ruby 2.4.5-1 x64 (<code>C:\Ruby24-x64\bin</code>)</li>
-                <li>Ruby 2.5.3-1 x86 (<code>C:\Ruby25\bin</code>)</li>
-                <li>Ruby 2.5.3-1 x64 (<code>C:\Ruby25-x64\bin</code>)</li>
-                <li>Ruby 2.6.1 x86 (<code>C:\Ruby26\bin</code>)</li>
-                <li>Ruby 2.6.1 x64 (<code>C:\Ruby26-x64\bin</code>)</li>
+                <li>Ruby 2.4.6-1 x86 (<code>C:\Ruby24\bin</code>)</li>
+                <li>Ruby 2.4.6-1 x64 (<code>C:\Ruby24-x64\bin</code>)</li>
+                <li>Ruby 2.5.5-1 x86 (<code>C:\Ruby25\bin</code>)</li>
+                <li>Ruby 2.5.5-1 x64 (<code>C:\Ruby25-x64\bin</code>)</li>
+                <li>Ruby 2.6.3 x86 (<code>C:\Ruby26\bin</code>)</li>
+                <li>Ruby 2.6.3 x64 (<code>C:\Ruby26-x64\bin</code>)</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -835,7 +835,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>curl 7.55.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 18.05</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.13.3</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.15.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.12.2</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NuGet 4.9.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -856,7 +856,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>OpenSSL 1.1.1c (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.04 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Coverity Scan 2019.03</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Yarn 1.9.4</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Yarn 1.16.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>vcpkg 2019.06.26-nohash</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
