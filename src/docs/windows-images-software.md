@@ -640,12 +640,12 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.12.2: <code>C:\Qt\5.12.2</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.2</code> for backward compatibility)
+            <li>Qt 5.13.0: <code>C:\Qt\5.13.0</code> (<code>C:\Qt\5.13</code> mapped to <code>C:\Qt\5.13.0</code> for backward compatibility)
                 <ul>
-                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.2\mingw73_64</code></li>
-                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.2\mingw73_32</code></li>
-                <li>msvc2017 32-bit: <code>C:\Qt\5.12.2\msvc2017</code></li>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.12.2\msvc2017_64</code></li>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.13.0\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.13.0\mingw73_32</code></li>
+                <li>msvc2017 32-bit: <code>C:\Qt\5.13.0\msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.13.0\msvc2017_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -655,11 +655,69 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.12.2: <code>C:\Qt\5.12.2</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.2</code> for backward compatibility)
+            <li>Qt 5.13.0: <code>C:\Qt\5.13.0</code> (<code>C:\Qt\5.13</code> mapped to <code>C:\Qt\5.13.0</code> for backward compatibility)
                 <ul>
-                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.2\mingw73_64</code></li>
-                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.2\mingw73_32</code></li>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.12.2\msvc2015_64</code></li>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.13.0\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.13.0\mingw73_32</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.13.0\msvc2015_64</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.12.4: <code>C:\Qt\5.12.4</code>
+                <ul>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.4\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.4\mingw73_32</code></li>
+                <li>msvc2017 32-bit: <code>C:\Qt\5.12.4\msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.12.4\msvc2017_64</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.12.4: <code>C:\Qt\5.12.4</code>
+                <ul>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.4\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.4\mingw73_32</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.12.4\msvc2015_64</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.12.3: <code>C:\Qt\5.12.3</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.3</code> for backward compatibility)
+                <ul>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.3\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.3\mingw73_32</code></li>
+                <li>msvc2017 32-bit: <code>C:\Qt\5.12.3\msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.12.3\msvc2017_64</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.12.3: <code>C:\Qt\5.12.3</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.3</code> for backward compatibility)
+                <ul>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.3\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.3\mingw73_32</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.12.3\msvc2015_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -827,8 +885,16 @@ title: Software pre-installed on Windows build VMs
         <td class="yes"></td><td class="no"></td><td class="no"></td>
     </tr>
     <tr>
+        <td>Qt Installer Framework 2.0.5</td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr>
         <td>Qt Installer Framework 3.0.6</td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>Qt Installer Framework 3.1.1</td>
+        <td class="no"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>
