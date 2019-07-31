@@ -186,6 +186,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Visual F# Tools 4.0 RTM</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>WDK 10.0.14393</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1803 (10.0.17134.1)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>WDK for Windows 10, version 1903 (10.0.18362.1)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 17.0 (14.0.61704.140) for Visual Studio 2015</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Data-Tier Application Framework (17.1 DacFx)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Azure Service Fabric SDK 3.2 (Runtime 6.3)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
