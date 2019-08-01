@@ -59,11 +59,11 @@ Once the installation complete AppVeyor Web interface will be opened in a new br
 
 Download the latest [AppVeyor Server Debian package]({{ site.url }}/downloads/appveyor/appveyor-server.deb) using the following command:
 
-    curl -L {{ site.url }}/downloads/appveyor/appveyor-server.deb -o appveyor-server_{{ site.data.appveyor.latest_version }}_amd64.deb
+    curl -L {{ site.url }}/downloads/appveyor/appveyor-server.deb -o appveyor-server_{{ site.data.versions.appveyor_version }}_amd64.deb
 
 Install AppVeyor Server by running:
 
-    sudo dpkg -i appveyor-server_{{ site.data.appveyor.latest_version }}_amd64.deb
+    sudo dpkg -i appveyor-server_{{ site.data.versions.appveyor_version }}_amd64.deb
 
 Verify the installed version by running:
 
