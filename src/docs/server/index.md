@@ -83,7 +83,7 @@ Add AppVeyor tap repo, install AppVeyor Server formulae and start the service:
     brew install appveyor-server
     brew services start appveyor-server
 
-Once AppVeyor service is started open `http://localhost:8050` in your browser to continue AppVeyor setup.    
+Once AppVeyor service is started open `http://localhost:8050` in your browser to continue AppVeyor setup.
 
 ## Running builds
 
