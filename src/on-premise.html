@@ -133,7 +133,7 @@ description: AppVeyor CI on your own server
                     <div class="columns medium-4">
                         <div class="platform windows">
                             <div>
-                                <a class="button small radius" href="{{ site.data.urls.latest_msi_location }}/{{ site.data.urls.latest_msi_filename }}">.msi</a>
+                                <a class="button small radius" href="{{ site.url }}/downloads/appveyor/appveyor-server.msi">.msi</a>
                             </div>
                             <ul>
                                 <li>Windows 10</li>
@@ -145,7 +145,7 @@ description: AppVeyor CI on your own server
                     <div class="columns medium-4">
                         <div class="platform linux">
                             <div>
-                                <a class="button small radius" href="{{ site.data.urls.latest_deb_location }}/{{ site.data.urls.latest_deb_filename }}">.deb</a>
+                                <a class="button small radius" href="{{ site.url }}/downloads/appveyor/appveyor-server.deb">.deb</a>
                             </div>
                             <ul>
                                 <li>Debian</li>
@@ -157,10 +157,9 @@ description: AppVeyor CI on your own server
                     <div class="columns medium-4">
                         <div class="platform mac">
                             <div>
-                                <p>Coming soon...</p>
-                                <ul>
-                                    <li><a href="mailto:team@appveyor.com?subject=AppVeyor%20Server%20for%20Mac">Let us know</a> if you want to get it sooner!</li>
-                                </ul>                                 
+                                <pre>brew tap appveyor/brew
+brew install appveyor-server
+brew services start appveyor-server</pre>
                             </div>
                         </div>
                     </div>                

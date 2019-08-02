@@ -51,19 +51,19 @@ Docker is not required, but recommended! AppVeyor has 1st-class integration with
 
 AppVeyor Server can be installed on **Windows 7 SP1 or later** and **Windows Server 2008 R2 SP1 or later**.
 
-[Download AppVeyor Server MSI installer]({{ site.data.urls.latest_msi_location }}/{{ site.data.urls.latest_msi_filename }}) and run it.
+[Download AppVeyor Server MSI installer]({{ site.url }}/downloads/appveyor/appveyor-server.msi) and run it.
 
 Once the installation complete AppVeyor Web interface will be opened in a new browser window to continue with AppVeyor configuration.
 
 ### Linux
 
-Download the latest [AppVeyor Server Debian package]({{ site.data.urls.latest_deb_location }}/{{ site.data.urls.latest_deb_filename }}) using the following command:
+Download the latest [AppVeyor Server Debian package]({{ site.url }}/downloads/appveyor/appveyor-server.deb) using the following command:
 
-    curl {{ site.data.urls.latest_deb_location }}/{{ site.data.urls.latest_deb_filename }} -o {{ site.data.urls.latest_deb_filename }}
+    curl -L {{ site.url }}/downloads/appveyor/appveyor-server.deb -o appveyor-server_{{ site.data.versions.appveyor_version }}_amd64.deb
 
 Install AppVeyor Server by running:
 
-    sudo dpkg -i {{ site.data.urls.latest_deb_filename }}
+    sudo dpkg -i appveyor-server_{{ site.data.versions.appveyor_version }}_amd64.deb
 
 Verify the installed version by running:
 
@@ -71,6 +71,19 @@ Verify the installed version by running:
 
 Once the installation is complete, open a web browser and navigate to `http://<server_ip>` or `http://<server_ip>:8050` (if port 80 is already taken by another app) to continue with AppVeyor configuration.
 
+### macOS
+
+AppVeyor Server can be installed on macOS 10.13 "High Sierra" and later versions.
+
+Install [Homebrew package manager](https://brew.sh/) if not already installed.
+
+Add AppVeyor tap repo, install AppVeyor Server formulae and start the service:
+
+    brew tap appveyor/brew
+    brew install appveyor-server
+    brew services start appveyor-server
+
+Once AppVeyor service is started open `http://localhost:8050` in your browser to continue AppVeyor setup.
 
 ## Running builds
 

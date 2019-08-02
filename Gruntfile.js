@@ -299,7 +299,8 @@ module.exports = function(grunt) {
                         return url.path !== '/assets/js/l.src' &&
                                url.path !== '/assets/js/+a+' &&
                                url.path !== '/feed.xml' &&
-                               url.port !== '9023';
+                               url.port !== '9023' &&
+                               url.port !== '9001';
                     });
                 },
                 interval: 1,        // 1 ms; default 250
