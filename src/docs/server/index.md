@@ -83,6 +83,8 @@ Add AppVeyor tap repo, install AppVeyor Server formulae and start the service:
     brew install appveyor-server
     brew services start appveyor-server
 
+Once AppVeyor service is started open `http://localhost:8050` in your browser to continue AppVeyor setup.    
+
 ## Running builds
 
 In AppVeyor you are starting from creating a **New project**. While adding a project you will be offered to connect AppVeyor to your source control system. Multiple *Projects* can be connected to the same repository - they all can have different configurations and versioning scheme. Every project adds a new webhook to the connected repository.
