@@ -15,9 +15,23 @@ title: Bring Your Own Cloud or Computer (BYOC)
 
 [TBD]
 
+"Self-hosted agent" mode is supported...
+
+It really shines with creating VMs on demand.
+
+## Why would you need it
+
+* Re-use existing hardware or hardware with better performance
+* Custom VM size (GPU, memory-, disk-, network-optimized)
+* Custom software
+* Security compliance requirements
+* ...
+
 ## Benefits
 
-[TBD]
+Don't have to run 24x7 machine with the agent.
+Clean environment on every build.
+We manage build images for you!
 
 ## Getting started
 
