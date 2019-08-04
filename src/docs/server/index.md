@@ -59,7 +59,7 @@ Run the following command:
 
     choco install appveyor-server
 
-Once AppVeyor service is started, open `http://localhost:8050` in your browser to continue AppVeyor setup.
+Once the Chocolatey package installation completes, the AppVeyor Web interface will be opened in a new browser window to continue with AppVeyor configuration.
 
 #### Manual Installation
 
