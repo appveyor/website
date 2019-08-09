@@ -43,3 +43,11 @@ We manage build images for you!
 * [AWS](/docs/byoc/aws/)
 * [GCE](/docs/byoc/gce/)
 * [Hyper-V](/docs/byoc/hyper-v/)
+
+## Routing builds to your cloud
+
+[TBD]
+
+## Build clusters
+
+[TBD] - grouping multiple clouds, failover, etc.
