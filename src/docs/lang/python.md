@@ -81,3 +81,17 @@ however, install them yourself as additional interpreters in your `appveyor.yml`
 See the "[How do I install PyPy on AppVeyor](
 https://stackoverflow.com/questions/30822873/how-do-i-install-pypy-on-appveyor
 )" question on StackOverflow for a possible strategy.
+
+
+### Note about dependency management
+
+Since pipenv prints [some statements to stderr](https://github.com/pypa/pipenv/issues/2945), you should to silence it if it is the dependency manager you are using.
+
+```yaml
+# appveyor.yml
+...
+  - ps: python -Wignore -m pip install pipenv
+  - ps: rm Pipfile.lock
+  - ps: $PIPENV_QUIET="true"
+  - pipenv run conditional_install
+```
