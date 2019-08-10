@@ -11,7 +11,7 @@ description: AppVeyor CI on your own server
 
             <div class="title">
                 <h1>AppVeyor CI on your own server</h1>
-                <h2>Easy to install on Windows, Linux or Mac. Run unlimited pipelines in Docker or Cloud.</h2>
+                <h2>Install in minutes on Windows, Linux or Mac. Run unlimited pipelines locally, in Docker or any cloud.</h2>
             </div>
 
             <div class="benefits-container">
@@ -20,7 +20,7 @@ description: AppVeyor CI on your own server
                     <div class="row">
                         <div class="columns medium-10 medium-push-2">
                             <div class="benefit yes">
-                                Works with GitHub, Bitbucket, GitLab and Azure Repos
+                                Works with GitHub, Bitbucket, GitLab, Azure Repos or your favorite source control
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ description: AppVeyor CI on your own server
                     <div class="row">
                         <div class="columns medium-10 medium-push-2">
                             <div class="benefit yes">
-                                Free for one user with unlimited projects, builds and clouds
+                                Free for unlimited users, projects, jobs, clouds and agents
                             </div>
                         </div>
                     </div>                                       
@@ -72,34 +72,28 @@ description: AppVeyor CI on your own server
                 </div>
 
                 <div class="row plans-group">
-                    <div class="medium-10 medium-push-1 columns">
+                    <div class="medium-12 columns">
                         <div class="row">
-                            <div class="medium-4 columns">
+                            <div class="medium-4 medium-push-2 columns">
                                 <ul class="pricing-table">
-                                    <li class="title">Community Edition</li>
+                                    <li class="title">Team Edition</li>
                                     <li class="price">FREE</span></li>
+                                    <li class="bullet-item"><strong>Unlimited users</strong></li>
+                                    <li class="bullet-item"><strong>Unlimited projects, jobs & agents</strong></li>
                                     <li class="bullet-item">1 team</li>
-                                    <li class="bullet-item">1 user</li>
+                                    <li class="bullet-item">Username/password auth</li>
                                     <li class="bullet-item">Community support</li>
                                     <li class="cta-button"><a class="button medium radius" href="#download">Download</a></li>
                                 </ul>
                             </div>
-                            <div class="medium-4 columns">
-                                <ul class="pricing-table">
-                                    <li class="title">Standard Edition</li>
-                                    <li class="price">$990<span>/year</span></li>
-                                    <li class="bullet-item">1 team</li>
-                                        <li class="bullet-item"><strong>Unlimited users</strong></li>
-                                    <li class="bullet-item"><strong>Email support</strong></li>
-                                    <li class="cta-button"><a class="button medium radius" href="https://ci.appveyor.com/server-trial">Start free 14-day trial</a></li>
-                                </ul>
-                            </div>
-                            <div class="medium-4 columns">
+                            <div class="medium-4 medium-pull-2 columns">
                                 <ul class="pricing-table">
                                     <li class="title">Enterprise Edition</li>
                                     <li class="price">$2,990<span>/year</span></li>
+                                    <li class="bullet-item"><strong>Unlimited users</strong></li>
+                                    <li class="bullet-item"><strong>Unlimited projects, jobs & agents</strong></li>
                                     <li class="bullet-item"><strong>Unlimited teams</strong></li>
-                                        <li class="bullet-item"><strong>Unlimited users</strong></li>
+                                    <li class="bullet-item"><strong>GitHub SSO, GitLab SSO, Bitbucket SSO</strong></li>
                                     <li class="bullet-item"><strong>Slack support</strong></li>
                                     <li class="cta-button"><a class="button medium radius" href="mailto:team@appveyor.com?subject=AppVeyor%20Server%20Enterprise%20edition">Contact us</a></li>
                                 </ul>
@@ -169,7 +163,7 @@ brew services start appveyor-server</pre>
                 </div>
 
                 <p class="getting-started">For installation instructions please follow <a href="/docs/server/">Getting Started with AppVeyor Server</a> guide.</p>
-    
+                <p class="text-center">Latest version is <a href="/releases/{{ site.data.versions.appveyor_version }}/">{{ site.data.versions.appveyor_version }}</a> published on {{ site.data.versions.appveyor_published }}. <a href="/releases/">Release notes</a>.</p>
             </div>
         </div>
     </div>
