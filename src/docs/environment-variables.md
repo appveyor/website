@@ -9,7 +9,7 @@ Environment variables that are set by AppVeyor for every build:
 
 * `APPVEYOR` - `True` (`true` on Ubuntu image) if build runs in AppVeyor environment
 * `CI` - `True` (`true` on Ubuntu image) if build runs in AppVeyor environment
-* `APPVEYOR_URL` - AppVeyor central server(s) URL, 'https://ci.appveyor.com' for Hosted service, specific server URL for on-premice
+* `APPVEYOR_URL` - AppVeyor central server(s) URL, `https://ci.appveyor.com` for Hosted service, specific server URL for on-premise
 * `APPVEYOR_API_URL` - AppVeyor Build Agent API URL
 * `APPVEYOR_ACCOUNT_NAME` - account name
 * `APPVEYOR_PROJECT_ID` - AppVeyor unique project ID
