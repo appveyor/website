@@ -86,6 +86,7 @@ Octopus deploy provider settings are specified on Deployment tab of project sett
 
 * **Server URL** (`server`) - Octopus server URL.
 * **API key** (`api_key`) - [API key](https://octopus.com/docs/api-and-integration/api/how-to-create-an-api-key). In UI, just copy-paste key in clear text. In YAML set it as [secure variable](https://www.appveyor.com/docs/build-configuration/#secure-variables) or simple use **Export YAML** menu to export Octopus Deploy settings with encrypted API key.
+* **Space** (`space`) - Optional. Space within which octo commands will be executed. The default space will be used if it is omitted.
 * **Octo execution timeout** (`octo_timeout`) - Optional. Time, in minutes, AppVeyor waits for `octo.exe` to complete operation. Default is 20 minutes.
 * **Push packages** (`push_packages`) - when selected in UI or set to `true` in YAML, AppVeyor will execute `octo.exe push`.
     * **Artifact(s)** (`artifact`) - Optional. Artifact(s) to push. If omitted, all build artifacts of compatible type (`OctopusPackage`, `NuGetPackage` or `Zip`) will be pushed.
