@@ -80,7 +80,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <th id="version-control-systems" class="section" colspan="3">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.22.0</td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.23.0</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Git Large File Storage (Git LFS) 2.8.0</td><td class="yes"></td><td class="yes"></td>
@@ -102,6 +102,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core 2.0.9 runtime</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core 2.1 runtime version 2.1.12</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.2 runtime version 2.2.6</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 3.0 runtime version 3.0.0-preview8-28405-07</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.0.0</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.0.2</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.0.3</td><td class="yes"></td><td class="no"></td></tr>
@@ -119,6 +120,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 2.1.300-preview2</td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1 version 2.1.801</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2 version 2.2.401</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.0.100-preview8-013656 </td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Node.js -->
     <tr>
         <th id="node-js" class="section" colspan="3">Node.js</th>
@@ -135,14 +137,14 @@ The history of Ubuntu image updates can be found [here](/updates/).
         </td>
         <td class="no"></td><td class="yes"></td>
     </tr>
-    <tr><td>Node.js 12.7.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 12.9.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.15.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 10.16.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 10.16.3</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 9.11.2</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 8.16.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.16.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 8.10.0 (installed in system)</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Node.js 7.10.1</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 6.16.0</td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Node.js 6.17.1</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Node.js 6.17.1 (installed in system)</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Node.js 5.12.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 4.9.1</td><td class="yes"></td><td class="yes"></td></tr>
@@ -179,19 +181,19 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>openJDK 10 build 10+44</li>
                 <li>openJDK 11 build 11+28</li>
                 <li>openJDK 12 12.0.2</li>
-                <li>openJDK 13 early access 31</li>
-                <li>openJDK 14 early access 7</li>
+                <li>openJDK 13</li>
+                <li>openJDK 14 early access 10</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
     </tr>
-    <!-- Mono -->
+    <!-- mono -->
     <tr>
         <th id="mono" class="section" colspan="3">Mono</th>
     </tr>
-    <tr><td>Mono 5.20.1.19</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mono 6.0.0.319</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Visual C# compiler csc 2.8.2.62916</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Mono C# compiler 5.20.1.19</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mono C# compiler 6.0.0.319</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Mono ASP.NET Web Server xsp4 0.4.0.0</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Compilers -->
     <tr>
@@ -229,7 +231,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <th id="python" class="section" colspan="3">Python</th>
     </tr>
     <tr><td>Python 2 (installed in system)</td><td>2.7.12</td><td>2.7.15</td></tr>
-    <tr><td>Python 3 (installed in system)</td><td>3.5.1</td><td>3.6.7</td></tr>
+    <tr><td>Python 3 (installed in system)</td><td>3.5.2</td><td>3.6.8</td></tr>
     <tr>
         <td>
             <ul>
@@ -243,8 +245,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>Python 3.7.3</li>
                 <li>Python 3.7.4</li>
                 <li>Python 3.8.0</li>
-                <li>virtualenv 16.7.2</li>
-                <li>pip 19.2.1</li>
+                <li>virtualenv 16.7.4</li>
+                <li>pip 19.2.3</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -266,28 +268,27 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>wget 1.19.4</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>curl 7.47.0</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>curl 7.58.0</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>AWS CLI 1.16.207</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>localstack 0.9.6</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Azure CLI-cli 2.0.69</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Packer 1.4.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.16.225</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>localstack 0.10.2.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure CLI-cli 2.0.71</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Packer 1.4.3</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>VirtualBox 6.0.10</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>cmake 3.15.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>cmake 3.15.2</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
     <tr>
         <th id="web-browsers" class="section" colspan="3">Web browsers</th>
     </tr>
-    <tr><td>Firefox 68.0.1</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 75.0.3770</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 68.0.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 76.0.3809</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="3">Databases</th>
     </tr>
-    <tr><td>SQL Server 2017 14.0.3162</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server 2017 14.0.3223</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server 2017 14.0.3045</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>PostgreSQL 11+203</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 11+204</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL 5.7.27</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>MongoDB 3.2.22</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>MongoDB 3.6.3</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>MongoDB 4.2.0</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Services -->
     <tr>
         <th id="services" class="section" colspan="3">Services</th>
