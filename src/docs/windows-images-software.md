@@ -431,7 +431,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="node-js" class="section" colspan="5">Node.js</th>
     </tr>
-    <tr><td colspan="4"><code>8.x</code> is default Node.js installed on build workers.</td></tr>
+    <tr><td colspan="5"><code>8.x</code> is default Node.js installed on build workers.</td></tr>
     <tr><td>Node.js 11.0.0 - 11.13.0 (x86 and x64) - use <code>Current</code> alias for latest <code>11.x</code> release</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.0.0 - 11.1.0 (x86 and x64)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Node.js 10.0.0 - 10.15.3 (x86 and x64)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -498,10 +498,6 @@ title: Software pre-installed on Windows build VMs
     <tr><td>JDK 10.0.1 (x64) (<code>C:\Program Files\Java\jdk10</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>JDK 11.0.2 (x64) (<code>C:\Program Files\Java\jdk11</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>JDK 12 (x64) (<code>C:\Program Files\Java\jdk12</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <!-- Maven -->
-    <tr>
-        <th id="maven" class="section" colspan="5">Maven</th>
-    </tr>
     <tr><td>Maven 3.5.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Mono -->
     <tr>
