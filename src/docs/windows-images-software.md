@@ -586,7 +586,7 @@ title: Software pre-installed on Windows build VMs
     </tr>
     <tr>
         <td>Erlang OTP runtime 20.2 x64 installed into <code>C:\Program Files\erl9.2</code></td>
-        <td class="yes"></td><td class="yes"></td><td class="yes"></td></td><td class="yes"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- LLVM -->
     <tr>
