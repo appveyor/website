@@ -450,7 +450,6 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Node.js 0.8.25 - 0.8.28 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 0.6.21 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>io.js 1.0.0 - 3.3.0 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td> </td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Go -->
     <tr>
         <th id="golang" class="section" colspan="5">Go (Golang)</th>
