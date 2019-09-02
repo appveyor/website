@@ -24,6 +24,7 @@ title: Software pre-installed on Windows build VMs
             <li><a href="#visual-studio-2013">Visual Studio 2013</a></li>
             <li><a href="#visual-studio-2015">Visual Studio 2015</a></li>
             <li><a href="#visual-studio-2017">Visual Studio 2017</a></li>
+            <li><a href="#visual-studio-2019">Visual Studio 2019</a></li>
             <li><a href="#windows-sdks">Windows SDKs</a></li>
             <li><a href="#misc-sdks">Misc SDKs</a></li>
         </ul>
@@ -226,7 +227,6 @@ title: Software pre-installed on Windows build VMs
     </tr>
     <tr><td>Visual Studio Community 2017 version 15.9.14</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Visual Studio Community 2017 version 15.9 Preview 4 on <code>Visual Studio 2017 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Visual Studio Enterprise 2019 version 16.0.0 Preview 2.1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 15.5.2 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2019 -->
@@ -234,6 +234,7 @@ title: Software pre-installed on Windows build VMs
         <th id="visual-studio-2019" class="section" colspan="5">Visual Studio 2019</th>
     </tr>
     <tr><td>Visual Studio Community 2019 version 16.2.3</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Enterprise 2019 version 16.0.0 Preview 2.1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1809</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>WDK for Windows 10, version 1903</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->

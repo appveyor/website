@@ -128,6 +128,7 @@ AppVeyor provides these "standard" build worker images:
     * `Visual Studio 2013`
     * `Visual Studio 2015`
     * `Visual Studio 2017`
+    * `Visual Studio 2019`
 
 
 * Linux images:
@@ -201,6 +202,7 @@ We provide an access to "last good" versions of build worker images from previou
     * `Previous Visual Studio 2013`
     * `Previous Visual Studio 2015`
     * `Previous Visual Studio 2017`
+    * `Previous Visual Studio 2019`
 
 
 * Linux "previous" images:
