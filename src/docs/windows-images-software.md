@@ -946,7 +946,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="tools" class="section" colspan="5">Tools</th>
     </tr>
-    <tr><td>curl 7.55.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>curl 7.55.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 18.05</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.15.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
