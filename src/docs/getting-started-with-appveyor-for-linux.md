@@ -17,10 +17,11 @@ Some benefits of running Linux builds on AppVeyor:
 
 * Multiple source control systems supported:
     * GitHub.com and GitHub Enterprise
-    * Bitbucket.com Cloud and Bitbucket Server
-    * GitLab
-    * VSTS (both Git and TFVC repositories)
+    * Bitbucket.com and Bitbucket Server
+    * GitLab.com and GitLab Enterprise
+    * Azure DevOps (both Git and TFVC repositories)
     * Kiln
+    * Gitea
     * Any other Git, Mercurial or Subversion repository
 * Configure CI for your projects via UI or in dot-file.
 * Full `sudo` access to VM running build

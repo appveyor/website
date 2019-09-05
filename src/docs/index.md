@@ -11,7 +11,7 @@ title: Welcome to AppVeyor
 
 ## Step 1 - Sign in with AppVeyor
 
-Use **GitHub** or **Bitbucket** button to sign up with your existing developer account (OAuth) or create an AppVeyor account using your email and password.
+Use **GitHub**, **Bitbucket** button to sign up with your existing developer account (OAuth) or create an AppVeyor account using your email and password.
 
 
 ## Step 2 - Add your project

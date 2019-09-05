@@ -1,5 +1,5 @@
 -
-  text: Support for GitHub, GitHub Enterprise, Bitbucket, GitLab, Azure Repos, Kiln or custom repos
+  text: Support for GitHub, GitHub Enterprise, Bitbucket, GitLab, Azure Repos, Kiln, Gitea or custom repos
   class: "yes"
 -
   text: Configure builds in versioned YAML or UI

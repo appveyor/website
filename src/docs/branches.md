@@ -103,9 +103,9 @@ Unlike white- and blacklisting `branches` section here works like a selector, no
 * If all previous steps fail build is not run.
 
 
-## Build on tags (GitHub, GitLab and BitBucket only)
+## Build on tags (GitHub, BitBucket, GitLab, Gitea)
 
-By default AppVeyor starts a new build on any push to GitHub, whether it's a regular commit or a new tag. Repository tagging is frequently used to trigger deployment.
+By default AppVeyor starts a new build on any push to a repository, whether it's a regular commit or a new tag. Repository tagging is frequently used to trigger deployment.
 
 AppVeyor sets `APPVEYOR_REPO_TAG` environment variable to distinguish regular commits from tags - the value is `true` if tag was pushed; otherwise it's `false`. When it's `true` the name of tag is stored in `APPVEYOR_REPO_TAG_NAME`.
 
