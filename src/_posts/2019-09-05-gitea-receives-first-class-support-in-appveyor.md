@@ -2,7 +2,7 @@
 title: Gitea receives first-class support in AppVeyor CI
 ---
 
-[Gitea](https://gitea.io) is a fantastic self-hosted Git service! It's free, open-source, very lightweight (a single file to download and run on any platform), feature-rich and has an extensive GitHub-like API. [AppVeyor Server](https://www.appveyor.com/on-premise/) is a self-hosted CI/CD service wich is also free, multi-platform and very lightweight (absolutely no dependencies required!) - it's a perfect CI/CD companion for your Gitea installation!
+[Gitea](https://gitea.io) is a fantastic self-hosted Git service! It's free, open-source, very lightweight (a single file to download and run on any platform), feature-rich and has an extensive GitHub-like API. [AppVeyor Server](https://www.appveyor.com/on-premise/) is a self-hosted CI/CD service which is also free, multi-platform and lightweight (absolutely no dependencies) - it's a perfect CI/CD companion for your Gitea installation!
 
 Until today, developers have been adding Gitea repositories in AppVeyor as "generic" Git projects thus missing essential CI/CD conveniences such as automatic builds triggering, private repositories, `appveyor.yml` support, commit statuses and pull request builds.
 
@@ -30,7 +30,7 @@ Today we are thrilled to announce Gitea to extend AppVeyor family of built-in so
   <img src="/assets/img/posts/gitea/testing-pr.png" alt="Testing Gitea PR in AppVeyor" width="558" height="233">
 </p>
 
-Lightweight and easy-to-configure AppVeyor is a perfect CI/CD companion for your Gitea installation.
+Lightweight and easy-to-configure AppVeyor is a perfect CI/CD match for your Gitea installation.
 
 [Install AppVeyor](/on-premise/#download) on your favorite platform, connect to Gitea and enjoy your builds!
 
