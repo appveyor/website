@@ -36,10 +36,10 @@ branches:
   except:
     - gh-pages
 
-# Do not build on tags (GitHub and BitBucket)
+# Do not build on tags (GitHub, Bitbucket, GitLab, Gitea)
 skip_tags: true
 
-# Start builds on tags only (GitHub and BitBucket)
+# Start builds on tags only (GitHub, BitBucket, GitLab, Gitea)
 skip_non_tags: true
 
 # Skipping commits with particular message or from specific user

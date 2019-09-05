@@ -28,7 +28,7 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_JOB_ID` - AppVeyor unique job ID
 * `APPVEYOR_JOB_NAME` - job name
 * `APPVEYOR_JOB_NUMBER` - job number, i.g. 1, 2, etc.
-* `APPVEYOR_REPO_PROVIDER` - `gitHub`, `bitBucket`, `kiln`, `vso`, `gitLab`, `gitHubEnterprise`, `stash`, `git`, `mercurial` or `subversion`
+* `APPVEYOR_REPO_PROVIDER` - `gitHub`, `bitBucket`, `kiln`, `vso`, `gitLab`, `gitHubEnterprise`, `gitLabEnterprise`, `stash`, `gitea`, `git`, `mercurial` or `subversion`
 * `APPVEYOR_REPO_SCM` - `git` or `mercurial`
 * `APPVEYOR_REPO_NAME` - repository name in format `owner-name/repo-name`
 * `APPVEYOR_REPO_BRANCH` - build branch. For Pull Request commits it is **base** branch PR is merging into
@@ -51,7 +51,7 @@ Environment variables that are set by AppVeyor for every build:
 
 * `APPVEYOR_ARTIFACT_UPLOAD_TIMEOUT` - artifact upload timeout in seconds. Default is 600 (10 minutes)
 * `APPVEYOR_FILE_DOWNLOAD_TIMEOUT` - timeout in seconds to download arbirtary files using `appveyor DownloadFile` command. Default is 300 (5 minutes)
-* `APPVEYOR_REPOSITORY_SHALLOW_CLONE_TIMEOUT` - timeout in seconds to download repository (GitHub, Bitbucket or VSTS) as zip file (shallow clone). Default is 1800 (30 minutes)
+* `APPVEYOR_REPOSITORY_SHALLOW_CLONE_TIMEOUT` - timeout in seconds to download repository (GitHub, Bitbucket or Azure DevOps) as zip file (shallow clone). Default is 1800 (30 minutes)
 * `APPVEYOR_CACHE_ENTRY_UPLOAD_DOWNLOAD_TIMEOUT` - timeout in seconds to download or upload each cache entry. Default is 300 (5 minutes)
 * `APPVEYOR_CACHE_SKIP_RESTORE` - set to `true` to disable cache restore
 * `APPVEYOR_CACHE_SKIP_SAVE` - set to `true` to disable cache update
