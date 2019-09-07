@@ -312,7 +312,7 @@ Options available:
 
 * `<path>`: the path to the file to upload, relative to your project's checkout (e.g. if you build out of tree, it might be `..\cmake\installer.zip`).
 * `-FileName`: the new name for the published file (effectively renames it during upload).
-* `-DeploymentName`: an arbitrary tag that allows you to group together multiple files and [deploy them using this name](https://help.appveyor.com/discussions/problems/6566-cannot-deploy-artifacts-to-github) as the `artifact` in `appveyor.yml`, instead of the path to the files.
+* `-DeploymentName`: an arbitrary tag that allows you to group together multiple files and [deploy them using this name](https://appveyor.tenderapp.com/discussions/problems/6566-cannot-deploy-artifacts-to-github) as the `artifact` in `appveyor.yml`, instead of the path to the files.
 
 ### Command line
 
