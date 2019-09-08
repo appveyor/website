@@ -17,9 +17,9 @@ the tool:
 
 You can help us to make AppVeyor a great tool by providing feedback and suggestions.
 You can provide feedback by replying to this email and writing directly to me.
-You can start a new discussion on our [community forums](https://appveyor.tenderapp.com/discussions).
+You can start a new discussion on our [community forums](https://help.appveyor.com/discussions).
 You can vote for feature requests or add new ones on our [UserVoice portal](https://appveyor.uservoice.com/).
-We are still working on filling up our [KB database](https://appveyor.tenderapp.com/kb),
+We are still working on filling up our [KB database](https://help.appveyor.com/kb),
 so expect new articles in the coming weeks.
 
 ## Getting started with AppVeyor beta
@@ -27,7 +27,7 @@ so expect new articles in the coming weeks.
 AppVeyor is a cloud-based continuous integration and deployment platform for
 .NET developers. It provides a customizable project build pipeline with Get,
 Build, Test, Package and Deploy steps.
-Checkout [AppVeyor overview](https://appveyor.tenderapp.com/kb/getting-started/appveyor-overview)
+Checkout [AppVeyor overview](https://help.appveyor.com/kb/getting-started/appveyor-overview)
 article for more details about the platform.
 
 ## What’s next

@@ -204,7 +204,7 @@ Parameter element describes the name, default value and the places where and how
 </parameters>
 ```
 
-**Please note that for SQL connection string, both parameter name and environment variable should be named** `DefaultConnection-Web.config Connection String`. More details are in [this forum post](https://appveyor.tenderapp.com/discussions/problems/1759-webconfig-using-web-deploy) and specifically in [this comment](https://appveyor.tenderapp.com/discussions/problems/1759-webconfig-using-web-deploy#comment_36262253).
+**Please note that for SQL connection string, both parameter name and environment variable should be named** `DefaultConnection-Web.config Connection String`. More details are in [this forum post](https://help.appveyor.com/discussions/problems/1759-webconfig-using-web-deploy) and specifically in [this comment](https://help.appveyor.com/discussions/problems/1759-webconfig-using-web-deploy#comment_36262253).
 
 When Web Deploy package is built you can open it in the explorer and see `parameters.xml` in the root:
 

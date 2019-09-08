@@ -112,7 +112,7 @@ AngularJS, SignalrR and Foundation helped us to build great experience we're rea
 
 ## Dicsussions
 
-[https://appveyor.tenderapp.com](https://appveyor.tenderapp.com/)
+[https://help.appveyor.com](https://help.appveyor.com/)
 
 Enjoy the beta!
 

@@ -47,5 +47,5 @@ AppVeyor application and build servers. Now communication pipeline is entirely b
 Bus to be reliable for critical business applications. No more hanging builds!
 
 If you have any questions or suggestions please [drop us an email](mailto:team@appveyor.com),
-[start a new discussion](https://appveyor.tenderapp.com/discussions) on our forums or
+[start a new discussion](https://help.appveyor.com/discussions) on our forums or
 [submit an idea on our UserVoice](https://appveyor.uservoice.com/).

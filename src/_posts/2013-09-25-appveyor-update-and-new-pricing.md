@@ -35,7 +35,7 @@ Just some of its features and benefits:
 * Modify application configuration files upon deployment
 * Extensible with your own custom deployment tasks
 
-Checkout [web application project deployment](https://appveyor.tenderapp.com/kb/using-appveyor/web-application-project-deployment-to-staging-and-production-environments) article to learn how to:
+Checkout [web application project deployment](https://help.appveyor.com/kb/using-appveyor/web-application-project-deployment-to-staging-and-production-environments) article to learn how to:
 
 * Setup automatic deployment of web application project to Staging server as part of CI process.
 * Promote project release to Production environment with a click of a button.
@@ -60,7 +60,7 @@ the job.
 
 In addition to high-level “Visual Studio solution” and “MSBuild” scenarios we added custom build scripts
 with maximum control over CI process. You can author build script in PowerShell or as a batch file and
-use [any build tools](https://appveyor.tenderapp.com/kb/using-appveyor/software-installed-on-appveyor-build-servers) like MSBuild, PSake, NUnit, xUnit, Node.js in your custom workflow.
+use [any build tools](https://help.appveyor.com/kb/using-appveyor/software-installed-on-appveyor-build-servers) like MSBuild, PSake, NUnit, xUnit, Node.js in your custom workflow.
 
 While running a custom build script AppVeyor provides you integration points for:
 
@@ -68,7 +68,7 @@ While running a custom build script AppVeyor provides you integration points for
 * communicating testing results back to AppVeyor
 * pushing artifacts to build artifacts storage
 
-See [creating custom build scripts](https://appveyor.tenderapp.com/kb/using-appveyor/custom-build-scripts) article for more details.
+See [creating custom build scripts](https://help.appveyor.com/kb/using-appveyor/custom-build-scripts) article for more details.
 
 ## Custom storage for build artifacts
 
@@ -81,7 +81,7 @@ Out of the box AppVeyor pushes build artifacts in a cloud storage which is GEO-r
 * Control public access to artifacts.
 * You won’t be affected by artifacts retention policy (it’s not yet implemented, but coming in the future) - store as many versions as you need.
 
-See [packaging artifacts](https://appveyor.tenderapp.com/kb/getting-started/packaging-artifacts) article for more details.
+See [packaging artifacts](https://help.appveyor.com/kb/getting-started/packaging-artifacts) article for more details.
 
 ## Go language support
 
@@ -136,7 +136,7 @@ AppVeyor development secrets. We’ve been quite active on [Twitter](https://tw
 (and this is really cool support tool), so make sure to [follow us](https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fwww.appveyor.com%2Fpricing&amp;region=follow_link&amp;screen_name=appveyor&amp;tw_p=followbutton&amp;variant=2.0) to stay updated.
 
 For now, if you have any questions please do not hesitate to drop us a message at [team@appveyor.com](mailto:team@appveyor.com),
-start a new discussion on [our forums](https://appveyor.tenderapp.com/discussions) or submit a feature request
+start a new discussion on [our forums](https://help.appveyor.com/discussions) or submit a feature request
 on [UserVoice](https://appveyor.uservoice.com/).
 
 Best regards,
