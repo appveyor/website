@@ -16,10 +16,10 @@ AppVeyor BYOC allows connecting an existing Windows computer (your workstation, 
 ## Requirements
 
 * Supported operating system:
-  * Windows 10 Version 1607 x64 and later
-  * Windows Server 2012 R2 SP1 x64 and later
-  * Windows 8.1 x64
-  * Windows 7 SP1 x64
+    * Windows 10 Version 1607 x64 and later
+    * Windows Server 2012 R2 SP1 x64 and later
+    * Windows 8.1 x64
+    * Windows 7 SP1 x64
 * Computer must be connected to the internet;
 * Git, Mercurial or Subversion depending on the repository of your choice.
 
