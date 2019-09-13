@@ -29,27 +29,64 @@ AppVeyor really shines at running builds on dynamically provisioned VMs. While A
 
 * **Significant savings on a monthly cloud bill**. Build VM is created for the duration of a build job and immediately deleted when this build is over. Major cloud providers have per-minute pricing and as a result you pay only for the "clean" build time. With a "self-hosted agent" approach a VM with an agent is running 24x7 waiting for your builds, consuming electricity or adding to your monthly bill. You are not going to run expensive GPU-enabled instance for 24x7x265, aren't you?
 * **Pristine environment on every build**. Build VMs are provisioned from an image or snapshot and never reused for the consequent builds. You get clean and predictable environment every time you run a new build. With "self-hosted agent" approach concurrent builds are running directly on the host operating system, so they interfere, produce leftovers (files, databases, configs, registry settings) or could completely kill the host machine. It makes you think about additional guard/synchronizing/cleanup code in your builds thus wasting your time.
-* **Unlimited parallelism**. A single build can be run on hudreds of VMs simoultanously for a shorter period of time. Say, you have a suite with 1,000 tests and it takes 1 hour on a single core to run them all. You can run the suite on 10 single-core VMs in parallel and reduce the overall test time to 6 minutes by paying the same amount to the cloud provider!
+* **Multiple parallelism**. A single build can be run on hudreds of VMs simoultanously for a shorter period of time. Say, you have a suite with 1,000 tests and it takes 1 hour on a single core to run them all. You can run the suite on 10 single-core VMs in parallel and reduce the overall test time to 6 minutes by paying the same amount to the cloud provider!
 
 ## What about build VM images?
 
-We've got you covered!
+One of the benefits of hosted AppVeyor service is that you get build VM with a tons of pre-installed software, curated and regularly updated by AppVeyor team. The greatest fear of running builds on your own VMs is a necessity of maintaining build VM images (the template is used to create a VM).
 
-[TBD]
-
+You've been heared! BYOC is not just a feature, but it is a framework and significant part of this framework is the code helping you to create customized build VM images for all platforms and clouds we support: Azure, AWS, GCP, Hyper-V and Docker - thanks to [Packer by HashiCorp](https://www.packer.io/). All scripts and Packer templates used by BYOC framework are [open-source](https://github.com/appveyor/build-images).
 
 ## Getting started
 
+To configure your own build environment select **BYOC** in the top menu and click **Add cloud**. We created a wizard that will guide you through the process and give you commands based on your selection that should be run on your computer:
 
+<p class="text-center">
+  <img src="/assets/img/docs/byoc/add-cloud-wizard.png" alt="Add new build cloud wizard" width="417" height="237">
+</p>
 
-* [Windows](/docs/byoc/windows/)
-* [Linux](/docs/byoc/linux/)
-* [Mac](/docs/byoc/mac/)
-* [Docker](/docs/byoc/docker/)
-* [Azure](/docs/byoc/azure/)
-* [AWS](/docs/byoc/aws/)
-* [GCE](/docs/byoc/gce/)
-* [Hyper-V](/docs/byoc/hyper-v/)
+Commands are PowerShell cmdlets that are part of [AppVeyorBYOC](https://www.powershellgallery.com/packages/AppVeyorBYOC) module. PowerShell is the universal shell/language that can be installed on [Windows](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-6), [Linux](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-6) and [macOS](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6).
+
+Below you can find additional notes as well as alternative manual instructions for each of the clouds/platforms supported by BYOC:
+
+<table>
+<tr>
+    <th>Cloud/Platform</th>
+    <th>Builds run in</th>
+</tr>
+<tr>
+    <td><a href="/docs/byoc/windows/"><b>Windows</b></a></td>
+    <td>Windows host directly</td>
+</tr>
+<tr>
+    <td><a href="/docs/byoc/linux/"><b>Linux</b></a></td>
+    <td>Linux host directly</td>
+</tr>
+<tr>
+    <td><a href="/docs/byoc/mac/"><b>macOS</b></a></td>
+    <td>macOS host directly</td>
+</tr>
+<tr>
+    <td><a href="/docs/byoc/docker/"><b>Docker</b></a></td>
+    <td>Windows or Linux containers on Windows, Linux or macOS</td>
+</tr>
+<tr>
+    <td><a href="/docs/byoc/azure/"><b>Azure</b></a></td>
+    <td>Windows or Linux VMs provisioned in Azure cloud</td>
+</tr>
+<tr>
+    <td><a href="/docs/byoc/aws/"><b>AWS</b></a></td>
+    <td>Windows or Linux VMs provisioned in AWS cloud</td>
+</tr>
+<tr>
+    <td><a href="/docs/byoc/gce/"><b>GCE</b></a></td>
+    <td>Windows or Linux VMs provisioned in GCE cloud</td>
+</tr>
+<tr>
+    <td><a href="/docs/byoc/hyper-v/"><b>Hyper-V</b></a></td>
+    <td>Windows or Linux VMs provisioned on Hyper-V host</td>
+</tr>
+</table>
 
 ## Routing builds to your cloud
 
