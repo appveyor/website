@@ -90,7 +90,22 @@ Below you can find additional notes as well as alternative manual instructions f
 
 ## Routing builds to your cloud
 
-[TBD]
+At **project** level:
+
+* **UI**:
+    * **Settings** > **Environment** > **Build cloud**: Select your private build cloud name from drop-down
+    * **Settings** > **Environment** > **Build worker image**: Select your build worker image from drop-down
+* **YAML**:
+
+```yaml
+build_cloud: <private_build_cloud_name>
+image: <private_build_cloud_image>
+```
+
+At **project** level:
+
+* Set environment variable "APPVEYOR_BUILD_WORKER_CLOUD" to your private build cloud name
+    * This assumes that default and custom build clouds have build worker image with the same name (for example **Visual Studio 2015**)
 
 ## Build clusters
 
