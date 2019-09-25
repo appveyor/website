@@ -58,17 +58,32 @@ In AppVeyor web portal:
 
 ### Install AppVeyor Host Agent
 
-AppVeyor Host Agent is a small service running on your Windows machine that connects to AppVeyor and runs your builds.
+AppVeyor Host Agent is a lightweight service running on your Windows machine that connects to AppVeyor and runs your builds.
 
 [Download the latest AppVeyor Host Agent](https://www.appveyor.com/downloads/appveyor/appveyor-host-agent.msi) and follow the installation wizard.
 
-Alternatively, use this PowerShell script (run in elevated mode) to download and install Host Agent:
+Alternatively, use this PowerShell script (run in elevated mode) to download and install Host Agent service:
 
 ```posh
 $auth_token = '<your-host-authorization-token-here>'
-$appveyor_url = 'https://ci.appveyor.com' # change to your AppVeyor URL if connecting to self-hosted AppVeyor installation
+$appveyor_url = 'https://ci.appveyor.com' # change to your AppVeyor URL if connecting to a self-hosted AppVeyor Server installation
 
 (New-Object Net.WebClient).DownloadFile("https://www.appveyor.com/downloads/appveyor/appveyor-host-agent.msi", "$env:temp\appveyor-host-agent.msi")
 cmd /c msiexec /i "$env:temp\appveyor-host-agent.msi" /quiet APPVEYOR_URL=$appveyor_url HOST_AUTHORIZATION_TOKEN=$auth_token
 ```
 
+Make sure the service is running:
+
+    Get-Service Appveyor.HostAgent
+
+### Changing Host Agent authorization token
+
+If you need to change Host Agent authorization token to connect the agent to a different cloud you can update `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Appveyor\HostAgent\AuthorizationToken` value in Windows Registry.
+
+After changing authorization token stop Host Agent service:
+
+    Stop-Service Appveyor.HostAgent
+
+delete Host Agent database file `host-agent.db` in `%ProgramData%\AppVeyor\HostAgent` directory and start Host Agent service again:
+
+    Start-Service Appveyor.HostAgent
