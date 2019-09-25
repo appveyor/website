@@ -233,7 +233,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2019" class="section" colspan="5">Visual Studio 2019</th>
     </tr>
-    <tr><td>Visual Studio Community 2019 version 16.2.3</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2019 version 16.3.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual Studio Enterprise 2019 version 16.0.0 Preview 2.1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1809</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>WDK for Windows 10, version 1903</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -362,6 +362,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core 2.2.4 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.2.5 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.2.6 runtime</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 3.0.0 runtime</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 3.0.0-preview-27122-01 runtime (<code>Visual Studio 2019 Preview</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003121</td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.0.0-preview2-003131</td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
@@ -405,6 +406,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.2.203</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.204</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.301</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.0.100</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.100-preview-009812 (<code>Visual Studio 2019 Preview</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <!-- Silverlight -->
     <tr>
