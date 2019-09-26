@@ -1,13 +1,13 @@
 ---
 layout: docs
-title: BYOC - GCE
+title: BYOC - Running builds in GCE cloud
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
-# Connecting GCE
+# Running builds in GCE cloud
 {:.no_toc}
 
-What is that?
+AppVeyor BYOC allows connecting your GCE cloud project and running builds in Windows or Linux VMs.
 
 * Comment to trigger ToC generation
 {:toc}
@@ -23,8 +23,8 @@ To simplify setup process for you, we created an automation framework which does
 
 ## Requirements
 
-[TBD]
+* Google Compute Platform (GCP) account
 
-## How to
+## Assisted setup
 
 [TBD]

@@ -1,13 +1,13 @@
 ---
 layout: docs
-title: BYOC - Azure
+title: BYOC - Running builds in Azure cloud
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
-# Connecting Azure
+# Running builds in Azure cloud
 {:.no_toc}
 
-What is that?
+AppVeyor BYOC allows connecting an existing Azure subscription and running builds in Windows or Linux VMs.
 
 * Comment to trigger ToC generation
 {:toc}
@@ -23,7 +23,7 @@ To simplify setup process for you, we created an automation framework which does
 
 ## Requirements
 
-[TBD]
+* Azure subscription with "Contributor" access
 
 ## How to
 

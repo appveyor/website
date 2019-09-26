@@ -1,13 +1,13 @@
 ---
 layout: docs
-title: BYOC - AWS
+title: BYOC - Running builds in AWS cloud
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
-# Connecting AWS
+# Running builds in AWS cloud
 {:.no_toc}
 
-What is that?
+AppVeyor BYOC allows connecting an existing AWS account and running builds in Windows or Linux VMs.
 
 * Comment to trigger ToC generation
 {:toc}
@@ -23,7 +23,7 @@ To simplify setup process for you, we created an automation framework which does
 
 ## Requirements
 
-[TBD]
+* AWS account
 
 ## How to
 
