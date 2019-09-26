@@ -49,7 +49,7 @@ Webhook payload body will have the following format:
 
 * **URL** (`url`) - webhook URL.
 * **"Authorization" header** (`authorization`) - optional `authorization` header added to the webhook request.
-* **Request timeout** (`authorization`) - optional POST request timeout in minutes. Default is 1 minute.
+* **Request timeout** (`request_timeout`) - optional POST request timeout in minutes. Default is 1 minute.
 
 Configuring in `appveyor.yml`:
 
