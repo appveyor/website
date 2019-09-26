@@ -26,7 +26,7 @@ Following cloud configuration wizard is the fastest and the easiest way to confi
 
 In AppVeyor web portal:
 
-* Select **BYOC** in the top menu;
+* Select **Self-hosted jobs** in the top menu;
 * Click **Add cloud** to start "Add your own cloud" wizard;
 * Choose **Your computer**, **Linux** and click **Next**;
 * Follow the instructions. `Connect-AppVeyorToComputer` cmdlet ([source](https://github.com/appveyor/build-images/blob/master/Connect-AppVeyorToComputer.ps1)) will configure a new cloud, install AppVeyor Host Agent on the computer and connect it to the cloud.
@@ -41,7 +41,7 @@ For better understanding/control of the process or troubleshooting below are the
 
 In AppVeyor web portal:
 
-* Select **BYOC** in the top menu;
+* Select **Self-hosted jobs** in the top menu;
 * Click **Add cloud** then choose **Add cloud manually**;
 * Choose **Process** cloud type.
 * Specify **Cloud name**, for example `Build VM` and generate **Host agent authorization token** (or provide your own - it's basically AppVeyor Host Agent identifier and the password it connects to AppVeyor with);

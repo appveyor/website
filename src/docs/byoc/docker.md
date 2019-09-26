@@ -36,10 +36,10 @@ Following cloud configuration wizard is the fastest and the easiest way to confi
 
 In AppVeyor web portal:
 
-* Select **BYOC** in the top menu;
+* Select **Self-hosted jobs** in the top menu;
 * Click **Add cloud** to start "Add your own cloud" wizard;
 * Choose **Docker** and then operating system running on Docker host
-* Select containers **Build image** to configure and click **Next**;
+* Select containers **Base image** to configure and click **Next**;
 * Follow the instructions. `Connect-AppVeyorToDocker` cmdlet ([source](https://github.com/appveyor/build-images/blob/master/Connect-AppVeyorToDocker.ps1)) will configure a new cloud, install AppVeyor Host Agent on the computer and connect it to the cloud.
 * Click **Finish** to return to **BYOC** page and make sure the status of created cloud is **Active** meaning Host Agent was able to connect to AppVeyor.
 * [Update project settings to run builds on your computer](/docs/byoc/#routing-builds-to-your-cloud).
