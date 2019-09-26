@@ -25,6 +25,6 @@ To simplify setup process for you, we created an automation framework which does
 
 * Azure subscription with "Contributor" access
 
-## How to
+## Assisted setup
 
 [TBD]

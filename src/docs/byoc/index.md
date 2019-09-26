@@ -90,22 +90,28 @@ Below you can find additional notes as well as alternative manual instructions f
 
 ## Routing builds to your cloud
 
-At **project** level:
+To run builds in your own cloud/computer you should update project settings.
 
-* **UI**:
-    * **Settings** > **Environment** > **Build cloud**: Select your private build cloud name from drop-down
-    * **Settings** > **Environment** > **Build worker image**: Select your build worker image from drop-down
-* **YAML**:
+If you are configuring AppVeyor project via **UI settings** (no `appveyor.yml` in the repository) open project settings and then click **Environment** tab:
+
+* `Build cloud` - select your private build cloud name;
+* `Build worker image` - select your build worker image;
+* Save project settings.
+
+If you are configuring AppVeyor project via **appveyor.yml** then UI settings for build cloud and image are ignored.
+Specify build cloud and image in `appveyor.yml` instead:
 
 ```yaml
 build_cloud: <private_build_cloud_name>
 image: <private_build_cloud_image>
 ```
 
-At **project** level:
+Alternatively, you can configure build cloud and image via **environment variables** (defined either on UI or in `appveyor.yml`).
 
-* Set environment variable "APPVEYOR_BUILD_WORKER_CLOUD" to your private build cloud name
-    * This assumes that default and custom build clouds have build worker image with the same name (for example **Visual Studio 2015**)
+* `APPVEYOR_BUILD_WORKER_CLOUD` - the name of your build cloud
+* `APPVEYOR_BUILD_WORKER_IMAGE` - the name of your build worker image
+
+> NOTE: Build clouds and images configured via environment variables override both UI and `appveyor.yml` settings. This could be useful for quick cloud testing or multi-job builds.
 
 ## Build clusters
 
