@@ -5,7 +5,7 @@ title: Build phase
 
 # Build phase
 
-After cloning the repository AppVeyor runs **MSBuild** to build project sources and package artifacts.
+After cloning the repository, AppVeyor runs **MSBuild** to build project sources and package artifacts.
 
 The following command is used:
 
@@ -14,13 +14,13 @@ The following command is used:
 Custom logger is required to push MSBuild warning and errors in real-time to build console.
 You may use this logger in your own build scripts.
 
-`<project>` is a Visual Studio project (`*.*proj`) or solution (`*.sln`) file. If project or solution file is not specified on project settings AppVeyor searches for the first occurence of `*.sln` or `*.*proj` file in the build clone directory recursively.
+`<project>` is a Visual Studio project (`*.*proj`) or solution (`*.sln`) file. If a project or solution file is not specified on project settings, AppVeyor recursively searches for the first occurence of `*.sln` or `*.*proj` file in the build clone directory.
 
-## Adding additional paramaters to msbuild with a response file
+## Adding additional parameters to msbuild with a response file
 
-If you commit a file named msbuild.rsp, The contents of that file will be treated as if they were paramaters passed to the msbuild command line. Paramaters can be placed one per line, and the file supports comments.
+If you commit a file named msbuild.rsp, the contents of that file will be treated as if they were parameters passed to the msbuild command line. Parameters can be placed once per line, and the file supports comments.
 
-**Note** that this is a feature of msbuild iteself. While this file will not alter the behavior of Visual Studio triggered builds, it will alter the behavior of calls to msbuild outside of AppVeyor. This behavior can be altered by the `/noautoresponse` or `/noautorsp` switches.
+**Note** that this is a feature of msbuild itself. While this file will not alter the behavior of builds triggered by Visual Studio, it will alter the behavior of calls to msbuild outside of AppVeyor. This behavior can be altered by the `/noautoresponse` or `/noautorsp` switches.
 
 **Also Note** that rsp files are often in `.gitignore` for .NET solutions. Be sure that your response file actually gets commited if you add one locally.
 
@@ -41,11 +41,11 @@ If you commit a file named msbuild.rsp, The contents of that file will be treate
 
 ## Automatic packaging of build artifacts
 
-Before running MSBuild AppVeyor analyzes the supplied project or solution file to determine the type and "flavor" of all projects.
+Before running MSBuild, AppVeyor analyzes the supplied project or solution file to determine the type and "flavor" of all projects.
 
 ### Packaging Web Application projects (WAP)
 
-To package Visual Studio WAP AppVeyor runs the following command:
+To package Visual Studio WAP, AppVeyor runs the following command:
 
     msbuild <wap_project> /t:Package /p:PackageLocation=<web-deploy-package.zip>
 
@@ -70,7 +70,7 @@ AppVeyor will call:
 
     nuget pack SimpleConsole.Tests.csproj -OutputDirectory <temp_path>
 
-To generate a `.nuspec` file for your project use the `nuget spec` command.
+to generate a `.nuspec` file for your project use the `nuget spec` command.
 
 **Note** that this feature works will with [AssemblyInfo patching](/docs/build-configuration/#assemblyinfo-patching)
 
@@ -104,7 +104,7 @@ If .NET Core (or .NET Standard) project’s `.csproj` file contains any of the f
 
 #### Excluding .NET Core projects from NuGet packaging
 
-.NET Core nuget packaging is skipped if `IsPackable` set to `false` in `.csproj` file. It is set by default to `false` for .NET Core test projects created with Visual Studio template or with `dotnet new` command. So by default .NET Core test projects are excluded from NuGet packaging.
+.NET Core nuget packaging is skipped if `IsPackable` is set to `false` in the `.csproj` file. It is set by default to `false` for .NET Core test projects created with Visual Studio template or with the `dotnet new` command. So by default, .NET Core test projects are excluded from NuGet packaging.
 
 If .NET Core test project should be packaged, please set `IsPackable=true`:
 
@@ -150,11 +150,11 @@ By default, MSBuild uses `<project>.Cloud.cscfg` cloud service configuration, bu
 
 #### Caveats
 
-While trying to build an Azure Cloud Service project you may get the following (or similar related) error:
+While trying to build an Azure Cloud Service project, you may get the following (or similar related) error:
 
     The imported project "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\vX.X\Windows Azure Tools\2.X\Microsoft.WindowsAzure.targets" was not found.
 
-To fix this error add the following environment variable on the **Environment** tab of project settings:
+To fix this error, add the following environment variable on the **Environment** tab of project settings:
 
 <table>
     <tr>
