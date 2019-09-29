@@ -51,6 +51,18 @@ Docker is not required, but recommended! AppVeyor has 1st-class integration with
 
 AppVeyor Server can be installed on **Windows 7 SP1 or later** and **Windows Server 2008 R2 SP1 or later**.
 
+#### Chocolatey Installation
+
+[Install Chocolatey package manager](https://chocolatey.org) if not already installed.
+
+Run the following command:
+
+    choco install appveyor-server
+
+Once the Chocolatey package installation completes, the AppVeyor Web interface will be opened in a new browser window to continue with AppVeyor configuration.
+
+#### Manual Installation
+
 [Download AppVeyor Server MSI installer]({{ site.url }}/downloads/appveyor/appveyor-server.msi) and run it.
 
 Once the installation complete AppVeyor Web interface will be opened in a new browser window to continue with AppVeyor configuration.
