@@ -22,7 +22,7 @@ While AppVeyor BYOC supports running builds on a host directly (aka "self-hosted
 
 * **Significant savings on a monthly cloud bill** - build VM is created for the duration of a build job and you pay for "clean" build time. "Self-hosted agent" is installed on VM running 24x7 and waiting for your builds.
 * **Pristine environment for every build** - build VMs are provisioned from an image and never reused for the consequent builds. You get pristine environment for every build. "Self-hosted agent" runs builds directly on the host operating system thus pulluting it with leftovers.
-* **Multiple parallelism**. A single build can be run on hundreds of VMs simoultanously for a shorter period of time. Say, you have a suite with 1,000 tests and it takes 1 hour on a single core to run them all. You can run the suite on 10 single-core VMs in parallel and reduce the overall test time to 6 minutes by paying the same amount to the cloud provider!
+* **Multiple parallelism**. A single build can be run on hundreds of VMs simoultanously for a shorter period of time. For example, you have a suite with 1,000 tests and it takes 1 hour on a single core to run them all. You can run the suite on 10 single-core VMs in parallel and reduce the overall test time to 6 minutes by paying the same amount to the cloud provider!
 
 ## Included in all accounts for free
 
