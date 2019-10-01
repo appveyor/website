@@ -19,7 +19,7 @@ You can connect your AppVeyor account (on both hosted AppVeyor and on-premise Ap
 
 To simplify setup process for you, we created an automation framework which does all heavy lifting for you: it provisions necessary Azure resources, runs Hashicorp Packer to create a basic build image (based on Windows Server 2019), and puts all AppVeyor configuration together. As a result, you should be able to start builds on Azure immediately (and optionally customize your Azure build environment later).
 
-**WARNING:** This automation will create Azure resources such as storage accounts, containers, virtual networks and subnets in subscription you select. Also, Packer will create its own temporary Azure resources and leave VHD blob for future use by AppVeyor build VMs. Please be aware of possible charges from Azure. If subscription you select contains production resources, you might consider creating a separate subscription and run the automation against it. Additionally, a separate subscription is better to differentiate Azure bills for CI machines from other Azure bills.
+> This automation will create Azure resources such as storage accounts, containers, virtual networks and subnets in subscription you select. Also, Packer will create its own temporary Azure resources and leave VHD blob for future use by AppVeyor build VMs. Please note that charges for cloud VMs and other cloud resources will be applied directly to your Azure subscription bill. If the subscription you select contains production resources, you might consider creating a separate subscription and run the automation against it. Additionally, a separate subscription is better to differentiate Azure bills for CI machines from other Azure bills.
 
 ## Requirements
 

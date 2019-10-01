@@ -2,7 +2,7 @@
 title: Self-hosted jobs on your computer or in cloud VMs
 ---
 
-The new **Bring Your Own Cloud** feature enables you to run builds on your own infrastructure. Builds could be run inside VMs (**Azure, AWS, GCE, Hyper-V**), in **Docker** containers (Windows, Linux and macOS) or directly on the host (**Windows, Linux** and **macOS**). BYOC is available for hosted AppVeyor accounts and self-hosted AppVeyor Server installations.
+The new **Bring Your Own Cloud** (BYOC) feature enables you to run builds on your own infrastructure. Builds could be run inside VMs (**Azure, AWS, GCE, Hyper-V**), in **Docker** containers (Windows, Linux and macOS) or directly on the host (**Windows, Linux** and **macOS**). BYOC is available for hosted AppVeyor accounts and self-hosted AppVeyor Server installations.
 
 <p class="text-center">
   <img src="/assets/img/docs/byoc/add-cloud-wizard.png" alt="Add new build cloud wizard" width="417" height="237">
@@ -21,12 +21,15 @@ The new **Bring Your Own Cloud** feature enables you to run builds on your own i
 While AppVeyor BYOC supports running builds on a host directly (aka "self-hosted agent") it really shines at running builds on dynamically provisioned VMs. Creating VMs on demand has a number of advantages:
 
 * **Significant savings on a monthly cloud bill** - build VM is created for the duration of a build job and you pay for "clean" build time. "Self-hosted agent" is installed on VM running 24x7 and waiting for your builds.
-* **Pristine environment on every build** - build VMs are provisioned from an image and never reused for the consequent builds. You get pristine environment for every build. "Self-hosted agent" runs builds directly on the host operating system thus pulluting it with leftovers.
-* **Multiple parallelism**. A single build can be run on hudreds of VMs simoultanously for a shorter period of time. Say, you have a suite with 1,000 tests and it takes 1 hour on a single core to run them all. You can run the suite on 10 single-core VMs in parallel and reduce the overall test time to 6 minutes by paying the same amount to the cloud provider!
+* **Pristine environment for every build** - build VMs are provisioned from an image and never reused for the consequent builds. You get pristine environment for every build. "Self-hosted agent" runs builds directly on the host operating system thus pulluting it with leftovers.
+* **Multiple parallelism**. A single build can be run on hundreds of VMs simoultanously for a shorter period of time. Say, you have a suite with 1,000 tests and it takes 1 hour on a single core to run them all. You can run the suite on 10 single-core VMs in parallel and reduce the overall test time to 6 minutes by paying the same amount to the cloud provider!
 
 ## Included in all accounts for free
 
-We are excited to announce that we've added **5 self-hosted jobs to all free and paid accounts**.
+We are excited to announce that we've enabled BYOC for all open-source and paid accounts and added **5 self-hosted jobs free of charge**.
+Now you can run up to 5 self-hosted jobs simultaneously on your own computer or in your cloud VMs.
+
+> Please note that charges for cloud VMs and other cloud resources will be applied directly to your cloud account bill.
 
 ## Getting started
 
