@@ -39,7 +39,7 @@ You've been heared! BYOC is not just a feature, but it is a framework and signif
 
 ## Getting started
 
-To configure your own build environment select **BYOC** in the top menu and click **Add cloud**. We created a wizard that will guide you through the process and give you commands based on your selection that should be run on your computer:
+To configure your own build environment select **Self-hosted jobs** in the top menu and click **Add cloud**. We created a wizard that will guide you through the process and give you commands based on your selection that should be run on your computer:
 
 <p class="text-center">
   <img src="/assets/img/docs/byoc/add-cloud-wizard.png" alt="Add new build cloud wizard" width="417" height="237">
