@@ -11,7 +11,7 @@ The new **Bring Your Own Cloud** (BYOC) feature enables you to run builds on you
 ## Use cases
 
 * **Local testing** - connect your Windows or Mac development machine to AppVeyor and run build/tests there.
-* **Custom build images** - build your own custom build VM images optimized for your needs. [We'll help you with that](/docs/byoc/#what-about-build-vm-images)!
+* **Custom build images** - build your own custom build VM images optimized for your needs. [Read more](/docs/byoc/#what-about-build-vm-images).
 * **Custom VM sizes/types** - use servers or VMs with better/different characteristics (GPU-enabled, memory-, disk-, network-optimized).
 * **Per-minute pricing** - Build VM is created for the duration of a build job and immediately deleted when this build is over. AWS, GCE and Azure have per-minute pricing so you pay for the "clean" build time only.
 * **Security/compliance requirements** - the code or build artifacts not leaving particular cloud/region/zone/network.
