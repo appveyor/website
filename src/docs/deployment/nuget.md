@@ -30,6 +30,22 @@ deploy:
 
 Your NuGet API key should be encrypted using this tool: [https://ci.appveyor.com/tools/encrypt](https://ci.appveyor.com/tools/encrypt).
 
+## GitHub Package Registry
+
+AppVeyor NuGet deployment provider supports pushing NuGet packages to GitHub Package Registry (GPR). [Read more](https://help.github.com/en/articles/configuring-nuget-for-use-with-github-package-registry) about requirements and limitations of publishing to GPR.
+
+Configuring publishing to GPR in `appveyor.yml`:
+
+```yaml
+deploy:
+  - provider: NuGet
+    server: https://nuget.pkg.github.com/<YOUR_GITHUB_USERNAME>/index.json
+    artifact: /.nupkg/
+    username: <YOUR_GITHUB_USERNAME>
+    api_key:
+      secure: <ENCRYPTED_PERSONAL_ACCESS_TOKEN>
+```
+
 ## Native packages with CoApp
 
 If you are compiling a native package (such as a C++ library) and need to use
