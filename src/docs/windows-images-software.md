@@ -17,6 +17,7 @@ title: Software pre-installed on Windows build VMs
             <li><a href="#operating-system">Operating system</a></li>
             <li><a href="#powershell">PowerShell</a></li>
             <li><a href="#docker">Docker</a></li>
+            <li><a href="#wsl">WSL</a></li>
             <li><a href="#version-control-systems">Version control systems</a></li>
             <li><a href="#visual-studio-2008">Visual Studio 2008</a></li>
             <li><a href="#visual-studio-2010">Visual Studio 2010</a></li>
@@ -26,11 +27,11 @@ title: Software pre-installed on Windows build VMs
             <li><a href="#visual-studio-2017">Visual Studio 2017</a></li>
             <li><a href="#visual-studio-2019">Visual Studio 2019</a></li>
             <li><a href="#windows-sdks">Windows SDKs</a></li>
-            <li><a href="#misc-sdks">Misc SDKs</a></li>
         </ul>
     </div>
     <div class="columns medium-4">
         <ul>
+            <li><a href="#misc-sdks">Misc SDKs</a></li>
             <li><a href="#typescript">TypeScript</a></li>
             <li><a href="#azure">Azure</a></li>
             <li><a href="#xamarin">Xamarin</a></li>
@@ -164,6 +165,24 @@ title: Software pre-installed on Windows build VMs
     </tr>
     <tr>
         <td>docker-compose 1.23.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <!-- WSL -->
+    <tr>
+        <th id="wsl" class="section" colspan="5">Windows Subsystem for Linux (WSL)</th>
+    </tr>
+    <tr>
+        <td>
+        <ul>
+            <li>
+                Windows Subsystem for Linux Distributions:
+                <ul>
+                <li>Ubuntu-18.04 (Default)</li>
+                <li>Ubuntu-16.04</li>
+                <li>openSUSE-42</li>
+                </ul>
+            </li>
+        </ul>
+        </td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <!-- Version control systems -->
     <tr>
