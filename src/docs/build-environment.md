@@ -166,9 +166,9 @@ or to build on Linux:
 
 ```yaml
 image:
-- Visual Studio 2015
-- Visual Studio 2017
-- Ubuntu
+  - Visual Studio 2015
+  - Visual Studio 2017
+  - Ubuntu
 environment:
   matrix:
     - MY_VAR: value1
