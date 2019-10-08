@@ -17,6 +17,7 @@ title: Software pre-installed on Windows build VMs
             <li><a href="#operating-system">Operating system</a></li>
             <li><a href="#powershell">PowerShell</a></li>
             <li><a href="#docker">Docker</a></li>
+            <li><a href="#wsl">WSL</a></li>
             <li><a href="#version-control-systems">Version control systems</a></li>
             <li><a href="#visual-studio-2008">Visual Studio 2008</a></li>
             <li><a href="#visual-studio-2010">Visual Studio 2010</a></li>
@@ -26,11 +27,11 @@ title: Software pre-installed on Windows build VMs
             <li><a href="#visual-studio-2017">Visual Studio 2017</a></li>
             <li><a href="#visual-studio-2019">Visual Studio 2019</a></li>
             <li><a href="#windows-sdks">Windows SDKs</a></li>
-            <li><a href="#misc-sdks">Misc SDKs</a></li>
         </ul>
     </div>
     <div class="columns medium-4">
         <ul>
+            <li><a href="#misc-sdks">Misc SDKs</a></li>
             <li><a href="#typescript">TypeScript</a></li>
             <li><a href="#azure">Azure</a></li>
             <li><a href="#xamarin">Xamarin</a></li>
@@ -129,19 +130,59 @@ title: Software pre-installed on Windows build VMs
             <li>
                 Docker CE 18.05.0-ce for Windows and Linux with base images:
                 <ul>
-                    <li>microsoft/windowsservercore@sha256:c06b4bfaf634215ea194e6005450740f3a230b27c510cf8facab1e9c678f3a99</li>
-                    <li>microsoft/nanoserver@sha256:8f78a4a7da4464973a5cd239732626141aec97e69ba3e4023357628630bc1ee2</li>
-                    <li>microsoft/aspnet@sha256:7cdafe834e1c08ed880cd54183ba33d4760c8b19e651ef1cbff0cf3118684e88</li>
-                    <li>microsoft/dotnet@sha256:7e6a3e8272ce3dee0c091bcb78d784b19e0925cf6e61b23b70dc17772580643f</li>
-                    <li>microsoft/aspnetcore@sha256:5f964756fae50873c496915ad952b0f15df8ef985e4ac031d00b7ac0786162d0</li>
-                    <li>microsoft/aspnetcore-build@sha256:1e4043c2484157e029d6b09a3149ebd01c5122f6b62f0a1b6c6f54b90500ea4b</li>
+                    <li>microsoft/windowsservercore<br/>sha256:c06b4bfaf634215ea194e6005450740f3a230b27c510cf8facab1e9c678f3a99</li>
+                    <li>microsoft/nanoserver<br/>sha256:8f78a4a7da4464973a5cd239732626141aec97e69ba3e4023357628630bc1ee2</li>
+                    <li>microsoft/aspnet<br/>sha256:7cdafe834e1c08ed880cd54183ba33d4760c8b19e651ef1cbff0cf3118684e88</li>
+                    <li>microsoft/dotnet<br/>sha256:7e6a3e8272ce3dee0c091bcb78d784b19e0925cf6e61b23b70dc17772580643f</li>
+                    <li>microsoft/aspnetcore<br/>sha256:5f964756fae50873c496915ad952b0f15df8ef985e4ac031d00b7ac0786162d0</li>
+                    <li>microsoft/aspnetcore-build<br/>sha256:1e4043c2484157e029d6b09a3149ebd01c5122f6b62f0a1b6c6f54b90500ea4b</li>
                 </ul>
             </li>
         </ul>
         </td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
+        <td>
+        <ul>
+            <li>
+                Docker EE 19.03.2 for Windows Server in experimental mode (LCOW support) with base images:
+                <ul>
+                    <li>mcr.microsoft.com/windows/servercore:ltsc2019<br/>sha256:d7e7e3702cbc4d8ea29001a02c1c852d0229a0679d94e017a41c43dbaa01db20</li>
+                    <li>mcr.microsoft.com/windows/servercore:ltsc2016<br/>sha256:c1c0c43f28b3d994e5f215946786c34634dcc813aa7afe2f28a968c02ca1de68</li>
+                    <li>mcr.microsoft.com/windows/servercore:1803<br/>sha256:9b22618ec9b832f7e74c5461b67761423fea83dd10bf627fe715e232aad0dc1e</li>
+                    <li>mcr.microsoft.com/windows/servercore:1709<br/>sha256:aa2c3d4c376a6debbec5625dc15243e7c1112c1ebd603ff63c143b7a8edc32a9</li>
+                    <li>mcr.microsoft.com/windows/nanoserver:1809<br/>sha256:408c7ec68f510485ccca904d9ab69c3ad165126b44786d9f2fffbbc4d2d9646b</li>
+                    <li>mcr.microsoft.com/windows/nanoserver:1803<br/>sha256:47aa6f7f8ff1a02acc34b9f22689e9c89b3387efdd7c0f2cf6da9db810c0d4de</li>
+                    <li>mcr.microsoft.com/windows/nanoserver:1709<br/>sha256:97272be4e3abcd71727095a6ab1948afc4c8412ad0649abfe60912651769a67d</li>
+                    <li>mcr.microsoft.com/windows/nanoserver:sac2016<br/>sha256:2b783310e6c82de737e893abd53ae238ca56b5a96e2861558fb9a111d6691ddb</li>
+                </ul>
+            </li>
+        </ul>
+        </td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <tr>
         <td>docker-compose 1.16.1</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>docker-compose 1.23.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <!-- WSL -->
+    <tr>
+        <th id="wsl" class="section" colspan="5">Windows Subsystem for Linux (WSL)</th>
+    </tr>
+    <tr>
+        <td>
+        <ul>
+            <li>
+                Windows Subsystem for Linux Distributions:
+                <ul>
+                <li>Ubuntu-18.04 (Default)</li>
+                <li>Ubuntu-16.04</li>
+                <li>openSUSE-42</li>
+                </ul>
+            </li>
+        </ul>
+        </td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <!-- Version control systems -->
     <tr>
@@ -196,7 +237,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Node.js Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK 8</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Visual F# 3.1.2</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Visual Studio Installer Projects Extension (`.vdproj` support)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>SQL Server Data tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Office Developer Tools for Visual Studio 2013</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
@@ -233,8 +274,8 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2019" class="section" colspan="5">Visual Studio 2019</th>
     </tr>
-    <tr><td>Visual Studio Community 2019 version 16.3.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Visual Studio Enterprise 2019 version 16.0.0 Preview 2.1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Community 2019 version 16.3.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Enterprise 2019 version 16.4 Preview 1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1809</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>WDK for Windows 10, version 1903</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
@@ -245,7 +286,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Microsoft Windows SDK for Windows 7 and .NET Framework 3.5 SP1</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Microsoft Windows SDK for Windows 7 and .NET Framework 4</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Windows SDK for Windows 8</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Windows SDK for Windows 8.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Windows SDK for Windows 8.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Windows Driver Kit Version 7.1.0 (to support ATL)</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Windows Driver Kit 10</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Windows Driver Kit 1809</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -258,7 +299,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Microsoft Expression Blend Software Development Kit (SDK) for Silverlight 4</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Windows Phone SDK 8.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Windows PowerShell 2.0 SDK</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>DirectX SDK (<code>C:\Program Files (x86)\Microsoft DirectX SDK</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>DirectX SDK (<code>C:\Program Files (x86)\Microsoft DirectX SDK</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Misc SDKs -->
     <tr>
         <th id="misc-sdks" class="section" colspan="5">Misc SDKs</th>
@@ -315,12 +356,13 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Android SDK 5.1 (Lollipop) API level 22</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Android SDK 6.0 (Marshmallow) API level 23</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Android SDK 7.0 (Nougat) API level 24</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Android SDK 7.1 (Nougat) API level 25</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Android SDK 7.1 (Nougat) API level 25</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 8.0.0 (Oreo) API level 26</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Android SDK 8.1.0 (Oreo) API level 27</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Android SDK 9.0 (Pie) API level 28</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Android SDK 9.0 (Pie) API level 28</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Android NDK r10e (<code>C:\ProgramData\Microsoft\AndroidNDK64\android-ndk-r10e</code>)</td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Android NDK r11c (<code>C:\ProgramData\Microsoft\AndroidNDK64\android-ndk-r11c</code>)</td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Android NDK r16b</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Android NDK r17 (<code>C:\ProgramData\Microsoft\AndroidNDK64\android-ndk-r17</code>)</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- .NET Framework -->
     <tr>
@@ -419,6 +461,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="boost" class="section" colspan="5">Boost</th>
     </tr>
+    <tr><td>Boost 1.71.0 (<code>C:\Libraries\boost_1_71_0</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Boost 1.69.0 (<code>C:\Libraries\boost_1_69_0</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Boost 1.67.0 (<code>C:\Libraries\boost_1_67_0</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Boost 1.66.0 (<code>C:\Libraries\boost_1_66_0</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -500,7 +543,9 @@ title: Software pre-installed on Windows build VMs
     <tr><td>JDK 10.0.1 (x64) (<code>C:\Program Files\Java\jdk10</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>JDK 11.0.2 (x64) (<code>C:\Program Files\Java\jdk11</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>JDK 12 (x64) (<code>C:\Program Files\Java\jdk12</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>JDK 13 (x64) (<code>C:\Program Files\Java\jdk13</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Maven 3.5.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Maven 3.6.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Mono -->
     <tr>
         <th id="mono" class="section" colspan="5">Mono</th>
@@ -675,6 +720,21 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
+            <li>Qt 5.13.1: <code>C:\Qt\5.13.1</code> (<code>C:\Qt\5.13</code> mapped to <code>C:\Qt\5.13.1</code> for backward compatibility)
+                <ul>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.13.1\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.13.1\mingw73_32</code></li>
+                <li>msvc2017 32-bit: <code>C:\Qt\5.13.1\msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.13.1\msvc2017_64</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
             <li>Qt 5.13.0: <code>C:\Qt\5.13.0</code> (<code>C:\Qt\5.13</code> mapped to <code>C:\Qt\5.13.0</code> for backward compatibility)
                 <ul>
                 <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.13.0\mingw73_64</code></li>
@@ -700,6 +760,21 @@ title: Software pre-installed on Windows build VMs
             </ul>
         </td>
         <td class="no"></td><td class="yes"></td><td class="no"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.12.5: <code>C:\Qt\5.12.5</code>
+                <ul>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.5\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.5\mingw73_32</code></li>
+                <li>msvc2017 32-bit: <code>C:\Qt\5.12.5\msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.12.5\msvc2017_64</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>
@@ -824,6 +899,20 @@ title: Software pre-installed on Windows build VMs
             </ul>
         </td>
         <td class="no"></td><td class="yes"></td><td class="no"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 5.9.8: <code>C:\Qt\5.9.8</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.8</code> for backward compatibility)
+                <ul>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.8\mingw53_32</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.9.8\msvc2015</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.9.8\msvc2017_64</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>
@@ -1001,19 +1090,20 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox 62.0</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Firefox 68.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Firefox 69.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Chrome 69.0</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chrome 75.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Chrome 76.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 77.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
         <th id="selenium-testing" class="section" colspan="5">Selenium testing</th>
     </tr>
     <tr><td>Chrome Web Driver 2.41</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Chrome Web Driver 2.46</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Chrome Web Driver 2.46</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.14</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Internet Explorer Web Driver 3.141.59</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Internet Explorer Web Driver 3.141.59</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox Web Driver (geckodriver) 0.21.0</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Firefox Web Driver (geckodriver) 0.24</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Firefox Web Driver (geckodriver) 0.24</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="5">Databases</th>
@@ -1031,7 +1121,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>PostgreSQL 10.6 x64</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 11.1 x64</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>MongoDB 4.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Services -->
