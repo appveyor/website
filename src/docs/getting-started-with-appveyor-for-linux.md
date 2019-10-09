@@ -213,8 +213,8 @@ First, start from adding a matrix of build images. For example, to run build on 
 
 ```yaml
 image:
-- Visual Studio 2015
-- Ubuntu
+  - Visual Studio 2015
+  - Ubuntu
 ```
 
 With matrix you can [specialize configuration for different jobs](/docs/build-configuration/#specializing-matrix-job-configuration) or keep flat configuration using approaches described below.

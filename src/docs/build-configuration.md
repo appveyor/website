@@ -561,8 +561,8 @@ By default all build matrix jobs share the same configuration. However there are
 
 ```yaml
 image:
-- Visual Studio 2017
-- Ubuntu
+  - Visual Studio 2017
+  - Ubuntu
 build:
   project: src
   publish_wap: true
@@ -671,8 +671,8 @@ Skip  build job with image `Ubuntu` when all changes files are in `docs` folder:
 
 ```yaml
 image:
-- Visual Studio 2017
-- Ubuntu
+  - Visual Studio 2017
+  - Ubuntu
 
 for:
 -
