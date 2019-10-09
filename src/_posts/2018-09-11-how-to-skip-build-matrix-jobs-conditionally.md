@@ -14,8 +14,8 @@ Please check some examples (all scenarios are taken from real customer's feature
 
 ```yaml
 image:
-- Visual Studio 2017
-- Ubuntu
+  - Visual Studio 2017
+  - Ubuntu
 
 for:
 -
