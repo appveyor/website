@@ -275,7 +275,7 @@ title: Software pre-installed on Windows build VMs
         <th id="visual-studio-2019" class="section" colspan="5">Visual Studio 2019</th>
     </tr>
     <tr><td>Visual Studio Community 2019 version 16.3.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Visual Studio Enterprise 2019 version 16.4 Preview 1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Enterprise 2019 version 16.0.0 Preview 2.1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1809</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>WDK for Windows 10, version 1903</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Windows SDKs -->
