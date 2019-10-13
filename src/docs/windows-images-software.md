@@ -274,7 +274,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2019" class="section" colspan="5">Visual Studio 2019</th>
     </tr>
-    <tr><td>Visual Studio Community 2019 version 16.3.3</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2019 version 16.3.4</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual Studio Enterprise 2019 version 16.4 Preview 1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1809</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>WDK for Windows 10, version 1903</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -351,15 +351,16 @@ title: Software pre-installed on Windows build VMs
     </tr>
     <tr><td>Xamarin 4.9</td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Xamarin 4.11</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Android SDK 4.4 (KitKat) API level 19</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Android SDK 5.0 (Lollipop) API level 21</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Android SDK 5.1 (Lollipop) API level 22</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Android SDK 6.0 (Marshmallow) API level 23</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Android SDK 7.0 (Nougat) API level 24</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Android SDK 4.4 (KitKat) API level 19</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 5.0 (Lollipop) API level 21</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 5.1 (Lollipop) API level 22</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 6.0 (Marshmallow) API level 23</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 7.0 (Nougat) API level 24</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 7.1 (Nougat) API level 25</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Android SDK 8.0.0 (Oreo) API level 26</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Android SDK 8.1.0 (Oreo) API level 27</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Android SDK 8.0.0 (Oreo) API level 26</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 8.1.0 (Oreo) API level 27</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 9.0 (Pie) API level 28</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 10.0 (Android 10) API level 29</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Android NDK r10e (<code>C:\ProgramData\Microsoft\AndroidNDK64\android-ndk-r10e</code>)</td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Android NDK r11c (<code>C:\ProgramData\Microsoft\AndroidNDK64\android-ndk-r11c</code>)</td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Android NDK r16b</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -1073,6 +1074,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>vcpkg 2019.08.27-nohash</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Octo 6.2.3</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Octo 6.12.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Google Cloud SDK (`gcloud.exe` tool)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Test runners -->
     <tr>
         <th id="test-runners" class="section" colspan="5">Test runners</th>
