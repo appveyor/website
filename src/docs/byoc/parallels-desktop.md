@@ -45,10 +45,11 @@ In Host:
 1. Download [Packer](https://packer.io/downloads.html) unpack it and copy packer executable to `/usr/local/bin` (or any other directory in your PATH variable): `cp packer /usr/local/bin/packer`.
 2. Clone build-images repository: `git clone https://github.com/appveyor/build-images.git` and change directory to it.
 3. Unregister VM prepared earlier: `prlctl unregister <VMNAME>`
-4. Locate VM's folder, usually it's `$HOME/Parallels/<VMNAME>.pvm` remember that location and copy it into `source_path` [here](https://github.com/appveyor/build-images/blob/parallels/macos.json#L61)
+4. Locate VM's folder, usually it's `$HOME/Parallels/<VMNAME>.pvm`.
 5. prepare [var-file](https://packer.io/docs/templates/user-variables.html#from-a-file) for Packer named `vault.json` with sensitive values:
 ```json
 {
+  "pvm_path": "VM's Location on host's disk"
   "appVeyorUrl": "https://ci.appveyor.com or URL to Appveyor Server",
   "hostAuthorizationToken": "Host agent authorization token",
   "appleIdUser": "YOUR APPLE ID",
