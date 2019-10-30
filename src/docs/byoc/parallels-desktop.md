@@ -30,16 +30,17 @@ In Parallels Control Center GUI click "+" button to create new VM. In appeared w
 
 Then MacOS is ready login as `appveyor` user and do next steps:
 1. In a terminal:
-  * run `sudo bash` to get root priviledges
-  * Add user `appveyor` to sudoers with `NOPASSWD`: `echo -e 'appveyor\tALL=(ALL)\tNOPASSWD: ALL\nDefaults:appveyor        !requiretty' > /etc/sudoers.d/appveyor`
-  * set Computer Sleep to Never with command: `sudo systemsetup -setcomputersleep Never`
+    * run `sudo bash` to get root priviledges
+    * Add user `appveyor` to sudoers with `NOPASSWD`: `echo -e 'appveyor\tALL=(ALL)\tNOPASSWD: ALL\nDefaults:appveyor        !requiretty' > /etc/sudoers.d/appveyor`
+    * set Computer Sleep to Never with command: `sudo systemsetup -setcomputersleep Never`
 2. In System Preferences:
-  * click Sharing icon and enable ‘Remote login’ (sshd) for Administrators group.
-  * click Users&Groups icon and then click on Login Options. Turn on Automatic login for `appveyor` user.
+    * click Sharing icon and enable ‘Remote login’ (sshd) for Administrators group.
+    * click Users&Groups icon and then click on Login Options. Turn on Automatic login for `appveyor` user.
 4. Install Parallels Guest Tools by clicking yellow triangle at top right corner of VM's window. This will mount Parallels Guest Tools dvd into VM. Click on it and proceed with installation. After installation it will require to restart VM.
 5. In Host's terminal optimize VM: `prlctl set <VMNAME> --pause-idle off --faster-vm on --nested-virt on --auto-compress off --adaptive-hypervisor on --isolate-vm on`
 
 Now its time to run [Packer](https://packer.io/) to install software into build image.
+
 In Host:
 1. Download [Packer](https://packer.io/downloads.html) unpack it and copy packer executable to `/usr/local/bin` (or any other directory in your PATH variable): `cp packer /usr/local/bin/packer`.
 2. Clone build-images repository: `git clone https://github.com/appveyor/build-images.git` and change directory to it.
@@ -55,6 +56,7 @@ In Host:
 }
 ```
 6. run `packer build --only=parallels-pvm  --var-file=vault.json macos.json`
+
 Packer will create another PVM in output-parallels-pvm folder which should be registered in Parallels with command `prlctl register <PATH_TO_PVM>` and then name of that VM should be provided in appveyor build cloud. 
 
 ### Add new build cloud
