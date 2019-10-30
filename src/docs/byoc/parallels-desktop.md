@@ -37,8 +37,25 @@ Then MacOS is ready login as `appveyor` user and do next steps:
   * click Sharing icon and enable ‘Remote login’ (sshd) for Administrators group.
   * click Users&Groups icon and then click on Login Options. Turn on Automatic login for `appveyor` user.
 4. Install Parallels Guest Tools by clicking yellow triangle at top right corner of VM's window. This will mount Parallels Guest Tools dvd into VM. Click on it and proceed with installation. After installation it will require to restart VM.
-5. In host's terminal optimize VM: `prlctl set <VMNAME> --pause-idle off --faster-vm on --nested-virt on --auto-compress off --adaptive-hypervisor on --isolate-vm on`
+5. In Host's terminal optimize VM: `prlctl set <VMNAME> --pause-idle off --faster-vm on --nested-virt on --auto-compress off --adaptive-hypervisor on --isolate-vm on`
 
+Now its time to run [Packer](https://packer.io/) to install software into build image.
+In Host:
+1. Download [Packer](https://packer.io/downloads.html) unpack it and copy packer executable to `/usr/local/bin` (or any other directory in your PATH variable): `cp packer /usr/local/bin/packer`.
+2. Clone build-images repository: `git clone https://github.com/appveyor/build-images.git` and change directory to it.
+3. Unregister VM prepared earlier: `prlctl unregister <VMNAME>`
+4. Locate VM's folder, usually it's `$HOME/Parallels/<VMNAME>.pvm` remember that location and copy it into `source_path` [here](https://github.com/appveyor/build-images/blob/parallels/macos.json#L61)
+5. prepare [var-file](https://packer.io/docs/templates/user-variables.html#from-a-file) for Packer named `vault.json` with sensitive values:
+```json
+{
+  "appVeyorUrl": "https://ci.appveyor.com or URL to Appveyor Server",
+  "hostAuthorizationToken": "Host agent authorization token",
+  "appleIdUser": "YOUR APPLE ID",
+  "appleIdPasswd": "YOUR APPLE ID Password"
+}
+```
+6. run `packer build --only=parallels-pvm  --var-file=vault.json macos.json`
+Packer will create another PVM in output-parallels-pvm folder which should be registered in Parallels with command `prlctl register <PATH_TO_PVM>` and then name of that VM should be provided in appveyor build cloud. 
 
 ### Add new build cloud
 
