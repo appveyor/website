@@ -19,13 +19,16 @@ AppVeyor BYOC allows connecting an existing Mac computer (your workstation, clou
     * macOS 10.14 "Mojave" and later
     * [Homebrew](https://brew.sh/) package manager
     * Parallels Desktop Pro for Mac
+    * Parallels Virtualization SDK for Mac required by Packer. You can download the latest DMG bundle by this [link](http://www.parallels.com/download/pvsdk/)
 * Computer must be connected to the internet;
 
 ## Manual setup
 
 ### Prepare macOS VM image
 
-[TBD]
+In Parallels Control Center GUI click "+" button to create new VM. In appeared windows browse Free Systems and click on "Install MacOS Using the recovery Partition". It will create VM and start Mac OS Recovery. It will show "MacOS Utilities" window first. Click Reinstall MacOS and follow furhter instructions. During installation of Mac OS configure `appveyor` user.
+
+
 
 ### Add new build cloud
 
