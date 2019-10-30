@@ -43,7 +43,7 @@ Now its time to run [Packer](https://packer.io/) to install software into build 
 
 In Host:
 1. Download [Packer](https://packer.io/downloads.html) unpack it and copy packer executable to `/usr/local/bin` (or any other directory in your PATH variable): `cp packer /usr/local/bin/packer`.
-2. Clone build-images repository: `git clone https://github.com/appveyor/build-images.git` and change directory to it.
+2. Clone build-images repository: `git clone https://github.com/appveyor/build-images.git`, change directory to it and checkout `parallels` branch: `git checkout parallels`
 3. Unregister VM prepared earlier: `prlctl unregister <VMNAME>`
 4. Locate VM's folder, usually it's `$HOME/Parallels/<VMNAME>.pvm`.
 5. prepare [var-file](https://packer.io/docs/templates/user-variables.html#from-a-file) for Packer named `vault.json` with sensitive values:
