@@ -49,7 +49,7 @@ In Host:
 5. prepare [var-file](https://packer.io/docs/templates/user-variables.html#from-a-file) for Packer named `vault.json` with sensitive values:
 ```json
 {
-  "pvm_path": "VM's Location on host's disk"
+  "pvm_path": "VM's Location on host's disk",
   "appVeyorUrl": "https://ci.appveyor.com or URL to Appveyor Server",
   "hostAuthorizationToken": "Host agent authorization token",
   "appleIdUser": "YOUR APPLE ID",
