@@ -49,18 +49,18 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th>Software installed / Build worker image</th>
         <th class="rotate"><span>Ubuntu</span></th>
-        <th class="rotate"><span>Ubuntu1804</span></th>
+        <th class="rotate"><span>Ubuntu1604</span></th>
     </tr>
     <tr>
         <th id="operating-system" class="section" colspan="3">Operating system</th>
     </tr>
     <tr>
-        <td>Ubuntu 16.04.6 LTS (Xenial Xerus)</td>
+        <td>Ubuntu 18.04.3 LTS (Bionic Beaver)</td>
         <td class="yes"></td>
         <td class="no"></td>
     </tr>
     <tr>
-        <td>Ubuntu 18.04.3 LTS (Bionic Beaver)</td>
+        <td>Ubuntu 16.04.6 LTS (Xenial Xerus)</td>
         <td class="no"></td>
         <td class="yes"></td>
     </tr>
@@ -85,37 +85,37 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>Git Large File Storage (Git LFS) 2.8.0</td><td class="yes"></td><td class="yes"></td>
     </tr>
-    <tr><td>Mercurial 4.4.1</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Mercurial 4.5.3</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Subversion 1.9.3</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Subversion 1.9.7</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Mercurial 4.4.1</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Mercurial 4.5.3</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Subversion 1.9.3</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Subversion 1.9.7</td><td class="yes"></td><td class="no"></td></tr>
     <!-- .NET Framework -->
     <tr>
         <th id="net-framework" class="section" colspan="3">.NET Framework</th>
     </tr>
-    <tr><td>.NET Core 2.0.0 runtime</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core 2.0.3 runtime</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core 2.0.4 runtime</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core 2.0.5 runtime</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core 2.0.6 runtime</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core 2.0.0 runtime</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.0.3 runtime</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.0.4 runtime</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.0.5 runtime</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.0.6 runtime</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.0.7 runtime</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.0.9 runtime</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core 2.0.9 runtime</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.1 runtime version 2.1.13</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.2 runtime version 2.2.7</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 3.0 runtime version 3.0.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.0.0</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.0.2</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.0.3</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1.2</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1.3</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1.4</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1.101</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1.103</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1.104</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.0.0</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.0.2</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.0.3</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.2</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.3</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.4</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.101</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.103</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.104</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.105</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.200</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.201</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.202</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 2.1.202</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.300-rc1</td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1.300-preview2</td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1 version 2.1.802</td><td class="yes"></td><td class="yes"></td></tr>
@@ -129,20 +129,20 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <p><code>6.x</code> is default Node.js installed on Linux build workers.</p>
         </td>
-        <td class="yes"></td><td class="no"></td>
+        <td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>
             <p><code>8.x</code> is default Node.js installed on Linux build workers.</p>
         </td>
-        <td class="no"></td><td class="yes"></td>
+        <td class="yes"></td><td class="no"></td>
     </tr>
     <tr><td>Node.js 12.11.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.15.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 10.16.3</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 9.11.2</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 8.16.1</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 8.10.0 (installed in system)</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.10.0 (installed in system)</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Node.js 7.10.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 6.17.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 6.17.1 (installed in system)</td><td class="yes"></td><td class="no"></td></tr>
@@ -201,8 +201,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <th id="compilers" class="section" colspan="3">Compilers</th>
     </tr>
     <tr><td>clang 6.0.1</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>GCC 5.5.0</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>GCC 6.5.0</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>GCC 5.5.0</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>GCC 6.5.0</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>GCC 7.4.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 8.3.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 9.1.0</td><td class="yes"></td><td class="yes"></td></tr>
@@ -231,8 +231,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="python" class="section" colspan="3">Python</th>
     </tr>
-    <tr><td>Python 2 (installed in system)</td><td>2.7.12</td><td>2.7.15</td></tr>
-    <tr><td>Python 3 (installed in system)</td><td>3.5.2</td><td>3.6.8</td></tr>
+    <tr><td>Python 2 (installed in system)</td><td>2.7.15</td><td>2.7.12</td></tr>
+    <tr><td>Python 3 (installed in system)</td><td>3.6.8</td><td>3.5.2</td></tr>
     <tr>
         <td>
             <ul>
@@ -256,8 +256,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="erlang" class="section" colspan="3">Erlang</th>
     </tr>
-    <tr><td>Erlang/OTP 18.3</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Erlang/OTP 20.2</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Erlang/OTP 18.3</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Erlang/OTP 20.2</td><td class="yes"></td><td class="no"></td></tr>
     <!-- Tools -->
     <tr>
         <th id="tools" class="section" colspan="3">Tools</th>
@@ -265,10 +265,10 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>Yarn 1.17.3</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>p7zip 16.02 (<code>7za</code> utility is in PATH)</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>tcl 8.6.0+9</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>wget 1.17.1</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>wget 1.19.4</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>curl 7.47.0</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>curl 7.58.0</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>wget 1.17.1</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>wget 1.19.4</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>curl 7.47.0</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>curl 7.58.0</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>AWS CLI 1.16.246</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>localstack 0.10.3</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Azure CLI-cli 2.0.74</td><td class="yes"></td><td class="yes"></td></tr>
