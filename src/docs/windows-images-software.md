@@ -468,7 +468,7 @@ title: Software pre-installed on Windows build VMs
                 <li>Go 1.13.3 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
                 <li>Go 1.13.3 x86 (<code>C:\go-x86</code>)</li>
                 <li>Go 1.13.3 x64 (<code>C:\go113</code>)</li>
-                <li>Go 1.13.3 x86 (<code>C:\go113-x86</code>)</li>                
+                <li>Go 1.13.3 x86 (<code>C:\go113-x86</code>)</li>
                 <li>Go 1.12.12 x64 (<code>C:\go112</code>)</li>
                 <li>Go 1.12.12 x86 (<code>C:\go112-x86</code>)</li>
                 <li>Go 1.11.13 x64 (<code>C:\go111</code>)</li>
