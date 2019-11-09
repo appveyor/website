@@ -336,7 +336,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Microsoft Azure PowerShell 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Microsoft Azure CLI 2.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>DocumentDB Emulator 1.13.58.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Azure Cosmos DB Emulator 2.7.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure Cosmos DB Emulator 2.7.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Xamarin -->
     <tr>
         <th id="xamarin" class="section" colspan="5">Xamarin</th>
@@ -489,7 +489,7 @@ title: Software pre-installed on Windows build VMs
                 <li>Go 1.4.3 x86 (<code>C:\go14-x86</code>)</li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <!-- Java -->
     <tr>
