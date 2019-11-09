@@ -194,6 +194,33 @@ You can use all other environment variables substitution in file name and versio
 package_version: $(appveyor_build_version)
 ```
 
+### Semantic versioning with version suffixes
+
+The new `.csproj` format along with the dotnet CLI have added improved semantic versioning support for version suffixes.
+
+With the command line:
+
+    dotnet build My.sln --version-suffix "preview"
+
+and `.csproj` containing:
+
+```xml
+<PropertyGroup>
+  <VersionPrefix>1.0.0</VersionPrefix>
+</PropertyGroup>
+```
+
+enables the output of a project with the semantic version of `1.0.0-preview` while keeping the assembly version, file version, etc. in the correct format.
+
+You can patch `<VersionPrefix>` element with the following configuration in YAML file:
+
+```yaml
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version_prefix: '{version}'
+```
+
 ## Clone directory
 
 The format of the default directory on the build machine for cloning a repository is `c:\projects\<project-slug>` on Windows and `/home/appveyor/projects/` on Ubuntu.
