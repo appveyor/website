@@ -29,6 +29,7 @@ AppVeyor BYOC allows connecting an existing Mac computer (your workstation, clou
 In Parallels Control Center GUI click "+" button to create new VM. In appeared windows browse Free Systems and click on "Install MacOS Using the recovery Partition". It will create VM and start Mac OS Recovery. It will show "MacOS Utilities" window first. Click Reinstall MacOS and follow further instructions. During installation of Mac OS configure `appveyor` user.
 
 Then MacOS is ready login as `appveyor` user and do next steps:
+
 1. In a terminal:
     * run `sudo bash` to get root priviledges
     * Add user `appveyor` to sudoers with `NOPASSWD`: `echo -e 'appveyor\tALL=(ALL)\tNOPASSWD: ALL\nDefaults:appveyor        !requiretty' > /etc/sudoers.d/appveyor`
@@ -36,29 +37,32 @@ Then MacOS is ready login as `appveyor` user and do next steps:
 2. In System Preferences:
     * click Sharing icon and enable ‘Remote login’ (sshd) for Administrators group.
     * click Users&Groups icon and then click on Login Options. Turn on Automatic login for `appveyor` user.
-4. Install Parallels Guest Tools by clicking yellow triangle at top right corner of VM's window. This will mount Parallels Guest Tools dvd into VM. Click on it and proceed with installation. After installation it will require to restart VM.
-5. In Host's terminal optimize VM: `prlctl set <VMNAME> --pause-idle off --faster-vm on --nested-virt on --auto-compress off --adaptive-hypervisor on --isolate-vm on`
+3. Install Parallels Guest Tools by clicking yellow triangle at top right corner of VM's window. This will mount Parallels Guest Tools dvd into VM. Click on it and proceed with installation. After installation it will require to restart VM.
+4. In Host's terminal optimize VM: `prlctl set <VMNAME> --pause-idle off --faster-vm on --nested-virt on --auto-compress off --adaptive-hypervisor on --isolate-vm on`
 
 Now its time to run [Packer](https://packer.io/) to install software into build image.
 
 In Host:
+
 1. Download [Packer](https://packer.io/downloads.html) unpack it and copy packer executable to `/usr/local/bin` (or any other directory in your PATH variable): `cp packer /usr/local/bin/packer`.
 2. Clone build-images repository: `git clone https://github.com/appveyor/build-images.git`, change directory to it and checkout `parallels` branch: `git checkout parallels`
 3. Unregister VM prepared earlier: `prlctl unregister <VMNAME>`
 4. Locate VM's folder, usually it's `$HOME/Parallels/<VMNAME>.pvm`.
 5. prepare [var-file](https://packer.io/docs/templates/user-variables.html#from-a-file) for Packer named `vault.json` with sensitive values:
-```json
-{
-  "pvm_path": "VM's Location on host's disk",
-  "appVeyorUrl": "https://ci.appveyor.com or URL to Appveyor Server",
-  "hostAuthorizationToken": "Host agent authorization token",
-  "appleIdUser": "YOUR APPLE ID",
-  "appleIdPasswd": "YOUR APPLE ID Password"
-}
-```
+
+    ```json
+    {
+    "pvm_path": "VM's Location on host's disk",
+    "appVeyorUrl": "https://ci.appveyor.com or URL to Appveyor Server",
+    "hostAuthorizationToken": "Host agent authorization token",
+    "appleIdUser": "YOUR APPLE ID",
+    "appleIdPasswd": "YOUR APPLE ID Password"
+    }
+    ```
+
 6. run `packer build --only=parallels-pvm  --var-file=vault.json macos.json`
 
-Packer will create another PVM in output-parallels-pvm folder which should be registered in Parallels with command `prlctl register <PATH_TO_PVM>` and then name of that VM should be provided in appveyor build cloud. 
+Packer will create another PVM in output-parallels-pvm folder which should be registered in Parallels with command `prlctl register <PATH_TO_PVM>` and then name of that VM should be provided in appveyor build cloud.
 
 ### Add new build cloud
 
