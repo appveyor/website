@@ -1,0 +1,155 @@
+---
+layout: docs
+title: Software pre-installed on macOS build VMs
+---
+
+<!-- markdownlint-disable MD022 MD032 -->
+# Software pre-installed on macOS build VMs
+{:.no_toc}
+
+* Comment to trigger ToC generation
+{:toc}
+<!-- markdownlint-enable MD022 MD032 -->
+
+The history of macOS image updates can be found [here](/updates/).
+
+<div class="row">
+    <div class="columns medium-4">
+        <ul>
+            <li><a href="#operating-system">Operating system</a></li>
+            <li><a href="#powershell">PowerShell</a></li>
+            <li><a href="#version-control-systems">Version control systems</a></li>
+            <li><a href="#xcode">XCode</a></li>
+            <li><a href="#net-framework">.NET Framework</a></li>
+            <li><a href="#node-js">Node.js</a></li>
+        </ul>
+    </div>
+    <div class="columns medium-4">
+        <ul>
+            <li><a href="#golang">Go (Golang)</a></li>
+            <li><a href="#ruby">Ruby</a></li>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#compilers">Compilers</a></li>
+            <li><a href="#tools">Tools</a></li>
+        </ul>
+    </div>
+    <div class="columns medium-4">
+        <ul>
+        </ul>
+    </div>
+</div>
+
+<table class="software-list">
+    <tr>
+        <th>Software installed / Build worker image</th>
+        <th class="rotate"><span>macOS</span></th>
+    </tr>
+    <tr>
+        <th id="operating-system" class="section" colspan="2">Operating system</th>
+    </tr>
+    <tr>
+        <td>macOS 10.14 "Mojave"</td>
+        <td class="yes"></td>
+    </tr>
+    <tr>
+        <th id="powershell" class="section" colspan="2">PowerShell</th>
+    </tr>
+    <tr><td>PowerShell Core 6.2.3</td><td class="yes"></td></tr>
+
+    <!-- Version control systems -->
+    <tr>
+        <th id="version-control-systems" class="section" colspan="2">Version control systems</th>
+    </tr>
+    <tr>
+        <td>Git 2.24.0</td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>Git Large File Storage (Git LFS) 2.8.0</td><td class="yes"></td>
+    </tr>
+    <tr><td>Mercurial 5.1.2</td><td class="yes"></td></tr>
+    <tr><td>Subversion 1.12.2</td><td class="yes"></td></tr>
+
+    <!-- XCode -->
+    <tr>
+        <th id="xcode" class="section" colspan="2">XCode</th>
+    </tr>
+    <tr><td>XCode 11.2</td><td class="yes"></td></tr>
+
+    <!-- .NET Framework -->
+    <tr>
+        <th id="net-framework" class="section" colspan="2">.NET Framework</th>
+    </tr>
+    <tr><td>.NET Core SDK 2.1.202</td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.802</td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.2.402</td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.0.100</td><td class="yes"></td></tr>
+
+    <!-- Node.js -->
+    <tr>
+        <th id="node-js" class="section" colspan="2">Node.js</th>
+    </tr>
+    <tr><td>Node Version Manager (<code>nvm</code>) 0.35.0</td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.16.2 (default)</td><td class="yes"></td></tr>
+    <tr><td>Node.js 12.13.0</td><td class="yes"></td></tr>
+
+    <!-- Go -->
+    <tr>
+        <th id="golang" class="section" colspan="2">Go (Golang)</th>
+    </tr>
+    <tr><td>Go Version Manager (<code>gvm</code>) v1.0.22</td><td class="yes"></td></tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Go 1.13.1</li>
+            </ul>
+        </td>
+        <td class="yes"></td>
+    </tr>
+
+    <!-- Ruby -->
+    <tr>
+        <th id="ruby" class="section" colspan="2">Ruby</th>
+    </tr>
+    <tr><td>Ruby Version Manager (<code>rvm</code>) 1.29.9</td><td class="yes"></td></tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Ruby 2.7.0preview1 (default)</li>
+            </ul>
+        </td>
+        <td class="yes"></td>
+    </tr>
+
+    <!-- Python -->
+    <tr>
+        <th id="python" class="section" colspan="2">Python</th>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>Python 2.7.16</li>
+                <li>Python 3.8.0</li>
+                <li>virtualenv 16.7.5</li>
+                <li>pip 19.2.3</li>
+            </ul>
+        </td>
+        <td class="yes"></td>
+    </tr>
+
+    <!-- Compilers -->
+    <tr>
+        <th id="compilers" class="section" colspan="2">Compilers</th>
+    </tr>
+    <tr><td>CMake 3.15.4</td><td class="yes"></td></tr>
+    <tr><td>GCC 6.5.0</td><td class="yes"></td></tr>
+    <tr><td>GCC 7.4.0</td><td class="yes"></td></tr>
+    <tr><td>GCC 8.3.0</td><td class="yes"></td></tr>
+
+    <!-- Tools -->
+    <tr>
+        <th id="tools" class="section" colspan="2">Tools</th>
+    </tr>
+    <tr><td>Brew 2.1.16</td><td class="yes"></td></tr>
+    <tr><td>Fastlane 2.28.3</td><td class="yes"></td></tr>
+    <tr><td>curl 7.54.0</td><td class="yes"></td></tr>
+</table>
