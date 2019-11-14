@@ -36,11 +36,11 @@ Some benefits of running Linux builds on AppVeyor:
 
 ## Running your build on Linux
 
-To run your build on `ubuntu` image either add the following line to your `appveyor.yml`:
+To run your build on `Ubuntu` image either add the following line to your `appveyor.yml`:
 
-    image: ubuntu
+    image: Ubuntu
 
-or if you don't use `appveyor.yml` select `ubuntu` image on **Environment** tab of AppVeyor project settings.
+or if you don't use `appveyor.yml` select `Ubuntu` image on **Environment** tab of AppVeyor project settings.
 
 > You can also put project configuration in `.appveyor.yml` dot-file in the root of your repo. AppVeyor searches repo for `appveyor.yml` first and then for `.appveyor.yml`.
 
@@ -69,7 +69,7 @@ or if you don't use `appveyor.yml` select `ubuntu` image on **Environment** tab 
 Below is a minimal `appveyor.yml` to test Node.js project:
 
 ```yaml
-image: ubuntu
+image: Ubuntu
 
 install:
 - npm install
