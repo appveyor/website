@@ -22,6 +22,7 @@ The history of macOS image updates can be found [here](/updates/).
             <li><a href="#xcode">XCode</a></li>
             <li><a href="#net-framework">.NET Framework</a></li>
             <li><a href="#node-js">Node.js</a></li>
+            <li><a href="#java">Java</a></li>
         </ul>
     </div>
     <div class="columns medium-4">
@@ -30,6 +31,7 @@ The history of macOS image updates can be found [here](/updates/).
             <li><a href="#ruby">Ruby</a></li>
             <li><a href="#python">Python</a></li>
             <li><a href="#compilers">Compilers</a></li>
+            <li><a href="#simulators">Simulators</a></li>
             <li><a href="#tools">Tools</a></li>
         </ul>
     </div>
@@ -92,6 +94,17 @@ The history of macOS image updates can be found [here](/updates/).
     <tr><td>Node.js 8.16.2 (default)</td><td class="yes"></td></tr>
     <tr><td>Node.js 12.13.0</td><td class="yes"></td></tr>
 
+    <!-- Java -->
+    <tr>
+        <th id="java" class="section" colspan="2">Java</th>
+    </tr>
+    <tr><td>OpenJDK 8</td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 9</td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 10</td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 11</td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 12</td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 13</td><td class="yes"></td></tr>
+
     <!-- Go -->
     <tr>
         <th id="golang" class="section" colspan="2">Go (Golang)</th>
@@ -100,7 +113,7 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Go 1.13.1</li>
+                <li>Go 1.13.4</li>
             </ul>
         </td>
         <td class="yes"></td>
@@ -110,14 +123,9 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <th id="ruby" class="section" colspan="2">Ruby</th>
     </tr>
-    <tr><td>Ruby Version Manager (<code>rvm</code>) 1.29.9</td><td class="yes"></td></tr>
+    <tr><td>Ruby Version Manager (<code>rvm</code>) 1.29.9<br><br>Switching between Ruby versions: <code>rvm use &lt;version&gt;</code></td><td class="yes"></td></tr>
     <tr>
-        <td>
-            <ul>
-                <li>Ruby 2.7.0preview1 (default)</li>
-            </ul>
-        </td>
-        <td class="yes"></td>
+        <td>Ruby 2.7.0preview1 (default)</td><td class="yes"></td>
     </tr>
 
     <!-- Python -->
@@ -144,6 +152,14 @@ The history of macOS image updates can be found [here](/updates/).
     <tr><td>GCC 6.5.0</td><td class="yes"></td></tr>
     <tr><td>GCC 7.4.0</td><td class="yes"></td></tr>
     <tr><td>GCC 8.3.0</td><td class="yes"></td></tr>
+
+    <!-- Simulators -->
+    <tr>
+        <th id="simulators" class="section" colspan="2">Simulators</th>
+    </tr>
+    <tr><td>iOS 12.4</td><td class="yes"></td></tr>
+    <tr><td>tvOS 12.4</td><td class="yes"></td></tr>
+    <tr><td>watchOS 5.3</td><td class="yes"></td></tr>
 
     <!-- Tools -->
     <tr>
