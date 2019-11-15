@@ -69,7 +69,7 @@ for:
     - master
 ```
 
-**Scenario**: `.csproj` patching should happen only for tagged builds. For both tagged and non-tagged scenarios two build jobs should run: one `ubuntu1804` and one `Visual Studio 2017`.
+**Scenario**: `.csproj` patching should happen only for tagged builds. For both tagged and non-tagged scenarios two build jobs should run: one `Ubuntu1804` and one `Visual Studio 2017`.
 
 **YAML**:
 
@@ -78,12 +78,12 @@ environment:
   matrix:
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       TAG_SCENARIO: false
-    - APPVEYOR_BUILD_WORKER_IMAGE: ubuntu1804
+    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu1804
       TAG_SCENARIO: false
 
     - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       TAG_SCENARIO: true
-    - APPVEYOR_BUILD_WORKER_IMAGE: ubuntu1804
+    - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu1804
       TAG_SCENARIO: true
 
 build_script:

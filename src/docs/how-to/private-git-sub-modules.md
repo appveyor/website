@@ -106,10 +106,10 @@ install:
   - git submodule update --init --recursive
 ```
 
-> Alternatively for `image: ubuntu`:
+> Alternatively for `image: Ubuntu`:
 
 ```yaml
-image: ubuntu
+image: Ubuntu
 
 environment:
   priv_key:
