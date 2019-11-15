@@ -132,8 +132,8 @@ AppVeyor provides these "standard" build worker images:
 
 
 * Linux images:
-    * `Ubuntu` or `Ubuntu1604` - Ubuntu 16.04
-    * `Ubuntu1804` - Ubuntu 18.04
+    * `Ubuntu` or `Ubuntu1804` - Ubuntu 18.04
+    * `Ubuntu1604` - Ubuntu 16.04
 
 Below you can find the list of [pre-installed software](#pre-installed-software) for all images.
 
@@ -206,9 +206,9 @@ We provide an access to "last good" versions of build worker images from previou
 
 
 * Linux "previous" images:
-    * `Previous Ubuntu` which is the same `Previous Ubuntu1604`
-    * `Previous Ubuntu1604`
+    * `Previous Ubuntu` which is the same `Previous Ubuntu1804`
     * `Previous Ubuntu1804`
+    * `Previous Ubuntu1604`
 
 You can use those images to unblock your builds while we are working together with you to understand the root cause and do a fix by the next image update.
 
