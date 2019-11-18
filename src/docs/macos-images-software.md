@@ -44,93 +44,98 @@ The history of macOS image updates can be found [here](/updates/).
 <table class="software-list">
     <tr>
         <th>Software installed / Build worker image</th>
-        <th class="rotate"><span>macOS</span></th>
+        <th class="rotate"><span>macos</span></th>
+        <th class="rotate"><span>macos-mojave</span></th>
     </tr>
     <tr>
-        <th id="operating-system" class="section" colspan="2">Operating system</th>
+        <th id="operating-system" class="section" colspan="3">Operating system</th>
+    </tr>
+    <tr>
+        <td>macOS 10.15 "Catalina"</td>
+        <td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
         <td>macOS 10.14 "Mojave"</td>
-        <td class="yes"></td>
+        <td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
-        <th id="powershell" class="section" colspan="2">PowerShell</th>
+        <th id="powershell" class="section" colspan="3">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 6.2.3</td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 6.2.3</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- Version control systems -->
     <tr>
-        <th id="version-control-systems" class="section" colspan="2">Version control systems</th>
+        <th id="version-control-systems" class="section" colspan="3">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.24.0</td><td class="yes"></td>
+        <td>Git 2.24.0</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage (Git LFS) 2.8.0</td><td class="yes"></td>
+        <td>Git Large File Storage (Git LFS) 2.8.0</td><td class="yes"></td><td class="yes"></td>
     </tr>
-    <tr><td>Mercurial 5.1.2</td><td class="yes"></td></tr>
-    <tr><td>Subversion 1.12.2</td><td class="yes"></td></tr>
+    <tr><td>Mercurial 5.1.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Subversion 1.12.2</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- XCode -->
     <tr>
-        <th id="xcode" class="section" colspan="2">XCode</th>
+        <th id="xcode" class="section" colspan="3">XCode</th>
     </tr>
-    <tr><td>XCode 11.2</td><td class="yes"></td></tr>
+    <tr><td>XCode 11.2</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- .NET Framework -->
     <tr>
-        <th id="net-framework" class="section" colspan="2">.NET Framework</th>
+        <th id="net-framework" class="section" colspan="3">.NET Framework</th>
     </tr>
-    <tr><td>.NET Core SDK 2.1.202</td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.802</td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.2.402</td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.0.100</td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.202</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.802</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.2.402</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.0.100</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- Node.js -->
     <tr>
-        <th id="node-js" class="section" colspan="2">Node.js</th>
+        <th id="node-js" class="section" colspan="3">Node.js</th>
     </tr>
-    <tr><td>Node Version Manager (<code>nvm</code>) 0.35.0</td><td class="yes"></td></tr>
-    <tr><td>Node.js 8.16.2 (default)</td><td class="yes"></td></tr>
-    <tr><td>Node.js 12.13.0</td><td class="yes"></td></tr>
+    <tr><td>Node Version Manager (<code>nvm</code>) 0.35.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.16.2 (default)</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 12.13.0</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- Java -->
     <tr>
-        <th id="java" class="section" colspan="2">Java</th>
+        <th id="java" class="section" colspan="3">Java</th>
     </tr>
-    <tr><td>OpenJDK 8</td><td class="yes"></td></tr>
-    <tr><td>OpenJDK 9</td><td class="yes"></td></tr>
-    <tr><td>OpenJDK 10</td><td class="yes"></td></tr>
-    <tr><td>OpenJDK 11</td><td class="yes"></td></tr>
-    <tr><td>OpenJDK 12</td><td class="yes"></td></tr>
-    <tr><td>OpenJDK 13</td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 8</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 9</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 10</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 11</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 12</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 13</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- Go -->
     <tr>
-        <th id="golang" class="section" colspan="2">Go (Golang)</th>
+        <th id="golang" class="section" colspan="3">Go (Golang)</th>
     </tr>
-    <tr><td>Go Version Manager (<code>gvm</code>) v1.0.22</td><td class="yes"></td></tr>
+    <tr><td>Go Version Manager (<code>gvm</code>) v1.0.22</td><td class="yes"></td><td class="yes"></td></tr>
     <tr>
         <td>
             <ul>
                 <li>Go 1.13.4</li>
             </ul>
         </td>
-        <td class="yes"></td>
+        <td class="yes"></td><td class="yes"></td>
     </tr>
 
     <!-- Ruby -->
     <tr>
-        <th id="ruby" class="section" colspan="2">Ruby</th>
+        <th id="ruby" class="section" colspan="3">Ruby</th>
     </tr>
-    <tr><td>Ruby Version Manager (<code>rvm</code>) 1.29.9<br><br>Switching between Ruby versions: <code>rvm use &lt;version&gt;</code></td><td class="yes"></td></tr>
+    <tr><td>Ruby Version Manager (<code>rvm</code>) 1.29.9<br><br>Switching between Ruby versions: <code>rvm use &lt;version&gt;</code></td><td class="yes"></td><td class="yes"></td></tr>
     <tr>
-        <td>Ruby 2.7.0preview1 (default)</td><td class="yes"></td>
+        <td>Ruby 2.7.0preview1 (default)</td><td class="yes"></td><td class="yes"></td>
     </tr>
 
     <!-- Python -->
     <tr>
-        <th id="python" class="section" colspan="2">Python</th>
+        <th id="python" class="section" colspan="3">Python</th>
     </tr>
     <tr>
         <td>
@@ -141,31 +146,31 @@ The history of macOS image updates can be found [here](/updates/).
                 <li>pip 19.2.3</li>
             </ul>
         </td>
-        <td class="yes"></td>
+        <td class="yes"></td><td class="yes"></td>
     </tr>
 
     <!-- Compilers -->
     <tr>
-        <th id="compilers" class="section" colspan="2">Compilers</th>
+        <th id="compilers" class="section" colspan="3">Compilers</th>
     </tr>
-    <tr><td>CMake 3.15.4</td><td class="yes"></td></tr>
-    <tr><td>GCC 6.5.0</td><td class="yes"></td></tr>
-    <tr><td>GCC 7.4.0</td><td class="yes"></td></tr>
-    <tr><td>GCC 8.3.0</td><td class="yes"></td></tr>
+    <tr><td>CMake 3.15.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>GCC 6.5.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>GCC 7.4.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>GCC 8.3.0</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- Simulators -->
     <tr>
-        <th id="simulators" class="section" colspan="2">Simulators</th>
+        <th id="simulators" class="section" colspan="3">Simulators</th>
     </tr>
-    <tr><td>iOS 12.4</td><td class="yes"></td></tr>
-    <tr><td>tvOS 12.4</td><td class="yes"></td></tr>
-    <tr><td>watchOS 5.3</td><td class="yes"></td></tr>
+    <tr><td>iOS 12.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>tvOS 12.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>watchOS 5.3</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- Tools -->
     <tr>
-        <th id="tools" class="section" colspan="2">Tools</th>
+        <th id="tools" class="section" colspan="3">Tools</th>
     </tr>
-    <tr><td>Brew 2.1.16</td><td class="yes"></td></tr>
-    <tr><td>Fastlane 2.28.3</td><td class="yes"></td></tr>
-    <tr><td>curl 7.54.0</td><td class="yes"></td></tr>
+    <tr><td>Brew 2.1.16</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Fastlane 2.28.3</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>curl 7.54.0</td><td class="yes"></td><td class="yes"></td></tr>
 </table>
