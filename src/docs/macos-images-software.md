@@ -73,8 +73,8 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <td>Git Large File Storage (Git LFS) 2.8.0</td><td class="yes"></td><td class="yes"></td>
     </tr>
-    <tr><td>Mercurial 5.1.2</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Subversion 1.12.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mercurial 5.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Subversion 1.13.0</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- XCode -->
     <tr>
@@ -111,8 +111,12 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <th id="java" class="section" colspan="3">Java</th>
     </tr>
-    <tr><td>OpenJDK 13.0.1</td><td class="yes"></td><td class="yes"></td></tr>
-
+    <tr><td>AdoptOpenJDK 8,232</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AdoptOpenJDK 9,181</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AdoptOpenJDK 10.0.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AdoptOpenJDK 11.0.5</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AdoptOpenJDK 12.0.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AdoptOpenJDK 13.0.1</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Go -->
     <tr>
         <th id="golang" class="section" colspan="3">Go (Golang)</th>
@@ -194,5 +198,5 @@ The history of macOS image updates can be found [here](/updates/).
     </tr>
     <tr><td>Brew 2.1.16</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Fastlane 2.28.3</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>curl 7.54.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>curl 7.67.0</td><td class="yes"></td><td class="yes"></td></tr>
 </table>
