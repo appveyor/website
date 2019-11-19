@@ -80,7 +80,7 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <th id="xcode" class="section" colspan="3">XCode</th>
     </tr>
-    <tr><td>XCode 11.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>XCode 11.2.1</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- .NET Framework -->
     <tr>
@@ -96,19 +96,22 @@ The history of macOS image updates can be found [here](/updates/).
         <th id="node-js" class="section" colspan="3">Node.js</th>
     </tr>
     <tr><td>Node Version Manager (<code>nvm</code>) 0.35.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 8.16.2 (default)</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 12.13.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 4.9.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 5.12.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 6.17.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 7.10.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.16.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 9.11.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 10.17.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 11.15.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 12.13.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 13.1.0</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- Java -->
     <tr>
         <th id="java" class="section" colspan="3">Java</th>
     </tr>
-    <tr><td>OpenJDK 8</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenJDK 9</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenJDK 10</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenJDK 11</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenJDK 12</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenJDK 13</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenJDK 13.0.1</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- Go -->
     <tr>
@@ -118,6 +121,12 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
+                <li>Go 1.7.6</li>
+                <li>Go 1.8.7</li>
+                <li>Go 1.9.7</li>
+                <li>Go 1.10.8</li>
+                <li>Go 1.11.13</li>
+                <li>Go 1.12.13</li>
                 <li>Go 1.13.4</li>
             </ul>
         </td>
@@ -130,7 +139,15 @@ The history of macOS image updates can be found [here](/updates/).
     </tr>
     <tr><td>Ruby Version Manager (<code>rvm</code>) 1.29.9<br><br>Switching between Ruby versions: <code>rvm use &lt;version&gt;</code></td><td class="yes"></td><td class="yes"></td></tr>
     <tr>
-        <td>Ruby 2.7.0preview1 (default)</td><td class="yes"></td><td class="yes"></td>
+        <td>Ruby 2.0.0-p648</td><td class="yes"></td><td class="yes"></td>
+        <td>Ruby 2.1.10</td><td class="yes"></td><td class="yes"></td>
+        <td>Ruby 2.2.10</td><td class="yes"></td><td class="yes"></td>
+        <td>Ruby 2.3.8</td><td class="yes"></td><td class="yes"></td>
+        <td>Ruby 2.4.6</td><td class="yes"></td><td class="yes"></td>
+        <td>Ruby 2.5.5</td><td class="yes"></td><td class="yes"></td>
+        <td>Ruby 2.6.3 (default)</td><td class="yes"></td><td class="yes"></td>
+        <td>Ruby 2.7.0-preview1</td><td class="yes"></td><td class="yes"></td>
+        <td>Ruby head</td><td class="yes"></td><td class="yes"></td>
     </tr>
 
     <!-- Python -->
@@ -140,7 +157,12 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 2.7.16</li>
+                <li>Python 2.6.9</li>
+                <li>Python 2.7.17</li>
+                <li>Python 3.4.9</li>
+                <li>Python 3.5.9</li>
+                <li>Python 3.6.9</li>
+                <li>Python 3.7.5</li>
                 <li>Python 3.8.0</li>
                 <li>virtualenv 16.7.5</li>
                 <li>pip 19.2.3</li>
@@ -153,7 +175,7 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <th id="compilers" class="section" colspan="3">Compilers</th>
     </tr>
-    <tr><td>CMake 3.15.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.16.0-rc3</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 6.5.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 7.4.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 8.3.0</td><td class="yes"></td><td class="yes"></td></tr>
