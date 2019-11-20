@@ -2,7 +2,7 @@
 title: Build macOS projects with AppVeyor
 ---
 
-Today we are adding macOS to our hosted CI/CD environment. Now you can consolidate your multi-platform projects and run Windows, Linux and macOS builds with AppVeyor.
+Today we are adding macOS to our hosted CI/CD environment. Now you can consolidate all your multi-platform projects and run Windows, Linux and macOS builds with AppVeyor.
 
 As with our Windows and Linux environments, we are committed to provide you with the most recent software and complete toolset for macOS. You can choose from two macOS images:
 
