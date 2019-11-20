@@ -143,15 +143,19 @@ The history of macOS image updates can be found [here](/updates/).
     </tr>
     <tr><td>Ruby Version Manager (<code>rvm</code>) 1.29.9<br><br>Switching between Ruby versions: <code>rvm use &lt;version&gt;</code></td><td class="yes"></td><td class="yes"></td></tr>
     <tr>
-        <td>Ruby 2.0.0-p648</td><td class="yes"></td><td class="yes"></td>
-        <td>Ruby 2.1.10</td><td class="yes"></td><td class="yes"></td>
-        <td>Ruby 2.2.10</td><td class="yes"></td><td class="yes"></td>
-        <td>Ruby 2.3.8</td><td class="yes"></td><td class="yes"></td>
-        <td>Ruby 2.4.6</td><td class="yes"></td><td class="yes"></td>
-        <td>Ruby 2.5.5</td><td class="yes"></td><td class="yes"></td>
-        <td>Ruby 2.6.3 (default)</td><td class="yes"></td><td class="yes"></td>
-        <td>Ruby 2.7.0-preview1</td><td class="yes"></td><td class="yes"></td>
-        <td>Ruby head</td><td class="yes"></td><td class="yes"></td>
+        <td>
+            <ul>
+                <li>Ruby 2.0.0-p648</li>
+                <li>Ruby 2.1.10</li>
+                <li>Ruby 2.2.10</li>
+                <li>Ruby 2.3.8</li>
+                <li>Ruby 2.4.6</li>
+                <li>Ruby 2.6.3 (default)</li>
+                <li>Ruby 2.7.0-preview1</li>
+                <li>Ruby head</li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="yes"></td>
     </tr>
 
     <!-- Python -->
