@@ -113,6 +113,11 @@ IP addresses assigned to build VMs in Azure data center (`West US` region):
 
     13.83.108.89
 
+IP address of AppVeyor macOS builds:
+
+    207.254.41.120
+    199.38.85.75
+
 IP address of AppVeyor Cloud in Azure data center (`West US` region) - when deploying with "Environments":
 
     138.91.141.243
@@ -125,25 +130,26 @@ and can be a master VHD for Hyper-V and Azure, snapshot or image for GCE or AWS.
 AppVeyor provides these "standard" build worker images:
 
 * Windows images:
-    * `Visual Studio 2013`
-    * `Visual Studio 2015`
-    * `Visual Studio 2017`
     * `Visual Studio 2019`
-
+    * `Visual Studio 2017`
+    * `Visual Studio 2015`
+    * `Visual Studio 2013`
 
 * Linux images:
     * `Ubuntu` or `Ubuntu1804` - Ubuntu 18.04
     * `Ubuntu1604` - Ubuntu 16.04
 
+* macOS images:
+    * `macos` - macOS 10.15 "Catalina"
+    * `macos-mojave` - macOS 10.14 "Mojave"
+
 Below you can find the list of [pre-installed software](#pre-installed-software) for all images.
 
 ### Visual Studio Preview images
 
-AppVeyor also provides a build image which contains, in place of the Visual Studio 2017 version on the current image, the VS2017 preview relative to that version.
+AppVeyor also provides a build image which contains, in place of the Visual Studio 2019 version on the current image, the VS 2019 preview relative to that version.
 
-* `Visual Studio 2017 Preview`
-
-The aim is to stay in sync with the [release rhythm](https://docs.microsoft.com/en-us/visualstudio/productinfo/vs2017-release-rhythm#previews) of Visual Studio 2017.
+* `Visual Studio 2019 Preview`
 
 ## Choosing image for your builds
 
@@ -153,9 +159,13 @@ You can select a different image on AppVeyor UI ("Environment" tab of project se
 
     image: Visual Studio 2017
 
-or to build on Linux:
+to build on Linux:
 
     image: Ubuntu
+
+or to build on macOS:
+
+    image: macOS
 
 > Please note that `appveyor.yml` has [precedence over UI settings](/docs/build-configuration/#appveyoryml-and-ui-coexistence),
 > so when `appveyor.yml` exists the image should be specified in YAML, not on UI.
@@ -166,9 +176,9 @@ or to build on Linux:
 
 ```yaml
 image:
-  - Visual Studio 2015
-  - Visual Studio 2017
+  - Visual Studio 2019
   - Ubuntu
+  - macOS
 environment:
   matrix:
     - MY_VAR: value1
@@ -180,12 +190,12 @@ Also for some combinations it makes sense to use `APPVEYOR_BUILD_WORKER_IMAGE` "
 ```yaml
 environment:
   matrix:
-    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
       MY_VAR: value1
-    - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-      MY_VAR: value2
     - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
       MY_VAR: value3
+    - APPVEYOR_BUILD_WORKER_IMAGE: macOS
+      MY_VAR: value4
 ```
 
 ## Image updates
@@ -199,16 +209,18 @@ sometimes even a smallest change in the image can break someone's build. If that
 We provide an access to "last good" versions of build worker images from previous update:
 
 * Windows "previous" images:
-    * `Previous Visual Studio 2013`
-    * `Previous Visual Studio 2015`
-    * `Previous Visual Studio 2017`
     * `Previous Visual Studio 2019`
-
+    * `Previous Visual Studio 2017`
+    * `Previous Visual Studio 2015`
 
 * Linux "previous" images:
     * `Previous Ubuntu` which is the same `Previous Ubuntu1804`
     * `Previous Ubuntu1804`
     * `Previous Ubuntu1604`
+
+* macOS "previous" images:
+    * `Previous macOS`
+    * `Previous macOS-Mojave`
 
 You can use those images to unblock your builds while we are working together with you to understand the root cause and do a fix by the next image update.
 
@@ -218,3 +230,4 @@ The following pages contain the up-to-date list of software pre-installed on bui
 
 * [Windows images](/docs/windows-images-software/)
 * [Linux images](/docs/linux-images-software/)
+* [macOS images](/docs/macos-images-software/)

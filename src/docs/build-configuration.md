@@ -584,7 +584,7 @@ We still recommend use `allow_failures` for "unstable" cases which should be bui
 
 ### Specializing matrix job configuration
 
-By default all build matrix jobs share the same configuration. However there are cases when build scenario should be different for different matrix jobs. This become especially demanding issue with introduction on Linux builds. For example, build should run in `MSBuild` mode for all build worker images, but run a build script for `Ubuntu` one. This can be done with the following YAML configuration:
+By default, all build matrix jobs share the same configuration. However there are cases when build scenario should be different for each matrix job. This become especially handful for multi-platform builds. For example, build should run in `MSBuild` mode for all build worker images, but run a build script for `Ubuntu` one. This can be done with the following YAML configuration:
 
 ```yaml
 image:
