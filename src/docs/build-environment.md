@@ -113,7 +113,7 @@ IP addresses assigned to build VMs in Azure data center (`West US` region):
 
     13.83.108.89
 
-IP address of AppVeyor macOS builds:
+IP addresses of AppVeyor macOS VMs:
 
     207.254.41.120
     199.38.85.75
