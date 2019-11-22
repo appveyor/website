@@ -147,9 +147,11 @@ Below you can find the list of [pre-installed software](#pre-installed-software)
 
 ### Visual Studio Preview images
 
-AppVeyor also provides a build image which contains, in place of the Visual Studio 2019 version on the current image, the VS 2019 preview relative to that version.
+AppVeyor also provides a build image which contains, in place of the Visual Studio version on the current image, the latest preview relative to that version.
 
 * `Visual Studio 2019 Preview`
+* `Visual Studio 2017 Preview` (outdated)
+* `Visual Studio 2015 Preview` (outdated)
 
 ## Choosing image for your builds
 
