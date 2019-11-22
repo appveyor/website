@@ -115,8 +115,8 @@ IP addresses assigned to build VMs in Azure data center (`West US` region):
 
 IP addresses of AppVeyor macOS VMs:
 
-    207.254.41.120
     199.38.85.75
+    207.254.41.120
 
 IP address of AppVeyor Cloud in Azure data center (`West US` region) - when deploying with "Environments":
 
@@ -145,9 +145,9 @@ AppVeyor provides these "standard" build worker images:
 
 Below you can find the list of [pre-installed software](#pre-installed-software) for all images.
 
-### Visual Studio Preview images
+### Visual Studio Preview image
 
-AppVeyor also provides a build image which contains, in place of the Visual Studio version on the current image, the latest preview relative to that version.
+AppVeyor also provides a build image which contains, in place of the Visual Studio 2019 version on the current image, the VS 2019 Preview relative to that version.
 
 * `Visual Studio 2019 Preview`
 * `Visual Studio 2017 Preview` (outdated)
@@ -159,7 +159,7 @@ If the build configuration does not specify build worker image then `Visual Stud
 
 You can select a different image on AppVeyor UI ("Environment" tab of project settings) or in `appveyor.yml`:
 
-    image: Visual Studio 2017
+    image: Visual Studio 2019
 
 to build on Linux:
 
@@ -214,9 +214,10 @@ We provide an access to "last good" versions of build worker images from previou
     * `Previous Visual Studio 2019`
     * `Previous Visual Studio 2017`
     * `Previous Visual Studio 2015`
+    * `Previous Visual Studio 2013`
 
 * Linux "previous" images:
-    * `Previous Ubuntu` which is the same `Previous Ubuntu1804`
+    * `Previous Ubuntu`, which is the same as `Previous Ubuntu1804`
     * `Previous Ubuntu1804`
     * `Previous Ubuntu1604`
 
