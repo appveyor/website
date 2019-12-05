@@ -63,7 +63,7 @@ On host machine's terminal window while in user's Home directory:
 6. Run `packer build --only=parallels-pvm  --var-file=vault.json macos.json`. Packer will create another PVM in output-parallels-pvm subfolder. Packer will name that PVM according to pattern `packer-{{macos_version}}-{{timestamp}}` e.g. `packer-catalina-201911280809`
 7. move that PVM to `~/Parallels` folder: `mv output-parallels-pvm/packer-{{macos_version}}-{{timestamp}}.pvm ~/Parallels`
 8. register PVM: `prlctl register ~/Parallels/packer-{{macos_version}}-{{timestamp}}.pvm`
-9. and rename PVM to whatever you like. For example next command will rename it to `macos-_prod`: `prlctl set packer-{{macos_version}}-{{timestamp}} --name macos_prod`. Note, this command will rename VM's name and Vm's subfoler in `~/Parallels`. 
+9. and rename PVM to whatever you like. For example next command will rename it to `macos-_prod`: `prlctl set packer-{{macos_version}}-{{timestamp}} --name macos_prod`. Note, this command will rename VM's name and Vm's subfoler in `~/Parallels`.
 10. VM's name should be put into Appveyor's build cloud configuration.
 
 ### Add new build cloud
