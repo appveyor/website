@@ -73,17 +73,17 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <th id="docker" class="section" colspan="3">Docker</th>
     </tr>
     <tr>
-        <td>Docker 19.03.2</td><td class="yes"></td><td class="yes"></td>
+        <td>Docker 19.03.5</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Version control systems -->
     <tr>
         <th id="version-control-systems" class="section" colspan="3">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.23.0</td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.24.0</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage (Git LFS) 2.8.0</td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage (Git LFS) 2.9.1</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr><td>Mercurial 4.4.1</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Mercurial 4.5.3</td><td class="yes"></td><td class="no"></td></tr>
@@ -100,9 +100,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core 2.0.6 runtime</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.0.7 runtime</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core 2.0.9 runtime</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.1 runtime version 2.1.13</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.2 runtime version 2.2.7</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 3.0 runtime version 3.0.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.1 runtime version 2.1.14</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 2.2 runtime version 2.2.8</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core 3.0 runtime version 3.0.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.0.0</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.0.2</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.0.3</td><td class="no"></td><td class="yes"></td></tr>
@@ -120,7 +120,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 2.1.300-preview2</td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1 version 2.1.802</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2 version 2.2.402</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.0 version 3.0.100</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.0 version 3.0.101</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Node.js -->
     <tr>
         <th id="node-js" class="section" colspan="3">Node.js</th>
@@ -137,18 +137,19 @@ The history of Ubuntu image updates can be found [here](/updates/).
         </td>
         <td class="yes"></td><td class="no"></td>
     </tr>
-    <tr><td>Node.js 12.11.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 13.2.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 12.13.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.15.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 10.16.3</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 10.17.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 9.11.2</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 8.16.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.16.2</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 8.10.0 (installed in system)</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Node.js 7.10.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 6.17.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 6.17.1 (installed in system)</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Node.js 5.12.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 4.9.1</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node Version Manager (NVM) 4.9.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node Version Manager (NVM) 0.34.0</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Go -->
     <tr>
         <th id="golang" class="section" colspan="3">Go (Golang)</th>
@@ -157,8 +158,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (GVM) v1.0.22</li>
-                <li>Go 1.13.1</li>
-                <li>Go 1.12.10</li>
+                <li>Go 1.13.4</li>
+                <li>Go 1.12.13</li>
                 <li>Go 1.11.13</li>
                 <li>Go 1.10.8</li>
                 <li>Go 1.9.7</li>
@@ -183,7 +184,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>openJDK 11 build 11+28</li>
                 <li>openJDK 12 12.0.2</li>
                 <li>openJDK 13</li>
-                <li>openJDK 14 early access 15</li>
+                <li>openJDK 14 early access 25</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -236,18 +237,20 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 2.7.16</li>
-                <li>Python 3.4.9</li>
-                <li>Python 3.5.7</li>
-                <li>Python 3.6.8</li>
+                <li>Python 2.7.17</li>
+                <li>Python 3.4.10</li>
+                <li>Python 3.5.9</li>
+                <li>Python 3.6.9</li>
                 <li>Python 3.7.0</li>
                 <li>Python 3.7.1</li>
                 <li>Python 3.7.2</li>
                 <li>Python 3.7.3</li>
                 <li>Python 3.7.4</li>
-                <li>Python 3.8.0b4</li>
-                <li>virtualenv 16.7.5</li>
-                <li>pip 19.2.3</li>
+                <li>Python 3.7.5</li>
+                <li>Python 3.8.0</li>
+                <li>Python 3.9.0a1</li>
+                <li>virtualenv 16.7.8</li>
+                <li>pip 19.3.1</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -262,40 +265,40 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="tools" class="section" colspan="3">Tools</th>
     </tr>
-    <tr><td>Yarn 1.17.3</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Yarn 1.19.2</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>p7zip 16.02 (<code>7za</code> utility is in PATH)</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>tcl 8.6.0+9</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>wget 1.17.1</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>wget 1.19.4</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>curl 7.47.0</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>curl 7.58.0</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>AWS CLI 1.16.246</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>localstack 0.10.3</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Azure CLI-cli 2.0.74</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Google Cloud SDK 264.0.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Packer 1.4.3</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>VirtualBox 6.0.12</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>cmake 3.15.3</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.16.292</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>localstack 0.10.5</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure CLI-cli 2.0.77</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Google Cloud SDK 272.0.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Packer 1.4.5</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>VirtualBox 6.0.14</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>cmake 3.16.0</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
     <tr>
         <th id="web-browsers" class="section" colspan="3">Web browsers</th>
     </tr>
-    <tr><td>Firefox 69.0.1</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 77.0.3865</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 71.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 78.0.3904</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="3">Databases</th>
     </tr>
-    <tr><td>SQL Server 2017 14.0.3223</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>PostgreSQL 11+207</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>MySQL 5.7.27</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>MongoDB 4.2.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server 2017 15.0.2000</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 12+210</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MySQL 5.7.28</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MongoDB 4.2.1</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Services -->
     <tr>
         <th id="services" class="section" colspan="3">Services</th>
     </tr>
-    <tr><td>OctoTools 6.12.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Redis 5.0.6</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OctoTools 6.14.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Redis 5.0.7</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>RabbitMQ 3.6.15-1</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Configuration -->
     <tr>
