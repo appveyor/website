@@ -138,15 +138,13 @@ title: Software pre-installed on Windows build VMs
         <td>
         <ul>
             <li>
-                Docker EE 19.03.2 for Windows Server in experimental mode (LCOW support) with base images:
+                Docker CE 19.03.5 for Windows in experimental mode (LCOW support) with base images:
                 <ul>
-                    <li>mcr.microsoft.com/windows/servercore:ltsc2019<br/>sha256:d7e7e3702cbc4d8ea29001a02c1c852d0229a0679d94e017a41c43dbaa01db20</li>
-                    <li>mcr.microsoft.com/windows/servercore:ltsc2016<br/>sha256:c1c0c43f28b3d994e5f215946786c34634dcc813aa7afe2f28a968c02ca1de68</li>
-                    <li>mcr.microsoft.com/windows/servercore:1803<br/>sha256:9b22618ec9b832f7e74c5461b67761423fea83dd10bf627fe715e232aad0dc1e</li>
-                    <li>mcr.microsoft.com/windows/servercore:1709<br/>sha256:aa2c3d4c376a6debbec5625dc15243e7c1112c1ebd603ff63c143b7a8edc32a9</li>
-                    <li>mcr.microsoft.com/windows/nanoserver:1809<br/>sha256:408c7ec68f510485ccca904d9ab69c3ad165126b44786d9f2fffbbc4d2d9646b</li>
-                    <li>mcr.microsoft.com/windows/nanoserver:1803<br/>sha256:47aa6f7f8ff1a02acc34b9f22689e9c89b3387efdd7c0f2cf6da9db810c0d4de</li>
-                    <li>mcr.microsoft.com/windows/nanoserver:1709<br/>sha256:97272be4e3abcd71727095a6ab1948afc4c8412ad0649abfe60912651769a67d</li>
+                    <li>mcr.microsoft.com/windows/servercore:ltsc2019<br/>sha256:e75260361cbd398788c195a159c2c56e3ef4ee011ecd9bd57bdac73ff1a43e33</li>
+                    <li>mcr.microsoft.com/windows/servercore:ltsc2016<br/>sha256:e2147ea4d43b7e634c3ca8d4b6f2fb366b081c8ea69aa0ecc6c08b7c3d405746</li>
+                    <li>mcr.microsoft.com/windows/servercore:1803<br/>sha256:7f8669fc5f43382aef13ed258a9aae0cd45e5f7beb8d8a49d38d71159ede46d6</li>
+                    <li>mcr.microsoft.com/windows/nanoserver:1809<br/>sha256:643a236612096acfd1a9fdb59ae9669114d0909b2ce4382b8f3f67d26477e954</li>
+                    <li>mcr.microsoft.com/windows/nanoserver:1803<br/>sha256:8c62a9d8ce7dea14cc08d556e26fafa76a4870b2bcc709e03bac5111f51a9450</li>
                     <li>mcr.microsoft.com/windows/nanoserver:sac2016<br/>sha256:2b783310e6c82de737e893abd53ae238ca56b5a96e2861558fb9a111d6691ddb</li>
                 </ul>
             </li>
@@ -157,7 +155,7 @@ title: Software pre-installed on Windows build VMs
         <td>docker-compose 1.16.1</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
-        <td>docker-compose 1.23.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+        <td>docker-compose 1.24.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <!-- WSL -->
     <tr>
@@ -266,7 +264,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2019" class="section" colspan="5">Visual Studio 2019</th>
     </tr>
-    <tr><td>Visual Studio Community 2019 version 16.3.8</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2019 version 16.4</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual Studio Community 2019 Preview version 16.4 Preview 2 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1809</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>WDK for Windows 10, version 1903</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -333,10 +331,10 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Azure SDK 3.0</td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Microsoft Azure Storage Emulator 5.5</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Microsoft Azure Storage Emulator 5.9</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Microsoft Azure PowerShell 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Microsoft Azure PowerShell 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Azure CLI 2.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>DocumentDB Emulator 1.13.58.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Azure Cosmos DB Emulator 2.7.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Azure Cosmos DB Emulator 2.7.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Xamarin -->
     <tr>
         <th id="xamarin" class="section" colspan="5">Xamarin</th>
@@ -407,13 +405,16 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.2.107</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.108</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.109</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.2.110</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.203</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.204</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.206</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.2.207</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.301</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.402</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.100</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1.100-preview1-014459 (<code>Visual Studio 2019 Preview</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 3.0.101</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1.100</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="5">Silverlight</th>
@@ -489,7 +490,7 @@ title: Software pre-installed on Windows build VMs
                 <li>Go 1.4.3 x86 (<code>C:\go14-x86</code>)</li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Java -->
     <tr>
@@ -967,6 +968,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>NuGet 5.1.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Chocolatey v0.10.15</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GitVersion 4.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>GitVersion 5.1.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.0.2p (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.0.2p (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
@@ -998,7 +1000,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>NUnit 2.6.4 in <code>C:\Tools\NUnit\bin</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NUnit 3.7.0 in <code>C:\Tools\NUnit3</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>NUnit 3.9.0 in <code>C:\Tools\NUnit3</code></td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>xUnit 1.9.2 in <code>C:\Tools\xUnit</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>xUnit 1.9.2 in <code>C:\Tools\xUnit</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>xUnit 2.0.0 RTM in <code>C:\Tools\xUnit20</code></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Machine.Specifications (MSpec)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Web browsers -->
