@@ -80,10 +80,10 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <th id="version-control-systems" class="section" colspan="3">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.24.0</td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.24.1</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage (Git LFS) 2.9.1</td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage (Git LFS) 2.9.2</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr><td>Mercurial 4.4.1</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Mercurial 4.5.3</td><td class="yes"></td><td class="no"></td></tr>
@@ -121,6 +121,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 2.1 version 2.1.802</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2 version 2.2.402</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0 version 3.0.101</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1 version 3.1.100</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Node.js -->
     <tr>
         <th id="node-js" class="section" colspan="3">Node.js</th>
@@ -193,9 +194,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="mono" class="section" colspan="3">Mono</th>
     </tr>
-    <tr><td>Mono 6.4.0.198</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual C# compiler csc 3.3.1-beta4</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Mono C# compiler 6.4.0.198</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mono 6.6.0.161</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual C# compiler csc 3.4.0-beta4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mono C# compiler 6.6.0.161</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Mono ASP.NET Web Server xsp4 0.4.0.0</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Compilers -->
     <tr>
@@ -265,26 +266,26 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="tools" class="section" colspan="3">Tools</th>
     </tr>
-    <tr><td>Yarn 1.19.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Yarn 1.21.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>p7zip 16.02 (<code>7za</code> utility is in PATH)</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>tcl 8.6.0+9</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>wget 1.17.1</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>wget 1.19.4</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>curl 7.47.0</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>curl 7.58.0</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>AWS CLI 1.16.292</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>localstack 0.10.5</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.16.303</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>localstack 0.10.6</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Azure CLI-cli 2.0.77</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Google Cloud SDK 272.0.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Google Cloud SDK 273.0.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Packer 1.4.5</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>VirtualBox 6.0.14</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>cmake 3.16.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>VirtualBox 6.1.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>cmake 3.16.1</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
     <tr>
         <th id="web-browsers" class="section" colspan="3">Web browsers</th>
     </tr>
     <tr><td>Firefox 71.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 78.0.3904</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 79.0.3945</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="3">Databases</th>
@@ -292,7 +293,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>SQL Server 2017 15.0.2000</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 12+210</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL 5.7.28</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>MongoDB 4.2.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MongoDB 4.2.2</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Services -->
     <tr>
         <th id="services" class="section" colspan="3">Services</th>
