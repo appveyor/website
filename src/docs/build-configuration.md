@@ -32,22 +32,18 @@ Every build goes through the following steps:
     * Run `before_test` scripts
     * Discover and run tests (or `test_script`)
     * Run `after_test` scripts
-10. Call `build_success` webhooks
-11. **Package** artifacts
-12. **Deployment**
+10. **Package** artifacts
+11. **Deployment**
     * Run `before_deploy` scripts
     * Run all configured deployments
     * Run `after_deploy` scripts
-13. **Finalize** successful builds:
-    * Call `deployment_success` webhooks
+12. **Finalize** successful builds:
     * Run `on_success` scripts
     * Save build cache
-14. **Finalize** failed builds:
-    * Call `build_failure` webhooks
+13. **Finalize** failed builds:
     * Optionally save build cache
-    * Call `deployment_failure` webhooks
     * Run `on_failure` scripts
-15. **Finalize** both successful and failed builds:
+14. **Finalize** both successful and failed builds:
     * Call `on_finish` scripts
 
 Note that you can forcibly terminate build with **success** from script with `appveyor exit` `cmd` command or `Exit-AppVeyorBuild` `PS` command. This can be done from any script *except* **Finalize** ones (`on_success`, `on_failure` and `on_finish`).
