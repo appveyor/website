@@ -138,12 +138,12 @@ The history of Ubuntu image updates can be found [here](/updates/).
         </td>
         <td class="yes"></td><td class="no"></td>
     </tr>
-    <tr><td>Node.js 13.2.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 12.13.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 13.6.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 12.14.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.15.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 10.17.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 10.18.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 9.11.2</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 8.16.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.17.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 8.10.0 (installed in system)</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Node.js 7.10.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 6.17.1</td><td class="yes"></td><td class="yes"></td></tr>
@@ -159,8 +159,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (GVM) v1.0.22</li>
-                <li>Go 1.13.4</li>
-                <li>Go 1.12.13</li>
+                <li>Go 1.13.5</li>
+                <li>Go 1.12.14</li>
                 <li>Go 1.11.13</li>
                 <li>Go 1.10.8</li>
                 <li>Go 1.9.7</li>
@@ -202,7 +202,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="compilers" class="section" colspan="3">Compilers</th>
     </tr>
-    <tr><td>clang 6.0.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>clang 9.0.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 5.5.0</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>GCC 6.5.0</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>GCC 7.4.0</td><td class="yes"></td><td class="yes"></td></tr>
@@ -249,7 +249,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>Python 3.7.4</li>
                 <li>Python 3.7.5</li>
                 <li>Python 3.8.0</li>
-                <li>Python 3.9.0a1</li>
+                <li>Python 3.8.1</li>
+                <li>Python 3.9.0a2</li>
                 <li>virtualenv 16.7.8</li>
                 <li>pip 19.3.1</li>
             </ul>
@@ -273,24 +274,24 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>wget 1.19.4</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>curl 7.47.0</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>curl 7.58.0</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>AWS CLI 1.16.303</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>localstack 0.10.6</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Azure CLI-cli 2.0.77</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Google Cloud SDK 273.0.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Packer 1.4.5</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.17.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>localstack 0.10.7</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure CLI-cli 2.0.79</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Google Cloud SDK 275.0.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Packer 1.5.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>VirtualBox 6.1.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>cmake 3.16.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>cmake 3.16.2</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
     <tr>
         <th id="web-browsers" class="section" colspan="3">Web browsers</th>
     </tr>
-    <tr><td>Firefox 71.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 72.0.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Chrome 79.0.3945</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="3">Databases</th>
     </tr>
-    <tr><td>SQL Server 2017 15.0.2000</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server 2017 15.0.4003</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 12+210</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL 5.7.28</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MongoDB 4.2.2</td><td class="yes"></td><td class="yes"></td></tr>
@@ -298,7 +299,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="services" class="section" colspan="3">Services</th>
     </tr>
-    <tr><td>OctoTools 6.14.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OctoTools 6.17.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Redis 5.0.7</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>RabbitMQ 3.6.15-1</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Configuration -->
