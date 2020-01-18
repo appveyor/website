@@ -123,12 +123,8 @@ title: Software pre-installed on Windows build VMs
             <li>
                 Docker CE 18.05.0-ce for Windows and Linux with base images:
                 <ul>
-                    <li>microsoft/windowsservercore<br/>sha256:c06b4bfaf634215ea194e6005450740f3a230b27c510cf8facab1e9c678f3a99</li>
-                    <li>microsoft/nanoserver<br/>sha256:8f78a4a7da4464973a5cd239732626141aec97e69ba3e4023357628630bc1ee2</li>
-                    <li>microsoft/aspnet<br/>sha256:7cdafe834e1c08ed880cd54183ba33d4760c8b19e651ef1cbff0cf3118684e88</li>
-                    <li>microsoft/dotnet<br/>sha256:7e6a3e8272ce3dee0c091bcb78d784b19e0925cf6e61b23b70dc17772580643f</li>
-                    <li>microsoft/aspnetcore<br/>sha256:5f964756fae50873c496915ad952b0f15df8ef985e4ac031d00b7ac0786162d0</li>
-                    <li>microsoft/aspnetcore-build<br/>sha256:1e4043c2484157e029d6b09a3149ebd01c5122f6b62f0a1b6c6f54b90500ea4b</li>
+                    <li>mcr.microsoft.com/windows/servercore:ltsc2016</li>
+                    <li>mcr.microsoft.com/windows/nanoserver:sac2016</li>
                 </ul>
             </li>
         </ul>
@@ -180,19 +176,10 @@ title: Software pre-installed on Windows build VMs
         <th id="version-control-systems" class="section" colspan="5">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.24.1 (2) (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+        <td>Git 2.25.0 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git 2.17.1 (2) (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
-    </tr>
-    <tr>
-        <td>Git 2.21.1 (2) (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
-    </tr>
-    <tr>
-        <td>Git Large File Storage (Git LFS) 2.4.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
-    </tr>
-    <tr>
-        <td>Git Large File Storage (Git LFS) 2.9.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+        <td>Git Large File Storage (Git LFS) 2.9.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Mercurial 4.1.1 (x86)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -260,14 +247,14 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2017" class="section" colspan="5">Visual Studio 2017</th>
     </tr>
-    <tr><td>Visual Studio Community 2017 version 15.9.17</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Community 2017 version 15.9.19</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1709</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SQL Server Data Tools (SSDT) 15.5.2 for Visual Studio 2017</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Visual Studio 2019 -->
     <tr>
         <th id="visual-studio-2019" class="section" colspan="5">Visual Studio 2019</th>
     </tr>
-    <tr><td>Visual Studio Community 2019 version 16.4.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2019 version 16.4.3</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual Studio Community 2019 Preview version 16.4 Preview 2 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WDK for Windows 10, version 1809</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>WDK for Windows 10, version 1903</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -298,8 +285,8 @@ title: Software pre-installed on Windows build VMs
         <th id="misc-sdks" class="section" colspan="5">Misc SDKs</th>
     </tr>
     <tr><td>AWS SDK for .NET with AWS Tools for Windows 3.3.69</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>AWS CLI 1.11.68</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>AWS CLI 1.16.228</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.11.68</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>AWS CLI 1.17.4</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>WiX Toolset 3.11.0.1701</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>WiX Toolset 3.11.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- TypeScript -->
@@ -403,6 +390,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.1.604</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.701</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.801</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.803</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.100</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.2.103</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.107</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -416,8 +404,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.2.301</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.402</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.100</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.0.101</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1.100</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.0.102</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1.101</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="5">Silverlight</th>
@@ -446,12 +434,12 @@ title: Software pre-installed on Windows build VMs
         <th id="node-js" class="section" colspan="5">Node.js</th>
     </tr>
     <tr><td colspan="5"><code>8.x</code> is default Node.js installed on build workers.</td></tr>
-    <tr><td>Node.js 13.0.0 - 13.0.1 (x86 and x64) - use <code>Current</code> alias for latest <code>13.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 12.0.0 - 12.13.0 (x86 and x64) - use <code>LTS</code> alias for latest <code>12.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 13.0.0 - 13.6.0 (x86 and x64) - use <code>Current</code> alias for latest <code>13.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 12.0.0 - 12.14.1 (x86 and x64) - use <code>LTS</code> alias for latest <code>12.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.0.0 - 11.15.0 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 10.0.0 - 10.17.0 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 10.0.0 - 10.18.1 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 9.0.0 - 9.11.2 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 8.0.0 - 8.16.2 (x86 and x64) - default on build workers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 8.0.0 - 8.17.0 (x86 and x64) - default on build workers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 7.0.0 - 7.10.1 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 6.0.0 - 6.17.1 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 4.0.0 - 4.9.1 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -759,16 +747,16 @@ title: Software pre-installed on Windows build VMs
             </li>
             </ul>
         </td>
-        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+        <td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>
             <ul>
-            <li>Qt 5.12.5: <code>C:\Qt\5.12.5</code>
+            <li>Qt 5.12.6: <code>C:\Qt\5.12.6</code>
                 <ul>
-                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.5\mingw73_64</code></li>
-                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.5\mingw73_32</code></li>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.12.5\msvc2015_64</code></li>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.6\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.6\mingw73_32</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.12.6\msvc2015_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -844,11 +832,11 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.8: <code>C:\Qt\5.9.8</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.8</code> for backward compatibility)
+            <li>Qt 5.9.9: <code>C:\Qt\5.9.9</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.9</code> for backward compatibility)
                 <ul>
-                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.8\mingw53_32</code></li>
-                <li>msvc2015 32-bit: <code>C:\Qt\5.9.8\msvc2015</code></li>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.9.8\msvc2017_64</code></li>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.9\mingw53_32</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.9.9\msvc2015</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.9.9\msvc2017_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -858,9 +846,9 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.8: <code>C:\Qt\5.9.8</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.8</code> for backward compatibility)
+            <li>Qt 5.9.9: <code>C:\Qt\5.9.9</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.9</code> for backward compatibility)
                 <ul>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.9.8\msvc2017_64</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.9.9\msvc2017_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -870,10 +858,10 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.8: <code>C:\Qt\5.9.8</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.8</code> for backward compatibility)
+            <li>Qt 5.9.9: <code>C:\Qt\5.9.9</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.9</code> for backward compatibility)
                 <ul>
-                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.8\mingw53_32</code></li>
-                <li>msvc2015 32-bit: <code>C:\Qt\5.9.8\msvc2015</code></li>
+                <li>MinGW 5.3.0 32 bit: <code>C:\Qt\5.9.9\mingw53_32</code></li>
+                <li>msvc2015 32-bit: <code>C:\Qt\5.9.9\msvc2015</code></li>
                 </ul>
             </li>
             </ul>
@@ -883,10 +871,10 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.9.8: <code>C:\Qt\5.9.8</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.8</code> for backward compatibility)
+            <li>Qt 5.9.9: <code>C:\Qt\5.9.9</code> (<code>C:\Qt\5.9</code> mapped to <code>C:\Qt\5.9.9</code> for backward compatibility)
                 <ul>
-                <li>msvc2015 64-bit: <code>C:\Qt\5.9.8\msvc2015_64</code></li>
-                <li>msvc2013 64-bit: <code>C:\Qt\5.9.8\msvc2013_64</code></li>
+                <li>msvc2015 64-bit: <code>C:\Qt\5.9.9\msvc2015_64</code></li>
+                <li>msvc2013 64-bit: <code>C:\Qt\5.9.9\msvc2013_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -979,17 +967,16 @@ title: Software pre-installed on Windows build VMs
     <tr><td>curl 7.55.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 19.00</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.16.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.15.5</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>CMake 3.16.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.12.2</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>NuGet 4.9.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>NuGet 5.1.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Chocolatey v0.10.15</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>GitVersion 4.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>GitVersion 5.1.3</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Ninja 1.9.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Meson 0.52.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>GitVersion 4.0.0</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>GitVersion 5.1.3</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Ninja 1.9.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Meson 0.52.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>FxCop 10.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.0.2p (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.0.2p (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
@@ -997,10 +984,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>OpenSSL 1.1.0i (64-bit) (<code>C:\OpenSSL-v11-Win64\bin</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.1.1 (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.1.1 (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>OpenSSL 1.0.2t (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>OpenSSL 1.0.2t (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>OpenSSL 1.0.2u (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 1.0.2u (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.0.2u (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.0.2u (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.1.0L (32-bit) (<code>C:\OpenSSL-v11-Win32\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.1.0L (64-bit) (<code>C:\OpenSSL-v11-Win64\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.1.1d (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -1010,9 +995,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>InnoSetup 6.0.2 Unicode (<code>C:\Program Files (x86)\Inno Setup 6</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Coverity Scan 2019.03</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Yarn 1.9.4</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Yarn 1.16.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Yarn 1.21.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Yarn 1.21.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>vcpkg 2019.09.12-nohash</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Octopus Tools 6.2.3</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Octopus Tools 6.17.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -1033,15 +1016,16 @@ title: Software pre-installed on Windows build VMs
     </tr>
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox 62</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Firefox 70</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 72</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Chrome 69</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Chrome 78</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 79</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Edge 79.0.309.65</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
         <th id="selenium-testing" class="section" colspan="5">Selenium testing</th>
     </tr>
     <tr><td>Chrome Web Driver 2.41</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Chrome Web Driver 78</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome Web Driver 79</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.14</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.150.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox Web Driver (geckodriver) 0.21.0</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
@@ -1062,7 +1046,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>PostgreSQL 10.4 x64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>PostgreSQL 10.6 x64</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 11.1 x64</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>PostgreSQL 12.1 x64</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 12.1 x64</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
