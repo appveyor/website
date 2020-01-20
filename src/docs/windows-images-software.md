@@ -737,7 +737,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.12.6: <code>C:\Qt\5.12.6</code>
+            <li>Qt 5.12.6: <code>C:\Qt\5.12.6</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.6</code> for backward compatibility)
                 <ul>
                 <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.6\mingw73_64</code></li>
                 <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.6\mingw73_32</code></li>
@@ -752,7 +752,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.12.6: <code>C:\Qt\5.12.6</code>
+            <li>Qt 5.12.6: <code>C:\Qt\5.12.6</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.6</code> for backward compatibility)
                 <ul>
                 <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.6\mingw73_64</code></li>
                 <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.6\mingw73_32</code></li>
