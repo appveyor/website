@@ -47,7 +47,7 @@ Run the following in PowerShell console:
 msiexec /i AppveyorDeploymentAgent.msi /quiet /qn /norestart /log install.log ENVIRONMENT_ACCESS_KEY=<your_access_key> DEPLOYMENT_GROUP=<your_deployment_group>
 ```
 
-Replace `<your_access_key>` and `<your_deployment_group>` with your environment access key and your your deployment group respectively.
+Replace `<your_access_key>` and `<your_deployment_group>` with your environment access key and your deployment group respectively.
 
 
 ## What artifacts can be deployed
