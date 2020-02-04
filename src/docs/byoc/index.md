@@ -27,7 +27,7 @@ Some of the reasons you may want to run builds on your infrastructure:
 
 AppVeyor really shines at running builds on dynamically provisioned VMs. While AppVeyor also supports running builds on a host directly (aka "self-hosted agent") creating VMs on demand has a number of advantages:
 
-* **Significant savings on a monthly cloud bill**. Build VM is created for the duration of a build job and immediately deleted when this build is over. Major cloud providers have per-minute pricing and as a result you pay only for the "clean" build time. With a "self-hosted agent" approach a VM with an agent is running 24x7 waiting for your builds, consuming electricity or adding to your monthly bill. You are not going to run expensive GPU-enabled instance for 24x7x265, aren't you?
+* **Significant savings on a monthly cloud bill**. Build VM is created for the duration of a build job and immediately deleted when this build is over. Major cloud providers have per-minute pricing and as a result you pay only for the "clean" build time. With a "self-hosted agent" approach a VM with an agent is running 24x7 waiting for your builds, consuming electricity or adding to your monthly bill. You are not going to run expensive GPU-enabled instance for 24x7x365, aren't you?
 * **Pristine environment on every build**. Build VMs are provisioned from an image or snapshot and never reused for the consequent builds. You get clean and predictable environment every time you run a new build. With "self-hosted agent" approach concurrent builds are running directly on the host operating system, so they interfere, produce leftovers (files, databases, configs, registry settings) or could completely kill the host machine. It makes you think about additional guard/synchronizing/cleanup code in your builds thus wasting your time.
 * **Multiple parallelism**. A single build can be run on hundreds of VMs simultaneously for a shorter period of time. Say, you have a suite with 1,000 tests and it takes 1 hour on a single core to run them all. You can run the suite on 10 single-core VMs in parallel and reduce the overall test time to 6 minutes by paying the same amount to the cloud provider!
 
@@ -35,7 +35,7 @@ AppVeyor really shines at running builds on dynamically provisioned VMs. While A
 
 One of the benefits of hosted AppVeyor service is that you get build VM with a tons of pre-installed software, curated and regularly updated by AppVeyor team. The greatest fear of running builds on your own VMs is a necessity of maintaining build VM images (the template is used to create a VM).
 
-You've been heared! BYOC is not just a feature, but it is a framework and significant part of this framework is the code helping you to create customized build VM images for all platforms and clouds we support: Azure, AWS, GCP, Hyper-V and Docker - thanks to [Packer by HashiCorp](https://www.packer.io/). All scripts and Packer templates used by BYOC framework are [open-source](https://github.com/appveyor/build-images).
+You've been heard! BYOC is not just a feature, but it is a framework and significant part of this framework is the code helping you to create customized build VM images for all platforms and clouds we support: Azure, AWS, GCP, Hyper-V and Docker - thanks to [Packer by HashiCorp](https://www.packer.io/). All scripts and Packer templates used by BYOC framework are [open-source](https://github.com/appveyor/build-images).
 
 ## Getting started
 
