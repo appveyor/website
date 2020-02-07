@@ -21,7 +21,7 @@ Custom images enable new use cases that were not possible before in a hosted CI/
 
 ## Faster builds
 
-Not only customizable images can speed up your builds. You can now run your builds in a personalized cloud with more powerful VMs than our own in-house cloud.
+Not only customizable images can speed up your builds. You can now run your builds in a personalized cloud environment with more powerful VMs than in our own in-house cloud.
 
 Out tests show that by using "Medium" instances on Google Cloud you can get 2-3 times faster builds!
 
