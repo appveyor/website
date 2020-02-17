@@ -32,6 +32,7 @@ Webhook payload body will have the following format:
    "artifacts": [
       {
          "fileName": "MyAwesomeCoreLib123.1.0.3.nupkg",
+         "name": "MyAwesomeCoreLib",
          "type": "NuGetPackage",
          "size": 3340,
          "url": "https://artifact-download-url"
