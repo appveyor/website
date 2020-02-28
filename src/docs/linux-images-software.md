@@ -67,23 +67,23 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="3">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 6.2.3</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 6.2.4</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
         <th id="docker" class="section" colspan="3">Docker</th>
     </tr>
     <tr>
-        <td>Docker 19.03.5</td><td class="yes"></td><td class="yes"></td>
+        <td>Docker 19.03.6</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Version control systems -->
     <tr>
         <th id="version-control-systems" class="section" colspan="3">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.24.1</td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.25.1</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage (Git LFS) 2.9.2</td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage (Git LFS) 2.10.0</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr><td>Mercurial 4.4.1</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Mercurial 4.5.3</td><td class="yes"></td><td class="no"></td></tr>
@@ -120,8 +120,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 2.1.300-preview2</td><td class="no"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.1 version 2.1.802</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2 version 2.2.402</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.0 version 3.0.101</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1 version 3.1.100</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.0 version 3.0.103</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1 version 3.1.102</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1 version 5.0.100-preview.2.20120.11</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Node.js -->
     <tr>
         <th id="node-js" class="section" colspan="3">Node.js</th>
@@ -138,10 +139,10 @@ The history of Ubuntu image updates can be found [here](/updates/).
         </td>
         <td class="yes"></td><td class="no"></td>
     </tr>
-    <tr><td>Node.js 13.6.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 12.14.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 13.9.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 12.16.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.15.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 10.18.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 10.19.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 9.11.2</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 8.17.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 8.10.0 (installed in system)</td><td class="yes"></td><td class="no"></td></tr>
@@ -159,8 +160,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (GVM) v1.0.22</li>
-                <li>Go 1.13.5</li>
-                <li>Go 1.12.14</li>
+                <li>Go 1.14rc1</li>
+                <li>Go 1.13.8</li>
+                <li>Go 1.12.17</li>
                 <li>Go 1.11.13</li>
                 <li>Go 1.10.8</li>
                 <li>Go 1.9.7</li>
@@ -178,14 +180,15 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>openJDK 7 1.7.0_95</li>
+                <li>openJDK 7 1.7.0_75</li>
                 <li>openJDK 8 1.8.0_212</li>
                 <li>openJDK 9 9.0.4</li>
                 <li>openJDK 10 build 10+44</li>
                 <li>openJDK 11 build 11+28</li>
                 <li>openJDK 12 12.0.2</li>
-                <li>openJDK 13</li>
-                <li>openJDK 14 early access 25</li>
+                <li>openJDK 13 13.0.2</li>
+                <li>openJDK 14</li>
+                <li>openJDK 15 early access 10</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -194,9 +197,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="mono" class="section" colspan="3">Mono</th>
     </tr>
-    <tr><td>Mono 6.6.0.161</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Visual C# compiler csc 3.4.0-beta4</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Mono C# compiler 6.6.0.161</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mono 6.8.0.105</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Visual C# compiler csc 3.5.0-beta1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mono C# compiler 6.8.0.105</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Mono ASP.NET Web Server xsp4 0.4.0.0</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Compilers -->
     <tr>
@@ -241,7 +244,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>Python 2.7.17</li>
                 <li>Python 3.4.10</li>
                 <li>Python 3.5.9</li>
-                <li>Python 3.6.9</li>
+                <li>Python 3.6.10</li>
                 <li>Python 3.7.0</li>
                 <li>Python 3.7.1</li>
                 <li>Python 3.7.2</li>
@@ -250,9 +253,10 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>Python 3.7.5</li>
                 <li>Python 3.8.0</li>
                 <li>Python 3.8.1</li>
-                <li>Python 3.9.0a2</li>
-                <li>virtualenv 16.7.8</li>
-                <li>pip 19.3.1</li>
+                <li>Python 3.8.2</li>
+                <li>Python 3.9.0a3</li>
+                <li>virtualenv 20.0.7</li>
+                <li>pip 20.0.2</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -267,33 +271,33 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="tools" class="section" colspan="3">Tools</th>
     </tr>
-    <tr><td>Yarn 1.21.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Yarn 1.22.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>p7zip 16.02 (<code>7za</code> utility is in PATH)</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>tcl 8.6.0+9</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>wget 1.17.1</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>wget 1.19.4</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>curl 7.47.0</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>curl 7.58.0</td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>AWS CLI 1.17.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.18.8</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>localstack 0.10.7</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Azure CLI-cli 2.0.79</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Google Cloud SDK 275.0.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Packer 1.5.1</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>VirtualBox 6.1.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>cmake 3.16.2</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure CLI-cli 2.1.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Google Cloud SDK 282.0.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Packer 1.5.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>VirtualBox 6.1.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>cmake 3.17.0-rc1</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
     <tr>
         <th id="web-browsers" class="section" colspan="3">Web browsers</th>
     </tr>
-    <tr><td>Firefox 72.0.1</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 79.0.3945</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 73.0.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 80.0.3987</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="3">Databases</th>
     </tr>
     <tr><td>SQL Server 2017 15.0.4003</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>PostgreSQL 12+210</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>MySQL 5.7.28</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 12+213</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MySQL 5.7.29</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MongoDB 4.2.2</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Services -->
     <tr>
