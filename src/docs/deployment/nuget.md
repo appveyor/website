@@ -10,7 +10,7 @@ NuGet deployment provider publishes artifacts of type **NuGet package** to remot
 ## Provider settings
 
 * **NuGet server URL** (`server`) - NuGet feed URL, e.g. `https://nugetserver.com/nuget/feed`. If server is not specified package will be pushed to NuGet.org.
-* **API key** (`api_key`) - your API key. Use "Encrypt configuration data" page in AppVeyor (**Settings** &rarr; **Encrypt YAML**) to encrypt your API key before saving it to `appveyor.yml`.
+* **API key** (`api_key`) - your API key. Use "Encrypt configuration data" page in AppVeyor (**Account** &rarr; **Encrypt YAML**) to encrypt your API key before saving it to `appveyor.yml`.
 * **Symbol server URL** (`symbol_server`) - Publishing URL for symbol server, If server is not specified symbol package will be pushed to SymbolSource.org.
 * **Do not publish symbol packages** (`skip_symbols`) - skip publishing of symbol packages.
 * **Artifact(s)** (`artifact`) - artifact name or filename to push. If not specified all artifacts of type **NuGet package** will be pushed. This can be a regexp, e.g. `/.*\.nupkg/`

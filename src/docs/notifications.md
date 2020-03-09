@@ -216,7 +216,7 @@ notifications:
 {% endraw %}
 ```
 
-Encrypt authentication token on "Encrypt configuration data" page in AppVeyor (**Settings** &rarr; **Encrypt YAML**).
+Encrypt authentication token on "Encrypt configuration data" page in AppVeyor (**Account** &rarr; **Encrypt YAML**).
 
 
 ## GitHub Pull Request
@@ -253,7 +253,7 @@ notifications:
 {% endraw %}
 ```
 
-Encrypt authentication token on "Encrypt configuration data" page in AppVeyor (**Settings** &rarr; **Encrypt YAML**).
+Encrypt authentication token on "Encrypt configuration data" page in AppVeyor (**Account** &rarr; **Encrypt YAML**).
 
 
 ## HipChat
@@ -314,7 +314,7 @@ notifications:
 {% endraw %}
 ```
 
-Encrypt authentication token on "Encrypt configuration data" page in AppVeyor (**Settings** &rarr; **Encrypt YAML**).
+Encrypt authentication token on "Encrypt configuration data" page in AppVeyor (**Account** &rarr; **Encrypt YAML**).
 
 
 ## Campfire
@@ -354,7 +354,7 @@ notifications:
 {% endraw %}
 ```
 
-Encrypt authentication token on "Encrypt configuration data" page in AppVeyor (**Settings** &rarr; **Encrypt YAML**).
+Encrypt authentication token on "Encrypt configuration data" page in AppVeyor (**Account** &rarr; **Encrypt YAML**).
 
 
 ## VSO Team Rooms

@@ -292,7 +292,7 @@ Once a PowerShell variable is set you access it by `$env:MY_VARIABLE`. Do not us
 
 When you work with OSS projects and you’d like to hide some sensitive data from everyone’s eyes you can use **secure variables** in `appveyor.yml`.
 
-AppVeyor generates a unique encryption key for every account. To encrypt variable values go to **Settings &rarr; Encrypt YAML** page.
+AppVeyor generates a unique encryption key for every account. To encrypt variable values go to **Account &rarr; Encrypt YAML** page.
 
 To use encrypted variable in `appveyor.yml`:
 

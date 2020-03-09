@@ -40,7 +40,7 @@ You can read more [about GitHub Apps](https://developer.github.com/apps/about-ap
 
 ## Migrating existing projects to GitHub Apps
 
-Migration to GitHub Apps for the existing AppVeyor account is a straightforward process. Login to AppVeyor and go to **Settings &rarr; Authorizations** page for the selected account.
+Migration to GitHub Apps for the existing AppVeyor account is a straightforward process. Login to AppVeyor and go to **Account &rarr; Authorizations** page for the selected account.
 
 Expand **GitHub** section and click **Revoke access** button.
 

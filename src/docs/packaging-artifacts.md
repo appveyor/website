@@ -205,7 +205,7 @@ deploy:
   folder: $(APPVEYOR_PROJECT_SLUG)/$(APPVEYOR_BUILD_VERSION)
 ```
 
-Sensitive deployment parameters can be encrypted on "Encrypt configuration data" page in AppVeyor (**Settings** &rarr; **Encrypt YAML**).
+Sensitive deployment parameters can be encrypted on "Encrypt configuration data" page in AppVeyor (**Account** &rarr; **Encrypt YAML**).
 
 > Note how variables are used in `folder` parameter - this allows for reusing YAML snippet across multiple projects while making sure project artifacts are copied to separate folders.
 

@@ -13,7 +13,7 @@ title: Set up your team
 
 ## Introduction
 
-"AppVeyor Team" page (**Settings** &rarr; **Team**) allows you adding new users or collaborators to your AppVeyor account as well as configure integration with GitHub teams.
+"AppVeyor Team" page (**Account** &rarr; **Team**) allows you adding new users or collaborators to your AppVeyor account as well as configure integration with GitHub teams.
 
 ## Definitions
 
@@ -123,7 +123,7 @@ Make sure your GitHub user has owner/admin rights on the repositories you are go
 
 #### Add yourself as co-administrator
 
-Go to "Team" page (**Settings** &rarr; **Team**) and add a new collaborator with primary email address of your GitHub account and *Administrator* role.
+Go to "Team" page (**Account** &rarr; **Team**) and add a new collaborator with primary email address of your GitHub account and *Administrator* role.
 **Sign out from AppVeyor**. Login again, but now with "GitHub" button - you will be presented with dropdown displaying two accounts - your personal
 account and {% raw %}<code>{organization}</code>{% endraw %} account you just created. Select {% raw %}<code>{organization}</code>{% endraw %} account and click "GitHub" sign in button again.
 Now you are logged in with your GitHub user and are managing "organizational" account.

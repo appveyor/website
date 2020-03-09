@@ -57,7 +57,7 @@ GitHub deployment provider allows to publish build artifacts as assets to your r
 
 We re-factored appveyor.yml configuration parser to make it work in "strict" mode,
 so you get immediate feedback if there is something wrong with project config and as a bonus
-there is a new page for validating `appveyor.yml` (**Settings** &rarr; **Validate YAML**)
+there is a new page for validating `appveyor.yml` (**Account** &rarr; **Validate YAML**)
 instead of try-and-fail process:
 
 ![Validate YAML](/assets/img/posts/2014-12-16/validate-yaml.png)

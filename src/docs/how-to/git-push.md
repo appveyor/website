@@ -47,7 +47,7 @@ The scope needed is **public_repo** for a public repository or **repo** for a pr
 
 ## Configuring build secure variable with access token
 
-Encrypt access token on "Encrypt configuration data" page in AppVeyor (**Settings** &rarr; **Encrypt YAML**) and then put it as secure variable into your `appveyor.yml`, for example:
+Encrypt access token on "Encrypt configuration data" page in AppVeyor (**Account** &rarr; **Encrypt YAML**) and then put it as secure variable into your `appveyor.yml`, for example:
 
 ```yaml
 environment:
