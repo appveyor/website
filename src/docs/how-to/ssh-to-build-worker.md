@@ -5,7 +5,7 @@ title: Accessing Linux build worker via Secure Shell (SSH)
 
 # Accessing Linux build worker via Secure Shell
 
-AppVeyor starts every build on clean dedicated build worker VM.
+AppVeyor starts every Linux and macOS build in a clean isolated VM.
 Sometimes the best way to troubleshoot a broken build is looking into Linux VM via Secure Shell (SSH).
 During the build, you have full "root" access to that VM.
 

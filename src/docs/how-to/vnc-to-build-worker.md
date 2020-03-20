@@ -1,12 +1,12 @@
 ---
 layout: docs
-title: Accessing MacOS build worker via VNC
+title: Accessing macOS build worker via VNC
 ---
 
-# Accessing MacOS build worker via VNC
+# Accessing macOS build worker via VNC
 
-AppVeyor starts every build on clean dedicated build worker VM.
-Sometimes the best way to troubleshoot a broken build is looking into MacOS VM via VNC.
+AppVeyor starts every macOS build in a clean isolated VM.
+While you can [access macOS via SSH](/docs/how-to/ssh-to-build-worker/) sometimes a better way to troubleshoot a broken build could be looking into macOS VM via VNC.
 During the build, you have full "root" access to that VM.
 
 To enable VNC access during the build, you should configure two environment variables (either in `appveyor.yml` or on **Environment** tab of project settings):
