@@ -599,7 +599,7 @@ title: Software pre-installed on Windows build VMs
         <th id="llvm" class="section" colspan="5">LLVM</th>
     </tr>
     <tr>
-        <td>LLVM 9.0.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
+        <td>LLVM 9.0.1 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
         <td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
