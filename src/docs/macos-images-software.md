@@ -169,16 +169,16 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 2.6.9</li>
-                <li>Python 2.7.17</li>
-                <li>Python 3.4.10</li>
-                <li>Python 3.5.9</li>
-                <li>Python 3.6.10</li>
-                <li>Python 3.7.5</li>
-                <li>Python 3.8.0</li>
-                <li>Python 3.8.1</li>
-                <li>Python 3.8.2rc2</li>
-                <li>Python 3.9.0a3</li>
+                <li>Python 2.6.9 (<code>~/venv2.6.9</code>)</li>
+                <li>Python 2.7.17 (<code>~/venv2.7.17</code>)</li>
+                <li>Python 3.4.10 (<code>~/venv3.4.10</code>)</li>
+                <li>Python 3.5.9 (<code>~/venv3.5.9</code>)</li>
+                <li>Python 3.6.10 (<code>~/venv3.6.10</code>)</li>
+                <li>Python 3.7.5 (<code>~/venv3.7.5</code>)</li>
+                <li>Python 3.8.0 (<code>~/venv3.8.0</code>)</li>
+                <li>Python 3.8.1 (<code>~/venv3.8.1</code>)</li>
+                <li>Python 3.8.2rc2 (<code>~/venv3.8.2</code>)</li>
+                <li>Python 3.9.0a3 (<code>~/venv3.9.0</code>)</li>
                 <li>virtualenv 16.7.5</li>
                 <li>pip 20.0.2</li>
             </ul>
