@@ -1,15 +1,6 @@
 ---
-layout: docs
-title: Job workflows
+title: 'Introducing job workflows - sequential flows, fan-in, fan-out and cancellable jobs'
 ---
-
-<!-- markdownlint-disable MD022 MD032 -->
-# Job workflows
-{:.no_toc}
-
-* Comment to trigger ToC generation
-{:toc}
-<!-- markdownlint-enable MD022 MD032 -->
 
 AppVeyor can run ["matrix" builds](/docs/build-configuration/#build-matrix) where you specify "dimensions" like `image`, `platform`, `configuration`, etc. and AppVeyor creates a build with multiple jobs testing all combinations of configured dimensions. All matrix build jobs are running in parallel (provided your account allows multiple concurrent jobs).
 
