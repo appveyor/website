@@ -17,6 +17,7 @@ AppVeyor has most popular services and database engines pre-installed on all bui
 * [SQL Server 2014](#sql-server-2014)
 * [SQL Server 2016](#sql-server-2016)
 * [SQL Server 2017](#sql-server-2017)
+* [SQL Server 2019](#sql-server-2019) (`Visual Studio 2019` image only)
 * [MySQL](#mysql)
 * [PostgreSQL](#postgresql)
 * [MongoDB](#mongodb)
@@ -160,6 +161,25 @@ To start SQL Server 2017 Developer in `appveyor.yml`:
 ```yaml
 services:
   - mssql2017
+```
+
+## SQL Server 2019
+
+The latest version of **SQL Server 2019 Developer Edition** is available on `Visual Studio 2019` image.
+
+Instance name: `SQL2019`
+
+`sa` password: `Password12!`
+
+Sample connection string:
+
+    Server=(local)\SQL2019;Database=master;User ID=sa;Password=Password12!
+
+To start SQL Server 2019 Developer in `appveyor.yml`:
+
+```yaml
+init:
+- net start MSSQL$SQL2019
 ```
 
 ### Importing your existing database
