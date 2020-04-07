@@ -55,7 +55,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <th id="operating-system" class="section" colspan="3">Operating system</th>
     </tr>
     <tr>
-        <td>Ubuntu 18.04.3 LTS (Bionic Beaver)</td>
+        <td>Ubuntu 18.04.4 LTS (Bionic Beaver)</td>
         <td class="yes"></td>
         <td class="no"></td>
     </tr>
@@ -67,20 +67,20 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="3">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 6.2.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 7.0.0</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
         <th id="docker" class="section" colspan="3">Docker</th>
     </tr>
     <tr>
-        <td>Docker 19.03.6</td><td class="yes"></td><td class="yes"></td>
+        <td>Docker 19.03.8</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Version control systems -->
     <tr>
         <th id="version-control-systems" class="section" colspan="3">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.25.1</td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.26.0</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Git Large File Storage (Git LFS) 2.10.0</td><td class="yes"></td><td class="yes"></td>
@@ -93,16 +93,14 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="net-framework" class="section" colspan="3">.NET Framework</th>
     </tr>
-    <tr><td>.NET Core 2.0.0 runtime</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.0.3 runtime</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.0.4 runtime</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.0.5 runtime</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.0.6 runtime</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.0.7 runtime</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.0.9 runtime</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.1 runtime version 2.1.14</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 2.2 runtime version 2.2.8</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core 3.0 runtime version 3.0.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.1.5</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.1.6</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.1.7</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.1.8</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.1.9</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.1.10</td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 1.1.11</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET Core SDK 1.1.12</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.0.0</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.0.2</td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.0.3</td><td class="no"></td><td class="yes"></td></tr>
@@ -116,13 +114,11 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 2.1.200</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.201</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.202</td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.1.300-rc1</td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1.300-preview2</td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1 version 2.1.802</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 2.2 version 2.2.402</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.0 version 3.0.103</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1 version 3.1.102</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1 version 5.0.100-preview.2.20120.11</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.805</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.2.402</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.0.103</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1.201</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 5.0.100-preview.4.20202.8</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Node.js -->
     <tr>
         <th id="node-js" class="section" colspan="3">Node.js</th>
@@ -139,7 +135,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         </td>
         <td class="yes"></td><td class="no"></td>
     </tr>
-    <tr><td>Node.js 13.9.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 13.12.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 12.16.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.15.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 10.19.0</td><td class="yes"></td><td class="yes"></td></tr>
@@ -160,7 +156,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (GVM) v1.0.22</li>
-                <li>Go 1.14rc1</li>
+                <li>Go 1.14</li>
                 <li>Go 1.13.8</li>
                 <li>Go 1.12.17</li>
                 <li>Go 1.11.13</li>
@@ -180,13 +176,13 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>openJDK 7 1.7.0_75</li>
-                <li>openJDK 8 1.8.0_212</li>
-                <li>openJDK 9 9.0.4</li>
+                <li>openJDK 7 (1.7.0_75)</li>
+                <li>openJDK 8 (1.8.0_212)</li>
+                <li>openJDK 9 (9.0.4)</li>
                 <li>openJDK 10 build 10+44</li>
                 <li>openJDK 11 build 11+28</li>
-                <li>openJDK 12 12.0.2</li>
-                <li>openJDK 13 13.0.2</li>
+                <li>openJDK 12 (12.0.2)</li>
+                <li>openJDK 13 (13.0.2)</li>
                 <li>openJDK 14</li>
                 <li>openJDK 15 early access 10</li>
             </ul>
@@ -225,7 +221,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>Ruby 2.4.6</li>
                 <li>Ruby 2.5.5</li>
                 <li>Ruby 2.6.3</li>
-                <li>Ruby 2.7.0-preview1</li>
+                <li>Ruby 2.7.0</li>
                 <li>Ruby HEAD 2.7.0dev</li>
                 <li>Ruby Version Manager (RVM) 1.29.9</li>
             </ul>
@@ -254,7 +250,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>Python 3.8.0 (<code>~/venv3.8.0</code>)</li>
                 <li>Python 3.8.1 (<code>~/venv3.8.1</code>)</li>
                 <li>Python 3.8.2 (<code>~/venv3.8.2</code>)</li>
-                <li>Python 3.9.0a3 (<code>~/venv3.9.0</code>)</li>
+                <li>Python 3.9.0a4 (<code>~/venv3.9.0</code>)</li>
                 <li>virtualenv 20.0.7</li>
                 <li>pip 20.0.2</li>
             </ul>
@@ -295,7 +291,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="databases" class="section" colspan="3">Databases</th>
     </tr>
-    <tr><td>SQL Server 2017 15.0.4003</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>SQL Server 2017 15.0.4033</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 12+213</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL 5.7.29</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MongoDB 4.2.2</td><td class="yes"></td><td class="yes"></td></tr>
