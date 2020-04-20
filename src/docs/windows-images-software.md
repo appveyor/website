@@ -642,6 +642,10 @@ title: Software pre-installed on Windows build VMs
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
+        <td>Perl 5.26.2 (<code>C:\Program Files\Git\usr\bin</code> in <code>PATH</code>)</td>
+        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <tr>
         <td>Perl 5.20.1.2000 x86 (<code>C:\Perl</code> in <code>PATH</code>)</td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
