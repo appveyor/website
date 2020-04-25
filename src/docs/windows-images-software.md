@@ -141,15 +141,15 @@ title: Software pre-installed on Windows build VMs
         <td>
         <ul>
             <li>
-                Docker Desktop 2.2.0.4 in experimental mode (LCOW support) with base images:
+                Docker Desktop 2.2.0.5 in experimental mode (LCOW support) with base images:
                 <ul>
-                    <li>mcr.microsoft.com/windows/servercore:ltsc2019<br/>sha256:8dcc65367c900f06ad386da6a1e25d578232f7b15981092986ade2f2fd9468b8</li>
+                    <li>mcr.microsoft.com/windows/servercore:ltsc2019<br/>sha256:2ecf1e2987b91b41f576afd7f56aa40c9ddbc691d7b6b066c64d8f27fb3070ca</li>
                     <li>mcr.microsoft.com/windows/servercore:1803<br/>sha256:3c409b7874dd466dee08e6abc6a68eb6a9586054739249cc4e460aa68140e121</li>
-                    <li>mcr.microsoft.com/windows/servercore:ltsc2016<br/>sha256:5bd97dbab1afe8d3200f5d5c974df3b0130e74e8a69fddcd427699c4c8cb5037</li>
-                    <li>mcr.microsoft.com/windows/nanoserver:1809<br/>sha256:5de6bd32bd453d60c8f549d28845552e89ad3652566e141ac82023b6ba10374d</li>
+                    <li>mcr.microsoft.com/windows/servercore:ltsc2016<br/>sha256:f4c4f31c7ee654e73bd130b89e6ad5a659f5ede52fd9eb653c9db4aa12f6e0ea</li>
+                    <li>mcr.microsoft.com/windows/nanoserver:1809<br/>sha256:28805a307e17836a84a6af231f8516110839e4840e4ab41c7d286a0ca5627ea1</li>
                     <li>mcr.microsoft.com/windows/nanoserver:1803<br/>sha256:f10f91cc7f5624a1b2434c8a625a1d376a784a0bb941ecf06e6b745ec9f337d4</li>
                     <li>mcr.microsoft.com/windows/nanoserver:sac2016<br/>sha256:2b783310e6c82de737e893abd53ae238ca56b5a96e2861558fb9a111d6691ddb</li>
-                    <li>mcr.microsoft.com/dotnet/framework/aspnet:4.8<br/>sha256:d51a7ac41ae1431d561e073d70d6248fd2934ad79b2ecb72b04303f9eda0a747</li>
+                    <li>mcr.microsoft.com/dotnet/framework/aspnet:4.8<br/>sha256:5f49640a2ef69037dae10075943838c528b4ddf5191bef79a62a8446e754d632</li>
                 </ul>
             </li>
         </ul>
@@ -184,7 +184,7 @@ title: Software pre-installed on Windows build VMs
         <th id="version-control-systems" class="section" colspan="5">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.25.0 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.26.2 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Git Large File Storage (Git LFS) 2.9.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -445,10 +445,11 @@ title: Software pre-installed on Windows build VMs
         <th id="node-js" class="section" colspan="5">Node.js</th>
     </tr>
     <tr><td colspan="5"><code>8.x</code> is default Node.js installed on build workers.</td></tr>
-    <tr><td>Node.js 13.0.0 - 13.6.0 (x86 and x64) - use <code>Current</code> alias for latest <code>13.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 12.0.0 - 12.14.1 (x86 and x64) - use <code>LTS</code> alias for latest <code>12.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 14.0.0 (x86 and x64) - use <code>Current</code> alias for latest <code>14.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 13.0.0 - 13.13.0 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 12.0.0 - 12.16.2 (x86 and x64) - use <code>LTS</code> alias for latest <code>12.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.0.0 - 11.15.0 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 10.0.0 - 10.18.1 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 10.0.0 - 10.20.1 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 9.0.0 - 9.11.2 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 8.0.0 - 8.17.0 (x86 and x64) - default on build workers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 7.0.0 - 7.10.1 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -468,10 +469,10 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-                <li>Go 1.14 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.14 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.14 x64 (<code>C:\go114</code>)</li>
-                <li>Go 1.14 x86 (<code>C:\go114-x86</code>)</li>
+                <li>Go 1.14.2 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.14.2 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.14.2 x64 (<code>C:\go114</code>)</li>
+                <li>Go 1.14.2 x86 (<code>C:\go114-x86</code>)</li>
             </ul>
         </td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
@@ -479,10 +480,10 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-                <li>Go 1.13.3 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.13.3 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.13.3 x64 (<code>C:\go113</code>)</li>
-                <li>Go 1.13.3 x86 (<code>C:\go113-x86</code>)</li>
+                <li>Go 1.13.10 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.13.10 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.13.10 x64 (<code>C:\go113</code>)</li>
+                <li>Go 1.13.10 x86 (<code>C:\go113-x86</code>)</li>
                 <li>Go 1.12.12 x64 (<code>C:\go112</code>)</li>
                 <li>Go 1.12.12 x86 (<code>C:\go112-x86</code>)</li>
                 <li>Go 1.11.13 x64 (<code>C:\go111</code>)</li>
@@ -568,14 +569,14 @@ title: Software pre-installed on Windows build VMs
                 <li>Ruby 2.2.6 x64 (<code>C:\Ruby22-x64\bin</code>)</li>
                 <li>Ruby 2.3.3 x86 (<code>C:\Ruby23\bin</code>)</li>
                 <li>Ruby 2.3.3 x64 (<code>C:\Ruby23-x64\bin</code>)</li>
-                <li>Ruby 2.4.9 x86 (<code>C:\Ruby24\bin</code>)</li>
-                <li>Ruby 2.4.9 x64 (<code>C:\Ruby24-x64\bin</code>)</li>
-                <li>Ruby 2.5.7 x86 (<code>C:\Ruby25\bin</code>)</li>
-                <li>Ruby 2.5.7 x64 (<code>C:\Ruby25-x64\bin</code>)</li>
-                <li>Ruby 2.6.5 x86 (<code>C:\Ruby26\bin</code>)</li>
-                <li>Ruby 2.6.5 x64 (<code>C:\Ruby26-x64\bin</code>)</li>
-                <li>Ruby 2.7.0 x86 (<code>C:\Ruby27\bin</code>)</li>
-                <li>Ruby 2.7.0 x64 (<code>C:\Ruby27-x64\bin</code>)</li>
+                <li>Ruby 2.4.10 x86 (<code>C:\Ruby24\bin</code>)</li>
+                <li>Ruby 2.4.10 x64 (<code>C:\Ruby24-x64\bin</code>)</li>
+                <li>Ruby 2.5.8 x86 (<code>C:\Ruby25\bin</code>)</li>
+                <li>Ruby 2.5.8 x64 (<code>C:\Ruby25-x64\bin</code>)</li>
+                <li>Ruby 2.6.6 x86 (<code>C:\Ruby26\bin</code>)</li>
+                <li>Ruby 2.6.6 x64 (<code>C:\Ruby26-x64\bin</code>)</li>
+                <li>Ruby 2.7.1 x86 (<code>C:\Ruby27\bin</code>)</li>
+                <li>Ruby 2.7.1 x64 (<code>C:\Ruby27-x64\bin</code>)</li>
             </ul>
         </td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
@@ -588,8 +589,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Python 2.6.6 x64 (<code>C:\Python26-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 2.7.15 x86 (<code>C:\Python27</code> - default in <code>PATH</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Python 2.7.15 x64 (<code>C:\Python27-x64</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Python 2.7.17 x86 (<code>C:\Python27</code> - default in <code>PATH</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 2.7.17 x64 (<code>C:\Python27-x64</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 2.7.18 x86 (<code>C:\Python27</code> - default in <code>PATH</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 2.7.18 x64 (<code>C:\Python27-x64</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.3.5 x86 (<code>C:\Python33</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.3.5 x64 (<code>C:\Python33-x64</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.4.4 x86 (<code>C:\Python34</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -651,7 +652,11 @@ title: Software pre-installed on Windows build VMs
     </tr>
     <tr>
         <td>Erlang OTP runtime 20.2 x64 installed into <code>C:\Program Files\erl9.2</code></td>
-        <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>Erlang OTP runtime 22.3 x64 installed into <code>C:\Program Files\erl10.7</code></td>
+        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <!-- LLVM -->
     <tr>
@@ -742,12 +747,12 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.14.1: <code>C:\Qt\5.14.1</code> (<code>C:\Qt\5.14</code> mapped to <code>C:\Qt\5.14.1</code> for backward compatibility)
+            <li>Qt 5.14.2: <code>C:\Qt\5.14.2</code> (<code>C:\Qt\5.14</code> mapped to <code>C:\Qt\5.14.2</code> for backward compatibility)
                 <ul>
-                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.14.1\mingw73_64</code></li>
-                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.14.1\mingw73_32</code></li>
-                <li>msvc2017 32-bit: <code>C:\Qt\5.14.1\msvc2017</code></li>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.14.1\msvc2017_64</code></li>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.14.2\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.14.2\mingw73_32</code></li>
+                <li>msvc2017 32-bit: <code>C:\Qt\5.14.2\msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.14.2\msvc2017_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -801,12 +806,12 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.12.7: <code>C:\Qt\5.12.7</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.7</code> for backward compatibility)
+            <li>Qt 5.12.8: <code>C:\Qt\5.12.8</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.8</code> for backward compatibility)
                 <ul>
-                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.7\mingw73_64</code></li>
-                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.7\mingw73_32</code></li>
-                <li>msvc2017 32-bit: <code>C:\Qt\5.12.7\msvc2017</code></li>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.12.7\msvc2017_64</code></li>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.8\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.8\mingw73_32</code></li>
+                <li>msvc2017 32-bit: <code>C:\Qt\5.12.8\msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.12.8\msvc2017_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -1102,20 +1107,20 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox 62</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Firefox 72</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Firefox 74</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 75</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Chrome 69</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chrome 79</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 80.0.3987.132</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 81.0.4044.122</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Edge 79.0.309.65</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Microsoft Edge 80.0.361.66</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Edge 81.0.416.64</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
         <th id="selenium-testing" class="section" colspan="5">Selenium testing</th>
     </tr>
     <tr><td>Chrome Web Driver 2.41</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chrome Web Driver 79</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Chrome Web Driver 80.0.3987.106</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Edge Web Driver 0.0.361.66</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Chrome Web Driver 81.0.4044.69</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Edge Web Driver 81.0.410.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.14</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.150.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox Web Driver (geckodriver) 0.21.0</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
