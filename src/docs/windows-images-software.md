@@ -639,7 +639,7 @@ title: Software pre-installed on Windows build VMs
         <th id="perl" class="section" colspan="5">Perl</th>
     </tr>
     <tr>
-        <td>Strawberry Perl 5.30 (<code>C:\Strawberry\Perl\bin</code>)</td>
+        <td>Strawberry Perl 5.30.2 (<code>C:\Strawberry\perl\bin</code>)</td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
