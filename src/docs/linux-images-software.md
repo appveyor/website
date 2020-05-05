@@ -281,6 +281,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>Packer 1.5.4</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>VirtualBox 6.1.4</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>cmake 3.17.0-rc1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>vcpkg 2020.02.04</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
     <tr>
         <th id="web-browsers" class="section" colspan="3">Web browsers</th>
