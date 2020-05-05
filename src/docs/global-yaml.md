@@ -5,7 +5,7 @@ title: Global YAML
 
 <h1>Global YAML</h1>
 
-Global YAML is a configuration in [appveyor.yml](/docs/appveyor-yml) format which is injected into all projects under the account.
+Global YAML is a configuration in [appveyor.yml](/docs/appveyor-yml) format which is injected into all projects under the account. It can be edited on **Account &rarr; Global YAML** page.
 
 Some of the use cases for global configuration:
 
