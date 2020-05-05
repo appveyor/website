@@ -3,15 +3,7 @@ layout: docs
 title: Global YAML
 ---
 
-<!-- markdownlint-disable MD022 MD032 -->
-# Global YAML
-{:.no_toc}
-
-* Comment to trigger ToC generation
-{:toc}
-<!-- markdownlint-enable MD022 MD032 -->
-
-## Use cases
+<h1>Global YAML</h1>
 
 Global YAML is a configuration in [appveyor.yml](/docs/appveyor-yml) format which is injected into all projects under the account.
 
@@ -20,6 +12,14 @@ Some of the use cases for global configuration:
 * Common environment variables for all projects;
 * Setting up debug RDP/SSH/VNC access for projects in case of failure;
 * Configuring global notifications/webhooks for all projects;
+* ...and more.
+
+<!-- markdownlint-disable MD022 MD032 -->
+{:.no_toc}
+
+* Comment to trigger ToC generation
+{:toc}
+<!-- markdownlint-enable MD022 MD032 -->
 
 ## Merging rules
 
