@@ -23,31 +23,37 @@ Some of the use cases for global configuration:
 
 ## Merging rules
 
-### Boolean values
+### Actions
 
-Boolean value set to `true` in global config overrides the value defined on project level, for example:
+Actions defined in global config are merged with actions defined in project config with global actions going first, for example:
 
 Global YAML:
 
 ```yaml
-shallow_clone: true
+init:
+- appveyor version
+- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 ```
 
 Project `appveyor.yml`:
 
 ```yaml
-shallow_clone: false # if the setting is omitted it defaults to "false"
+init:
+- ps: $env:appveyor_build_worker_image
 ```
 
 Resulting config:
 
 ```yaml
-shallow_clone: true
+init:
+- appveyor version
+- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+- ps: $env:appveyor_build_worker_image
 ```
 
 ### String values
 
-String values defined in global config overrides values defined on project level, for example:
+String values defined in project config overrides values defined in global config, for example:
 
 Global YAML:
 
@@ -67,35 +73,29 @@ Resulting config:
 
 ```yaml
 dotnet_csproj:
-  file: '**\*.*proj'
+  file: '**\*.csproj'
 ```
 
-### Lists
+### Boolean values
 
-All list elements from Global YAML are inserted in the beginning of project list in the same order, for example:
+Boolean value set to `true` in global config always overrides the value defined on project level to `true`, for example:
 
 Global YAML:
 
 ```yaml
-init:
-- appveyor version
-- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+shallow_clone: true
 ```
 
 Project `appveyor.yml`:
 
 ```yaml
-init:
-- ps: $env:appveyor_build_worker_image
+shallow_clone: false # if the setting is omitted it defaults to "false"
 ```
 
 Resulting config:
 
 ```yaml
-init:
-- appveyor version
-- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
-- ps: $env:appveyor_build_worker_image
+shallow_clone: true
 ```
 
 ## Supported configuration sections
