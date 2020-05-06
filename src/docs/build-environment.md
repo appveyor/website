@@ -87,6 +87,7 @@ IP addresses assigned to build VMs in Google data center (`us-central1` region):
 
 IP addresses assigned to build VMs in LiquidWeb data center (Lansing, MI):
 
+    67.225.164.41
     67.225.164.53
     67.225.164.54
     67.225.164.96
@@ -116,7 +117,7 @@ IP addresses assigned to build VMs in Azure data center (`West US` region):
 IP addresses of AppVeyor macOS VMs:
 
     199.38.85.75
-    207.254.41.120
+    162.221.92.98
 
 IP address of AppVeyor Cloud in Azure data center (`West US` region) - when deploying with "Environments":
 
