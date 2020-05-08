@@ -137,8 +137,9 @@ AppVeyor provides these "standard" build worker images:
     * `Visual Studio 2013`
 
 * Linux images:
-    * `Ubuntu` or `Ubuntu1804` - Ubuntu 18.04
-    * `Ubuntu1604` - Ubuntu 16.04
+    * `Ubuntu` or `Ubuntu1804` - Ubuntu 18.04 (Bionic Beaver)
+    * `Ubuntu1604` - Ubuntu 16.04 (Xenial Xerus)
+    * `Ubuntu2004` - Ubuntu 20.04 (Focal Fossa)
 
 * macOS images:
     * `macos` - macOS 10.15 "Catalina"
