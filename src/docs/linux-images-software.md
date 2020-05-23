@@ -77,12 +77,12 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="4">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 7.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 7.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
         <th id="docker" class="section" colspan="4">Docker</th>
     </tr>
-    <tr><td>Docker 19.03.8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Docker 19.03.9</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Version control systems -->
     <tr>
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
@@ -96,7 +96,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <th id="net-core" class="section" colspan="4">.NET Core</th>
     </tr>
     <tr><td>.NET Core SDK 5.0.100-preview.3 (v5.0.0-preview.3 runtime) - Preview</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1.201 (3.1.3 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1.300 (3.1.4 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103 (3.0.3 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.402 (2.2.8 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.805 (2.1.17 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -110,7 +110,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Node Version Manager (<code>nvm</code>) 0.34.0</li>
-                <li>Node.js 14.2.0</li>
+                <li>Node.js 14.3.0</li>
                 <li>Node.js 13.14.0</li>
                 <li>Node.js 12.16.3</li>
                 <li>Node.js 11.15.0</li>
@@ -254,7 +254,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="erlang" class="section" colspan="4">Erlang</th>
     </tr>
-    <tr><td>Erlang 22.3.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Erlang 22.3.4.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Tools -->
     <tr>
         <th id="tools" class="section" colspan="4">Tools</th>
@@ -264,20 +264,22 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>tcl 8.6.0+9</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>wget</td><td class="text-center">1.19.4</td><td class="text-center">1.17.1</td><td class="text-center">1.20.3</td></tr>
     <tr><td>curl</td><td class="text-center">7.58.0</td><td class="text-center">7.47.0</td><td class="text-center">7.68.0</td></tr>
-    <tr><td>AWS CLI 1.18.55</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.18.64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>localstack 0.11.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Azure CLI 2.5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Google Cloud SDK 291.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure CLI 2.6.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Google Cloud SDK 293.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Packer 1.5.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>VirtualBox 6.1.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.17.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>VirtualBox 6.1.8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.17.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>vcpkg 2020.02.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Ninja 1.8.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Gradle 4.4.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
     <tr>
         <th id="web-browsers" class="section" colspan="4">Web browsers</th>
     </tr>
-    <tr><td>Firefox 76.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 81.0.4044.138</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 76.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 83.0.4103.61</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="4">Databases</th>
