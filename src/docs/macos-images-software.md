@@ -51,35 +51,37 @@ The history of macOS image updates can be found [here](/updates/).
         <th id="operating-system" class="section" colspan="3">Operating system</th>
     </tr>
     <tr>
-        <td>macOS 10.15 "Catalina"</td>
+        <td>macOS 10.15.5 "Catalina"</td>
         <td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
-        <td>macOS 10.14 "Mojave"</td>
+        <td>macOS 10.14.6 "Mojave"</td>
         <td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
         <th id="powershell" class="section" colspan="3">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 6.2.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 7.0.1</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- Version control systems -->
     <tr>
         <th id="version-control-systems" class="section" colspan="3">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.25.0</td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.27.0</td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage (Git LFS) 2.10.0</td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage (Git LFS) 2.11.0</td><td class="yes"></td><td class="yes"></td>
     </tr>
-    <tr><td>Mercurial 5.3</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Subversion 1.13.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mercurial 5.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Subversion 1.14.0</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- XCode -->
     <tr>
         <th id="xcode" class="section" colspan="3">XCode</th>
     </tr>
+    <tr><td>XCode 11.5</td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>XCode 11.4.1</td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>XCode 11.3.1</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- .NET Framework -->
@@ -90,8 +92,8 @@ The history of macOS image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 2.1.804</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.402</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1.102</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 5.0.100-preview.2.20120.11</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1.300</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 5.0.100-preview.5</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- Node.js -->
     <tr>
@@ -104,10 +106,11 @@ The history of macOS image updates can be found [here](/updates/).
     <tr><td>Node.js 7.10.1</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 8.17.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 9.11.2</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 10.19.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 10.21.0</td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.15.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 12.16.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 13.9.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 12.18.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 13.14.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 14.4.0</td><td class="yes"></td><td class="yes"></td></tr>
 
     <!-- Java -->
     <tr>
@@ -132,9 +135,9 @@ The history of macOS image updates can be found [here](/updates/).
                 <li>Go 1.9.7</li>
                 <li>Go 1.10.8</li>
                 <li>Go 1.11.13</li>
-                <li>Go 1.12.13</li>
-                <li>Go 1.13.8</li>
-                <li>Go 1.14rc1</li>
+                <li>Go 1.12.17</li>
+                <li>Go 1.13.10</li>
+                <li>Go 1.14.2</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -144,7 +147,7 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <th id="ruby" class="section" colspan="3">Ruby</th>
     </tr>
-    <tr><td>Ruby Version Manager (<code>rvm</code>) 1.29.9<br><br>Switching between Ruby versions: <code>rvm use &lt;version&gt;</code></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Ruby Version Manager (<code>rvm</code>) 1.29.10<br><br>Switching between Ruby versions: <code>rvm use &lt;version&gt;</code></td><td class="yes"></td><td class="yes"></td></tr>
     <tr>
         <td>
             <ul>
@@ -152,10 +155,10 @@ The history of macOS image updates can be found [here](/updates/).
                 <li>Ruby 2.1.10</li>
                 <li>Ruby 2.2.10</li>
                 <li>Ruby 2.3.8</li>
-                <li>Ruby 2.4.6</li>
-                <li>Ruby 2.5.5</li>
-                <li>Ruby 2.6.3 (default)</li>
-                <li>Ruby 2.7.0-preview1</li>
+                <li>Ruby 2.4.9</li>
+                <li>Ruby 2.5.7</li>
+                <li>Ruby 2.6.5 (default)</li>
+                <li>Ruby 2.7.0</li>
                 <li>Ruby head</li>
             </ul>
         </td>
@@ -169,18 +172,15 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 2.6.9 (<code>~/venv2.6.9</code>)</li>
-                <li>Python 2.7.17 (<code>~/venv2.7.17</code>)</li>
-                <li>Python 3.4.10 (<code>~/venv3.4.10</code>)</li>
-                <li>Python 3.5.9 (<code>~/venv3.5.9</code>)</li>
-                <li>Python 3.6.10 (<code>~/venv3.6.10</code>)</li>
-                <li>Python 3.7.5 (<code>~/venv3.7.5</code>)</li>
-                <li>Python 3.8.0 (<code>~/venv3.8.0</code>)</li>
-                <li>Python 3.8.1 (<code>~/venv3.8.1</code>)</li>
-                <li>Python 3.8.2rc2 (<code>~/venv3.8.2</code>)</li>
-                <li>Python 3.9.0a3 (<code>~/venv3.9.0</code>)</li>
-                <li>virtualenv 16.7.5</li>
-                <li>pip 20.0.2</li>
+                <li>Python 2.7.18 (<code>~/venv2.7.18</code> and <code>~/venv2.7</code>)</li>
+                <li>Python 3.4.10 (<code>~/venv3.4.10</code> and <code>~/venv3.4</code>)</li>
+                <li>Python 3.5.9 (<code>~/venv3.5.9</code> and <code>~/venv3.5</code>)</li>
+                <li>Python 3.6.10 (<code>~/venv3.6.10</code> and <code>~/venv3.6</code>)</li>
+                <li>Python 3.7.7 (<code>~/venv3.7.7</code> and <code>~/venv3.7</code>)</li>
+                <li>Python 3.8.3 (<code>~/venv3.8.3</code> and <code>~/venv3.8</code>)</li>
+                <li>Python 3.9.0b1 (<code>~/venv3.9.0</code> and <code>~/venv3.9</code>)</li>
+                <li>virtualenv 20.0.21</li>
+                <li>pip 20.1.1</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td>
@@ -207,7 +207,7 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <th id="tools" class="section" colspan="3">Tools</th>
     </tr>
-    <tr><td>Brew 2.2.6</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Fastlane 2.28.3</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>curl 7.68.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Brew 2.3.0</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Fastlane 2.149.1</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>curl 7.70.0</td><td class="yes"></td><td class="yes"></td></tr>
 </table>
