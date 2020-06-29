@@ -13,7 +13,7 @@ NuGet deployment provider publishes artifacts of type **NuGet package** to remot
 * **API key** (`api_key`) - your API key. Use "Encrypt configuration data" page in AppVeyor (**Account** &rarr; **Encrypt YAML**) to encrypt your API key before saving it to `appveyor.yml`.
 * **Symbol server URL** (`symbol_server`) - Publishing URL for symbol server, If server is not specified symbol package will be pushed to SymbolSource.org.
 * **Do not publish symbol packages** (`skip_symbols`) - skip publishing of symbol packages.
-* **Artifact(s)** (`artifact`) - artifact name or filename to push. If not specified all artifacts of type **NuGet package** will be pushed. This can be a regexp, e.g. `/.*\.nupkg/`
+* **Artifact(s)** (`artifact`) - artifact name or filename to push. If not specified all artifacts of type **NuGet package** will be pushed. This can be a regexp such as `/.*\.nupkg/` (or `/.*(\.|\.s)nupkg/` to include `.snupkg` files).
 
 Configuring in `appveyor.yml`:
 
@@ -25,7 +25,7 @@ deploy:
     secure: m49OJ7+Jdt9an3jPcTukHA==
   skip_symbols: false
   symbol_server:           # remove to push symbols to SymbolSource.org
-  artifact: /.*\.nupkg/
+  artifact: /.*(\.|\.s)nupkg/
 ```
 
 Your NuGet API key should be encrypted using this tool: [https://ci.appveyor.com/tools/encrypt](https://ci.appveyor.com/tools/encrypt).
