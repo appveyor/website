@@ -114,7 +114,7 @@ title: Software pre-installed on Windows build VMs
         <td class="no"></td>
     </tr>
     <tr>
-        <td>PowerShell Core 7.0.2</td>
+        <td>PowerShell Core 7.0.1</td>
         <td class="no"></td>
         <td class="no"></td>
         <td class="no"></td>
@@ -263,7 +263,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2019" class="section" colspan="5">Visual Studio 2019</th>
     </tr>
-    <tr><td>Visual Studio Community 2019 version 16.6.3 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2019 version 16.5.5 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual Studio Community 2019 Preview version 16.4 Preview 2 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1709 (build 16299)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1803 (build 17134)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -470,12 +470,12 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-                <li>Go 1.14.4 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.14.4 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.14.4 x64 (<code>C:\go114</code>)</li>
-                <li>Go 1.14.4 x86 (<code>C:\go114-x86</code>)</li>
-                <li>Go 1.13.12 x64 (<code>C:\go113</code>)</li>
-                <li>Go 1.13.12 x86 (<code>C:\go113-x86</code>)</li>
+                <li>Go 1.14.3 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.14.3 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.14.3 x64 (<code>C:\go114</code>)</li>
+                <li>Go 1.14.3 x86 (<code>C:\go114-x86</code>)</li>
+                <li>Go 1.13.11 x64 (<code>C:\go113</code>)</li>
+                <li>Go 1.13.11 x86 (<code>C:\go113-x86</code>)</li>
             </ul>
         </td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
@@ -608,8 +608,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Python 3.7.0 x64 (<code>C:\Python37-x64</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Python 3.7.5 x86 (<code>C:\Python37</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Python 3.7.5 x64 (<code>C:\Python37-x64</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Python 3.7.8 x86 (<code>C:\Python37</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.7.8 x64 (<code>C:\Python37-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.7.7 x86 (<code>C:\Python37</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.7.7 x64 (<code>C:\Python37-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Python 3.8.0 x86 (<code>C:\Python38</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.8.0 x64 (<code>C:\Python38-x64</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.8.3 x86 (<code>C:\Python38</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -754,21 +754,6 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.15.0: <code>C:\Qt\5.15.0</code> (<code>C:\Qt\5.15</code> mapped to <code>C:\Qt\5.15.0</code> for backward compatibility)
-                <ul>
-                <li>MinGW 8.1.0 64 bit: <code>C:\Qt\5.15.0\mingw81_64</code></li>
-                <li>MinGW 8.1.0 32 bit: <code>C:\Qt\5.15.0\mingw81_32</code></li>
-                <li>msvc2019 32-bit: <code>C:\Qt\5.15.0\msvc2019</code></li>
-                <li>msvc2019 64-bit: <code>C:\Qt\5.15.0\msvc2019_64</code></li>
-                </ul>
-            </li>
-            </ul>
-        </td>
-        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
-    </tr>
-    <tr>
-        <td>
-            <ul>
             <li>Qt 5.14.2: <code>C:\Qt\5.14.2</code> (<code>C:\Qt\5.14</code> mapped to <code>C:\Qt\5.14.2</code> for backward compatibility)
                 <ul>
                 <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.14.2\mingw73_64</code></li>
@@ -828,12 +813,12 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.12.9: <code>C:\Qt\5.12.9</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.9</code> for backward compatibility)
+            <li>Qt 5.12.8: <code>C:\Qt\5.12.8</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.8</code> for backward compatibility)
                 <ul>
-                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.9\mingw73_64</code></li>
-                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.9\mingw73_32</code></li>
-                <li>msvc2017 32-bit: <code>C:\Qt\5.12.9\msvc2017</code></li>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.12.9\msvc2017_64</code></li>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.8\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.8\mingw73_32</code></li>
+                <li>msvc2017 32-bit: <code>C:\Qt\5.12.8\msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.12.8\msvc2017_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -1073,7 +1058,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>curl 7.55.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 19.00</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.17.3</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.17.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.16.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>CMake 3.12.2</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -1129,12 +1114,12 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox 62</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Firefox 72</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Firefox 77</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 76.0.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Chrome 69</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chrome 79</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 83.0.4103.116</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 83.0.4103.61</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Edge 79.0.309.65</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Microsoft Edge 83.0.478.58</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Edge 83.0.478.37</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
         <th id="selenium-testing" class="section" colspan="5">Selenium testing</th>
