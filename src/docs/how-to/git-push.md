@@ -79,7 +79,7 @@ When authenticating with access token `x-oauth-basic` is used as a stub password
 To append that line to `.git-credentials` we use the following PowerShell command:
 
 ```yaml
-ps: Add-Content "$HOME\.git-credentials" "https://$($env:access_token):x-oauth-basic@github.com`n"
+ps: Add-Content -Path "$HOME\.git-credentials" -Value "https://$($env:access_token):x-oauth-basic@github.com`n" -NoNewline
 ```
 
 **Note:** *$HOME* is an automatic variable available in powershell on Windows and Linux and is therefore cross-platform. If you currently use `cmd:` you can use *%USERPROFILE%* instead.
