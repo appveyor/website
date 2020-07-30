@@ -596,9 +596,7 @@ for:
   matrix:
     only:
       - image: Ubuntu
-
-  build_script:
-  - echo Ubuntu build script
+      - build_script: echo Ubuntu build script
 ```
 
 Also `except` syntax is supported:
