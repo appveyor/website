@@ -152,8 +152,6 @@ You can use all other environment variables substitution in file name and versio
 package_version: $(appveyor_build_version)
 ```
 
-Variables `{version}`, `{build}`, `{branch}` are shortcuts implemented specifically to use with patching. Use them exactly as described (in `{}` curly brackets).
-
 ## .NET Core `.csproj` files patching
 
 Like with [AssemblyInfo patching](#assemblyinfo-patching), AppVeyor can patch .NET Core `.csproj` files. This also applies to .NET Standard and ASP.NET Core `.csproj` files, which has the same new structure, different from classic .NET `.csproj` files. The main practical reason to patch those files is to set version to be used by **nuget packaging** of .NET Core and .NET Standard libraries (created in Visual Studio 2017, and probably later versions).
