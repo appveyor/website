@@ -128,7 +128,7 @@ providers available in each mode:
 ## Environment variables in provider settings
 
 You can use standard and custom environment variables in provider settings, for example
-you can set a remote FTP folder as `$(appveyor_build_version)\artifacts` where `$(appveyor_build_version)`
+you can set a remote FTP folder as `$(APPVEYOR_BUILD_VERSION)\artifacts` where `$(APPVEYOR_BUILD_VERSION)`
 will be replaced with the current build version.
 
 ## Pull Requests
