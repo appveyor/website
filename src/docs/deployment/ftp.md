@@ -19,7 +19,7 @@ and can work in two modes:
 
 Build artifacts are copied "as is" with preserving artifact folder structure.
 For example, if you are copying build artifacts `bin\myapp.zip` and `logs\testlog.log`
-to remote FTP folder `builds\$(appveyor_build_version)\results` both files will be copied
+to remote FTP folder `builds\$(APPVEYOR_BUILD_VERSION)\results` both files will be copied
 as `builds\<version>\results\bin\myapp.zip` and `builds\<version>\results\logs\testlog.log`
 respectively.
 

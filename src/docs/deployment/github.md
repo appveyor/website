@@ -53,8 +53,8 @@ To avoid this possible cycle, you can set `skip_tags` to true. However, you may 
 
 ## Provider settings
 
-* **Tag name** (`tag`) - Optional. If not specified build tag or version is used. You can use environment variables in tag name, for example `myproduct-v$(appveyor_build_version)`.
-* **Release name** (`release`) - Optional. The name of release. If not specified tag name is used as release name. You can use environment variables in release name, for example `product release of v$(appveyor_build_version)`.
+* **Tag name** (`tag`) - Optional. If not specified build tag or version is used. You can use environment variables in tag name, for example `myproduct-v$(APPVEYOR_BUILD_VERSION)`.
+* **Release name** (`release`) - Optional. The name of release. If not specified tag name is used as release name. You can use environment variables in release name, for example `product release of v$(APPVEYOR_BUILD_VERSION)`.
 * **Release description** (`description`) - [mandatory release description](https://help.appveyor.com/discussions/problems/2975-github-deployment). If not specified, GitHub returns `422: Unprocessable entity` error.
 * **GitHub authentication token** (`auth_token`) - OAuth token used for authentication against GitHub API. You can generate [Personal API access token](https://github.com/blog/1509-personal-api-tokens) at [https://github.com/settings/tokens](https://github.com/settings/tokens). Minimal token scope is `repo` or `public_repo` to release on private or public repositories respectively. Be sure to encrypt your token using "Encrypt configuration data" page in AppVeyor (**Account** &rarr; **Encrypt YAML**).
 * **Repository name** (`repository`) - Optional. Allows to deploy into repository other than project's one. Note that if this repository is under another owner, **GitHub authentication token** should be generated under that owner too. Use `owner/repo` format.
@@ -67,7 +67,7 @@ To avoid this possible cycle, you can set `skip_tags` to true. However, you may 
 
 ```yaml
 deploy:
-  release: myproduct-v$(appveyor_build_version)
+  release: myproduct-v$(APPVEYOR_BUILD_VERSION)
   description: 'Release description'
   provider: GitHub
   auth_token:

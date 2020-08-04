@@ -95,7 +95,7 @@ Response:
                     "name": "folder",
                     "value": {
                         "isEncrypted": false,
-                        "value": "$(appveyor_build_version)"
+                        "value": "$(APPVEYOR_BUILD_VERSION)"
                     }
                 },
                 {

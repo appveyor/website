@@ -67,7 +67,7 @@ deploy:
     secure: XMdn4xfPcYlZFYgvbytc8Q==
   service: myazure-service
   slot: production
-  deployment_label: $(appveyor_build_version)
+  deployment_label: $(APPVEYOR_BUILD_VERSION)
   artifact: myservice.cspkg
   target_profile: Cloud   # optional .cscfg configuration name to deploy with
   do_not_start_deployment: false
