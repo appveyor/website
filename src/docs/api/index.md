@@ -18,7 +18,7 @@ Samples:
 
 ## Authentication
 
-AppVeyor uses bearer token authentication. Token can be found on **API token** page under your AppVeyor account.
+AppVeyor uses bearer token authentication. Token can be found on [API token page](https://ci.appveyor.com/api-keys) under your AppVeyor account.
 
 Token must be set in `Authorization` header of every request to AppVeyor REST API:
 
