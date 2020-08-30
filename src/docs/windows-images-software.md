@@ -474,7 +474,7 @@ title: Software pre-installed on Windows build VMs
                 <li>Go 1.15 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
                 <li>Go 1.15 x86 (<code>C:\go-x86</code>)</li>
                 <li>Go 1.15 x64 (<code>C:\go115</code>)</li>
-                <li>Go 1.15 x86 (<code>C:\go115-x86</code>)</li>                
+                <li>Go 1.15 x86 (<code>C:\go115-x86</code>)</li>
                 <li>Go 1.14.7 x64 (<code>C:\go114</code>)</li>
                 <li>Go 1.14.7 x86 (<code>C:\go114-x86</code>)</li>
                 <li>Go 1.13.15 x64 (<code>C:\go113</code>)</li>
@@ -745,7 +745,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>Cygwin 3.1.7 x64 (<code>C:\cygwin64</code>)</td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
-    </tr>    
+    </tr>
     <tr>
         <td>Cygwin 3.0.7 (<code>C:\cygwin</code>)</td>
         <td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
