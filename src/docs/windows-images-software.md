@@ -171,7 +171,8 @@ title: Software pre-installed on Windows build VMs
             <li>
                 Windows Subsystem for Linux Distributions:
                 <ul>
-                <li>Ubuntu-18.04 (Default)</li>
+                <li>Ubuntu-20.04 (Default)</li>
+                <li>Ubuntu-18.04</li>
                 <li>Ubuntu-16.04</li>
                 <li>openSUSE-42</li>
                 </ul>
@@ -263,7 +264,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2019" class="section" colspan="5">Visual Studio 2019</th>
     </tr>
-    <tr><td>Visual Studio Community 2019 version 16.6.5 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2019 version 16.7.2 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual Studio Community 2019 Preview version 16.4 Preview 2 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1709 (build 16299)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1803 (build 17134)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -470,12 +471,14 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-                <li>Go 1.14.6 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.14.6 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.14.6 x64 (<code>C:\go114</code>)</li>
-                <li>Go 1.14.6 x86 (<code>C:\go114-x86</code>)</li>
-                <li>Go 1.13.14 x64 (<code>C:\go113</code>)</li>
-                <li>Go 1.13.14 x86 (<code>C:\go113-x86</code>)</li>
+                <li>Go 1.15 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.15 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.15 x64 (<code>C:\go115</code>)</li>
+                <li>Go 1.15 x86 (<code>C:\go115-x86</code>)</li>
+                <li>Go 1.14.7 x64 (<code>C:\go114</code>)</li>
+                <li>Go 1.14.7 x86 (<code>C:\go114-x86</code>)</li>
+                <li>Go 1.13.15 x64 (<code>C:\go113</code>)</li>
+                <li>Go 1.13.15 x86 (<code>C:\go113-x86</code>)</li>
             </ul>
         </td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
@@ -608,8 +611,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Python 3.7.0 x64 (<code>C:\Python37-x64</code>)</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Python 3.7.5 x86 (<code>C:\Python37</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Python 3.7.5 x64 (<code>C:\Python37-x64</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Python 3.7.8 x86 (<code>C:\Python37</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.7.8 x64 (<code>C:\Python37-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.7.9 x86 (<code>C:\Python37</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.7.9 x64 (<code>C:\Python37-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Python 3.8.0 x86 (<code>C:\Python38</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.8.0 x64 (<code>C:\Python38-x64</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.8.5 x86 (<code>C:\Python38</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -736,12 +739,20 @@ title: Software pre-installed on Windows build VMs
         <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
+        <td>Cygwin 3.1.7 (<code>C:\cygwin</code>)</td>
+        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>Cygwin 3.1.7 x64 (<code>C:\cygwin64</code>)</td>
+        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <tr>
         <td>Cygwin 3.0.7 (<code>C:\cygwin</code>)</td>
-        <td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
         <td>Cygwin 3.0.7 x64 (<code>C:\cygwin64</code>)</td>
-        <td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
         <td>MSYS2 (<code>C:\msys64</code>)</td>
@@ -1073,7 +1084,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>curl 7.55.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 19.00</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.18.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.18.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.16.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>CMake 3.12.2</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -1101,7 +1112,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>OpenSSL 1.1.1d (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.1.1e (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.1.1e (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>NSIS 3.04 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>NSIS 3.06.1 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>NSIS 3.04 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>InnoSetup 6.0.2 Unicode (<code>C:\Program Files (x86)\Inno Setup 6</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
@@ -1131,20 +1143,20 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox 62</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Firefox 72</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Firefox 78</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 79</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Chrome 69</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chrome 79</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 84.0.4147.89</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 85.0.4183.83</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Edge 79.0.309.65</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Microsoft Edge 84.0.522.44</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Edge 85.0.564.41</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
         <th id="selenium-testing" class="section" colspan="5">Selenium testing</th>
     </tr>
     <tr><td>Chrome Web Driver 2.41</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chrome Web Driver 79</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Chrome Web Driver 84.0.4147.30</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Edge Web Driver 84.0.522.44</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Chrome Web Driver 85.0.4183.83</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Edge Web Driver 85.0.564.41</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.14</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.150.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox Web Driver (geckodriver) 0.21.0</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
