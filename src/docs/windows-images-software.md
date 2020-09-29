@@ -185,10 +185,7 @@ title: Software pre-installed on Windows build VMs
         <th id="version-control-systems" class="section" colspan="5">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.28.0 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
-    </tr>
-    <tr>
-        <td>Git 2.26.2 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
+        <td>Git 2.26.2 (x64) (with <code>git config --global core.autocrlf input</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Git Large File Storage (Git LFS) 2.12.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
