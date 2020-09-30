@@ -7,14 +7,14 @@
   "homepage": "https://www.appveyor.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/appveyor/website.git"
+    "url": "git+https://github.com/appveyor/website.git",
   },
   "bugs": {
     "url": "https://github.com/appveyor/website/issues"
   },
   "license": "MIT",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
   },
   "dependencies": {
     "grunt": "^1.0.1",
@@ -40,6 +40,6 @@
     "time-grunt": "^1.4.0"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=8",
   }
 }
