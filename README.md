@@ -24,6 +24,6 @@
 
 The `staging` branch is published to <https://appveyor-staging.azurewebsites.net>.
 
-### TODO:
+### TO DO (errors):
 
-* Fix HTML errors due to duplicate IDs in /updates/
+* Fix HTML errors due to duplicate IDs in /updates/nn
