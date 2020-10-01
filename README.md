@@ -1,10 +1,12 @@
-# The source code of <https://www.appveyor.com/>
+# The source code of an Amazing Website:
+</br>
+<a href="https://www.appveyor.com/> Click to View Website</a>
 
 [![Build status](https://ci.appveyor.com/api/projects/status/a8s3e1pd8070x2y9/branch/master?svg=true)](https://ci.appveyor.com/project/AppVeyor-Website/website)
 [![dependencies Status](https://david-dm.org/appveyor/website/status.svg)](https://david-dm.org/appveyor/website)
 
 
-## Getting started
+## Getting started:-
 
 * Install [Node.js](https://nodejs.org/download/)
 * Install grunt: `npm install -g grunt-cli`
@@ -20,7 +22,7 @@
 * Run `gem install bundle` and then `bundle install`
 * Run `grunt build` to build the static site, `grunt` to build and watch for changes (`http://localhost:4000/`)
 
-## Staging
+## Staging:
 
 The `staging` branch is published to <https://appveyor-staging.azurewebsites.net>.
 
