@@ -6,10 +6,10 @@
 
 ## Getting started
 
-* Install [Node.js](https://nodejs.org/download/)
-* Install grunt: `npm install -g grunt-cli`
-* Install the Node.js dependencies via npm: `npm install`
-* Install Ruby and Ruby DevKit; make sure you select add Ruby to `PATH`, and then run:
+* INSTALL [Node.js](https://nodejs.org/download/)
+* INSTALL grunt: `npm install -g grunt-cli`
+* INSTALL the Node.js dependencies via npm: `npm install`
+* INSTALL Ruby and Ruby DevKit; make sure you select add Ruby to `PATH`, and then run:
 
     ```shell
     cd C:\RubyDevKit
@@ -20,7 +20,7 @@
 * Run `gem install bundle` and then `bundle install`
 * Run `grunt build` to build the static site, `grunt` to build and watch for changes (`http://localhost:4000/`)
 
-## Staging
+## STAGING
 
 The `staging` branch is published to <https://appveyor-staging.azurewebsites.net>.
 
