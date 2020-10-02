@@ -1,10 +1,11 @@
-# The source code of <https://www.appveyor.com/>
+# The Source Code
+<https://www.appveyor.com/>
 
 [![Build status](https://ci.appveyor.com/api/projects/status/a8s3e1pd8070x2y9/branch/master?svg=true)](https://ci.appveyor.com/project/AppVeyor-Website/website)
 [![dependencies Status](https://david-dm.org/appveyor/website/status.svg)](https://david-dm.org/appveyor/website)
 
 
-## Getting started
+## Getting Started
 
 * Install [Node.js](https://nodejs.org/download/)
 * Install grunt: `npm install -g grunt-cli`
@@ -24,6 +25,6 @@
 
 The `staging` branch is published to <https://appveyor-staging.azurewebsites.net>.
 
-### TODO:
+### TODO:-
 
 * Fix HTML errors due to duplicate IDs in /updates/
