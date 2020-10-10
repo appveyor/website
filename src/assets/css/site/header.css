@@ -26,6 +26,16 @@
     border-top: solid 1px #423535;
 }
 
+/* mobile menu toggle button */
+.top-bar:not(.expanded) .toggle-topbar.menu-icon a span::after {
+    background-color: #fff;
+    height: 0.1px;
+}
+.top-bar .toggle-topbar.menu-icon a span::after {
+    background-color: #888;
+    height: 0.1px;
+}
+
 /* expanded menu on mobile phone */
 .top-bar.expanded .title-area {
     background-color: #3a2f2f;
