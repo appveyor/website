@@ -31,7 +31,7 @@
     background-color: #fff;
     height: 0.1px;
 }
-.top-bar .toggle-topbar.menu-icon a span::after {
+.top-bar .toggle-topbar.menu-icon a span:not(.show-for-sr)::after {
     background-color: #888;
     height: 0.1px;
 }
