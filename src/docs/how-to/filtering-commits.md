@@ -97,17 +97,7 @@ only_commits:
 
 ### Skip commits
 
-`skip_commits.files` allows skipping AppVeyor build if **all of the files** modified in push's **head commit** match *any* of the file matching rules (`AND` logic applied to multiple values):
-
-```yaml
-skip_commits:
-  files:
-    - dir/*
-    - dir/*.md
-    - full/path.txt
-    - another/dir/here/
-    - '**/*.html'
-```
+`skip_commits.files` allows skipping AppVeyor build if **all of the files** modified in push's **head commit** match **any** of the file matching rules.
 
 For example, if `appveyor.yml` contains the following rules:
 
@@ -118,13 +108,13 @@ skip_commits:
     - '**/*.html'
 ```
 
-and push commit modified two files: `docs/index.md` and `project-A/mysolution.sln` the build will be started as there is no rule matching `project-A/mysolution.sln`.
+and the pushed commit modified two files: `docs/index.md` and `project-A/mysolution.sln`, the build will be started. As there is no rule matching `project-A/mysolution.sln`.
 
-For the same set of rules commit modifying `docs/index.md` and `site/views/index.html` files won't start a build as both files match their respective rules.
+For the same set of rules a commit modifying `docs/index.md` and `site/views/index.html` won't start a build. As both files match their respective rules.
 
 ### Include commits
 
-`only_commits.files` allows starting a new AppVeyor build if only **some of the files** modified in push's **head commit** match their respective rules (`OR` logic applied to multiple values):
+`only_commits.files` allows starting a new AppVeyor build if **any file** modified in the push's **head commit** matches **any** of the file matching rules:
 
 For example `appveyor.yml` contains these rules:
 
@@ -135,7 +125,7 @@ only_commits:
     - Project-B/
 ```
 
-which means the build will be started only if one of the modified files was inside either `Project-A` or `Project-B` folder.
+Which means the build will be started only if one of the modified files was inside either the `Project-A` or `Project-B` folder.
 
 
 ### File matching rules
@@ -149,10 +139,10 @@ which means the build will be started only if one of the modified files was insi
 
 Notes:
 
-* both `\` and `/` slashes are allowed.
-* surround value with single quotes if starts from `*`, e.g. `'*.txt'`
+* both `\` and `/` slashes are allowed as directory separators.
+* surround a value with single quotes if it starts with a `*`, e.g. `'*.txt'`
 
-The following example triggers new build for changes in `src\ProjectA` folder only:
+The following example triggers a new build for changes in the `src\ProjectA` folder only:
 
 ```yaml
 only_commits:
