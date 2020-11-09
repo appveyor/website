@@ -100,6 +100,7 @@ IP addresses assigned to build VMs in LiquidWeb data center (Lansing, MI):
     67.225.165.193
     67.225.165.198
     67.225.165.200
+    67.225.165.215
 
 IP addresses assigned to build VMs in AWS data center (`US West (Oregon)` region):
 
