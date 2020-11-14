@@ -114,7 +114,7 @@ title: Software pre-installed on Windows build VMs
         <td class="no"></td>
     </tr>
     <tr>
-        <td>PowerShell Core 7.0.3</td>
+        <td>PowerShell Core 7.1.0</td>
         <td class="no"></td>
         <td class="no"></td>
         <td class="no"></td>
@@ -267,7 +267,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2019" class="section" colspan="5">Visual Studio 2019</th>
     </tr>
-    <tr><td>Visual Studio Community 2019 version 16.7.6 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2019 version 16.8.1 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Visual Studio Community 2019 Preview version 16.8 Preview 5 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1709 (build 16299)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1803 (build 17134)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -421,7 +421,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.2.402</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.1.202</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1.403</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1.404</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET 5 SDK 5.0.100</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="5">Silverlight</th>
@@ -475,12 +476,12 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-                <li>Go 1.15.3 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.15.3 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.15.3 x64 (<code>C:\go115</code>)</li>
-                <li>Go 1.15.3 x86 (<code>C:\go115-x86</code>)</li>
-                <li>Go 1.14.10 x64 (<code>C:\go114</code>)</li>
-                <li>Go 1.14.10 x86 (<code>C:\go114-x86</code>)</li>
+                <li>Go 1.15.4 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.15.4 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.15.4 x64 (<code>C:\go115</code>)</li>
+                <li>Go 1.15.4 x86 (<code>C:\go115-x86</code>)</li>
+                <li>Go 1.14.11 x64 (<code>C:\go114</code>)</li>
+                <li>Go 1.14.11 x86 (<code>C:\go114-x86</code>)</li>
                 <li>Go 1.13.15 x64 (<code>C:\go113</code>)</li>
                 <li>Go 1.13.15 x86 (<code>C:\go113-x86</code>)</li>
             </ul>
@@ -534,6 +535,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>JDK 12 (x64) (<code>C:\Program Files\Java\jdk12</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>JDK 13 (x64) (<code>C:\Program Files\Java\jdk13</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>JDK 14 (x64) (<code>C:\Program Files\Java\jdk14</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>JDK 15 (x64) (<code>C:\Program Files\Java\jdk15</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Maven 3.5.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Maven 3.6.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Mono -->
@@ -679,7 +681,7 @@ title: Software pre-installed on Windows build VMs
         <th id="llvm" class="section" colspan="5">LLVM</th>
     </tr>
     <tr>
-        <td>LLVM 10.0.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
+        <td>LLVM 11.0.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
