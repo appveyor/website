@@ -847,12 +847,12 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.12.9: <code>C:\Qt\5.12.9</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.9</code> for backward compatibility)
+            <li>Qt 5.12.10: <code>C:\Qt\5.12.10</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.10</code> for backward compatibility)
                 <ul>
-                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.9\mingw73_64</code></li>
-                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.9\mingw73_32</code></li>
-                <li>msvc2017 32-bit: <code>C:\Qt\5.12.9\msvc2017</code></li>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.12.9\msvc2017_64</code></li>
+                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.10\mingw73_64</code></li>
+                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.10\mingw73_32</code></li>
+                <li>msvc2017 32-bit: <code>C:\Qt\5.12.10\msvc2017</code></li>
+                <li>msvc2017 64-bit: <code>C:\Qt\5.12.10\msvc2017_64</code></li>
                 </ul>
             </li>
             </ul>
