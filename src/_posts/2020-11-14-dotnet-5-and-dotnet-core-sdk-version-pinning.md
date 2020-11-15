@@ -8,7 +8,7 @@ If your project does not have [global.json](https://docs.microsoft.com/en-us/dot
 
 To build your projects with the latest .NET Core 3.1 add `global.json` to the root of project repository (or working folder from which `dotnet` or `msbuild` commands are run) with the following contents:
 
-```
+```json
 {
   "sdk": {
     "version": "3.1.102",
