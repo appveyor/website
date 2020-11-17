@@ -77,26 +77,26 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="4">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 7.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 7.1.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
         <th id="docker" class="section" colspan="4">Docker</th>
     </tr>
-    <tr><td>Docker 19.03.9</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Docker 19.03.13</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Version control systems -->
     <tr>
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
-    <tr><td>Git 2.26.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Git Large File Storage (Git LFS) 2.11.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Git 2.29.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Git Large File Storage (Git LFS) 2.12.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Mercurial</td><td class="text-center">4.5.3</td><td class="text-center">4.4.1</td><td class="text-center">5.3.1</td></tr>
     <tr><td>Subversion</td><td class="text-center">1.9.7</td><td class="text-center">1.9.3</td><td class="text-center">1.13.0</td></tr>
     <!-- .NET Framework -->
     <tr>
         <th id="net-core" class="section" colspan="4">.NET Core</th>
     </tr>
-    <tr><td>.NET Core SDK 5.0.100-preview.3 (v5.0.0-preview.3 runtime) - Preview</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1.300 (3.1.4 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 5.0.100 (v5.0.0 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1.404 (3.1.10 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103 (3.0.3 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.402 (2.2.8 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.805 (2.1.17 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -110,11 +110,12 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Node Version Manager (<code>nvm</code>) 0.34.0</li>
-                <li>Node.js 14.3.0</li>
+                <li>Node.js 15.2.0</li>
+                <li>Node.js 14.15.0</li>
                 <li>Node.js 13.14.0</li>
-                <li>Node.js 12.16.3</li>
+                <li>Node.js 12.19.0</li>
                 <li>Node.js 11.15.0</li>
-                <li>Node.js 10.20.1</li>
+                <li>Node.js 10.23.0</li>
                 <li>Node.js 9.11.2</li>
                 <li>Node.js 8.17.0 (default)</li>
                 <li>Node.js 7.10.1</li>
@@ -132,14 +133,16 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
+                <li>5.15.1 in <code>$HOME/Qt/5.15.1/gcc_64/bin</code></li>
                 <li>5.14.2 in <code>$HOME/Qt/5.14.2/gcc_64/bin</code></li>
-                <li>5.12.8 in <code>$HOME/Qt/5.12.8/gcc_64/bin</code></li>
+                <li>5.12.10 in <code>$HOME/Qt/5.12.10/gcc_64/bin</code></li>
             </ul>
             <p>Links for latest and major versions:</p>
             <ul>
-                <li><code>$HOME/Qt/latest</code> &rarr; <code>$HOME/Qt/5.14.2</code></li>
+                <li><code>$HOME/Qt/latest</code> &rarr; <code>$HOME/Qt/5.15.1</code></li>
+                <li><code>$HOME/Qt/5.15</code> &rarr; <code>$HOME/Qt/5.15.1</code></li>
                 <li><code>$HOME/Qt/5.14</code> &rarr; <code>$HOME/Qt/5.14.2</code></li>
-                <li><code>$HOME/Qt/5.12</code> &rarr; <code>$HOME/Qt/5.12.8</code></li>
+                <li><code>$HOME/Qt/5.12</code> &rarr; <code>$HOME/Qt/5.12.10</code></li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -152,8 +155,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (<code>gvm</code>) v1.0.22</li>
-                <li>Go 1.14.2</li>
-                <li>Go 1.13.10</li>
+                <li>Go 1.15.5</li>
+                <li>Go 1.14.12</li>
+                <li>Go 1.13.15</li>
                 <li>Go 1.12.17</li>
                 <li>Go 1.11.13</li>
                 <li>Go 1.10.8</li>
@@ -172,7 +176,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>OpenJDK 15 early access 10</li>
+                <li>OpenJDK 15</li>
                 <li>OpenJDK 14</li>
                 <li>OpenJDK 13 (13.0.2)</li>
                 <li>OpenJDK 12 (12.0.2)</li>
@@ -195,6 +199,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="compilers" class="section" colspan="4">Compilers</th>
     </tr>
+    <tr><td>LLVM (Clang) 11.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>LLVM (Clang) 10.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>LLVM (Clang) 9.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 9.3.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -236,11 +241,11 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 3.9.0a6 (<code>$HOME/venv3.9.0</code> and <code>$HOME/venv3.9</code>)</li>
-                <li>Python 3.8.2 (<code>$HOME/venv3.8.2</code> and <code>$HOME/venv3.8</code>)</li>
-                <li>Python 3.7.7 (<code>$HOME/venv3.7.7</code> and <code>$HOME/venv3.7</code>)</li>
-                <li>Python 3.6.10 (<code>$HOME/venv3.6.10</code> and <code>$HOME/venv3.6</code>)</li>
-                <li>Python 3.5.9 (<code>$HOME/venv3.5.9</code> and <code>$HOME/venv3.5</code>)</li>
+                <li>Python 3.9.0 (<code>$HOME/venv3.9.0</code> and <code>$HOME/venv3.9</code>)</li>
+                <li>Python 3.8.6 (<code>$HOME/venv3.8.6</code> and <code>$HOME/venv3.8</code>)</li>
+                <li>Python 3.7.9 (<code>$HOME/venv3.7.9</code> and <code>$HOME/venv3.7</code>)</li>
+                <li>Python 3.6.12 (<code>$HOME/venv3.6.12</code> and <code>$HOME/venv3.6</code>)</li>
+                <li>Python 3.5.10 (<code>$HOME/venv3.5.10</code> and <code>$HOME/venv3.5</code>)</li>
                 <li>Python 3.4.10 (<code>$HOME/venv3.4.10</code> and <code>$HOME/venv3.4</code>)</li>
                 <li>Python 2.7.18 (<code>$HOME/venv2.7.18</code> and <code>$HOME/venv2.7</code>)</li>
                 <li>Python 2.6.9 (<code>$HOME/venv2.6.9</code> and <code>$HOME/venv2.6</code>)</li>
@@ -264,13 +269,13 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>tcl 8.6.0+9</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>wget</td><td class="text-center">1.19.4</td><td class="text-center">1.17.1</td><td class="text-center">1.20.3</td></tr>
     <tr><td>curl</td><td class="text-center">7.58.0</td><td class="text-center">7.47.0</td><td class="text-center">7.68.0</td></tr>
-    <tr><td>AWS CLI 1.18.64</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.18.178</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>localstack 0.11.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Azure CLI 2.6.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure CLI 2.14.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Google Cloud SDK 293.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Packer 1.5.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>VirtualBox 6.1.8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.17.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Packer 1.6.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>VirtualBox 6.1.16</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.18.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>vcpkg 2020.02.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Ninja 1.8.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Gradle 4.4.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -284,7 +289,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="databases" class="section" colspan="4">Databases</th>
     </tr>
-    <tr><td>SQL Server 2017 15.0.4033</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>SQL Server 2017 15.0.4033</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 12+213</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL</td><td class="text-center">5.7.30</td><td class="text-center">5.7.30</td><td class="text-center">8.0.20</td></tr>
     <tr><td>MongoDB 4.2.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
