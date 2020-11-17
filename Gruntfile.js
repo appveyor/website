@@ -282,7 +282,8 @@ module.exports = function(grunt) {
         htmllint: {
             options: {
                 ignore: [
-                    'Consider using the "h1" element as a top-level heading only (all "h1" elements are treated as top-level headings by many screen readers and other tools).'
+                    'Consider using the "h1" element as a top-level heading only (all "h1" elements are treated as top-level headings by many screen readers and other tools).',
+                    'This document appears to be written in French but the “html” start tag has “lang="en"”. Consider using “lang="fr"” (or variant) instead.'
                 ]
             },
             src: [
