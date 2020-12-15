@@ -452,7 +452,7 @@ title: Software pre-installed on Windows build VMs
         <th id="node-js" class="section" colspan="5">Node.js</th>
     </tr>
     <tr><td colspan="5"><code>8.x</code> is default Node.js installed on build workers.</td></tr>
-    <tr><td>Node.js 15.0.0 (x86 and x64) - use <code>Current</code> alias for latest <code>15.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>    
+    <tr><td>Node.js 15.0.0 (x86 and x64) - use <code>Current</code> alias for latest <code>15.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 14.15.1 (x86 and x64) - use <code>LTS</code> alias for latest <code>14.x</code> release</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 13.0.0 - 13.14.0 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 12.0.0 - 12.20.0 (x86 and x64)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -783,7 +783,7 @@ title: Software pre-installed on Windows build VMs
             </ul>
         </td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
-    </tr>    
+    </tr>
     <tr>
         <td>
             <ul>
