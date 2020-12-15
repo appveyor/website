@@ -787,7 +787,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 5.15.2: <code>C:\Qt\5.15.1</code> (<code>C:\Qt\5.15</code> mapped to <code>C:\Qt\5.15.2</code> for backward compatibility)
+            <li>Qt 5.15.2: <code>C:\Qt\5.15.2</code> (<code>C:\Qt\5.15</code> mapped to <code>C:\Qt\5.15.2</code> for backward compatibility)
                 <ul>
                 <li>MinGW 8.1.0 64 bit: <code>C:\Qt\5.15.2\mingw81_64</code></li>
                 <li>MinGW 8.1.0 32 bit: <code>C:\Qt\5.15.2\mingw81_32</code></li>
