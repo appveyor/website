@@ -1090,6 +1090,7 @@ title: Software pre-installed on Windows build VMs
             <ul>
             <li>Qt tools:
                 <ul>
+                <li>MinGW 8.1.0: <code>C:\Qt\Tools\mingw810_32</code></li>
                 <li>MinGW 7.3.0: <code>C:\Qt\Tools\mingw730_32</code></li>
                 <li>MinGW 5.3.0: <code>C:\Qt\Tools\mingw530_32</code></li>
                 <li>MinGW 4.9.2: <code>C:\Qt\Tools\mingw492_32</code></li>
@@ -1097,7 +1098,7 @@ title: Software pre-installed on Windows build VMs
             </li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Tools -->
     <tr>
