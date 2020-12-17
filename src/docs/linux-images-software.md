@@ -95,7 +95,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="net-core" class="section" colspan="4">.NET Core</th>
     </tr>
-    <tr><td>.NET Core SDK 5.0.100 (v5.0.0 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 5.0.101 (5.0.1 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.1.404 (3.1.10 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103 (3.0.3 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.402 (2.2.8 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -133,13 +133,15 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>5.15.1 in <code>$HOME/Qt/5.15.1/gcc_64/bin</code></li>
+                <li>6.0.0 in <code>$HOME/Qt/6.0.0/gcc_64/bin</code></li>
+                <li>5.15.2 in <code>$HOME/Qt/5.15.2/gcc_64/bin</code></li>
                 <li>5.14.2 in <code>$HOME/Qt/5.14.2/gcc_64/bin</code></li>
                 <li>5.12.10 in <code>$HOME/Qt/5.12.10/gcc_64/bin</code></li>
             </ul>
             <p>Links for latest and major versions:</p>
             <ul>
-                <li><code>$HOME/Qt/latest</code> &rarr; <code>$HOME/Qt/5.15.1</code></li>
+                <li><code>$HOME/Qt/6.0</code> &rarr; <code>$HOME/Qt/6.0.0</code></li>
+                <li><code>$HOME/Qt/latest</code> &rarr; <code>$HOME/Qt/5.15.2</code></li>
                 <li><code>$HOME/Qt/5.15</code> &rarr; <code>$HOME/Qt/5.15.1</code></li>
                 <li><code>$HOME/Qt/5.14</code> &rarr; <code>$HOME/Qt/5.14.2</code></li>
                 <li><code>$HOME/Qt/5.12</code> &rarr; <code>$HOME/Qt/5.12.10</code></li>
@@ -155,8 +157,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (<code>gvm</code>) v1.0.22</li>
-                <li>Go 1.15.5</li>
-                <li>Go 1.14.12</li>
+                <li>Go 1.15.6</li>
+                <li>Go 1.14.13</li>
                 <li>Go 1.13.15</li>
                 <li>Go 1.12.17</li>
                 <li>Go 1.11.13</li>
@@ -241,7 +243,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 3.9.0 (<code>$HOME/venv3.9.0</code> and <code>$HOME/venv3.9</code>)</li>
+                <li>Python 3.9.1 (<code>$HOME/venv3.9.1</code> and <code>$HOME/venv3.9</code>)</li>
                 <li>Python 3.8.6 (<code>$HOME/venv3.8.6</code> and <code>$HOME/venv3.8</code>)</li>
                 <li>Python 3.7.9 (<code>$HOME/venv3.7.9</code> and <code>$HOME/venv3.7</code>)</li>
                 <li>Python 3.6.12 (<code>$HOME/venv3.6.12</code> and <code>$HOME/venv3.6</code>)</li>
@@ -275,8 +277,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>Google Cloud SDK 293.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Packer 1.6.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>VirtualBox 6.1.16</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.18.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.19.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>vcpkg 2020.02.04</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Doxygen</td><td class="text-center">1.8.18</td><td class="text-center">1.8.17</td><td class="text-center">1.8.20</td></tr>
     <tr><td>Ninja 1.8.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Gradle 4.4.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
