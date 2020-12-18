@@ -204,13 +204,13 @@ Parameter element describes the name, default value and the places where and how
 </parameters>
 ```
 
-**Please note that for SQL connection string, both parameter name and environment variable should be named** `DefaultConnection-Web.config Connection String`. More details are in [this forum post](https://help.appveyor.com/discussions/problems/1759-webconfig-using-web-deploy) and specifically in [this comment](https://help.appveyor.com/discussions/problems/1759-webconfig-using-web-deploy#comment_36262253).
+**Please note that for SQL connection string, both parameter name and environment variable should be named** `<connectionname>-Web.config Connection String` where `<connectionname>` is the name of the connection in the Web.config file (often "DefaultConnection"). More details are in [this forum post](https://help.appveyor.com/discussions/problems/1759-webconfig-using-web-deploy) and specifically in [this comment](https://help.appveyor.com/discussions/problems/1759-webconfig-using-web-deploy#comment_36262253).
 
 When Web Deploy package is built you can open it in the explorer and see `parameters.xml` in the root:
 
 ![webdeploy-package](/assets/img/docs/deployment/web-deploy/webdeploy-package.png)
 
-Resulting `parameters.xml` combines your custom parameters and system ones such as `IIS Web Application Name`. You don’t have to set `IIS Web Application Name` parameter explicitly - AppVeyor does that for you.
+The resulting `parameters.xml` combines your custom parameters and system ones such as `IIS Web Application Name`. You don’t have to set `IIS Web Application Name` parameter explicitly - AppVeyor does that for you.
 
 Read more about defining parameters: [https://technet.microsoft.com/en-us/library/dd569084(v=ws.10).aspx](https://technet.microsoft.com/en-us/library/dd569084(v=ws.10).aspx)
 
