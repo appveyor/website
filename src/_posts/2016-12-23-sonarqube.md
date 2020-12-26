@@ -2,7 +2,7 @@
 title: SonarQube Analysis
 ---
 
-This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software Developer Lead at [RES](https://medium.com/res-software-team). Last updated and verified working March 2019.
+This is a guest post by [Cedd Burge](https://github.com/ceddlyburge), Software Developer Lead at [RES](https://medium.com/res-software-team). Last updated and verified working December 2020.
 
 SonarQube / SonarSource analyzes code, highlights quality issues and calculates metrics such as technical debt. More information is available on [SonarSource.com](https://www.sonarsource.com/).
 
@@ -83,6 +83,16 @@ build_script:
 ```
 
 Again, you can check the results at [sonarcloud.io](https://sonarcloud.io/).
+
+It is possible that the default version of Java on the build machine is different to the one required by SonarQube, in which case [SonarQube will show an error](https://github.com/ceddlyburge/sonarqube-nemo-on-appveyor/issues/5). In this case add the correct version of Java to the path in the `build_script`, as below.
+
+```yaml
+...
+build_script:
+ - set JAVA_HOME=C:\Program Files\Java\jdk11
+ - set PATH=%JAVA_HOME%\bin;%PATH%
+...
+```
 
 ## Add a SonarQube badge to the repo
 
