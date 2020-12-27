@@ -142,7 +142,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
             <ul>
                 <li><code>$HOME/Qt/6.0</code> &rarr; <code>$HOME/Qt/6.0.0</code></li>
                 <li><code>$HOME/Qt/latest</code> &rarr; <code>$HOME/Qt/5.15.2</code></li>
-                <li><code>$HOME/Qt/5.15</code> &rarr; <code>$HOME/Qt/5.15.1</code></li>
+                <li><code>$HOME/Qt/5.15</code> &rarr; <code>$HOME/Qt/5.15.2</code></li>
                 <li><code>$HOME/Qt/5.14</code> &rarr; <code>$HOME/Qt/5.14.2</code></li>
                 <li><code>$HOME/Qt/5.12</code> &rarr; <code>$HOME/Qt/5.12.10</code></li>
             </ul>
