@@ -186,7 +186,7 @@ The history of macOS image updates can be found [here](/updates/).
     </tr>
     <!-- Qt -->
     <tr>
-        <th id="qt" class="section" colspan="4">Qt</th>
+        <th id="qt" class="section" colspan="3">Qt</th>
     </tr>
     <tr>
         <td>
@@ -205,7 +205,7 @@ The history of macOS image updates can be found [here](/updates/).
                 <li><code>$HOME/Qt/5.12</code> &rarr; <code>$HOME/Qt/5.12.10</code></li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td class="yes"></td><td class="yes"></td>
     </tr>
     <!-- Compilers -->
     <tr>
