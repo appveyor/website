@@ -124,6 +124,8 @@ IP address of AppVeyor Cloud in Azure data center (`West US` region) - when depl
 
     138.91.141.243
 
+The full list of IP addresses is maintained in a [JSON file](/ips.json) that can be used in automation scenarios.
+
 ## Build worker images
 
 *Build worker image* is a template used to provision a virtual machine for your build. Physical implementation of the template depends on the build cloud platform
