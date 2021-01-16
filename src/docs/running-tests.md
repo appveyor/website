@@ -96,13 +96,31 @@ test:
     - B
 ```
 
-Before and after test scripts:
+Test scripts:
 
 ```yaml
 # run custom scripts before tests
 before_test:
   - script 1
   - script 2
+
+# run custom scripts instead of automatic tests
+# ex.1
+test_script:
+  - echo This is my custom test script
+
+# ex.2 with Command Prompt
+test_script:
+  - custom-script-to-run-tests.cmd
+
+#ex.3 with .NET CLI
+test_script:
+  - dotnet test "{the path to test assembly}.csproj" --configuration Release--no-build
+
+#ex.4 with .NET CLI multiple and filters
+test_script:
+  - dotnet test "{test assembly path}.csproj" --configuration Release--no-build
+  - dotnet test "{test assembly path}.csproj" --configuration Release--no-build --filter "Category!=A"
 
 # run custom scripts after tests
 after_test:
