@@ -36,7 +36,7 @@ To specify the list of branches that must be ignored:
 ```yaml
 branches:
   except:
-    - /dev.*/     # You can use Regular expression to match multiple branch name(s)
+    - /dev/     # You can use Regular expression to match multiple branch name(s)
     - playground
 ```
 
@@ -51,7 +51,7 @@ branches:
   only:
     - master
     - production
-    - /v\d*\.\d*\.\d*/
+    - /v\d+\.\d+\.\d+/
 ```
 
 ## Conditional build configuration
@@ -80,7 +80,7 @@ Multiple configurations are defined as a list with `branches` section in every i
 -
   branches:
     only:
-      - /dev-.*/
+      - /dev-/
 
   configuration: Debug
   deploy:
@@ -188,7 +188,7 @@ for:
 -
   branches:
     only:
-      - /dev-.*/
+      - /dev-/
 
   environment:
     MY_VAR2: value-B
