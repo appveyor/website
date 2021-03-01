@@ -25,6 +25,20 @@ Build configured with makefiles or any scripts directly invoking compiler execut
 
 Run the following in the `appveyor.yml`:
 
+### Visual Studio 2019
+
+* For 32-bit target
+
+    ```bat
+    call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars32.bat"
+    ```
+
+* For 64-bit target
+
+    ```bat
+    call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"
+    ```
+
 ### Visual Studio 2017
 
 * For 32-bit target
