@@ -480,7 +480,7 @@ title: Software pre-installed on Windows build VMs
                 <li>Go 1.16.2 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
                 <li>Go 1.16.2 x86 (<code>C:\go-x86</code>)</li>
                 <li>Go 1.16.2 x64 (<code>C:\go116</code>)</li>
-                <li>Go 1.16.2 x86 (<code>C:\go116-x86</code>)</li>                
+                <li>Go 1.16.2 x86 (<code>C:\go116-x86</code>)</li>
                 <li>Go 1.15.10 x64 (<code>C:\go115</code>)</li>
                 <li>Go 1.15.10 x86 (<code>C:\go115-x86</code>)</li>
                 <li>Go 1.14.15 x64 (<code>C:\go114</code>)</li>
