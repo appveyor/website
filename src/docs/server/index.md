@@ -49,7 +49,7 @@ Docker is not required, but recommended! AppVeyor has 1st-class integration with
 
 ### Windows
 
-AppVeyor Server can be installed on **Windows 7 SP1 or later** and **Windows Server 2008 R2 SP1 or later**.
+AppVeyor Server can be installed on **Windows 10 or above** and **Windows Server 2016 or above**.
 
 #### Chocolatey Installation
 
