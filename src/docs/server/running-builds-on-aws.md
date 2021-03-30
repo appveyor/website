@@ -14,7 +14,7 @@ title: Running builds on Amazon Web Services
 ## Create Master VM
 
 * Login to **AWS Management Console** and select **EC2** under **Compute**.
-* Navigate to **Instances** and press **Lunch instance**.
+* Navigate to **Instances** and press **Launch instance**.
     * Choose an Amazon Machine Image (AMI). The following AMIs are tested at the moment:
         * Microsoft Windows Server 2016 Base.
         * Microsoft Windows Server 2012 R2 Base.
@@ -29,11 +29,11 @@ title: Running builds on Amazon Web Services
         * Set size at least 50Gb.
     * Press **Next: Add Tags** button (not **Review and Launch**). Add the following tag:
         * Key: name, value: MasterVm.
-    * Press **Review and Launch** and then **Lunch**.
+    * Press **Review and Launch** and then **Launch**.
     * Select existing key pair or create a new key pair in next dialog.
         * Save key pair file (`*pem` file) in secure location.
-        * Press **Lunch instances**.
-    * Press **Lunch instances** and wait until instance state for **MasterVM** instance is **running**.
+        * Press **Launch instances**.
+    * Press **Launch instances** and wait until instance state for **MasterVM** instance is **running**.
     * Press **Connect**.
         * Press **Get password** and use key pair file saved earlier to retrieve a password.
         * Press **Back** and then **Download Remote Desktop file**.
