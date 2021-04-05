@@ -13,7 +13,7 @@ title: AppVeyor Enterprise Installation Guide
 
 ## Prerequisites
 
-* Windows Server 2012 R2 or Windows Server 2016
+* Windows Server 2012 R2 or Windows Server 2016 or Windows Server 2019
 * .NET Framework 4.5.2
 
 ## Creating AppVeyor server
