@@ -13,7 +13,7 @@ title: AppVeyor Enterprise Installation Guide
 
 ## Prerequisites
 
-* Windows Server 2012 R2 or Windows Server 2016
+* Windows Server 2012 R2 or Windows Server 2016 or Windows Server 2019
 * .NET Framework 4.5.2
 
 ## Creating AppVeyor server
@@ -222,4 +222,4 @@ Close IIS Manager, and exit your RDP session.
 Now you can point your browser to `https://ci.yourcompany.com` and see the AppVeyor CI login page!
 
 Login to AppVeyor and go to **Account menu &rarr; Settings &rarr; General**.
-Change **Application public URL** to `https://ci.yourcompany.com` adn enable **Enfoce secure HTTPS connections**.
+Change **Application public URL** to `https://ci.yourcompany.com` and enable **Enfoce secure HTTPS connections**.
