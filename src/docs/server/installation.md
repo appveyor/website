@@ -222,4 +222,4 @@ Close IIS Manager, and exit your RDP session.
 Now you can point your browser to `https://ci.yourcompany.com` and see the AppVeyor CI login page!
 
 Login to AppVeyor and go to **Account menu &rarr; Settings &rarr; General**.
-Change **Application public URL** to `https://ci.yourcompany.com` and enable **Enfoce secure HTTPS connections**.
+Change **Application public URL** to `https://ci.yourcompany.com` and enable **Enforce secure HTTPS connections**.
