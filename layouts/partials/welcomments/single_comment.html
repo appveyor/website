@@ -1,0 +1,40 @@
+{{- $nestingLevelClass := (cond (gt .nestingLevel 0) (print " welcomments__nesting-level-" .nestingLevel) "") -}}
+{{- $authorHighlight := (cond (eq (index .comment "author" "role") "owner") " welcomments__comment-role-owner" "") -}}
+{{- $commentElementId := print "welcomments__comment-" (index .comment "id") -}}
+{{- $commentElementClass := print "welcomments__comment" $nestingLevelClass $authorHighlight -}}
+{{- $dateXmlSchema := index .comment "date" -}}
+{{- $formattedDate := dateFormat "January 2, 2006" $dateXmlSchema -}}
+{{- $message := index .comment "message" | markdownify -}}
+{{- $avatar := (cond (eq (index .comment "author" "avatar_url") nil) (print "https://eu.ui-avatars.com/api/?background=random&name=" (index .comment "author" "name")) (index .comment "author" "avatar_url")) -}}
+
+{{- $data := dict -}}
+{{- $data  = merge $data (dict "id" (index .comment "id")) -}}
+{{- $data  = merge $data (dict "elementId" $commentElementId) -}}
+{{- $data  = merge $data (dict "elementClassName" $commentElementClass) -}}
+{{- $data  = merge $data (dict "nestingLevel" .nestingLevel) -}}
+{{- $data  = merge $data (dict "formattedDate" $formattedDate) -}}
+{{- $data  = merge $data (dict "dateXmlSchema" $dateXmlSchema) -}}
+{{- $data  = merge $data (dict "authorName" (index .comment "author" "name")) -}}
+{{- $data  = merge $data (dict "authorWebsite" (index .comment "author" "website")) -}}
+{{- $data  = merge $data (dict "avatarUrl" $avatar) -}}
+{{- $data  = merge $data (dict "message" $message) -}}
+{{- $data  = merge $data (dict "apiUrl" .apiUrl) -}}
+{{- $data  = merge $data (dict "websiteId" .websiteId) -}}
+{{ partial "welcomments/template.html" $data }}
+
+{{- $parentId := (index .comment "id") -}}
+{{- $nestingLevel := (add (int .nestingLevel) 1) -}}
+{{- $allComments := .allComments -}}
+{{- $apiUrl := .apiUrl -}}
+{{- $websiteId := .websiteId -}}
+{{- range .allComments -}}
+  {{- if eq $parentId (index . "replying_to") -}}
+    {{- $data := dict -}}
+    {{- $data  = merge $data (dict "nestingLevel" $nestingLevel) -}}
+    {{- $data  = merge $data (dict "allComments" $allComments) -}}
+    {{- $data  = merge $data (dict "comment" .) -}}
+    {{- $data  = merge $data (dict "apiUrl" $apiUrl) -}}
+    {{- $data  = merge $data (dict "websiteId" $websiteId) -}}
+    {{- partial "welcomments/single_comment" $data -}}
+  {{- end -}}
+{{- end -}}

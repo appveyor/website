@@ -1,0 +1,32 @@
+<article
+  id="{{ .elementId }}"
+  class="{{ .elementClassName }}"
+  data-comment-id="{{ .id }}"
+  data-author-name="{{ .authorName }}"
+  data-nesting-level="{{ .nestingLevel }}"
+  itemprop="comment" itemscope itemtype="https://schema.org/Comment">
+  <div class="welcomments__comment-header">
+    <div class="welcomments__author-avatar">
+      <img class="welcomments__author-avatar-img" {{ printf "src=\"%s\"" .avatarUrl | safeHTMLAttr }} alt="{{ .authorName }}"/>
+    </div>
+    <div class="welcomments__author-information">
+      <div class="welcomments__author-name-and-time">
+        <h3 class="welcomments__author-name" itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">{{ .authorName }}</span>
+        </h3>
+        <p class="welcomments__comment-time">
+          <a {{ printf "href=\"#welcomments__comment-%s\"" .id | safeHTMLAttr }} itemprop="url">
+            <time datetime="{{ .dateXmlSchema }}" itemprop="datePublished">
+              {{ .formattedDate }}
+            </time>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div itemprop="text" class="welcomments__comment-message">{{ .message }}</div>
+  <a class="welcomments__comment-reply-link"
+     {{ printf "href=\"%s/websites/%s/comments/%s/reply\"" .apiUrl .websiteId .id | safeHTMLAttr }}>
+    Reply to {{ .authorName }}
+  </a>
+</article>
