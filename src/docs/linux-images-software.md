@@ -82,7 +82,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="docker" class="section" colspan="4">Docker</th>
     </tr>
-    <tr><td>Docker 20.10.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Docker 20.10.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Version control systems -->
     <tr>
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
@@ -95,8 +95,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="net-core" class="section" colspan="4">.NET Core</th>
     </tr>
-    <tr><td>.NET Core SDK 5.0.202 (5.0.5 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1.408 (3.1.14 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 5.0.300 (5.0.6 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1.409 (3.1.15 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103 (3.0.3 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.402 (2.2.8 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.805 (2.1.17 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -110,9 +110,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Node Version Manager (<code>nvm</code>) 0.34.0</li>
-                <li>Node.js 16.1.0</li>
+                <li>Node.js 16.3.0</li>
                 <li>Node.js 15.14.0</li>
-                <li>Node.js 14.16.1</li>
+                <li>Node.js 14.17.0</li>
                 <li>Node.js 13.14.0</li>
                 <li>Node.js 12.22.1</li>
                 <li>Node.js 11.15.0</li>
@@ -158,8 +158,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (<code>gvm</code>) v1.0.22</li>
-                <li>Go 1.16.3</li>
-                <li>Go 1.15.11</li>
+                <li>Go 1.16.4</li>
+                <li>Go 1.15.12</li>
                 <li>Go 1.14.15</li>
                 <li>Go 1.13.15</li>
                 <li>Go 1.12.17</li>
@@ -245,9 +245,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 3.9.4 (<code>$HOME/venv3.9.4</code> and <code>$HOME/venv3.9</code>)</li>
-                <li>Python 3.8.9 (<code>$HOME/venv3.8.9</code> and <code>$HOME/venv3.8</code>)</li>
-                <li>Python 3.7.9 (<code>$HOME/venv3.7.9</code> and <code>$HOME/venv3.7</code>)</li>
+                <li>Python 3.9.5 (<code>$HOME/venv3.9.5</code> and <code>$HOME/venv3.9</code>)</li>
+                <li>Python 3.8.10 (<code>$HOME/venv3.8.10</code> and <code>$HOME/venv3.8</code>)</li>
+                <li>Python 3.7.10 (<code>$HOME/venv3.7.10</code> and <code>$HOME/venv3.7</code>)</li>
                 <li>Python 3.6.13 (<code>$HOME/venv3.6.13</code> and <code>$HOME/venv3.6</code>)</li>
                 <li>Python 3.5.10 (<code>$HOME/venv3.5.10</code> and <code>$HOME/venv3.5</code>)</li>
                 <li>Python 3.4.10 (<code>$HOME/venv3.4.10</code> and <code>$HOME/venv3.4</code>)</li>
@@ -263,7 +263,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="erlang" class="section" colspan="4">Erlang</th>
     </tr>
-    <tr><td>Erlang 23.3.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Erlang 24.0.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Tools -->
     <tr>
         <th id="tools" class="section" colspan="4">Tools</th>
@@ -276,7 +276,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>AWS CLI 1.19.65</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>localstack 0.12.10</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Azure CLI 2.22.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Google Cloud SDK 339.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Google Cloud SDK 343.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Packer 1.6.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>VirtualBox 6.1.16</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.20.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
