@@ -267,8 +267,8 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2019" class="section" colspan="5">Visual Studio 2019</th>
     </tr>
-    <tr><td>Visual Studio Community 2019 version 16.10.1 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Visual Studio Community 2019 Preview version 16.11 Preview 1 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Community 2019 version 16.10.3 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Visual Studio Community 2019 Preview version 16.11 Preview 2 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1709 (build 16299)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1803 (build 17134)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1809 (build 17763)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -779,10 +779,23 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 6.0.1: <code>C:\Qt\6.0.1</code> (<code>C:\Qt\6.0</code> mapped to <code>C:\Qt\6.0.1</code> for backward compatibility)
+            <li>Qt 6.1.2: <code>C:\Qt\6.1.2</code> (<code>C:\Qt\6.1</code> mapped to <code>C:\Qt\6.1.2</code> for backward compatibility)
                 <ul>
-                <li>MinGW 8.1.0 64 bit: <code>C:\Qt\6.0.1\mingw81_64</code></li>
-                <li>msvc2019 64-bit: <code>C:\Qt\6.0.1\msvc2019_64</code></li>
+                <li>MinGW 8.1.0 64 bit: <code>C:\Qt\6.1.2\mingw81_64</code></li>
+                <li>msvc2019 64-bit: <code>C:\Qt\6.1.2\msvc2019_64</code></li>
+                </ul>
+            </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+            <li>Qt 6.0.4: <code>C:\Qt\6.0.4</code> (<code>C:\Qt\6.0</code> mapped to <code>C:\Qt\6.0.4</code> for backward compatibility)
+                <ul>
+                <li>MinGW 8.1.0 64 bit: <code>C:\Qt\6.0.4\mingw81_64</code></li>
+                <li>msvc2019 64-bit: <code>C:\Qt\6.0.4\msvc2019_64</code></li>
                 </ul>
             </li>
             </ul>
@@ -862,21 +875,6 @@ title: Software pre-installed on Windows build VMs
             </ul>
         </td>
         <td class="no"></td><td class="yes"></td><td class="no"></td><td class="no"></td>
-    </tr>
-    <tr>
-        <td>
-            <ul>
-            <li>Qt 5.12.10: <code>C:\Qt\5.12.10</code> (<code>C:\Qt\5.12</code> mapped to <code>C:\Qt\5.12.10</code> for backward compatibility)
-                <ul>
-                <li>MinGW 7.3.0 64 bit: <code>C:\Qt\5.12.10\mingw73_64</code></li>
-                <li>MinGW 7.3.0 32 bit: <code>C:\Qt\5.12.10\mingw73_32</code></li>
-                <li>msvc2017 32-bit: <code>C:\Qt\5.12.10\msvc2017</code></li>
-                <li>msvc2017 64-bit: <code>C:\Qt\5.12.10\msvc2017_64</code></li>
-                </ul>
-            </li>
-            </ul>
-        </td>
-        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>
