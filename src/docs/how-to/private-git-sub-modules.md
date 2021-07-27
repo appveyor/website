@@ -87,6 +87,8 @@ Set-Content c:\users\appveyor\.ssh\id_rsa $fileContent
 git submodule -q update --init --recursive
 ```
 
+💡 change the `RSA PRIVATE KEY` to `OPENSSH PRIVATE KEY` if your ssh gives you the ssh format keys.
+
 ### appveyor.yml
 
 Copy the contents of private key to clipboard as shown above and open "Encrypt configuration data" page in AppVeyor (**Account** &rarr; **Encrypt YAML**). Encrypt the value of clipboard using that page.
