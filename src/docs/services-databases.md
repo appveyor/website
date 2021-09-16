@@ -285,17 +285,41 @@ PostgreSQL database services are available on AppVeyor build workers.
     * `C:\Program Files\PostgreSQL\9.3`
     * `C:\Program Files\PostgreSQL\9.4`
     * `C:\Program Files\PostgreSQL\9.5`
-    * `C:\Program Files\PostgreSQL\9.6`
-    * `C:\Program Files\PostgreSQL\10`
+    * `C:\Program Files\PostgreSQL\9.6` (VS 2019 image)
+    * `C:\Program Files\PostgreSQL\10` (VS 2019 image)
+    * `C:\Program Files\PostgreSQL\11` (VS 2019 image)
+    * `C:\Program Files\PostgreSQL\12` (VS 2019 image)
+    * `C:\Program Files\PostgreSQL\13` (VS 2019 image)
 * Server name: `127.0.0.1` or `localhost`
 * Server port: `5432`
 * `postgres` account password: `Password12!`
+
+To start PostgreSQL 13 in `appveyor.yml`:
+
+```yaml
+services:
+  - postgresql13
+```
+
+To start PostgreSQL 12 in `appveyor.yml`:
+
+```yaml
+services:
+  - postgresql12
+```
+
+To start PostgreSQL 11 in `appveyor.yml`:
+
+```yaml
+services:
+  - postgresql11
+```
 
 To start PostgreSQL 10.1 in `appveyor.yml`:
 
 ```yaml
 services:
-  - postgresql101
+  - postgresql10
 ```
 
 To start PostgreSQL 9.6 in `appveyor.yml`:
