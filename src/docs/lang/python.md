@@ -27,18 +27,23 @@ Add an `appveyor.yml` file to your repository root:
 ---
 environment:
   matrix:
-  - TOXENV: py27
-  - TOXENV: py35
-  - TOXENV: py36
+  # - TOXENV: py27  # https://devguide.python.org/devcycle/#end-of-life-branches
+  # - TOXENV: py35
+  - TOXENV: py36    # https://devguide.python.org/#status-of-python-branches
   - TOXENV: py37
+  - TOXENV: py38
+  # - TOXENV: py39    # Not yet present in Appveyor image
+  # - TOXENV: py310    # Not yet present in Appveyor image
 
 build: off
 
 install:
-- pip install tox
+  - py -0  # Show all available Pythons
+  - py -m pip install --upgrade pip
+  - py -m pip install tox
 
 test_script:
-- tox
+  - py -m tox
 ```
 
 ### Test setup
@@ -58,7 +63,7 @@ setup into a `tox.ini` file in your repository root:
 # tox.ini
 
 [tox]
-envlist = py{27,35,36,37}
+envlist = py3{5,6,7,8}
 
 [testenv]
 description = Unit tests
