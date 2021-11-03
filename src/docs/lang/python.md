@@ -32,8 +32,8 @@ environment:
   - TOXENV: py36    # https://devguide.python.org/#status-of-python-branches
   - TOXENV: py37
   - TOXENV: py38
-  # - TOXENV: py39    # Not yet present in Appveyor image
-  # - TOXENV: py310   # Not yet present in Appveyor image
+  # - TOXENV: py39    # Not yet present in Appveyor Windows image
+  # - TOXENV: py310   # Not yet present in Appveyor Windows image
 
 build: off
 
