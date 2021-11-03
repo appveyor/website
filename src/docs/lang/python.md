@@ -38,7 +38,7 @@ environment:
 build: off
 
 install:
-  - py -0  # Show all available Pythons
+  - py -0  # Show all available versions of Python
   - py -m pip install --upgrade pip
   - py -m pip install tox
 
@@ -63,7 +63,7 @@ setup into a `tox.ini` file in your repository root:
 # tox.ini
 
 [tox]
-envlist = py3{5,6,7,8}
+envlist = py3{6,7,8}
 
 [testenv]
 description = Unit tests
