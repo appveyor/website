@@ -35,7 +35,7 @@ environment:
   # - TOXENV: py39    # Not yet present in Appveyor Windows image
   # - TOXENV: py310   # Not yet present in Appveyor Windows image
 
-build: off
+build: false
 
 install:
   - py -0  # Show all available versions of Python
