@@ -33,7 +33,7 @@ environment:
   - TOXENV: py37
   - TOXENV: py38
   # - TOXENV: py39    # Not yet present in Appveyor image
-  # - TOXENV: py310    # Not yet present in Appveyor image
+  # - TOXENV: py310   # Not yet present in Appveyor image
 
 build: off
 
