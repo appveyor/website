@@ -23,8 +23,11 @@ Several Python versions are already preinstalled:
 Add an `appveyor.yml` file to your repository root:
 
 ```yaml
-# appveyor.yml
+# appveyor.yml - https://www.appveyor.com/docs/lang/python
 ---
+image:
+  - Visual Studio 2019
+
 environment:
   matrix:
   # - TOXENV: py27  # https://devguide.python.org/devcycle/#end-of-life-branches
