@@ -32,14 +32,14 @@ environment:
   - TOXENV: py36    # https://devguide.python.org/#status-of-python-branches
   - TOXENV: py37
   - TOXENV: py38
-  # - TOXENV: py39    # Not yet present in Appveyor Windows image
-  # - TOXENV: py310   # Not yet present in Appveyor Windows image
+  - TOXENV: py39
+  - TOXENV: py310
 
 build: false
 
 install:
-  - py -0  # Show all available versions of Python
-  - py -m pip install --upgrade pip
+  # - py --list
+  # - py -m pip install --upgrade pip
   - py -m pip install tox
 
 test_script:
