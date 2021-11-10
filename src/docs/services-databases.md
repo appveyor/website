@@ -17,7 +17,7 @@ AppVeyor has most popular services and database engines pre-installed on all bui
 * [SQL Server 2014](#sql-server-2014)
 * [SQL Server 2016](#sql-server-2016)
 * [SQL Server 2017](#sql-server-2017)
-* [SQL Server 2019](#sql-server-2019) (`Visual Studio 2019` image only)
+* [SQL Server 2019](#sql-server-2019) (`Visual Studio 2019` and `Visual Studio 2022` images only)
 * [MySQL](#mysql)
 * [PostgreSQL](#postgresql)
 * [MongoDB](#mongodb)
@@ -165,7 +165,7 @@ services:
 
 ## SQL Server 2019
 
-The latest version of **SQL Server 2019 Developer Edition** is available on `Visual Studio 2019` image.
+The latest version of **SQL Server 2019 Developer Edition** is available on `Visual Studio 2019` and `Visual Studio 2022` images.
 
 Instance name: `SQL2019`
 

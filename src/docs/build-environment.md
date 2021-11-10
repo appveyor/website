@@ -141,6 +141,7 @@ and can be a master VHD for Hyper-V and Azure, snapshot or image for GCE or AWS.
 AppVeyor provides these "standard" build worker images:
 
 * Windows images:
+    * `Visual Studio 2022`
     * `Visual Studio 2019`
     * `Visual Studio 2017`
     * `Visual Studio 2015`
@@ -156,14 +157,6 @@ AppVeyor provides these "standard" build worker images:
     * `macos-mojave` - macOS 10.14 "Mojave"
 
 Below you can find the list of [pre-installed software](#pre-installed-software) for all images.
-
-### Visual Studio Preview image
-
-AppVeyor also provides a build image which contains, in place of the Visual Studio 2019 current version, the VS 2019 Preview latest version.
-
-* `Visual Studio 2019 Preview`
-* `Visual Studio 2017 Preview` (outdated)
-* `Visual Studio 2015 Preview` (outdated)
 
 ## Choosing image for your builds
 
