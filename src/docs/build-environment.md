@@ -216,6 +216,7 @@ sometimes even a smallest change in the image can break someone's build. If that
 We provide an access to "last good" versions of build worker images from previous update:
 
 * Windows "previous" images:
+    * `Previous Visual Studio 2022`
     * `Previous Visual Studio 2019`
     * `Previous Visual Studio 2017`
     * `Previous Visual Studio 2015`
