@@ -23,22 +23,30 @@ Several Python versions are already preinstalled:
 Add an `appveyor.yml` file to your repository root:
 
 ```yaml
-# appveyor.yml
+# appveyor.yml - https://www.appveyor.com/docs/lang/python
 ---
+image:
+  - Visual Studio 2019
+
 environment:
   matrix:
-  - TOXENV: py27
-  - TOXENV: py35
-  - TOXENV: py36
+  # - TOXENV: py27  # https://devguide.python.org/devcycle/#end-of-life-branches
+  # - TOXENV: py35
+  - TOXENV: py36    # https://devguide.python.org/#status-of-python-branches
   - TOXENV: py37
+  - TOXENV: py38
+  - TOXENV: py39
+  - TOXENV: py310
 
-build: off
+build: false
 
 install:
-- pip install tox
+  # - py --list
+  # - py -m pip install --upgrade pip
+  - py -m pip install tox
 
 test_script:
-- tox
+  - py -m tox
 ```
 
 ### Test setup
@@ -58,7 +66,7 @@ setup into a `tox.ini` file in your repository root:
 # tox.ini
 
 [tox]
-envlist = py{27,35,36,37}
+envlist = py3{6,7,8,9,10}
 
 [testenv]
 description = Unit tests
