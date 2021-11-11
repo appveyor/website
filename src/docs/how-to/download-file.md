@@ -9,7 +9,7 @@ title: Download file
 
 Sometimes you need to download additional files (installers, libraries, resources, etc.) required by your build process.
 
-There is a number of ways you can use to download file in AppVeyor environment:
+There are a number of ways you can download a file in AppVeyor environment:
 
 * Comment to trigger ToC generation
 {:toc}
@@ -36,7 +36,7 @@ Invoke-WebRequest $source -OutFile $destination -Credential ftpUser
 
 ## WebClient class
 
-You can use the following PowerShell code to download file using `System.Net.WebClient` class which is part of .NET Framework:
+You can use the following PowerShell code to download a file using `System.Net.WebClient` class which is part of .NET Framework:
 
     (New-Object Net.WebClient).DownloadFile('<file_url>', '<local_file_name>')
 
@@ -59,7 +59,7 @@ Command syntax:
 
 Timeout value is milliseconds. Default timeout is 300000 (5 minutes).
 
-For example, the following command downloads remote file to the current folder with `installer.msi` name:
+For example, the following command downloads a remote file to the current folder with `installer.msi` name:
 
     Start-FileDownload 'http://www.myserver.com/packages/installer.msi'
 
