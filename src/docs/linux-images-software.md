@@ -77,7 +77,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="4">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 7.1.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 7.2.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
         <th id="docker" class="section" colspan="4">Docker</th>
@@ -95,6 +95,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="net-core" class="section" colspan="4">.NET Core</th>
     </tr>
+    <tr><td>.NET Core SDK 6.0.100 (6.0.0 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 5.0.400 (5.0.9 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.1.412 (3.1.18 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103 (3.0.3 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -110,11 +111,12 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Node Version Manager (<code>nvm</code>) 0.34.0</li>
-                <li>Node.js 16.8.0</li>
+                <li>Node.js 17.1.0</li>
+                <li>Node.js 16.13.0</li>
                 <li>Node.js 15.14.0</li>
-                <li>Node.js 14.17.6</li>
+                <li>Node.js 14.18.1</li>
                 <li>Node.js 13.14.0</li>
-                <li>Node.js 12.22.6</li>
+                <li>Node.js 12.22.7</li>
                 <li>Node.js 11.15.0</li>
                 <li>Node.js 10.24.1</li>
                 <li>Node.js 9.11.2</li>
@@ -158,8 +160,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (<code>gvm</code>) v1.0.22</li>
-                <li>Go 1.17</li>
-                <li>Go 1.16.7</li>
+                <li>Go 1.17.3</li>
+                <li>Go 1.16.10</li>
                 <li>Go 1.15.15</li>
                 <li>Go 1.14.15</li>
                 <li>Go 1.13.15</li>
@@ -219,6 +221,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Ruby Version Manager (<code>rvm</code>) 1.29.12</li>
+                <li>Ruby 3.0.0</li>
                 <li>Ruby 2.7.2</li>
                 <li>Ruby 2.6.6</li>
                 <li>Ruby 2.5.8</li>
@@ -245,10 +248,11 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 3.9.6 (<code>$HOME/venv3.9.6</code> and <code>$HOME/venv3.9</code>)</li>
-                <li>Python 3.8.11 (<code>$HOME/venv3.8.11</code> and <code>$HOME/venv3.8</code>)</li>
-                <li>Python 3.7.11 (<code>$HOME/venv3.7.11</code> and <code>$HOME/venv3.7</code>)</li>
-                <li>Python 3.6.14 (<code>$HOME/venv3.6.14</code> and <code>$HOME/venv3.6</code>)</li>
+                <li>Python 3.10.0 (<code>$HOME/venv3.10.0</code> and <code>$HOME/venv3.10</code>)</li>
+                <li>Python 3.9.8 (<code>$HOME/venv3.9.8</code> and <code>$HOME/venv3.9</code>)</li>
+                <li>Python 3.8.12 (<code>$HOME/venv3.8.12</code> and <code>$HOME/venv3.8</code>)</li>
+                <li>Python 3.7.12 (<code>$HOME/venv3.7.12</code> and <code>$HOME/venv3.7</code>)</li>
+                <li>Python 3.6.15 (<code>$HOME/venv3.6.15</code> and <code>$HOME/venv3.6</code>)</li>
                 <li>Python 3.5.10 (<code>$HOME/venv3.5.10</code> and <code>$HOME/venv3.5</code>)</li>
                 <li>Python 3.4.10 (<code>$HOME/venv3.4.10</code> and <code>$HOME/venv3.4</code>)</li>
                 <li>Python 2.7.18 (<code>$HOME/venv2.7.18</code> and <code>$HOME/venv2.7</code>)</li>
@@ -278,7 +282,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>Google Cloud SDK 355.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Packer 1.6.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>VirtualBox 6.1.16</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.21.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.21.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>vcpkg 2021-08-12</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Doxygen</td><td class="text-center">1.8.18</td><td class="text-center">1.8.17</td><td class="text-center">1.8.20</td></tr>
     <tr><td>Ninja 1.8.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
