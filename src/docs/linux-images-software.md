@@ -136,14 +136,16 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>6.1.2 in <code>$HOME/Qt/6.1.2/gcc_64/bin</code></li>
+                <li>6.2.1 in <code>$HOME/Qt/6.2.1/gcc_64/bin</code></li>
+                <li>6.1.3 in <code>$HOME/Qt/6.1.3/gcc_64/bin</code></li>
                 <li>6.0.4 in <code>$HOME/Qt/6.0.4/gcc_64/bin</code></li>
                 <li>5.15.2 in <code>$HOME/Qt/5.15.2/gcc_64/bin</code></li>
                 <li>5.14.2 in <code>$HOME/Qt/5.14.2/gcc_64/bin</code></li>
             </ul>
             <p>Links for latest and major versions:</p>
             <ul>
-                <li><code>$HOME/Qt/6.1</code> &rarr; <code>$HOME/Qt/6.1.2</code></li>
+                <li><code>$HOME/Qt/6.2</code> &rarr; <code>$HOME/Qt/6.2.1</code></li>
+                <li><code>$HOME/Qt/6.1</code> &rarr; <code>$HOME/Qt/6.1.3</code></li>
                 <li><code>$HOME/Qt/6.0</code> &rarr; <code>$HOME/Qt/6.0.4</code></li>
                 <li><code>$HOME/Qt/latest</code> &rarr; <code>$HOME/Qt/5.15.2</code></li>
                 <li><code>$HOME/Qt/5.15</code> &rarr; <code>$HOME/Qt/5.15.2</code></li>
