@@ -84,6 +84,7 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <th id="xcode" class="section" colspan="4">XCode</th>
     </tr>
+    <tr><td>XCode 13.0</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>XCode 12.5.1</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>XCode 12.3</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>XCode 11.7</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
