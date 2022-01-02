@@ -146,8 +146,9 @@ cmake -DCMAKE_TOOLCHAIN_FILE=c:/tools/vcpkg/scripts/buildsystems/vcpkg.cmake ...
 
 To enable faster (cached) rebuilds add the following to the cache section in the `appveyor.yml`:
 
-```bat
-cache: c:\tools\vcpkg\installed\
+```yaml
+cache:
+- c:\tools\vcpkg\installed\
 ```
 
 Read more about using Vcpkg in its [documentation](https://vcpkg.readthedocs.io).
