@@ -117,8 +117,8 @@ title: Software pre-installed on Windows build VMs
         <td class="no"></td>
         <td>6.2.3</td>
         <td>6.2.3</td>
-        <td>7.2.0</td>
-        <td>7.2.0</td>
+        <td>7.2.1</td>
+        <td>7.2.1</td>
     </tr>
     <!-- Docker -->
     <tr>
@@ -274,7 +274,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2019" class="section" colspan="6">Visual Studio 2019</th>
     </tr>
-    <tr><td>Visual Studio Community 2019 version 16.11.7 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Community 2019 version 16.11.8 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Visual Studio Community 2019 Preview version 16.11 Preview 2 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1709 (build 16299)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1803 (build 17134)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -434,9 +434,9 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.2.402</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.1.202</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1.415</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET 5 SDK 5.0.403</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET 6 SDK 6.0.100</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1.416</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET 5 SDK 5.0.404</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET 6 SDK 6.0.101</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="6">Silverlight</th>
@@ -492,12 +492,12 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-                <li>Go 1.17.4 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.17.4 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.17.4 x64 (<code>C:\go117</code>)</li>
-                <li>Go 1.17.4 x86 (<code>C:\go117-x86</code>)</li>
-                <li>Go 1.16.11 x64 (<code>C:\go116</code>)</li>
-                <li>Go 1.16.11 x86 (<code>C:\go116-x86</code>)</li>
+                <li>Go 1.17.5 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.17.5 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.17.5 x64 (<code>C:\go117</code>)</li>
+                <li>Go 1.17.5 x86 (<code>C:\go117-x86</code>)</li>
+                <li>Go 1.16.12 x64 (<code>C:\go116</code>)</li>
+                <li>Go 1.16.12 x86 (<code>C:\go116-x86</code>)</li>
                 <li>Go 1.15.15 x64 (<code>C:\go115</code>)</li>
                 <li>Go 1.15.15 x86 (<code>C:\go115-x86</code>)</li>
                 <li>Go 1.14.15 x64 (<code>C:\go114</code>)</li>
@@ -649,8 +649,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Python 3.8.10 x64 (<code>C:\Python38-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.9.9 x86 (<code>C:\Python39</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.9.9 x64 (<code>C:\Python39-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.10.0 x86 (<code>C:\Python310</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.10.0 x64 (<code>C:\Python310-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.10.1 x86 (<code>C:\Python310</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.10.1 x64 (<code>C:\Python310-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>pip 19.3.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>pip 21.2.4</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Visual C++ Compiler for Python 2.7</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
@@ -1128,7 +1128,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>curl 7.79.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>7-Zip 19.00</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.22.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.22.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.16.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>CMake 3.12.2</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
@@ -1154,10 +1154,10 @@ title: Software pre-installed on Windows build VMs
     <tr><td>OpenSSL 1.1.0L (64-bit) (<code>C:\OpenSSL-v11-Win64\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.1.1d (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.1.1d (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>OpenSSL 1.1.1L (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 1.1.1L (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.0.0 (32-bit) (<code>C:\OpenSSL-v30-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.0.0 (64-bit) (<code>C:\OpenSSL-v30-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.1.1m (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 1.1.1m (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.0.1 (32-bit) (<code>C:\OpenSSL-v30-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.0.1 (64-bit) (<code>C:\OpenSSL-v30-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.08 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.04 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
@@ -1168,7 +1168,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Yarn 1.21.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>vcpkg 2019.09.12-nohash</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>vcpkg 2020.02.04-nohash</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Doxygen 1.9.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Doxygen 1.9.3</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Graphviz 2.38</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Octopus Tools 6.2.3</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Octopus Tools 6.17.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -1192,12 +1192,12 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox 62</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Firefox 72</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Firefox 94.0.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 95.0.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Chrome 69</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chrome 79</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 96.0.4664.45</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 96.0.4664.110</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Edge 79.0.309.65</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Microsoft Edge 96.0.1054.43</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Edge 96.0.1054.62</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
         <th id="selenium-testing" class="section" colspan="6">Selenium testing</th>
@@ -1205,7 +1205,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Chrome Web Driver 2.41</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chrome Web Driver 79</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chrome Web Driver 96.0.4664.45</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Edge Web Driver 96.0.1054.43</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Edge Web Driver 96.0.1054.62</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.14</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.150.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox Web Driver (geckodriver) 0.21.0</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
