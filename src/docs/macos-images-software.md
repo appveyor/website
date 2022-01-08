@@ -195,8 +195,8 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>6.1.2 in <code>$HOME/Qt/6.1.2/clang_64/bin</code></li>
-                <li>6.0.4 in <code>$HOME/Qt/6.0.4/clang_64/bin</code></li>
+                <li>6.1.2 in <code>$HOME/Qt/6.1.2/macos/bin</code></li>
+                <li>6.0.4 in <code>$HOME/Qt/6.0.4/macos/bin</code></li>
                 <li>5.15.2 in <code>$HOME/Qt/5.15.2/clang_64/bin</code></li>
                 <li>5.14.2 in <code>$HOME/Qt/5.14.2/clang_64/bin</code></li>
             </ul>
