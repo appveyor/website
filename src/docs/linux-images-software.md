@@ -100,7 +100,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 3.1.412 (3.1.18 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103 (3.0.3 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 2.2.402 (2.2.8 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET Core SDK 2.1.818 (2.1.30 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 2.1.818 (2.1.30 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.1.202 (2.0.9 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET Core SDK 1.1.14 (1.1.13, 1.0.16 runtimes) - EOL</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Node.js -->
