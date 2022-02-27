@@ -54,15 +54,15 @@ The history of macOS image updates can be found [here](/updates/).
     </tr>
     <tr>
         <td>macOS 12.2.1 "Monterey"</td>
-        <td class="yes"></td><td class="no"></td><td class="no">
+        <td class="yes"></td><td class="no"></td><td class="no"></td>
     </tr>
     <tr>
         <td>macOS 11.6.4 "Big Sur"</td>
-        <td class="no"></td><td class="yes"></td><td class="no">
+        <td class="no"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
         <td>macOS 10.15.7 "Catalina"</td>
-        <td class="no"></td><td class="no"></td><td class="yes">
+        <td class="no"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
         <th id="powershell" class="section" colspan="4">PowerShell</th>
