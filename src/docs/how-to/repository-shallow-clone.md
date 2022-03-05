@@ -42,6 +42,11 @@ As the title says, this option is specific to GitHub and Bitbucket only. It uses
 REST API to download specific commit of the repository as zip archive and then unpacks it on build
 worker machine. This feature works for regular commits, branch commits and pull requests.
 
+Keep in mind that when you use this option you will not be able to do git operations on the extracted
+repository because the repository is extracted as a plain directory from the zip file. As an example,
+submodule checkout will not be possible at all, thus certain projects can only rely on the `clone_depth`
+option for shallow clones.
+
 You can enable this option through UI on General tab of project settings or in `appveyor.yml`:
 
 ```yaml
