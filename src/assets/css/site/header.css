@@ -1,8 +1,10 @@
 /*csslint text-indent:false*/
 
 /* Header */
+.contain-to-grid {
+    background: repeating-linear-gradient( #0057b7, #0057b7 50%, #ffd700 50%, #ffd700);
+}
 .top-bar,
-.contain-to-grid,
 .top-bar-section ul,
 .top-bar-section li a:not(.button),
 .top-bar-section .dropdown li label {
