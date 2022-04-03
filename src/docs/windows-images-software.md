@@ -9,7 +9,7 @@ title: Software pre-installed on Windows build VMs
 
 {:.no_toc}
 
-- Comment to trigger ToC generation
+* Comment to trigger ToC generation
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
@@ -497,7 +497,7 @@ title: Software pre-installed on Windows build VMs
                 <li>Go 1.18 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
                 <li>Go 1.18 x86 (<code>C:\go-x86</code>)</li>
                 <li>Go 1.18 x64 (<code>C:\go118</code>)</li>
-                <li>Go 1.18 x86 (<code>C:\go118-x86</code>)</li>                
+                <li>Go 1.18 x86 (<code>C:\go118-x86</code>)</li>
                 <li>Go 1.17.7 x64 (<code>C:\go117</code>)</li>
                 <li>Go 1.17.7 x86 (<code>C:\go117-x86</code>)</li>
                 <li>Go 1.16.14 x64 (<code>C:\go116</code>)</li>
@@ -618,7 +618,7 @@ title: Software pre-installed on Windows build VMs
                 <li>Ruby 3.0.3 x86 (<code>C:\Ruby30\bin</code>)</li>
                 <li>Ruby 3.0.3 x64 (<code>C:\Ruby30-x64\bin</code>)</li>
                 <li>Ruby 3.1.1 x86 (<code>C:\Ruby31\bin</code>)</li>
-                <li>Ruby 3.1.1 x64 (<code>C:\Ruby31-x64\bin</code> - default in <code>PATH</code>)</li>                
+                <li>Ruby 3.1.1 x64 (<code>C:\Ruby31-x64\bin</code> - default in <code>PATH</code>)</li>
             </ul>
         </td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
