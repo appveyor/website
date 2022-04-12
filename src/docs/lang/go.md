@@ -36,9 +36,9 @@ clone_folder: c:\gopath\src\github.com\$username\$project
 environment:
   GOPATH: c:\gopath
 
-stack: go 1.10
-
 before_test:
+  - set PATH=C:\go116\bin;%PATH%
+  - set GOROOT=C:\go116
   - go vet ./...
 
 test_script:
