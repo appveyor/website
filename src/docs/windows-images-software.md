@@ -499,7 +499,7 @@ title: Software pre-installed on Windows build VMs
                 <li>Go 1.19 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
                 <li>Go 1.19 x86 (<code>C:\go-x86</code>)</li>
                 <li>Go 1.19 x64 (<code>C:\go119</code>)</li>
-                <li>Go 1.19 x86 (<code>C:\go119-x86</code>)</li>            
+                <li>Go 1.19 x86 (<code>C:\go119-x86</code>)</li>
                 <li>Go 1.18.5 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
                 <li>Go 1.18.5 x86 (<code>C:\go-x86</code>)</li>
                 <li>Go 1.18.5 x64 (<code>C:\go118</code>)</li>
