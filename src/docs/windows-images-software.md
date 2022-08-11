@@ -276,7 +276,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="visual-studio-2019" class="section" colspan="6">Visual Studio 2019</th>
     </tr>
-    <tr><td>Visual Studio Community 2019 version 16.11.16 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>Visual Studio Community 2019 version 16.11.18 (<a target="_blank" href="https://github.com/appveyor/build-images/blob/master/scripts/Windows/install_vs2019.ps1#L51-L243">installed components</a>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Visual Studio Community 2019 Preview version 16.11 Preview 2 on <code>Visual Studio 2019 Preview</code> image</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1709 (build 16299)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>SDK/WDK for Windows 10, version 1803 (build 17134)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
@@ -437,9 +437,9 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 2.2.402</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.1.202</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1.420</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1.422</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET 5 SDK 5.0.408</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET 5 SDK 5.0.409</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>.NET 5 SDK 5.0.411</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET 6 SDK 6.0.302</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
@@ -496,12 +496,16 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-                <li>Go 1.18.3 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.18.3 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.18.3 x64 (<code>C:\go118</code>)</li>
-                <li>Go 1.18.3 x86 (<code>C:\go118-x86</code>)</li>
-                <li>Go 1.17.11 x64 (<code>C:\go117</code>)</li>
-                <li>Go 1.17.11 x86 (<code>C:\go117-x86</code>)</li>
+                <li>Go 1.19 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.19 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.19 x64 (<code>C:\go119</code>)</li>
+                <li>Go 1.19 x86 (<code>C:\go119-x86</code>)</li>
+                <li>Go 1.18.5 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.18.5 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.18.5 x64 (<code>C:\go118</code>)</li>
+                <li>Go 1.18.5 x86 (<code>C:\go118-x86</code>)</li>
+                <li>Go 1.17.13 x64 (<code>C:\go117</code>)</li>
+                <li>Go 1.17.13 x86 (<code>C:\go117-x86</code>)</li>
                 <li>Go 1.16.14 x64 (<code>C:\go116</code>)</li>
                 <li>Go 1.16.14 x86 (<code>C:\go116-x86</code>)</li>
                 <li>Go 1.15.15 x64 (<code>C:\go115</code>)</li>
@@ -1188,20 +1192,20 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Internet Explorer 11</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox 62</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Firefox 72</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Firefox 102.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 103.0.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Chrome 69</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chrome 79</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 103.0.5060.66</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 104.0.5112.79</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Edge 79.0.309.65</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Microsoft Edge 103.0.1264.37</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Microsoft Edge 104.0.1293.47</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Selenium testing -->
     <tr>
         <th id="selenium-testing" class="section" colspan="6">Selenium testing</th>
     </tr>
     <tr><td>Chrome Web Driver 2.41</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chrome Web Driver 79</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Chrome Web Driver 103.0.5060.66</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Edge Web Driver 103.0.1264.37</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome Web Driver 104.0.5112.79</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Edge Web Driver 1104.0.1293.47</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.14</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Internet Explorer Web Driver 3.150.1</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Firefox Web Driver (geckodriver) 0.21.0</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
