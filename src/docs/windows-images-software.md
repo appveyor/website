@@ -762,9 +762,6 @@ title: Software pre-installed on Windows build VMs
                         <li>5.3.0: <code>C:\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0</code></li>
                         <li>6.3.0 i686: <code>C:\mingw-w64\i686-6.3.0-posix-dwarf-rt_v5-rev1</code></li>
                         <li>6.3.0 x86_64: <code>C:\mingw-w64\x86_64-6.3.0-posix-seh-rt_v5-rev1</code></li>
-                        <li>7.3.0 x86_64: <code>C:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0</code></li>
-                        <li>8.1.0 x86_64: <code>C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0</code></li>
-                        <li>8.1.0 i686: <code>C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0</code> (VS 2019 image only)</li>
                     </ul>
                 </li>
             </ul>
@@ -783,6 +780,45 @@ title: Software pre-installed on Windows build VMs
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>
+                    MinGW-w64
+                    <ul>
+                        <li>7.3.0 x86_64: <code>C:\mingw-w64\x86_64-7.3.0-posix-seh-rt_v5-rev0</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>
+                    MinGW-w64
+                    <ul>
+                        <li>8.1.0 x86_64: <code>C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>
+                    MinGW-w64
+                    <ul>
+                        <li>8.1.0 i686: <code>C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0</code></li>
+                    </ul>
+                </li>
+            </ul>
+        </td>
+        <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>Cygwin 3.1.7 (<code>C:\cygwin</code>)</td>
