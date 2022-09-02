@@ -77,7 +77,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="4">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 7.2.5</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 7.2.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
         <th id="docker" class="section" colspan="4">Docker</th>
@@ -95,7 +95,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="net-core" class="section" colspan="4">.NET Core</th>
     </tr>
-    <tr><td>.NET Core SDK 6.0.301 (6.0.6 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 6.0.400 (6.0.8 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 5.0.408 (5.0.17 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.1.420 (3.1.26 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103 (3.0.3 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -111,11 +111,11 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Node Version Manager (<code>nvm</code>) 0.34.0</li>
-                <li>Node.js 18.4.0</li>
+                <li>Node.js 18.8.0</li>
                 <li>Node.js 17.9.1</li>
-                <li>Node.js 16.15.1</li>
+                <li>Node.js 16.17.0</li>
                 <li>Node.js 15.14.0</li>
-                <li>Node.js 14.19.0</li>
+                <li>Node.js 14.20.0</li>
                 <li>Node.js 13.14.0</li>
                 <li>Node.js 12.22.12</li>
                 <li>Node.js 11.15.0</li>
@@ -161,19 +161,11 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (<code>gvm</code>) v1.0.22</li>
-                <li>Go 1.18.3</li>
-                <li>Go 1.17.11</li>
+                <li>Go 1.19</li>
+                <li>Go 1.18.5</li>
+                <li>Go 1.17.13</li>
                 <li>Go 1.16.15</li>
                 <li>Go 1.15.15</li>
-                <li>Go 1.14.15</li>
-                <li>Go 1.13.15</li>
-                <li>Go 1.12.17</li>
-                <li>Go 1.11.13</li>
-                <li>Go 1.10.8</li>
-                <li>Go 1.9.7</li>
-                <li>Go 1.8.7</li>
-                <li>Go 1.7.6</li>
-                <li>Go 1.4</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -254,7 +246,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 3.10.5 (<code>$HOME/venv3.10.5</code> and <code>$HOME/venv3.10</code>)</li>
+                <li>Python 3.10.6 (<code>$HOME/venv3.10.6</code> and <code>$HOME/venv3.10</code>)</li>
                 <li>Python 3.9.13 (<code>$HOME/venv3.9.13</code> and <code>$HOME/venv3.9</code>)</li>
                 <li>Python 3.8.13 (<code>$HOME/venv3.8.13</code> and <code>$HOME/venv3.8</code>)</li>
                 <li>Python 3.7.13 (<code>$HOME/venv3.7.13</code> and <code>$HOME/venv3.7</code>)</li>
@@ -284,7 +276,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>wget</td><td class="text-center">1.19.4</td><td class="text-center">1.17.1</td><td class="text-center">1.20.3</td></tr>
     <tr><td>curl</td><td class="text-center">7.68.0</td><td class="text-center">7.47.0</td><td class="text-center">7.68.0</td></tr>
     <tr><td>AWS CLI 1.19.112</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Azure CLI 2.38.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure CLI 2.39.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Google Cloud SDK 392.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Packer 1.8.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>VirtualBox 6.1.16</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -297,8 +289,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="web-browsers" class="section" colspan="4">Web browsers</th>
     </tr>
-    <tr><td>Firefox 102.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 103.0.5060.114-1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 104.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 104.0.5112.101-1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="4">Databases</th>
