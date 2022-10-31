@@ -22,21 +22,22 @@ The history of Ubuntu image updates can be found [here](/updates/).
             <li><a href="#version-control-systems">Version control systems</a></li>
             <li><a href="#net-core">.NET Core</a></li>
             <li><a href="#node-js">Node.js</a></li>
+            <li><a href="#qt">Qt</a></li>
         </ul>
     </div>
     <div class="columns medium-4">
         <ul>
-            <li><a href="#qt">Qt</a></li>
             <li><a href="#golang">Go (Golang)</a></li>
             <li><a href="#java">Java SE Development Kit (JDK)</a></li>
             <li><a href="#mono">Mono</a></li>
             <li><a href="#compilers">Compilers</a></li>
             <li><a href="#ruby">Ruby</a></li>
+            <li><a href="#python">Python</a></li>
+            <li><a href="#mobile">Mobile SDKs</a></li>
         </ul>
     </div>
     <div class="columns medium-4">
         <ul>
-            <li><a href="#python">Python</a></li>
             <li><a href="#erlang">Erlang</a></li>
             <li><a href="#tools">Tools</a></li>
             <li><a href="#web-browsers">Web browsers</a></li>
@@ -77,7 +78,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="4">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 7.2.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 7.2.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
         <th id="docker" class="section" colspan="4">Docker</th>
@@ -95,7 +96,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="net-core" class="section" colspan="4">.NET Core</th>
     </tr>
-    <tr><td>.NET Core SDK 6.0.400 (6.0.8 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 6.0.402 (6.0.10 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 5.0.408 (5.0.17 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.1.420 (3.1.26 runtime) - LTS</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103 (3.0.3 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -161,8 +162,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (<code>gvm</code>) v1.0.22</li>
-                <li>Go 1.19</li>
-                <li>Go 1.18.5</li>
+                <li>Go 1.19.2</li>
+                <li>Go 1.18.7</li>
                 <li>Go 1.17.13</li>
                 <li>Go 1.16.15</li>
                 <li>Go 1.15.15</li>
@@ -246,10 +247,11 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 3.10.6 (<code>$HOME/venv3.10.6</code> and <code>$HOME/venv3.10</code>)</li>
-                <li>Python 3.9.13 (<code>$HOME/venv3.9.13</code> and <code>$HOME/venv3.9</code>)</li>
-                <li>Python 3.8.13 (<code>$HOME/venv3.8.13</code> and <code>$HOME/venv3.8</code>)</li>
-                <li>Python 3.7.13 (<code>$HOME/venv3.7.13</code> and <code>$HOME/venv3.7</code>)</li>
+                <li>Python 3.11.0 (<code>$HOME/venv3.11.0</code> and <code>$HOME/venv3.11</code>)</li>
+                <li>Python 3.10.8 (<code>$HOME/venv3.10.8</code> and <code>$HOME/venv3.10</code>)</li>
+                <li>Python 3.9.15 (<code>$HOME/venv3.9.15</code> and <code>$HOME/venv3.9</code>)</li>
+                <li>Python 3.8.15 (<code>$HOME/venv3.8.15</code> and <code>$HOME/venv3.8</code>)</li>
+                <li>Python 3.7.15 (<code>$HOME/venv3.7.15</code> and <code>$HOME/venv3.7</code>)</li>
                 <li>Python 3.6.15 (<code>$HOME/venv3.6.15</code> and <code>$HOME/venv3.6</code>)</li>
                 <li>Python 3.5.10 (<code>$HOME/venv3.5.10</code> and <code>$HOME/venv3.5</code>)</li>
                 <li>Python 3.4.10 (<code>$HOME/venv3.4.10</code> and <code>$HOME/venv3.4</code>)</li>
@@ -261,6 +263,12 @@ The history of Ubuntu image updates can be found [here](/updates/).
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
+    <!-- Mobile -->
+    <tr>
+        <th id="mobile" class="section" colspan="4">Mobile SDKs</th>
+    </tr>
+    <tr><td>Flutter 3.3.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Android SDK 30.0.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Erlang -->
     <tr>
         <th id="erlang" class="section" colspan="4">Erlang</th>
@@ -276,7 +284,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>wget</td><td class="text-center">1.19.4</td><td class="text-center">1.17.1</td><td class="text-center">1.20.3</td></tr>
     <tr><td>curl</td><td class="text-center">7.68.0</td><td class="text-center">7.47.0</td><td class="text-center">7.68.0</td></tr>
     <tr><td>AWS CLI 1.19.112</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Azure CLI 2.39.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Azure CLI 2.41.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Google Cloud SDK 392.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Packer 1.8.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>VirtualBox 6.1.16</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -289,8 +297,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="web-browsers" class="section" colspan="4">Web browsers</th>
     </tr>
-    <tr><td>Firefox 104.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Chrome 104.0.5112.101-1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Firefox 106.0.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Chrome 107.0.5304.87</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="4">Databases</th>
