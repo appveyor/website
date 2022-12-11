@@ -53,11 +53,11 @@ The history of macOS image updates can be found [here](/updates/).
         <th id="operating-system" class="section" colspan="4">Operating system</th>
     </tr>
     <tr>
-        <td>macOS 12.2.1 "Monterey"</td>
+        <td>macOS 12.6.1 "Monterey"</td>
         <td class="yes"></td><td class="no"></td><td class="no"></td>
     </tr>
     <tr>
-        <td>macOS 11.6.4 "Big Sur"</td>
+        <td>macOS 11.7.1 "Big Sur"</td>
         <td class="no"></td><td class="yes"></td><td class="no"></td>
     </tr>
     <tr>
@@ -67,23 +67,25 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="4">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 7.2.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 7.3.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Version control systems -->
     <tr>
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
     <tr>
-        <td>Git 2.35.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git 2.38.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td>Git Large File Storage (Git LFS) 3.1.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td>Git Large File Storage (Git LFS) 3.3.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
-    <tr><td>Mercurial 6.0.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Subversion 1.14.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mercurial 6.3.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Subversion 1.14.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- XCode -->
     <tr>
         <th id="xcode" class="section" colspan="4">XCode</th>
     </tr>
+    <tr><td>XCode 14.1</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>XCode 13.4.1</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>XCode 13.2.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>XCode 12.5.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>XCode 12.3</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
@@ -98,9 +100,10 @@ The history of macOS image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 2.1.804</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 2.2.402</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 3.0.103</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 3.1.416</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 5.0.405</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 6.0.200</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 3.1.425</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 5.0.408</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 6.0.403</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 7.0.100</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Node.js -->
     <tr>
         <th id="node-js" class="section" colspan="4">Node.js</th>
@@ -114,12 +117,14 @@ The history of macOS image updates can be found [here](/updates/).
     <tr><td>Node.js 9.11.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 10.24.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 11.15.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 12.22.10</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 12.22.12</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 13.14.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 14.19.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 14.21.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 15.14.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 16.14.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 17.6.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 16.18.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 17.9.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 18.12.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 19.2.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Java -->
     <tr>
         <th id="java" class="section" colspan="4">Java</th>
@@ -131,7 +136,8 @@ The history of macOS image updates can be found [here](/updates/).
     <tr><td>AdoptOpenJDK 12.0.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>AdoptOpenJDK 13.0.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>AdoptOpenJDK 14.0.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>AdoptOpenJDK 15.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AdoptOpenJDK 15.0.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AdoptOpenJDK 16.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Go -->
     <tr>
         <th id="golang" class="section" colspan="4">Go (Golang)</th>
@@ -143,8 +149,10 @@ The history of macOS image updates can be found [here](/updates/).
                 <li>Go 1.13.15</li>
                 <li>Go 1.14.15</li>
                 <li>Go 1.15.15</li>
-                <li>Go 1.16.14</li>
-                <li>Go 1.17.7</li>
+                <li>Go 1.16.15</li>
+                <li>Go 1.17.13</li>
+                <li>Go 1.18.8</li>
+                <li>Go 1.19.3</li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -166,6 +174,7 @@ The history of macOS image updates can be found [here](/updates/).
                 <li>Ruby 2.6.6 (default)</li>
                 <li>Ruby 2.7.2</li>
                 <li>Ruby 3.0.0</li>
+                <li>Ruby 3.1.3</li>
                 <li>Ruby head</li>
             </ul>
         </td>
@@ -175,10 +184,11 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <th id="python" class="section" colspan="4">Python</th>
     </tr>
-    <tr><td>Python 3.10.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.9.10</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.8.12</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.7.12</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.11.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.10.8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.9.15</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.8.15</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.7.15</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Python 3.6.15</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Python 3.5.10</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Python 2.7.18</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -189,20 +199,18 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>6.2.2 in <code>$HOME/Qt/6.2.2/macos/bin</code></li>
-                <li>6.1.3 in <code>$HOME/Qt/6.1.3/macos/bin</code></li>
-                <li>6.0.4 in <code>$HOME/Qt/6.0.4/macos/bin</code></li>
+                <li>6.4.0 in <code>$HOME/Qt/6.4.0/macos/bin</code></li>
+                <li>6.3.2 in <code>$HOME/Qt/6.3.2/macos/bin</code></li>
+                <li>6.2.4 in <code>$HOME/Qt/6.2.4/macos/bin</code></li>
                 <li>5.15.2 in <code>$HOME/Qt/5.15.2/clang_64/bin</code></li>
-                <li>5.14.2 in <code>$HOME/Qt/5.14.2/clang_64/bin</code></li>
             </ul>
             <p>Links for latest and major versions:</p>
             <ul>
-                <li><code>$HOME/Qt/6.2</code> &rarr; <code>$HOME/Qt/6.2.2</code></li>
-                <li><code>$HOME/Qt/6.1</code> &rarr; <code>$HOME/Qt/6.1.3</code></li>
-                <li><code>$HOME/Qt/6.0</code> &rarr; <code>$HOME/Qt/6.0.4</code></li>
+                <li><code>$HOME/Qt/6.4</code> &rarr; <code>$HOME/Qt/6.4.0</code></li>
+                <li><code>$HOME/Qt/6.3</code> &rarr; <code>$HOME/Qt/6.3.2</code></li>
+                <li><code>$HOME/Qt/6.2</code> &rarr; <code>$HOME/Qt/6.2.4</code></li>
                 <li><code>$HOME/Qt/latest</code> &rarr; <code>$HOME/Qt/5.15.2</code></li>
                 <li><code>$HOME/Qt/5.15</code> &rarr; <code>$HOME/Qt/5.15.2</code></li>
-                <li><code>$HOME/Qt/5.14</code> &rarr; <code>$HOME/Qt/5.14.2</code></li>
             </ul>
         </td>
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
@@ -211,7 +219,7 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <th id="compilers" class="section" colspan="4">Compilers</th>
     </tr>
-    <tr><td>CMake 3.22.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.25.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 6.5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 7.4.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 8.3.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -226,7 +234,7 @@ The history of macOS image updates can be found [here](/updates/).
     <tr>
         <th id="tools" class="section" colspan="4">Tools</th>
     </tr>
-    <tr><td>Homebrew 3.3.16</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Fastlane 2.204.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Homebrew 3.6.14</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Fastlane 2.211.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Curl 7.81.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
 </table>
