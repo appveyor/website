@@ -19,17 +19,6 @@ for any ongoing issues happening to AppVeyor:
 
 <https://status.appveyor.com>
 
-## Forums and support tickets
-
-AppVeyor support forums is a great source of solutions to various problems provided
-by AppVeyor team and community.
-
-<https://help.appveyor.com>
-
-* Use forums if you want to report the issue, make a suggestion or have a general discussion.
-* By default all discussions are public and searchable, but you can start a private discussion by choosing `This is a private discussion, don't let the public see it` option. Alternatively, once discussion is already posted as public its visibility can be changed by either you or AppVeyor team using **Make private** toggle button on the right side bar.
-* When the private ticket is solved with solution provided and conversation doesn't contain any sensitive data (logs, IPs, passwords, etc.) we encourage you **making it public** so the solution could be easily discovered by AppVeyor users.
-
 ## Email
 
 Whether it's a sales question or a support request you can always contact us by email:
