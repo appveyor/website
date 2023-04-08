@@ -96,7 +96,7 @@ Export-Certificate -Type CERT -Cert $cert -FilePath .\azure-manage-cert.cer
 
 # remove password from PFX certificate
 openssl pkcs12 -in azure-manage-cert.pfx -password pass:Password12 -nodes -out temp.pem
-openssl pkcs12 -export -in temp.pem -passout pass: -out azure-manage-cert.pfx
+openssl pkcs12 -export -in temp.pem -passout pass: -keypbe NONE -certpbe NONE -nomac -out azure-manage-cert.pfx
 del temp.pem
 
 # convert PFX certificate to Base64 string
