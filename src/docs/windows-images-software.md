@@ -120,7 +120,7 @@ title: Software pre-installed on Windows build VMs
         <td>6.2.3</td>
         <td>6.2.3</td>
         <td>7.3.3</td>
-        <td>7.3.2</td>
+        <td>7.3.4</td>
     </tr>
     <!-- Docker -->
     <tr>
@@ -197,10 +197,10 @@ title: Software pre-installed on Windows build VMs
         <th id="version-control-systems" class="section" colspan="6">Version control systems</th>
     </tr>
     <tr>
-        <td>Git (with <code>git config --global core.autocrlf input</code>)</td><td>2.26.2</td><td>2.26.2</td><td>2.26.2</td><td>2.38.1</td><td>2.38.1</td>
+        <td>Git (with <code>git config --global core.autocrlf input</code>)</td><td>2.26.2</td><td>2.26.2</td><td>2.26.2</td><td>2.38.1</td><td>2.40.0</td>
     </tr>
     <tr>
-        <td>Git Large File Storage (Git LFS) </td><td>2.9.2</td><td>2.9.2</td><td>2.9.2</td><td>3.2.0</td><td>3.0.2</td>
+        <td>Git Large File Storage (Git LFS) </td><td>2.9.2</td><td>2.9.2</td><td>2.9.2</td><td>3.2.0</td><td>3.3.0</td>
     </tr>
     <tr>
         <td>Mercurial</td><td>4.1.1</td><td>4.1.1</td><td>4.1.1</td><td>6.1.4</td><td>6.0</td>
@@ -316,7 +316,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="misc-sdks" class="section" colspan="6">Misc SDKs</th>
     </tr>
-    <tr><td>Flutter SDK 3.7.10</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Flutter SDK 3.7.11</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>AWS SDK for .NET with AWS Tools for Windows 3.3.69</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>AWS CLI 1.11.68</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>AWS CLI 1.17.4</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -441,7 +441,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET Core SDK 3.1.422</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET 5 SDK 5.0.408</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET 5 SDK 5.0.413</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>.NET 6 SDK 6.0.406</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET 6 SDK 6.0.408</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET 7 SDK 7.0.200</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
@@ -658,10 +658,10 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Python 3.8.10 x64 (<code>C:\Python38-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.9.13 x86 (<code>C:\Python39</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.9.13 x64 (<code>C:\Python39-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.10.10 x86 (<code>C:\Python310</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.10.10 x64 (<code>C:\Python310-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.11.2 x86 (<code>C:\Python311</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.11.2 x64 (<code>C:\Python311-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.10.11 x86 (<code>C:\Python310</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.10.11 x64 (<code>C:\Python310-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.11.3 x86 (<code>C:\Python311</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.11.3 x64 (<code>C:\Python311-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>pip 19.3.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>pip 21.2.4</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Visual C++ Compiler for Python 2.7</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
@@ -1168,7 +1168,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>CMake 3.12.2</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>NuGet 4.9.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>NuGet 6.4.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>NuGet 6.5.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Chocolatey v0.11.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GitVersion 4.0.0</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>GitVersion 5.10.3</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -1192,7 +1192,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>OpenSSL 1.1.1t (32-bit) (<code>C:\OpenSSL-v111-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.1.1t (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 3.0.8 (32-bit) (<code>C:\OpenSSL-v30-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.0.8 (64-bit) (<code>C:\OpenSSL-v30-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.1.0 (64-bit) (<code>C:\OpenSSL-v30-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.08 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.04 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
@@ -1265,8 +1265,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>PostgreSQL 11.13 x64</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 12.8 x64</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 13.4 x64</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>PostgreSQL 14.5 x64</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>PostgreSQL 15.0 x64</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 14.7 x64</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 15.2 x64</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
