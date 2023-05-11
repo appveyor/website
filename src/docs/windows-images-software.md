@@ -846,11 +846,11 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 6.4.2: <code>C:\Qt\6.4.2</code> (<code>C:\Qt\6.4</code> mapped to <code>C:\Qt\6.4.2</code> for backward compatibility)
+            <li>Qt 6.5.0: <code>C:\Qt\6.5.0</code> (<code>C:\Qt\6.5</code> mapped to <code>C:\Qt\6.5.0</code> for backward compatibility)
                 <ul>
-                <li>MinGW 9.0.0 64 bit: <code>C:\Qt\6.4.2\mingw_64</code></li>
-                <li>msvc2019 64-bit: <code>C:\Qt\6.4.2\msvc2019_64</code></li>
-                <li>ARM 64-bit: <code>C:\Qt\6.4.2\msvc2019_arm64</code></li>
+                <li>MinGW 9.0.0 64 bit: <code>C:\Qt\6.5.0\mingw_64</code></li>
+                <li>msvc2019 64-bit: <code>C:\Qt\6.5.0\msvc2019_64</code></li>
+                <li>ARM 64-bit: <code>C:\Qt\6.5.0\msvc2019_arm64</code></li>
                 </ul>
             </li>
             </ul>
@@ -860,11 +860,11 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 6.3.2: <code>C:\Qt\6.3.2</code> (<code>C:\Qt\6.3</code> mapped to <code>C:\Qt\6.3.2</code> for backward compatibility)
+            <li>Qt 6.4.2: <code>C:\Qt\6.4.2</code> (<code>C:\Qt\6.4</code> mapped to <code>C:\Qt\6.4.2</code> for backward compatibility)
                 <ul>
-                <li>MinGW 9.0.0 64 bit: <code>C:\Qt\6.3.2\mingw_64</code></li>
-                <li>msvc2019 64-bit: <code>C:\Qt\6.3.2\msvc2019_64</code></li>
-                <li>ARM 64-bit: <code>C:\Qt\6.3.2\msvc2019_arm64</code></li>
+                <li>MinGW 9.0.0 64 bit: <code>C:\Qt\6.4.2\mingw_64</code></li>
+                <li>msvc2019 64-bit: <code>C:\Qt\6.4.2\msvc2019_64</code></li>
+                <li>ARM 64-bit: <code>C:\Qt\6.4.2\msvc2019_arm64</code></li>
                 </ul>
             </li>
             </ul>
