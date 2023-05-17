@@ -81,3 +81,20 @@ After changing authorization token stop Host Agent service:
 delete Host Agent database file `host-agent.db` in `/usr/local/var/opt/appveyor/host-agent` directory and start Host Agent service again:
 
     brew services start appveyor-host-agent
+
+### Troubleshooting
+
+#### Stuck workers
+
+Sometimes, on clouds list page you can notice it doesn't display "0/X" in "Usage" column though there are no running build jobs on that cloud.
+
+You can try to "reset" AppVeyor Host Agent state, by deleting its internal database and restarting the service.
+
+Host agent database file `host-agent.db` as well as `host-agent.stderr.log` and `host-agent.stdout.log` logs are located at either `/usr/local/var/opt/appveyor/host-agent` or `/usr/local/var/appveyor/host-agent/` location.
+
+```
+brew services stop appveyor-host-agent
+rm /usr/local/var/appveyor/host-agent/host-agent.db
+brew services start appveyor-host-agent
+```
+
