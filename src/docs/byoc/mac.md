@@ -92,7 +92,7 @@ You can try to "reset" AppVeyor Host Agent state, by deleting its internal datab
 
 Host agent database file `host-agent.db` as well as `host-agent.stderr.log` and `host-agent.stdout.log` logs are located at either `/usr/local/var/opt/appveyor/host-agent` or `/usr/local/var/appveyor/host-agent/` location.
 
-```
+```text
 brew services stop appveyor-host-agent
 rm /usr/local/var/appveyor/host-agent/host-agent.db
 brew services start appveyor-host-agent
