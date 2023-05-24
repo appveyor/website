@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     grunt.initConfig({
         dirs: {
@@ -283,7 +283,8 @@ module.exports = function(grunt) {
             options: {
                 ignore: [
                     'Consider using the "h1" element as a top-level heading only (all "h1" elements are treated as top-level headings by many screen readers and other tools).',
-                    'This document appears to be written in French but the “html” start tag has “lang="en"”. Consider using “lang="fr"” (or variant) instead.'
+                    'This document appears to be written in French but the “html” start tag has “lang="en"”. Consider using “lang="fr"” (or variant) instead.',
+                    'This document appears to be written in Kinyarwanda but the “html” start tag has “lang="en"”. Consider using “lang="rw"” (or variant) instead.'
                 ]
             },
             src: [
@@ -298,10 +299,10 @@ module.exports = function(grunt) {
                 callback: function (crawler) {
                     crawler.addFetchCondition(function (url) {
                         return url.path !== '/assets/js/l.src' &&
-                               url.path !== '/assets/js/+a+' &&
-                               url.path !== '/feed.xml' &&
-                               url.port !== '9023' &&
-                               url.port !== '9001';
+                            url.path !== '/assets/js/+a+' &&
+                            url.path !== '/feed.xml' &&
+                            url.port !== '9023' &&
+                            url.port !== '9001';
                     });
                 },
                 interval: 1,        // 1 ms; default 250
