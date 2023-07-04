@@ -319,7 +319,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Flutter SDK 3.10.5</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>AWS SDK for .NET with AWS Tools for Windows 3.3.69</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>AWS CLI 1.11.68</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>AWS CLI 1.17.4</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>AWS CLI 1.27.164</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>WiX Toolset 3.11.0.1701</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>WiX Toolset 3.11.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- TypeScript -->
@@ -623,6 +623,8 @@ title: Software pre-installed on Windows build VMs
                 <li>Ruby 3.0.6-1 x64 (<code>C:\Ruby30-x64\bin</code>)</li>
                 <li>Ruby 3.1.4-1 x86 (<code>C:\Ruby31\bin</code>)</li>
                 <li>Ruby 3.1.4-1 x64 (<code>C:\Ruby31-x64\bin</code> - default in <code>PATH</code>)</li>
+                <li>Ruby 3.2.2-1 x86 (<code>C:\Ruby32\bin</code>)</li>
+                <li>Ruby 3.2.2-1 x64 (<code>C:\Ruby32-x64\bin</code></li>
             </ul>
         </td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
