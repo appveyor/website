@@ -35,7 +35,7 @@ skip_commits:
 
 Regular expressions should be surrounded by /, otherwise Appveyor will do simple case insensitive string comparison.
 
-NOTE: AppVeyor searches for skip commit string in the commit message title only (text before first empty line) only. This is done to prevent confusion when squashed commits are not being built in case older commit (in the squashed commits list) has skip commit string.
+NOTE: AppVeyor searches for skip commit string in the commit message title (text before first empty line) only. This is done to prevent confusion when squashed commits are not being built in case older commit (in the squashed commits list) has skip commit string.
 
 AppVeyor searches for [skip ci] / [ci skip] / [skip appveyor] in the commit message title only. This avoids confusion when squashing commits, in particular with the GitHub squash-and-merge feature.
 
