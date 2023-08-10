@@ -88,8 +88,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
-    <tr><td>Git 2.39.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Git Large File Storage (Git LFS) 3.2.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Git 2.41.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Git Large File Storage (Git LFS) 3.4.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Mercurial</td><td class="text-center">4.5.3</td><td class="text-center">4.4.1</td><td class="text-center">5.3.1</td></tr>
     <tr><td>Subversion</td><td class="text-center">1.9.7</td><td class="text-center">1.9.3</td><td class="text-center">1.13.0</td></tr>
     <!-- .NET Framework -->
@@ -112,11 +112,12 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Node Version Manager (<code>nvm</code>) 0.34.0</li>
-                <li>Node.js 19.7.0</li>
-                <li>Node.js 18.14.2</li>
+                <li>Node Version Manager (<code>nvm</code>) 0.39.4</li>
+                <li>Node.js 20.5.0</li>
+                <li>Node.js 19.9.0</li>
+                <li>Node.js 18.17.0</li>
                 <li>Node.js 17.9.1</li>
-                <li>Node.js 16.19.1</li>
+                <li>Node.js 16.20.1</li>
                 <li>Node.js 15.14.0</li>
                 <li>Node.js 14.21.3</li>
                 <li>Node.js 13.14.0</li>
@@ -164,8 +165,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (<code>gvm</code>) v1.0.22</li>
-                <li>Go 1.20.1</li>
-                <li>Go 1.19.6</li>
+                <li>Go 1.20.7</li>
+                <li>Go 1.19.12</li>
                 <li>Go 1.18.10</li>
                 <li>Go 1.17.13</li>
                 <li>Go 1.16.15</li>
@@ -223,8 +224,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Ruby Version Manager (<code>rvm</code>) 1.29.12</li>
-                <li>Ruby 3.2.1</li>
-                <li>Ruby 3.1.3</li>
+                <li>Ruby 3.2.2</li>
+                <li>Ruby 3.1.4</li>
                 <li>Ruby 3.0.0</li>
                 <li>Ruby 2.7.2</li>
                 <li>Ruby 2.6.6</li>
@@ -252,10 +253,10 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 3.11.2 (<code>$HOME/venv3.11.2</code> and <code>$HOME/venv3.11</code>)</li>
-                <li>Python 3.10.10 (<code>$HOME/venv3.10.10</code> and <code>$HOME/venv3.10</code>)</li>
-                <li>Python 3.9.16 (<code>$HOME/venv3.9.16</code> and <code>$HOME/venv3.9</code>)</li>
-                <li>Python 3.8.16 (<code>$HOME/venv3.8.16</code> and <code>$HOME/venv3.8</code>)</li>
+                <li>Python 3.11.4 (<code>$HOME/venv3.11.2</code> and <code>$HOME/venv3.11</code>)</li>
+                <li>Python 3.10.12 (<code>$HOME/venv3.10.10</code> and <code>$HOME/venv3.10</code>)</li>
+                <li>Python 3.9.17 (<code>$HOME/venv3.9.16</code> and <code>$HOME/venv3.9</code>)</li>
+                <li>Python 3.8.17 (<code>$HOME/venv3.8.16</code> and <code>$HOME/venv3.8</code>)</li>
                 <li>Python 3.7.16 (<code>$HOME/venv3.7.16</code> and <code>$HOME/venv3.7</code>)</li>
                 <li>Python 3.6.15 (<code>$HOME/venv3.6.15</code> and <code>$HOME/venv3.6</code>)</li>
                 <li>Python 3.5.10 (<code>$HOME/venv3.5.10</code> and <code>$HOME/venv3.5</code>)</li>
@@ -272,7 +273,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="mobile" class="section" colspan="4">Mobile SDKs</th>
     </tr>
-    <tr><td>Flutter 3.7.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Flutter 3.10.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 30.0.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Erlang -->
     <tr>
@@ -293,7 +294,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>Google Cloud SDK 392.0.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Packer 1.8.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>VirtualBox 6.1.16</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.25.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.27.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>vcpkg 2022-07-12</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Doxygen</td><td class="text-center">1.8.18</td><td class="text-center">1.8.17</td><td class="text-center">1.9.4</td></tr>
     <tr><td>Ninja 1.8.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -311,7 +312,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>SQL Server 2017 15.0.4153.1-6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 15.0-1.pgdg20.04+1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL</td><td class="text-center">5.7.35</td><td class="text-center">5.7.35</td><td class="text-center">8.0.26</td></tr>
-    <tr><td>MongoDB</td><td class="text-center">4.2.21</td><td class="text-center">5.0.2</td><td class="text-center">5.0.2</td></tr>
+    <tr><td>MongoDB</td><td class="text-center">5.0.19</td><td class="text-center">4.2.24</td><td class="text-center">5.0.19</td></tr>
     <!-- Services -->
     <tr>
         <th id="services" class="section" colspan="4">Services</th>
