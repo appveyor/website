@@ -312,7 +312,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>SQL Server 2017 15.0.4153.1-6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 15.0-1.pgdg20.04+1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL</td><td class="text-center">5.7.35</td><td class="text-center">5.7.35</td><td class="text-center">8.0.26</td></tr>
-    <tr><td>MongoDB</td><td class="text-center">5.0.19</td><td class="text-center">4.2.24</td><td class="text-center">5.0.19</td></tr>
+    <tr><td>MongoDB</td><td class="text-center">6.0.8</td><td class="text-center">4.2.24</td><td class="text-center">6.0.8</td></tr>
     <!-- Services -->
     <tr>
         <th id="services" class="section" colspan="4">Services</th>
