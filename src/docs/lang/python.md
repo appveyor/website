@@ -30,13 +30,14 @@ image:
 
 environment:
   matrix:
-  # - TOXENV: py27  # https://devguide.python.org/devcycle/#end-of-life-branches
+  # - TOXENV: py27  # end-of-life-branches
   # - TOXENV: py35
-  - TOXENV: py36    # https://devguide.python.org/#status-of-python-branches
-  - TOXENV: py37
-  - TOXENV: py38
+  # - TOXENV: py36
+  # - TOXENV: py37
+  - TOXENV: py38    # https://devguide.python.org/versions
   - TOXENV: py39
   - TOXENV: py310
+  - TOXENV: py311
 
 build: false
 
@@ -66,7 +67,7 @@ setup into a `tox.ini` file in your repository root:
 # tox.ini
 
 [tox]
-envlist = py3{6,7,8,9,10}
+envlist = py3{8,9,10,11}
 
 [testenv]
 description = Unit tests
