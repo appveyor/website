@@ -442,7 +442,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET 5 SDK 5.0.408</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET 5 SDK 5.0.413</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET 6 SDK 6.0.415</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET 7 SDK 7.0.402</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET 7 SDK 7.0.403</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="6">Silverlight</th>
@@ -1277,7 +1277,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>PostgreSQL 14.7 x64</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 15.2 x64</td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>MySQL 5.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>MySQL 8.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>MySQL ODBC drivers</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>MongoDB 4.0.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Services -->
