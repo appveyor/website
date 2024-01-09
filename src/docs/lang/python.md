@@ -68,7 +68,7 @@ setup into a `tox.ini` file in your repository root:
 # tox.ini
 
 [tox]
-envlist = py3{8,9,10,11,12}
+envlist = py3{8,9,10,11,12,ruff}
 
 [testenv]
 description = Unit tests
