@@ -74,6 +74,11 @@ envlist = py3{8,9,10,11,12,ruff}
 description = Unit tests
 deps = pytest
 commands = pytest
+
+[testenv:ruff]
+description = Lint Python code
+deps = ruff
+commands = ruff
 ```
 
 For any Tox environment you want to run on AppVeyor you need to add a
