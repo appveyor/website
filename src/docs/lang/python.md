@@ -31,8 +31,6 @@ image:
 environment:
   matrix:
   # - TOXENV: py27  # end-of-life-branches
-  # - TOXENV: py35
-  # - TOXENV: py36
   # - TOXENV: py37
   - TOXENV: py38    # https://devguide.python.org/versions
   - TOXENV: py39
