@@ -31,13 +31,14 @@ image:
 environment:
   matrix:
   # - TOXENV: py27  # end-of-life-branches
-  # - TOXENV: py35
-  # - TOXENV: py36
   # - TOXENV: py37
   - TOXENV: py38    # https://devguide.python.org/versions
   - TOXENV: py39
   - TOXENV: py310
   - TOXENV: py311
+  - TOXENV: py312
+  - PY_PYTHON: 3.12  # Run a Tox job to run the ruff linter on Python 3.12
+    TOXENV: ruff
 
 build: false
 
@@ -67,12 +68,17 @@ setup into a `tox.ini` file in your repository root:
 # tox.ini
 
 [tox]
-envlist = py3{8,9,10,11}
+envlist = py3{8,9,10,11,12,ruff}
 
 [testenv]
 description = Unit tests
 deps = pytest
 commands = pytest
+
+[testenv:ruff]
+description = Lint Python code
+deps = ruff
+commands = ruff
 ```
 
 For any Tox environment you want to run on AppVeyor you need to add a
@@ -94,7 +100,7 @@ https://stackoverflow.com/questions/30822873/how-do-i-install-pypy-on-appveyor
 
 ### Note about dependency management
 
-Since pipenv prints [some statements to stderr](https://github.com/pypa/pipenv/issues/2945), you should to silence it if it is the dependency manager you are using.
+Since pipenv prints [some statements to stderr](https://github.com/pypa/pipenv/issues/2945), you should silence it if it is the dependency manager you are using.
 
 ```yaml
 # appveyor.yml
