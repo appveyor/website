@@ -158,8 +158,8 @@ The history of macOS image updates can be found [here](/updates/).
     <tr><td>Python 3.11.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.10.13</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.9.18</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.8.18</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>Python 2.7.18</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.8.18</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 2.7.18</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Qt -->
     <tr>
         <th id="qt" class="section" colspan="4">Qt</th>
