@@ -42,6 +42,22 @@ $headers["Content-type"] = "application/json"
 Invoke-RestMethod -Uri 'https://ci.appveyor.com/api/roles' -Headers $headers -Method Get
 ```
 
+### YML
+Your API token needs to be stored in a [secure variable](/docs/build-configuration/#secure-variables) before appearing in a `yml` file. You can store it in an environment variable for that purpose. As a result the above PowerShell snippet will be written in a yml file as follows:
+
+```yml
+environment:
+  api_token:
+    secure: <your-secure-api-token>
+before_build: #just an example
+    - ps: |
+        $token = $env:api_token
+        $headers = @{}
+        $headers['Authorization'] = "Bearer $token"
+        $headers["Content-type"] = "application/json"
+        Invoke-RestMethod -Uri 'https://ci.appveyor.com/api/roles' -Headers $headers -Method Get
+```
+
 <!-- markdownlint-disable MD003 MD022 -->
 ### C\#
 <!-- markdownlint-enable MD003 MD022 -->
