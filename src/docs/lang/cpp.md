@@ -163,7 +163,8 @@ To enable faster (cached) rebuilds add the following to the cache section in the
 
 ```yaml
 cache:
-- c:\tools\vcpkg\installed\
+- c:\Users\appveyor\AppData\Local\vcpkg\archives\
+- c:\tools\vcpkg\packages\
 ```
 
 Read more about using Vcpkg in its [documentation](https://vcpkg.readthedocs.io).
