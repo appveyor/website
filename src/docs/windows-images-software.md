@@ -625,8 +625,7 @@ title: Software pre-installed on Windows build VMs
                 <li>Ruby 3.2.3-1 x86 (<code>C:\Ruby32\bin</code>)</li>
                 <li>Ruby 3.2.3-1 x64 (<code>C:\Ruby32-x64\bin</code> - default in <code>PATH</code>)</li>
                 <li>Ruby 3.3.0-1 x86 (<code>C:\Ruby33\bin</code>)</li>
-                <li>Ruby 3.3.0-1 x64 (<code>C:\Ruby33-x64\bin<
-                code>)</li>
+                <li>Ruby 3.3.0-1 x64 (<code>C:\Ruby33-x64\bin</code>)</li>
             </ul>
         </td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
