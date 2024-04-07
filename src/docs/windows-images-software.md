@@ -440,7 +440,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET 5 SDK 5.0.413</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET 6 SDK 6.0.415</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET 7 SDK 7.0.403</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET 8 SDK 8.0.200-1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET 8 SDK 8.0.202</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="6">Silverlight</th>
@@ -852,11 +852,11 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 6.6.2: <code>C:\Qt\6.6.2</code> (<code>C:\Qt\6.6</code> mapped to <code>C:\Qt\6.6.2</code> for backward compatibility)
+            <li>Qt 6.7.0: <code>C:\Qt\6.7.0</code> (<code>C:\Qt\6.7</code> mapped to <code>C:\Qt\6.7.0</code> for backward compatibility)
                 <ul>
-                <li>MinGW 9.0.0 64 bit: <code>C:\Qt\6.6.2\mingw_64</code></li>
-                <li>msvc2019 64-bit: <code>C:\Qt\6.6.2\msvc2019_64</code></li>
-                <li>ARM 64-bit: <code>C:\Qt\6.6.2\msvc2019_arm64</code></li>
+                <li>MinGW 9.0.0 64 bit: <code>C:\Qt\6.7.0\mingw_64</code></li>
+                <li>msvc2019 64-bit: <code>C:\Qt\6.7.0\msvc2019_64</code></li>
+                <li>ARM 64-bit: <code>C:\Qt\6.7.0\msvc2019_arm64</code></li>
                 </ul>
             </li>
             </ul>
@@ -1169,7 +1169,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>7-Zip 19.00</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>7-Zip 22.01</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Microsoft Web Platform Installer 5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>CMake 3.27.7</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>CMake 3.29.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>CMake 3.16.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>CMake 3.12.2</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
