@@ -102,7 +102,6 @@ To check what versions are available on build worker you could do `dir C:\avvm\n
 The following paths are always added to `PATH` environment variable:
 
     C:\Program Files (x86)\nodejs
-    C:\Program Files (x86)\iojs
     C:\Program Files\nodejs
     C:\Users\appveyor\AppData\Roaming\npm
 
