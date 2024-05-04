@@ -1,10 +1,10 @@
 ---
 layout: docs
-title: Testing with Node.js and io.js
+title: Testing with Node.js
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
-# Testing with Node.js and io.js
+# Testing with Node.js
 {:.no_toc}
 
 * Comment to trigger ToC generation
@@ -13,16 +13,19 @@ title: Testing with Node.js and io.js
 
 ## Quick start
 
-Put this simple `appveyor.yml` to the root of your repository and it should work for the most Node.js projects out there:
+Put this simple `appveyor.yml` to the root of your repository and it should work for most Node.js projects out there:
 
 ```yaml
 # Test against the latest version of this Node.js version
+image:
+  - Visual Studio 2022
+
 environment:
-  nodejs_version: "6"
+  nodejs_version: "20"
 
 # Install scripts. (runs after repo cloning)
 install:
-  # Get the latest stable version of Node.js or io.js
+  # Get the latest stable version of Node.js
   - ps: Install-Product node $env:nodejs_version
   # install modules
   - npm install
@@ -59,94 +62,85 @@ and always explicitly change this setting during the build or
 [have it configured per-repository](https://help.github.com/articles/dealing-with-line-endings/).
 
 
-## Selecting Node.js or io.js version
+## Selecting Node.js version
 
-Build workers have the most recent versions of Node.js and io.js pre-installed - both `x86` and `x64`.
-If you do nothing your scripts will run under `Node.js 4.7.x (x86)` (at the time of writing).
+Build workers have the most recent versions of Node.js pre-installed - both `x86` and `x64`.
+If you do nothing your scripts will run under `Node.js 22.1.x (x86)` (at the time of writing).
 
-To switch to a different version of Node.js or io.js use the following PowerShell command:
+To switch to a different version of Node.js use the following PowerShell command:
 
     Install-Product node <version> [x86|x64]
 
-`<version>` can be specified as `MAJOR` to install *absolute latest* version of Node.js or io.js,
-`MAJOR.MINOR` to install *the latest* Node.js or io.js build or `MAJOR.MINOR.BUILD` to install *specific* build.
-When `MAJOR` part of the `<version>` is `1` then **io.js** is installed.
+`<version>` can be specified as `MAJOR` to install *absolute latest* version of Node.js,
+`MAJOR.MINOR` to install *the latest* Node.js build or `MAJOR.MINOR.BUILD` to install *specific* build.
 
-For example to switch runtime to the **latest version of Node.js** use this command (at the time of writing this is the latest 7.x branch):
+For example to switch runtime to the **latest version of Node.js** use this command (at the time of writing this is the latest 22.x branch):
 
     Install-Product node ''
 
-To switch Node.js to the latest available 6.x branch use:
+To switch Node.js to the latest available 20.x branch use:
 
-    Install-Product node 6
+    Install-Product node 20
 
-To select specific x64 version of Node 6.9.3:
+To select specific x64 version of Node v21.7.3:
 
-    Install-Product node 6.9.3 x64
+    Install-Product node 21.7.3 x64
 
-Any `1.x` version automatically assumes you want io.js, so to switch to the **latest version of io.js** use this command:
-
-    Install-Product node 1
-
-In `appveyor.yml` you should prefix command with `ps` to tell AppVeyor it's PowerShell:
+In `appveyor.yml` you should prefix the command with `ps` to tell AppVeyor it's PowerShell:
 
 ```yaml
 install:
-  - ps: Install-Product node 1
+  - ps: Install-Product node 22
 ```
 
 ### How that works
 
 Pre-installed Node.js distributives are stored in `C:\avvm\node` folder. When you run `Install-Product node` command it's,
-basically, moving `nodejs` or `iojs` folder from there to `Program Files`, so the switch is very quick.
+basically, moving `nodejs` folder from there to `Program Files`, so the switch is very quick.
 To check what versions are available on build worker you could do `dir C:\avvm\node`.
 
 The following paths are always added to `PATH` environment variable:
 
     C:\Program Files (x86)\nodejs
-    C:\Program Files (x86)\iojs
     C:\Program Files\nodejs
-    C:\Program Files\iojs
     C:\Users\appveyor\AppData\Roaming\npm
 
-### Installing *any* version of Node.js or io.js
+### Installing *any* version of Node.js
 
-Sometimes pre-installed versions of Node.js or io.js are little behind (this is especially true for io.js),
-but what if you need to test under bleeding edge. You could use another PowerShell cmdlet which does full
-re-install of Node.js or io.js to a selected version.
+Sometimes pre-installed versions of Node.js are little behind, but what if you need to test under
+bleeding edge. You could use another PowerShell cmdlet which does full re-install of Node.js to a
+selected version.
 
     Update-NodeJsInstallation <version> [x86|x64]
 
-Here `<version>` is **exact version** of Node.js or io.js.
+Here `<version>` is **exact version** of Node.js.
 
-For example the following command will download and install Node.js 5.12.0:
+For example, the following command will download and install Node.js v21.7.3:
 
-    Update-NodeJsInstallation 5.12.0
+    Update-NodeJsInstallation 21.7.3
 
-There is a helper cmdlet checking remote dist directory of Node.js or io.js to determine absolute latest build available:
+There is a helper cmdlet checking the remote dist directory of Node.js to determine the absolute latest build available:
 
     Get-NodeJsLatestBuild <major>.<minor>
 
-It could be used together with previous cmdlet to always install the latest build, for example:
+It could be used together with the previous cmdlet to always install the latest build, for example:
 
     Update-NodeJsInstallation (Get-NodeJsLatestBuild 1.0)
 
 
 
-## Testing under multiple versions of Node.js or io.js
+## Testing under multiple versions of Node.js
 
-AppVeyor enables easy testing against multiple combinations of platforms, configurations and environments with [build matrix](/docs/build-configuration#build-matrix).
+AppVeyor enables easy testing against multiple combinations of platforms, configurations, and environments with [build matrix](/docs/build-configuration#build-matrix).
 
-To test under latest version of Node.js and io.js you can specify in `appveyor.yml`:
+To test under the latest version of Node.js you can specify in `appveyor.yml`:
 
 ```yaml
 environment:
   matrix:
-    # node.js
-    - nodejs_version: "4"
-    - nodejs_version: "6"
-    # io.js
-    - nodejs_version: "1.0"
+    - nodejs_version: "18"
+    - nodejs_version: "20"
+    - nodejs_version: "22"
 
 install:
   - ps: Install-Product node $env:nodejs_version
@@ -157,16 +151,17 @@ To allow failing jobs for bleeding-edge Node.js versions:
 ```yaml
 matrix:
   allow_failures:
-    - nodejs_version: "7"
+    - nodejs_version: "22"
 ```
 
-What if you need to test under specific version of Node.js for both x86 and x64 platforms? You could add another "dimension" to the matrix, for example:
+What if you need to test under a specific version of Node.js for both x86 and x64 platforms?
+You could add another "dimension" to the matrix, for example:
 
 ```yaml
 environment:
   matrix:
-    - nodejs_version: "4"
-    - nodejs_version: "6"
+    - nodejs_version: "18"
+    - nodejs_version: "20"
 
 platform:
   - x86
@@ -178,10 +173,10 @@ install:
 
 This configuration will produce a build with 4 jobs for all combinations of node version and platform:
 
-    Node.js 4.x   x86
-    Node.js 4.x   x64
-    Node.js 6.x   x86
-    Node.js 6.x   x64
+    Node.js 18.x   x86
+    Node.js 18.x   x64
+    Node.js 20.x   x86
+    Node.js 20.x   x64
 
 
 ## Deploying a Node.js website to Azure
@@ -191,7 +186,7 @@ You can use Web Deploy to [deploy your Node.js website](/docs/deployment/web-dep
 ## Authenticating NPM for publishing packages
 
 For publishing packages to NPM registry during the build `npm` client should be authenticated.
-On your development machine you run `npm adduser` command to set npm credentials.
+On your development machine, you run `npm adduser` command to set npm credentials.
 
 On AppVeyor build worker you don't need to run `npm adduser`, but you can just move npm `authToken` from your local machine to a build VM. This is what you have to do:
 
@@ -237,10 +232,6 @@ At the moment it seems to be an issue with PowerShell and the way it redirects o
 
 Sometimes you may notice that output of some Node.js programs (especially those ones actively writing to both StdOut and StdErr) is garbled or missing.
 
-In two words, there was Windows-specific issue in Node.js with non-blocking StdErr ([joyent/node#3584](https://github.com/joyent/node/issues/3584)) which was fixed in this pull request [joyent/node#7196](https://github.com/joyent/node/pull/7196) and finally landed in **Node.js v0.11.12** ([joyent/node@20176a9](https://github.com/joyent/node/commit/20176a98416353d4596900793f739d5ebf4f0ee1)). There is a [great discussion of this problem](https://github.com/mapnik/node-mapnik/issues/257#issuecomment-44417280).
-
-Solution - run your tests under the latest Node.js.
-
 
 ### Locking errors (EPERM, EEXIST, tgz.lock)
 
@@ -248,13 +239,6 @@ Sometimes you may encounter sporadic "lock" errors that might look like:
 
     npm ERR! Error: EPERM, open 'C:\Users\appveyor\AppData\Roaming\npm-cache{something}-package-tgz.lock'
     npm ERR! EEXIST, open '{some-path}\npm-cache{something}-package-tgz.lock'
-
-By default, Node.js comes with pre-installed `npm` of version `1.x`. However, most of these "racing condition" issues were fixed in npm 2.0.
-
-Solution - install npm 2.0:
-
-    npm -g install npm@2
-    set PATH=%APPDATA%\npm;%PATH%
 
 More info about [npm troubleshooting on Windows](https://github.com/npm/npm/wiki/Troubleshooting#upgrading-on-windows).
 
