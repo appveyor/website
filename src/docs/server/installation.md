@@ -69,7 +69,7 @@ At the website of our domain name provider (e.g. go daddy etc):
 * Add an 'A Record' for your static IP address from above, and map it to: `ci.yourcompany.com` (in this example).
 
 It may take minutes or hours for DNS records to replicate around the globe before you will see the changes.
-When it does, you should be able to point your browser to: `http://ci.yourcompany.com`, and you will see the familar start page of IIS Server on your CI Server!
+When it does, you should be able to point your browser to: `http://ci.yourcompany.com`, and you will see the familiar start page of IIS Server on your CI Server!
 
 ## Setup SSL Certificate
 
@@ -113,7 +113,7 @@ Just [follow the simple usage instructions for letsencrypt-win-simple tool](http
 
 To purchase certificate from a certificate authority (CA) you will first need to create a special 'Certificate Signing Request' (CSR), which is a process that creates a private key and generates a bit of text that describes your certificate.
 
-There are many tools available on the internet that can do that for you, but your VM has an easy way to create one for you too which releives you from having to worry about the private key.
+There are many tools available on the internet that can do that for you, but your VM has an easy way to create one for you too which relieves you from having to worry about the private key.
 
 This process is outlined in detail below.
 

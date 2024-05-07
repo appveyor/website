@@ -190,4 +190,4 @@ init:
 
 ### Saving cache for failed build
 
-By default build cache is being saved only for successsful build. If it should be saved for failed builds too, set `APPVEYOR_SAVE_CACHE_ON_ERROR` to `true`.
+By default build cache is being saved only for successful build. If it should be saved for failed builds too, set `APPVEYOR_SAVE_CACHE_ON_ERROR` to `true`.

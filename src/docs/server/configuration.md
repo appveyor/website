@@ -212,7 +212,7 @@ Builds retention policy can be enabled on account level and applied to all proje
 
 To enable builds retention policy on account level go to **Account menu &rarr; Retention policy**.
 
-Specify the miniumum "age" of builds that should be deleted. The cut-off date is compared with the build creation date.
+Specify the minimum "age" of builds that should be deleted. The cut-off date is compared with the build creation date.
 
 You can also specify multiple conditions for builds to determine exclusion, for example you can skip tagged builds or builds with `[RELEASE]` word in commit message.
 

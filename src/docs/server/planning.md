@@ -60,7 +60,7 @@ If you plan to run multiple build jobs in parallel make sure your cloud subscrip
 
 For example, if you are running your builds on VMs in Azure, and lets say you want to run a maximum of 10x build jobs and you select a VM size of 'Standard_DS2_V2' (each with 2 CPU cores) to run each job. Then you will need to have _at least_ 20x 'Standard DSv2 Family Cores' in your Azure quota (in your selected region). Also, you may want to ensure you have 10x Public IP addresses.
 
-Azure quotas for cores of any particular family are pretty small by default (usually about 20x) so be sure to check your quotas before you run a build, otherwise your jobs will never start. Some regions wont permit large quotas, so it pays to check first when choosing the VM size you want. Azure core quota increases may take a few days to obtain.
+Azure quotas for cores of any particular family are pretty small by default (usually about 20x) so be sure to check your quotas before you run a build, otherwise your jobs will never start. Some regions won't permit large quotas, so it pays to check first when choosing the VM size you want. Azure core quota increases may take a few days to obtain.
 
 ## Where to store build artifacts
 

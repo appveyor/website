@@ -23,7 +23,7 @@ If you are a Windows developer you probably have Windows 10 on your desktop alre
 
 ### Windows Server
 
-AppVeyor Server can be installed on Windows Server 2016 or above. We strongly recommend the latest **Windows Server 2019 (version 1809)** for your CI/CD server, expecially if you are going to run Docker builds. Windows Server 2019 has base Docker images with the smallest footprint, can run Linux Containers On Windows (LCOW) and has the Windows Subsystem for Linux (WSL) feature - a must for any team developing for multiple platforms.
+AppVeyor Server can be installed on Windows Server 2016 or above. We strongly recommend the latest **Windows Server 2019 (version 1809)** for your CI/CD server, especially if you are going to run Docker builds. Windows Server 2019 has base Docker images with the smallest footprint, can run Linux Containers On Windows (LCOW) and has the Windows Subsystem for Linux (WSL) feature - a must for any team developing for multiple platforms.
 
 If you are going to deploy your AppVeyor Server in a cloud we recommend Azure, as their VMs have nested virtualization enabled and as such allow Hyper-V and LCOW. On AWS there is `i3.metal` instance on which Windows Server 2016 with Hyper-V could be deployed. GCP, unfortunately, does not yet support nested virtualization for Windows in their VMs.
 
@@ -107,7 +107,7 @@ Builds are logical container for *build jobs*. Every build has at least one job,
 
 Click **New build** or make a push to project repository to start a new build.
 
-Out-of-the-box AppVeyor is configured to run every build job as a new system process. The build flow in that process is controlled by *AppVeyor Build Agent* and starts with repository cloning. **Process** is the simplest form of builds isolation. It's the easiest way to get started with AppVeyor as it relies on the software/tools/libraries that most probably already installed on your Desktop or build server. However, "process" isolation does not follow "clean environment" principle which assumes the build does not have "harmful" steps (like disk formating or reboots) and finishes with clean-up code (like deleting test database or removing temp files).
+Out-of-the-box AppVeyor is configured to run every build job as a new system process. The build flow in that process is controlled by *AppVeyor Build Agent* and starts with repository cloning. **Process** is the simplest form of builds isolation. It's the easiest way to get started with AppVeyor as it relies on the software/tools/libraries that most probably already installed on your Desktop or build server. However, "process" isolation does not follow "clean environment" principle which assumes the build does not have "harmful" steps (like disk formatting or reboots) and finishes with clean-up code (like deleting test database or removing temp files).
 
 AppVeyor build job has a [pre-defined pipeline](/docs/build-configuration/#build-pipeline) like **Clone &rarr; Install &rarr; Build &rarr; Test &rarr; Package &rarr; Deploy &rarr; Finalize**, but, of course, each step in that flow could be enabled/disabled, customized or completely replaced with your own script. A job is a minimal building block for complex CI/CI workflows modeled with build matrices where jobs could wait for other jobs, combined into groups and run in parallel.
 
@@ -159,7 +159,7 @@ There is a difference between the build running with **agent-less** image versus
 * **On build error script** from General tab;
 * **On build finish script** from General tab;
 
-What if you need to **pull the lates version of image on every build run**? Add the following environment variable:
+What if you need to **pull the latest version of image on every build run**? Add the following environment variable:
 
     docker_pull: always
 
@@ -167,7 +167,7 @@ Proceed to the next section to know how to build complex CI/CD workflows with se
 
 #### Complex pipelines with multiple jobs
 
-Configuring the build on UI is good for the start and probably enough for most of the projects, but for more sophisitcated scenarios you should move build configuration to a YAML file.
+Configuring the build on UI is good for the start and probably enough for most of the projects, but for more sophisticated scenarios you should move build configuration to a YAML file.
 
 There could be multiple real-world scenarios solved:
 
@@ -376,7 +376,7 @@ Script will ask to enter required information and make a few selections. It is t
 
     .\connect-to-azure.ps1 -appveyor_api_key <appveyor_account_api_key> -appveyor_url <appveyor_url> -azure_location <azure_location> -azure_vm_size <azure_vm_size> -skip_disclaimer -use_current_azure_login
 
-*Note that scipt expects short notation for both `-azure_location` and `-azure_vm_size` parameters, like `westus` and `Standard_D2s_v3` (not their display names).*
+*Note that script expects short notation for both `-azure_location` and `-azure_vm_size` parameters, like `westus` and `Standard_D2s_v3` (not their display names).*
 
 For more advanced options call `get-help .\connect-to-azure.ps1 -detailed` or check script source code.
 

@@ -115,7 +115,7 @@ When deploying Cloud Services to different environments you don't want to re-bui
 
 Cloud Service Deploy provider analyzes the deployment package and looks into environment variables to set parameter values with matching names.
 
-Variable should be in format `<role_name>.<setting_name>`. For example if your .cscfg contains the folloing:
+Variable should be in format `<role_name>.<setting_name>`. For example if your .cscfg contains the following:
 
 ```xml
 <Role name="FrontEnd">

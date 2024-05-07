@@ -24,7 +24,7 @@ Amazon S3 deployment provider copies all or selected artifacts to Amazon S3 stor
     * `**/*.js` - gzip `.js` files in all directories recursively;
     * `js/*.js` - gzip `.js` files in `js` directory only;
     * `**/*.js, **/*.html` - gzip `.js` and `.html` files in all directories recursively.
-* **Custom blob headers** (`headers`) - Optional. Allows to attach custom headers to blobs statisfying file mask(s). See custom headers specification below.
+* **Custom blob headers** (`headers`) - Optional. Allows to attach custom headers to blobs satisfying file mask(s). See custom headers specification below.
 * **Use Reduced Redundancy Storage** (`reduced_redundancy`) - Optional. Default is `false`.
 * **Retry attempts** (`max_error_retry`) - Optional. Number of times provider will retry after a failure. Default is `0`.
 

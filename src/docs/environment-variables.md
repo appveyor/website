@@ -50,7 +50,7 @@ Environment variables that are set by AppVeyor for every build:
 ## Tweak environment variables
 
 * `APPVEYOR_ARTIFACT_UPLOAD_TIMEOUT` - artifact upload timeout in seconds. Default is 600 (10 minutes)
-* `APPVEYOR_FILE_DOWNLOAD_TIMEOUT` - timeout in seconds to download arbirtary files using `appveyor DownloadFile` command. Default is 300 (5 minutes)
+* `APPVEYOR_FILE_DOWNLOAD_TIMEOUT` - timeout in seconds to download arbitrary files using `appveyor DownloadFile` command. Default is 300 (5 minutes)
 * `APPVEYOR_REPOSITORY_SHALLOW_CLONE_TIMEOUT` - timeout in seconds to download repository (GitHub, Bitbucket or Azure DevOps) as zip file (shallow clone). Default is 1800 (30 minutes)
 * `APPVEYOR_CACHE_ENTRY_UPLOAD_DOWNLOAD_TIMEOUT` - timeout in seconds to download or upload each cache entry. Default is 300 (5 minutes)
 * `APPVEYOR_CACHE_SKIP_RESTORE` - set to `true` to disable cache restore
@@ -61,4 +61,4 @@ Environment variables that are set by AppVeyor for every build:
 * `APPVEYOR_SKIP_FINALIZE_ON_EXIT` - if `appveyor exit` or `Exit-AppVeyor` build was called, exit build even without **Finalize** steps (`on_success`, `on_finish` scripts and build cache save)
 * `APPVEYOR_SAVE_CACHE_ON_ERROR` - save build cache on build failure. By default build cache is being saved only during successful build **Finalize** steps
 * `APPVEYOR_ACS_DEPLOYMENT_UPGRADE_MODE` - Exposes [DeploymentUpgradeMode Enumeration](https://msdn.microsoft.com/en-us/library/microsoft.windowsazure.management.compute.models.deploymentupgrademode.aspx) when deploying Azure Cloud Service. Default value is `Auto`. Set it to `Manual` or `Simultaneous` if different behavior is required.
-* `APPVEYOR_IGNORE_COMMIT_FILTERING_ON_TAG` - if set to `true`, tagged build does not respect commit fitering (except built-in `[skip ci] / [ci skip] / [skip appveyor]` in the commit message), branches white- and blacklisting, as well as `skip_tags: true`.
+* `APPVEYOR_IGNORE_COMMIT_FILTERING_ON_TAG` - if set to `true`, tagged build does not respect commit filtering (except built-in `[skip ci] / [ci skip] / [skip appveyor]` in the commit message), branches white- and blacklisting, as well as `skip_tags: true`.
