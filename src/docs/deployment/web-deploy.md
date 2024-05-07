@@ -233,7 +233,7 @@ Variables defined during the build override those ones defined on Environment le
 
 Web Deploy works great as a deployment tool with a Node.js website. The trick is getting the website assests all packaged into a single zip asset
 and then using web deploy to sync up this single zip. To do this, we need to do _one_ main step in our _node build script_ (not in the AppVeyor
-build script, but in your personal node build script) and then _two_ main steps in our AppVeyor build pipepline.
+build script, but in your personal node build script) and then _two_ main steps in our AppVeyor build pipeline.
 
 * (Node script) First, you need to throw all your final assests into a temporary folder which contains your node site, all bundled and minified,
   etc. e.g. `\src\dist`. Use whatever tools your comfortable with (i.e. webpack/browserfy/grunt/gulp/etc.)

@@ -29,7 +29,7 @@ Deployment behaviour:
 * **Always re-create database** (`create_new_database`) - `true` if database should be re-created every time you deploy. Default is `false`.
 * **Block incremental deployment if data loss might occur** (`block_on_possible_data_loss`) - Prevent database changes if data loss might occur. Default is `true`.
 * **Execute deployment script in single-user mode** (`deploy_database_in_single_user_mode`) - `true` to execute deployment script in single-user mode. Default is `false`.
-* **Back up database before deployment** (`backup_database_before_changes`) - `true` to back up database before deployment. **Does not work when publishing to Azure SQL databse**. Default is `false`.
+* **Back up database before deployment** (`backup_database_before_changes`) - `true` to back up database before deployment. **Does not work when publishing to Azure SQL database**. Default is `false`.
 * **DROP objects in target but not in project** (`drop_objects_not_in_source`) - `true` to remove objects in destination database that do not exist in the package. Default is `false`.
 * **Do not DROP users** (`do_not_drop_users`). Set to `true` when **DROP objects in target but not in project** (`drop_objects_not_in_source`) is `true` to preserve database users. Default is `false`. **Important note**: to properly preserve users, the following settings also should be set to `true`:
     * **Ignore permissions** (`ignore_permissions`)

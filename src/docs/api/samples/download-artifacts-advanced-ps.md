@@ -64,7 +64,7 @@ function Get-AppVeyorArtifacts
     if (-not $projectObject.build.jobs) {throw "No jobs found for this project or the project and/or account name was incorrectly specified"}
 
     if (($projectObject.build.jobs.count -gt 1) -and -not $jobName) {
-        throw "Multiple Jobs found for the latest build. Please specify the -JobName paramter to select which job you want the artifacts for"
+        throw "Multiple Jobs found for the latest build. Please specify the -JobName parameter to select which job you want the artifacts for"
     }
 
     if ($JobName) {

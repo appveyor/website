@@ -102,7 +102,7 @@ notifications:
   - provider: <provider_1>
     settings: ...
 
-# disable build and test pahses
+# disable build and test phases
 build: off
 test: off
 ```

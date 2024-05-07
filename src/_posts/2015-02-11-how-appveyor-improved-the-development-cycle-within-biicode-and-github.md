@@ -30,7 +30,7 @@ This meant that whenever publishing an STABLE version you had to remember to upd
 
 As someone who loves time, I really needed to find a solution for this. Well, AppVeyor makes this no longer a problem.  With help of their full docs, support and the many possibilities available within the environment variables and build configuration we got what we needed.
 
-Now biicode workflow relys fully on GitHub thanks to AppVeyor. Once you use AppVeyor to test, build and publish a new version to biicode, it will automatically update your parents and commit  and push them to github skipping builds whose commits match our automatic commit via the [appveyor.yml file](/docs/appveyor-yml/).
+Now biicode workflow relies fully on GitHub thanks to AppVeyor. Once you use AppVeyor to test, build and publish a new version to biicode, it will automatically update your parents and commit  and push them to github skipping builds whose commits match our automatic commit via the [appveyor.yml file](/docs/appveyor-yml/).
 
 Here's a guide about [how to pushing to a remote Git repository from an AppVeyor build](/docs/how-to/git-push/).
 

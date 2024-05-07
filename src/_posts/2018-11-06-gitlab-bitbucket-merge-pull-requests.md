@@ -73,7 +73,7 @@ Add GitLab user AppVeyor authorized with to the Members of private fork projects
 
 ![GitLab OAuth user](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/gitlab-oauth-user.png)
 
-* User’s role permission in the source repository should be at least `Reporter` role permission. To allow AppVeyr to to set up Merge request status, asign this user at least `Developer` role permission:
+* User’s role permission in the source repository should be at least `Reporter` role permission. To allow AppVeyr to to set up Merge request status, assign this user at least `Developer` role permission:
 
 ![GitLab add member](/assets/img/posts/gitlab-bitbucket-merge-pull-requests/gitlab-add-member.png)
 

@@ -136,7 +136,7 @@ environment:
 
 ## Fan-in, fan-out
 
-Fan-out flow is when multiple jobs are spawned in parallel once a single job or a group is completed. Fan-in flow is when a single job or a group waits for a muliple jobs to complete:
+Fan-out flow is when multiple jobs are spawned in parallel once a single job or a group is completed. Fan-in flow is when a single job or a group waits for a multiple jobs to complete:
 
 <p class="text-center">
     <img src="/assets/img/docs/workflows/fan-in-fan-out-groups.png" alt="Fan-in, fan-out flows" width="462" height="322">
@@ -170,7 +170,7 @@ environment:
 
 ## Cancellable jobs
 
-You can have jobs which are automatically cancelled when the entire build is complete (succeded or failed - doesn't matter). These jobs could be some sort of "monitors" or services/dependencies (such as container with Redis or database) in Docker builds.
+You can have jobs which are automatically cancelled when the entire build is complete (succeeded or failed - doesn't matter). These jobs could be some sort of "monitors" or services/dependencies (such as container with Redis or database) in Docker builds.
 
 <p class="text-center">
     <img src="/assets/img/docs/workflows/cancellable-jobs.png" alt="Cancellable jobs" width="322" height="192">

@@ -149,7 +149,7 @@ AddTest options:
 
       -Name             - Required. The name of test.
       -Framework        - Required. The name of testing framework, e.g. NUnit, xUnit, MSTest.
-      -FileName         - Required. File name containg test.
+      -FileName         - Required. File name containing test.
       -Outcome          - Test outcome: None, Running, Passed, Failed, Ignored, Skipped, Inconclusive, NotFound, Cancelled, NotRunnable
       -Duration         - Test duration in milliseconds.
       -ErrorMessage     - Error message of failed test.

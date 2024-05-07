@@ -13,7 +13,7 @@ All `Visual Studio 2019` build VMs have nested virtualization enabled.
 
 ## Docker with Linux containers support
 
-Docker on `Visual Studio 2019` image allows you to run Windows and Linux containers simultanously without ever switching between Windows and Linux "modes".
+Docker on `Visual Studio 2019` image allows you to run Windows and Linux containers simultaneously without ever switching between Windows and Linux "modes".
 Running a Linux container could be as simple as `docker run --rm busybox echo hello_world`.
 
 ## Windows Subsystem for Linux (WSL)
