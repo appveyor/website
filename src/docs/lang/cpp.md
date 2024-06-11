@@ -86,7 +86,7 @@ Run the following in the `appveyor.yml`:
 Now, Visual C++ tools (`cl.exe`, `link.exe` and others) should be available in the `PATH` and
 required variables for
 [CL environment](https://msdn.microsoft.com/en-us/library/kezkeayy.aspx)
-and [LINK enviornment](https://msdn.microsoft.com/en-us/library/6y6t9esh.aspx)
+and [LINK environment](https://msdn.microsoft.com/en-us/library/6y6t9esh.aspx)
 set properly for command-line builds.
 
 ## PlatformToolset
@@ -102,7 +102,7 @@ The `PlatformToolset` value should be set after `Microsoft.Cpp.Default.props` pr
 </PropertyGroup>
 ```
 
-If you are building with custom rules which may cause `DefaultPlatformToolset` to be undefined, then you can use the following to ensure `PlatformToolset` has a minumum value.
+If you are building with custom rules which may cause `DefaultPlatformToolset` to be undefined, then you can use the following to ensure `PlatformToolset` has a minimum value.
 
 ```xml
 <!-- Use DefaultPlatformToolset after Microsoft.Cpp.Default.props -->

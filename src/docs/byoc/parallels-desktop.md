@@ -31,7 +31,7 @@ In Parallels Control Center GUI click "+" button to create a new VM. Browse Free
 When MacOS is installed login as `appveyor` user and continue with the following steps:
 
 1. In a terminal:
-    * Run `sudo bash` to get root priviledges
+    * Run `sudo bash` to get root privileges
     * Add user `appveyor` to sudoers with `NOPASSWD`: `echo -e 'appveyor\tALL=(ALL)\tNOPASSWD: ALL\nDefaults:appveyor        !requiretty' > /etc/sudoers.d/appveyor`
     * Set Computer Sleep to "Never" with command: `sudo systemsetup -setcomputersleep Never`
 2. In System Preferences:

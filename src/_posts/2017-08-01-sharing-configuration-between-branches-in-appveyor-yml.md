@@ -47,7 +47,7 @@ The problem with 1st approach is merging as you are overriding `appveyor.yml` in
   configuration: Debug
 ```
 
-While this approach works great in the most cases there is one incovenience though - with large configuration and many branches `appveyor.yml` becomes really unmanageable and error-prone as you have to repeat (copy-paste) entire configuration for every branch.
+While this approach works great in the most cases there is one inconvenience though - with large configuration and many branches `appveyor.yml` becomes really unmanageable and error-prone as you have to repeat (copy-paste) entire configuration for every branch.
 
 ## The solution
 

@@ -4,7 +4,7 @@ title: Advanced build matrix configuration in AppVeyor
 
 ## AppVeyor config evolution
 
-AppVeyor configuration has grown incrementally more sophisiticated in order to accomodate not only a wide range of build requirements,
+AppVeyor configuration has grown incrementally more sophisiticated in order to accommodate not only a wide range of build requirements,
 but also AppVeyor's feature set, and most pertinently to this post, the addition of linux build machines. This welcome addition to the AppVeyor platform means that users
 may want to build a cross-platform repository but may not want to manage separate configuration files. This is no longer a problem if we make use of
 the `for:` node in our appveyor configuration. This key was added previously to allow users to share common configuration between all branches while overriding
@@ -49,10 +49,10 @@ for:
 ```
 
 In the above configuration we see familiar keys being set that will be shared by all jobs calculated by the matrix. In the `for:` section we specify
-some overrides to those keys, and also some additions. If you're not already familiar witht the rules for configuraion merging they can be found [in the docs](https://www.appveyor.com/docs/branches/#sharing-common-configuration-between-branches).
+some overrides to those keys, and also some additions. If you're not already familiar with the rules for configuration merging they can be found [in the docs](https://www.appveyor.com/docs/branches/#sharing-common-configuration-between-branches).
 
 One potential source of confusion is understanding the number of jobs that will be calculated given the build matrix. In the example above,
-commits to unspecifed branches (i.e. _not_ 'master' branches and _not_ any branch matching the `/dev-.*/` regexp) result in a build matrix calculated to have 4 jobs (2-configuration \* 2-platform)
+commits to unspecified branches (i.e. _not_ 'master' branches and _not_ any branch matching the `/dev-.*/` regexp) result in a build matrix calculated to have 4 jobs (2-configuration \* 2-platform)
 Meanwhile, commits to master branch result in 2 jobs since the configuration key is overridden and set to a scalar value instead of a list (1-configuration \* 2-platform). Ditto for commits to any branch matching
 the `/dev-*/` regexp, except its the platform being overridden this time (2-configuration \* 1-platform).
 
@@ -109,7 +109,7 @@ for:
 
 ```
 
-Here we are able to create the desired matrix which consits of 8 jobs (2-image / 2-configuration / 2-environment variable groups), then in the `for:` node, specify
+Here we are able to create the desired matrix which consists of 8 jobs (2-image / 2-configuration / 2-environment variable groups), then in the `for:` node, specify
 special conditions for each job.
 Another important thing to note is the three matrix configuration keys within the `for:` node that are ignored. This makes sense intuitively, since these are meant to be, in a
 sense, 'global' configuration of the job matrix behaviour. A list of settings that are ignored can be found [here](https://www.appveyor.com/docs/build-configuration/#specializing-matrix-job-configuration)

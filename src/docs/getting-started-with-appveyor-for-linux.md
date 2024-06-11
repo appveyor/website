@@ -84,7 +84,7 @@ build: off
 
 ### Bash and PowerShell
 
-You can use both *Bash* and *PowerShell* commands simultanously to control the build flow.
+You can use both *Bash* and *PowerShell* commands simultaneously to control the build flow.
 
 To run Bash command either put it with `sh:` prefix or without it, for example the following two commands will be run in Bash shell:
 
@@ -350,7 +350,7 @@ NuGet packages will be automatically published to [account and project NuGet fee
 
 Both ASP.NET Core and .NET Core console projects will be published to `.zip` files and pushed to build artifacts. You can deploy them later with one of the supported deployment methods described below.
 
-By default, if you ommit `test` section in `appveyor.yml` AppVeyor will assume `Auto` mode working in pair with `MSBuild` build mode. In `Auto` mode AppVeyor will run tests against all test projects found in the solution.
+By default, if you omit `test` section in `appveyor.yml` AppVeyor will assume `Auto` mode working in pair with `MSBuild` build mode. In `Auto` mode AppVeyor will run tests against all test projects found in the solution.
 
 ## SQL Server 2017 for Linux
 

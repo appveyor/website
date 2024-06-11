@@ -215,7 +215,7 @@ Click **Add cloud** and select cloud type **Azure**.
 
 Fill the following mandatory settings:
 
-* **Name**: Name for your private build cloud. Make it meaningful and short to be able to use in YAML configration
+* **Name**: Name for your private build cloud. Make it meaningful and short to be able to use in YAML configuration
 * **Client ID**: *Client ID* from deployment notes
 * **Client secret**: *Client Secret* from deployment notes
 * **Tenant ID**: *Tenant ID* from deployment notes

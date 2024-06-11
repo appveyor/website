@@ -44,6 +44,8 @@ branches:
 
 **Regular expressions** should be surrounded by `/`, otherwise Appveyor will do simple case insensitive string comparison.
 
+Please note, `only` **does not** exclude pull requests if they are based on that branch.
+
 Despite the option name, `only` and `except` is applied to tag names too, so the above example using `only` would cause tags not trigger the build. For example to enable builds for a tag version scheme like `v1.0.0` you would need:
 
 ```yaml

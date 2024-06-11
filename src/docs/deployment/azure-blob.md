@@ -21,7 +21,7 @@ Azure blob storage provider copies all or selected artifacts to Windows Azure st
     * `**/*.js` - gzip `.js` files in all directories recursively;
     * `js/*.js` - gzip `.js` files in `js` directory only;
     * `**/*.js, **/*.html` - gzip `.js` and `.html` files in all directories recursively.
-* **Custom blob headers** (`headers`) - Optional. Allows to attach custom headers to blobs statisfying file mask(s). See custom headers specification below.
+* **Custom blob headers** (`headers`) - Optional. Allows to attach custom headers to blobs satisfying file mask(s). See custom headers specification below.
 
 ## Custom headers specification
 

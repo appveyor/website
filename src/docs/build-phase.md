@@ -14,7 +14,7 @@ The following command is used:
 Custom logger is required to push MSBuild warning and errors in real-time to build console.
 You may use this logger in your own build scripts.
 
-`<project>` is a Visual Studio project (`*.*proj`) or solution (`*.sln`) file. If a project or solution file is not specified on project settings, AppVeyor recursively searches for the first occurence of `*.sln` or `*.*proj` file in the build clone directory.
+`<project>` is a Visual Studio project (`*.*proj`) or solution (`*.sln`) file. If a project or solution file is not specified on project settings, AppVeyor recursively searches for the first occurrence of `*.sln` or `*.*proj` file in the build clone directory.
 
 ## Adding additional parameters to msbuild with a response file
 
@@ -22,7 +22,7 @@ If you commit a file named msbuild.rsp, the contents of that file will be treate
 
 **Note** that this is a feature of msbuild itself. While this file will not alter the behavior of builds triggered by Visual Studio, it will alter the behavior of calls to msbuild outside of AppVeyor. This behavior can be altered by the `/noautoresponse` or `/noautorsp` switches.
 
-**Also Note** that rsp files are often in `.gitignore` for .NET solutions. Be sure that your response file actually gets commited if you add one locally.
+**Also Note** that rsp files are often in `.gitignore` for .NET solutions. Be sure that your response file actually gets committed if you add one locally.
 
 ```text
 #Appveyor msbuild response file
@@ -35,7 +35,7 @@ If you commit a file named msbuild.rsp, the contents of that file will be treate
 /filelogger
 /fileloggerparameters:Verbosity=detailed
 /bl
-# uncomment below to also include paramaters from @additionalswitches.rsp
+# uncomment below to also include parameters from @additionalswitches.rsp
 # @additionalswitches.rsp
 ```
 

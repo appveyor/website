@@ -136,7 +136,7 @@ AppVeyor Server can be configured to store its data in PostgreSQL database. Duri
 * `APPVEYOR_DATABASE_PROVIDER=PostgreSQL`
 * `APPVEYOR_POSTGRESQL_CONNECTION_STRING=Host=<host-or-ip>;Port=5432;Database=<database>;Username=<user>;Password=<password>`
 
-After creating Postgres database and before running the installer you have to instrall `citext` extension:
+After creating Postgres database and before running the installer you have to install `citext` extension:
 
     CREATE EXTENSION IF NOT EXISTS citext;
 

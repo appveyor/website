@@ -99,7 +99,7 @@ Now Log in to [AppVeyor.com](https://ci.appveyor.com), probably using your GitHu
 
 MSBuild needs to access your KeyStore file in order to sign the apk, so copy **YourKeyStoreFilename** in to the folder of **YourAppName.Droid** project (called **YourKeyStoreLocalFilename** from now on).
 
-When we created the apk from the command line, we entered in some passwords, and we obviously can't save these passwords to a public Git repository. Happily AppVeyor have thought of this, and you can convert passwords in to tokens that can be exposed publically.
+When we created the apk from the command line, we entered in some passwords, and we obviously can't save these passwords to a public Git repository. Happily AppVeyor have thought of this, and you can convert passwords in to tokens that can be exposed publicly.
 
 To do this click **Account** &rarr; **Encrypt YAML** from the drop down menu. Enter **YourKeyStorePassword** in to *"Value to encrypt"* and click *"Encrypt"*. AppVeyor will then display a token which you can use in place of the real value.
 

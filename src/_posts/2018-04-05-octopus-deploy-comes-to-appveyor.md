@@ -4,7 +4,7 @@ title: Octopus Deploy comes to AppVeyor
 
 > This is a guest post by Robert Erez (Twitter: [@no_erez](https://twitter.com/no_erez)), Program Manager at [Octopus Deploy](https://octopus.com/).
 
-<p><img src="/assets/img/posts/octopus-deploy-comes-to-appveyor/blogimage-appveyor.png" alt="Continous Delivery in the cloud with Octopus and AppVeyor"></p>
+<p><img src="/assets/img/posts/octopus-deploy-comes-to-appveyor/blogimage-appveyor.png" alt="Continuous Delivery in the cloud with Octopus and AppVeyor"></p>
 
 <p>The fantastic team at AppVeyor have recently added built-in support for pushing and deploying your projects (.NET, Java, JavaScript etc) with Octopus Deploy. What is Octopus Deploy I hear you ask? Octopus Deploy is a friendly deployment automation tool that makes it easy to automate your application deployments in a fast, repeatable and reliable manner. Octopus takes over where your build server ends, enabling you to easily automate even the most complicated application deployments, whether on-prem or in the cloud. Deploying your application through environments like DEV, TEST and PRODUCTION requires the assurance that the each releases are identical where it counts, but with configuration that can be injected to change from environment to environment.</p>
 
