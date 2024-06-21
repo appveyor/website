@@ -52,10 +52,10 @@ deploy:
 
   # Azure account details
 
-  client_id: <client-id-guid>
+  client_id: <app-id-guid> # Application (client) ID
   client_secret:
-    secure: <client-secret-encrypted>
-  tenant_id: <tenant-id-guid>
+    secure: <app-secret-encrypted>
+  tenant_id: <tenant-id-guid> # Directory (tenant) ID
   subscription_id: <subscription-id-guid>
   resource_group: <resource-group-name>
   
@@ -76,32 +76,53 @@ deploy:
   
   # Networking settings
   
-  load_balancer:
-  public_ip:
+  load_balancer: <load-balancer-name>
+  public_ip: <ip-address-resource-name>
   
   # SSL certificate
   
-  key_vault:
-  certificate_url:
+  key_vault: <key-vault-resource-name>
+  certificate_url: https://{vault-name}.vault.azure.net/secrets/{number}/{number}
   
-  # RDP
+  # RDP (optional)
   
-  rdp_username:
+  rdp_username: admin
   rdp_password:
-  rdp_expiration:
+    secure: <encrypted password>
+  rdp_expiration: 180 # days
   
-  # Diagnostics (WAD)
+  # WAD diagnostics (optional)
   
-  diagnostics_config:
-  diagnostics_account_name:
+  diagnostics_config: |
+    <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+      <WadCfg>
+        ...
+      </WadCfg>
+    </PublicConfig>
+  diagnostics_account_name: <storage-account-name-for-WAD-data>
   diagnostics_account_key:
+    secure: <encrypted-storage-account-access-key>
 ```
 
 To get `subscription_id` of your Azure subscription navigate to **Subscriptions** blade in Azure Portal.
 
-## Creating a service account
+## Creating an Azure Service Principal
 
-TBD
+Azure Cloud Service (extended support) provider requires Azure Service Principal to access Azure Resource Manager (ARM) API.
+
+You can find a lot of Microsoft and 3rd-party guides for creating Azure service principals, but here's a short version of it.  
+
+To create a new service principal:
+
+1. Login to Azure Portal.
+2. Navigate to **Microsoft Entra ID**.
+3. Click **App registrations** on the left navigation menu.
+4. Click **New registration**.
+5. Provide application name and click **Register** button.
+6. Overview app page contains **Application (client) ID** and **Directory (tenant) ID**.
+7. Click **Certificates & secrets** on the left app menu and then **Client secrets**.
+8. Click **New client secret** and specify secret name. Copy secret's **Value**.
+9. Go to **Access control (IAM)** of cloud service resource group and assign **Contributor** role to the created service principal.
 
 ## Cloud Service Deploy Parametrization
 
