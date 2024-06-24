@@ -58,41 +58,41 @@ deploy:
   tenant_id: <tenant-id-guid> # Directory (tenant) ID
   subscription_id: <subscription-id-guid>
   resource_group: <resource-group-name>
-  
+
   # Cloud Service details
-  
+
   service: <cloud-service-name-in-azure>
   artifact: <cloud-service-project-name>
   target_profile: Cloud   # optional .cscfg configuration name to deploy with
   deployment_label: $(APPVEYOR_BUILD_VERSION)
   do_not_start_deployment: false
-  
+
   # Deployment storage - temp storage for cloud service package
-  
+
   storage_account_name: <storage-name>
   storage_access_key:
     secure: <account-access-key>
   storage_container_name: deployments # optional
-  
+
   # Networking settings
-  
+
   load_balancer: <load-balancer-name>
   public_ip: <ip-address-resource-name>
-  
+
   # SSL certificate
-  
+
   key_vault: <key-vault-resource-name>
   certificate_url: https://{vault-name}.vault.azure.net/secrets/{number}/{number}
-  
+
   # RDP (optional)
-  
+
   rdp_username: admin
   rdp_password:
     secure: <encrypted password>
   rdp_expiration: 180 # days
-  
+
   # WAD diagnostics (optional)
-  
+
   diagnostics_config: |
     <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
       <WadCfg>
@@ -110,7 +110,7 @@ To get `subscription_id` of your Azure subscription navigate to **Subscriptions*
 
 Azure Cloud Service (extended support) provider requires Azure Service Principal to access Azure Resource Manager (ARM) API.
 
-You can find a lot of Microsoft and 3rd-party guides for creating Azure service principals, but here's a short version of it.  
+You can find a lot of Microsoft and 3rd-party guides for creating Azure service principals, but here's a short version of it.
 
 To create a new service principal:
 
