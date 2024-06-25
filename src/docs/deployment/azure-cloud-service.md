@@ -1,17 +1,17 @@
 ---
 layout: docs
-title: Deploying Azure Cloud Services
+title: Deploying Azure Cloud Services (classic)
 ---
 
 <!-- markdownlint-disable MD022 MD032 -->
-# Deploying Azure Cloud Services
+# Deploying Azure Cloud Services (classic)
 {:.no_toc}
 
 * Comment to trigger ToC generation
 {:toc}
 <!-- markdownlint-enable MD022 MD032 -->
 
-Azure Cloud Service deployment provider assumes there is only one **Azure Cloud Service package** (file with `.cspkg` extension) in build artifacts and at least one **Azure Cloud Service configuration** artifact (file with `.cscfg` extension).
+Azure Cloud Service (classic) deployment provider assumes there is only one **Azure Cloud Service package** (file with `.cspkg` extension) in build artifacts and at least one **Azure Cloud Service configuration** artifact (file with `.cscfg` extension).
 
 
 ## Automatic packaging
