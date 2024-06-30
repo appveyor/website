@@ -757,7 +757,7 @@ title: Software pre-installed on Windows build VMs
                 </li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
+        <td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td>
     </tr>
     <tr>
         <td>
