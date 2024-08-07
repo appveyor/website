@@ -79,7 +79,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="4">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 7.4.4</td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 7.4.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
         <th id="docker" class="section" colspan="4">Docker</th>
