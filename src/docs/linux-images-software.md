@@ -56,7 +56,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <th class="rotate"><span>Ubuntu2204</span></th>
     </tr>
     <tr>
-        <th id="operating-system" class="section" colspan="5">Operating system</th>
+        <th id="operating-system" class="section" colspan="4">Operating system</th>
     </tr>
     <tr>
         <td>Ubuntu 22.04 LTS (Jammy Jellyfish)</td>
@@ -77,25 +77,25 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td class="no"></td>
     </tr>
     <tr>
-        <th id="powershell" class="section" colspan="5">PowerShell</th>
+        <th id="powershell" class="section" colspan="4">PowerShell</th>
     </tr>
     <tr><td>PowerShell Core 7.4.4</td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
-        <th id="docker" class="section" colspan="5">Docker</th>
+        <th id="docker" class="section" colspan="4">Docker</th>
     </tr>
     <tr><td>Docker</td><td class="text-center">24.0.5</td><td class="text-center">27.1.1</td><td class="text-center">27.1.1</td></tr>
     <!-- Version control systems -->
     <tr>
-        <th id="version-control-systems" class="section" colspan="5">Version control systems</th>
+        <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
-    <tr><td>Git 2.45.2</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Git Large File Storage (Git LFS) 3.4.0</td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Mercurial</td><td class="text-center">5.3.1</td><td class="text-center">6.1.1</td></tr>
-    <tr><td>Subversion</td><td class="text-center">1.13.0</td><td class="text-center">1.14.1</td></tr>
+    <tr><td>Git 2.45.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Git Large File Storage (Git LFS) 3.4.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Mercurial</td><td class="text-center">5.3.1</td><td class="text-center">6.1.1</td><td class="text-center">6.1.1</td></tr>
+    <tr><td>Subversion</td><td class="text-center">1.13.0</td><td class="text-center">1.14.1</td><td class="text-center">1.14.1</td></tr>
     <!-- .NET Framework -->
     <tr>
-        <th id="net-core" class="section" colspan="5">.NET Core</th>
+        <th id="net-core" class="section" colspan="4">.NET Core</th>
     </tr>
     <tr><td>.NET Core SDK 8.0.303 (8.0.3 runtime)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 7.0.201 (7.0.3 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -105,7 +105,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>.NET Core SDK 3.0.103 (3.0.3 runtime) - EOL</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Node.js -->
     <tr>
-        <th id="node-js" class="section" colspan="5">Node.js</th>
+        <th id="node-js" class="section" colspan="4">Node.js</th>
     </tr>
     <tr>
         <td>
@@ -139,7 +139,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     </tr>
     <!-- Qt -->
     <tr>
-        <th id="qt" class="section" colspan="5">Qt</th>
+        <th id="qt" class="section" colspan="4">Qt</th>
     </tr>
     <tr>
         <td>
@@ -162,7 +162,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     </tr>
     <!-- Go -->
     <tr>
-        <th id="golang" class="section" colspan="5">Go (Golang)</th>
+        <th id="golang" class="section" colspan="4">Go (Golang)</th>
     </tr>
     <tr>
         <td>
@@ -182,7 +182,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     </tr>
     <!-- Java -->
     <tr>
-        <th id="java" class="section" colspan="5">Java SE Development Kit (JDK)</th>
+        <th id="java" class="section" colspan="4">Java SE Development Kit (JDK)</th>
     </tr>
     <tr>
         <td>
@@ -219,12 +219,12 @@ The history of Ubuntu image updates can be found [here](/updates/).
     </tr>
     <!-- mono -->
     <tr>
-        <th id="mono" class="section" colspan="5">Mono</th>
+        <th id="mono" class="section" colspan="4">Mono</th>
     </tr>
     <tr><td>Mono 6.12.0.200</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Compilers -->
     <tr>
-        <th id="compilers" class="section" colspan="5">Compilers</th>
+        <th id="compilers" class="section" colspan="4">Compilers</th>
     </tr>
     <tr><td>LLVM (Clang) 18.0.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>LLVM (Clang) 17.0.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -245,7 +245,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>GCC 7.5.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Ruby -->
     <tr>
-        <th id="ruby" class="section" colspan="5">Ruby</th>
+        <th id="ruby" class="section" colspan="4">Ruby</th>
     </tr>
     <tr>
         <td>
@@ -272,7 +272,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     </tr>
     <!-- Python -->
     <tr>
-        <th id="python" class="section" colspan="5">Python</th>
+        <th id="python" class="section" colspan="4">Python</th>
     </tr>
     <tr>
         <td>
@@ -285,7 +285,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
-        <td
+        <td>
             <ul>
                 <li>Python 3.13.0b3 (<code>$HOME/venv3.13.0</code> and <code>$HOME/venv3.13</code>)</li>
                 <li>Python 3.11.9 (<code>$HOME/venv3.11.9</code> and <code>$HOME/venv3.11</code>)</li>
@@ -302,21 +302,21 @@ The history of Ubuntu image updates can be found [here](/updates/).
     </tr>
     <!-- Mobile -->
     <tr>
-        <th id="mobile" class="section" colspan="5">Mobile SDKs</th>
+        <th id="mobile" class="section" colspan="4">Mobile SDKs</th>
     </tr>
     <tr><td>Flutter 3.19.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 30.0.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Erlang -->
     <tr>
-        <th id="erlang" class="section" colspan="5">Erlang</th>
+        <th id="erlang" class="section" colspan="4">Erlang</th>
     </tr>
     <tr><td>Erlang 25.0.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Tools -->
     <tr>
-        <th id="tools" class="section" colspan="5">Tools</th>
+        <th id="tools" class="section" colspan="4">Tools</th>
     </tr>
     <tr><td>Yarn 1.22.19</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>p7zip 16.02 (<code>7za</code> utility is in PATH)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>p7zip 16.02 (<code>7za</code> utility is in PATH)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>tcl 8.6.0+9</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>wget</td><td class="text-center">1.17.1</td><td class="text-center">1.20.3</td><td class="text-center">1.21.2</td></tr>
     <tr><td>curl</td><td class="text-center">7.58.0</td><td class="text-center">7.81.0</td><td class="text-center">7.81.0</td></tr>
@@ -332,13 +332,13 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>Gradle 4.4.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Web browsers -->
     <tr>
-        <th id="web-browsers" class="section" colspan="5">Web browsers</th>
+        <th id="web-browsers" class="section" colspan="4">Web browsers</th>
     </tr>
     <tr><td>Firefox</td><td class="text-center">123.0</td><td class="text-center">128.0</td><td class="text-center">128.0</td></tr>
     <tr><td>Chrome</td><td class="text-center">122.0.6261.128</td><td class="text-center">Chrome 127.0.6533.72</td><td class="text-center">Chrome 127.0.6533.72</td></tr>
     <!-- Databases -->
     <tr>
-        <th id="databases" class="section" colspan="5">Databases</th>
+        <th id="databases" class="section" colspan="4">Databases</th>
     </tr>
     <tr><td>SQL Server 2017 15.0.4153.1-6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 15.0-1.pgdg20.04+1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -346,14 +346,14 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>MongoDB 6.0.16</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Services -->
     <tr>
-        <th id="services" class="section" colspan="5">Services</th>
+        <th id="services" class="section" colspan="4">Services</th>
     </tr>
     <tr><td>OctoTools 9.1.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Redis 7.0.12</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>RabbitMQ 3.13.6-1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Configuration -->
     <tr>
-        <th id="configuration" class="section" colspan="5">Configuration</th>
+        <th id="configuration" class="section" colspan="4">Configuration</th>
     </tr>
     <tr><td>Default Locale: LANG</td><td>C.UTF&#8209;8</td><td>C.UTF&#8209;8</td><td>C.UTF&#8209;8</td></tr>
 </table>
