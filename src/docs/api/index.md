@@ -28,6 +28,9 @@ Default content type is JSON, but if you need to return XML set `Accept` header:
 
     Accept: application/xml
 
+**Note.** If using a user-level API key (v2) which allows working with any account user has access to, then
+API calls must be prepended with /api/account/<account-name>/ in order to disambiguate which account is being accessed.
+
 ## Samples
 
 ### PowerShell
