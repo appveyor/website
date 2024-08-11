@@ -418,7 +418,7 @@ install:
 
 ```yaml
 install:
-  - cinst <package>
+  - choco install <package>
 ```
 
 
