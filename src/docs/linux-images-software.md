@@ -287,7 +287,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 3.13.0b3 (<code>$HOME/venv3.13.0</code> and <code>$HOME/venv3.13</code>)</li>
+                <li>Python 3.13.0rc1 (<code>$HOME/venv3.13.0</code> and <code>$HOME/venv3.13</code>)</li>
                 <li>Python 3.11.9 (<code>$HOME/venv3.11.9</code> and <code>$HOME/venv3.11</code>)</li>
                 <li>Python 3.10.14 (<code>$HOME/venv3.10.14</code> and <code>$HOME/venv3.10</code>)</li>
                 <li>Python 3.9.18 (<code>$HOME/venv3.9.18</code> and <code>$HOME/venv3.9</code>)</li>
