@@ -26,7 +26,7 @@ Add an `appveyor.yml` file to your repository root:
 # appveyor.yml - https://www.appveyor.com/docs/lang/python
 ---
 image:
-  - Visual Studio 2019
+  - Visual Studio 2022
 
 environment:
   matrix:
@@ -78,7 +78,7 @@ commands = pytest
 [testenv:ruff]
 description = Lint Python code
 deps = ruff
-commands = ruff
+commands = ruff check
 ```
 
 For any Tox environment you want to run on AppVeyor you need to add a
