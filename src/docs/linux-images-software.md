@@ -237,12 +237,12 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>LLVM (Clang) 10.0.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>LLVM (Clang) 9.0.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>GCC 13.1.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>GCC 12.3.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>GCC 11.4.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>GCC 12.3.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>GCC 11.4.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 10.5.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 9.5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>GCC 8.4.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>GCC 7.5.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
+    <tr><td>GCC 8.4.0</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>GCC 7.5.0</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <!-- Ruby -->
     <tr>
         <th id="ruby" class="section" colspan="4">Ruby</th>
@@ -287,7 +287,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 3.13.0b3 (<code>$HOME/venv3.13.0</code> and <code>$HOME/venv3.13</code>)</li>
+                <li>Python 3.13.0rc1 (<code>$HOME/venv3.13.0</code> and <code>$HOME/venv3.13</code>)</li>
                 <li>Python 3.11.9 (<code>$HOME/venv3.11.9</code> and <code>$HOME/venv3.11</code>)</li>
                 <li>Python 3.10.14 (<code>$HOME/venv3.10.14</code> and <code>$HOME/venv3.10</code>)</li>
                 <li>Python 3.9.18 (<code>$HOME/venv3.9.18</code> and <code>$HOME/venv3.9</code>)</li>
