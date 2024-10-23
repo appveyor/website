@@ -15,15 +15,15 @@ title: Testing with Ruby
 
 Several Ruby versions are already preinstalled:
 
-* [Windows images](/docs/windows-images-software/#ruby)
-* [Ubuntu images](/docs/linux-images-software/#ruby)
+* [Windows images](../windows-images-software.md/#ruby)
+* [Ubuntu images](../linux-images-software.md/#ruby)
 
-We only need to add one of it to a PATH.
+We only need to add one of them to a PATH.
 
 ```yaml
 # appveyor.yml
 install:
-  - set PATH=C:\Ruby22\bin;%PATH%
+  - set PATH=C:\Ruby32\bin;%PATH%
   - bundle install
 
 build: off
@@ -46,10 +46,10 @@ version: 1.0.{build}-{branch}
 
 environment:
   matrix:
-    - RUBY_VERSION: 22
-    - RUBY_VERSION: 21
-    - RUBY_VERSION: 200
-    - RUBY_VERSION: 193
+    - RUBY_VERSION: 31
+    - RUBY_VERSION: 32
+    - RUBY_VERSION: 33
+    - RUBY_VERSION: 323
 
 install:
   - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
@@ -66,15 +66,15 @@ test_script:
   - bundle exec rake
 ```
 
-Add 64-bit Rubies as `200-x64`, `21-x64` etc. Do not use `Platform: x64`.
+Add 64-bit Rubies as `323-x64`, `33-x64` etc. Do not use `Platform: x64`.
 
 ## Caching
 
 Ruby's gems can be easily cached by AppVeyor,
-but they are installed into long and complex path,
-like `C:\Ruby21\lib\ruby\gems\2.1.0\gems`.
+but they are installed on long and complex paths,
+like `C:\Ruby21\lib\ruby\gems\3.3.0\gems`.
 
-One should better force Bundler to put gems into well know path, eg:
+One should better force Bundler to put gems into well-known path, eg:
 
 ```yaml
 version: 1.0.{build}-{branch}
@@ -84,10 +84,10 @@ cache:
 
 environment:
   matrix:
-    - RUBY_VERSION: 22
-    - RUBY_VERSION: 21
-    - RUBY_VERSION: 200
-    - RUBY_VERSION: 193
+    - RUBY_VERSION: 31
+    - RUBY_VERSION: 32
+    - RUBY_VERSION: 33
+    - RUBY_VERSION: 323
 
 install:
   - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
@@ -107,21 +107,21 @@ test_script:
 
 ## Build Worker API
 
-AppVeyor offers [API](/docs/build-worker-api) for reporting during build process.
+AppVeyor offers [API](/docs/build-worker-api) for reporting during the build process.
 
 It was implemented in
 [appveyor-worker](https://rubygems.org/gems/appveyor-worker) gem.
 
-Just include it into your project's Gemfile.
-Progress of your tests will be automagically displayed on project build page
-in real time and stack traces (for failed tests)
-will become available thru web-interface.
+Just include it in your project's Gemfile.
+Progress of your tests will be automagically displayed on the project build page
+in real-time and stack traces (for failed tests)
+will become available thru the web interface.
 
 You can also send messages and set environment variables from your tests.
 
 ## Windows Ruby Build Types & Info
 
-Ruby builds for Windows have been built using two different systems.  Ruby versions 2.3 and previous are built with RubyInstaller, Ruby versions 2.4 and later are built with RubyInstaller2.  Both RubyInstaller (RI) and RubyInstaller2 (RI2) are open source projects.
+Ruby builds for Windows have been built using two different systems.  Ruby versions 2.3 and previous are built with RubyInstaller, Ruby versions 2.4 and later are built with RubyInstaller2.  Both RubyInstaller (RI) and RubyInstaller2 (RI2) are open-source projects.
 
 Both RI & RI2 builds will set paths for their respective compile tools by requiring devkit, hence, the common `-rdevkit` option.
 
@@ -129,7 +129,7 @@ Information about several Appveyor Ruby builds is shown at <https://ci.appveyor.
 
 ### Tools & Compiler (used to build extension gems, or gems with c source)
 
-RI builds use what is referred to as 'DevKit', which is a proprietary package of MSYS tools and compilers.  Additional packages are often called knapsack packages, or have knapsack in their download path.
+RI builds use what is referred to as 'DevKit', which is a proprietary package of MSYS tools and compilers.  Additional packages are often called knapsack packages or have knapsack in their download path.
 
 RI2 builds use the MSYS2 / MinGW system for tools and compilers.  These are used by several languages that support Windows, and hence, have reasonably good support.  Of note, some versions of Windows and Git for Windows have exe files that match files in the MSYS2 / MinGW system.  This may cause issues with testing in Appveyor, depending on `PATH`.
 
