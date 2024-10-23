@@ -1,13 +1,15 @@
 version: 1.0.{build}
 
+image: Visual Studio 2017
+
 clone_depth: 10
 
-# Do not build feature branch with open Pull Requests
+# Do not build a feature branch with open Pull Requests
 skip_branch_with_pr: true
 
 environment:
   matrix:
-    - ruby_folder_version: "24"
+    - ruby_folder_version: "25"
       platform: "x86"
 
 init:
@@ -16,7 +18,7 @@ init:
 install:
   - SET "PATH=C:\Ruby%ruby_folder_version%\bin;%PATH%"
   - bundle install --retry 3 --jobs=%NUMBER_OF_PROCESSORS% --clean --path vendor\bundle
-  - ps: Install-Product node "8" $env:platform
+  - ps: Install-Product node "16" $env:platform
   - npm install
 
 build: off
