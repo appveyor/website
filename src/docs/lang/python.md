@@ -26,18 +26,18 @@ Add an `appveyor.yml` file to your repository root:
 # appveyor.yml - https://www.appveyor.com/docs/lang/python
 ---
 image:
-  - Visual Studio 2019
+  - Visual Studio 2022
 
 environment:
   matrix:
   # - TOXENV: py27  # end-of-life-branches
-  # - TOXENV: py37
-  - TOXENV: py38    # https://devguide.python.org/versions
-  - TOXENV: py39
+  # - TOXENV: py38
+  - TOXENV: py39    # https://devguide.python.org/versions
   - TOXENV: py310
   - TOXENV: py311
   - TOXENV: py312
-  - PY_PYTHON: 3.12  # Run a Tox job to run the ruff linter on Python 3.12
+  - TOXENV: py313
+  - PY_PYTHON: 3.12  # Run a Tox job to run the ruff linter on Python 3.13
     TOXENV: ruff
 
 build: false
@@ -54,12 +54,12 @@ test_script:
 ### Test setup
 
 A popular approach in the Python community for test setups and automation is
-to use [Tox](https://tox.readthedocs.io/). This has a number of advantages:
+to use [Tox](https://tox.readthedocs.io/). This has several advantages:
 
 * It is self-contained, allowing you to encapsulate all dependencies for running your tests.
 * You can run the entire test suite on your developer machine upfront, with a single command.
 * It creates isolated environments for running your tests using `virtualenv`, automatically.
-* It makes you independent from implementation details of any CI service.
+* It makes you independent from the implementation details of any CI service.
 
 With the AppVeyor configuration from above you can now put your entire test
 setup into a `tox.ini` file in your repository root:
@@ -68,7 +68,7 @@ setup into a `tox.ini` file in your repository root:
 # tox.ini
 
 [tox]
-envlist = py3{8,9,10,11,12,ruff}
+envlist = py3{9,10,11,12,13,ruff}
 
 [testenv]
 description = Unit tests
@@ -76,9 +76,11 @@ deps = pytest
 commands = pytest
 
 [testenv:ruff]
-description = Lint Python code
+description = Format and lint Python code
 deps = ruff
-commands = ruff
+commands =
+  ruff format --diff
+  ruff check --select=ALL
 ```
 
 For any Tox environment you want to run on AppVeyor you need to add a
@@ -90,7 +92,7 @@ for more information on how to use Tox.
 
 ## Testing against PyPy
 
-PyPy and PyPy3 are not yet supported on AppVeyor out-of-the-box. You can,
+PyPy3 is not yet supported on AppVeyor out-of-the-box. You can,
 however, install them yourself as additional interpreters in your `appveyor.yml`.
 
 See the "[How do I install PyPy on AppVeyor](
