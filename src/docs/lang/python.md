@@ -92,8 +92,8 @@ for more information on how to use Tox.
 
 ## Testing against PyPy
 
-PyPy3 is not yet supported on AppVeyor out-of-the-box. You can,
-however, install them yourself as additional interpreters in your `appveyor.yml`.
+PyPy3 is not yet supported on AppVeyor out-of-the-box. However, you can
+install it yourself as a additional interpreter in your `appveyor.yml`.
 
 See the "[How do I install PyPy on AppVeyor](
 https://stackoverflow.com/questions/30822873/how-do-i-install-pypy-on-appveyor
