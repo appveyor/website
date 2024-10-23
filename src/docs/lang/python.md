@@ -37,7 +37,7 @@ environment:
   - TOXENV: py311
   - TOXENV: py312
   - TOXENV: py313
-  - PY_PYTHON: 3.12  # Run a Tox job to run the ruff linter on Python 3.13
+  - PY_PYTHON: 3.13  # Run a Tox job to run the ruff linter on Python 3.13
     TOXENV: ruff
 
 build: false
