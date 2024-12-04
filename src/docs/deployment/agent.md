@@ -268,6 +268,7 @@ Job details:
 * `APPVEYOR_BUILD_ID` - Unique system ID of build
 * `APPVEYOR_BUILD_NUMBER` - Build number of deploying artifact
 * `APPVEYOR_BUILD_VERSION` - Build version on deploying artifact
+* `APPVEYOR_BUILD_JOB_ID` - Unique system ID of a build job being deployed
 * `APPVEYOR_JOB_ID` - Unique system ID of deployment job
 * `APPVEYOR_REPO_NAME` - Repository name in the form `owner-name/repo-name`
 * `APPVEYOR_REPO_BRANCH` - Build branch
