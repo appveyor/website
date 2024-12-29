@@ -120,7 +120,7 @@ title: Software pre-installed on Windows build VMs
         <td>6.2.3</td>
         <td>6.2.3</td>
         <td>7.4.4</td>
-        <td>7.4.4</td>
+        <td>7.4.6</td>
     </tr>
     <!-- Docker -->
     <tr>
@@ -197,7 +197,7 @@ title: Software pre-installed on Windows build VMs
         <th id="version-control-systems" class="section" colspan="6">Version control systems</th>
     </tr>
     <tr>
-        <td>Git (with <code>git config --global core.autocrlf input</code>)</td><td>2.26.2</td><td>2.26.2</td><td>2.26.2</td><td>2.46.0</td><td>2.46.0</td>
+        <td>Git (with <code>git config --global core.autocrlf input</code>)</td><td>2.26.2</td><td>2.26.2</td><td>2.26.2</td><td>2.46.0</td><td>2.47.1</td>
     </tr>
     <tr>
         <td>Git Large File Storage (Git LFS) </td><td>2.9.2</td><td>2.9.2</td><td>2.9.2</td><td>3.5.1</td><td>3.5.1</td>
@@ -437,6 +437,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET 6 SDK 6.0.425</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET 7 SDK 7.0.410</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET 8 SDK 8.0.401</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET 9 SDK 9.0.101</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="6">Silverlight</th>
@@ -467,7 +468,8 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="node-js" class="section" colspan="6">Node.js</th>
     </tr>
-    <tr><td>Node.js 22.6.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 23.2.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 22.11.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 21.7.3</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 20.17.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 19.9.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -493,10 +495,10 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-                <li>Go 1.23.0 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.23.0 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.22.6 x64 (<code>C:\go122</code>)</li>
-                <li>Go 1.22.6 x86 (<code>C:\go122-x86</code>)</li>
+                <li>Go 1.23.4 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.23.4 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.22.10 x64 (<code>C:\go122</code>)</li>
+                <li>Go 1.22.10 x86 (<code>C:\go122-x86</code>)</li>
                 <li>Go 1.21.8 x64 (<code>C:\go121</code>)</li>
                 <li>Go 1.21.8 x86 (<code>C:\go121-x86</code>)</li>
                 <li>Go 1.20.14 x64 (<code>C:\go120</code>)</li>
@@ -620,10 +622,10 @@ title: Software pre-installed on Windows build VMs
                 <li>Ruby 3.0.7-1 x64 (<code>C:\Ruby30-x64\bin</code>)</li>
                 <li>Ruby 3.1.6-1 x86 (<code>C:\Ruby31\bin</code>)</li>
                 <li>Ruby 3.1.6-1 x64 (<code>C:\Ruby31-x64\bin</code>)</li>
-                <li>Ruby 3.2.5-1 x86 (<code>C:\Ruby32\bin</code>)</li>
-                <li>Ruby 3.2.5-1 x64 (<code>C:\Ruby32-x64\bin</code> - default in <code>PATH</code>)</li>
-                <li>Ruby 3.3.3-1 x86 (<code>C:\Ruby33\bin</code>)</li>
-                <li>Ruby 3.3.3-1 x64 (<code>C:\Ruby33-x64\bin</code>)</li>
+                <li>Ruby 3.2.6-1 x86 (<code>C:\Ruby32\bin</code>)</li>
+                <li>Ruby 3.2.6-1 x64 (<code>C:\Ruby32-x64\bin</code> - default in <code>PATH</code>)</li>
+                <li>Ruby 3.3.6-1 x86 (<code>C:\Ruby33\bin</code>)</li>
+                <li>Ruby 3.3.6-1 x64 (<code>C:\Ruby33-x64\bin</code>)</li>
             </ul>
         </td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
@@ -664,10 +666,10 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Python 3.10.11 x64 (<code>C:\Python310-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.11.9 x86 (<code>C:\Python311</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Python 3.11.9 x64 (<code>C:\Python311-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.12.5 x86 (<code>C:\Python312</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.12.5 x64 (<code>C:\Python312-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.13.0rc1 x86 (<code>C:\Python313</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Python 3.13.0rc1 x64 (<code>C:\Python313-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.12.8 x86 (<code>C:\Python312</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.12.8 x64 (<code>C:\Python312-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.13.1 x86 (<code>C:\Python313</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Python 3.13.1 x64 (<code>C:\Python313-x64</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>pip 19.3.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>pip 23.2.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Visual C++ Compiler for Python 2.7</td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
@@ -852,11 +854,11 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 6.7.2: <code>C:\Qt\6.7.2</code> (<code>C:\Qt\6.7</code> mapped to <code>C:\Qt\6.7.2</code> for backward compatibility)
+            <li>Qt 6.8.1: <code>C:\Qt\6.8.1</code> (<code>C:\Qt\6.8</code> mapped to <code>C:\Qt\6.8.1</code> for backward compatibility)
                 <ul>
-                <li>MinGW 9.0.0 64 bit: <code>C:\Qt\6.7.2\mingw_64</code></li>
-                <li>msvc2019 64-bit: <code>C:\Qt\6.7.2\msvc2019_64</code></li>
-                <li>ARM 64-bit: <code>C:\Qt\6.7.2\msvc2019_arm64</code></li>
+                <li>MinGW 9.0.0 64 bit: <code>C:\Qt\6.8.1\mingw_64</code></li>
+                <li>msvc2019 64-bit: <code>C:\Qt\6.8.1\msvc2019_64</code></li>
+                <li>ARM 64-bit: <code>C:\Qt\6.8.1\msvc2019_arm64</code></li>
                 </ul>
             </li>
             </ul>
@@ -1174,7 +1176,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>CMake 3.12.2</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>NuGet 2.8.6</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>NuGet 4.9.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>NuGet 6.11.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>NuGet 6.12.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Chocolatey 1.4.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Chocolatey 2.3.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GitVersion 4.0.0</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
@@ -1200,16 +1202,18 @@ title: Software pre-installed on Windows build VMs
     <tr><td>OpenSSL 1.1.1w (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 3.0.14 (32-bit) (<code>C:\OpenSSL-v30-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 3.0.14 (64-bit) (<code>C:\OpenSSL-v30-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.2.2 (32-bit) (<code>C:\OpenSSL-v32-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.2.2 (64-bit) (<code>C:\OpenSSL-v32-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.3.1 (32-bit) (<code>C:\OpenSSL-v33-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.3.1 (64-bit) (<code>C:\OpenSSL-v33-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.2.3 (32-bit) (<code>C:\OpenSSL-v32-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.2.3 (64-bit) (<code>C:\OpenSSL-v32-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.3.2 (32-bit) (<code>C:\OpenSSL-v33-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.3.2 (64-bit) (<code>C:\OpenSSL-v33-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.4.0 (32-bit) (<code>C:\OpenSSL-v34-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.4.0 (64-bit) (<code>C:\OpenSSL-v34-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.08 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.04 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>InnoSetup 6.1.2 Unicode (<code>C:\Program Files (x86)\Inno Setup 6</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Coverity Scan 2022.12</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Coverity Scan 2023.12.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Yarn 1.22.19</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Yarn 1.21.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>vcpkg 2019.09.12-nohash</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
@@ -1218,6 +1222,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Graphviz 2.38</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Octopus Tools 6.2.3</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Octopus Tools 6.17.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Octopus CLI 2.11.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Google Cloud SDK (`gcloud.exe` tool)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Test runners -->
     <tr>
