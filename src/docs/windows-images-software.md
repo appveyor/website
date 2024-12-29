@@ -119,7 +119,7 @@ title: Software pre-installed on Windows build VMs
         <td class="no"></td>
         <td>6.2.3</td>
         <td>6.2.3</td>
-        <td>7.4.4</td>
+        <td>7.4.6</td>
         <td>7.4.6</td>
     </tr>
     <!-- Docker -->
@@ -197,7 +197,7 @@ title: Software pre-installed on Windows build VMs
         <th id="version-control-systems" class="section" colspan="6">Version control systems</th>
     </tr>
     <tr>
-        <td>Git (with <code>git config --global core.autocrlf input</code>)</td><td>2.26.2</td><td>2.26.2</td><td>2.26.2</td><td>2.46.0</td><td>2.47.1</td>
+        <td>Git (with <code>git config --global core.autocrlf input</code>)</td><td>2.26.2</td><td>2.26.2</td><td>2.26.2</td><td>2.47.1</td><td>2.47.1</td>
     </tr>
     <tr>
         <td>Git Large File Storage (Git LFS) </td><td>2.9.2</td><td>2.9.2</td><td>2.9.2</td><td>3.5.1</td><td>3.5.1</td>
@@ -468,7 +468,7 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="node-js" class="section" colspan="6">Node.js</th>
     </tr>
-    <tr><td>Node.js 23.2.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 23.2.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 22.11.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 21.7.3</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 20.17.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -624,8 +624,8 @@ title: Software pre-installed on Windows build VMs
                 <li>Ruby 3.1.6-1 x64 (<code>C:\Ruby31-x64\bin</code>)</li>
                 <li>Ruby 3.2.6-1 x86 (<code>C:\Ruby32\bin</code>)</li>
                 <li>Ruby 3.2.6-1 x64 (<code>C:\Ruby32-x64\bin</code> - default in <code>PATH</code>)</li>
-                <li>Ruby 3.3.6-1 x86 (<code>C:\Ruby33\bin</code>)</li>
-                <li>Ruby 3.3.6-1 x64 (<code>C:\Ruby33-x64\bin</code>)</li>
+                <li>Ruby 3.3.6-2 x86 (<code>C:\Ruby33\bin</code>)</li>
+                <li>Ruby 3.3.6-2 x64 (<code>C:\Ruby33-x64\bin</code>)</li>
             </ul>
         </td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
@@ -1213,7 +1213,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>InnoSetup 6.1.2 Unicode (<code>C:\Program Files (x86)\Inno Setup 6</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Coverity Scan 2023.12.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Coverity Scan 2022.12.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
+    <tr><td>Coverity Scan 2023.12.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Yarn 1.22.19</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Yarn 1.21.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>vcpkg 2019.09.12-nohash</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
@@ -1222,7 +1223,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>Graphviz 2.38</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Octopus Tools 6.2.3</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Octopus Tools 6.17.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Octopus CLI 2.11.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Octopus CLI 2.11.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Google Cloud SDK (`gcloud.exe` tool)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Test runners -->
     <tr>
