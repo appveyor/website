@@ -857,8 +857,8 @@ title: Software pre-installed on Windows build VMs
             <li>Qt 6.8.1: <code>C:\Qt\6.8.1</code> (<code>C:\Qt\6.8</code> mapped to <code>C:\Qt\6.8.1</code> for backward compatibility)
                 <ul>
                 <li>MinGW 9.0.0 64 bit: <code>C:\Qt\6.8.1\mingw_64</code></li>
-                <li>msvc2019 64-bit: <code>C:\Qt\6.8.1\msvc2019_64</code></li>
-                <li>ARM 64-bit: <code>C:\Qt\6.8.1\msvc2019_arm64</code></li>
+                <li>msvc2022 64-bit: <code>C:\Qt\6.8.1\msvc2022_64</code></li>
+                <li>ARM 64-bit: <code>C:\Qt\6.8.1\msvc2022_arm64</code></li>
                 </ul>
             </li>
             </ul>
