@@ -79,17 +79,17 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="powershell" class="section" colspan="4">PowerShell</th>
     </tr>
-    <tr><td>PowerShell Core 7.4.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PowerShell Core 7.5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Docker -->
     <tr>
         <th id="docker" class="section" colspan="4">Docker</th>
     </tr>
-    <tr><td>Docker</td><td class="text-center">24.0.5</td><td class="text-center">27.1.1</td><td class="text-center">27.1.1</td></tr>
+    <tr><td>Docker</td><td class="text-center">24.0.5</td><td class="text-center">27.5.1</td><td class="text-center">28.0.0</td></tr>
     <!-- Version control systems -->
     <tr>
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
-    <tr><td>Git 2.45.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Git 2.48.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Git Large File Storage (Git LFS) 3.4.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Mercurial</td><td class="text-center">5.3.1</td><td class="text-center">6.1.1</td><td class="text-center">6.1.1</td></tr>
     <tr><td>Subversion</td><td class="text-center">1.13.0</td><td class="text-center">1.14.1</td><td class="text-center">1.14.1</td></tr>
