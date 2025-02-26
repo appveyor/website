@@ -352,18 +352,18 @@ Both ASP.NET Core and .NET Core console projects will be published to `.zip` fil
 
 By default, if you omit `test` section in `appveyor.yml` AppVeyor will assume `Auto` mode working in pair with `MSBuild` build mode. In `Auto` mode AppVeyor will run tests against all test projects found in the solution.
 
-## SQL Server 2017 for Linux
+## SQL Server 2019/2022 for Linux
 
-With AppVeyor for Linux you can test your ASP.NET Core applications on Linux platform with SQL Server 2017 for Linux.
+With AppVeyor for Linux you can test your ASP.NET Core applications on Linux platform with SQL Server (2019 on Ubuntu 18.04, 2022 on Ubuntu 20.04 and 22.04) for Linux.
 
-To start SQL Server 2017 for Linux service add this to your `appveyor.yml`:
+To start SQL Server for Linux service add this to your `appveyor.yml`:
 
 ```yaml
 services:
 - mssql
 ```
 
-SQL Server 2017 instance details:
+SQL Server instance details:
 
 * Host: `localhost`
 * Password: `Password12!`
