@@ -244,7 +244,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>LLVM (Clang) 10.0.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>LLVM (Clang) 9.0.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>GCC 13.1.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>GCC 12.3.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>GCC 12.3.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>GCC 11.4.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 10.5.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 9.5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
