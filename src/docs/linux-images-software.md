@@ -97,8 +97,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="net-core" class="section" colspan="4">.NET Core</th>
     </tr>
-    <tr><td>.NET Core SDK 9.0.200 (9.0.2 runtime)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>.NET Core SDK 8.0.406 (8.0.13 runtime)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 9.0.203 (9.0.2 runtime)</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>.NET Core SDK 8.0.413 (8.0.13 runtime)</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 7.0.410 (7.0.20 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 6.0.428 (6.0.36 runtime)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>.NET Core SDK 5.0.408 (5.0.17 runtime)</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
@@ -112,10 +112,11 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Node Version Manager (<code>nvm</code>) 0.39.4</li>
-                <li>Node.js 23.8.0</li>
-                <li>Node.js 22.14.0</li>
+                <li>Node.js 24.5.0</li>
+                <li>Node.js 23.11.1</li>
+                <li>Node.js 22.18.0</li>
                 <li>Node.js 21.7.3</li>
-                <li>Node.js 20.18.3 </li>
+                <li>Node.js 20.19.4 </li>
                 <li>Node.js 19.9.0</li>
                 <li>Node.js 18.19.1</li>
             </ul>
@@ -146,16 +147,16 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>6.7.2 in <code>$HOME/Qt/6.7.2/gcc_64/bin</code></li>
+                <li>6.9.1 in <code>$HOME/Qt/6.9.1/gcc_64/bin</code></li>
+                <li>6.8.3 in <code>$HOME/Qt/6.8.3/gcc_64/bin</code></li>
                 <li>6.5.3 in <code>$HOME/Qt/6.5.3/gcc_64/bin</code></li>
-                <li>6.2.4 in <code>$HOME/Qt/6.2.4/gcc_64/bin</code></li>
                 <li>5.15.2 in <code>$HOME/Qt/5.15.2/gcc_64/bin</code></li>
             </ul>
             <p>Links for latest and major versions:</p>
             <ul>
-                <li><code>$HOME/Qt/6.7</code> &rarr; <code>$HOME/Qt/6.7.2</code></li>
+                <li><code>$HOME/Qt/6.9</code> &rarr; <code>$HOME/Qt/6.9.1</code></li>
+                <li><code>$HOME/Qt/6.8</code> &rarr; <code>$HOME/Qt/6.8.3</code></li>
                 <li><code>$HOME/Qt/6.5</code> &rarr; <code>$HOME/Qt/6.5.3</code></li>
-                <li><code>$HOME/Qt/6.2</code> &rarr; <code>$HOME/Qt/6.2.4</code></li>
                 <li><code>$HOME/Qt/latest</code> &rarr; <code>$HOME/Qt/5.15.2</code></li>
                 <li><code>$HOME/Qt/5.15</code> &rarr; <code>$HOME/Qt/5.15.2</code></li>
             </ul>
@@ -170,8 +171,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Go Version Manager (<code>gvm</code>) v1.0.22</li>
-                <li>Go 1.24.0</li>
-                <li>Go 1.23.6</li>
+                <li>Go 1.24.5</li>
+                <li>Go 1.23.11</li>
                 <li>Go 1.22.12</li>
                 <li>Go 1.21.12</li>
                 <li>Go 1.20.14</li>
@@ -230,6 +231,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="compilers" class="section" colspan="4">Compilers</th>
     </tr>
+    <tr><td>LLVM (Clang) 20.0.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>LLVM (Clang) 19.0.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>LLVM (Clang) 18.0.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>LLVM (Clang) 17.0.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>LLVM (Clang) 16.0.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -241,7 +244,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>LLVM (Clang) 10.0.0</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>LLVM (Clang) 9.0.1</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>GCC 13.1.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>GCC 12.3.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>GCC 12.3.0</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>GCC 11.4.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 10.5.0</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>GCC 9.5.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -255,9 +258,9 @@ The history of Ubuntu image updates can be found [here](/updates/).
         <td>
             <ul>
                 <li>Ruby Version Manager (<code>rvm</code>) 1.29.12</li>
-                <li>Ruby 3.4.2</li>
-                <li>Ruby 3.3.7</li>
-                <li>Ruby 3.2.7</li>
+                <li>Ruby 3.4.5</li>
+                <li>Ruby 3.3.9</li>
+                <li>Ruby 3.2.9</li>
                 <li>Ruby 3.1.5</li>
                 <li>Ruby 3.0.6</li>
                 <li>Ruby 2.7.8</li>
@@ -282,7 +285,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 3.13.2 (<code>$HOME/venv3.13.2</code> and <code>$HOME/venv3.13</code>)</li>
+                <li>Python 3.13.5 (<code>$HOME/venv3.13.2</code> and <code>$HOME/venv3.13</code>)</li>
                 <li>virtualenv 20.26.3</li>
                 <li>pip 24.1.2</li>
             </ul>
@@ -292,8 +295,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <td>
             <ul>
-                <li>Python 3.12.8 (<code>$HOME/venv3.12.8</code> and <code>$HOME/venv3.11</code>)</li>
-                <li>Python 3.11.9 (<code>$HOME/venv3.11.9</code> and <code>$HOME/venv3.11</code>)</li>
+                <li>Python 3.12.11 (<code>$HOME/venv3.12.8</code> and <code>$HOME/venv3.11</code>)</li>
+                <li>Python 3.11.13 (<code>$HOME/venv3.11.9</code> and <code>$HOME/venv3.11</code>)</li>
                 <li>Python 3.10.15 (<code>$HOME/venv3.10.14</code> and <code>$HOME/venv3.10</code>)</li>
                 <li>Python 3.9.20 (<code>$HOME/venv3.9.18</code> and <code>$HOME/venv3.9</code>)</li>
                 <li>Python 3.8.19 (<code>$HOME/venv3.8.17</code> and <code>$HOME/venv3.8</code>)</li>
@@ -309,7 +312,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="mobile" class="section" colspan="4">Mobile SDKs</th>
     </tr>
-    <tr><td>Flutter 3.19.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Flutter 3.32.8</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 30.0.3</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Erlang -->
     <tr>
@@ -339,15 +342,15 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="web-browsers" class="section" colspan="4">Web browsers</th>
     </tr>
-    <tr><td>Firefox</td><td class="text-center">123.0</td><td class="text-center">135.0</td><td class="text-center">135.0</td></tr>
-    <tr><td>Chrome</td><td class="text-center">122.0.6261.128</td><td class="text-center">Chrome 133.0.6943.126</td><td class="text-center">Chrome 133.0.6943.126</td></tr>
+    <tr><td>Firefox</td><td class="text-center">123.0</td><td class="text-center">141.0.1</td><td class="text-center">141.0.2</td></tr>
+    <tr><td>Chrome</td><td class="text-center">122.0.6261.128</td><td class="text-center">Chrome 139.0.7258.66</td><td class="text-center">Chrome 139.0.7258.66</td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="4">Databases</th>
     </tr>
     <tr><td>SQL Server 2022 16.0.4175.1</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>SQL Server 2019 15.0.4420.2</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>PostgreSQL 17.04</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>PostgreSQL 17.5-1</td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>PostgreSQL 15.04</td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>MySQL</td><td class="text-center">5.7.42</td><td class="text-center">8.0.41</td><td class="text-center">8.0.41</td></tr>
     <tr><td>MongoDB 6.0.16</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
