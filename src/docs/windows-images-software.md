@@ -119,8 +119,8 @@ title: Software pre-installed on Windows build VMs
         <td class="no"></td>
         <td>6.2.3</td>
         <td>6.2.3</td>
-        <td>7.5.2</td>
-        <td>7.5.2</td>
+        <td>7.5.4</td>
+        <td>7.5.4</td>
     </tr>
     <!-- Docker -->
     <tr>
@@ -435,8 +435,8 @@ title: Software pre-installed on Windows build VMs
     <tr><td>.NET 5 SDK 5.0.416</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>.NET 6 SDK 6.0.425</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>.NET 7 SDK 7.0.410</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET 8 SDK 8.0.413</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>.NET 9 SDK 9.0.304</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET 8 SDK 8.0.415</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>.NET 9 SDK 9.0.306</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Silverlight -->
     <tr>
         <th id="silverlight" class="section" colspan="6">Silverlight</th>
@@ -468,9 +468,10 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <th id="node-js" class="section" colspan="6">Node.js</th>
     </tr>
-    <tr><td>Node.js 24.6.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 25.1.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 24.11.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 23.11.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Node.js 22.18.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Node.js 22.21.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 21.7.3</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 20.17.0</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Node.js 19.9.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
@@ -496,10 +497,10 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-                <li>Go 1.25.0 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
-                <li>Go 1.25.0 x86 (<code>C:\go-x86</code>)</li>
-                <li>Go 1.24.6 x64 (<code>C:\go124</code>)</li>
-                <li>Go 1.24.6 x86 (<code>C:\go124-x86</code>)</li>
+                <li>Go 1.25.3 x64 (<code>C:\go</code> - default in <code>PATH</code>)</li>
+                <li>Go 1.25.3 x86 (<code>C:\go-x86</code>)</li>
+                <li>Go 1.24.9 x64 (<code>C:\go124</code>)</li>
+                <li>Go 1.24.9 x86 (<code>C:\go124-x86</code>)</li>
                 <li>Go 1.23.12 x64 (<code>C:\go123</code>)</li>
                 <li>Go 1.23.12 x86 (<code>C:\go123-x86</code>)</li>
                 <li>Go 1.22.12 x64 (<code>C:\go122</code>)</li>
@@ -580,6 +581,7 @@ title: Software pre-installed on Windows build VMs
     <tr><td>JDK 19 (x64) (<code>C:\Program Files\Java\jdk19</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>JDK 21 (x64) (<code>C:\Program Files\Java\jdk21</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>JDK 22 (x64) (<code>C:\Program Files\Java\jdk22</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>JDK 25 (x64) (<code>C:\Program Files\Java\jdk25</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Apache Maven 3.5.4</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Apache Maven 3.9.11</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <!-- Mono -->
@@ -624,10 +626,10 @@ title: Software pre-installed on Windows build VMs
                 <li>Ruby 3.1.6-1 x64 (<code>C:\Ruby31-x64\bin</code>)</li>
                 <li>Ruby 3.2.9 x86 (<code>C:\Ruby32\bin</code>)</li>
                 <li>Ruby 3.2.9 x64 (<code>C:\Ruby32-x64\bin</code> - default in <code>PATH</code>)</li>
-                <li>Ruby 3.3.9 x86 (<code>C:\Ruby33\bin</code>)</li>
-                <li>Ruby 3.3.9 x64 (<code>C:\Ruby33-x64\bin</code>)</li>
-                <li>Ruby 3.4.5 x86 (<code>C:\Ruby34-x64\bin</code>)</li>
-                <li>Ruby 3.4.5 x64 (<code>C:\Ruby34-x64\bin</code>)</li>
+                <li>Ruby 3.3.10-1 x86 (<code>C:\Ruby33\bin</code>)</li>
+                <li>Ruby 3.3.10-1 x64 (<code>C:\Ruby33-x64\bin</code>)</li>
+                <li>Ruby 3.4.7-1 x86 (<code>C:\Ruby34-x64\bin</code>)</li>
+                <li>Ruby 3.4.7-1 x64 (<code>C:\Ruby34-x64\bin</code>)</li>
             </ul>
         </td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
@@ -728,7 +730,7 @@ title: Software pre-installed on Windows build VMs
         <th id="llvm" class="section" colspan="6">LLVM</th>
     </tr>
     <tr>
-        <td>LLVM 20.1.8 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
+        <td>LLVM 21.1.0 x64 (<code>C:\Program Files\LLVM\bin</code> in <code>PATH</code>)</td>
         <td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
@@ -856,11 +858,11 @@ title: Software pre-installed on Windows build VMs
     <tr>
         <td>
             <ul>
-            <li>Qt 6.9.2: <code>C:\Qt\6.9.2</code> (<code>C:\Qt\6.9</code> mapped to <code>C:\Qt\6.9.2</code> for backward compatibility)
+            <li>Qt 6.9.3: <code>C:\Qt\6.9.3</code> (<code>C:\Qt\6.9</code> mapped to <code>C:\Qt\6.9.3</code> for backward compatibility)
                 <ul>
-                <li>MinGW 9.0.0 64 bit: <code>C:\Qt\6.9.2\mingw_64</code></li>
-                <li>msvc2022 64-bit: <code>C:\Qt\6.9.2\msvc2022_64</code></li>
-                <li>ARM 64-bit: <code>C:\Qt\6.9.2\msvc2022_arm64</code></li>
+                <li>MinGW 9.0.0 64 bit: <code>C:\Qt\6.9.3\mingw_64</code></li>
+                <li>msvc2022 64-bit: <code>C:\Qt\6.9.3\msvc2022_64</code></li>
+                <li>ARM 64-bit: <code>C:\Qt\6.9.3\msvc2022_arm64</code></li>
                 </ul>
             </li>
             </ul>
@@ -1188,23 +1190,26 @@ title: Software pre-installed on Windows build VMs
     <tr><td>OpenSSL 1.1.1d (64-bit) (<code>C:\OpenSSL-v111-Win64\bin</code>)</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>OpenSSL 1.1.1w (32-bit) (<code>C:\OpenSSL-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>OpenSSL 1.1.1w (64-bit) (<code>C:\OpenSSL-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.0.17 (32-bit) (<code>C:\OpenSSL-v30-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.0.17 (64-bit) (<code>C:\OpenSSL-v30-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.2.5 (32-bit) (<code>C:\OpenSSL-v32-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.2.5 (64-bit) (<code>C:\OpenSSL-v32-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.3.4 (32-bit) (<code>C:\OpenSSL-v33-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.3.4 (64-bit) (<code>C:\OpenSSL-v33-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.4.2 (32-bit) (<code>C:\OpenSSL-v34-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.4.2 (64-bit) (<code>C:\OpenSSL-v34-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.5.2 (32-bit) (<code>C:\OpenSSL-v35-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
-    <tr><td>OpenSSL 3.5.2 (64-bit) (<code>C:\OpenSSL-v35-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.0.18 (32-bit) (<code>C:\OpenSSL-v30-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.0.18 (64-bit) (<code>C:\OpenSSL-v30-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.2.6 (32-bit) (<code>C:\OpenSSL-v32-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.2.6 (64-bit) (<code>C:\OpenSSL-v32-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.3.5 (32-bit) (<code>C:\OpenSSL-v33-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.3.5 (64-bit) (<code>C:\OpenSSL-v33-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.4.3 (32-bit) (<code>C:\OpenSSL-v34-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.4.3 (64-bit) (<code>C:\OpenSSL-v34-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.5.4 (32-bit) (<code>C:\OpenSSL-v35-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.5.4 (64-bit) (<code>C:\OpenSSL-v35-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.6.0 (32-bit) (<code>C:\OpenSSL-v36-Win32\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>OpenSSL 3.6.0 (64-bit) (<code>C:\OpenSSL-v36-Win64\bin</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.08 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>NSIS 3.04 (<code>C:\Program Files (x86)\NSIS</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>InnoSetup 5.5.9 Unicode (<code>C:\Program Files (x86)\Inno Setup 5</code>)</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>InnoSetup 6.1.2 Unicode (<code>C:\Program Files (x86)\Inno Setup 6</code>)</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Coverity Scan 2017.07</td><td class="yes"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>Coverity Scan 2022.12.2</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
-    <tr><td>Coverity Scan 2023.12.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Coverity Scan 2023.12.2</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Coverity Scan 2024.12.1</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Yarn 1.22.19</td><td class="no"></td><td class="no"></td><td class="no"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Yarn 1.21.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
     <tr><td>vcpkg 2019.09.12-nohash</td><td class="no"></td><td class="yes"></td><td class="yes"></td><td class="no"></td><td class="no"></td></tr>
