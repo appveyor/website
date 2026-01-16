@@ -82,7 +82,7 @@ Note the use of single quotes around the entire line, when environment variables
 
 ## Caching Chocolatey packages
 
-Caching Chocolatey packages/installations might be tricky as it depends on whether the package is "portable" (installed from a zip - [7zip.commandline](https://chocolatey.org/packages/7zip.commandline) is a good example) or "native" (installed from MSI to `Program Files`, for example [git.install](https://chocolatey.org/packages/git.install)). Read more about [distinction between installable and portable applications](https://github.com/chocolatey/choco/wiki/ChocolateyFAQs#what-distinction-does-chocolatey-make-between-an-installable-and-a-portable-application). **The solution below works for "portable" packages only.**
+Caching Chocolatey packages/installations might be tricky as it depends on whether the package is "portable" (installed from a zip - [7zip.commandline](https://chocolatey.org/packages/7zip.commandline) is a good example) or "native" (installed from MSI to `Program Files`, for example [git.install](https://chocolatey.org/packages/git.install)). Read more about [distinction between installable and portable applications](https://docs.chocolatey.org/en-us/faqs/#what-distinction-does-chocolatey-make-between-an-installable-and-a-portable-application). **The solution below works for "portable" packages only.**
 
 `C:\Users\appveyor\AppData\Local\Temp\chocolatey\` is used as a temp location for downloading packages and, generally, shouldn't be cached.
 
