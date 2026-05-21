@@ -89,10 +89,10 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="version-control-systems" class="section" colspan="4">Version control systems</th>
     </tr>
-    <tr><td>Git 2.48.1</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>Git</td><td class="text-center">2.54.0</td><td class="text-center">2.48.1</td><td class="text-center">2.54.0</td></tr>
     <tr><td>Git Large File Storage (Git LFS) 3.4.0</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>Mercurial</td><td class="text-center">6.1.1</td><td class="text-center">6.1.1</td><td class="text-center">6.1.1</td></tr>
-    <tr><td>Subversion</td><td class="text-center">1.14.1</td><td class="text-center">1.14.1</td><td class="text-center">1.14.1</td></tr>
+    <tr><td>Mercurial</td><td class="text-center">6.7.2</td><td class="text-center">6.1.1</td><td class="text-center">6.7.2</td></tr>
+    <tr><td>Subversion</td><td class="text-center">1.14.3</td><td class="text-center">1.14.1</td><td class="text-center">1.14.3</td></tr>
     <!-- .NET Framework -->
     <tr>
         <th id="net-core" class="section" colspan="4">.NET Core</th>
@@ -126,17 +126,22 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>Node.js 14.21.3</li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td class="yes"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>
             <ul>
-                <li>Node.js 13.14.0</li>
-                <li>Node.js 12.22.12</li>
-                <li>Node.js 11.15.0</li>
-                <li>Node.js 10.24.1</li>
-                <li>Node.js 9.11.2</li>
-                <li>Node.js 8.17.0</li>
+                <li>Node Version Manager (<code>nvm</code>)</li>
+                <li>Node.js 24.5.0</li>
+                <li>Node.js 22.18.0 (default)</li>
+                <li>Node.js 21.7.3</li>
+                <li>Node.js 20.19.4</li>
+                <li>Node.js 19.9.0</li>
+                <li>Node.js 18.20.8</li>
+                <li>Node.js 17.9.1</li>
+                <li>Node.js 16.20.2</li>
+                <li>Node.js 15.14.0</li>
+                <li>Node.js 14.21.3</li>
             </ul>
         </td>
         <td class="no"></td><td class="yes"></td><td class="no"></td>
@@ -162,7 +167,23 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li><code>$HOME/Qt/5.15</code> &rarr; <code>$HOME/Qt/5.15.2</code></li>
             </ul>
         </td>
-        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
+        <td class="no"></td><td class="yes"></td><td class="no"></td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>6.11.0 in <code>$HOME/Qt/6.11.0/gcc_64/bin</code></li>
+                <li>6.10.3 in <code>$HOME/Qt/6.10.3/gcc_64/bin</code></li>
+                <li>6.8.3 in <code>$HOME/Qt/6.8.3/gcc_64/bin</code></li>
+            </ul>
+            <p>Links for latest and major versions:</p>
+            <ul>
+                <li><code>$HOME/Qt/6.11</code> &rarr; <code>$HOME/Qt/6.11.0</code></li>
+                <li><code>$HOME/Qt/6.10</code> &rarr; <code>$HOME/Qt/6.10.3</code></li>
+                <li><code>$HOME/Qt/6.8</code> &rarr; <code>$HOME/Qt/6.8.3</code></li>
+            </ul>
+        </td>
+        <td class="yes"></td><td class="no"></td><td class="yes"></td>
     </tr>
     <!-- Go -->
     <tr>
@@ -228,13 +249,6 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>OpenJDK 11 build 11+28</li>
                 <li>OpenJDK 10 build 10+44</li>
                 <li>OpenJDK 9 (9.0.4)</li>
-            </ul>
-        </td>
-        <td class="no"></td><td class="yes"></td><td class="no"></td>
-    </tr>
-    <tr>
-        <td>
-            <ul>
                 <li>OpenJDK 8 (1.8.0_212)</li>
             </ul>
         </td>
@@ -280,7 +294,7 @@ The history of Ubuntu image updates can be found [here](/updates/).
                 <li>Ruby 3.1.5</li>
             </ul>
         </td>
-        <td class="yes"></td><td class="no"></td><td class="yes"></td>
+        <td class="yes"></td><td class="yes"></td><td class="yes"></td>
     </tr>
     <tr>
         <td>
@@ -329,8 +343,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="mobile" class="section" colspan="4">Mobile SDKs</th>
     </tr>
-    <tr><td>Flutter 3.41.5</td><td class="yes"></td><td class="yes"></td><td class="no"></td></tr>
-    <tr><td>Flutter 3.32.8</td><td class="no"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Flutter 3.41.5</td><td class="yes"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>Flutter 3.32.8</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>Android SDK command-line tools 14742923, build-tools 34/35/36</td><td class="yes"></td><td class="no"></td><td class="yes"></td></tr>
     <tr><td>Android SDK 30.0.3</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <!-- Erlang -->
@@ -351,7 +365,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr><td>Azure CLI</td><td class="text-center">2.69.0</td><td class="text-center">2.69.0</td><td class="text-center">2.69.0</td></tr>
     <tr><td>Google Cloud SDK</td><td class="text-center">485.0.0</td><td class="text-center">485.0.0</td><td class="text-center">485.0.0</td></tr>
     <tr><td>Packer 1.8.2</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
-    <tr><td>VirtualBox 7.1.x</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
+    <tr><td>VirtualBox 7.1.x</td><td class="yes"></td><td class="no"></td><td class="yes"></td></tr>
+    <tr><td>VirtualBox 7.0.x</td><td class="no"></td><td class="yes"></td><td class="no"></td></tr>
     <tr><td>CMake 3.29.7</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>vcpkg 2023-08-09</td><td class="yes"></td><td class="yes"></td><td class="yes"></td></tr>
     <tr><td>Doxygen</td><td class="text-center">1.9.5</td><td class="text-center">1.9.5</td><td class="text-center">1.9.5</td></tr>
@@ -361,8 +376,8 @@ The history of Ubuntu image updates can be found [here](/updates/).
     <tr>
         <th id="web-browsers" class="section" colspan="4">Web browsers</th>
     </tr>
-    <tr><td>Firefox</td><td class="text-center">141.0.2</td><td class="text-center">141.0.1</td><td class="text-center">141.0.2</td></tr>
-    <tr><td>Chrome</td><td class="text-center">Chrome 139.0.7258.66</td><td class="text-center">Chrome 139.0.7258.66</td><td class="text-center">Chrome 139.0.7258.66</td></tr>
+    <tr><td>Firefox</td><td class="text-center">150.0.3-1</td><td class="text-center">141.0.1</td><td class="text-center">150.0.3-1</td></tr>
+    <tr><td>Chrome</td><td class="text-center">148.0.7778.178-1</td><td class="text-center">139.0.7258.66</td><td class="text-center">148.0.7778.178-1</td></tr>
     <!-- Databases -->
     <tr>
         <th id="databases" class="section" colspan="4">Databases</th>
