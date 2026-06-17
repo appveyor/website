@@ -1,0 +1,4 @@
+name = "appveyor-website"
+
+[assets]
+directory = "./_site"
