@@ -34,7 +34,7 @@ port:               4000
 url:                https://www.appveyor.com
 encoding:           UTF-8
 
-include: [web.config]
+include: [web.config, _redirects]
 
 future: true
 
