@@ -28,7 +28,7 @@
   X-UA-Compatible: IE=edge
   Cache-Control: max-age=3600
 
-/404.aspx
+/404.html
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block

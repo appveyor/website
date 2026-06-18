@@ -43,3 +43,5 @@ layout: null
 /docs/installed-software/ /docs/build-environment/ 301
 /on-premise /self-hosted/ 301
 /on-premise/ /self-hosted/ 301
+
+/404.aspx /404.html 301
