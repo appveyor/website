@@ -1,0 +1,47 @@
+---
+layout: null
+---
+
+# Latest AppVeyor Server installation packages
+/downloads/appveyor/appveyor-server.msi https://appveyordownloads.blob.core.windows.net/appveyor/{{ site.data.versions.appveyor_version }}/appveyor-server-{{ site.data.versions.appveyor_version }}-win-x64.msi 302
+/downloads/appveyor/appveyor-server.deb https://appveyordownloads.blob.core.windows.net/appveyor/{{ site.data.versions.appveyor_version }}/appveyor-server_{{ site.data.versions.appveyor_version }}_amd64.deb 302
+/downloads/appveyor/appveyor-host-agent.msi https://appveyordownloads.blob.core.windows.net/appveyor/{{ site.data.versions.appveyor_version }}/appveyor-host-agent-{{ site.data.versions.appveyor_version }}-win-x64.msi 302
+/downloads/appveyor/appveyor-host-agent.deb https://appveyordownloads.blob.core.windows.net/appveyor/{{ site.data.versions.appveyor_version }}/appveyor-host-agent_{{ site.data.versions.appveyor_version }}_amd64.deb 302
+
+# Page SEO-friendly redirects
+/2013/:month/:day/:slug /blog/2013/:month/:day/:slug/ 301
+/2013/:month/:day/:slug/ /blog/2013/:month/:day/:slug/ 301
+
+/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment /blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment/ 301
+/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment/ /blog/2014/02/19/appveyor-20-dedicated-build-vms-parallel-testing-nuget-deployment/ 301
+/2014/02/21/nuget-support-in-appveyor-ci /blog/2014/02/21/nuget-support-in-appveyor-ci/ 301
+/2014/02/21/nuget-support-in-appveyor-ci/ /blog/2014/02/21/nuget-support-in-appveyor-ci/ 301
+/2014/02/23/converting-mercurial-repository-to-git-on-windows /blog/2014/02/23/converting-mercurial-repository-to-git-on-windows/ 301
+/2014/02/23/converting-mercurial-repository-to-git-on-windows/ /blog/2014/02/23/converting-mercurial-repository-to-git-on-windows/ 301
+/2014/03/18/about-nuget-package-restore /blog/2014/03/18/about-nuget-package-restore/ 301
+/2014/03/18/about-nuget-package-restore/ /blog/2014/03/18/about-nuget-package-restore/ 301
+/2014/03/25/continuous-delivery-of-windows-azure-cloud-services-with-appveyor-ci /blog/2014/03/25/continuous-delivery-of-windows-azure-cloud-services-with-appveyor-ci/ 301
+/2014/03/25/continuous-delivery-of-windows-azure-cloud-services-with-appveyor-ci/ /blog/2014/03/25/continuous-delivery-of-windows-azure-cloud-services-with-appveyor-ci/ 301
+/2014/03/26/appveyor-20-goes-live-with-a-new-pricing /blog/2014/03/26/appveyor-20-goes-live-with-a-new-pricing/ 301
+/2014/03/26/appveyor-20-goes-live-with-a-new-pricing/ /blog/2014/03/26/appveyor-20-goes-live-with-a-new-pricing/ 301
+/2014/03/31/web-deploy-parametrization-in-appveyor-ci /blog/2014/03/31/web-deploy-parametrization-in-appveyor-ci/ 301
+/2014/03/31/web-deploy-parametrization-in-appveyor-ci/ /blog/2014/03/31/web-deploy-parametrization-in-appveyor-ci/ 301
+/2014/04/23/build-worker-improvements /blog/2014/04/23/build-worker-improvements/ 301
+/2014/04/23/build-worker-improvements/ /blog/2014/04/23/build-worker-improvements/ 301
+/2014/06/04/shallow-clone-for-git-repositories /blog/2014/06/04/shallow-clone-for-git-repositories/ 301
+/2014/06/04/shallow-clone-for-git-repositories/ /blog/2014/06/04/shallow-clone-for-git-repositories/ 301
+/2014/07/23/appveyor-yml-and-multiple-branches /blog/2014/07/23/appveyor-yml-and-multiple-branches/ 301
+/2014/07/23/appveyor-yml-and-multiple-branches/ /blog/2014/07/23/appveyor-yml-and-multiple-branches/ 301
+/2014/11/06/appveyor-with-a-hint-of-chocolatey /blog/2014/11/06/appveyor-with-a-hint-of-chocolatey/ 301
+/2014/11/06/appveyor-with-a-hint-of-chocolatey/ /blog/2014/11/06/appveyor-with-a-hint-of-chocolatey/ 301
+/2014/11/13/appveyor-premium-build-environment-and-new-pricing /blog/2014/11/13/appveyor-premium-build-environment-and-new-pricing/ 301
+/2014/11/13/appveyor-premium-build-environment-and-new-pricing/ /blog/2014/11/13/appveyor-premium-build-environment-and-new-pricing/ 301
+
+# Miscellaneous legacy redirects
+/favicon.ico /assets/img/favicons/favicon.ico 301
+/docs/installed-software /docs/build-environment/ 301
+/docs/installed-software/ /docs/build-environment/ 301
+/on-premise /self-hosted/ 301
+/on-premise/ /self-hosted/ 301
+
+/404.aspx /404.html 301
