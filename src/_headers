@@ -1,0 +1,37 @@
+# Cloudflare Workers static asset headers translated from src/web.config.
+
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+  X-Content-Type-Options: nosniff
+
+/
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Content-Security-Policy: default-src 'none'; script-src 'self' www.google-analytics.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' data: www.google-analytics.com ci.appveyor.com; font-src 'self' data: fonts.gstatic.com; frame-src 'self' www.slideshare.net www.youtube.com; child-src 'self' www.slideshare.net www.youtube.com; manifest-src 'self'; base-uri 'self'; frame-ancestors 'none'
+  X-UA-Compatible: IE=edge
+  Cache-Control: max-age=3600
+
+/*/
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Content-Security-Policy: default-src 'none'; script-src 'self' www.google-analytics.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' data: www.google-analytics.com ci.appveyor.com; font-src 'self' data: fonts.gstatic.com; frame-src 'self' www.slideshare.net www.youtube.com; child-src 'self' www.slideshare.net www.youtube.com; manifest-src 'self'; base-uri 'self'; frame-ancestors 'none'
+  X-UA-Compatible: IE=edge
+  Cache-Control: max-age=3600
+
+/*.html
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Content-Security-Policy: default-src 'none'; script-src 'self' www.google-analytics.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' data: www.google-analytics.com ci.appveyor.com; font-src 'self' data: fonts.gstatic.com; frame-src 'self' www.slideshare.net www.youtube.com; child-src 'self' www.slideshare.net www.youtube.com; manifest-src 'self'; base-uri 'self'; frame-ancestors 'none'
+  X-UA-Compatible: IE=edge
+  Cache-Control: max-age=3600
+
+/404.aspx
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Content-Security-Policy: default-src 'none'; script-src 'self' www.google-analytics.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src 'self' data: www.google-analytics.com ci.appveyor.com; font-src 'self' data: fonts.gstatic.com; frame-src 'self' www.slideshare.net www.youtube.com; child-src 'self' www.slideshare.net www.youtube.com; manifest-src 'self'; base-uri 'self'; frame-ancestors 'none'
+  X-UA-Compatible: IE=edge
+  Cache-Control: max-age=3600
