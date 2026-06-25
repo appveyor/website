@@ -33,6 +33,7 @@ destination:        _site/
 port:               4000
 url:                https://www.appveyor.com
 encoding:           UTF-8
+downloads_url:      https://pub-5ff86d3762cb44bc938cf07e812d03be.r2.dev
 
 include: [web.config, _headers, _redirects]
 
