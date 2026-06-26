@@ -9,7 +9,7 @@ layout: null
 /downloads/appveyor/appveyor-host-agent.deb https://appveyordownloads.blob.core.windows.net/appveyor/{{ site.data.versions.appveyor_version }}/appveyor-host-agent_{{ site.data.versions.appveyor_version }}_amd64.deb 302
 
 # update here upon release of new deployment agent
-/downloads/deployment-agent/latest/AppveyorDeploymentAgent.msi https://appveyordownloads.blob.core.windows.net/appveyor/deployment-agent/6.3.3+3257/AppveyorDeploymentAgent.msi 302
+/downloads/deployment-agent/latest/AppveyorDeploymentAgent.msi https://appveyordownloads.blob.core.windows.net/deployment-agent/6.3.3+3257/AppveyorDeploymentAgent.msi 302
 
 # Page SEO-friendly redirects
 /2013/:month/:day/:slug /blog/2013/:month/:day/:slug/ 301
