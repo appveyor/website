@@ -14,6 +14,7 @@ layout: null
 # Path-preserving download redirects
 /downloads/build-agent/* https://appveyordownloads.blob.core.windows.net/build-agent/:splat 302
 /downloads/deployment-agent/* https://appveyordownloads.blob.core.windows.net/deployment-agent/:splat 302
+/downloads/host-agent/* https://appveyordownloads.blob.core.windows.net/host-agent/:splat 302
 
 # Page SEO-friendly redirects
 /2013/*/ /blog/2013/:splat/ 301
