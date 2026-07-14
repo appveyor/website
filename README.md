@@ -6,18 +6,37 @@
 
 ## Getting started
 
-* Install [Node.js](https://nodejs.org/download/)
-* Install Ruby matching `.ruby-version`
-* Install the Node.js dependencies via npm: `npm install`
-* Install Ruby dependencies: `bundle install`
-* Build the static site: `npm run build`
+Install:
 
-The generated site is written to `_site/`.
+* [Node.js](https://nodejs.org/download/) >= 18
+* Ruby matching version found in `.ruby-version`
+* Bundler: run `gem install bundler`
 
-## Staging
+Install project dependencies:
 
-The `staging` branch is published to <https://appveyor-staging.azurewebsites.net>.
+```sh
+npm install
+bundle install
+```
 
-### TODO:
+Build the production static site:
 
-* Fix HTML errors due to duplicate IDs in /updates/
+```sh
+npm run build
+```
+
+The generated site is written to the `_site/` directory.
+
+The build script runs Jekyll and then performs the asset pipeline directly from
+`scripts/build.js`: CSS and JavaScript bundling/minification, rewriting refrences, HTML minification, etc. 
+
+To preview the generated site locally, serve `_site/` with any static file
+server. For example:
+
+```sh
+npx http-server _site -p 4000
+```
+
+Then open <http://localhost:4000/>.
+
+
