@@ -6,24 +6,37 @@
 
 ## Getting started
 
-* Install [Node.js](https://nodejs.org/download/)
-* Install grunt: `npm install -g grunt-cli`
-* Install the Node.js dependencies via npm: `npm install`
-* Install Ruby and Ruby DevKit; make sure you select add Ruby to `PATH`, and then run:
+Install:
 
-    ```shell
-    cd C:\RubyDevKit
-    ruby dk.rb init
-    ruby dk.rb install
-    ```
+* [Node.js](https://nodejs.org/download/) >= 18
+* Ruby matching version found in `.ruby-version`
+* Bundler: run `gem install bundler`
 
-* Run `gem install bundle` and then `bundle install`
-* Run `grunt build` to build the static site, `grunt` to build and watch for changes (`http://localhost:4000/`)
+Install project dependencies:
 
-## Staging
+```sh
+npm install
+bundle install
+```
 
-The `staging` branch is published to <https://appveyor-staging.azurewebsites.net>.
+Build the production static site:
 
-### TODO:
+```sh
+npm run build
+```
 
-* Fix HTML errors due to duplicate IDs in /updates/
+The generated site is written to the `_site/` directory.
+
+The build script runs Jekyll and then performs the asset pipeline directly from
+`scripts/build.js`: CSS and JavaScript bundling/minification, rewriting refrences, HTML minification, etc. 
+
+To preview the generated site locally, serve `_site/` with any static file
+server. For example:
+
+```sh
+npx http-server _site -p 4000
+```
+
+Then open <http://localhost:4000/>.
+
+

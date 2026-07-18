@@ -33,8 +33,9 @@ destination:        _site/
 port:               4000
 url:                https://www.appveyor.com
 encoding:           UTF-8
+downloads_url:      https://appveyordownloads.blob.core.windows.net/deployment-agent
 
-include: [web.config]
+include: [web.config, _headers, _redirects]
 
 future: true
 
