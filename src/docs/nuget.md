@@ -67,6 +67,8 @@ To push a NuGet package as an artifact and publish it in both project and accoun
 When you delete a project in AppVeyor its corresponding NuGet feed is deleted,
 however all NuGet packages from that feed remain published in account feed.
 
+NuGet packages on both project and account feeds are subject to the [data retention policy](/docs/data-retention-policy/#nuget-packages).
+
 
 ## Publishing NuGet symbols to AppVeyor account feed
 
