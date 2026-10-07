@@ -176,8 +176,7 @@ Downloading an artifact from the last successful non-PR build of any branch:
 
 ## Artifacts retention policy
 
-> Artifacts retention policy is effective as of June 17, 2018.
-> Artifacts retention policy updated on [March 30, 2021](/blog/2021/03/30/artifacts-retention-policy-update/).
+> Artifacts retention is part of the AppVeyor [Data retention policy](/docs/data-retention-policy/), effective October 26, 2026.
 
 Artifacts storage within AppVeyor is more properly regarded as an intermediary step in the deployment process, rather than an archival storage solution.
 
@@ -185,7 +184,8 @@ AppVeyor implements an artifacts retention policy for both free and paid account
 
 * Paid accounts: artifacts older than 3 months are permanently removed from AppVeyor artifact storage.
 * Free accounts: artifacts older than 1 month are permanently removed from AppVeyor artifact storage.
-* Paid and free accounts: NuGet packages on both project and accounts feeds are not affected by the policy.
+* Artifacts are also removed when their build is deleted under the [builds retention rule](/docs/data-retention-policy/#builds-and-jobs).
+* NuGet packages on project and account feeds have their own retention period, see the [Data retention policy](/docs/data-retention-policy/#nuget-packages).
 
 > It's the responsibility of project maintainers to copy critical artifacts that may be useful after 3 months to external storage.
 

@@ -124,6 +124,12 @@ It's a hard quota which means the build will fail while trying to upload cache i
 The maximum size of a single cache entry is still limited, but increased to 3 GB.
 
 
+## Cache retention
+
+Cache entries that have not been updated for 6 months are permanently deleted, for both free and paid accounts. Entries are refreshed every time a build updates them, so actively built projects are not affected.
+See the [Data retention policy](/docs/data-retention-policy/#build-cache) for details.
+
+
 ## Cache speed vs size (beta)
 
 The new cache uses `7z` to compress/uncompress files before transferring them to the cache storage.
