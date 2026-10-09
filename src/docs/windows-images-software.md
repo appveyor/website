@@ -3564,12 +3564,12 @@ title: Software pre-installed on Windows build VMs
         <th id="tools" class="section" colspan="6">Tools</th>
     </tr>
     <tr>
-        <td>curl 7.84.0</td>
+        <td>curl 7.55.1</td>
         <td class="yes"></td>
         <td class="yes"></td>
-        <td class="yes"></td>
-        <td class="yes"></td>
-        <td class="yes"></td>
+        <td class="no"></td>
+        <td class="no"></td>
+        <td class="no"></td>
     </tr>
     <tr>
         <td>7-Zip 19.00</td>
